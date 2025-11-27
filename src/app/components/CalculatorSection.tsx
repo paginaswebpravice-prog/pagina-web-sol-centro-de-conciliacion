@@ -6,16 +6,33 @@ import styles from "../styles/CalculatorSection.module.css";
 export default function CalculatorSection() {
   const [amount, setAmount] = useState("");
   const [total, setTotal] = useState<number | null>(null);
+  const [base, setBase] = useState<number | null>(null);
+  const [iva, setIva] = useState<number | null>(null);
 
+  // ✅ Formateador con puntos de miles
+  const formatNumber = (value: string) => {
+    const cleanValue = value.replace(/\D/g, ""); // solo números
+    return cleanValue.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  };
+
+  // ✅ Cuando escribe en el input
+  const handleAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const formattedValue = formatNumber(e.target.value);
+    setAmount(formattedValue);
+  };
+
+  // ✅ Calcular valores
   const handleCalculate = () => {
-    const value = Number(amount.replace(".", ""));
-    if (!value) return;
+    const numericValue = Number(amount.replace(/\./g, ""));
+    if (!numericValue) return;
 
-    const base = value * 0.07; // EJEMPLO
-    const iva = base * 0.19;
-    const result = base + iva;
+    const baseCalc = Math.round(numericValue * 0.07);
+    const ivaCalc = Math.round(baseCalc * 0.19);
+    const totalCalc = Math.round(baseCalc + ivaCalc);
 
-    setTotal(result);
+    setBase(baseCalc);
+    setIva(ivaCalc);
+    setTotal(totalCalc);
   };
 
   return (
@@ -27,8 +44,8 @@ export default function CalculatorSection() {
 
           <label className={styles.checkboxLabel}>
             <input type="checkbox" />
-            Si el monto de la conciliación es indeterminado, selecciones esta
-            opcion
+            Si el monto de la conciliación es indeterminado, seleccione esta
+            opción
           </label>
 
           <label className={styles.label}>Monto de la conciliación</label>
@@ -36,23 +53,24 @@ export default function CalculatorSection() {
             className={styles.input}
             placeholder="Ej: 50.000"
             value={amount}
-            onChange={(e) => setAmount(e.target.value)}
+            onChange={handleAmountChange}
+            inputMode="numeric"
           />
 
           <button onClick={handleCalculate} className={styles.button}>
             Calcular
           </button>
 
-          {total && (
+          {total !== null && (
             <div className={styles.results}>
               <p>
-                <strong>Base:</strong> COP {total.toLocaleString()}
+                <strong>Base:</strong> COP {base?.toLocaleString("es-CO")}
               </p>
               <p>
-                <strong>IVA:</strong> COP {(total * 0.19).toLocaleString()}
+                <strong>IVA:</strong> COP {iva?.toLocaleString("es-CO")}
               </p>
               <p className={styles.total}>
-                Total: COP {(total * 1.19).toLocaleString()}
+                Total: COP {total.toLocaleString("es-CO")}
               </p>
             </div>
           )}
@@ -65,9 +83,7 @@ export default function CalculatorSection() {
           </h1>
           <p className={styles.description}>
             En <strong>Sol Centro de Conciliación</strong> te ayudamos a
-            resolver tus conflictos de forma pacífica y profesional. Promovemos
-            el diálogo, la empatía y la eficiencia para alcanzar acuerdos que
-            beneficien a todas las partes involucradas.
+            resolver tus conflictos de forma pacífica y profesional.
           </p>
 
           <button className={styles.cta}>Programa una consulta →</button>
