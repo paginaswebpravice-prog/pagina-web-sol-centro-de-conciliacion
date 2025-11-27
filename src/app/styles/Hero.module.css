@@ -1,0 +1,176 @@
+/* ============================
+   HERO GENERAL
+============================ */
+.hero {
+  position: relative;
+  min-height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 15px; /* Padding lateral para evitar que el contenido toque los bordes */
+  box-sizing: border-box; /* Asegura que padding no afecte el ancho total */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Video de fondo */
+.videoBg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 60, 130, 0.45);
+  z-index: 1;
+}
+
+/* ============================
+   CONTENEDOR DEL TEXTO
+============================ */
+.content {
+  max-width: 780px;
+  position: relative;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 45px 35px;
+  border-radius: 14px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  overflow-wrap: break-word; /* Evita que palabras largas desborden */
+}
+
+/* ============================
+   TITULOS Y TEXTOS
+============================ */
+.mainTitle {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  margin-bottom: 22px;
+  line-height: 1.25;
+  word-break: break-word; /* Mejor manejo de texto largo */
+}
+
+.paragraph {
+  font-size: clamp(0.95rem, 2.3vw, 1.1rem);
+  line-height: 1.7;
+  margin-bottom: 18px;
+  opacity: 0.92;
+  word-break: break-word;
+}
+
+.finalPhrase {
+  font-size: clamp(1rem, 2.4vw, 1.25rem);
+  margin-top: 22px;
+  margin-bottom: 28px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  opacity: 0.95;
+  word-break: break-word;
+}
+
+/* ============================
+   BOTÓN CTA
+============================ */
+.ctaButton {
+  display: inline-block;
+  background-color: #1a414a;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #faf9f7;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  white-space: nowrap; /* Para que el texto no se rompa en varias líneas */
+}
+
+.ctaButton:hover {
+  background: #fbbc05;
+  transform: translateY(-3px);
+}
+
+.ctaButton:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+@media (max-width: 992px) {
+  .hero {
+    padding: 60px 25px;
+  }
+
+  .content {
+    max-width: 680px;
+    padding: 35px 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px;
+    min-height: 75vh;
+  }
+
+  .content {
+    padding: 32px 24px;
+    max-width: 520px;
+  }
+
+  .paragraph {
+    /* Reducir un poco texto en móviles pequeños si se desea */
+    /* Podrías usar JS para recortar texto dinámicamente si es necesario */
+  }
+
+  .ctaButton {
+    padding: 14px 26px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 16px;
+    min-height: 70vh;
+  }
+
+  .content {
+    padding: 24px 18px;
+    max-width: 90vw; /* Limita el ancho a 90% del viewport para evitar borde */
+  }
+
+  .ctaButton {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero {
+    padding: 35px 12px;
+  }
+
+  .content {
+    padding: 20px 14px;
+    max-width: 85vw; /* Más recorte para pantallas ultra pequeñas */
+  }
+}

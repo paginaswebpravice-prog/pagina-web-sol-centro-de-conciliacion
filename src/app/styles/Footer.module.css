@@ -1,0 +1,235 @@
+.footer {
+  background-color: #173f43;
+  color: white;
+  padding-top: 60px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CTA SUPERIOR */
+.cta {
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ctaTitle {
+  font-size: 28px;
+  max-width: 70%;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.ctaHighlight {
+  display: block;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.ctaButton {
+  border: 2px solid #ffffff;
+  color: white;
+  padding: 12px 26px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #f7c600;
+  color: black;
+}
+
+/* CONTENIDO */
+.content {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  padding: 40px 0;
+  gap: 30px;
+}
+
+/* COLUMNAS */
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LOGO */
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.text {
+  font-size: 14px;
+  color: #d0d0d0;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* TÍTULOS */
+.heading {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* LISTAS */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #d0d0d0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.listItem:hover {
+  color: #f7c600;
+}
+
+/* REDES */
+.socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.socialLink {
+  width: 36px;
+  height: 36px;
+  background-color: #2b585b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.socialLink:hover {
+  background-color: #f7c600;
+  color: black;
+  transform: translateY(-3px);
+}
+
+/* HORARIO */
+.break {
+  display: block;
+}
+
+/* BARRA INFERIOR */
+.bottom {
+  border-top: 1px solid #2b585b;
+  margin-top: 30px;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy {
+  font-size: 13px;
+  color: #d0d0d0;
+}
+
+.legal {
+  display: flex;
+  gap: 20px;
+}
+
+.legalLink {
+  font-size: 13px;
+  color: #d0d0d0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.legalLink:hover {
+  color: #f7c600;
+}
+
+/* ---------- BOTONES FIJOS ---------- */
+.fixedButtons {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.phoneBtn {
+  background-color: #ffffff;
+  border: 1.5px solid #25d366;
+  color: #25d366;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.phoneBtn:hover {
+  background-color: #25d366;
+  color: #ffffff;
+  border-color: #1a411a;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .ctaTitle {
+    max-width: 100%;
+    font-size: 24px;
+  }
+
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

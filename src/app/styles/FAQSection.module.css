@@ -1,0 +1,157 @@
+.faqSection {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f5f5f5; /* Texto más claro */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1a414a;
+  text-align: center;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  color: #456b74;
+}
+
+/* ==========================
+   CONTENEDOR DEL ACORDEÓN
+========================== */
+.accordion {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ==========================
+   CADA ITEM
+========================== */
+.accordionItem {
+  background: rgba(255, 255, 255, 0.065); /* Fondo claro semi-transparente */
+  border: 1px solid #456b74;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  backdrop-filter: blur(4px); /* efecto sutil elegante */
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.accordionItem.active {
+  background: rgba(255, 255, 255, 0.12); /* Más claro al abrir */
+  border-color: rgba(212, 175, 55, 0.45);
+}
+
+/* ==========================
+   BOTÓN DEL ACORDEÓN
+========================== */
+.accordionButton {
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a414a;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  transition: color 0.3s ease;
+}
+
+.accordionButton:hover,
+.accordionItem.active .accordionButton {
+  color: #456b74;
+}
+
+.icon {
+  font-size: 1.5rem;
+  font-weight: 700;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.accordionItem.active .icon {
+  transform: rotate(180deg);
+}
+
+/* ==========================
+   CONTENIDO DEL ITEM
+========================== */
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0 0 10px 10px;
+  text-align: left;
+  color: #1a414a;
+  box-sizing: border-box;
+}
+
+.accordionContent p {
+  margin: 1rem 0 1.5rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ==========================
+        RESPONSIVE
+========================== */
+@media (max-width: 1024px) {
+  .faqSection {
+    max-width: 90vw;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .accordionButton {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+
+  .accordionContent {
+    padding: 0 1rem;
+  }
+
+  .icon {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.7rem;
+  }
+
+  .accordionButton {
+    padding: 0.9rem 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .accordionContent p {
+    font-size: 0.9rem;
+  }
+
+  .faqSection {
+    padding: 0 0.25rem;
+  }
+}

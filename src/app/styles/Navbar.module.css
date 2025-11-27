@@ -1,0 +1,177 @@
+/* ============================
+   NAVBAR GENERAL
+============================ */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  background: transparent;
+}
+
+/* Navbar con fondo blanco (activo siempre en tu caso) */
+.scrolled {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================
+   CONTENEDOR INTERNO
+============================ */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ============================
+   LOGO
+============================ */
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* light (cuando navbar es transparente o en home arriba) */
+.light {
+  color: #ffffff;
+}
+
+/* dark (cuando navbar tiene fondo blanco) */
+.dark {
+  color: #004a80; /* azul oscuro */
+}
+
+/* ============================
+   LINKS (DESKTOP)
+============================ */
+.links {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  transition: right 0.3s ease;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a414a; /* azul oscuro */
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #456b74; /* amarillo brillante */
+}
+
+/* ============================
+   CTA BUTTON
+============================ */
+.ctaButton {
+  background-color: #1a414a; /* amarillo dorado */
+  border: none;
+  padding: 14px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #faf9f7;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+.ctaButton:hover {
+  background-color: #fbbc05; /* azul claro */
+}
+
+/* ============================
+   MENÚ HAMBURGUESA
+============================ */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #004a80;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+.hamburger:hover span {
+  background: #f7c600;
+}
+
+/* ============================
+   RESPONSIVE (TABLET / MOBILE)
+============================ */
+@media (max-width: 850px) {
+  /* Mostrar hamburguesa */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Menú móvil oculto inicialmente */
+  .links {
+    position: fixed;
+    top: 85px; /* justo debajo navbar */
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #ffffff;
+    flex-direction: column;
+    gap: 28px;
+    padding: 40px 20px;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+    z-index: 998;
+    transition: right 0.35s ease;
+  }
+
+  /* Cuando está activo → aparece */
+  .active {
+    right: 0;
+  }
+
+  /* Links del menú móvil */
+  .links a {
+    font-size: 18px;
+    color: #004a80 !important;
+    font-weight: 700;
+  }
+
+  /* Ajustes responsivos botón */
+  .ctaButton {
+    padding: 12px 24px;
+    font-size: 15px;
+    width: 100%; /* botón ancho completo en móvil */
+    max-width: none;
+  }
+}
+
+/* ============================
+   RESPONSIVE EXTRA (MÓVILES PEQUEÑOS)
+============================ */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  /* Ajustes responsivos botón */
+  .ctaButton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
