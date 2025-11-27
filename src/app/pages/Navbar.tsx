@@ -57,17 +57,17 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/Practice" onClick={() => setMenuOpen(false)}>
+            <Link href="/practice" onClick={() => setMenuOpen(false)}>
               AREAS DE PRACTICA
             </Link>
           </li>
           <li>
-            <Link href="/Blog" onClick={() => setMenuOpen(false)}>
+            <Link href="/blog" onClick={() => setMenuOpen(false)}>
               BLOG
             </Link>
           </li>
           <li>
-            <Link href="/Contact" onClick={() => setMenuOpen(false)}>
+            <Link href="/contact" onClick={() => setMenuOpen(false)}>
               CONTACTO
             </Link>
           </li>
