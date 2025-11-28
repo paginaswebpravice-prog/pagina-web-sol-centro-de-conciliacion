@@ -1,9 +1,10 @@
 .section {
   background: #f6f4ec;
-  padding: 90px 20px;
+  padding: 120px 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* HEADER */
 .header {
   max-width: 800px;
   margin: 0 auto 60px;
@@ -29,20 +30,29 @@
   line-height: 1.6;
 }
 
+/* GRID */
 .grid {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto; /* Centrado real */
+  padding: 0 10px; /* Evita corrimiento en móviles */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border: 1px solid #ddd;
+  border: none; /* Limpia el diseño */
+  box-sizing: border-box;
 }
 
+/* TARJETAS */
 .card {
   background: #f6f4ec;
   padding: 35px 25px;
   border: 1px solid #ddd;
   transition: all 0.3s ease;
   cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrado horizontal */
+  text-align: center; /* Texto centrado */
 }
 
 .card:hover {
@@ -57,6 +67,7 @@
   background: #ffffff;
 }
 
+/* ICONO */
 .icon {
   font-size: 36px;
   color: #1a414a;
@@ -65,26 +76,28 @@
 }
 
 .card:hover .icon,
-.card:hover .cardTitle {
-  color: #fbbc05;
-}
-
+.card:hover .cardTitle,
 .active .icon {
   color: #fbbc05;
 }
 
+/* TEXTO */
 .cardTitle {
   font-size: 18px;
   color: #1a414a;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .cardDesc {
   font-size: 14px;
   color: #808080;
   line-height: 1.6;
+  text-align: center;
+  max-width: 240px; /* evita texto súper ancho */
 }
 
+/* LINK */
 .link {
   margin-top: 14px;
   display: inline-block;
@@ -106,7 +119,18 @@
 }
 
 @media (max-width: 600px) {
+  .section {
+    padding: 70px 15px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .card {
+    margin-inline: auto; /* OBLIGA centrado */
+    width: 100%;
+    max-width: 360px; /* evita tarjetas gigantes */
   }
 }
