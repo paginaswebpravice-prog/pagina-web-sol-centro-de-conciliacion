@@ -4,6 +4,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* CONTENEDOR GENERAL */
 .container {
   max-width: 1200px;
   margin: auto;
@@ -11,22 +12,23 @@
   gap: 60px;
   align-items: center;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
-/* TEXTO */
+/* COLUMNA TEXTO */
 .textColumn {
   flex: 1;
 }
 
 .title {
-  font-size: 42px;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
   color: #173f43;
   line-height: 1.2;
   margin-bottom: 25px;
 }
 
 .description {
-  font-size: 17px;
+  font-size: clamp(0.95rem, 2.6vw, 1.05rem);
   line-height: 1.7;
   color: #4f4f4f;
   margin-bottom: 30px;
@@ -52,34 +54,73 @@
   font-weight: 700;
 }
 
-/* IMAGEN */
+/* COLUMNA IMAGEN */
 .imageColumn {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
+/* IMAGEN */
 .image {
-  border-radius: 6px;
-  object-fit: cover;
-  max-width: 100%;
+  width: 100%;
+  max-width: 480px; /* Desktop */
   height: auto;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.02);
 }
 
 /* ------------------ RESPONSIVE ------------------ */
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
+  .container {
+    gap: 45px;
+  }
+
+  .image {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
   .container {
     flex-direction: column;
     text-align: center;
-  }
-
-  .title {
-    font-size: 32px;
+    gap: 35px;
   }
 
   .list li {
     justify-content: center;
+  }
+
+  .image {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 50px 15px;
+  }
+
+  .container {
+    gap: 28px;
+  }
+
+  .image {
+    max-width: 260px; /* ✅ Tamaño perfecto celular */
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .image {
+    max-width: 220px; /* Ultra small phones */
   }
 }

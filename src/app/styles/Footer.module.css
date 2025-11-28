@@ -10,14 +10,15 @@
 .cta {
   max-width: 1200px;
   margin: auto;
-  padding-bottom: 40px;
+  padding: 0 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .ctaTitle {
-  font-size: 28px;
+  font-size: clamp(20px, 3vw, 28px);
   max-width: 70%;
   line-height: 1.3;
   margin: 0;
@@ -29,6 +30,7 @@
   margin-top: 5px;
 }
 
+/* Botón CTA */
 .ctaButton {
   border: 2px solid #ffffff;
   color: #1a411a;
@@ -38,6 +40,8 @@
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
+  margin-top: 15px;
+  white-space: nowrap;
 }
 
 .ctaButton:hover {
@@ -50,8 +54,8 @@
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-  padding: 40px 0;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 40px 20px;
   gap: 30px;
 }
 
@@ -59,17 +63,20 @@
 .col {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 /* LOGO */
 .logo {
-  width: 100px;
+  width: 90px;
+  max-width: 100%;
   height: auto;
   border-radius: 15px;
 }
 
+/* TEXTO */
 .text {
-  font-size: 14px;
+  font-size: clamp(13px, 1vw, 14px);
   color: #d0d0d0;
   line-height: 1.6;
   margin-bottom: 18px;
@@ -106,6 +113,7 @@
   display: flex;
   gap: 12px;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .socialLink {
@@ -136,23 +144,28 @@
 .bottom {
   border-top: 1px solid #2b585b;
   margin-top: 30px;
-  padding: 20px 0;
+  padding: 20px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .copy {
   font-size: 13px;
   color: #d0d0d0;
+  text-align: center;
 }
 
 .legal {
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .legalLink {
@@ -166,27 +179,28 @@
   color: #f7c600;
 }
 
-/* ---------- BOTONES FIJOS ---------- */
+/* BOTONES FIJOS */
 .fixedButtons {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   z-index: 1000;
 }
 
+/* Botón WhatsApp */
 .phoneBtn {
   background-color: #ffffff;
-  border: 1.5px solid #25d366;
+  border: 2px solid #25d366;
   color: #25d366;
-  padding: 12px;
+  padding: 10px;
   border-radius: 50%;
   cursor: pointer;
   font-size: 18px;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,35 +216,50 @@
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 992px) {
-  .cta {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-
+/* TABLET */
+@media (max-width: 768px) {
   .ctaTitle {
     max-width: 100%;
-    font-size: 24px;
-  }
-
-  .content {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .content {
-    grid-template-columns: 1fr;
     text-align: center;
   }
 
-  .socials {
+  .cta {
     justify-content: center;
   }
 
+  .ctaButton {
+    width: max-content;
+    margin: auto;
+  }
+
   .bottom {
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .fixedButtons {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .phoneBtn {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+
+  .cta {
+    padding: 0 15px 30px;
+  }
+
+  .content {
+    padding: 30px 15px;
+  }
+
+  .copy {
+    font-size: 12px;
   }
 }

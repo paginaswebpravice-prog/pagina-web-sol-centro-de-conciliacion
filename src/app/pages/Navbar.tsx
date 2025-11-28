@@ -29,62 +29,64 @@ export default function Navbar() {
       }}
     >
       <nav className={styles.container}>
-        {/** LOGO */}
-        <Link href="/" className={`${styles.logo} ${styles.dark}`}>
-          <Image
-            src="/logo_sol.jpg"
-            alt="Logo Sol"
-            width={90}
-            height={90}
-            priority
-          />
-        </Link>
+        {/* IZQUIERDA */}
+        <div className={styles.leftGroup}>
+          <Link href="/" className={`${styles.logo} ${styles.dark}`}>
+            <Image
+              src="/logo_sol.jpg"
+              alt="Logo Sol"
+              width={90}
+              height={90}
+              priority
+            />
+          </Link>
+        </div>
 
-        {/** MENU DESKTOP / MOBILE */}
-        <ul className={`${styles.links} ${menuOpen ? styles.active : ""}`}>
-          <li>
-            <Link href="/" onClick={() => setMenuOpen(false)}>
-              INICIO
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/about"
-              rel="noopener noreferrer"
-              onClick={() => setMenuOpen(false)}
-            >
-              NOSOTROS
-            </Link>
-          </li>
-          <li>
-            <Link href="/practice" onClick={() => setMenuOpen(false)}>
-              AREAS DE PRACTICA
-            </Link>
-          </li>
-          <li>
-            <Link href="/blog" onClick={() => setMenuOpen(false)}>
-              BLOG
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" onClick={() => setMenuOpen(false)}>
-              CONTACTO
-            </Link>
-          </li>
-        </ul>
+        {/* DERECHA */}
+        <div className={styles.rightGroup}>
+          {/* MENU */}
+          <ul className={`${styles.links} ${menuOpen ? styles.active : ""}`}>
+            <li>
+              <Link href="/" onClick={() => setMenuOpen(false)}>
+                INICIO
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" onClick={() => setMenuOpen(false)}>
+                NOSOTROS
+              </Link>
+            </li>
+            <li>
+              <Link href="/practice" onClick={() => setMenuOpen(false)}>
+                ÁREAS
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog" onClick={() => setMenuOpen(false)}>
+                BLOG
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" onClick={() => setMenuOpen(false)}>
+                CONTACTO
+              </Link>
+            </li>
+          </ul>
 
-        <button className={styles.ctaButton} onClick={handleClick}>
-          PROGRAME UNA CONSULTA
-        </button>
+          {/* BOTÓN */}
+          <button className={styles.ctaButton} onClick={handleClick}>
+            PROGRAME UNA CONSULTA
+          </button>
 
-        {/* BOTÓN HAMBURGUESA */}
-        <div
-          className={styles.hamburger}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+          {/* HAMBURGUESA */}
+          <div
+            className={styles.hamburger}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </nav>
     </header>

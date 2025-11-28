@@ -1,177 +1,184 @@
-/* ============================
+/* ============================ 
    NAVBAR GENERAL
 ============================ */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  box-sizing: border-box;
   height: 85px;
   display: flex;
   align-items: center;
+  background: transparent;
   z-index: 1000;
   transition: background 0.3s ease, box-shadow 0.3s ease;
-  background: transparent;
 }
 
-/* Navbar con fondo blanco (activo siempre en tu caso) */
+/* Navbar fondo blanco */
 .scrolled {
   background: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* ============================
-   CONTENEDOR INTERNO
+   CONTENEDOR
 ============================ */
 .container {
   max-width: 1200px;
   width: 90%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+/* ============================
+   GRUPOS
+============================ */
+.leftGroup {
+  display: flex;
+  align-items: center;
+}
+
+.rightGroup {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-left: auto;
 }
 
 /* ============================
    LOGO
 ============================ */
 .logo {
-  font-size: 24px;
-  font-weight: 600;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
-/* light (cuando navbar es transparente o en home arriba) */
-.light {
-  color: #ffffff;
-}
-
-/* dark (cuando navbar tiene fondo blanco) */
-.dark {
-  color: #004a80; /* azul oscuro */
+.logo img {
+  max-height: 58px;
+  width: auto;
+  height: auto;
 }
 
 /* ============================
-   LINKS (DESKTOP)
+   LINKS DESKTOP
 ============================ */
 .links {
   list-style: none;
   display: flex;
-  gap: 36px;
-  transition: right 0.3s ease;
+  gap: 30px;
+  align-items: center;
 }
 
+/* Links */
 .links a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
-  color: #1a414a; /* azul oscuro */
+  color: #1a414a;
   transition: color 0.3s ease;
 }
 
 .links a:hover {
-  color: #456b74; /* amarillo brillante */
+  color: #f7c600;
 }
 
 /* ============================
    CTA BUTTON
 ============================ */
 .ctaButton {
-  background-color: #1a414a; /* amarillo dorado */
+  background-color: #1a414a;
   border: none;
-  padding: 14px 28px;
+  padding: 12px 22px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   color: #faf9f7;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
   white-space: nowrap;
 }
 
 .ctaButton:hover {
-  background-color: #fbbc05; /* azul claro */
+  background-color: #fbbc05;
+  color: #000;
 }
 
 /* ============================
-   MENÚ HAMBURGUESA
+   HAMBURGUESA
 ============================ */
 .hamburger {
   display: none;
   flex-direction: column;
-  gap: 5px;
   cursor: pointer;
+  gap: 4px;
 }
 
 .hamburger span {
-  width: 28px;
+  width: 26px;
   height: 3px;
-  background: #004a80;
+  background: #1a414a;
   border-radius: 2px;
-  transition: background 0.3s ease;
-}
-
-.hamburger:hover span {
-  background: #f7c600;
+  transition: all 0.3s ease;
 }
 
 /* ============================
-   RESPONSIVE (TABLET / MOBILE)
+   NAVBAR MOBILE
 ============================ */
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   /* Mostrar hamburguesa */
   .hamburger {
     display: flex;
   }
 
-  /* Menú móvil oculto inicialmente */
+  /* Esconder botón escritorio */
+  .ctaButton {
+    display: none;
+  }
+
+  /* Menú móvil */
   .links {
     position: fixed;
-    top: 85px; /* justo debajo navbar */
+    top: 85px;
     right: -100%;
-    width: 70%;
+    width: 75%;
+    max-width: 320px;
     height: 100vh;
     background: #ffffff;
     flex-direction: column;
-    gap: 28px;
+    gap: 22px;
     padding: 40px 20px;
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
-    z-index: 998;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.15);
     transition: right 0.35s ease;
+    z-index: 998;
   }
 
-  /* Cuando está activo → aparece */
+  /* Menú visible */
   .active {
     right: 0;
   }
 
-  /* Links del menú móvil */
+  /* Links móviles */
   .links a {
-    font-size: 18px;
-    color: #004a80 !important;
+    font-size: 17px;
     font-weight: 700;
-  }
-
-  /* Ajustes responsivos botón */
-  .ctaButton {
-    padding: 12px 24px;
-    font-size: 15px;
-    width: 100%; /* botón ancho completo en móvil */
-    max-width: none;
   }
 }
 
 /* ============================
-   RESPONSIVE EXTRA (MÓVILES PEQUEÑOS)
+   MOBILE MUY PEQUEÑO
 ============================ */
 @media (max-width: 480px) {
-  .logo {
-    font-size: 20px;
+  .navbar {
+    height: 70px;
   }
 
-  /* Ajustes responsivos botón */
-  .ctaButton {
-    padding: 10px 20px;
-    font-size: 14px;
+  .links {
+    top: 70px;
+    width: 100%;
+  }
+
+  .logo img {
+    max-height: 50px;
   }
 }
