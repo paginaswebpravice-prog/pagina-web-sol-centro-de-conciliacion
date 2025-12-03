@@ -126,7 +126,12 @@ ${mensaje}
             <input type="checkbox" required />
             <span>
               Autorizo el uso de mis datos según la{" "}
-              <a href="#">política de privacidad</a>
+              <a
+                href="https://sumapazvive.com/pages/terms/terms_and_conditions.php"
+                target="_blank"
+              >
+                política de privacidad
+              </a>
             </span>
           </div>
 
