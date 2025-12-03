@@ -1,10 +1,56 @@
+"use client";
+
+import { FormEvent } from "react";
 import styles from "./contact.module.css";
 
 export default function Contact() {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+
+    const nombre = (form.elements.namedItem("nombre") as HTMLInputElement)
+      .value;
+    const apellido = (form.elements.namedItem("apellido") as HTMLInputElement)
+      .value;
+    const telefono = (form.elements.namedItem("telefono") as HTMLInputElement)
+      .value;
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+    const mensaje = (form.elements.namedItem("mensaje") as HTMLTextAreaElement)
+      .value;
+
+    const texto = `
+📩 *Nuevo mensaje desde la web*
+
+👤 Nombre: ${nombre} ${apellido}
+📞 Teléfono: ${telefono}
+📧 Email: ${email}
+
+💬 Mensaje:
+${mensaje}
+    `;
+
+    const mensajeCodificado = encodeURIComponent(texto);
+
+    const numeroWhatsApp = "573232904786";
+
+    // Detectar si es móvil
+    const esMovil =
+      /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
+        navigator.userAgent
+      );
+
+    // URLs dependiendo del dispositivo
+    const url = esMovil
+      ? `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}` // Para móvil (WhatsApp App)
+      : `https://web.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensajeCodificado}`; // Para PC (WhatsApp Web)
+
+    window.open(url, "_blank");
+  };
+
   return (
     <section className={styles.contactSection}>
       <div className={styles.container}>
-        {/* TEXTO LADO IZQUIERDO */}
         <div className={styles.info}>
           <h2>¿Tienes preguntas o quieres agendar una consulta?</h2>
           <p>
@@ -13,40 +59,66 @@ export default function Contact() {
           </p>
         </div>
 
-        {/* FORMULARIO */}
-        <form className={styles.form}>
+        {/* Formulario */}
+        <form className={styles.form} onSubmit={handleSubmit}>
           <h3>Estamos para ayudarte</h3>
 
           <div className={styles.row}>
             <div>
-              <label>Nombre*</label>
-              <input type="text" placeholder="Ej: Juan" required />
+              <label htmlFor="nombre">Nombre*</label>
+              <input
+                id="nombre"
+                name="nombre"
+                type="text"
+                required
+                placeholder="Ej: Juan"
+              />
             </div>
 
             <div>
-              <label>Apellido*</label>
-              <input type="text" placeholder="Ej: Castañeda" required />
+              <label htmlFor="apellido">Apellido*</label>
+              <input
+                id="apellido"
+                name="apellido"
+                type="text"
+                required
+                placeholder="Ej: Castañeda"
+              />
             </div>
           </div>
 
           <div className={styles.row}>
             <div>
-              <label>Teléfono*</label>
-              <input type="tel" placeholder="Ej: 305 2991059" required />
+              <label htmlFor="telefono">Teléfono*</label>
+              <input
+                id="telefono"
+                name="telefono"
+                type="tel"
+                required
+                placeholder="Ej: 305 2991059"
+              />
             </div>
 
             <div>
-              <label>Email*</label>
-              <input type="email" placeholder="Ej: correo@email.com" required />
+              <label htmlFor="email">Email*</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="Ej: correo@email.com"
+              />
             </div>
           </div>
 
           <div>
-            <label>Mensaje*</label>
+            <label htmlFor="mensaje">Mensaje*</label>
             <textarea
-              placeholder="Quiero más información sobre..."
+              id="mensaje"
+              name="mensaje"
               rows={5}
               required
+              placeholder="Quiero más información sobre..."
             ></textarea>
           </div>
 

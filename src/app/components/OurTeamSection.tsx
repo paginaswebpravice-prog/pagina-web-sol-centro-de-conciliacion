@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/OurTeamSection.module.css";
 
 const team = [
@@ -34,7 +35,9 @@ export default function OurTeamSection() {
         ))}
       </div>
 
-      <button className={styles.button}>CONOCE AL EQUIPO</button>
+      <Link href="/about">
+        <button className={styles.button}>CONOCE AL EQUIPO</button>
+      </Link>
     </section>
   );
 }
