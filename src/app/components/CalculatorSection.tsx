@@ -3,6 +3,13 @@
 import { useState } from "react";
 import styles from "../styles/CalculatorSection.module.css";
 
+const handleClick = () => {
+  window.open(
+    "https://api.whatsapp.com/send/?phone=573232904786&text&type=phone_number&app_absent=0",
+    "_blank"
+  );
+};
+
 export default function CalculatorSection() {
   const [amount, setAmount] = useState("");
   const [total, setTotal] = useState<number | null>(null);
@@ -86,7 +93,9 @@ export default function CalculatorSection() {
             resolver tus conflictos de forma pacífica y profesional.
           </p>
 
-          <button className={styles.cta}>Programe una consulta →</button>
+          <button className={styles.cta} onClick={handleClick}>
+            Programe una consulta →
+          </button>
         </div>
       </div>
     </section>
