@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./practice.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,6 +12,8 @@ import {
   faHouse,
   faMoneyBillWave,
 } from "@fortawesome/free-solid-svg-icons";
+
+import { motion, Variants } from "framer-motion";
 
 const areas = [
   {
@@ -62,30 +66,80 @@ const areas = [
   },
 ];
 
+// Variants tipados correctamente para TypeScript
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 35 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.16, 1, 0.3, 1], // easeOut suave compatible con TS
+    },
+  },
+};
+
 export default function Practice() {
   return (
     <section className={styles.section}>
-      <div className={styles.header}>
+      {/* HEADER */}
+      <motion.div
+        className={styles.header}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+        viewport={{ once: true }}
+      >
         <span className={styles.subtitle}>ÁREAS DE PRÁCTICA</span>
         <h2 className={styles.title}>Conciliación Extrajudicial en Derecho</h2>
         <p className={styles.description}>
           En SOL facilitamos soluciones legales y humanas priorizando acuerdos
           eficaces.
         </p>
-      </div>
+      </motion.div>
 
-      <div className={styles.grid}>
+      {/* GRID con animación STAGGER */}
+      <motion.div
+        className={styles.grid}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-50px" }}
+      >
         {areas.map((area, index) => (
-          <a href={area.enlace} key={index} className={styles.card}>
+          <motion.a
+            href={area.enlace}
+            key={index}
+            className={styles.card}
+            variants={cardVariants}
+            whileHover={{
+              y: -6,
+              scale: 1.02,
+              boxShadow: "0 12px 24px rgba(0,0,0,0.08)",
+            }}
+            transition={{ duration: 0.2 }}
+          >
             <div className={styles.icon}>
               <FontAwesomeIcon icon={area.icon} />
             </div>
+
             <h3 className={styles.cardTitle}>{area.title}</h3>
             <p className={styles.cardDesc}>{area.desc}</p>
+
             <span className={styles.link}>Saber más →</span>
-          </a>
+          </motion.a>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

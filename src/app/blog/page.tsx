@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./blog.module.css";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 
 type BlogItem = {
   question: string;
@@ -64,6 +65,30 @@ const faqData: BlogItem[] = [
   },
 ];
 
+// Variants para el fade-in del contenedor
+const containerVariants: Variants = {
+  hidden: { opacity: 0, y: 25 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.16, 1, 0.3, 1],
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+// Variants para cada FAQ item
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 16 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.45, ease: [0.16, 1, 0.3, 1] },
+  },
+};
+
 export default function Blog() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -72,45 +97,81 @@ export default function Blog() {
   };
 
   return (
-    <>
-      <section className={styles.faqSection}>
+    <section className={styles.faqSection}>
+      {/* HEADER animado */}
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+        viewport={{ once: true }}
+      >
         <h3 className={styles.subtitle}>
           Tus preguntas, respondidas con claridad
         </h3>
         <h2 className={styles.heading}>PREGUNTAS FRECUENTES</h2>
-        <div className={styles.accordion}>
-          {faqData.map((item, index) => (
-            <div
-              key={index}
-              className={`${styles.accordionItem} ${
-                activeIndex === index ? styles.active : ""
-              }`}
+      </motion.div>
+
+      {/* LISTA ANIMADA */}
+      <motion.div
+        className={styles.accordion}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: "-80px" }}
+      >
+        {faqData.map((item, index) => (
+          <motion.div
+            key={index}
+            className={`${styles.accordionItem} ${
+              activeIndex === index ? styles.active : ""
+            }`}
+            variants={itemVariants}
+          >
+            {/* Título */}
+            <button
+              className={styles.accordionButton}
+              onClick={() => toggleIndex(index)}
+              aria-expanded={activeIndex === index}
             >
-              <button
-                className={styles.accordionButton}
-                onClick={() => toggleIndex(index)}
-                aria-expanded={activeIndex === index}
-                aria-controls={`faq-content-${index}`}
-                id={`faq-header-${index}`}
-              >
-                {item.question}
-                <span className={styles.icon}>
-                  {activeIndex === index ? "-" : "+"}
-                </span>
-              </button>
-              <div
-                id={`faq-content-${index}`}
-                role="region"
-                aria-labelledby={`faq-header-${index}`}
-                className={styles.accordionContent}
-                style={{ maxHeight: activeIndex === index ? "500px" : "0" }}
-              >
-                <p>{item.answer}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    </>
+              {item.question}
+              <span className={styles.icon}>
+                {activeIndex === index ? "-" : "+"}
+              </span>
+            </button>
+
+            {/* Contenido animado */}
+            <AnimatePresence mode="wait">
+              {activeIndex === index && (
+                <motion.div
+                  className={styles.accordionContent}
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{
+                    height: "auto",
+                    opacity: 1,
+                    transition: {
+                      duration: 0.35,
+                      ease: [0.16, 1, 0.3, 1],
+                    },
+                  }}
+                  exit={{
+                    height: 0,
+                    opacity: 0,
+                    transition: { duration: 0.25 },
+                  }}
+                >
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1, transition: { delay: 0.1 } }}
+                    exit={{ opacity: 0 }}
+                  >
+                    {item.answer}
+                  </motion.p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        ))}
+      </motion.div>
+    </section>
   );
 }

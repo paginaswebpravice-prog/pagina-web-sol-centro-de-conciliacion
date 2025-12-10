@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import styles from "./About.module.css";
 
 const handleClick = () => {
@@ -13,8 +14,20 @@ export default function About() {
   return (
     <section className={styles.section}>
       {/* BLOQUE 1 */}
-      <div className={styles.profile}>
-        <div className={styles.text}>
+      <motion.div
+        className={styles.profile}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <motion.div
+          className={styles.text}
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
           <h2 className={styles.name}>Dr. Harrison Calderon</h2>
           <span className={styles.role}>Abogado</span>
 
@@ -22,48 +35,84 @@ export default function About() {
             Abogado egresado de la Universidad del Rosario ...
           </p>
 
-          <button className={styles.button} onClick={handleClick}>
+          <motion.button
+            className={styles.button}
+            onClick={handleClick}
+            whileHover={{ scale: 1.05 }}
+          >
             Programa tu consulta →
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
 
-        <div className={styles.imageBox}>
+        <motion.div
+          className={styles.imageBox}
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <img src="/doc-harrison.jpg" alt="Dr Harrison" />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      {/* BLOQUE 2 INVERTIDO */}
-      <div className={`${styles.profile} ${styles.reverse}`}>
-        <div className={styles.imageBox}>
+      {/* BLOQUE 2 - INVERTIDO */}
+      <motion.div
+        className={`${styles.profile} ${styles.reverse}`}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <motion.div
+          className={styles.imageBox}
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <img src="/doc-leidy.jpg" alt="Dra Leidy" />
-        </div>
+        </motion.div>
 
-        <div className={styles.text}>
+        <motion.div
+          className={styles.text}
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
           <h2 className={styles.name}>Dra. Leidy Tirado</h2>
           <span className={styles.role}>CCO & Abogada</span>
 
           <p className={styles.description}>
             Abogada y conciliadora en derecho, formada en la Universidad
-            Militar, especializada en la gestión profesional de conflictos
-            civiles, familiares, laborales, comerciales y/o empresariales. Leidy
-            se distingue por un enfoque técnico y estratégico, orientado a la
-            construcción de acuerdos claros, ejecutables y respetuosos de la
-            normativa vigente, evitando procesos judiciales innecesariamente
-            desgastantes. Su actuación imparcial, su rigor jurídico y su
-            capacidad para conducir negociaciones entre las partes la convierten
-            en una profesional confiable para la prevención y gestión eficiente
-            de controversias, brindando verdadera tranquilidad jurídica.
+            Militar, especializada en la gestión profesional de conflictos...
           </p>
 
-          <button className={styles.button} onClick={handleClick}>
+          <motion.button
+            className={styles.button}
+            onClick={handleClick}
+            whileHover={{ scale: 1.05 }}
+          >
             Programa tu consulta →
-          </button>
-        </div>
-      </div>
+          </motion.button>
+        </motion.div>
+      </motion.div>
 
-      {/* BLOQUE 3 INVERTIDO */}
-      <div className={styles.profile}>
-        <div className={styles.text}>
+      {/* BLOQUE 3 */}
+      <motion.div
+        className={styles.profile}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <motion.div
+          className={styles.text}
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
           <h2 className={styles.name}>Dra. Angie Rivera</h2>
           <span className={styles.role}>CCO & Abogada</span>
 
@@ -71,15 +120,25 @@ export default function About() {
             Abogado egresado de la Universidad del Rosario ...
           </p>
 
-          <button className={styles.button} onClick={handleClick}>
+          <motion.button
+            className={styles.button}
+            onClick={handleClick}
+            whileHover={{ scale: 1.05 }}
+          >
             Programa tu consulta →
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
 
-        <div className={styles.imageBox}>
+        <motion.div
+          className={styles.imageBox}
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <img src="/doc-angie.jpg" alt="Dra. Angie" />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
