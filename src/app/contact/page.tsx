@@ -44,7 +44,7 @@ ${mensaje}
     // Construye la URL según dispositivo
     const url = esMovil
       ? `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`
-      : `https://web.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensajeCodificado}`;
+      : ` https://web.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensajeCodificado}`;
 
     // Abre WhatsApp
     window.open(url, "_blank");
