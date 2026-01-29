@@ -1,89 +1,130 @@
+/* =========================
+   SECCIÓN GENERAL
+========================= */
 .section {
   background-color: #fbf9f2;
-  padding: 80px 10%;
+  padding: 90px 10%;
+}
+
+.title {
+  text-align: center;
+  font-size: 34px;
+  color: #123c3f;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+
+/* =========================
+   GRID
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+/* =========================
+   CARD
+========================= */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
-/* CONTENEDOR PRINCIPAL */
-.profile {
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   IMAGEN
+========================= */
+.imageBox {
+  width: 100%;
+  height: 340px;
+  background-color: #f4f6f6; /* fondo elegante */
   display: flex;
   align-items: center;
-  gap: 60px;
+  justify-content: center;
+  padding: 18px;
 }
 
-/* INVERTIDO */
-.reverse {
-  flex-direction: row-reverse;
+.imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ⭐ CAMBIO CLAVE */
+  border-radius: 4px;
+  filter: grayscale(10%); /* muy sutil, elegante */
 }
 
-/* TEXTO */
-.text {
-  max-width: 500px;
+/* =========================
+   CONTENIDO
+========================= */
+.cardContent {
+  padding: 28px 26px 32px;
+  text-align: center;
 }
 
 .name {
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 20px;
   color: #123c3f;
+  margin-bottom: 6px;
+  font-weight: 600;
 }
 
 .role {
-  font-size: 16px;
+  font-size: 14px;
   color: #777;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .description {
-  font-size: 15px;
+  font-size: 14.5px;
   color: #444;
-  line-height: 1.8;
-  margin-bottom: 30px;
+  line-height: 1.6;
+  margin-bottom: 26px;
 }
 
-/* BOTON */
+/* =========================
+   BOTÓN
+========================= */
 .button {
-  background-color: #123c3f;
-  color: white;
-  border: none;
-  padding: 12px 22px;
+  background-color: transparent;
+  border: 1.5px solid #123c3f;
+  color: #123c3f;
+  padding: 10px 22px;
+  font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .button:hover {
-  background-color: #0d2e31;
+  background-color: #123c3f;
+  color: #ffffff;
 }
 
-/* IMAGEN */
-.imageBox {
-  width: 380px;
-  height: auto;
-}
-
-.imageBox img {
-  width: 100%;
-  border-radius: 3px;
-  object-fit: cover;
-}
-
-/* ✅ RESPONSIVE */
-@media (max-width: 900px) {
-  .profile,
-  .reverse {
-    flex-direction: column;
-    text-align: center;
-  }
-
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
   .section {
-    gap: 60px;
     padding: 60px 20px;
   }
 
+  .title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
   .imageBox {
-    width: 100%;
-    max-width: 300px;
+    height: 280px;
   }
 }

@@ -10,143 +10,62 @@ const handleClick = () => {
   );
 };
 
+const lawyers = [
+  {
+    name: "Dr. Harrison Calderon",
+    role: "Abogado",
+    image: "/doc-harrison.jpg",
+    description:
+      "Abogado con experiencia en resolución de conflictos y acompañamiento jurídico estratégico, enfocado en brindar soluciones claras y eficientes.",
+  },
+  {
+    name: "Dra. Leidy Tirado",
+    role: "CCO & Abogada",
+    image: "/doc-leidy.jpg",
+    description:
+      "Abogada y conciliadora en derecho, especializada en la gestión profesional de conflictos y construcción de acuerdos efectivos.",
+  },
+  {
+    name: "Dra. Angie Rivera",
+    role: "CCO & Abogada",
+    image: "/doc-angie.jpg",
+    description:
+      "Abogada con experiencia en conciliación y resolución alternativa de conflictos, con enfoque ético y acompañamiento oportuno.",
+  },
+];
+
 export default function About() {
   return (
     <section className={styles.section}>
-      {/* BLOQUE 1 */}
-      <motion.div
-        className={styles.profile}
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        <motion.div
-          className={styles.text}
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          <h2 className={styles.name}>Dr. Harrison Calderon</h2>
-          <span className={styles.role}>Abogado</span>
+      <h2 className={styles.title}>Nuestro Equipo Jurídico</h2>
 
-          <p className={styles.description}>
-            Abogado con experiencia en resolución de conflictos y acompañamiento
-            jurídico estratégico, enfocado en brindar soluciones claras,
-            eficientes y ajustadas a la normativa vigente.
-          </p>
-
-          <motion.button
-            className={styles.button}
-            onClick={handleClick}
-            whileHover={{ scale: 1.05 }}
+      <div className={styles.grid}>
+        {lawyers.map((lawyer, index) => (
+          <motion.article
+            key={index}
+            className={styles.card}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            viewport={{ once: true }}
           >
-            Programa tu consulta →
-          </motion.button>
-        </motion.div>
+            <div className={styles.imageBox}>
+              <img src={lawyer.image} alt={lawyer.name} />
+            </div>
 
-        <motion.div
-          className={styles.imageBox}
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <img src="/doc-harrison.jpg" alt="Dr. Harrison Calderon, abogado" />
-        </motion.div>
-      </motion.div>
+            <div className={styles.cardContent}>
+              <h3 className={styles.name}>{lawyer.name}</h3>
+              <span className={styles.role}>{lawyer.role}</span>
 
-      {/* BLOQUE 2 - INVERTIDO */}
-      <motion.div
-        className={`${styles.profile} ${styles.reverse}`}
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        <motion.div
-          className={styles.imageBox}
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <img
-            src="/doc-leidy.jpg"
-            alt="Dra. Leidy Tirado, abogada y conciliadora"
-          />
-        </motion.div>
+              <p className={styles.description}>{lawyer.description}</p>
 
-        <motion.div
-          className={styles.text}
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          <h2 className={styles.name}>Dra. Leidy Tirado</h2>
-          <span className={styles.role}>CCO & Abogada</span>
-
-          <p className={styles.description}>
-            Abogada y conciliadora en derecho, con enfoque en la gestión
-            profesional de conflictos y la construcción de acuerdos efectivos
-            mediante procesos ágiles y confiables.
-          </p>
-
-          <motion.button
-            className={styles.button}
-            onClick={handleClick}
-            whileHover={{ scale: 1.05 }}
-          >
-            Programa tu consulta →
-          </motion.button>
-        </motion.div>
-      </motion.div>
-
-      {/* BLOQUE 3 */}
-      <motion.div
-        className={styles.profile}
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        <motion.div
-          className={styles.text}
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-        >
-          <h2 className={styles.name}>Dra. Angie Rivera</h2>
-          <span className={styles.role}>CCO & Abogada</span>
-
-          <p className={styles.description}>
-            Abogada con experiencia en conciliación y resolución alternativa de
-            conflictos, orientada a ofrecer acompañamiento jurídico ético, claro
-            y oportuno.
-          </p>
-
-          <motion.button
-            className={styles.button}
-            onClick={handleClick}
-            whileHover={{ scale: 1.05 }}
-          >
-            Programa tu consulta →
-          </motion.button>
-        </motion.div>
-
-        <motion.div
-          className={styles.imageBox}
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <img src="/doc-angie.jpg" alt="Dra. Angie Rivera, abogada" />
-        </motion.div>
-      </motion.div>
+              <button className={styles.button} onClick={handleClick}>
+                Programar consulta
+              </button>
+            </div>
+          </motion.article>
+        ))}
+      </div>
     </section>
   );
 }
