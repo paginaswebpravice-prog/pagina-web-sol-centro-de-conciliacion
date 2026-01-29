@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} aria-labelledby="about-sol-title">
       <div className={styles.container}>
         {/* =======================
             COLUMNA DE TEXTO
@@ -19,12 +19,14 @@ export default function AboutSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <motion.h2
+            id="about-sol-title"
             className={styles.title}
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Comprometidos con soluciones efectivas y profesionales
+            Centro de Conciliación y Arbitraje comprometido con soluciones
+            legales efectivas
           </motion.h2>
 
           <motion.p
@@ -33,14 +35,15 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            En Sol Centro de Conciliación brindamos mecanismos alternativos de
-            resolución de conflictos con enfoque en la eficiencia, la
-            transparencia y el acompañamiento personalizado. Nuestro compromiso
-            es ofrecer procesos claros, ágiles y fundamentados en la normativa
-            vigente.
+            En <strong>SOL Centro de Conciliación y Arbitraje</strong> brindamos
+            mecanismos alternativos de resolución de conflictos a través de la
+            conciliación extrajudicial y el arbitraje, ofreciendo soluciones
+            jurídicas eficientes, transparentes y ajustadas a la normativa
+            vigente en Colombia. Acompañamos a personas y empresas con un
+            enfoque profesional, estratégico y orientado a resultados.
           </motion.p>
 
-          {/* LISTA CON STAGGER */}
+          {/* LISTA DE BENEFICIOS */}
           <motion.ul
             className={styles.list}
             initial="hidden"
@@ -54,11 +57,11 @@ export default function AboutSection() {
             }}
           >
             {[
-              "Tiempos de resolución significativamente menores que los procesos judiciales.",
-              "Estrategias jurídicas definidas desde la primera sesión.",
-              "Comunicación directa, clara y profesional.",
-              "Acompañamiento integral en cada etapa del proceso.",
-              "Resultados verificables en acuerdos y recuperaciones efectivas.",
+              "Tiempos de resolución más rápidos frente a procesos judiciales tradicionales.",
+              "Estrategias jurídicas claras definidas desde la primera sesión de conciliación o arbitraje.",
+              "Comunicación directa, transparente y profesional durante todo el proceso.",
+              "Acompañamiento integral en cada etapa de la resolución del conflicto.",
+              "Resultados verificables mediante acuerdos efectivos y soluciones legalmente seguras.",
             ].map((item, i) => (
               <motion.li
                 key={i}
@@ -86,10 +89,11 @@ export default function AboutSection() {
         >
           <Image
             src="/Equipo_Sol_4_3.webp"
-            alt="Equipo SOL"
+            alt="Equipo profesional de SOL Centro de Conciliación y Arbitraje en Colombia"
             width={500}
             height={650}
             className={styles.image}
+            priority={false}
           />
         </motion.div>
       </div>

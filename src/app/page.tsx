@@ -12,7 +12,9 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <PracticeSection />
-      <CalculatorSection />
+      {/** 
+        <CalculatorSection />
+      */}
       <OurTeamSection />
       <FAQSection />
     </>

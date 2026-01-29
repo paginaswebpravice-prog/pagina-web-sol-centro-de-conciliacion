@@ -11,24 +11,25 @@ type FAQItem = {
 
 const faqData: FAQItem[] = [
   {
-    question: "¿Necesito un abogado para presentar una conciliación?",
+    question: "¿Necesito un abogado para iniciar una conciliación?",
     answer:
-      "No siempre. Si existen bienes, hijas o hijos menores, o desacuerdos materiales, es recomendable contar con asesoría para proteger tus derechos y elegir el mecanismo adecuado.",
+      "No siempre es obligatorio, pero contar con asesoría legal es altamente recomendable cuando existen bienes, hijas o hijos menores, obligaciones económicas o desacuerdos relevantes. Un abogado te ayuda a proteger tus derechos y a estructurar un acuerdo válido y seguro.",
   },
   {
-    question: "¿Cuál es la diferencia entre divorcio y separación de cuerpos?",
+    question:
+      "¿Cuál es la diferencia entre divorcio y separación de cuerpos en Colombia?",
     answer:
-      "La separación de cuerpos suspende la vida en común; el divorcio disuelve el vínculo matrimonial. Te orientamos para identificar el trámite que corresponde a tu caso.",
+      "La separación de cuerpos suspende la convivencia, pero no disuelve el vínculo matrimonial. El divorcio, en cambio, pone fin legal al matrimonio. En conciliación puedes definir cuál trámite se ajusta mejor a tu situación particular.",
   },
   {
-    question: "¿Cómo se define la custodia de hijas e hijos?",
+    question: "¿Cómo se define la custodia y el régimen de visitas?",
     answer:
-      "Se privilegia el interés superior del menor. En conciliación, las partes pueden acordar custodia y visitas con acompañamiento profesional.",
+      "Siempre se prioriza el interés superior del menor. A través de la conciliación, las partes pueden acordar custodia, visitas y responsabilidades parentales con el acompañamiento de profesionales especializados.",
   },
   {
-    question: "¿Cómo se reparten los bienes?",
+    question: "¿Cómo se realiza la división de bienes en una conciliación?",
     answer:
-      "Puede acordarse en conciliación según el régimen patrimonial aplicable. Evaluamos tu situación y proponemos un acuerdo ágil y seguro.",
+      "La distribución de bienes puede acordarse mediante conciliación según el régimen patrimonial aplicable. Analizamos tu caso para proponer un acuerdo claro, equilibrado y jurídicamente válido.",
   },
 ];
 
@@ -40,8 +41,8 @@ export default function FAQSection() {
   };
 
   return (
-    <section className={styles.faqSection}>
-      {/* TÍTULOS */}
+    <section className={styles.faqSection} aria-labelledby="faq-title">
+      {/* SUBTÍTULO */}
       <motion.h3
         className={styles.subtitle}
         initial={{ opacity: 0, y: 15 }}
@@ -49,17 +50,19 @@ export default function FAQSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.4 }}
       >
-        Tus preguntas, respondidas con claridad
+        Resolvemos tus dudas legales paso a paso
       </motion.h3>
 
+      {/* TÍTULO SEO */}
       <motion.h2
+        id="faq-title"
         className={styles.heading}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.1 }}
       >
-        PREGUNTAS FRECUENTES
+        Preguntas frecuentes sobre conciliación y derecho de familia
       </motion.h2>
 
       {/* ACORDEÓN */}
@@ -75,7 +78,6 @@ export default function FAQSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: index * 0.08 }}
           >
-            {/* BOTÓN */}
             <button
               className={styles.accordionButton}
               onClick={() => toggleIndex(index)}
@@ -85,17 +87,16 @@ export default function FAQSection() {
             >
               {item.question}
 
-              {/* ICONO ANIMADO */}
               <motion.span
                 className={styles.icon}
                 animate={{ rotate: activeIndex === index ? 180 : 0 }}
                 transition={{ duration: 0.25 }}
+                aria-hidden="true"
               >
                 {activeIndex === index ? "-" : "+"}
               </motion.span>
             </button>
 
-            {/* CONTENIDO */}
             <AnimatePresence initial={false}>
               {activeIndex === index && (
                 <motion.div

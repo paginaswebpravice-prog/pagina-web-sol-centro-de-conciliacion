@@ -12,56 +12,55 @@ import {
   faHouse,
   faMoneyBillWave,
 } from "@fortawesome/free-solid-svg-icons";
-
 import { motion } from "framer-motion";
 
 const areas = [
   {
     title: "Asuntos Comerciales",
-    desc: "Asesoría en disputas entre empresas o sobre contratos comerciales, sociedades y operaciones mercantiles",
+    desc: "Conciliación en conflictos comerciales entre empresas, contratos mercantiles, sociedades y obligaciones económicas.",
     icon: faMoneyBillWave,
   },
   {
     title: "Asuntos Civiles",
-    desc: "Resolución de conflictos relacionados con contratos, daños, herencias y derechos personales, entre otros temas civiles.",
+    desc: "Resolución extrajudicial de conflictos civiles relacionados con contratos, daños, herencias y derechos personales.",
     icon: faScaleBalanced,
   },
   {
     title: "Asuntos de Copropiedad",
-    desc: "Gestión de conflictos en propiedad horizontal, como cuotas de administración, mantenimiento y derechos de los copropietarios.",
+    desc: "Conciliación en propiedad horizontal sobre cuotas de administración, uso de zonas comunes y derechos de copropietarios.",
     icon: faBuilding,
   },
   {
     title: "Asuntos Laborales",
-    desc: "Resolución en conflictos entre empleadores y empleados, incluyendo despidos, contratos y reclamaciones de derechos laborales.",
+    desc: "Conciliación laboral entre empleadores y trabajadores en temas de despido, contratos y reclamaciones de derechos.",
     icon: faBriefcase,
   },
   {
     title: "Alimentos para Menores",
-    desc: "Asesoría y gestión en procesos legales para garantizar el cumplimiento de la manutención económica de los hijos.",
+    desc: "Conciliación familiar orientada a garantizar el cumplimiento de obligaciones alimentarias de niños y adolescentes.",
     icon: faChild,
   },
   {
     title: "Custodia y Régimen de Visitas",
-    desc: "Orientación en disputas sobre la tenencia de los hijos y cronogramas de visitas.",
+    desc: "Mecanismos de conciliación para definir custodia, cuidado personal y régimen de visitas de menores.",
     icon: faClipboardList,
   },
   {
     title: "Asuntos Vecinales",
-    desc: "Mediación en problemas de convivencia entre vecinos, ruidos y normas comunitarias.",
+    desc: "Mediación y conciliación en conflictos de convivencia, ruidos, uso de espacios comunes y normas comunitarias.",
     icon: faUsers,
   },
   {
     title: "Liquidación de Sociedad Conyugal",
-    desc: "Acompañamiento en la distribución justa de bienes adquiridos durante el matrimonio.",
+    desc: "Conciliación para la distribución equitativa de bienes adquiridos durante el matrimonio o unión marital.",
     icon: faHouse,
   },
 ];
 
 export default function PracticeSection() {
   return (
-    <section className={styles.section}>
-      {/* Encabezado con Fade-Up */}
+    <section className={styles.section} aria-labelledby="practice-title">
+      {/* Encabezado */}
       <motion.div
         className={styles.header}
         initial={{ opacity: 0, y: 25 }}
@@ -69,15 +68,23 @@ export default function PracticeSection() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <span className={styles.subtitle}>ÁREAS DE PRÁCTICA</span>
-        <h2 className={styles.title}>Conciliación Extrajudicial en Derecho</h2>
+        <span className={styles.subtitle}>ÁREAS DE CONCILIACIÓN</span>
+
+        <h2 id="practice-title" className={styles.title}>
+          Áreas de conciliación extrajudicial en derecho para personas y
+          empresas
+        </h2>
+
         <p className={styles.description}>
-          En SOL facilitamos soluciones legales y humanas priorizando acuerdos
-          eficaces.
+          En <strong>SOL Centro de Conciliación y Arbitraje</strong> facilitamos
+          la resolución alternativa de conflictos a través de la conciliación
+          extrajudicial en distintas áreas del derecho, ofreciendo soluciones
+          legales, humanas y eficaces conforme a la normativa vigente en
+          Colombia.
         </p>
       </motion.div>
 
-      {/* Grid con Stagger Animation */}
+      {/* Grid de áreas */}
       <motion.div
         className={styles.grid}
         initial="hidden"
@@ -101,10 +108,12 @@ export default function PracticeSection() {
             }}
             transition={{ duration: 0.45 }}
           >
-            <div className={styles.icon}>
+            <div className={styles.icon} aria-hidden="true">
               <FontAwesomeIcon icon={area.icon} />
             </div>
+
             <h3 className={styles.cardTitle}>{area.title}</h3>
+
             <p className={styles.cardDesc}>{area.desc}</p>
           </motion.div>
         ))}

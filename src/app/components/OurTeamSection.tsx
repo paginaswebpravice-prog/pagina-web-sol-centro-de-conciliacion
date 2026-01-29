@@ -5,15 +5,27 @@ import { motion } from "framer-motion";
 import styles from "../styles/OurTeamSection.module.css";
 
 const team = [
-  { name: "Harrison Calderon", role: "Abogado", image: "/doc-harrison.jpg" },
-  { name: "Leidy Tirado", role: "CCO & Abogada", image: "/doc-leidy.jpeg" },
-  { name: "Angie Rivera", role: "CCO & Abogada", image: "/doc-angie.jpg" },
+  {
+    name: "Harrison Calderón",
+    role: "Abogado conciliador",
+    image: "/doc-harrison.jpg",
+  },
+  {
+    name: "Leidy Tirado",
+    role: "CCO & Abogada conciliadora",
+    image: "/doc-leidy.jpeg",
+  },
+  {
+    name: "Angie Rivera",
+    role: "Abogada conciliadora",
+    image: "/doc-angie.jpg",
+  },
 ];
 
 export default function OurTeamSection() {
   return (
-    <section className={styles.section}>
-      {/* Títulos con Motion */}
+    <section className={styles.section} aria-labelledby="team-title">
+      {/* Subtítulo */}
       <motion.span
         className={styles.smallTitle}
         initial={{ opacity: 0, y: 15 }}
@@ -21,19 +33,22 @@ export default function OurTeamSection() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        NUESTROS EXPERTOS
+        NUESTRO EQUIPO JURÍDICO
       </motion.span>
 
+      {/* Título SEO */}
       <motion.h2
+        id="team-title"
         className={styles.title}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-        Conoce nuestro equipo
+        Equipo jurídico especializado en conciliación y resolución de conflictos
       </motion.h2>
 
+      {/* Descripción optimizada */}
       <motion.p
         className={styles.description}
         initial={{ opacity: 0, y: 25 }}
@@ -41,9 +56,11 @@ export default function OurTeamSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Comprometidos a ayudar a las personas a recibir servicios especializados
-        en resolución alternativa de conflictos con altos estándares de calidad,
-        ética y profesionalismo.
+        Nuestro equipo está conformado por abogados y profesionales del derecho
+        con experiencia en conciliación extrajudicial y mecanismos alternativos
+        de resolución de conflictos. Trabajamos con altos estándares de calidad,
+        ética y profesionalismo para ofrecer soluciones jurídicas claras,
+        eficientes y confiables.
       </motion.p>
 
       {/* GRID */}
@@ -60,7 +77,8 @@ export default function OurTeamSection() {
             <img
               src={member.image}
               className={styles.image}
-              alt={member.name}
+              alt={`Abogado ${member.name} - Equipo jurídico de SOL Centro de Conciliación`}
+              loading="lazy"
             />
 
             <div className={styles.cardText}>
@@ -71,7 +89,7 @@ export default function OurTeamSection() {
         ))}
       </div>
 
-      {/* Botón con Motion */}
+      {/* CTA */}
       <Link href="/about">
         <motion.button
           className={styles.button}
@@ -80,6 +98,7 @@ export default function OurTeamSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
           whileHover={{ scale: 1.05 }}
+          aria-label="Conocer más sobre el equipo jurídico de SOL"
         >
           CONOCE AL EQUIPO
         </motion.button>
