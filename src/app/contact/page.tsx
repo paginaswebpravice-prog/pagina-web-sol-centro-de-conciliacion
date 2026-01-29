@@ -45,7 +45,7 @@ ${mensaje}
   };
 
   return (
-    <section className={styles.contactSection}>
+    <section className={styles.contactSection} aria-labelledby="contact-title">
       {/* BLOQUE SUPERIOR */}
       <div className={styles.container}>
         {/* TEXTO */}
@@ -56,10 +56,17 @@ ${mensaje}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2>¿Tienes preguntas o quieres agendar una consulta?</h2>
+          <h2 id="contact-title">Contacto y agendamiento de consulta legal</h2>
+
           <p>
-            Escríbenos y con gusto te ayudaremos a planear tu proceso legal con
-            nuestros expertos.
+            Escríbenos y con gusto te ayudaremos a planear tu proceso legal de
+            conciliación o arbitraje con el acompañamiento de nuestros abogados
+            expertos.
+          </p>
+
+          <p>
+            📍 Bogotá, Colombia <br />
+            🕒 Lunes a viernes de 8:00 a.m. a 5:00 p.m.
           </p>
         </motion.div>
 
@@ -71,36 +78,67 @@ ${mensaje}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
+          aria-label="Formulario de contacto legal"
         >
-          <h3>Estamos para ayudarte</h3>
+          <h3>Agenda una consulta legal</h3>
 
           <div className={styles.row}>
             <div>
               <label htmlFor="nombre">Nombre*</label>
-              <input id="nombre" name="nombre" type="text" required />
+              <input
+                id="nombre"
+                name="nombre"
+                type="text"
+                required
+                autoComplete="given-name"
+              />
             </div>
 
             <div>
               <label htmlFor="apellido">Apellido*</label>
-              <input id="apellido" name="apellido" type="text" required />
+              <input
+                id="apellido"
+                name="apellido"
+                type="text"
+                required
+                autoComplete="family-name"
+              />
             </div>
           </div>
 
           <div className={styles.row}>
             <div>
               <label htmlFor="telefono">Teléfono*</label>
-              <input id="telefono" name="telefono" type="tel" required />
+              <input
+                id="telefono"
+                name="telefono"
+                type="tel"
+                required
+                autoComplete="tel"
+              />
             </div>
 
             <div>
               <label htmlFor="email">Email*</label>
-              <input id="email" name="email" type="email" required />
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autoComplete="email"
+              />
             </div>
           </div>
 
           <div>
             <label htmlFor="mensaje">Mensaje*</label>
-            <textarea id="mensaje" name="mensaje" rows={5} required />
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows={5}
+              required
+              placeholder="Cuéntanos brevemente tu caso o consulta legal"
+            />
           </div>
 
           <div className={styles.checkbox}>
@@ -123,7 +161,7 @@ ${mensaje}
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
           >
-            Enviar
+            Agendar consulta legal
           </motion.button>
         </motion.form>
       </div>
@@ -136,11 +174,13 @@ ${mensaje}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h3 className={styles.mapTitle}>Nuestra oficina</h3>
+        <h3 className={styles.mapTitle}>
+          Oficina de conciliación y arbitraje en Bogotá
+        </h3>
 
         <div className={styles.mapContainer}>
           <iframe
-            title="Ubicación oficina Pravice"
+            title="Ubicación oficina de conciliación y arbitraje en Bogotá"
             src="https://www.google.com/maps?q=Abogados%20Especialistas%20Pravice%20Bogot%C3%A1&output=embed"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
