@@ -18,51 +18,43 @@ import { motion, Variants } from "framer-motion";
 const areas = [
   {
     title: "Asuntos Comerciales",
-    desc: "Asesoría en disputas entre empresas o sobre contratos comerciales, sociedades y operaciones mercantiles",
+    desc: "Conciliación en conflictos empresariales, contratos, sociedades y relaciones comerciales.",
     icon: faMoneyBillWave,
-    enlace: "/",
   },
   {
     title: "Asuntos Civiles",
-    desc: "Resolución de conflictos relacionados con contratos, daños, herencias y derechos personales, entre otros temas civiles.",
+    desc: "Resolución de disputas civiles relacionadas con contratos, daños, obligaciones y derechos.",
     icon: faScaleBalanced,
-    enlace: "/",
   },
   {
     title: "Asuntos de Copropiedad",
-    desc: "Gestión de conflictos en propiedad horizontal, como cuotas de administración, mantenimiento y derechos de los copropietarios.",
+    desc: "Mediación en conflictos de propiedad horizontal y convivencia entre copropietarios.",
     icon: faBuilding,
-    enlace: "/",
   },
   {
     title: "Asuntos Laborales",
-    desc: "Resolución en conflictos entre empleadores y empleados, incluyendo despidos, contratos y reclamaciones de derechos laborales.",
+    desc: "Gestión de conflictos laborales entre empleadores y trabajadores de forma conciliada.",
     icon: faBriefcase,
-    enlace: "/",
   },
   {
     title: "Alimentos para Menores",
-    desc: "Asesoría y gestión en procesos legales para garantizar el cumplimiento de la manutención económica de los hijos, cubriendo alimentación, educación y salud.",
+    desc: "Acompañamiento en acuerdos de cuota alimentaria que protegen los derechos del menor.",
     icon: faChild,
-    enlace: "/",
   },
   {
     title: "Custodia y Régimen de Visitas",
-    desc: "Orientación en disputas sobre la tenencia de los hijos y la definición de cronogramas que garantizan el derecho de ambos padres a compartir con ellos.",
+    desc: "Orientación legal para definir custodia y visitas priorizando el bienestar familiar.",
     icon: faClipboardList,
-    enlace: "/",
   },
   {
     title: "Asuntos Vecinales",
-    desc: "Mediación en problemas de convivencia entre vecinos, uso de espacios comunes, ruidos y cumplimiento de normas comunitarias.",
+    desc: "Mediación en conflictos de convivencia, uso de espacios comunes y normas comunitarias.",
     icon: faUsers,
-    enlace: "/",
   },
   {
     title: "Liquidación de Sociedad Conyugal",
-    desc: "Acompañamiento en la distribución equitativa de bienes adquiridos durante el matrimonio, garantizando un cierre justo y transparente.",
+    desc: "Conciliación para la distribución justa de bienes tras la disolución del vínculo.",
     icon: faHouse,
-    enlace: "/",
   },
 ];
 
@@ -103,8 +95,9 @@ export default function Practice() {
         <span className={styles.subtitle}>ÁREAS DE PRÁCTICA</span>
         <h2 className={styles.title}>Conciliación Extrajudicial en Derecho</h2>
         <p className={styles.description}>
-          En SOL facilitamos soluciones legales y humanas priorizando acuerdos
-          eficaces.
+          Ofrecemos conciliación extrajudicial en derecho para resolver
+          conflictos de forma ágil, confidencial y efectiva, priorizando el
+          diálogo y los acuerdos duraderos.
         </p>
       </motion.div>
 
@@ -117,8 +110,7 @@ export default function Practice() {
         viewport={{ once: true, margin: "-50px" }}
       >
         {areas.map((area, index) => (
-          <motion.a
-            href={area.enlace}
+          <motion.div
             key={index}
             className={styles.card}
             variants={cardVariants}
@@ -135,9 +127,7 @@ export default function Practice() {
 
             <h3 className={styles.cardTitle}>{area.title}</h3>
             <p className={styles.cardDesc}>{area.desc}</p>
-
-            <span className={styles.link}>Saber más →</span>
-          </motion.a>
+          </motion.div>
         ))}
       </motion.div>
     </section>

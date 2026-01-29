@@ -47,7 +47,6 @@
   padding: 35px 25px;
   border: 1px solid #ddd;
   transition: all 0.3s ease;
-  cursor: pointer;
 
   display: flex;
   flex-direction: column;
