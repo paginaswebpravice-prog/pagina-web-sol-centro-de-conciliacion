@@ -35,12 +35,13 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            En <strong>SOL Centro de Conciliación y Arbitraje</strong> brindamos
-            mecanismos alternativos de resolución de conflictos a través de la
-            conciliación extrajudicial y el arbitraje, ofreciendo soluciones
-            jurídicas eficientes, transparentes y ajustadas a la normativa
-            vigente en Colombia. Acompañamos a personas y empresas con un
-            enfoque profesional, estratégico y orientado a resultados.
+            En <strong>SOL Centro de Conciliación y Arbitraje</strong> ofrecemos
+            mecanismos alternativos de <strong>resolución de conflictos</strong>{" "}
+            mediante procesos de conciliación extrajudicial y arbitraje,
+            conforme a la normativa vigente en Colombia. Acompañamos a personas
+            y empresas que buscan soluciones jurídicas eficientes, transparentes
+            y legalmente seguras, evitando procesos judiciales extensos y
+            costosos.
           </motion.p>
 
           {/* LISTA DE BENEFICIOS */}
@@ -57,11 +58,11 @@ export default function AboutSection() {
             }}
           >
             {[
-              "Tiempos de resolución más rápidos frente a procesos judiciales tradicionales.",
-              "Estrategias jurídicas claras definidas desde la primera sesión de conciliación o arbitraje.",
-              "Comunicación directa, transparente y profesional durante todo el proceso.",
-              "Acompañamiento integral en cada etapa de la resolución del conflicto.",
-              "Resultados verificables mediante acuerdos efectivos y soluciones legalmente seguras.",
+              "Procesos de conciliación y arbitraje con tiempos de resolución más ágiles que la vía judicial tradicional.",
+              "Estrategias jurídicas claras y definidas desde la primera sesión.",
+              "Comunicación directa, transparente y acompañamiento permanente durante todo el proceso.",
+              "Asesoría integral en cada etapa de la resolución alternativa del conflicto.",
+              "Acuerdos efectivos con respaldo legal y resultados verificables.",
             ].map((item, i) => (
               <motion.li
                 key={i}

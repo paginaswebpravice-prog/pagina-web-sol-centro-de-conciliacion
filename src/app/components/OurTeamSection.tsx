@@ -45,7 +45,7 @@ export default function OurTeamSection() {
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-        Equipo jurídico especializado en conciliación y resolución de conflictos
+        Equipo jurídico especializado en conciliación extrajudicial en Colombia
       </motion.h2>
 
       {/* Descripción optimizada */}
@@ -56,17 +56,16 @@ export default function OurTeamSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Nuestro equipo está conformado por abogados y profesionales del derecho
-        con experiencia en conciliación extrajudicial y mecanismos alternativos
-        de resolución de conflictos. Trabajamos con altos estándares de calidad,
-        ética y profesionalismo para ofrecer soluciones jurídicas claras,
-        eficientes y confiables.
+        Nuestro equipo está conformado por abogados conciliadores y
+        profesionales del derecho con experiencia en conciliación extrajudicial
+        en Colombia y mecanismos alternativos de resolución de conflictos,
+        conforme a la normativa legal vigente.
       </motion.p>
 
       {/* GRID */}
       <div className={styles.grid}>
         {team.map((member, index) => (
-          <motion.div
+          <motion.article
             key={index}
             className={styles.card}
             initial={{ opacity: 0, y: 40 }}
@@ -77,20 +76,28 @@ export default function OurTeamSection() {
             <img
               src={member.image}
               className={styles.image}
-              alt={`Abogado ${member.name} - Equipo jurídico de SOL Centro de Conciliación`}
+              alt={`Abogado conciliador ${member.name} - SOL Centro de Conciliación y Arbitraje en Colombia`}
               loading="lazy"
+              itemProp="image"
             />
 
             <div className={styles.cardText}>
-              <h3 className={styles.name}>{member.name}</h3>
-              <p className={styles.role}>{member.role}</p>
+              <h3 className={styles.name} itemProp="name">
+                {member.name}
+              </h3>
+              <p className={styles.role} itemProp="jobTitle">
+                {member.role}
+              </p>
             </div>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
 
       {/* CTA */}
-      <Link href="/about">
+      <Link
+        href="/about"
+        aria-label="Equipo jurídico de SOL Centro de Conciliación"
+      >
         <motion.button
           className={styles.button}
           initial={{ opacity: 0, scale: 0.95 }}

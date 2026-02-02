@@ -71,8 +71,7 @@ export default function PracticeSection() {
         <span className={styles.subtitle}>ÁREAS DE CONCILIACIÓN</span>
 
         <h2 id="practice-title" className={styles.title}>
-          Áreas de conciliación extrajudicial en derecho para personas y
-          empresas
+          Áreas de conciliación extrajudicial en derecho en Colombia
         </h2>
 
         <p className={styles.description}>
@@ -85,7 +84,7 @@ export default function PracticeSection() {
       </motion.div>
 
       {/* Grid de áreas */}
-      <motion.div
+      <motion.article
         className={styles.grid}
         initial="hidden"
         whileInView="visible"
@@ -117,7 +116,7 @@ export default function PracticeSection() {
             <p className={styles.cardDesc}>{area.desc}</p>
           </motion.div>
         ))}
-      </motion.div>
+      </motion.article>
     </section>
   );
 }

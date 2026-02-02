@@ -13,52 +13,62 @@ const faqData: BlogItem[] = [
   {
     question: "¿Qué es la conciliación extrajudicial en derecho?",
     answer:
-      "Es un mecanismo alternativo de solución de conflictos mediante el cual las partes, con la ayuda de un conciliador neutral, buscan llegar a un acuerdo voluntario sin acudir a un proceso judicial, ahorrando tiempo, costos y desgaste emocional.",
+      "Es un mecanismo alternativo de solución de conflictos mediante el cual las partes, con la ayuda de un conciliador neutral, buscan llegar a un acuerdo voluntario sin acudir a un proceso judicial. Permite ahorrar tiempo, costos y desgaste emocional, manteniendo la validez legal del acuerdo.",
   },
   {
     question: "¿Qué tipo de conflictos se pueden conciliar?",
     answer:
-      "Se pueden conciliar asuntos civiles, comerciales, laborales, de familia, copropiedad y convivencia, siempre que la ley lo permita y las partes tengan capacidad para disponer del derecho en conflicto.",
+      "Se pueden conciliar asuntos civiles, comerciales, laborales, de familia, copropiedad y convivencia, siempre que la ley lo permita y las partes tengan la facultad legal para disponer del derecho en conflicto.",
   },
   {
     question: "¿Los acuerdos logrados en conciliación tienen validez legal?",
     answer:
-      "Sí. El acta de conciliación presta mérito ejecutivo y hace tránsito a cosa juzgada, lo que significa que el acuerdo es obligatorio y puede exigirse legalmente en caso de incumplimiento.",
+      "Sí. El acta de conciliación tiene mérito ejecutivo y hace tránsito a cosa juzgada, lo que significa que el acuerdo es obligatorio y puede exigirse legalmente en caso de incumplimiento.",
   },
   {
     question: "¿Cuándo conviene acudir a conciliación en lugar de un juicio?",
     answer:
-      "Cuando se busca una solución rápida, confidencial y menos costosa. La conciliación es ideal para preservar relaciones comerciales, familiares o laborales, evitando procesos largos y desgastantes.",
+      "Cuando se busca una solución más rápida, confidencial y menos costosa. La conciliación es especialmente útil para preservar relaciones familiares, laborales o comerciales, evitando procesos judiciales largos y complejos.",
   },
   {
     question: "¿Qué incluye la asesoría en asuntos comerciales?",
     answer:
-      "Incluye análisis de contratos, manejo de incumplimientos, cobros de obligaciones, negociación entre empresas y acompañamiento en conciliaciones para resolver disputas comerciales de forma estratégica.",
+      "Incluye el análisis de contratos, manejo de incumplimientos, cobro de obligaciones, negociación entre empresas y acompañamiento integral en audiencias de conciliación para resolver disputas comerciales de forma estratégica.",
   },
   {
     question: "¿Se pueden conciliar conflictos laborales?",
     answer:
-      "Sí. Muchos conflictos laborales pueden resolverse mediante conciliación, como liquidaciones, pagos pendientes o terminación de contratos, siempre respetando los derechos mínimos del trabajador.",
+      "Sí. Muchos conflictos laborales pueden resolverse mediante conciliación, como liquidaciones, pagos pendientes, terminación de contratos o acuerdos entre empleador y trabajador, respetando siempre los derechos mínimos establecidos por la ley.",
   },
   {
     question: "¿Cómo se manejan los temas de familia en conciliación?",
     answer:
-      "Se abordan con especial cuidado temas como alimentos, custodia, régimen de visitas y acuerdos familiares, priorizando siempre el interés superior de los menores y el bienestar de las partes.",
+      "Los asuntos de familia se abordan con especial cuidado y enfoque humano, tratando temas como alimentos, custodia, régimen de visitas y acuerdos familiares, priorizando siempre el interés superior de los menores.",
   },
   {
     question: "¿Qué pasa si una de las partes no cumple el acuerdo?",
     answer:
-      "El acta de conciliación permite iniciar un proceso ejecutivo para exigir el cumplimiento del acuerdo, sin necesidad de volver a discutir el fondo del conflicto.",
+      "En caso de incumplimiento, el acta de conciliación permite iniciar un proceso ejecutivo para exigir el cumplimiento del acuerdo, sin necesidad de volver a discutir el fondo del conflicto.",
   },
   {
     question: "¿Es obligatoria la conciliación antes de demandar?",
     answer:
-      "En muchos casos sí. La conciliación extrajudicial es un requisito de procedibilidad antes de acudir a la vía judicial, dependiendo del tipo de proceso y la materia.",
+      "En muchos casos sí. La conciliación extrajudicial en derecho es un requisito de procedibilidad antes de presentar una demanda judicial, dependiendo del tipo de proceso y la materia.",
+  },
+  {
+    question: "¿La conciliación es confidencial?",
+    answer:
+      "Sí. El proceso de conciliación es confidencial, lo que garantiza que la información compartida durante las audiencias no pueda ser utilizada posteriormente en un proceso judicial, brindando mayor tranquilidad a las partes.",
+  },
+  {
+    question: "¿Cuánto tiempo puede durar un proceso de conciliación?",
+    answer:
+      "La conciliación suele resolverse en un tiempo considerablemente menor al de un proceso judicial. En muchos casos, el conflicto puede solucionarse en una o pocas sesiones, dependiendo de la complejidad del asunto.",
   },
   {
     question: "¿Cómo puedo agendar una asesoría o iniciar un proceso?",
     answer:
-      "Actualmente, todas las solicitudes de asesoría e inicio de procesos se realizan directamente a través de WhatsApp, donde recibirás atención personalizada y orientación inicial.",
+      "Actualmente, las solicitudes de asesoría y el inicio de procesos de conciliación se realizan directamente a través de WhatsApp, donde recibirás orientación inicial y atención personalizada.",
   },
 ];
 

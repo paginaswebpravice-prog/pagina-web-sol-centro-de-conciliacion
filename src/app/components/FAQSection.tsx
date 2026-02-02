@@ -11,25 +11,46 @@ type FAQItem = {
 
 const faqData: FAQItem[] = [
   {
-    question: "¿Necesito un abogado para iniciar una conciliación?",
+    question: "¿Necesito un abogado para iniciar una conciliación en Colombia?",
     answer:
-      "No siempre es obligatorio, pero contar con asesoría legal es altamente recomendable cuando existen bienes, hijas o hijos menores, obligaciones económicas o desacuerdos relevantes. Un abogado te ayuda a proteger tus derechos y a estructurar un acuerdo válido y seguro.",
+      "No siempre es obligatorio, pero contar con un abogado conciliador es altamente recomendable cuando existen bienes, hijos menores, obligaciones económicas o desacuerdos complejos. La asesoría legal garantiza que el acuerdo sea válido, equilibrado y conforme a la ley colombiana.",
+  },
+  {
+    question: "¿Qué es la conciliación extrajudicial y para qué sirve?",
+    answer:
+      "La conciliación extrajudicial es un mecanismo alternativo de resolución de conflictos que permite a las partes llegar a acuerdos legales sin acudir a un proceso judicial. Sirve para ahorrar tiempo, costos y evitar litigios prolongados.",
+  },
+  {
+    question: "¿Cuál es la diferencia entre divorcio y separación de cuerpos?",
+    answer:
+      "La separación de cuerpos suspende la convivencia, pero no disuelve el vínculo matrimonial. El divorcio, en cambio, pone fin legal al matrimonio. A través de la conciliación se puede definir cuál opción se ajusta mejor a cada situación familiar.",
   },
   {
     question:
-      "¿Cuál es la diferencia entre divorcio y separación de cuerpos en Colombia?",
+      "¿Cómo se define la custodia y el régimen de visitas de los hijos?",
     answer:
-      "La separación de cuerpos suspende la convivencia, pero no disuelve el vínculo matrimonial. El divorcio, en cambio, pone fin legal al matrimonio. En conciliación puedes definir cuál trámite se ajusta mejor a tu situación particular.",
+      "En la conciliación se prioriza siempre el interés superior del menor. Las partes pueden acordar custodia, cuidado personal, régimen de visitas y responsabilidades parentales con acompañamiento jurídico especializado.",
   },
   {
-    question: "¿Cómo se define la custodia y el régimen de visitas?",
+    question: "¿Es posible fijar la cuota de alimentos mediante conciliación?",
     answer:
-      "Siempre se prioriza el interés superior del menor. A través de la conciliación, las partes pueden acordar custodia, visitas y responsabilidades parentales con el acompañamiento de profesionales especializados.",
+      "Sí. La conciliación es una vía eficaz para establecer cuotas de alimentos para niños, niñas y adolescentes, garantizando acuerdos claros, justos y de obligatorio cumplimiento legal.",
   },
   {
-    question: "¿Cómo se realiza la división de bienes en una conciliación?",
+    question:
+      "¿Qué pasa si una de las partes no cumple el acuerdo conciliatorio?",
     answer:
-      "La distribución de bienes puede acordarse mediante conciliación según el régimen patrimonial aplicable. Analizamos tu caso para proponer un acuerdo claro, equilibrado y jurídicamente válido.",
+      "El acta de conciliación tiene fuerza legal y presta mérito ejecutivo. Esto significa que, en caso de incumplimiento, el acuerdo puede exigirse ante un juez sin necesidad de un nuevo proceso declarativo.",
+  },
+  {
+    question: "¿Qué tipos de conflictos se pueden conciliar?",
+    answer:
+      "Se pueden conciliar asuntos civiles, comerciales, laborales, familiares, vecinales y de copropiedad, siempre que la ley lo permita. Cada caso es analizado para verificar su viabilidad jurídica.",
+  },
+  {
+    question: "¿Cuánto tiempo tarda un proceso de conciliación?",
+    answer:
+      "Los procesos de conciliación suelen resolverse en menos tiempo que un juicio tradicional. En muchos casos, el conflicto puede solucionarse en una o pocas sesiones, dependiendo de la complejidad del asunto.",
   },
 ];
 
@@ -68,7 +89,7 @@ export default function FAQSection() {
       {/* ACORDEÓN */}
       <div className={styles.accordion}>
         {faqData.map((item, index) => (
-          <motion.div
+          <motion.article
             key={index}
             className={`${styles.accordionItem} ${
               activeIndex === index ? styles.active : ""
@@ -80,6 +101,7 @@ export default function FAQSection() {
           >
             <button
               className={styles.accordionButton}
+              itemProp="name"
               onClick={() => toggleIndex(index)}
               aria-expanded={activeIndex === index}
               aria-controls={`faq-content-${index}`}
@@ -113,7 +135,7 @@ export default function FAQSection() {
                 </motion.div>
               )}
             </AnimatePresence>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
     </section>
