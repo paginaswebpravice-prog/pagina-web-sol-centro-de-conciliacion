@@ -1,0 +1,244 @@
+/* =============================
+   WRAPPER GENERAL
+============================= */
+.wrapper {
+  background-color: #faf9f7;
+  color: #333;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* =============================
+   HERO
+============================= */
+.hero {
+  padding: 90px 8%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.heroContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.name {
+  font-size: 2.6rem;
+  color: #1a414a;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.role {
+  font-size: 1.1rem;
+  color: #456b74;
+  font-weight: 500;
+}
+
+.summary {
+  font-size: 1rem;
+  color: #333;
+  max-width: 520px;
+}
+
+/* =============================
+   BOTONES
+============================= */
+.buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.primaryBtn {
+  background-color: #1a414a;
+  color: #ffffff;
+  padding: 12px 26px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primaryBtn:hover {
+  background-color: #456b74;
+}
+
+.secondaryBtn {
+  border: 1.5px solid #1a414a;
+  color: #1a414a;
+  padding: 12px 26px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.secondaryBtn:hover {
+  background-color: #1a414a;
+  color: #fff;
+}
+
+/* =============================
+   MÉTRICAS
+============================= */
+.metrics {
+  display: flex;
+  gap: 40px;
+  margin-top: 25px;
+}
+
+.metrics div {
+  display: flex;
+  flex-direction: column;
+}
+
+.metrics strong {
+  font-size: 1.3rem;
+  color: #fbbc05;
+}
+
+.metrics span {
+  font-size: 0.8rem;
+  color: #456b74;
+}
+
+/* =============================
+   IMAGEN HERO
+============================= */
+.heroRight img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* =============================
+   PERFIL + ÁREAS
+============================= */
+.infoSection {
+  padding: 80px 8%;
+}
+
+.infoContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+}
+
+.profileBlock h3,
+.areasBlock h3,
+.methodSection h3,
+.cta h3 {
+  font-size: 1.5rem;
+  color: #1a414a;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.profileBlock h3::after,
+.areasBlock h3::after,
+.methodSection h3::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #fbbc05;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+.profileBlock p {
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.areasBlock ul {
+  list-style: none;
+  padding: 0;
+}
+
+.areasBlock li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 0.95rem;
+  color: #456b74;
+}
+
+/* =============================
+   METODOLOGÍA
+============================= */
+.methodSection {
+  padding: 70px 8%;
+  background-color: #ffffff;
+  text-align: center;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.methodGrid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.methodGrid div {
+  background-color: #faf9f7;
+  padding: 30px 20px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+.methodGrid span {
+  display: inline-block;
+  background-color: #1a414a;
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+@media (max-width: 900px) {
+  .heroContainer,
+  .infoContainer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .summary {
+    max-width: 100%;
+  }
+
+  .metrics {
+    justify-content: center;
+  }
+
+  .profileBlock h3::after,
+  .areasBlock h3::after,
+  .methodSection h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
