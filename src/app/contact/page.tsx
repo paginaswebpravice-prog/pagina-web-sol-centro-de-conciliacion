@@ -1,172 +1,63 @@
 "use client";
 
-import { FormEvent } from "react";
 import styles from "./contact.module.css";
 import { motion } from "framer-motion";
 
 export default function Contact() {
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const numeroWhatsApp = "573232904786";
 
-    const form = e.currentTarget;
-
-    const nombre = (form.elements.namedItem("nombre") as HTMLInputElement)
-      .value;
-    const apellido = (form.elements.namedItem("apellido") as HTMLInputElement)
-      .value;
-    const telefono = (form.elements.namedItem("telefono") as HTMLInputElement)
-      .value;
-    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
-    const mensaje = (form.elements.namedItem("mensaje") as HTMLTextAreaElement)
-      .value;
-
-    const texto = `
-📩 *Nuevo mensaje recibido desde la web*
-
-👤 *Nombre:* ${nombre} ${apellido}
-📞 *Teléfono:* ${telefono}
-📧 *Email:* ${email}
-
-💬 *Mensaje:*
-${mensaje}
-    `;
-
-    const mensajeCodificado = encodeURIComponent(texto);
-    const numeroWhatsApp = "573232904786";
+  const handleWhatsApp = () => {
+    const mensaje = encodeURIComponent(
+      "Hola, quiero agendar una consulta sobre conciliación legal.",
+    );
 
     const esMovil = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
     const url = esMovil
-      ? `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`
-      : `https://web.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensajeCodificado}`;
+      ? `https://wa.me/${numeroWhatsApp}?text=${mensaje}`
+      : `https://web.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensaje}`;
 
     window.open(url, "_blank");
-    form.reset();
   };
 
   return (
     <section className={styles.contactSection} aria-labelledby="contact-title">
       {/* BLOQUE SUPERIOR */}
       <div className={styles.container}>
-        {/* TEXTO */}
+        {/* TEXTO + CTA */}
         <motion.div
           className={styles.info}
-          initial={{ opacity: 0, x: -25 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 id="contact-title">Contacto y agendamiento de consulta legal</h2>
+          <h2 id="contact-title">Agenda tu consulta en conciliación legal</h2>
 
-          <p>
-            Escríbenos y con gusto te ayudaremos a planear tu proceso legal de
-            conciliación o arbitraje con el acompañamiento de nuestros abogados
-            expertos.
+          <p className={styles.description}>
+            Nuestro equipo de abogados conciliadores está preparado para
+            acompañarte en la resolución de conflictos de manera ágil,
+            estratégica y jurídicamente segura.
           </p>
 
-          <p>
+          <p className={styles.subInfo}>
             📍 Bogotá, Colombia <br />
-            🕒 Lunes a viernes de 8:00 a.m. a 5:00 p.m.
+            🕒 Lunes a viernes · 8:00 a.m. – 5:00 p.m. <br />
+            🌐 Atención presencial y virtual a nivel nacional
           </p>
-        </motion.div>
-
-        {/* FORMULARIO */}
-        <motion.form
-          className={styles.form}
-          onSubmit={handleSubmit}
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          aria-label="Formulario de contacto legal"
-        >
-          <h3>Agenda una consulta legal</h3>
-
-          <div className={styles.row}>
-            <div>
-              <label htmlFor="nombre">Nombre*</label>
-              <input
-                id="nombre"
-                name="nombre"
-                type="text"
-                required
-                autoComplete="given-name"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="apellido">Apellido*</label>
-              <input
-                id="apellido"
-                name="apellido"
-                type="text"
-                required
-                autoComplete="family-name"
-              />
-            </div>
-          </div>
-
-          <div className={styles.row}>
-            <div>
-              <label htmlFor="telefono">Teléfono*</label>
-              <input
-                id="telefono"
-                name="telefono"
-                type="tel"
-                required
-                autoComplete="tel"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="email">Email*</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                autoComplete="email"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label htmlFor="mensaje">Mensaje*</label>
-            <textarea
-              id="mensaje"
-              name="mensaje"
-              rows={5}
-              required
-              placeholder="Cuéntanos brevemente tu caso o consulta legal"
-            />
-          </div>
-
-          <div className={styles.checkbox}>
-            <input id="privacy" type="checkbox" required />
-            <label htmlFor="privacy">
-              Autorizo el uso de mis datos según la{" "}
-              <a
-                href="https://sumapazvive.com/pages/terms/terms_and_conditions.php"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                política de privacidad
-              </a>
-            </label>
-          </div>
 
           <motion.button
-            className={styles.ctaButton}
-            type="submit"
-            whileHover={{ scale: 1.03 }}
+            className={styles.whatsappButton}
+            onClick={handleWhatsApp}
+            whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
           >
-            Agendar consulta legal
+            Agendar por WhatsApp
           </motion.button>
-        </motion.form>
+        </motion.div>
       </div>
 
-      {/* BLOQUE INFERIOR (MAPA) */}
+      {/* BLOQUE MAPA */}
       <motion.div
         className={styles.mapWrapper}
         initial={{ opacity: 0, y: 30 }}
@@ -174,13 +65,11 @@ ${mensaje}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h3 className={styles.mapTitle}>
-          Oficina de conciliación y arbitraje en Bogotá
-        </h3>
+        <h3 className={styles.mapTitle}>Oficina de conciliación en Bogotá</h3>
 
         <div className={styles.mapContainer}>
           <iframe
-            title="Ubicación oficina de conciliación y arbitraje en Bogotá"
+            title="Ubicación oficina de conciliación en Bogotá"
             src="https://www.google.com/maps?q=Abogados%20Especialistas%20Pravice%20Bogot%C3%A1&output=embed"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
