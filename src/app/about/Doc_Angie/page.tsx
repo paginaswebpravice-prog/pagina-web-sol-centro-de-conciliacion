@@ -21,13 +21,16 @@ export default function AngieRivera() {
             </motion.h1>
 
             <h2 className={styles.role}>
-              Abogada Conciliadora · Especialista en Resolución de Conflictos
+              Abogada Conciliadora en Colombia · Especialista en Gestión de
+              Cartera y Derecho Comercial
             </h2>
 
             <p className={styles.summary}>
-              Profesional con amplia experiencia en conciliaciones civiles,
-              comerciales y empresariales. Enfoque estratégico orientado a la
-              solución eficiente y jurídicamente sólida de controversias.
+              Abogada experta en gestión de cartera, conciliaciones y acuerdos
+              de pago. Especialista en derecho comercial y procesos ejecutivos,
+              con destacada trayectoria en recuperación de activos y resolución
+              de conflictos financieros empresariales mediante conciliación
+              extrajudicial en derecho.
             </p>
 
             <div className={styles.buttons}>
@@ -44,25 +47,27 @@ export default function AngieRivera() {
               </Link>
             </div>
 
-            {/* Datos clave integrados */}
             <div className={styles.metrics}>
               <div>
-                <strong>+12</strong>
+                <strong>+5</strong>
                 <span>Años de experiencia</span>
               </div>
               <div>
-                <strong>+800</strong>
+                <strong>+100</strong>
                 <span>Casos gestionados</span>
               </div>
               <div>
-                <strong>Nacional</strong>
-                <span>Cobertura</span>
+                <strong>Empresarial</strong>
+                <span>Enfoque corporativo</span>
               </div>
             </div>
           </div>
 
           <div className={styles.heroRight}>
-            <img src="/doc-angie.jpg" alt="Abogada conciliadora en Colombia" />
+            <img
+              src="/doc-angie.jpg"
+              alt="Dra. Angie Rivera abogada conciliadora especialista en gestión de cartera y derecho comercial en Colombia"
+            />
           </div>
         </div>
       </section>
@@ -72,29 +77,40 @@ export default function AngieRivera() {
         <div className={styles.infoContainer}>
           <div className={styles.profileBlock}>
             <h3>Perfil Profesional</h3>
+
             <p>
-              Abogado conciliador acreditado con trayectoria en la gestión
-              estratégica de conflictos civiles y comerciales. Ha asesorado a
-              empresas y particulares en procesos de conciliación extrajudicial
-              y judicial, promoviendo acuerdos eficientes que garantizan
-              seguridad jurídica y reducción de riesgos procesales.
+              La Dra. Angie Rivera es abogada conciliadora con amplia
+              experiencia en gestión estratégica de cartera y recuperación de
+              activos para empresas. Su práctica se centra en la conciliación
+              extrajudicial en derecho como herramienta efectiva para resolver
+              conflictos financieros y comerciales sin necesidad de litigios
+              prolongados.
             </p>
+
             <p>
-              Su práctica se caracteriza por el análisis técnico riguroso,
-              negociación estructurada y acompañamiento integral durante todas
-              las etapas del proceso conciliatorio.
+              Especialista en derecho comercial y procesos ejecutivos, ha
+              liderado estrategias jurídicas orientadas a la recuperación de
+              liquidez empresarial, estructuración de acuerdos de pago y
+              formalización de obligaciones con plena validez legal.
+            </p>
+
+            <p>
+              Su enfoque práctico y personalizado permite diseñar soluciones
+              jurídicas alineadas con los objetivos financieros de cada empresa,
+              garantizando eficiencia, seguridad jurídica y resultados medibles.
             </p>
           </div>
 
           <div className={styles.areasBlock}>
-            <h3>Áreas de Práctica</h3>
+            <h3>Servicios de Conciliación y Recuperación de Cartera</h3>
+
             <ul>
-              <li>Conciliaciones civiles y comerciales</li>
-              <li>Conflictos contractuales</li>
-              <li>Recuperación de cartera</li>
-              <li>Responsabilidad civil</li>
-              <li>Acuerdos empresariales estratégicos</li>
-              <li>Prevención de litigios</li>
+              <li>Gestión de cartera y recuperación de activos</li>
+              <li>Conciliaciones y acuerdos de pago empresariales</li>
+              <li>Derecho comercial y procesos ejecutivos</li>
+              <li>Resolución de conflictos financieros</li>
+              <li>Negociación estratégica de obligaciones</li>
+              <li>Prevención de litigios comerciales</li>
             </ul>
           </div>
         </div>
@@ -102,38 +118,47 @@ export default function AngieRivera() {
 
       {/* ================= METODOLOGÍA ================= */}
       <section className={styles.methodSection}>
-        <h3>Metodología de Trabajo</h3>
+        <h3>Metodología de Trabajo en Conciliación Empresarial</h3>
+
+        <p className={styles.methodIntro}>
+          La conciliación extrajudicial en derecho permite a las empresas
+          recuperar cartera y resolver conflictos financieros de forma ágil y
+          estructurada, con acuerdos que tienen efectos ejecutivos conforme a la
+          legislación colombiana.
+        </p>
 
         <div className={styles.methodGrid}>
           <div>
             <span>1</span>
-            <p>Análisis jurídico del caso</p>
+            <p>Análisis jurídico y financiero del caso</p>
           </div>
 
           <div>
             <span>2</span>
-            <p>Diseño de estrategia conciliatoria</p>
+            <p>Estrategia de recuperación y negociación estructurada</p>
           </div>
 
           <div>
             <span>3</span>
-            <p>Negociación estructurada</p>
+            <p>Audiencia de conciliación y formalización del acuerdo</p>
           </div>
 
           <div>
             <span>4</span>
-            <p>Formalización legal del acuerdo</p>
+            <p>Seguimiento y garantía de cumplimiento</p>
           </div>
         </div>
       </section>
 
-      {/* ================= CTA FINAL ================= */}
-      <section className={styles.cta}>
-        <h3>Solicite una evaluación profesional de su caso</h3>
-        <Link href="/contacto" className={styles.primaryBtn}>
-          Agendar Consulta
-        </Link>
-      </section>
+      {/* ================= SEO OCULTO ================= */}
+      <p className={styles.seoText}>
+        Abogada conciliadora en Colombia especializada en gestión de cartera,
+        recuperación de activos y derecho comercial. Servicios de conciliación
+        extrajudicial en derecho para empresas, acuerdos de pago, procesos
+        ejecutivos y resolución de conflictos financieros. Centro de
+        conciliación empresarial con enfoque en recuperación de liquidez y
+        prevención de litigios comerciales.
+      </p>
     </main>
   );
 }
