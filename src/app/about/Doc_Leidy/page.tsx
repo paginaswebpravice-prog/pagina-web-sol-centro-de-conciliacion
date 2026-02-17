@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import styles from "../PerfilConciliador.module.css";
 import Link from "next/link";
 
-export default function leidyTirado() {
+export default function LeidyTirado() {
   return (
     <main className={styles.wrapper}>
       {/* ================= HERO ================= */}
@@ -21,13 +21,17 @@ export default function leidyTirado() {
             </motion.h1>
 
             <h2 className={styles.role}>
-              Abogado Conciliador · Especialista en Resolución de Conflictos
+              Abogada Conciliadora en Colombia · Especialista en Derecho
+              Comercial, Empresarial y Protección al Consumidor
             </h2>
 
             <p className={styles.summary}>
-              Profesional con amplia experiencia en conciliaciones civiles,
-              comerciales y empresariales. Enfoque estratégico orientado a la
-              solución eficiente y jurídicamente sólida de controversias.
+              Abogada de la Universidad Militar, experta en gestión comercial y
+              conciliación extrajudicial en derecho. Especializada en derecho
+              comercial, Estatuto del Consumidor (Ley 1480 de 2011) y garantías
+              mobiliarias, brinda acompañamiento estratégico a empresarios y
+              particulares para resolver conflictos mediante acuerdos jurídicos
+              sólidos y ejecutables.
             </p>
 
             <div className={styles.buttons}>
@@ -44,25 +48,27 @@ export default function leidyTirado() {
               </Link>
             </div>
 
-            {/* Datos clave integrados */}
             <div className={styles.metrics}>
               <div>
-                <strong>+12</strong>
+                <strong>+8</strong>
                 <span>Años de experiencia</span>
               </div>
               <div>
-                <strong>+800</strong>
+                <strong>+150</strong>
                 <span>Casos gestionados</span>
               </div>
               <div>
                 <strong>Nacional</strong>
-                <span>Cobertura</span>
+                <span>Cobertura en Colombia</span>
               </div>
             </div>
           </div>
 
           <div className={styles.heroRight}>
-            <img src="/doc-leidy.jpg" alt="Abogada conciliadora en Colombia" />
+            <img
+              src="/doc-leidy.jpg"
+              alt="Dra. Leidy Tirado abogada conciliadora especialista en derecho comercial y protección al consumidor en Colombia"
+            />
           </div>
         </div>
       </section>
@@ -72,29 +78,44 @@ export default function leidyTirado() {
         <div className={styles.infoContainer}>
           <div className={styles.profileBlock}>
             <h3>Perfil Profesional</h3>
+
             <p>
-              Abogado conciliador acreditado con trayectoria en la gestión
-              estratégica de conflictos civiles y comerciales. Ha asesorado a
-              empresas y particulares en procesos de conciliación extrajudicial
-              y judicial, promoviendo acuerdos eficientes que garantizan
-              seguridad jurídica y reducción de riesgos procesales.
+              La Dra. Leidy Tirado es abogada conciliadora con amplia
+              trayectoria en derecho comercial y empresarial, especializada en
+              la resolución de conflictos mediante mecanismos alternativos de
+              solución de controversias (MASC). Cuenta con profundo conocimiento
+              del Estatuto del Consumidor (Ley 1480 de 2011) y del régimen de
+              garantías mobiliarias.
             </p>
+
             <p>
-              Su práctica se caracteriza por el análisis técnico riguroso,
-              negociación estructurada y acompañamiento integral durante todas
-              las etapas del proceso conciliatorio.
+              Ha asesorado a empresarios colombianos en cumplimiento normativo,
+              recuperación de cartera, revisión contractual y prevención de
+              litigios comerciales, facilitando acuerdos de conciliación que
+              protegen los intereses económicos de las partes y reducen riesgos
+              judiciales.
+            </p>
+
+            <p>
+              Su enfoque combina visión jurídica con criterio comercial,
+              lenguaje claro para gerencias y equipos directivos, y orientación
+              a resultados, garantizando acuerdos formalizados con plena validez
+              legal en Colombia.
             </p>
           </div>
 
           <div className={styles.areasBlock}>
-            <h3>Áreas de Práctica</h3>
+            <h3>
+              Servicios de Conciliación en Derecho Comercial y Empresarial
+            </h3>
+
             <ul>
-              <li>Conciliaciones civiles y comerciales</li>
-              <li>Conflictos contractuales</li>
-              <li>Recuperación de cartera</li>
-              <li>Responsabilidad civil</li>
-              <li>Acuerdos empresariales estratégicos</li>
-              <li>Prevención de litigios</li>
+              <li>Conciliación en conflictos comerciales y empresariales</li>
+              <li>Protección al consumidor conforme a la Ley 1480 de 2011</li>
+              <li>Recuperación de cartera y acuerdos de pago</li>
+              <li>Diseño y revisión de contratos comerciales</li>
+              <li>Garantías mobiliarias y obligaciones mercantiles</li>
+              <li>Prevención estratégica de litigios comerciales</li>
             </ul>
           </div>
         </div>
@@ -102,38 +123,49 @@ export default function leidyTirado() {
 
       {/* ================= METODOLOGÍA ================= */}
       <section className={styles.methodSection}>
-        <h3>Metodología de Trabajo</h3>
+        <h3>Metodología de Trabajo en Procesos de Conciliación</h3>
+
+        <p className={styles.methodIntro}>
+          La conciliación extrajudicial en derecho permite resolver conflictos
+          comerciales y empresariales de forma ágil, confidencial y con plena
+          validez jurídica. El proceso aplicado garantiza estructura legal,
+          claridad en las obligaciones y formalización ejecutable conforme a la
+          legislación colombiana.
+        </p>
 
         <div className={styles.methodGrid}>
           <div>
             <span>1</span>
-            <p>Análisis jurídico del caso</p>
+            <p>Análisis jurídico y comercial del conflicto</p>
           </div>
 
           <div>
             <span>2</span>
-            <p>Diseño de estrategia conciliatoria</p>
+            <p>Diseño de estrategia conciliatoria orientada a resultados</p>
           </div>
 
           <div>
             <span>3</span>
-            <p>Negociación estructurada</p>
+            <p>Negociación estructurada entre las partes</p>
           </div>
 
           <div>
             <span>4</span>
-            <p>Formalización legal del acuerdo</p>
+            <p>Formalización legal del acuerdo con efectos ejecutivos</p>
           </div>
         </div>
       </section>
 
-      {/* ================= CTA FINAL ================= */}
-      <section className={styles.cta}>
-        <h3>Solicite una evaluación profesional de su caso</h3>
-        <Link href="/contacto" className={styles.primaryBtn}>
-          Agendar Consulta
-        </Link>
-      </section>
+      {/* ================= SEO OCULTO ================= */}
+      <p className={styles.seoText}>
+        Abogada conciliadora en Colombia especializada en derecho comercial,
+        empresarial y protección al consumidor. Servicios de conciliación
+        extrajudicial en derecho para conflictos comerciales, recuperación de
+        cartera, acuerdos de pago, revisión de contratos, garantías mobiliarias
+        y cumplimiento del Estatuto del Consumidor Ley 1480 de 2011. Centro de
+        conciliación con cobertura nacional y acuerdos con plena validez
+        jurídica.
+      </p>
     </main>
   );
 }
