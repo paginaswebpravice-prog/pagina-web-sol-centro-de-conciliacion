@@ -3,7 +3,12 @@
   margin: 7rem auto 6rem;
   padding: 2rem 1rem;
   text-align: center;
+  box-sizing: border-box;
 }
+
+/* =========================
+   TÍTULOS
+========================= */
 
 .heading {
   font-size: 2.2rem;
@@ -15,62 +20,106 @@
 .subtitle {
   color: #456b74;
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 
-/* GRID GALERÍA */
+/* =========================
+   GRID GALERÍA
+========================= */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 24px;
+  margin-top: 2rem;
 }
 
-/* CARD */
+/* =========================
+   CARD (LINK COMPLETO)
+========================= */
+
 .card {
-  background: rgba(255, 255, 255, 0.07);
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  background: rgba(255, 255, 255, 0.06);
   border: 1px solid #456b74;
-  border-radius: 12px;
-  padding: 1.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  border-radius: 14px;
+
+  padding: 1.75rem;
+  text-align: left;
+
   backdrop-filter: blur(6px);
+
+  transition: all 0.3s ease;
 }
 
+/* Hover elegante */
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   border-color: rgba(212, 175, 55, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-.card.active {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(212, 175, 55, 0.6);
+/* Accesibilidad teclado */
+.card:focus-visible {
+  outline: 2px solid rgba(212, 175, 55, 0.7);
+  outline-offset: 3px;
 }
 
-/* HEADER */
-.cardHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+/* =========================
+   CONTENIDO INTERNO
+========================= */
 
-.cardHeader h3 {
-  font-size: 1.1rem;
+.cardContent h3 {
+  font-size: 1.15rem;
   font-weight: 600;
   color: #1a414a;
+  line-height: 1.4;
+  margin-bottom: 1rem;
 }
 
-.cardHeader span {
-  font-size: 1.5rem;
-  font-weight: bold;
+.readMore {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #456b74;
+  transition: color 0.3s ease;
 }
 
-/* CONTENIDO */
-.cardContent {
-  margin-top: 1rem;
-  text-align: left;
-}
-
-.contentInner p {
-  font-size: 0.95rem;
-  line-height: 1.6;
+.card:hover .readMore {
   color: #1a414a;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.9rem;
+  }
+
+  .card {
+    padding: 1.4rem;
+  }
+
+  .cardContent h3 {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blogSection {
+    margin-top: 9rem;
+  }
+
+  .heading {
+    font-size: 1.7rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
 }
