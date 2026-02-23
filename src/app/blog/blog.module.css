@@ -93,6 +93,56 @@
 }
 
 /* =========================
+   BLOQUES DE SECCIÓN
+========================= */
+
+.sectionBlock {
+  margin-top: 4rem;
+}
+
+.sectionHeader {
+  max-width: 750px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.sectionHeader h3 {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  color: #1a414a;
+}
+
+.sectionHeader p {
+  color: #456b74;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.badges {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badges span {
+  background: rgba(212, 175, 55, 0.15);
+  color: #456b74;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.juridicoBadges span {
+  background: rgba(69, 107, 116, 0.15);
+}
+
+/* =========================
    RESPONSIVE
 ========================= */
 

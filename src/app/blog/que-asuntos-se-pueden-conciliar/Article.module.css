@@ -1,0 +1,166 @@
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+  --navbar-height: 110px;
+
+  --bg-main: #faf9f7;
+  --primary-dark: #1a414a;
+  --primary-medium: #456b74;
+  --accent: #fbbc05;
+
+  --text-base: #333;
+  --text-strong: #000;
+}
+
+/* =========================
+   WRAPPER
+========================= */
+
+.articleWrapper {
+  padding-top: calc(var(--navbar-height) + 40px);
+  padding-bottom: 4rem;
+  background: var(--bg-main);
+}
+
+/* =========================
+   BLOQUE CENTRAL
+========================= */
+
+.articleBlock {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+  position: relative;
+}
+
+/* Línea decorativa con acento */
+.title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: var(--accent);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-radius: 4px;
+}
+
+.categoryCard h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 0.8rem;
+}
+
+/* =========================
+   PÁRRAFOS
+========================= */
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-base);
+  margin-bottom: 1.6rem;
+}
+
+.paragraph strong {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+/* =========================
+   LISTAS
+========================= */
+
+.list {
+  padding-left: 1.3rem;
+  color: var(--primary-medium);
+  line-height: 1.7;
+}
+
+.list li {
+  margin-bottom: 0.8rem;
+  font-size: 0.98rem;
+}
+
+/* =========================
+   CARDS INTERNAS
+========================= */
+
+.categoryCard {
+  background: #ffffff;
+  border: 1px solid rgba(69, 107, 116, 0.25);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.6rem;
+  transition: all 0.3s ease;
+}
+
+.categoryCard:hover {
+  border-color: var(--accent);
+  box-shadow: 0 12px 30px rgba(26, 65, 74, 0.08);
+  transform: translateY(-4px);
+}
+
+/* =========================
+   NOTA
+========================= */
+
+.note {
+  margin-top: 2rem;
+  padding: 1rem 1.2rem;
+  background: rgba(251, 188, 5, 0.08);
+  border-left: 4px solid var(--accent);
+  font-size: 0.95rem;
+  color: var(--primary-dark);
+  line-height: 1.6;
+  border-radius: 6px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .articleWrapper {
+    padding-top: calc(var(--navbar-height) + 20px);
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .paragraph,
+  .list li {
+    font-size: 0.95rem;
+  }
+
+  .categoryCard {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .articleBlock {
+    padding: 1.5rem 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
