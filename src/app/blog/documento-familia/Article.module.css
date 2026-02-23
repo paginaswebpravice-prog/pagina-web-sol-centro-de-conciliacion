@@ -1,0 +1,63 @@
+/* ================= WRAPPER ================= */
+.wrapper {
+  padding: 120px 20px 80px;
+  background: #faf9f7; /* color principal de fondo */
+  min-height: 100vh;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: #ffffff; /* contraste con el wrapper */
+  padding: 50px;
+  border-radius: 16px;
+  border: 1px solid rgba(26, 65, 74, 0.1); /* borde suave #1a414a */
+  line-height: 1.8;
+  box-shadow: 0 12px 35px rgba(26, 65, 74, 0.05); /* sombra suave #1a414a */
+}
+
+/* ================= TITLES ================= */
+.card h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #1a414a; /* color principal */
+  line-height: 1.3;
+}
+
+.card h3 {
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 35px;
+  margin-bottom: 18px;
+  color: #456b74; /* subtítulo */
+}
+
+/* ================= TEXT ================= */
+.card p {
+  font-size: 16px;
+  margin-bottom: 18px;
+  color: #333; /* texto principal */
+}
+
+.card p strong {
+  color: #1a414a; /* resaltar con color principal */
+}
+
+/* ================= CODE BLOCK ================= */
+.card pre {
+  background: #1a414a; /* fondo oscuro para bloques de código */
+  color: #faf9f7; /* texto claro */
+  padding: 28px;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 25px;
+  white-space: pre-wrap;
+}

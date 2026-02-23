@@ -1,0 +1,99 @@
+/* =========================
+   WRAPPER (por navbar fijo)
+========================= */
+.wrapper {
+  padding-top: 140px; /* ajusta según tu navbar */
+  padding-bottom: 80px;
+  background: #faf9f7; /* fondo claro principal */
+}
+
+/* =========================
+   CARD
+========================= */
+.card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff; /* contraste con el wrapper */
+  padding: 50px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(26, 65, 74, 0.05); /* sombra suave usando #1a414a */
+  border: 1px solid rgba(69, 107, 116, 0.2); /* borde suave */
+}
+
+/* =========================
+   TITULOS
+========================= */
+.title {
+  font-size: 30px;
+  color: #1a414a; /* color principal de la paleta */
+  margin-bottom: 25px;
+}
+
+.subTitle {
+  font-size: 20px;
+  color: #456b74; /* color secundario de la paleta */
+  margin: 30px 0 15px;
+}
+
+/* =========================
+   TEXTO
+========================= */
+.text {
+  font-size: 16px;
+  color: #333; /* texto principal */
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.text strong {
+  color: #1a414a; /* resaltar con color principal */
+}
+
+/* =========================
+   NOTE
+========================= */
+.note {
+  background: rgba(251, 188, 5, 0.08); /* amarillo muy suave de la paleta */
+  color: #1a414a; /* texto principal oscuro */
+  padding: 18px 20px;
+  border-left: 4px solid #fbbc05; /* borde amarillo fuerte */
+  border-radius: 8px;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+/* =========================
+   PRE
+========================= */
+.pre {
+  background: #1a414a; /* fondo oscuro principal */
+  color: #faf9f7; /* texto claro para contraste */
+  padding: 25px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .card {
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subTitle {
+    font-size: 18px;
+  }
+
+  .pre {
+    font-size: 13px;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,145 @@
+/* ================= CARD PRINCIPAL ================= */
+
+.modeloCard {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(26, 65, 74, 0.08);
+  border: 1px solid rgba(69, 107, 116, 0.2);
+  margin: 4rem auto;
+  max-width: 900px;
+  transition: all 0.3s ease;
+}
+
+.modeloCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(26, 65, 74, 0.12);
+}
+
+/* ================= TITULOS ================= */
+
+.modeloTitle {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #1a414a;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.modeloTitle::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #fbbc05;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  border-radius: 4px;
+}
+
+.subTitle {
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  color: #456b74;
+  font-weight: 600;
+}
+
+/* ================= TEXTO ================= */
+
+.modeloText {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.modeloNote {
+  background: rgba(251, 188, 5, 0.08);
+  border-left: 4px solid #fbbc05;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #1a414a;
+  margin-bottom: 2rem;
+}
+
+/* ================= DOCUMENTO ================= */
+
+.documentBox {
+  background: #faf9f7;
+  border: 1px solid rgba(69, 107, 116, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+.documentBox pre {
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  color: #000;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* ================= CTA ================= */
+
+.modeloCTA {
+  margin-top: 3rem;
+  padding: 1.8rem;
+  border-radius: 14px;
+  background: rgba(251, 188, 5, 0.08);
+  border: 1px solid rgba(251, 188, 5, 0.3);
+}
+
+.modeloCTA strong {
+  display: block;
+  margin-bottom: 1rem;
+  color: #1a414a;
+  font-size: 1.05rem;
+}
+
+.modeloCTA ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.2rem;
+  color: #333;
+}
+
+.modeloCTA li {
+  margin-bottom: 0.7rem;
+}
+
+/* BOTÓN */
+
+.modeloButton {
+  display: inline-block;
+  background: #1a414a;
+  color: #ffffff;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.modeloButton:hover {
+  background: #fbbc05;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .modeloCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .modeloTitle {
+    font-size: 1.6rem;
+  }
+
+  .documentBox {
+    padding: 1.2rem;
+  }
+}

@@ -57,6 +57,10 @@ const juridicoPosts: BlogPost[] = [
     slug: "actas-ejemplos",
   },
   {
+    title: "Acta de conciliación suscrita por compañeros permanentes",
+    slug: "acta-companeros-permanentes",
+  },
+  {
     title: "Acta de conciliación de alimentos (con ejemplo) + Art. 411 C.C.",
     slug: "acta-alimentos",
   },
