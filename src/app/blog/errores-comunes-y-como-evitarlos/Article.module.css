@@ -83,3 +83,90 @@
 .list li:hover {
   transform: translateX(6px);
 }
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 80px 20px;
+  }
+
+  .title {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+
+  .card {
+    padding: 30px 26px;
+  }
+
+  .list li {
+    font-size: 15.5px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 70px 18px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+
+  .title::after {
+    width: 45px;
+    height: 3px;
+    bottom: -10px;
+  }
+
+  .card {
+    padding: 24px 20px;
+    border-radius: 8px;
+  }
+
+  .list li {
+    font-size: 15px;
+    padding-left: 26px;
+    margin-bottom: 16px;
+  }
+
+  .list li::before {
+    font-size: 13px;
+    top: 1px;
+  }
+
+  /* quitamos desplazamiento lateral en touch */
+  .list li:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 60px 16px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .card {
+    padding: 20px 18px;
+  }
+
+  .list li {
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+
+  .list li::before {
+    font-size: 12px;
+  }
+}

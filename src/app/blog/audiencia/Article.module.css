@@ -139,3 +139,109 @@
   box-shadow: 0 20px 40px rgba(26, 65, 74, 0.12);
   border-color: #fbbc05;
 }
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 100px 20px 70px;
+  }
+
+  .card {
+    padding: 45px;
+  }
+
+  .card h2 {
+    font-size: 26px;
+  }
+
+  .card p {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+
+  .innerCard {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 90px 16px 60px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 30px 22px;
+    border-radius: 16px;
+  }
+
+  .card::before {
+    height: 5px;
+  }
+
+  .card h2 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .card h3 {
+    font-size: 17px;
+  }
+
+  .card p {
+    font-size: 15.5px;
+    margin-bottom: 28px;
+  }
+
+  .grid {
+    gap: 18px;
+  }
+
+  .innerCard {
+    padding: 26px;
+    border-radius: 14px;
+  }
+
+  .innerCard::before {
+    height: 5px;
+  }
+
+  /* Eliminamos elevación en touch */
+  .innerCard:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 80px 14px 50px;
+  }
+
+  .card {
+    padding: 24px 18px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 14.5px;
+    line-height: 1.7;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* fuerza una sola columna limpia */
+    gap: 16px;
+  }
+
+  .innerCard {
+    padding: 22px;
+  }
+}

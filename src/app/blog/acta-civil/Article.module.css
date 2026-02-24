@@ -97,3 +97,91 @@
 .card pre::selection {
   background: rgba(251, 188, 5, 0.3);
 }
+
+@media (max-width: 1024px) {
+  .card {
+    padding: 40px;
+  }
+
+  .card h2 {
+    font-size: 24px;
+  }
+
+  .card h3 {
+    font-size: 19px;
+  }
+
+  .card pre {
+    padding: 50px 50px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 100px 16px 60px; /* menos aire lateral */
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 30px 22px;
+    border-radius: 14px;
+  }
+
+  .card h2 {
+    font-size: 22px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+
+  .card pre {
+    padding: 35px 25px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .card pre::before {
+    top: 10px;
+    left: 10px;
+    right: -10px;
+    bottom: -10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 90px 14px 50px;
+  }
+
+  .card {
+    padding: 24px 18px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card h3 {
+    font-size: 17px;
+  }
+
+  .card pre {
+    padding: 25px 18px;
+    font-size: 13.5px;
+    line-height: 1.7;
+  }
+
+  /* reducimos efecto hoja para que no desborde */
+  .card pre::before {
+    display: none;
+  }
+}

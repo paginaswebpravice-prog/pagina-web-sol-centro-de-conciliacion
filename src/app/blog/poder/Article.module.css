@@ -137,3 +137,142 @@
 .card pre::selection {
   background: rgba(251, 188, 5, 0.3);
 }
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 100px 20px 70px;
+  }
+
+  .card {
+    padding: 40px;
+  }
+
+  .card h2 {
+    font-size: 24px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 15.5px;
+  }
+
+  .innerCard {
+    padding: 26px;
+  }
+
+  .grid {
+    gap: 20px;
+  }
+
+  .card pre {
+    padding: 55px 60px;
+    font-size: 15.5px;
+    line-height: 2;
+  }
+
+  .card pre::before {
+    top: 12px;
+    left: 12px;
+    right: -12px;
+    bottom: -12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 90px 16px 60px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 28px 20px;
+    border-radius: 14px;
+  }
+
+  .card h2 {
+    font-size: 21px;
+  }
+
+  .card h3 {
+    font-size: 17px;
+  }
+
+  .card p {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* fuerza una sola columna limpia */
+    gap: 18px;
+  }
+
+  .innerCard {
+    padding: 22px;
+  }
+
+  /* eliminamos efecto hover fuerte en touch */
+  .innerCard:hover {
+    transform: none;
+  }
+
+  .card pre {
+    padding: 35px 22px;
+    font-size: 14.5px;
+    line-height: 1.9;
+  }
+
+  .card pre::before {
+    top: 8px;
+    left: 8px;
+    right: -8px;
+    bottom: -8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 80px 14px 50px;
+  }
+
+  .card {
+    padding: 22px 16px;
+  }
+
+  .card h2 {
+    font-size: 19px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 14.5px;
+  }
+
+  .innerCard {
+    padding: 18px;
+  }
+
+  .innerCard li {
+    font-size: 14px;
+  }
+
+  .card pre {
+    padding: 28px 18px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  /* quitamos hoja inferior en pantallas muy pequeñas */
+  .card pre::before {
+    display: none;
+  }
+}

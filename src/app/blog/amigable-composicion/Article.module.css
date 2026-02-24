@@ -78,3 +78,98 @@
   font-size: 15px;
   color: #1a414a;
 }
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 100px 20px 70px;
+  }
+
+  .card {
+    padding: 40px;
+  }
+
+  .card h2 {
+    font-size: 24px;
+  }
+
+  .card h3 {
+    font-size: 19px;
+  }
+
+  .card p,
+  .card li {
+    font-size: 15.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 90px 16px 60px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 30px 22px;
+    border-radius: 14px;
+  }
+
+  .card h2 {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .card h3 {
+    font-size: 18px;
+    margin-top: 28px;
+  }
+
+  .card p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .card ul {
+    margin-left: 16px;
+  }
+
+  .card li {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .note {
+    font-size: 14px;
+    padding: 16px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 80px 14px 50px;
+  }
+
+  .card {
+    padding: 24px 18px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card h3 {
+    font-size: 17px;
+  }
+
+  .card p,
+  .card li {
+    font-size: 14.5px;
+  }
+
+  .note {
+    font-size: 13.8px;
+    line-height: 1.6;
+  }
+}
