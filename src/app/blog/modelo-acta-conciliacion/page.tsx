@@ -25,6 +25,10 @@ export default function ModeloActaConciliacion() {
         <h3 className={styles.subTitle}>Modelo (copiar y pegar)</h3>
 
         <div className={styles.documentBox}>
+          <div className={styles.documentHeader}>
+            <span>DOCUMENTO MODELO</span>
+            <span>Uso referencial</span>
+          </div>
           <pre>
             {`ACTA DE CONCILIACIÓN No. [●]
 

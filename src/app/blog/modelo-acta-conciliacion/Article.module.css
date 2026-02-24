@@ -66,20 +66,50 @@
 /* ================= DOCUMENTO ================= */
 
 .documentBox {
+  background: #ffffff;
+  border-left: 5px solid #1a414a;
+  border-radius: 6px;
+  padding: 3rem 3.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+/* efecto hoja */
+.documentBox::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: -12px;
+  bottom: -12px;
   background: #faf9f7;
-  border: 1px solid rgba(69, 107, 116, 0.2);
-  border-radius: 12px;
-  padding: 2rem;
-  margin-top: 1rem;
-  overflow-x: auto;
+  border-radius: 6px;
+  z-index: -1;
+}
+
+.documentHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #456b74;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(26, 65, 74, 0.2);
+  padding-bottom: 0.8rem;
 }
 
 .documentBox pre {
-  font-family: "Courier New", monospace;
-  font-size: 0.9rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.95rem;
   color: #000;
-  line-height: 1.6;
+  line-height: 1.8;
   white-space: pre-wrap;
+}
+
+.documentBox pre::selection {
+  background: rgba(251, 188, 5, 0.3);
 }
 
 /* ================= CTA ================= */

@@ -50,14 +50,50 @@
 }
 
 /* ================= CODE BLOCK ================= */
+/* ================= PRE → ACTA CIVIL FORMAL ================= */
+
 .card pre {
-  background: #1a414a; /* fondo oscuro para bloques de código */
-  color: #faf9f7; /* texto claro */
-  padding: 28px;
-  border-radius: 12px;
-  overflow-x: auto;
-  font-size: 14px;
-  line-height: 1.7;
-  margin-top: 25px;
+  margin-top: 40px;
+  padding: 65px 75px;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 2;
+  color: #000;
   white-space: pre-wrap;
+  position: relative;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.06);
+}
+
+/* efecto hoja inferior */
+.card pre::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: -15px;
+  bottom: -15px;
+  background: #faf9f7;
+  border-radius: 6px;
+  z-index: -1;
+}
+
+/* línea institucional superior */
+.card pre::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #1a414a;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* selección elegante */
+.card pre::selection {
+  background: rgba(251, 188, 5, 0.3);
 }

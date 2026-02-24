@@ -1,70 +1,113 @@
 /* ================= WRAPPER (RESPETA NAVBAR FIJO) ================= */
 .wrapper {
-  padding: 120px 20px 80px; /* espacio superior por navbar */
-  background: #faf9f7; /* fondo principal de la paleta */
+  padding: 140px 20px 100px;
+  background: #faf9f7;
   min-height: 100vh;
 }
 
 /* ================= CONTAINER ================= */
 .container {
-  max-width: 1000px;
+  max-width: 1050px;
   margin: 0 auto;
 }
 
 /* ================= CARD ================= */
 .card {
-  background: #ffffff; /* contraste con el wrapper */
-  padding: 50px;
-  border-radius: 16px;
-  border: 1px solid rgba(26, 65, 74, 0.1); /* borde suave #1a414a */
-  line-height: 1.8;
-  box-shadow: 0 10px 30px rgba(26, 65, 74, 0.05); /* sombra suave #1a414a */
+  position: relative;
+  background: #ffffff;
+  padding: 60px 70px;
+  border-radius: 10px;
+  border: 1px solid rgba(26, 65, 74, 0.15);
+  border-left: 6px solid #1a414a;
+  line-height: 1.85;
+  box-shadow: 0 20px 50px rgba(26, 65, 74, 0.08);
+}
+
+/* efecto hoja sobre fondo */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: -16px;
+  bottom: -16px;
+  background: #faf9f7;
+  border-radius: 10px;
+  z-index: -1;
 }
 
 /* ================= HEADINGS ================= */
 .card h2 {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
-  margin-bottom: 25px;
-  color: #1a414a; /* título principal */
+  margin-bottom: 30px;
+  color: #1a414a;
   line-height: 1.3;
 }
 
 .card h3 {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 600;
-  margin-top: 35px;
-  margin-bottom: 18px;
-  color: #456b74; /* subtítulos */
+  margin-top: 45px;
+  margin-bottom: 20px;
+  color: #456b74;
+  letter-spacing: 0.4px;
 }
 
 /* ================= TEXT ================= */
 .card p {
   font-size: 16px;
-  margin-bottom: 18px;
-  color: #333; /* texto principal */
+  margin-bottom: 22px;
+  color: #333;
 }
 
 .card p strong {
-  color: #1a414a; /* resaltar con color principal */
+  color: #1a414a;
 }
 
-/* ================= CODE BLOCK ================= */
+/* ================= BLOQUES DOCUMENTO (PRE) ================= */
 .card pre {
-  background: #1a414a; /* fondo oscuro para código */
-  color: #faf9f7; /* texto claro */
-  padding: 28px;
-  border-radius: 12px;
-  overflow-x: auto;
-  font-size: 14px;
-  line-height: 1.7;
-  margin-top: 25px;
+  margin-top: 30px;
+  padding: 55px 60px;
+  background: #ffffff;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 4px solid #456b74;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #000;
   white-space: pre-wrap;
+  overflow-x: auto;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.05);
+}
+
+/* selección elegante */
+.card pre::selection {
+  background: rgba(251, 188, 5, 0.3);
+}
+
+/* separación entre modelos */
+.card pre + h3 {
+  margin-top: 60px;
 }
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
   .card {
-    padding: 30px;
+    padding: 40px 30px;
+  }
+
+  .card h2 {
+    font-size: 24px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card pre {
+    padding: 30px 25px;
+    font-size: 14px;
   }
 }

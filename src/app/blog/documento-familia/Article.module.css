@@ -49,15 +49,55 @@
   color: #1a414a; /* resaltar con color principal */
 }
 
-/* ================= CODE BLOCK ================= */
+/* ================= PRE → ACTA FAMILIAR FORMAL (SIN SCROLL) ================= */
+
 .card pre {
-  background: #1a414a; /* fondo oscuro para bloques de código */
-  color: #faf9f7; /* texto claro */
-  padding: 28px;
-  border-radius: 12px;
-  overflow-x: auto;
-  font-size: 14px;
-  line-height: 1.7;
-  margin-top: 25px;
+  margin-top: 40px;
+  padding: 65px 75px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 2;
+  color: #000;
+
   white-space: pre-wrap;
+  word-break: break-word;
+  overflow: visible;
+
+  position: relative;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* efecto hoja inferior */
+.card pre::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: -14px;
+  bottom: -14px;
+  background: #faf9f7;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+/* línea institucional superior (más suave que civil) */
+.card pre::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: #456b74; /* tono secundario más cálido */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* selección elegante */
+.card pre::selection {
+  background: rgba(251, 188, 5, 0.3);
 }
