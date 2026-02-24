@@ -61,7 +61,7 @@ export default function PasoAPasoDelTramite() {
             </ul>
 
             <a
-              href="https://wa.me/57XXXXXXXXXX"
+              href="https://api.whatsapp.com/send/?phone=573232904786&text&type=phone_number&app_absent=0"
               rel="noopener"
               target="_blank"
               className={styles.ctaButton}
