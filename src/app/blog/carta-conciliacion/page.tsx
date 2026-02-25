@@ -1,24 +1,57 @@
 "use client";
 
 import styles from "./Article.module.css";
+import { motion } from "framer-motion";
 
 export default function CartaConciliacion() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <article id="carta-conciliacion" className={styles.card}>
-          <h2>Carta de conciliación (modelo)</h2>
+        <motion.article
+          id="carta-conciliacion"
+          className={styles.card}
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Carta de conciliación (modelo)
+          </motion.h2>
 
-          <p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             La <strong>carta de conciliación</strong> se usa como invitación
             formal previa (antes de radicar) o como comunicación de intención de
             arreglo. Es útil para abrir puerta a un acuerdo y, a nivel
             estratégico, dejar constancia de buena fe.
-          </p>
+          </motion.p>
 
-          <h3>Modelo de carta (invitación a conciliar)</h3>
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            Modelo de carta (invitación a conciliar)
+          </motion.h3>
 
-          <pre>
+          <motion.pre
+            initial={{ opacity: 0, scale: 0.98 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.01 }}
+          >
             {`[Ciudad], [dd] de [mes] de [aaaa]
 
 Señor(a): [Nombre]
@@ -46,8 +79,8 @@ Atentamente,
 [CC]
 [Teléfono]
 [Correo]`}
-          </pre>
-        </article>
+          </motion.pre>
+        </motion.article>
       </div>
     </div>
   );

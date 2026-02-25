@@ -1,30 +1,73 @@
+"use client";
+
 import styles from "./Article.module.css";
+import { motion } from "framer-motion";
 
 export default function ModeloActaConciliacion() {
   return (
     <>
-      <article id="modelo-acta-conciliacion" className={styles.modeloCard}>
-        <h2 className={styles.modeloTitle}>
+      <motion.article
+        id="modelo-acta-conciliacion"
+        className={styles.modeloCard}
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <motion.h2
+          className={styles.modeloTitle}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1, duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           Modelo de acta de conciliación (general)
-        </h2>
+        </motion.h2>
 
-        <p className={styles.modeloText}>
+        <motion.p
+          className={styles.modeloText}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           Si estás buscando un <strong>modelo de acta de conciliación</strong>,
           lo esencial es que el documento deje sin ambigüedades:{" "}
           <strong>quién</strong> cumple, <strong>qué</strong> cumple,{" "}
           <strong>cuándo</strong> y <strong>cómo</strong>. El acuerdo debe ser
           medible (montos, fechas, obligaciones verificables) y anexar soportes
           cuando aplique.
-        </p>
+        </motion.p>
 
-        <p className={styles.modeloNote}>
+        <motion.p
+          className={styles.modeloNote}
+          initial={{ opacity: 0, scale: 0.98 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           Nota: ajusta este modelo a tu centro, reglamento interno y formato.
           Evita frases genéricas como “pagará pronto”.
-        </p>
+        </motion.p>
 
-        <h3 className={styles.subTitle}>Modelo (copiar y pegar)</h3>
+        <motion.h3
+          className={styles.subTitle}
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          Modelo (copiar y pegar)
+        </motion.h3>
 
-        <div className={styles.documentBox}>
+        <motion.div
+          className={styles.documentBox}
+          initial={{ opacity: 0, y: 40, scale: 0.98 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ delay: 0.5, duration: 0.7 }}
+          viewport={{ once: true }}
+          whileHover={{ scale: 1.01 }}
+        >
           <div className={styles.documentHeader}>
             <span>DOCUMENTO MODELO</span>
             <span>Uso referencial</span>
@@ -68,18 +111,56 @@ Firma Conciliador(a): _______________________
 Conciliantes A: _____________________________
 Conciliantes B: _____________________________`}
           </pre>
-        </div>
+        </motion.div>
 
-        <div className={styles.modeloCTA}>
+        <motion.div
+          className={styles.modeloCTA}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7, duration: 0.6 }}
+          viewport={{ once: true }}
+        >
           <strong>Checklist rápido para un acta “ejecutable”</strong>
           <ul>
-            <li>Monto exacto + fechas exactas + medio de pago/entrega.</li>
-            <li>Cómo se acredita el cumplimiento (soporte verificable).</li>
-            <li>Identificación completa de partes.</li>
-            <li>Anexos clave relacionados.</li>
+            <motion.li
+              initial={{ opacity: 0, x: -15 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.8, duration: 0.4 }}
+              viewport={{ once: true }}
+              whileHover={{ x: 6 }}
+            >
+              Monto exacto + fechas exactas + medio de pago/entrega.
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0, x: -15 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.85, duration: 0.4 }}
+              viewport={{ once: true }}
+              whileHover={{ x: 6 }}
+            >
+              Cómo se acredita el cumplimiento (soporte verificable).
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0, x: -15 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.9, duration: 0.4 }}
+              viewport={{ once: true }}
+              whileHover={{ x: 6 }}
+            >
+              Identificación completa de partes.
+            </motion.li>
+            <motion.li
+              initial={{ opacity: 0, x: -15 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.95, duration: 0.4 }}
+              viewport={{ once: true }}
+              whileHover={{ x: 6 }}
+            >
+              Anexos clave relacionados.
+            </motion.li>
           </ul>
-        </div>
-      </article>
+        </motion.div>
+      </motion.article>
     </>
   );
 }

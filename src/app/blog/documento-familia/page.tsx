@@ -1,27 +1,60 @@
+"use client";
+
 import styles from "./Article.module.css";
+import { motion } from "framer-motion";
 
 export default function DocumentoFamilia() {
   return (
     <>
       <div className={styles.wrapper}>
         <div className={styles.container}>
-          <article id="documento-familia" className={styles.card}>
-            <h2>
+          <motion.article
+            id="documento-familia"
+            className={styles.card}
+            initial={{ opacity: 0, y: 70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <motion.h2
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1, duration: 0.6 }}
+              viewport={{ once: true }}
+            >
               Documento de conciliación familiar / Acta de conciliación familiar
               (modelo)
-            </h2>
+            </motion.h2>
 
-            <p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              viewport={{ once: true }}
+            >
               La búsqueda <strong>“documento de conciliación familiar”</strong>{" "}
               o <strong>“acta de conciliación familiar”</strong>
               suele incluir acuerdos de alimentos, visitas, comunicación, gastos
               y responsabilidades parentales. Lo familiar exige lenguaje claro y
               reglas operativas para evitar conflictos recurrentes.
-            </p>
+            </motion.p>
 
-            <h3>Modelo (familiar: visitas + acuerdos de crianza)</h3>
+            <motion.h3
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              Modelo (familiar: visitas + acuerdos de crianza)
+            </motion.h3>
 
-            <pre>
+            <motion.pre
+              initial={{ opacity: 0, scale: 0.97 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.4, duration: 0.7 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.015 }}
+            >
               {`ACTA DE CONCILIACIÓN (FAMILIA) No. [●]
 
 I. PARTES
@@ -47,8 +80,8 @@ Ordinarios: [●]. Extraordinarios: [●] con soportes y porcentaje [●].
 Las partes se comprometen a mantener trato respetuoso y no involucrar al menor en discusiones.
 
 Firmas…`}
-            </pre>
-          </article>
+            </motion.pre>
+          </motion.article>
         </div>
       </div>
     </>

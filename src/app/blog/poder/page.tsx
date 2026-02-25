@@ -1,24 +1,60 @@
+"use client";
+
 import styles from "./Article.module.css";
+import { motion } from "framer-motion";
 
 export default function Poder() {
   return (
     <>
       <div className={styles.wrapper}>
         <div className={styles.container}>
-          <article id="poder" className={styles.card}>
-            <h2>Poder para asistir a audiencia de conciliación (modelo)</h2>
+          <motion.article
+            id="poder"
+            className={styles.card}
+            initial={{ opacity: 0, y: 70 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <motion.h2
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1, duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              Poder para asistir a audiencia de conciliación (modelo)
+            </motion.h2>
 
-            <p>
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.25, duration: 0.6 }}
+              viewport={{ once: true }}
+            >
               Si te piden{" "}
               <strong>“poder para asistir a audiencia de conciliación”</strong>,
               lo usual es autorizar a un apoderado para: (i) asistir, (ii)
               conciliar, (iii) suscribir el acta y (iv) aportar/recibir
               documentos. Ajusta el alcance según tu caso (general o especial).
-            </p>
+            </motion.p>
 
-            <h3>Modelo de poder (persona natural)</h3>
+            <motion.h3
+              initial={{ opacity: 0, x: -25 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.35, duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              Modelo de poder (persona natural)
+            </motion.h3>
 
-            <pre>
+            <motion.pre
+              initial={{ opacity: 0, y: 40, scale: 0.98 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ delay: 0.45, duration: 0.7 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.01 }}
+              style={{ transformOrigin: "center top" }}
+            >
               {`PODER ESPECIAL
 
 [Ciudad], [dd/mm/aaaa]
@@ -40,8 +76,8 @@ CC: [●]
 Firma apoderado(a) (aceptación): _______________________
 Nombre: [●]
 CC: [●] / T.P.: [●]`}
-            </pre>
-          </article>
+            </motion.pre>
+          </motion.article>
         </div>
       </div>
     </>
