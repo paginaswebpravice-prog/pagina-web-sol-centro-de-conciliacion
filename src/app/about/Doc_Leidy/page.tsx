@@ -5,8 +5,45 @@ import styles from "../PerfilConciliador.module.css";
 import Link from "next/link";
 
 export default function LeidyTirado() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Dra. Leidy Tirado",
+    jobTitle: "Abogada Conciliadora en Derecho Comercial y Empresarial",
+    description:
+      "Abogada conciliadora en Colombia especializada en derecho comercial, empresarial y protección al consumidor. Experta en conciliación extrajudicial, recuperación de cartera y cumplimiento del Estatuto del Consumidor Ley 1480 de 2011.",
+    url: "https://www.solcentrodeconciliacion.com/about/Doc_Leidy",
+    image: "https://www.solcentrodeconciliacion.com/doc-leidy.jpg",
+    worksFor: {
+      "@type": "LegalService",
+      name: "Sol Centro de Conciliación",
+      url: "https://www.solcentrodeconciliacion.com",
+    },
+    areaServed: {
+      "@type": "Country",
+      name: "Colombia",
+    },
+    knowsAbout: [
+      "Conciliación extrajudicial en derecho",
+      "Derecho comercial colombiano",
+      "Protección al consumidor Ley 1480 de 2011",
+      "Recuperación de cartera empresarial",
+      "Garantías mobiliarias",
+      "Prevención de litigios comerciales",
+    ],
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "Universidad Militar Nueva Granada",
+    },
+  };
+
   return (
     <main className={styles.wrapper}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
       {/* ================= HERO ================= */}
       <section className={styles.hero}>
         <div className={styles.heroContainer}>

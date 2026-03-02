@@ -5,8 +5,40 @@ import styles from "../PerfilConciliador.module.css";
 import Link from "next/link";
 
 export default function AngieRivera() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Angie Rivera",
+    jobTitle: "Abogada Conciliadora",
+    description:
+      "Abogada conciliadora en Colombia especializada en gestión de cartera, recuperación de activos, conciliaciones empresariales y derecho comercial.",
+    image: "https://www.solcentrodeconciliacion.com/doc-angie.jpg",
+    url: "https://www.solcentrodeconciliacion.com/about/Doc_Angie",
+    worksFor: {
+      "@type": "LegalService",
+      name: "Sol Centro de Conciliación",
+      url: "https://www.solcentrodeconciliacion.com",
+    },
+    knowsAbout: [
+      "Conciliación extrajudicial en derecho",
+      "Gestión de cartera",
+      "Recuperación de activos",
+      "Derecho comercial",
+      "Procesos ejecutivos",
+      "Resolución de conflictos empresariales",
+    ],
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "Colombia",
+    },
+  };
+
   return (
     <main className={styles.wrapper}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       {/* ================= HERO ================= */}
       <section className={styles.hero}>
         <div className={styles.heroContainer}>

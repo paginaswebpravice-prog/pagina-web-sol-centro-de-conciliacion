@@ -5,8 +5,39 @@ import styles from "../PerfilConciliador.module.css";
 import Link from "next/link";
 
 export default function HarrisonPerez() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Harrison Perez",
+    jobTitle: "Abogado Conciliador",
+    image: "https://www.solcentrodeconciliacion.com/doc-harrison.jpg",
+    url: "https://www.solcentrodeconciliacion.com/abogados/harrison-perez",
+    worksFor: {
+      "@type": "Organization",
+      name: "Sol Centro de Conciliación",
+      url: "https://www.solcentrodeconciliacion.com",
+    },
+    knowsAbout: [
+      "Conciliación extrajudicial en derecho",
+      "Derecho de familia",
+      "Derecho laboral",
+      "Derecho tributario",
+      "Resolución de conflictos",
+      "Mecanismos alternativos de solución de conflictos",
+    ],
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "Colombia",
+    },
+    sameAs: ["https://www.solcentrodeconciliacion.com"],
+  };
+
   return (
     <main className={styles.wrapper}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       {/* ================= HERO ================= */}
       <section className={styles.hero}>
         <div className={styles.heroContainer}>

@@ -104,6 +104,59 @@ const cardVariants: Variants = {
 export default function Practice() {
   return (
     <section className={styles.section}>
+      {/* JSON-LD para SEO SCHEMA */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LegalService",
+            name: "Sol Centro de Conciliación",
+            url: "https://www.solcentrodeconciliacion.com",
+            description:
+              "Centro de conciliación especializado en resolución extrajudicial de conflictos civiles, comerciales, laborales y familiares en Colombia.",
+            areaServed: "Colombia",
+            serviceType: "Conciliación extrajudicial en derecho",
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Áreas de conciliación",
+              itemListElement: [
+                {
+                  "@type": "Service",
+                  name: "Conciliación en asuntos comerciales",
+                  description:
+                    "Resolución de conflictos empresariales relacionados con contratos mercantiles, sociedades e incumplimientos comerciales.",
+                },
+                {
+                  "@type": "Service",
+                  name: "Conciliación en asuntos civiles",
+                  description:
+                    "Resolución extrajudicial de conflictos civiles relacionados con obligaciones, daños y perjuicios y derechos patrimoniales.",
+                },
+                {
+                  "@type": "Service",
+                  name: "Conciliación en asuntos laborales",
+                  description:
+                    "Acuerdos entre empleadores y trabajadores en conflictos laborales como liquidaciones, contratos y despidos.",
+                },
+                {
+                  "@type": "Service",
+                  name: "Conciliación familiar",
+                  description:
+                    "Conciliación en conflictos familiares relacionados con custodia, visitas, alimentos y acuerdos parentales.",
+                },
+                {
+                  "@type": "Service",
+                  name: "Conciliación en arrendamientos",
+                  description:
+                    "Resolución de conflictos entre arrendadores y arrendatarios sobre cánones, restitución de inmuebles y obligaciones contractuales.",
+                },
+              ],
+            },
+          }),
+        }}
+      />
+
       {/* HEADER */}
       <motion.div
         className={styles.header}

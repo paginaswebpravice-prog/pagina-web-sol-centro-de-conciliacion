@@ -32,8 +32,30 @@ const lawyers = [
 ];
 
 export default function About() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": lawyers.map((lawyer) => ({
+      "@type": "Person",
+      name: lawyer.name,
+      jobTitle: lawyer.role,
+      worksFor: {
+        "@type": "LegalService",
+        name: "Sol Centro de Conciliación",
+        url: "https://www.solcentrodeconciliacion.com",
+      },
+      url: `https://www.solcentrodeconciliacion.com${lawyer.slug}`,
+      image: `https://www.solcentrodeconciliacion.com${lawyer.image}`,
+      sameAs: [],
+    })),
+  };
+
   return (
     <section className={styles.section}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
       <h2 className={styles.title}>Nuestro Equipo Jurídico</h2>
 
       <div className={styles.grid}>

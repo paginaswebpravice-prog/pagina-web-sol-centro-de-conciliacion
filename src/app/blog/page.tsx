@@ -102,6 +102,54 @@ const juridicoPosts: BlogPost[] = [
 export default function Blog() {
   return (
     <section className={styles.blogSection}>
+      {/* =========================
+          JSON-LD para SEO SCHEMA
+      ========================= */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            name: "Blog de Conciliación en Colombia",
+            description:
+              "Artículos jurídicos sobre conciliación extrajudicial en Colombia, modelos de actas, audiencias de conciliación y fundamentos legales.",
+            url: "https://www.solcentrodeconciliacion.com/blog",
+            publisher: {
+              "@type": "Organization",
+              name: "Sol Centro de Conciliación",
+              url: "https://www.solcentrodeconciliacion.com",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://www.solcentrodeconciliacion.com/logo.png",
+              },
+            },
+            blogPost: [
+              {
+                "@type": "BlogPosting",
+                headline: "¿Qué es la conciliación y para qué sirve?",
+                url: "https://www.solcentrodeconciliacion.com/blog/que-es-la-conciliacion",
+              },
+              {
+                "@type": "BlogPosting",
+                headline: "Cuándo conviene conciliar",
+                url: "https://www.solcentrodeconciliacion.com/blog/cuando-conviene-conciliar",
+              },
+              {
+                "@type": "BlogPosting",
+                headline: "¿Qué asuntos se pueden conciliar?",
+                url: "https://www.solcentrodeconciliacion.com/blog/que-asuntos-se-pueden-conciliar",
+              },
+              {
+                "@type": "BlogPosting",
+                headline: "Paso a paso del trámite",
+                url: "https://www.solcentrodeconciliacion.com/blog/paso-a-paso-del-tramite",
+              },
+            ],
+          }),
+        }}
+      />
+
       <div className={styles.header}>
         <h3 className={styles.subtitle}>
           Conciliación en Colombia: guía completa para llegar a un acuerdo con
