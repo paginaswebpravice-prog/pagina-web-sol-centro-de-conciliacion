@@ -69,7 +69,7 @@ export default function Navbar() {
                 aria-current={pathname === "/about" ? "page" : undefined}
                 onClick={() => setMenuOpen(false)}
               >
-                Sobre Pravice Abogados
+                Sobre nosotros
               </Link>
             </li>
 
