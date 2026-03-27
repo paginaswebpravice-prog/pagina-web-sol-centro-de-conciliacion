@@ -6,160 +6,166 @@ import { motion } from "framer-motion";
 export default function ModeloActaConciliacion() {
   return (
     <>
+      {/* SEO Schema FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "¿Qué es un acta de conciliación en Colombia?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "El acta de conciliación es un documento con efectos legales donde las partes dejan por escrito un acuerdo para resolver un conflicto sin necesidad de juicio.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "¿El acta de conciliación tiene validez legal en Colombia?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Sí, el acta de conciliación presta mérito ejecutivo, lo que significa que puede exigirse su cumplimiento ante un juez si una de las partes incumple.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
       <motion.article
         id="modelo-acta-conciliacion"
         className={styles.modeloCard}
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <motion.h2
-          className={styles.modeloTitle}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1, duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          Modelo de acta de conciliación (general)
+        <motion.h2 className={styles.modeloTitle}>
+          Modelo de acta de conciliación en Colombia (ejemplo y formato)
         </motion.h2>
 
-        <motion.p
-          className={styles.modeloText}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          Si estás buscando un <strong>modelo de acta de conciliación</strong>,
-          lo esencial es que el documento deje sin ambigüedades:{" "}
-          <strong>quién</strong> cumple, <strong>qué</strong> cumple,{" "}
-          <strong>cuándo</strong> y <strong>cómo</strong>. El acuerdo debe ser
-          medible (montos, fechas, obligaciones verificables) y anexar soportes
-          cuando aplique.
+        <motion.p className={styles.modeloText}>
+          Si estás buscando un{" "}
+          <strong>modelo de acta de conciliación en Colombia</strong>, aquí
+          encontrarás un ejemplo general que puede utilizarse como referencia
+          para conciliaciones civiles, comerciales o de conflictos entre
+          particulares. En ciudades como <strong>Bogotá</strong>, Medellín, Cali
+          o cualquier parte de Colombia, el acta de conciliación es el documento
+          donde queda por escrito el acuerdo al que llegan las partes para
+          resolver un conflicto sin necesidad de un proceso judicial.
         </motion.p>
 
-        <motion.p
-          className={styles.modeloNote}
-          initial={{ opacity: 0, scale: 0.98 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          Nota: ajusta este modelo a tu centro, reglamento interno y formato.
-          Evita frases genéricas como “pagará pronto”.
+        <motion.p className={styles.modeloText}>
+          Un acta de conciliación bien redactada debe dejar completamente claro:
+          quién debe cumplir, qué debe cumplir, cuándo debe cumplir y cómo se
+          verificará el cumplimiento. Cuando estos elementos no están claros, el
+          acuerdo puede volverse difícil de ejecutar en caso de incumplimiento.
         </motion.p>
 
-        <motion.h3
-          className={styles.subTitle}
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          viewport={{ once: true }}
-        >
-          Modelo (copiar y pegar)
+        <motion.p className={styles.modeloNote}>
+          Importante: en Colombia, el acta de conciliación tiene efectos legales
+          y puede prestar mérito ejecutivo. Por eso es importante que las
+          obligaciones, valores, fechas y condiciones queden escritas de forma
+          precisa.
+        </motion.p>
+
+        <motion.h3 className={styles.subTitle}>
+          Modelo de acta de conciliación (copiar y pegar)
         </motion.h3>
 
-        <motion.div
-          className={styles.documentBox}
-          initial={{ opacity: 0, y: 40, scale: 0.98 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ delay: 0.5, duration: 0.7 }}
-          viewport={{ once: true }}
-          whileHover={{ scale: 1.01 }}
-        >
+        <motion.div className={styles.documentBox}>
           <div className={styles.documentHeader}>
             <span>DOCUMENTO MODELO</span>
             <span>Uso referencial</span>
           </div>
+
           <pre>
             {`ACTA DE CONCILIACIÓN No. [●]
 
 CENTRO DE CONCILIACIÓN: [Nombre del Centro]
-CIUDAD: [●]     FECHA: [dd/mm/aaaa]     HORA INICIO: [●]     HORA FIN: [●]
+CIUDAD: Bogotá, Colombia
+FECHA: [dd/mm/aaaa]
+HORA INICIO: [●]
+HORA FIN: [●]
 MODALIDAD: [Presencial / Virtual]
-CONCILIADOR(A): [Nombre completo] - [Documento] - [Registro/Designación si aplica]
+
+CONCILIADOR(A):
+Nombre: [●]
+Documento: [●]
 
 I. COMPARECIENTES
-1. PARTE SOLICITANTE (CONCILIANTE A):
-   Nombre: [●]  Identificación: [●]  Dirección/Correo/Teléfono: [●]
-   Calidad: [Persona natural / Representante legal de ●]
 
-2. PARTE CITADA (CONCILIANTE B):
-   Nombre: [●]  Identificación: [●]  Dirección/Correo/Teléfono: [●]
-   Calidad: [Persona natural / Representante legal de ●]
+PARTE SOLICITANTE:
+Nombre: [●]
+Identificación: [●]
+Dirección: [●]
+Teléfono/Correo: [●]
+
+PARTE CITADA:
+Nombre: [●]
+Identificación: [●]
+Dirección: [●]
+Teléfono/Correo: [●]
 
 II. OBJETO DE LA CONCILIACIÓN
-Las partes manifiestan que el conflicto se origina en:
-[Describir en 3-6 líneas el hecho y la pretensión].
+Las partes manifiestan que el conflicto consiste en:
+[Describir el problema en pocas líneas].
 
-IV. ACUERDO CONCILIATORIO
-CLÁUSULA 1. OBLIGACIÓN PRINCIPAL
-[Detalle exacto].
+III. ACUERDO CONCILIATORIO
 
-CLÁUSULA 2. MONTO / PRESTACIÓN
-Valor total: $[●] COP.
+PRIMERA. OBLIGACIÓN
+[Detalle exacto de la obligación].
+
+SEGUNDA. VALOR Y FORMA DE PAGO
+Valor total: $[●]
 Forma de pago:
-- Cuota 1: $[●] el [dd/mm/aaaa]
-- Cuota 2: $[●] el [dd/mm/aaaa]
+- Cuota 1: $[●] el [fecha]
+- Cuota 2: $[●] el [fecha]
 
-CLÁUSULA 4. INCUMPLIMIENTO
-En caso de incumplimiento, la parte cumplida podrá exigir lo acordado por las vías legales pertinentes.
+TERCERA. INCUMPLIMIENTO
+En caso de incumplimiento, la parte cumplida podrá exigir el cumplimiento
+por las vías legales correspondientes.
 
-V. FIRMA
-Firma Conciliador(a): _______________________
-Conciliantes A: _____________________________
-Conciliantes B: _____________________________`}
+IV. FIRMA
+
+Conciliador: _______________________
+
+Parte A: ___________________________
+
+Parte B: ___________________________`}
           </pre>
         </motion.div>
 
-        <motion.div
-          className={styles.modeloCTA}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <strong>Checklist rápido para un acta “ejecutable”</strong>
+        <motion.div className={styles.modeloCTA}>
+          <strong>Checklist para que un acta de conciliación sea válida</strong>
           <ul>
-            <motion.li
-              initial={{ opacity: 0, x: -15 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.8, duration: 0.4 }}
-              viewport={{ once: true }}
-              whileHover={{ x: 6 }}
-            >
-              Monto exacto + fechas exactas + medio de pago/entrega.
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, x: -15 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.85, duration: 0.4 }}
-              viewport={{ once: true }}
-              whileHover={{ x: 6 }}
-            >
-              Cómo se acredita el cumplimiento (soporte verificable).
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, x: -15 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.9, duration: 0.4 }}
-              viewport={{ once: true }}
-              whileHover={{ x: 6 }}
-            >
-              Identificación completa de partes.
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, x: -15 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.95, duration: 0.4 }}
-              viewport={{ once: true }}
-              whileHover={{ x: 6 }}
-            >
-              Anexos clave relacionados.
-            </motion.li>
+            <li>Identificación completa de las partes.</li>
+            <li>Descripción clara del conflicto.</li>
+            <li>Obligaciones claras y medibles.</li>
+            <li>Fechas exactas de cumplimiento.</li>
+            <li>Forma de pago o forma de cumplimiento.</li>
+            <li>Firmas de las partes y del conciliador.</li>
           </ul>
         </motion.div>
+
+        <motion.p className={styles.modeloText}>
+          Muchas personas en Bogotá y en toda Colombia buscan modelos de actas
+          de conciliación para resolver conflictos de deudas, contratos,
+          arrendamientos, conflictos entre socios, asuntos familiares y
+          obligaciones civiles. Sin embargo, cada caso debe revisarse de manera
+          particular para que el acuerdo realmente proteja a las partes.
+        </motion.p>
+
+        <motion.p className={styles.modeloText}>
+          Antes de firmar un acta de conciliación, es recomendable revisar que
+          las obligaciones sean posibles de cumplir, que los plazos sean claros
+          y que exista una forma de demostrar el cumplimiento. Un buen acuerdo
+          evita futuros conflictos y permite cerrar el problema de manera
+          definitiva.
+        </motion.p>
       </motion.article>
     </>
   );

@@ -1,32 +1,28 @@
-/* ================= WRAPPER ================= */
 .wrapper {
   padding: 120px 20px 80px;
-  background: #faf9f7; /* fondo principal claro */
+  background: #faf9f7;
   min-height: 100vh;
 }
 
-/* ================= CONTAINER ================= */
 .container {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* ================= CARD ================= */
 .card {
   background: #ffffff;
   padding: 50px;
   border-radius: 16px;
-  border: 1px solid #456b74; /* azul secundario suave */
+  border: 1px solid #456b74;
   line-height: 1.8;
-  box-shadow: 0 12px 35px rgba(26, 65, 74, 0.08); /* sombra con tono petróleo */
+  box-shadow: 0 12px 35px rgba(26, 65, 74, 0.08);
 }
 
-/* ================= TITLES ================= */
 .card h2 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 25px;
-  color: #1a414a; /* color principal */
+  color: #1a414a;
   line-height: 1.3;
 }
 
@@ -34,52 +30,42 @@
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 18px;
-  color: #456b74; /* secundario */
+  color: #456b74;
 }
 
-/* ================= PARAGRAPHS ================= */
 .card p {
   font-size: 16px;
   margin-bottom: 30px;
-  color: #333; /* gris oscuro elegante */
+  color: #333;
 }
 
-/* ================= NOTE ================= */
 .note {
-  background: rgba(251, 188, 5, 0.08); /* amarillo muy sutil */
+  background: rgba(251, 188, 5, 0.08);
   padding: 16px 20px;
-  border-left: 4px solid #fbbc05; /* acento */
+  border-left: 4px solid #fbbc05;
   border-radius: 8px;
   margin: 15px 0;
   font-size: 15px;
   color: #000;
 }
 
-/* ================= PRE → CITACIÓN FORMAL (SIN SCROLL) ================= */
-
 .card pre {
   margin-top: 40px;
   padding: 65px 80px;
   background: #ffffff;
   border-radius: 6px;
-
   border: 1px solid rgba(0, 0, 0, 0.28);
-
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 2;
   color: #000;
-
   white-space: pre-wrap;
   word-break: break-word;
   overflow: visible;
-
   position: relative;
-
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.05);
 }
 
-/* hoja inferior */
 .card pre::before {
   content: "";
   position: absolute;
@@ -92,7 +78,6 @@
   z-index: -1;
 }
 
-/* línea institucional superior */
 .card pre::after {
   content: "";
   position: absolute;
@@ -105,7 +90,6 @@
   border-top-right-radius: 6px;
 }
 
-/* selección elegante */
 .card pre::selection {
   background: rgba(251, 188, 5, 0.3);
 }
@@ -172,7 +156,6 @@
     line-height: 1.85;
   }
 
-  /* reducimos efecto hoja inferior */
   .card pre::before {
     top: 10px;
     left: 10px;
@@ -212,7 +195,6 @@
     line-height: 1.8;
   }
 
-  /* hoja inferior más sutil en móvil */
   .card pre::before {
     display: none;
   }

@@ -1,174 +1,133 @@
-/* =========================
-   VARIABLES
-========================= */
-
-:root {
-  --navbar-height: 110px;
-
-  --bg-main: #faf9f7;
-  --primary-dark: #1a414a;
-  --primary-medium: #456b74;
-  --accent: #fbbc05;
-
-  --text-base: #333;
-  --text-strong: #000;
-}
-
-/* =========================
-   WRAPPER
-========================= */
+/* ================= WRAPPER ================= */
 
 .articleWrapper {
-  padding-top: calc(var(--navbar-height) + 40px);
+  padding-top: 150px;
   padding-bottom: 4rem;
-  background: var(--bg-main);
+  background: #faf9f7;
 }
 
-/* =========================
-   BLOQUE CENTRAL
-========================= */
+/* ================= BLOQUE ================= */
 
 .articleBlock {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  text-align: left;
 }
 
-/* =========================
-   TÍTULOS
-========================= */
+/* ================= TITULOS ================= */
 
 .title {
   font-size: 1.9rem;
   font-weight: 700;
-  color: var(--primary-dark);
-  margin-bottom: 1.8rem;
-  line-height: 1.3;
+  color: #1a414a;
+  margin-bottom: 1.5rem;
   position: relative;
 }
 
-/* Línea decorativa con acento */
 .title::after {
   content: "";
   width: 60px;
   height: 4px;
-  background: var(--accent);
+  background: #fbbc05;
   position: absolute;
   bottom: -10px;
   left: 0;
-  border-radius: 4px;
 }
 
-/* =========================
-   LISTA ORDENADA
-========================= */
+/* ================= SUBTITULOS ================= */
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #1a414a;
+}
+
+/* ================= TEXTO ================= */
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #333;
+  margin-bottom: 1.3rem;
+}
+
+/* ================= LISTA ================= */
 
 .orderedList {
   padding-left: 1.4rem;
-  margin-bottom: 2.5rem;
-  color: var(--primary-medium);
+  margin-bottom: 2rem;
 }
 
 .orderedList li {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   line-height: 1.7;
   font-size: 1rem;
-  color: var(--text-base);
+  color: #333;
 }
 
 .orderedList strong {
-  color: var(--primary-dark);
-  font-weight: 600;
+  color: #1a414a;
 }
 
-/* =========================
-   CTA BOX
-========================= */
+/* ================= CTA ================= */
 
 .cta {
   background: #ffffff;
-  border-left: 4px solid var(--accent);
-  border-radius: 14px;
+  border-left: 4px solid #fbbc05;
+  border-radius: 12px;
   padding: 1.8rem;
-  box-shadow: 0 10px 28px rgba(26, 65, 74, 0.08);
-  transition: all 0.3s ease;
-}
-
-.cta:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 36px rgba(26, 65, 74, 0.12);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .ctaTitle {
   display: block;
-  font-size: 1.05rem;
-  margin-bottom: 1rem;
-  color: var(--primary-dark);
   font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1a414a;
 }
 
 .ctaList {
   padding-left: 1.2rem;
-  margin-bottom: 1.6rem;
-  color: var(--text-base);
+  margin-bottom: 1.4rem;
 }
 
 .ctaList li {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
   font-size: 0.95rem;
+  color: #333;
 }
 
-/* =========================
-   BOTÓN CTA
-========================= */
+/* ================= BOTON ================= */
 
 .ctaButton {
   display: inline-block;
-  background: var(--primary-dark);
-  color: #faf9f7;
-  padding: 0.8rem 1.6rem;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  font-weight: 600;
+  background: #1a414a;
+  color: #ffffff;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
   text-decoration: none;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 .ctaButton:hover {
-  background: var(--accent);
-  color: var(--text-strong);
-  transform: translateY(-2px);
+  background: #fbbc05;
+  color: #000;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
-  .articleWrapper {
-    padding-top: calc(var(--navbar-height) + 20px);
-  }
-
   .title {
     font-size: 1.6rem;
   }
 
-  .orderedList li {
+  .paragraph {
     font-size: 0.95rem;
   }
 
-  .cta {
-    padding: 1.4rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .articleBlock {
-    padding: 1.5rem 1rem;
-  }
-
-  .title {
-    font-size: 1.5rem;
+  .orderedList li {
+    font-size: 0.95rem;
   }
 }

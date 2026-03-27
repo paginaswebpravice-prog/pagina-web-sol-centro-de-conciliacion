@@ -4,122 +4,176 @@ import styles from "./Article.module.css";
 import { motion } from "framer-motion";
 
 export default function ComoEsLaAudiencia() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline:
+      "Cómo es la audiencia de conciliación en Colombia: presencial o virtual en Bogotá",
+    description:
+      "Conoce cómo funciona una audiencia de conciliación en Colombia, presencial o virtual, sus etapas y recomendaciones para llegar a un acuerdo.",
+    author: {
+      "@type": "Organization",
+      name: "Centro de Conciliación",
+    },
+    contentLocation: {
+      "@type": "Place",
+      name: "Bogotá, Colombia",
+    },
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Cómo es una audiencia de conciliación en Colombia?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "La audiencia de conciliación incluye instalación, exposición de las partes, negociación y redacción del acuerdo si se llega a un arreglo.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿La audiencia de conciliación puede ser virtual en Bogotá?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí, en Bogotá y Colombia muchas audiencias de conciliación se realizan de forma virtual mediante plataformas digitales.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      {/* SCHEMA SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <section id="audiencia" className={styles.articleWrapper}>
         <motion.div
           className={styles.articleBlock}
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <motion.h2
-            className={styles.title}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            6) Cómo es la audiencia: presencial o virtual
-          </motion.h2>
+          <h2 className={styles.title}>
+            Cómo es la audiencia de conciliación en Colombia: presencial o
+            virtual
+          </h2>
 
-          <motion.p
-            className={styles.paragraph}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            La audiencia está diseñada para{" "}
-            <strong>ordenar el conflicto</strong> y conducirlo hacia un acuerdo
-            verificable. Normalmente incluye:
-          </motion.p>
+          <p className={styles.paragraph}>
+            La <strong>audiencia de conciliación en Colombia</strong> es el
+            espacio donde las partes, con la ayuda de un conciliador, buscan
+            llegar a un acuerdo para resolver un conflicto sin necesidad de
+            acudir a un juez. En ciudades como <strong>Bogotá</strong>, estas
+            audiencias pueden realizarse de forma presencial o virtual,
+            dependiendo del centro de conciliación y la disponibilidad de las
+            partes.
+          </p>
 
-          <motion.ul
-            className={styles.list}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            {[
-              <>
-                <strong>Instalación</strong>: identificación de las partes y
-                reglas básicas (respeto, turno de palabra, enfoque en
-                soluciones).
-              </>,
-              <>
-                <strong>Exposición</strong>: cada parte presenta su versión y lo
-                que busca.
-              </>,
-              <>
-                <strong>Exploración</strong>: se aclaran hechos, se precisan
-                pretensiones y se validan soportes.
-              </>,
-              <>
-                <strong>Negociación</strong>: propuestas, contrapropuestas y
-                alternativas.
-              </>,
-              <>
-                <strong>Redacción</strong>: si hay acuerdo, se plasma con
-                precisión (montos, fechas, obligaciones, consecuencias).
-              </>,
-            ].map((item, index) => (
-              <motion.li
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.4 + index * 0.1, duration: 0.4 }}
-                viewport={{ once: true }}
-              >
-                {item}
-              </motion.li>
-            ))}
-          </motion.ul>
+          <p className={styles.paragraph}>
+            El objetivo de la audiencia no es determinar quién tiene la razón,
+            sino construir un acuerdo legal que solucione el problema de manera
+            rápida, económica y segura.
+          </p>
 
-          <motion.div
-            className={styles.categoryCard}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.6 }}
-            viewport={{ once: true }}
-            whileHover={{ y: -6 }}
-          >
-            <motion.h3
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 1.1, duration: 0.5 }}
-              viewport={{ once: true }}
+          <h3 className={styles.subtitle}>
+            Etapas de una audiencia de conciliación en Bogotá y Colombia
+          </h3>
+
+          <ul className={styles.list}>
+            <li>
+              <strong>Instalación:</strong> el conciliador verifica la identidad
+              de las partes, explica las reglas de la audiencia y el objetivo de
+              la conciliación.
+            </li>
+            <li>
+              <strong>Exposición:</strong> cada parte explica su versión de los
+              hechos y lo que pretende obtener en la conciliación.
+            </li>
+            <li>
+              <strong>Exploración:</strong> se revisan documentos, soportes,
+              contratos, facturas o pruebas relacionadas con el conflicto.
+            </li>
+            <li>
+              <strong>Negociación:</strong> se presentan propuestas, acuerdos de
+              pago, compromisos o soluciones al conflicto.
+            </li>
+            <li>
+              <strong>Redacción del acuerdo:</strong> si las partes llegan a un
+              acuerdo, se redacta el acta de conciliación con obligaciones,
+              fechas, montos y compromisos.
+            </li>
+          </ul>
+
+          <h3 className={styles.subtitle}>
+            Audiencia presencial de conciliación
+          </h3>
+
+          <p className={styles.paragraph}>
+            En la audiencia presencial, las partes asisten al centro de
+            conciliación en Bogotá o en cualquier ciudad de Colombia. El
+            conciliador dirige la reunión, organiza la conversación y ayuda a
+            construir un acuerdo que quede por escrito.
+          </p>
+
+          <h3 className={styles.subtitle}>
+            Audiencia virtual de conciliación en Colombia
+          </h3>
+
+          <div className={styles.categoryCard}>
+            <h3>Audiencia virtual: lo mínimo para que salga bien</h3>
+
+            <ul className={styles.list}>
+              <li>Buena conexión a internet.</li>
+              <li>Documento de identidad a la mano.</li>
+              <li>Soportes en PDF listos para enviar.</li>
+              <li>Estar en un lugar sin ruido.</li>
+              <li>Disposición real para negociar.</li>
+            </ul>
+          </div>
+
+          <p className={styles.paragraph}>
+            Actualmente, muchas audiencias de conciliación en Bogotá se realizan
+            de manera virtual, lo que permite ahorrar tiempo y desplazamientos.
+            El acta de conciliación virtual tiene la misma validez legal que la
+            presencial en Colombia.
+          </p>
+
+          <div className={styles.note}>
+            La conciliación en Colombia no busca que una parte gane y la otra
+            pierda, sino que ambas encuentren una solución práctica al
+            conflicto.
+          </div>
+
+          <div className={styles.cta}>
+            <span className={styles.ctaTitle}>
+              Asesoría para audiencia de conciliación en Bogotá
+            </span>
+
+            <ul className={styles.ctaList}>
+              <li>Preparación para audiencia de conciliación.</li>
+              <li>Revisión de documentos.</li>
+              <li>Estrategia de negociación.</li>
+              <li>Redacción de acuerdos.</li>
+            </ul>
+
+            <a
+              href="https://api.whatsapp.com/send/?phone=573232904786"
+              className={styles.ctaButton}
+              target="_blank"
             >
-              Audiencia virtual: lo mínimo para que salga bien
-            </motion.h3>
-
-            <motion.ul
-              className={styles.list}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 1.2, duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              {[
-                "Buena conexión a internet y un lugar sin ruido.",
-                "Documento de identidad a la mano.",
-                "Soportes en PDF listos para compartir.",
-                "Disposición a negociar: sin eso, no hay acuerdo.",
-              ].map((item, index) => (
-                <motion.li
-                  key={index}
-                  initial={{ opacity: 0, x: -15 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 1.3 + index * 0.1, duration: 0.4 }}
-                  viewport={{ once: true }}
-                >
-                  {item}
-                </motion.li>
-              ))}
-            </motion.ul>
-          </motion.div>
+              Solicitar asesoría
+            </a>
+          </div>
         </motion.div>
       </section>
     </>
