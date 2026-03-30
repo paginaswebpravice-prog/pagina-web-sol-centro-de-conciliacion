@@ -2,7 +2,7 @@
 
 .wrapper {
   padding: 120px 20px 80px;
-  background: #faf9f7; /* fondo principal */
+  background: #faf9f7;
   min-height: 100vh;
 }
 
@@ -12,8 +12,6 @@
   max-width: 1000px;
   margin: 0 auto;
 }
-
-/* ================= CARD PRINCIPAL ================= */
 
 /* ================= CARD PRINCIPAL ================= */
 
@@ -27,7 +25,6 @@
   position: relative;
 }
 
-/* línea institucional superior */
 .card::before {
   content: "";
   position: absolute;
@@ -42,12 +39,20 @@
 
 /* ================= TITLES ================= */
 
-.card h2 {
-  font-size: 30px;
+.card h1 {
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 25px;
   color: #1a414a;
   line-height: 1.3;
+}
+
+.card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #1a414a;
 }
 
 .card h3 {
@@ -61,12 +66,12 @@
 
 .card p {
   font-size: 17px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #444;
   max-width: 800px;
 }
 
-.card p strong {
+.card strong {
   color: #1a414a;
 }
 
@@ -76,39 +81,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
+  margin-top: 30px;
 }
 
 /* ================= INNER CARDS ================= */
-
-.innerCard {
-  background: #ffffff;
-  padding: 35px;
-  border-radius: 16px;
-  border: 1px solid rgba(26, 65, 74, 0.15);
-  transition: all 0.25s ease;
-  box-shadow: 0 8px 25px rgba(26, 65, 74, 0.05);
-  position: relative;
-}
-
-/* línea lateral distintiva */
-.innerCard::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 25px;
-  bottom: 25px;
-  width: 4px;
-  background: #456b74;
-  border-radius: 2px;
-}
-
-.innerCard:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 35px rgba(26, 65, 74, 0.12);
-  border-color: #fbbc05;
-}
-
-/* ================= INNER CARDS MEJORADAS ================= */
 
 .innerCard {
   background: #ffffff;
@@ -120,7 +96,6 @@
   position: relative;
 }
 
-/* línea superior elegante */
 .innerCard::before {
   content: "";
   position: absolute;
@@ -133,33 +108,39 @@
   border-top-right-radius: 18px;
 }
 
-/* hover más profesional */
 .innerCard:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 40px rgba(26, 65, 74, 0.12);
   border-color: #fbbc05;
 }
 
-@media (max-width: 1024px) {
-  .wrapper {
-    padding: 100px 20px 70px;
-  }
+.innerCard ul {
+  padding-left: 18px;
+}
 
+.innerCard li {
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 15.5px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
   .card {
     padding: 45px;
   }
 
-  .card h2 {
-    font-size: 26px;
+  .card h1 {
+    font-size: 28px;
   }
 
   .card p {
     font-size: 16px;
-    margin-bottom: 35px;
   }
 
   .innerCard {
-    padding: 32px;
+    padding: 30px;
   }
 }
 
@@ -168,31 +149,16 @@
     padding: 90px 16px 60px;
   }
 
-  .container {
-    max-width: 100%;
-  }
-
   .card {
     padding: 30px 22px;
-    border-radius: 16px;
   }
 
-  .card::before {
-    height: 5px;
+  .card h1 {
+    font-size: 24px;
   }
 
   .card h2 {
-    font-size: 22px;
-    line-height: 1.35;
-  }
-
-  .card h3 {
-    font-size: 17px;
-  }
-
-  .card p {
-    font-size: 15.5px;
-    margin-bottom: 28px;
+    font-size: 20px;
   }
 
   .grid {
@@ -200,17 +166,7 @@
   }
 
   .innerCard {
-    padding: 26px;
-    border-radius: 14px;
-  }
-
-  .innerCard::before {
-    height: 5px;
-  }
-
-  /* Eliminamos elevación en touch */
-  .innerCard:hover {
-    transform: none;
+    padding: 24px;
   }
 }
 
@@ -223,25 +179,15 @@
     padding: 24px 18px;
   }
 
-  .card h2 {
+  .card h1 {
     font-size: 20px;
-  }
-
-  .card h3 {
-    font-size: 16px;
   }
 
   .card p {
     font-size: 14.5px;
-    line-height: 1.7;
   }
 
   .grid {
-    grid-template-columns: 1fr; /* fuerza una sola columna limpia */
-    gap: 16px;
-  }
-
-  .innerCard {
-    padding: 22px;
+    grid-template-columns: 1fr;
   }
 }

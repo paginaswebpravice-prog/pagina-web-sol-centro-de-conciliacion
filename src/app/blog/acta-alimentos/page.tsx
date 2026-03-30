@@ -5,147 +5,214 @@ import { motion } from "framer-motion";
 
 export default function ActaAlimentos() {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.container}>
-        <motion.article
-          id="acta-alimentos"
-          className={styles.card}
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
-          <motion.h2
-            initial={{ opacity: 0, y: 25 }}
+    <>
+      {/* ================= SEO STRUCTURED DATA ================= */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline:
+                "Acta de conciliación de alimentos en Colombia (ejemplo y guía completa)",
+              description:
+                "Guía completa sobre el acta de conciliación de alimentos en Colombia, incluyendo ejemplo, requisitos legales, artículo 411 del Código Civil y recomendaciones prácticas en Bogotá.",
+              author: {
+                "@type": "Organization",
+                name: "Cobrando Online",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Cobrando Online",
+              },
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id":
+                  "https://www.cobrandoonline.com/conciliacion-alimentos-colombia",
+              },
+              about: [
+                "conciliación en Colombia",
+                "cuota alimentaria Bogotá",
+                "derecho de familia Colombia",
+              ],
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "¿Qué es un acta de conciliación de alimentos en Colombia?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Es un documento legal donde se fija la cuota alimentaria, forma de pago y obligaciones entre las partes, con efectos jurídicos exigibles en Colombia.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "¿Qué pasa si no se cumple un acta de alimentos en Bogotá o Colombia?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "El incumplimiento permite iniciar procesos legales para exigir el pago, incluyendo ejecución judicial y posibles sanciones.",
+                  },
+                },
+              ],
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "LegalService",
+              name: "Conciliación de alimentos en Colombia",
+              areaServed: {
+                "@type": "Place",
+                name: "Bogotá, Colombia",
+              },
+            },
+          ]),
+        }}
+      />
+
+      <div className={styles.wrapper}>
+        <div className={styles.container}>
+          <motion.article
+            id="acta-alimentos"
+            className={styles.card}
+            initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.6 }}
+            transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            Acta de conciliación de alimentos (con ejemplo) y Artículo 411 del
-            Código Civil colombiano
-          </motion.h2>
+            <motion.h1 className={styles.title}>
+              Acta de conciliación de alimentos en Colombia (ejemplo completo y
+              guía 2026)
+            </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Si buscas <strong>“acta de conciliación de alimentos”</strong> o{" "}
-            <strong>“ejemplo de conciliación de alimentos”</strong>, este tipo
-            de acta debe ser especialmente precisa: monto, periodicidad,
-            indexación (si se pacta), forma de pago, y gastos extraordinarios
-            (salud/educación).
-          </motion.p>
+            <p className={styles.text}>
+              Si estás buscando{" "}
+              <strong>“acta de conciliación de alimentos en Colombia”</strong> o
+              <strong> “ejemplo de cuota alimentaria en Bogotá”</strong>, este
+              contenido te explica cómo redactarla correctamente, qué exige la
+              ley colombiana y cómo asegurar que el acuerdo sea realmente
+              ejecutable.
+            </p>
 
-          <motion.h3
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            ¿Qué dice el Art. 411 del Código Civil colombiano (idea central)?
-          </motion.h3>
+            <p className={styles.text}>
+              En ciudades como <strong>Bogotá</strong>, este tipo de
+              conciliación es uno de los mecanismos más utilizados en derecho de
+              familia, ya que permite evitar procesos judiciales largos y
+              establecer acuerdos claros sobre la manutención de hijos o
+              personas dependientes.
+            </p>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            El <strong>artículo 411</strong> establece, de manera general,{" "}
-            <strong>quiénes están obligados a suministrar alimentos</strong>
-            según el vínculo familiar (p. ej., entre cónyuges/compañeros según
-            el caso, ascendientes, descendientes y otros parientes en los
-            eventos previstos). En conciliación, esto se traduce en que el
-            acuerdo debe corresponder a un deber alimentario plausible y a la
-            realidad económica de las partes.
-          </motion.p>
+            {/* ================= CONTEXTO LEGAL ================= */}
+            <h2 className={styles.subTitle}>
+              ¿Qué establece el artículo 411 del Código Civil colombiano?
+            </h2>
 
-          <motion.p
-            className={styles.note}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Recomendación práctica: soporta ingresos y gastos del menor (o
-            alimentario) para que el monto sea defendible y sostenible.
-          </motion.p>
+            <p className={styles.text}>
+              El <strong>artículo 411 del Código Civil en Colombia</strong>{" "}
+              define quiénes tienen la obligación de suministrar alimentos,
+              incluyendo padres, hijos y otros familiares según el caso.
+            </p>
 
-          <motion.h3
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            Modelo de acta (alimentos)
-          </motion.h3>
+            <p className={styles.text}>
+              En la práctica, esto significa que una{" "}
+              <strong>conciliación de alimentos en Bogotá o Colombia</strong>
+              debe basarse en:
+            </p>
 
-          <motion.pre
-            initial={{ opacity: 0, scale: 0.98 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.7, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            {`ACTA DE CONCILIACIÓN (ALIMENTOS) No. [●]
+            <ul className={styles.list}>
+              <li>Capacidad económica del obligado.</li>
+              <li>Necesidades reales del menor o beneficiario.</li>
+              <li>Proporcionalidad y sostenibilidad del acuerdo.</li>
+            </ul>
 
-I. COMPARECIENTES
-Solicitante: [●] - CC [●] - en calidad de [madre/padre/representante del menor ●]
-Citado(a): [●] - CC [●]
+            <div className={styles.note}>
+              Consejo SEO + legal: incluir soportes de ingresos y gastos aumenta
+              la validez del acuerdo y su aceptación en centros de conciliación
+              en Colombia.
+            </div>
 
-Menor/Alimentario: [Nombre] - [Registro Civil/TI] - Fecha de nacimiento: [●]
+            {/* ================= CONTENIDO SEO PROFUNDO ================= */}
+            <h2 className={styles.subTitle}>
+              ¿Qué debe contener un acta de conciliación de alimentos bien
+              hecha?
+            </h2>
 
-II. OBJETO
-Fijación/ajuste de cuota alimentaria a favor de [●].
+            <p className={styles.text}>
+              Para que un acta tenga validez y sea ejecutable en Colombia, debe
+              responder claramente: quién paga, cuánto paga, cuándo paga y cómo
+              se verifica el cumplimiento.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Identificación completa de las partes.</li>
+              <li>Datos del menor o beneficiario.</li>
+              <li>Valor exacto de la cuota alimentaria.</li>
+              <li>Forma de pago (transferencia, consignación, etc.).</li>
+              <li>Fechas específicas de pago.</li>
+              <li>Reglas sobre gastos extraordinarios.</li>
+              <li>Cláusulas de incumplimiento.</li>
+            </ul>
+
+            {/* ================= MODELO ================= */}
+            <h2 className={styles.subTitle}>
+              Ejemplo de acta de conciliación de alimentos en Colombia
+            </h2>
+
+            <pre className={styles.pre}>
+              {`ACTA DE CONCILIACIÓN (ALIMENTOS) – COLOMBIA
+
+Ciudad: Bogotá D.C.
+Fecha: [●]
+
+I. PARTES
+Solicitante: [●] - CC [●]
+Citado: [●] - CC [●]
+
+II. BENEFICIARIO
+Menor: [Nombre] – Registro civil [●]
 
 III. ACUERDOS
-1) Cuota alimentaria ordinaria:
-El(la) citado(a) pagará a favor de [menor/alimentario] la suma de $[●] COP mensuales, dentro de los primeros [●] días
-de cada mes, mediante [transferencia/consignación] a la cuenta [●] a nombre de [●].
 
-2) Gastos extraordinarios:
-Se acuerda que los gastos extraordinarios de [salud no cubierta / útiles / matrículas / uniformes / terapias]
-serán asumidos así: [porcentaje A] / [porcentaje B], previa entrega del soporte (factura/orden) por [medio].
+1. Cuota alimentaria:
+El obligado pagará $[●] COP mensuales dentro de los primeros [●] días de cada mes.
 
-3) Indexación (opcional):
-La cuota se reajustará cada [enero] conforme a [IPC / incremento anual pactado] (si se decide pactarlo).
+2. Forma de pago:
+Transferencia bancaria a la cuenta [●].
 
-4) Régimen de entrega de soportes:
-Los comprobantes de pago se enviarán a [correo/WhatsApp] dentro de las [●] horas siguientes al pago.
+3. Gastos extraordinarios:
+Serán asumidos en proporción [●] y soportados con facturas.
 
-5) Incumplimiento:
-En caso de incumplimiento, la parte cumplida podrá exigir lo acordado por las vías legales pertinentes.
+4. Incumplimiento:
+Se podrá exigir el cumplimiento por vía legal en Colombia.
 
 Firmas…`}
-          </motion.pre>
+            </pre>
 
-          <motion.details
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <summary>
-              Mini-checklist: alimentos (para que no quede débil)
-            </summary>
-            <ul>
-              <li>
-                Dejar claro si la cuota cubre alimentación, transporte,
-                recreación, etc.
-              </li>
-              <li>
-                Separar “ordinarios” vs “extraordinarios” y cómo se
-                aprueban/pagan.
-              </li>
-              <li>
-                Definir medio de pago y a nombre de quién queda la cuenta.
-              </li>
-              <li>Agregar regla de reajuste si la manejan en el centro.</li>
-            </ul>
-          </motion.details>
-        </motion.article>
+            {/* ================= FAQ SEO ================= */}
+            <h2 className={styles.subTitle}>
+              Preguntas frecuentes sobre conciliación de alimentos en Colombia
+            </h2>
+
+            <div className={styles.faq}>
+              <h4>¿El acta de conciliación tiene validez legal?</h4>
+              <p>
+                Sí, tiene efectos jurídicos y puede ser ejecutada judicialmente.
+              </p>
+
+              <h4>¿Se puede hacer conciliación sin abogado en Bogotá?</h4>
+              <p>Sí, en centros de conciliación autorizados en Colombia.</p>
+
+              <h4>¿Qué pasa si no se paga la cuota?</h4>
+              <p>
+                Se puede iniciar proceso de ejecución o incluso acciones
+                penales.
+              </p>
+            </div>
+          </motion.article>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
