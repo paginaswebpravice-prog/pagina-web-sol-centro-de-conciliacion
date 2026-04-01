@@ -29,17 +29,17 @@ const nextConfig: NextConfig = {
       },
 
       {
-        source: "/pages/privacy.php",
+        source: "/pages/privacy",
         destination: "/about",
         permanent: true,
       },
       {
-        source: "/pages/terms.php",
+        source: "/pages/terms",
         destination: "/about",
         permanent: true,
       },
       {
-        source: "/pages/blog/blog.php",
+        source: "/pages/blog/blog",
         destination: "/blog",
         permanent: true,
       },
