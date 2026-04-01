@@ -18,12 +18,12 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/tarifas/",
+        source: "/tarifas",
         destination: "/practice",
         permanent: true,
       },
       {
-        source: "/servicios/",
+        source: "/servicios",
         destination: "/practice",
         permanent: true,
       },
