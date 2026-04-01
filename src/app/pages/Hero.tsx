@@ -12,40 +12,69 @@ const handleClick = () => {
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
-      {/* Video de fondo */}
-      <video className={styles.videoBg} autoPlay muted loop playsInline>
-        <source src="/video-intro2.mp4" type="video/mp4" />
-      </video>
-      <motion.div
-        className={styles.content}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <h1 className={styles.mainTitle}>
-          SOL Centro de Conciliación y Arbitraje en Colombia
-        </h1>
+    <>
+      {/* Schema Video */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            name: "SOL Centro de Conciliación y Arbitraje en Colombia",
+            description:
+              "Centro de conciliación y arbitraje en Colombia especializado en conciliación extrajudicial, resolución de conflictos y servicios legales.",
+            thumbnailUrl:
+              "https://solcentrodeconciliacion.com/thumbnail-video.jpg",
+            uploadDate: "2025-12-31",
+            contentUrl: "https://solcentrodeconciliacion.com/video-intro2.mp4",
+            embedUrl: "https://solcentrodeconciliacion.com/",
+            publisher: {
+              "@type": "Organization",
+              name: "SOL Centro de Conciliación y Arbitraje",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://solcentrodeconciliacion.com/logo.png",
+              },
+            },
+          }),
+        }}
+      />
 
-        <p className={styles.paragraph}>
-          En <strong>SOL Centro de Conciliación y Arbitraje</strong> ofrecemos
-          soluciones legales ágiles y efectivas para la{" "}
-          <strong>resolución alternativa de conflictos</strong> a través de la
-          conciliación extrajudicial y el arbitraje. Acompañamos a personas y
-          empresas en la búsqueda de acuerdos justos, eficientes y legalmente
-          respaldados.
-        </p>
+      <section className={styles.hero}>
+        {/* Video de fondo */}
+        <video className={styles.videoBg} autoPlay muted loop playsInline>
+          <source src="/video-intro2.mp4" type="video/mp4" />
+        </video>
+        <motion.div
+          className={styles.content}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <h1 className={styles.mainTitle}>
+            SOL Centro de Conciliación y Arbitraje en Colombia
+          </h1>
 
-        <p className={styles.paragraph}>
-          Nuestro equipo de profesionales especializados te asesora durante cada
-          etapa del proceso, garantizando seguridad jurídica, confidencialidad y
-          un enfoque práctico orientado a resultados.
-        </p>
+          <p className={styles.paragraph}>
+            En <strong>SOL Centro de Conciliación y Arbitraje</strong> ofrecemos
+            soluciones legales ágiles y efectivas para la{" "}
+            <strong>resolución alternativa de conflictos</strong> a través de la
+            conciliación extrajudicial y el arbitraje. Acompañamos a personas y
+            empresas en la búsqueda de acuerdos justos, eficientes y legalmente
+            respaldados.
+          </p>
 
-        <button className={styles.ctaButton} onClick={handleClick}>
-          Consulta legal por WhatsApp
-        </button>
-      </motion.div>
-    </section>
+          <p className={styles.paragraph}>
+            Nuestro equipo de profesionales especializados te asesora durante
+            cada etapa del proceso, garantizando seguridad jurídica,
+            confidencialidad y un enfoque práctico orientado a resultados.
+          </p>
+
+          <button className={styles.ctaButton} onClick={handleClick}>
+            Consulta legal por WhatsApp
+          </button>
+        </motion.div>
+      </section>
+    </>
   );
 }
