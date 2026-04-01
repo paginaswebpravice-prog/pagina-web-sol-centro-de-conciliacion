@@ -47,19 +47,8 @@ const nextConfig: NextConfig = {
       /* =========================
          LIMPIEZA GENERAL SEO
       ========================== */
-
-      {
-        source: "/index.php/:path*",
-        destination: "/:path*",
-        permanent: true,
-      },
       {
         source: "/:path*.php",
-        destination: "/:path*",
-        permanent: true,
-      },
-      {
-        source: "/:path*/",
         destination: "/:path*",
         permanent: true,
       },
