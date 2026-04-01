@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
       ========================== */
 
       {
-        source: "/contacto/",
+        source: "/contacto",
         destination: "/contact",
         permanent: true,
       },
