@@ -1,0 +1,110 @@
+/* =========================
+   CTA SECTION
+========================= */
+
+.ctaSection {
+  background: #f4f2ee; /* gris claro como tu web */
+  padding: 80px 6%;
+}
+
+/* CONTENEDOR */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* TARJETA */
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e0dc;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* TITULO */
+
+.card h2 {
+  font-size: 32px;
+  color: #1f3c44; /* azul oscuro elegante */
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+/* TEXTO */
+
+.card p {
+  font-size: 16px;
+  color: #5f6b6d;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0 auto 30px;
+}
+
+/* BOTONES */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* BOTÓN PRINCIPAL (dorado) */
+
+.primaryBtn {
+  background: #f0b429; /* dorado del diseño */
+  color: #000;
+  padding: 14px 28px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.primaryBtn:hover {
+  background: #d89c1f;
+  transform: translateY(-2px);
+}
+
+/* BOTÓN SECUNDARIO */
+
+.secondaryBtn {
+  border: 1px solid #1f3c44;
+  color: #1f3c44;
+  padding: 14px 28px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.secondaryBtn:hover {
+  background: #1f3c44;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .card {
+    padding: 35px 25px;
+  }
+
+  .card h2 {
+    font-size: 24px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}

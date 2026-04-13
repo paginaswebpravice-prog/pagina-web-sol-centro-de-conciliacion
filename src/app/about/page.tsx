@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import styles from "./About.module.css";
 import Link from "next/link";
+import CTASection from "../components/CTAsection";
 
 const lawyers = [
   {
@@ -50,51 +51,57 @@ export default function About() {
   };
 
   return (
-    <section className={styles.section}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
+    <>
+      <section className={styles.section}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
 
-      <h2 className={styles.title}>Nuestro Equipo Jurídico</h2>
+        <h2 className={styles.title}>Nuestro Equipo Jurídico</h2>
 
-      <div className={styles.grid}>
-        {lawyers.map((lawyer, index) => (
-          <motion.article
-            key={lawyer.slug}
-            className={styles.card}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            viewport={{ once: true }}
-          >
-            <div className={styles.imageBox}>
-              <img src={lawyer.image} alt={lawyer.name} />
-            </div>
-
-            <div className={styles.cardContent}>
-              <h3 className={styles.name}>{lawyer.name}</h3>
-              <span className={styles.role}>{lawyer.role}</span>
-
-              <p className={styles.description}>{lawyer.description}</p>
-
-              <div className={styles.buttonGroup}>
-                <Link href={`${lawyer.slug}`} className={styles.primaryButton}>
-                  Ver perfil
-                </Link>
-
-                <a
-                  href="https://api.whatsapp.com/send/?phone=573232904786"
-                  target="_blank"
-                  className={styles.secondaryButton}
-                >
-                  Consulta
-                </a>
+        <div className={styles.grid}>
+          {lawyers.map((lawyer, index) => (
+            <motion.article
+              key={lawyer.slug}
+              className={styles.card}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className={styles.imageBox}>
+                <img src={lawyer.image} alt={lawyer.name} />
               </div>
-            </div>
-          </motion.article>
-        ))}
-      </div>
-    </section>
+
+              <div className={styles.cardContent}>
+                <h3 className={styles.name}>{lawyer.name}</h3>
+                <span className={styles.role}>{lawyer.role}</span>
+
+                <p className={styles.description}>{lawyer.description}</p>
+
+                <div className={styles.buttonGroup}>
+                  <Link
+                    href={`${lawyer.slug}`}
+                    className={styles.primaryButton}
+                  >
+                    Ver perfil
+                  </Link>
+
+                  <a
+                    href="https://api.whatsapp.com/send/?phone=573232904786"
+                    target="_blank"
+                    className={styles.secondaryButton}
+                  >
+                    Consulta
+                  </a>
+                </div>
+              </div>
+            </motion.article>
+          ))}
+        </div>
+      </section>
+      <CTASection />
+    </>
   );
 }

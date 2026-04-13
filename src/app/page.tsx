@@ -3,6 +3,7 @@ import AboutSection from "./components/AboutSection";
 import PracticeSection from "./components/PracticeSection";
 import OurTeamSection from "./components/OurTeamSection";
 import FAQSection from "./components/FAQSection";
+import CTASection from "./components/CTAsection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       */}
       <OurTeamSection />
       <FAQSection />
+      <CTASection />
     </>
   );
 }

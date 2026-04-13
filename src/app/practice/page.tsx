@@ -14,6 +14,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { motion, Variants } from "framer-motion";
+import CTASection from "../components/CTAsection";
 
 const areas = [
   {
@@ -103,106 +104,111 @@ const cardVariants: Variants = {
 
 export default function Practice() {
   return (
-    <section className={styles.section}>
-      {/* JSON-LD para SEO SCHEMA */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LegalService",
-            name: "Sol Centro de Conciliación",
-            url: "https://www.solcentrodeconciliacion.com",
-            description:
-              "Centro de conciliación especializado en resolución extrajudicial de conflictos civiles, comerciales, laborales y familiares en Colombia.",
-            areaServed: "Colombia",
-            serviceType: "Conciliación extrajudicial en derecho",
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "Áreas de conciliación",
-              itemListElement: [
-                {
-                  "@type": "Service",
-                  name: "Conciliación en asuntos comerciales",
-                  description:
-                    "Resolución de conflictos empresariales relacionados con contratos mercantiles, sociedades e incumplimientos comerciales.",
-                },
-                {
-                  "@type": "Service",
-                  name: "Conciliación en asuntos civiles",
-                  description:
-                    "Resolución extrajudicial de conflictos civiles relacionados con obligaciones, daños y perjuicios y derechos patrimoniales.",
-                },
-                {
-                  "@type": "Service",
-                  name: "Conciliación en asuntos laborales",
-                  description:
-                    "Acuerdos entre empleadores y trabajadores en conflictos laborales como liquidaciones, contratos y despidos.",
-                },
-                {
-                  "@type": "Service",
-                  name: "Conciliación familiar",
-                  description:
-                    "Conciliación en conflictos familiares relacionados con custodia, visitas, alimentos y acuerdos parentales.",
-                },
-                {
-                  "@type": "Service",
-                  name: "Conciliación en arrendamientos",
-                  description:
-                    "Resolución de conflictos entre arrendadores y arrendatarios sobre cánones, restitución de inmuebles y obligaciones contractuales.",
-                },
-              ],
-            },
-          }),
-        }}
-      />
+    <>
+      <section className={styles.section}>
+        {/* JSON-LD para SEO SCHEMA */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LegalService",
+              name: "Sol Centro de Conciliación",
+              url: "https://www.solcentrodeconciliacion.com",
+              description:
+                "Centro de conciliación especializado en resolución extrajudicial de conflictos civiles, comerciales, laborales y familiares en Colombia.",
+              areaServed: "Colombia",
+              serviceType: "Conciliación extrajudicial en derecho",
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Áreas de conciliación",
+                itemListElement: [
+                  {
+                    "@type": "Service",
+                    name: "Conciliación en asuntos comerciales",
+                    description:
+                      "Resolución de conflictos empresariales relacionados con contratos mercantiles, sociedades e incumplimientos comerciales.",
+                  },
+                  {
+                    "@type": "Service",
+                    name: "Conciliación en asuntos civiles",
+                    description:
+                      "Resolución extrajudicial de conflictos civiles relacionados con obligaciones, daños y perjuicios y derechos patrimoniales.",
+                  },
+                  {
+                    "@type": "Service",
+                    name: "Conciliación en asuntos laborales",
+                    description:
+                      "Acuerdos entre empleadores y trabajadores en conflictos laborales como liquidaciones, contratos y despidos.",
+                  },
+                  {
+                    "@type": "Service",
+                    name: "Conciliación familiar",
+                    description:
+                      "Conciliación en conflictos familiares relacionados con custodia, visitas, alimentos y acuerdos parentales.",
+                  },
+                  {
+                    "@type": "Service",
+                    name: "Conciliación en arrendamientos",
+                    description:
+                      "Resolución de conflictos entre arrendadores y arrendatarios sobre cánones, restitución de inmuebles y obligaciones contractuales.",
+                  },
+                ],
+              },
+            }),
+          }}
+        />
 
-      {/* HEADER */}
-      <motion.div
-        className={styles.header}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-        viewport={{ once: true }}
-      >
-        <span className={styles.subtitle}>ÁREAS DE PRÁCTICA</span>
-        <h2 className={styles.title}>Conciliación Extrajudicial en Derecho</h2>
-        <p className={styles.description}>
-          Ofrecemos conciliación extrajudicial en derecho para resolver
-          conflictos de forma ágil, confidencial y efectiva, priorizando el
-          diálogo y los acuerdos duraderos.
-        </p>
-      </motion.div>
+        {/* HEADER */}
+        <motion.div
+          className={styles.header}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          viewport={{ once: true }}
+        >
+          <span className={styles.subtitle}>ÁREAS DE PRÁCTICA</span>
+          <h2 className={styles.title}>
+            Conciliación Extrajudicial en Derecho
+          </h2>
+          <p className={styles.description}>
+            Ofrecemos conciliación extrajudicial en derecho para resolver
+            conflictos de forma ágil, confidencial y efectiva, priorizando el
+            diálogo y los acuerdos duraderos.
+          </p>
+        </motion.div>
 
-      {/* GRID con animación STAGGER */}
-      <motion.div
-        className={styles.grid}
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, margin: "-50px" }}
-      >
-        {areas.map((area, index) => (
-          <motion.div
-            key={index}
-            className={styles.card}
-            variants={cardVariants}
-            whileHover={{
-              y: -6,
-              scale: 1.02,
-              boxShadow: "0 12px 24px rgba(0,0,0,0.08)",
-            }}
-            transition={{ duration: 0.2 }}
-          >
-            <div className={styles.icon}>
-              <FontAwesomeIcon icon={area.icon} />
-            </div>
+        {/* GRID con animación STAGGER */}
+        <motion.div
+          className={styles.grid}
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-50px" }}
+        >
+          {areas.map((area, index) => (
+            <motion.div
+              key={index}
+              className={styles.card}
+              variants={cardVariants}
+              whileHover={{
+                y: -6,
+                scale: 1.02,
+                boxShadow: "0 12px 24px rgba(0,0,0,0.08)",
+              }}
+              transition={{ duration: 0.2 }}
+            >
+              <div className={styles.icon}>
+                <FontAwesomeIcon icon={area.icon} />
+              </div>
 
-            <h3 className={styles.cardTitle}>{area.title}</h3>
-            <p className={styles.cardDesc}>{area.desc}</p>
-          </motion.div>
-        ))}
-      </motion.div>
-    </section>
+              <h3 className={styles.cardTitle}>{area.title}</h3>
+              <p className={styles.cardDesc}>{area.desc}</p>
+            </motion.div>
+          ))}
+        </motion.div>
+      </section>
+      <CTASection />
+    </>
   );
 }

@@ -130,12 +130,12 @@ export default function Footer() {
 
           <p className={styles.text}>
             Lunes a viernes
-            <br /> 8:00 a.m. – 6:00 p.m.
+            <br /> 8:00 a.m. - 6:00 p.m.
           </p>
 
           <p className={styles.text}>
             Sábados
-            <br /> 8:00 a.m. – 1:00 p.m.
+            <br /> 8:00 a.m. - 1:00 p.m.
           </p>
         </div>
       </div>
@@ -157,8 +157,17 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* BOTÓN FIJO WHATSAPP */}
+      {/* BOTÓN WHATSAPP MEJORADO */}
       <div className={styles.fixedButtons}>
+        {/* CTA FLOTANTE */}
+        <div className={styles.whatsappCta}>
+          <span>
+            ¿Necesita ayuda legal?
+            <strong> Escríbanos ahora</strong>
+          </span>
+        </div>
+
+        {/* BOTÓN */}
         <button
           className={styles.phoneBtn}
           onClick={handleClick}
