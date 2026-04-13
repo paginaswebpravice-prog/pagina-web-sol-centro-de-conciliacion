@@ -29,7 +29,7 @@ export default function CTASection() {
             </a>
 
             <a
-              href="https://wa.me/573000000000"
+              href="https://api.whatsapp.com/send/?phone=573232904786&text&type=phone_number&app_absent=0"
               target="_blank"
               className={styles.secondaryBtn}
             >
