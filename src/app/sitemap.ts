@@ -3,28 +3,34 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://www.solcentrodeconciliacion.com/",
+      url: "https://solcentrodeconciliacion.com/",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://www.solcentrodeconciliacion.com/about",
+      url: "https://solcentrodeconciliacion.com/about",
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: "https://www.solcentrodeconciliacion.com/practice",
+      url: "https://solcentrodeconciliacion.com/practice",
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.9,
     },
     {
-      url: "https://www.solcentrodeconciliacion.com/blog",
+      url: "https://solcentrodeconciliacion.com/blog",
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.9,
+    },
+    {
+      url: "https://solcentrodeconciliacion.com/contact",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
     },
   ];
 }
