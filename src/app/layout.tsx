@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "SOL Centro de Conciliación y Arbitraje",
     description:
       "En SOL ofrecemos soluciones legales ágiles y efectivas para resolver tus conflictos mediante conciliación y arbitraje.",
-    url: "https://www.solcentrodeconciliacion.com/",
+    url: "https://solcentrodeconciliacion.com/",
     siteName: "SOL Centro de Conciliación y Arbitraje",
     images: [
       {
