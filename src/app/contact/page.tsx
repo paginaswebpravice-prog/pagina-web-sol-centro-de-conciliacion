@@ -3,7 +3,7 @@ import ContactContent from "./ContactContent";
 
 export const metadata: Metadata = {
   title:
-    "Contacto abogados en Bogotá | Consulta legal y conciliación en Colombia",
+    "Consulta con abogados en Bogotá | Agenda asesoría legal y conciliación en Colombia",
   description:
     "Agenda tu consulta con abogados en Bogotá expertos en conciliación y resolución de conflictos en Colombia. Atención presencial y virtual con asesoría legal inmediata.",
   keywords: [
@@ -18,7 +18,8 @@ export const metadata: Metadata = {
     canonical: "https://solcentrodeconciliacion.com/contact",
   },
   openGraph: {
-    title: "Consulta con abogados en Bogotá | Conciliación y asesoría legal",
+    title:
+      "Agenda consulta con abogados en Bogotá | Conciliación rápida y asesoría legal",
     description:
       "Agenda tu consulta legal en Bogotá con abogados expertos en conciliación y resolución de conflictos en Colombia.",
     url: "https://solcentrodeconciliacion.com/contact",

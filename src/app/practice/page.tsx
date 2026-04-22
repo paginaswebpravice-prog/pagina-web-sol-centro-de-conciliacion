@@ -3,9 +3,10 @@ import PracticeContent from "./PracticeContent";
 
 export const metadata: Metadata = {
   title:
-    "Conciliación extrajudicial en Colombia | Centro de conciliación en Bogotá",
+    "Conciliación extrajudicial en Bogotá y Colombia: resuelve conflictos sin demanda rápida y legal",
   description:
-    "Conciliación extrajudicial en derecho en Bogotá y Colombia. Resolución de conflictos civiles, comerciales, laborales y familiares de forma ágil, legal y efectiva.",
+    "Resuelve conflictos sin ir a juicio con conciliación extrajudicial en Bogotá y Colombia. Soluciones rápidas, legales y efectivas en temas civiles, comerciales, laborales y familiares.",
+
   keywords: [
     "conciliación extrajudicial Colombia",
     "centro de conciliación Bogotá",
@@ -14,16 +15,18 @@ export const metadata: Metadata = {
     "conciliación laboral Bogotá",
     "conciliación familiar Colombia",
   ],
+
   openGraph: {
     title:
-      "Conciliación extrajudicial en Colombia | Soluciones legales efectivas",
+      "Conciliación extrajudicial en Bogotá: solución rápida y legal sin demanda",
     description:
-      "Resuelve conflictos sin procesos judiciales. Conciliación en Bogotá y Colombia en temas civiles, comerciales, laborales y familiares.",
+      "Evita procesos judiciales largos. Resuelve conflictos en Colombia con conciliación civil, comercial, laboral y familiar de forma ágil y efectiva.",
     url: "https://solcentrodeconciliacion.com/practice",
     siteName: "Sol Centro de Conciliación",
     locale: "es_CO",
     type: "website",
   },
+
   alternates: {
     canonical: "https://solcentrodeconciliacion.com/practice",
   },

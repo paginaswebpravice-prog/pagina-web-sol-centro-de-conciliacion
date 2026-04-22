@@ -45,7 +45,7 @@ export default function About() {
       name: lawyer.name,
       jobTitle: lawyer.role,
       url: `https://solcentrodeconciliacion.com${lawyer.slug}`,
-      image: `https://      solcentrodeconciliacion.com${lawyer.image}`,
+      image: `https://solcentrodeconciliacion.com${lawyer.image}`,
     })),
   };
 
@@ -64,7 +64,8 @@ export default function About() {
 
         {/* ================= TITULO ================= */}
         <h1 className={styles.title} itemProp="name">
-          Nuestro equipo de abogados en Bogotá
+          Conoce nuestro equipo de abogados en Bogotá expertos en conciliación
+          extrajudicial
         </h1>
 
         {/* ================= GRID ================= */}

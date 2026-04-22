@@ -141,7 +141,8 @@ export default function Practice() {
           </span>
 
           <h1 className={styles.title}>
-            Conciliación Extrajudicial en Derecho en Colombia
+            Resuelve conflictos sin demanda con conciliación extrajudicial en
+            Colombia
           </h1>
 
           <p className={styles.description}>

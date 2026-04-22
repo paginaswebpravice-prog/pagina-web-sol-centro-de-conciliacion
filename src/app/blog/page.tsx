@@ -2,21 +2,23 @@ import { Metadata } from "next";
 import BlogContent from "./BlogContent";
 
 export const metadata: Metadata = {
-  title: "Blog de Conciliación en Colombia | Guía legal, actas y audiencias",
+  title:
+    "Conciliación en Colombia: guía completa, actas y audiencias paso a paso",
   description:
-    "Blog jurídico sobre conciliación extrajudicial en Colombia. Aprende sobre actas de conciliación, audiencias, modelos legales y resolución de conflictos.",
+    "Aprende conciliación extrajudicial en Colombia con guías claras, modelos de actas, audiencias y consejos legales para resolver conflictos sin demanda.",
   keywords: [
     "conciliación Colombia",
-    "acta de conciliación",
-    "audiencia de conciliación",
+    "acta de conciliación ejemplo",
+    "audiencia de conciliación Colombia",
     "modelos de conciliación",
-    "conciliación extrajudicial Colombia",
-    "blog legal Colombia",
+    "conciliación extrajudicial paso a paso",
+    "resolver conflictos sin demanda Colombia",
   ],
   openGraph: {
-    title: "Blog de Conciliación en Colombia | Guía completa legal",
+    title:
+      "Conciliación en Colombia: guía práctica con actas, audiencias y modelos",
     description:
-      "Artículos jurídicos sobre conciliación extrajudicial, modelos de actas, audiencias y resolución de conflictos en Colombia.",
+      "Guías legales, ejemplos de actas y todo sobre conciliación extrajudicial en Colombia explicado paso a paso.",
     url: "https://www.solcentrodeconciliacion.com/blog",
     siteName: "Sol Centro de Conciliación",
     images: [
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
         url: "https://www.solcentrodeconciliacion.com/logo.png",
         width: 800,
         height: 600,
-        alt: "Blog conciliación Colombia",
+        alt: "Guía de conciliación en Colombia",
       },
     ],
     locale: "es_CO",

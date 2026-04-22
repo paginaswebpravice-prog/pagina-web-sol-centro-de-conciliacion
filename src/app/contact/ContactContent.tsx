@@ -62,7 +62,8 @@ export default function ContactContent() {
           viewport={{ once: true }}
         >
           <h2 id="contact-title" itemProp="name">
-            Agenda tu consulta en conciliación legal en Bogotá
+            Agenda tu consulta con abogados en Bogotá y resuelve tu caso sin ir
+            a juicio
           </h2>
 
           <p className={styles.description} itemProp="description">
@@ -84,7 +85,7 @@ export default function ContactContent() {
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
           >
-            Agendar por WhatsApp
+            Agendar consulta por WhatsApp ahora
           </motion.button>
         </motion.div>
       </div>
@@ -97,7 +98,9 @@ export default function ContactContent() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className={styles.mapTitle}>Oficina de conciliación en Bogotá</h2>
+        <h2 className={styles.mapTitle}>
+          Ubicación de nuestra oficina de conciliación en Bogotá
+        </h2>
 
         <div className={styles.mapContainer}>
           <iframe

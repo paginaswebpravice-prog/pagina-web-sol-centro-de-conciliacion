@@ -15,29 +15,41 @@ type BlogPost = {
 
 const generalPosts: BlogPost[] = [
   {
-    title: "¿Qué es la conciliación y para qué sirve?",
+    title: "¿Qué es la conciliación en Colombia y para qué sirve realmente?",
     slug: "que-es-la-conciliacion",
   },
-  { title: "Cuándo conviene conciliar", slug: "cuando-conviene-conciliar" },
   {
-    title: "¿Qué asuntos se pueden conciliar?",
+    title: "¿Cuándo conviene conciliar? Casos donde sí funciona",
+    slug: "cuando-conviene-conciliar",
+  },
+  {
+    title: "¿Qué asuntos se pueden conciliar en Colombia? (Lista completa)",
     slug: "que-asuntos-se-pueden-conciliar",
   },
-  { title: "Paso a paso del trámite", slug: "paso-a-paso-del-tramite" },
-  { title: "Documentos y evidencia útil", slug: "documentos-y-evidencia-util" },
   {
-    title: "Cómo es la audiencia: presencial o virtual",
+    title: "Conciliación paso a paso en Colombia: guía completa",
+    slug: "paso-a-paso-del-tramite",
+  },
+  {
+    title: "Documentos clave para una conciliación exitosa",
+    slug: "documentos-y-evidencia-util",
+  },
+  {
+    title: "¿Cómo es una audiencia de conciliación? Presencial vs virtual",
     slug: "como-es-la-audiencia",
   },
   {
-    title: "Acta de conciliación: efectos y cumplimiento",
+    title: "Acta de conciliación: efectos legales y cómo hacerla cumplir",
     slug: "acta-de-conciliacion-efectos-y-cumplimiento",
   },
   {
-    title: "Errores comunes y cómo evitarlos",
+    title: "Errores comunes en conciliación (y cómo evitarlos)",
     slug: "errores-comunes-y-como-evitarlos",
   },
-  { title: "Preguntas frecuentes", slug: "preguntas-frecuentes" },
+  {
+    title: "Preguntas frecuentes sobre conciliación en Colombia",
+    slug: "preguntas-frecuentes",
+  },
 ];
 
 /* =========================
@@ -46,42 +58,53 @@ const generalPosts: BlogPost[] = [
 
 const juridicoPosts: BlogPost[] = [
   {
-    title: "Modelo de acta de conciliación (general)",
+    title: "Modelo de acta de conciliación en Colombia (ejemplo listo)",
     slug: "modelo-acta-conciliacion",
   },
   {
-    title: "Actas de conciliación: ejemplos y recomendaciones",
+    title: "Actas de conciliación: ejemplos reales y recomendaciones",
     slug: "actas-ejemplos",
   },
   {
-    title: "Acta de conciliación suscrita por compañeros permanentes",
+    title: "Acta de conciliación entre compañeros permanentes (modelo y guía)",
     slug: "acta-companeros-permanentes",
   },
   {
-    title: "Acta de conciliación de alimentos (con ejemplo) + Art. 411 C.C.",
+    title: "Acta de conciliación de alimentos (ejemplo + Artículo 411 C.C.)",
     slug: "acta-alimentos",
   },
   {
-    title: "Acta/constancia de no conciliación laboral (modelo)",
+    title: "Acta de no conciliación laboral: modelo y cuándo usarla",
     slug: "acta-no-conciliacion-laboral",
   },
-  { title: "Carta de conciliación (modelo)", slug: "carta-conciliacion" },
-  { title: "Acta de conciliación civil (modelo)", slug: "acta-civil" },
   {
-    title: "Documento/acta de conciliación familiar (modelo)",
+    title: "Carta de conciliación en Colombia: modelo y cómo redactarla",
+    slug: "carta-conciliacion",
+  },
+  {
+    title: "Acta de conciliación civil: ejemplo práctico",
+    slug: "acta-civil",
+  },
+  {
+    title: "Acta de conciliación familiar: modelo y recomendaciones legales",
     slug: "documento-familia",
   },
   {
-    title:
-      "Amigable composición en Colombia: qué es, características y amigable componedor",
+    title: "Amigable composición en Colombia: qué es y cómo funciona",
     slug: "amigable-composicion",
   },
-  { title: "Audiencia de conciliación: cómo funciona", slug: "audiencia" },
   {
-    title: "Poder para asistir a audiencia de conciliación (modelo)",
+    title: "Audiencia de conciliación en Colombia: cómo funciona paso a paso",
+    slug: "audiencia",
+  },
+  {
+    title: "Poder para audiencia de conciliación: modelo listo para usar",
     slug: "poder",
   },
-  { title: "Citación a audiencia de conciliación (modelo)", slug: "citacion" },
+  {
+    title: "Citación a audiencia de conciliación: modelo y ejemplo",
+    slug: "citacion",
+  },
 ];
 
 export default function BlogContent() {
@@ -120,21 +143,23 @@ export default function BlogContent() {
 
       <div className={styles.header}>
         <h3 className={styles.subtitle}>
-          Conciliación en Colombia: guía completa para llegar a un acuerdo con
-          validez legal
+          Conciliación en Colombia: guía práctica para resolver conflictos sin
+          demanda
         </h3>
-        <h2 className={styles.heading}>Centro de Conciliación</h2>
+        <h2 className={styles.heading}>
+          Aprende conciliación paso a paso y evita procesos judiciales
+        </h2>
       </div>
 
       {/* ================= SECCIÓN 1 ================= */}
       <div className={styles.sectionBlock}>
         <div className={styles.sectionHeader}>
           <div className={styles.badges}>
-            <span>Guía básica</span>
-            <span>Información general</span>
+            <span>Guía práctica</span>
+            <span>Inicio rápido</span>
           </div>
 
-          <h3>Aspectos generales sobre conciliación</h3>
+          <h3>Guía completa de conciliación en Colombia</h3>
 
           <p>
             Conoce los fundamentos del proceso de conciliación, cuándo conviene
@@ -154,7 +179,7 @@ export default function BlogContent() {
               <Link href={`/blog/${post.slug}`} className={styles.card}>
                 <div className={styles.cardContent}>
                   <h4>{post.title}</h4>
-                  <span className={styles.readMore}>Leer artículo →</span>
+                  <span className={styles.readMore}>Leer guía →</span>
                 </div>
               </Link>
             </motion.div>
@@ -166,11 +191,11 @@ export default function BlogContent() {
       <div className={styles.sectionBlock}>
         <div className={styles.sectionHeader}>
           <div className={`${styles.badges} ${styles.juridicoBadges}`}>
-            <span>Marco legal</span>
-            <span>Aspectos jurídicos</span>
+            <span>Modelos legales</span>
+            <span>Ejemplos reales</span>
           </div>
 
-          <h3>Fundamento jurídico y efectos legales</h3>
+          <h3>Modelos, actas y fundamentos legales de conciliación</h3>
 
           <p>
             Profundiza en los efectos legales de la conciliación, el valor del
@@ -190,7 +215,7 @@ export default function BlogContent() {
               <Link href={`/blog/${post.slug}`} className={styles.card}>
                 <div className={styles.cardContent}>
                   <h4>{post.title}</h4>
-                  <span className={styles.readMore}>Leer artículo →</span>
+                  <span className={styles.readMore}>Ver modelo →</span>
                 </div>
               </Link>
             </motion.div>
