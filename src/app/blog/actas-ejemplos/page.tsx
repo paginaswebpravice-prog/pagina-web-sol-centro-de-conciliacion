@@ -1,9 +1,10 @@
 "use client";
 
+import { Metadata } from "next";
 import ActasEjemplosContent from "./ActasEjemplosContent";
 
 /* ================= METADATA (SEO REAL) ================= */
-export const metadata = {
+export const metadata: Metadata = {
   title: "Actas de conciliación en Colombia: ejemplos y modelos en Bogotá",
   description:
     "Ejemplos de actas de conciliación en Colombia. Modelos de acuerdos de pago, formatos legales y recomendaciones prácticas en Bogotá.",

@@ -1,6 +1,7 @@
+import { Metadata } from "next";
 import ActaDeConciliacionEfectosYCumplimientoContent from "./ActaDeConciliacionEfectosYCumplimientoContent";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Acta de conciliación: efectos legales y cumplimiento en Colombia",
   description:
     "Efectos legales del acta de conciliación en Colombia, cumplimiento, qué pasa si no cumplen un acta de conciliación en Bogotá y Colombia.",
