@@ -15,67 +15,80 @@ import {
 
 import { motion, Variants } from "framer-motion";
 import CTASection from "../components/CTAsection";
+import Link from "next/link";
 
 const areas = [
   {
     title: "Asuntos Comerciales",
     desc: "Conciliación en conflictos empresariales relacionados con contratos mercantiles, incumplimientos, sociedades y relaciones comerciales. Facilitamos acuerdos que permiten proteger los intereses económicos y mantener relaciones comerciales estables.",
     icon: faMoneyBillWave,
+    link: "/practice/asuntos-comerciales",
   },
   {
     title: "Asuntos Civiles",
     desc: "Resolución extrajudicial de conflictos civiles vinculados a contratos, obligaciones, daños y perjuicios, y derechos patrimoniales, mediante acuerdos claros, equilibrados y jurídicamente válidos.",
     icon: faScaleBalanced,
+    link: "/practice/asuntos-civiles",
   },
   {
     title: "Asuntos de Copropiedad",
     desc: "Mediación y conciliación en conflictos de propiedad horizontal, cuotas de administración, uso de zonas comunes y convivencia entre copropietarios, promoviendo soluciones prácticas y duraderas.",
     icon: faBuilding,
+    link: "/practice/asuntos-de-copropiedad",
   },
   {
     title: "Asuntos Laborales",
     desc: "Conciliación laboral entre empleadores y trabajadores en temas como despidos, liquidaciones, contratos y reclamaciones laborales, priorizando acuerdos justos y el cumplimiento normativo.",
     icon: faBriefcase,
+    link: "/practice/asuntos-laborales",
   },
   {
     title: "Alimentos para Menores",
     desc: "Acompañamiento jurídico en la fijación, modificación y cumplimiento de cuotas alimentarias, garantizando la protección de los derechos de niños, niñas y adolescentes.",
     icon: faChild,
+    link: "/practice/alimentos-menores",
   },
   {
     title: "Custodia y Régimen de Visitas",
     desc: "Orientación legal para definir acuerdos de custodia, cuidado personal y régimen de visitas, siempre priorizando el interés superior del menor y el bienestar familiar",
     icon: faClipboardList,
+    link: "/practice/custodia-visitas",
   },
   {
     title: "Asuntos Vecinales",
     desc: "Mediación en conflictos de convivencia relacionados con ruidos, uso de espacios comunes, límites de propiedad y normas comunitarias, fomentando el diálogo y la armonía vecinal.",
     icon: faUsers,
+    link: "/practice/asuntos-vecinales",
   },
   {
     title: "Liquidación de Sociedad Conyugal",
     desc: "Conciliación para la distribución justa y ordenada de los bienes adquiridos durante el matrimonio o la unión marital, evitando procesos judiciales prolongados.",
     icon: faHouse,
+    link: "/practice/liquidacion-sociedad-conyugal",
   },
   {
     title: "Conflictos Familiares",
     desc: "Conciliación en conflictos familiares relacionados con separación, acuerdos parentales y responsabilidades familiares, buscando soluciones respetuosas y sostenibles.",
     icon: faUsers,
+    link: "/practice/conflictos-familiares",
   },
   {
     title: "Obligaciones Económicas",
     desc: "Gestión conciliada de obligaciones económicas, deudas y acuerdos de pago entre particulares o empresas, con enfoque en soluciones viables y seguras.",
     icon: faMoneyBillWave,
+    link: "/practice/obligaciones-economicas",
   },
   {
     title: "Incumplimiento de Contratos",
     desc: "Conciliación frente a incumplimientos contractuales, permitiendo renegociar condiciones, evitar litigios y lograr acuerdos efectivos entre las partes.",
     icon: faScaleBalanced,
+    link: "/practice/incumplimiento-contratos",
   },
   {
     title: "Conflictos de Arrendamiento",
     desc: "Mediación y conciliación en conflictos entre arrendadores y arrendatarios relacionados con cánones, restitución de inmuebles y obligaciones contractuales.",
     icon: faBuilding,
+    link: "/practice/arrendamiento",
   },
 ];
 
@@ -103,31 +116,6 @@ export default function Practice() {
   return (
     <>
       <section className={styles.section}>
-        {/* SCHEMA SEO */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LegalService",
-              name: "Sol Centro de Conciliación",
-              areaServed: "Colombia",
-              serviceType: "Conciliación extrajudicial en derecho",
-              description:
-                "Centro de conciliación en Bogotá especializado en resolución de conflictos civiles, comerciales, laborales y familiares.",
-              hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "Áreas de conciliación",
-                itemListElement: areas.map((a) => ({
-                  "@type": "Service",
-                  name: a.title,
-                  description: a.desc,
-                })),
-              },
-            }),
-          }}
-        />
-
         {/* HEADER */}
         <motion.div
           className={styles.header}
@@ -164,19 +152,23 @@ export default function Practice() {
           {areas.map((area, index) => (
             <motion.div
               key={index}
-              className={styles.card}
               variants={cardVariants}
-              whileHover={{
-                y: -6,
-                scale: 1.02,
-              }}
+              whileHover={{ y: -6, scale: 1.02 }}
             >
-              <div className={styles.icon}>
-                <FontAwesomeIcon icon={area.icon} />
-              </div>
+              <Link
+                href={area.link}
+                className={styles.card}
+                aria-label={`Ver más sobre ${area.title}`}
+              >
+                <div className={styles.icon}>
+                  <FontAwesomeIcon icon={area.icon} />
+                </div>
 
-              <h3 className={styles.cardTitle}>{area.title}</h3>
-              <p className={styles.cardDesc}>{area.desc}</p>
+                <h3 className={styles.cardTitle}>{area.title}</h3>
+                <p className={styles.cardDesc}>{area.desc}</p>
+
+                <span className={styles.link}>Ver más →</span>
+              </Link>
             </motion.div>
           ))}
         </motion.div>

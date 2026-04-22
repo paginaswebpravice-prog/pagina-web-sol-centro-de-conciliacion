@@ -39,6 +39,7 @@
   grid-template-columns: repeat(4, 1fr);
   border: none; /* Limpia el diseño */
   box-sizing: border-box;
+  align-items: stretch;
 }
 
 /* TARJETAS */
@@ -52,6 +53,8 @@
   flex-direction: column;
   align-items: center; /* Centrado horizontal */
   text-align: center; /* Texto centrado */
+
+  height: 100%;
 }
 
 .card:hover {
@@ -94,6 +97,7 @@
   line-height: 1.6;
   text-align: center;
   max-width: 240px; /* evita texto súper ancho */
+  flex-grow: 1;
 }
 
 /* LINK */
