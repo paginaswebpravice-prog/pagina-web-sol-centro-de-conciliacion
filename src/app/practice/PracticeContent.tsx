@@ -19,31 +19,31 @@ import Link from "next/link";
 
 const areas = [
   {
-    title: "Asuntos Comerciales",
+    title: "Conciliación en Asuntos Comerciales",
     desc: "Conciliación en conflictos empresariales relacionados con contratos mercantiles, incumplimientos, sociedades y relaciones comerciales. Facilitamos acuerdos que permiten proteger los intereses económicos y mantener relaciones comerciales estables.",
     icon: faMoneyBillWave,
     link: "/practice/asuntos-comerciales",
   },
   {
-    title: "Asuntos Civiles",
+    title: "Conciliación en Asuntos Civiles",
     desc: "Resolución extrajudicial de conflictos civiles vinculados a contratos, obligaciones, daños y perjuicios, y derechos patrimoniales, mediante acuerdos claros, equilibrados y jurídicamente válidos.",
     icon: faScaleBalanced,
     link: "/practice/asuntos-civiles",
   },
   {
-    title: "Asuntos de Copropiedad",
+    title: "Conciliación en Copropiedad y Propiedad Horizontal",
     desc: "Mediación y conciliación en conflictos de propiedad horizontal, cuotas de administración, uso de zonas comunes y convivencia entre copropietarios, promoviendo soluciones prácticas y duraderas.",
     icon: faBuilding,
     link: "/practice/asuntos-de-copropiedad",
   },
   {
-    title: "Asuntos Laborales",
+    title: "Conciliación Laboral en Colombia",
     desc: "Conciliación laboral entre empleadores y trabajadores en temas como despidos, liquidaciones, contratos y reclamaciones laborales, priorizando acuerdos justos y el cumplimiento normativo.",
     icon: faBriefcase,
     link: "/practice/asuntos-laborales",
   },
   {
-    title: "Alimentos para Menores",
+    title: "Cuota Alimentaria para Menores",
     desc: "Acompañamiento jurídico en la fijación, modificación y cumplimiento de cuotas alimentarias, garantizando la protección de los derechos de niños, niñas y adolescentes.",
     icon: faChild,
     link: "/practice/alimentos-para-menores",
@@ -55,7 +55,7 @@ const areas = [
     link: "/practice/custodia-y-regimen-de-visitas",
   },
   {
-    title: "Asuntos Vecinales",
+    title: "Conciliación de Conflictos Vecinales",
     desc: "Mediación en conflictos de convivencia relacionados con ruidos, uso de espacios comunes, límites de propiedad y normas comunitarias, fomentando el diálogo y la armonía vecinal.",
     icon: faUsers,
     link: "/practice/asuntos-vecinales",
@@ -67,13 +67,13 @@ const areas = [
     link: "/practice/liquidacion-de-sociedad-conyugal",
   },
   {
-    title: "Conflictos Familiares",
+    title: "Conciliación de Conflictos Familiares",
     desc: "Conciliación en conflictos familiares relacionados con separación, acuerdos parentales y responsabilidades familiares, buscando soluciones respetuosas y sostenibles.",
     icon: faUsers,
     link: "/practice/conflictos-familiares",
   },
   {
-    title: "Obligaciones Económicas",
+    title: "Conciliación de Obligaciones Económicas",
     desc: "Gestión conciliada de obligaciones económicas, deudas y acuerdos de pago entre particulares o empresas, con enfoque en soluciones viables y seguras.",
     icon: faMoneyBillWave,
     link: "/practice/obligaciones-economicas",
@@ -85,7 +85,7 @@ const areas = [
     link: "/practice/incumplimiento-de-contratos",
   },
   {
-    title: "Conflictos de Arrendamiento",
+    title: "Conciliación en Conflictos de Arrendamiento",
     desc: "Mediación y conciliación en conflictos entre arrendadores y arrendatarios relacionados con cánones, restitución de inmuebles y obligaciones contractuales.",
     icon: faBuilding,
     link: "/practice/conflictos-de-arrendamiento",
@@ -125,12 +125,12 @@ export default function Practice() {
           viewport={{ once: true }}
         >
           <span className={styles.subtitle}>
-            CONCILIACIÓN EN BOGOTÁ Y COLOMBIA
+            CONCILIACIÓN EXTRAJUDICIAL EN BOGOTÁ Y COLOMBIA
           </span>
 
           <h1 className={styles.title}>
-            Resuelve conflictos sin demanda con conciliación extrajudicial en
-            Colombia
+            Conciliación extrajudicial en Colombia para resolver conflictos sin
+            demandas
           </h1>
 
           <p className={styles.description}>
@@ -167,7 +167,7 @@ export default function Practice() {
                 <h3 className={styles.cardTitle}>{area.title}</h3>
                 <p className={styles.cardDesc}>{area.desc}</p>
 
-                <span className={styles.link}>Ver más →</span>
+                <span className={styles.link}>Conocer más →</span>
               </Link>
             </motion.div>
           ))}
