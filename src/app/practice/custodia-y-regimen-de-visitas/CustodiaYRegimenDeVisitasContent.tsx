@@ -16,11 +16,11 @@ export default function CustodiaYRegimenDeVisitasContent() {
           transition={{ duration: 0.7 }}
         >
           <span className={styles.subtitle}>
-            CUSTODIA Y RÉGIMEN DE VISITAS EN COLOMBIA
+            CONCILIACIÓN DE CUSTODIA Y RÉGIMEN DE VISITAS EN COLOMBIA
           </span>
 
           <h1 className={styles.title}>
-            Acuerdos de custodia y visitas sin demanda en Colombia
+            Custodia y régimen de visitas en Colombia: acuerdos sin demanda
           </h1>
 
           <p className={styles.description}>
@@ -36,7 +36,7 @@ export default function CustodiaYRegimenDeVisitasContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué es la custodia y el régimen de visitas?
+              ¿Qué es la custodia y el régimen de visitas en Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -54,7 +54,8 @@ export default function CustodiaYRegimenDeVisitasContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué aspectos se pueden acordar en conciliación?
+              Aspectos que se pueden acordar en conciliación de custodia y
+              visitas
             </h2>
 
             <p className={styles.text}>
@@ -75,7 +76,7 @@ export default function CustodiaYRegimenDeVisitasContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de la conciliación en custodia y visitas
+              Beneficios de conciliar custodia y régimen de visitas
             </h2>
 
             <div className={styles.grid}>
@@ -103,7 +104,7 @@ export default function CustodiaYRegimenDeVisitasContent() {
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Validez legal</h3>
+                <h3 className={styles.cardTitle}>Acuerdos con validez legal</h3>
                 <p className={styles.cardText}>
                   Los acuerdos tienen fuerza jurídica en Colombia.
                 </p>
@@ -130,7 +131,7 @@ export default function CustodiaYRegimenDeVisitasContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar un proceso judicial de custodia?
+              ¿Por qué evitar un proceso judicial de custodia en Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -147,7 +148,7 @@ export default function CustodiaYRegimenDeVisitasContent() {
           {/* BLOQUE 5 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Cómo iniciar una conciliación de custodia?
+              ¿Cómo iniciar una conciliación de custodia y visitas?
             </h2>
 
             <p className={styles.text}>

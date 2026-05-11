@@ -16,11 +16,12 @@ export default function ConflictosDeArrendamientoContent() {
           transition={{ duration: 0.7 }}
         >
           <span className={styles.subtitle}>
-            CONFLICTOS DE ARRENDAMIENTO EN COLOMBIA
+            CONCILIACIÓN Y CONFLICTOS DE ARRENDAMIENTO EN COLOMBIA
           </span>
 
           <h1 className={styles.title}>
-            Resuelve conflictos de arrendamiento sin demanda en Colombia
+            Conciliación en arrendamientos en Colombia: resuelva conflictos sin
+            demanda
           </h1>
 
           <p className={styles.description}>
@@ -36,7 +37,7 @@ export default function ConflictosDeArrendamientoContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué es un conflicto de arrendamiento?
+              ¿Qué es un conflicto de arrendamiento y cómo resolverlo?
             </h2>
 
             <p className={styles.text}>
@@ -55,7 +56,7 @@ export default function ConflictosDeArrendamientoContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué conflictos de arrendamiento se pueden conciliar?
+              Conflictos de arrendamiento que se pueden conciliar en Colombia
             </h2>
 
             <p className={styles.text}>
@@ -76,7 +77,7 @@ export default function ConflictosDeArrendamientoContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de la conciliación en arrendamientos
+              Beneficios de la conciliación en conflictos de arrendamiento
             </h2>
 
             <div className={styles.grid}>
@@ -95,14 +96,14 @@ export default function ConflictosDeArrendamientoContent() {
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Solución legal</h3>
+                <h3 className={styles.cardTitle}>Acuerdos con validez legal</h3>
                 <p className={styles.cardText}>
                   El acuerdo tiene validez jurídica en Colombia.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Menor costo</h3>
+                <h3 className={styles.cardTitle}>Menor costo legal</h3>
                 <p className={styles.cardText}>
                   Evita procesos judiciales costosos.
                 </p>
@@ -127,7 +128,7 @@ export default function ConflictosDeArrendamientoContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar una demanda por arrendamiento?
+              ¿Por qué evitar una demanda por arrendamiento en Colombia?
             </h2>
 
             <p className={styles.text}>

@@ -16,11 +16,12 @@ export default function ConflictosFamiliaresContent() {
           transition={{ duration: 0.7 }}
         >
           <span className={styles.subtitle}>
-            CONFLICTOS FAMILIARES EN COLOMBIA
+            CONCILIACIÓN Y CONFLICTOS FAMILIARES EN COLOMBIA
           </span>
 
           <h1 className={styles.title}>
-            Resuelve conflictos familiares sin demanda en Colombia
+            Conciliación familiar en Colombia: resuelva conflictos familiares
+            sin demanda
           </h1>
 
           <p className={styles.description}>
@@ -36,7 +37,7 @@ export default function ConflictosFamiliaresContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué son los conflictos familiares?
+              ¿Qué son los conflictos familiares y cómo resolverlos?
             </h2>
 
             <p className={styles.text}>
@@ -54,7 +55,7 @@ export default function ConflictosFamiliaresContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué conflictos familiares se pueden conciliar?
+              Conflictos familiares que se pueden conciliar en Colombia
             </h2>
 
             <p className={styles.text}>
@@ -75,7 +76,7 @@ export default function ConflictosFamiliaresContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de la conciliación familiar
+              Beneficios de la conciliación familiar en Colombia
             </h2>
 
             <div className={styles.grid}>
@@ -94,14 +95,14 @@ export default function ConflictosFamiliaresContent() {
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Solución rápida</h3>
+                <h3 className={styles.cardTitle}>Solución rápida y legal</h3>
                 <p className={styles.cardText}>
                   Evita procesos judiciales largos.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Acuerdos legales</h3>
+                <h3 className={styles.cardTitle}>Acuerdos con validez legal</h3>
                 <p className={styles.cardText}>
                   Tienen validez jurídica en Colombia.
                 </p>
@@ -126,7 +127,7 @@ export default function ConflictosFamiliaresContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar una demanda en conflictos familiares?
+              ¿Por qué evitar una demanda por conflictos familiares?
             </h2>
 
             <p className={styles.text}>
@@ -144,7 +145,7 @@ export default function ConflictosFamiliaresContent() {
           {/* BLOQUE 5 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Cómo iniciar una conciliación familiar?
+              ¿Cómo iniciar una conciliación familiar en Colombia?
             </h2>
 
             <p className={styles.text}>

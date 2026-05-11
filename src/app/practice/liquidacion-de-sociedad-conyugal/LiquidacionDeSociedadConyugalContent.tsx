@@ -20,7 +20,7 @@ export default function LiquidacionDeSociedadConyugalContent() {
           </span>
 
           <h1 className={styles.title}>
-            Divide bienes tras separación sin demanda en Colombia
+            Liquidación de sociedad conyugal en Colombia sin procesos largos
           </h1>
 
           <p className={styles.description}>
@@ -35,7 +35,7 @@ export default function LiquidacionDeSociedadConyugalContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué es la liquidación de sociedad conyugal?
+              ¿Qué es la liquidación de sociedad conyugal y cómo funciona?
             </h2>
 
             <p className={styles.text}>
@@ -53,7 +53,7 @@ export default function LiquidacionDeSociedadConyugalContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué bienes se pueden liquidar?
+              Bienes que se pueden repartir en una sociedad conyugal
             </h2>
 
             <p className={styles.text}>
@@ -74,19 +74,19 @@ export default function LiquidacionDeSociedadConyugalContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de la conciliación en la liquidación de bienes
+              Beneficios de liquidar bienes mediante conciliación
             </h2>
 
             <div className={styles.grid}>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Evita juicio largo</h3>
+                <h3 className={styles.cardTitle}>Evita juicios largos</h3>
                 <p className={styles.cardText}>
                   Reduce procesos judiciales complejos.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Solución rápida</h3>
+                <h3 className={styles.cardTitle}>Acuerdos rápidos</h3>
                 <p className={styles.cardText}>Acuerdos en menor tiempo.</p>
               </div>
 
@@ -98,14 +98,14 @@ export default function LiquidacionDeSociedadConyugalContent() {
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Acuerdo legal</h3>
+                <h3 className={styles.cardTitle}>Acuerdo con validez legal</h3>
                 <p className={styles.cardText}>
                   Tiene validez jurídica en Colombia.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Menos conflicto</h3>
+                <h3 className={styles.cardTitle}>Menos conflictos</h3>
                 <p className={styles.cardText}>
                   Evita confrontaciones entre las partes.
                 </p>
@@ -123,7 +123,7 @@ export default function LiquidacionDeSociedadConyugalContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar un proceso judicial de liquidación?
+              ¿Por qué evitar un proceso judicial de liquidación de bienes?
             </h2>
 
             <p className={styles.text}>
@@ -140,7 +140,7 @@ export default function LiquidacionDeSociedadConyugalContent() {
           {/* BLOQUE 5 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Cómo iniciar la liquidación de sociedad conyugal?
+              ¿Cómo iniciar la liquidación de sociedad conyugal en Colombia?
             </h2>
 
             <p className={styles.text}>

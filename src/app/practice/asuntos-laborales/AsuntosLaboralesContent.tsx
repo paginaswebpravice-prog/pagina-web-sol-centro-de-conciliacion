@@ -16,11 +16,12 @@ export default function AsuntosLaboralesContent() {
           transition={{ duration: 0.7 }}
         >
           <span className={styles.subtitle}>
-            CONCILIACIÓN LABORAL EN COLOMBIA
+            CONCILIACIÓN LABORAL Y CONFLICTOS DE TRABAJO EN COLOMBIA
           </span>
 
           <h1 className={styles.title}>
-            Resuelve conflictos laborales sin demanda en Colombia
+            Conciliación laboral en Colombia: resuelva conflictos laborales sin
+            demanda
           </h1>
 
           <p className={styles.description}>
@@ -36,7 +37,7 @@ export default function AsuntosLaboralesContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué es la conciliación laboral en Colombia?
+              ¿Qué es la conciliación laboral y cómo funciona en Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -55,7 +56,7 @@ export default function AsuntosLaboralesContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué conflictos laborales se pueden conciliar?
+              Conflictos laborales que se pueden conciliar en Colombia
             </h2>
 
             <p className={styles.text}>
@@ -76,19 +77,19 @@ export default function AsuntosLaboralesContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de la conciliación laboral
+              Beneficios de la conciliación laboral para trabajadores y empresas
             </h2>
 
             <div className={styles.grid}>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Evita demandas</h3>
+                <h3 className={styles.cardTitle}>Evita demandas laborales</h3>
                 <p className={styles.cardText}>
                   Soluciona conflictos sin procesos judiciales laborales largos.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Pago rápido</h3>
+                <h3 className={styles.cardTitle}>Pago rápido de acuerdos</h3>
                 <p className={styles.cardText}>
                   Permite acuerdos de pago más rápidos para el trabajador.
                 </p>
@@ -102,7 +103,9 @@ export default function AsuntosLaboralesContent() {
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Validez jurídica</h3>
+                <h3 className={styles.cardTitle}>
+                  Acuerdos con validez jurídica
+                </h3>
                 <p className={styles.cardText}>
                   El acta de conciliación tiene fuerza legal en Colombia.
                 </p>
@@ -117,7 +120,7 @@ export default function AsuntosLaboralesContent() {
 
               <div className={styles.card}>
                 <h3 className={styles.cardTitle}>
-                  Relaciones menos conflictivas
+                  Menor confrontación laboral
                 </h3>
                 <p className={styles.cardText}>
                   Permite cerrar conflictos sin mayor confrontación.
@@ -129,7 +132,7 @@ export default function AsuntosLaboralesContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar un proceso laboral judicial?
+              ¿Por qué evitar una demanda laboral en Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -147,7 +150,7 @@ export default function AsuntosLaboralesContent() {
           {/* BLOQUE 5 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Cómo iniciar una conciliación laboral?
+              ¿Cómo iniciar una conciliación laboral paso a paso?
             </h2>
 
             <p className={styles.text}>

@@ -16,11 +16,11 @@ export default function ObligacionesEconomicasContent() {
           transition={{ duration: 0.7 }}
         >
           <span className={styles.subtitle}>
-            OBLIGACIONES ECONÓMICAS EN COLOMBIA
+            CONCILIACIÓN DE OBLIGACIONES ECONÓMICAS EN COLOMBIA
           </span>
 
           <h1 className={styles.title}>
-            Resuelve deudas y obligaciones sin demanda en Colombia
+            Resuelva deudas y obligaciones económicas sin demanda en Colombia
           </h1>
 
           <p className={styles.description}>
@@ -36,7 +36,7 @@ export default function ObligacionesEconomicasContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué son las obligaciones económicas?
+              ¿Qué son las obligaciones económicas y cómo se pueden resolver?
             </h2>
 
             <p className={styles.text}>
@@ -53,7 +53,7 @@ export default function ObligacionesEconomicasContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Tipos de obligaciones económicas
+              Tipos de obligaciones económicas más comunes en Colombia
             </h2>
 
             <p className={styles.text}>
@@ -73,47 +73,47 @@ export default function ObligacionesEconomicasContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de conciliar obligaciones económicas
+              Beneficios de conciliar deudas y obligaciones económicas
             </h2>
 
             <div className={styles.grid}>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Evita demandas</h3>
+                <h3 className={styles.cardTitle}>Evita demandas judiciales</h3>
                 <p className={styles.cardText}>
                   Soluciona conflictos sin procesos judiciales.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Acuerdos de pago</h3>
+                <h3 className={styles.cardTitle}>Acuerdos de pago flexibles</h3>
                 <p className={styles.cardText}>
                   Facilita planes de pago flexibles.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Recuperación rápida</h3>
+                <h3 className={styles.cardTitle}>Recuperación más rápida</h3>
                 <p className={styles.cardText}>
                   Agiliza el cobro de obligaciones.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Validez legal</h3>
+                <h3 className={styles.cardTitle}>Acuerdos con validez legal</h3>
                 <p className={styles.cardText}>
                   Los acuerdos tienen fuerza jurídica.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Menos costos</h3>
+                <h3 className={styles.cardTitle}>Menores costos legales</h3>
                 <p className={styles.cardText}>
                   Reduce gastos legales y judiciales.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Relaciones protegidas</h3>
+                <h3 className={styles.cardTitle}>Protege las relaciones</h3>
                 <p className={styles.cardText}>
                   Evita conflictos entre las partes.
                 </p>
@@ -124,7 +124,7 @@ export default function ObligacionesEconomicasContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué pasa si no se concilian las deudas?
+              ¿Qué pasa si no se concilian las deudas u obligaciones?
             </h2>
 
             <p className={styles.text}>

@@ -16,11 +16,12 @@ export default function AsuntosCopropiedadContent() {
           transition={{ duration: 0.7 }}
         >
           <span className={styles.subtitle}>
-            CONCILIACIÓN EN PROPIEDAD HORIZONTAL EN COLOMBIA
+            CONCILIACIÓN EN PROPIEDAD HORIZONTAL Y COPROPIEDAD EN COLOMBIA
           </span>
 
           <h1 className={styles.title}>
-            Resuelve conflictos de copropiedad sin demanda en Colombia
+            Conciliación en copropiedad en Colombia: resuelva conflictos
+            vecinales sin demanda
           </h1>
 
           <p className={styles.description}>
@@ -37,7 +38,7 @@ export default function AsuntosCopropiedadContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué es la conciliación en copropiedad?
+              ¿Qué es la conciliación en propiedad horizontal y cómo funciona?
             </h2>
 
             <p className={styles.text}>
@@ -56,7 +57,7 @@ export default function AsuntosCopropiedadContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué conflictos de copropiedad se pueden conciliar?
+              Conflictos de copropiedad que se pueden conciliar en Colombia
             </h2>
 
             <p className={styles.text}>
@@ -77,12 +78,12 @@ export default function AsuntosCopropiedadContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de la conciliación en copropiedad
+              Beneficios de la conciliación en propiedad horizontal
             </h2>
 
             <div className={styles.grid}>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Evita demandas</h3>
+                <h3 className={styles.cardTitle}>Evita demandas judiciales</h3>
                 <p className={styles.cardText}>
                   Soluciona conflictos sin procesos judiciales largos.
                 </p>
@@ -103,21 +104,21 @@ export default function AsuntosCopropiedadContent() {
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Validez legal</h3>
+                <h3 className={styles.cardTitle}>Acuerdos con validez legal</h3>
                 <p className={styles.cardText}>
                   Los acuerdos tienen efectos jurídicos en Colombia.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Menor costo</h3>
+                <h3 className={styles.cardTitle}>Menor costo legal</h3>
                 <p className={styles.cardText}>
                   Evita gastos legales y administrativos elevados.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Confidencialidad</h3>
+                <h3 className={styles.cardTitle}>Proceso confidencial</h3>
                 <p className={styles.cardText}>
                   Evita exposición pública del conflicto entre vecinos.
                 </p>
@@ -146,7 +147,7 @@ export default function AsuntosCopropiedadContent() {
           {/* BLOQUE 5 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Cómo iniciar una conciliación en copropiedad?
+              ¿Cómo iniciar una conciliación en copropiedad en Colombia?
             </h2>
 
             <p className={styles.text}>

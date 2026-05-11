@@ -16,11 +16,12 @@ export default function AlimentosMenoresContent() {
           transition={{ duration: 0.7 }}
         >
           <span className={styles.subtitle}>
-            ALIMENTOS PARA MENORES EN COLOMBIA
+            CUOTA ALIMENTARIA Y CONCILIACIÓN EN COLOMBIA
           </span>
 
           <h1 className={styles.title}>
-            Conciliación de cuota alimentaria para hijos en Colombia
+            Conciliación de cuota alimentaria en Colombia: abogados para
+            alimentos de menores
           </h1>
 
           <p className={styles.description}>
@@ -36,7 +37,7 @@ export default function AlimentosMenoresContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué son los alimentos para menores?
+              ¿Qué son los alimentos para menores y qué cubren en Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -54,7 +55,7 @@ export default function AlimentosMenoresContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué incluye la cuota alimentaria?
+              ¿Qué incluye la cuota alimentaria de un menor?
             </h2>
 
             <ul className={styles.list}>
@@ -69,12 +70,12 @@ export default function AlimentosMenoresContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Para qué sirve la conciliación de alimentos?
+              Beneficios de la conciliación de cuota alimentaria en Colombia
             </h2>
 
             <div className={styles.grid}>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Fijar cuota</h3>
+                <h3 className={styles.cardTitle}>Fijar cuota legal</h3>
                 <p className={styles.cardText}>
                   Establecer el valor de la cuota alimentaria.
                 </p>
@@ -88,26 +89,26 @@ export default function AlimentosMenoresContent() {
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Evitar demandas</h3>
+                <h3 className={styles.cardTitle}>Evitar demandas judiciales</h3>
                 <p className={styles.cardText}>
                   Resolver conflictos sin procesos judiciales.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Protección legal</h3>
+                <h3 className={styles.cardTitle}>Protección legal del menor</h3>
                 <p className={styles.cardText}>
                   Garantizar derechos del menor.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Acuerdo obligatorio</h3>
+                <h3 className={styles.cardTitle}>Acuerdo con validez legal</h3>
                 <p className={styles.cardText}>El acta tiene fuerza legal.</p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Solución rápida</h3>
+                <h3 className={styles.cardTitle}>Solución rápida y efectiva</h3>
                 <p className={styles.cardText}>
                   Evita procesos largos en juzgados.
                 </p>
@@ -118,7 +119,7 @@ export default function AlimentosMenoresContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué pasa si no se paga la cuota alimentaria?
+              ¿Qué sucede si no pagan la cuota alimentaria?
             </h2>
 
             <p className={styles.text}>
@@ -135,7 +136,7 @@ export default function AlimentosMenoresContent() {
           {/* BLOQUE 5 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Cómo iniciar una conciliación de alimentos?
+              ¿Cómo solicitar una conciliación de alimentos en Colombia?
             </h2>
 
             <p className={styles.text}>

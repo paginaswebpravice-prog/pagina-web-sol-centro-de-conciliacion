@@ -16,11 +16,12 @@ export default function AsuntosComercialesContent() {
           transition={{ duration: 0.7 }}
         >
           <span className={styles.subtitle}>
-            CONCILIACIÓN COMERCIAL EN COLOMBIA
+            CONCILIACIÓN COMERCIAL Y EMPRESARIAL EN COLOMBIA
           </span>
 
           <h1 className={styles.title}>
-            Resuelve conflictos comerciales sin demanda en Colombia
+            Conciliación comercial en Colombia: resuelva conflictos
+            empresariales sin demanda
           </h1>
 
           <p className={styles.description}>
@@ -37,7 +38,7 @@ export default function AsuntosComercialesContent() {
         <div className={styles.content}>
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué es la conciliación en asuntos comerciales?
+              ¿Qué es la conciliación comercial y cómo funciona en Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -59,7 +60,7 @@ export default function AsuntosComercialesContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué conflictos comerciales se pueden conciliar?
+              Conflictos comerciales que se pueden conciliar en Colombia
             </h2>
 
             <p className={styles.text}>
@@ -81,7 +82,7 @@ export default function AsuntosComercialesContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de la conciliación comercial en Colombia
+              Beneficios de la conciliación comercial para empresas y negocios
             </h2>
 
             <div className={styles.grid}>
@@ -94,7 +95,9 @@ export default function AsuntosComercialesContent() {
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Reducción de costos</h3>
+                <h3 className={styles.cardTitle}>
+                  Reducción de costos legales
+                </h3>
                 <p className={styles.cardText}>
                   Disminuye gastos legales asociados a demandas y procesos
                   judiciales.
@@ -138,7 +141,7 @@ export default function AsuntosComercialesContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar un proceso judicial?
+              ¿Por qué evitar una demanda comercial en Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -158,7 +161,7 @@ export default function AsuntosComercialesContent() {
           {/* BLOQUE 5 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Cómo iniciar un proceso de conciliación comercial?
+              ¿Cómo iniciar una conciliación comercial paso a paso?
             </h2>
 
             <p className={styles.text}>

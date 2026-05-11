@@ -16,11 +16,12 @@ export default function AsuntosVecinalesContent() {
           transition={{ duration: 0.7 }}
         >
           <span className={styles.subtitle}>
-            CONFLICTOS VECINALES EN COLOMBIA
+            CONCILIACIÓN Y CONFLICTOS VECINALES EN COLOMBIA
           </span>
 
           <h1 className={styles.title}>
-            Resuelve conflictos entre vecinos sin demanda en Colombia
+            Conciliación entre vecinos en Colombia: resuelva conflictos sin
+            demanda
           </h1>
 
           <p className={styles.description}>
@@ -36,7 +37,7 @@ export default function AsuntosVecinalesContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué son los conflictos vecinales?
+              ¿Qué son los conflictos vecinales y cómo resolverlos?
             </h2>
 
             <p className={styles.text}>
@@ -54,7 +55,7 @@ export default function AsuntosVecinalesContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué conflictos entre vecinos se pueden conciliar?
+              Conflictos entre vecinos que se pueden conciliar en Colombia
             </h2>
 
             <p className={styles.text}>
@@ -75,12 +76,12 @@ export default function AsuntosVecinalesContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de la conciliación entre vecinos
+              Beneficios de la conciliación para conflictos vecinales
             </h2>
 
             <div className={styles.grid}>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Evita peleas legales</h3>
+                <h3 className={styles.cardTitle}>Evita demandas judiciales</h3>
                 <p className={styles.cardText}>
                   Resuelve conflictos sin llegar a demandas judiciales.
                 </p>
@@ -101,14 +102,14 @@ export default function AsuntosVecinalesContent() {
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Menor costo</h3>
+                <h3 className={styles.cardTitle}>Menor costo legal</h3>
                 <p className={styles.cardText}>
                   Evita gastos legales innecesarios.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Validez legal</h3>
+                <h3 className={styles.cardTitle}>Acuerdos con validez legal</h3>
                 <p className={styles.cardText}>
                   Los acuerdos tienen fuerza jurídica en Colombia.
                 </p>
@@ -126,7 +127,7 @@ export default function AsuntosVecinalesContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar una demanda entre vecinos?
+              ¿Por qué evitar una demanda entre vecinos en Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -144,7 +145,7 @@ export default function AsuntosVecinalesContent() {
           {/* BLOQUE 5 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Cómo iniciar una conciliación vecinal?
+              ¿Cómo iniciar una conciliación vecinal paso a paso?
             </h2>
 
             <p className={styles.text}>

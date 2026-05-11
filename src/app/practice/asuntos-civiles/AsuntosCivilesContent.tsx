@@ -16,11 +16,12 @@ export default function AsuntosCivilesContent() {
           transition={{ duration: 0.7 }}
         >
           <span className={styles.subtitle}>
-            CONCILIACIÓN CIVIL EN COLOMBIA
+            CONCILIACIÓN CIVIL Y SOLUCIÓN DE CONFLICTOS EN COLOMBIA
           </span>
 
           <h1 className={styles.title}>
-            Resuelve conflictos civiles sin demanda en Colombia
+            Conciliación civil en Colombia: resuelva conflictos sin demanda
+            judicial
           </h1>
 
           <p className={styles.description}>
@@ -36,7 +37,7 @@ export default function AsuntosCivilesContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué es la conciliación en asuntos civiles?
+              ¿Qué es la conciliación civil y para qué sirve en Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -57,7 +58,7 @@ export default function AsuntosCivilesContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué conflictos civiles se pueden conciliar?
+              Conflictos civiles que se pueden conciliar en Colombia
             </h2>
 
             <p className={styles.text}>
@@ -79,12 +80,12 @@ export default function AsuntosCivilesContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de la conciliación civil en Colombia
+              Beneficios de resolver conflictos mediante conciliación civil
             </h2>
 
             <div className={styles.grid}>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Proceso rápido</h3>
+                <h3 className={styles.cardTitle}>Proceso rápido y efectivo</h3>
                 <p className={styles.cardText}>
                   Resuelve conflictos en menor tiempo frente a procesos
                   judiciales tradicionales.
@@ -92,16 +93,14 @@ export default function AsuntosCivilesContent() {
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Ahorro económico</h3>
+                <h3 className={styles.cardTitle}>Ahorro en gastos legales</h3>
                 <p className={styles.cardText}>
                   Reduce costos legales asociados a demandas y abogados.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>
-                  Acuerdos con respaldo legal
-                </h3>
+                <h3 className={styles.cardTitle}>Acuerdos con validez legal</h3>
                 <p className={styles.cardText}>
                   El acta de conciliación tiene efectos jurídicos y puede ser
                   exigible.
@@ -116,7 +115,7 @@ export default function AsuntosCivilesContent() {
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Menor desgaste</h3>
+                <h3 className={styles.cardTitle}>Menos desgaste emocional</h3>
                 <p className={styles.cardText}>
                   Evita conflictos prolongados y desgaste emocional o
                   financiero.
@@ -124,7 +123,9 @@ export default function AsuntosCivilesContent() {
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Confidencialidad</h3>
+                <h3 className={styles.cardTitle}>
+                  Confidencialidad del proceso
+                </h3>
                 <p className={styles.cardText}>
                   Protege la información y evita exposición pública del
                   conflicto.
@@ -136,7 +137,7 @@ export default function AsuntosCivilesContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar un proceso judicial civil?
+              ¿Por qué evitar una demanda civil en Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -156,7 +157,7 @@ export default function AsuntosCivilesContent() {
           {/* BLOQUE 5 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Cómo iniciar una conciliación civil en Colombia?
+              ¿Cómo iniciar una conciliación civil paso a paso?
             </h2>
 
             <p className={styles.text}>

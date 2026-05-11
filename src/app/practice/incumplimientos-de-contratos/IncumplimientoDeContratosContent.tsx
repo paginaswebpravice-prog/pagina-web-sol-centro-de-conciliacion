@@ -16,11 +16,12 @@ export default function IncumplimientoDeContratosContent() {
           transition={{ duration: 0.7 }}
         >
           <span className={styles.subtitle}>
-            INCUMPLIMIENTO DE CONTRATOS EN COLOMBIA
+            CONCILIACIÓN POR INCUMPLIMIENTO DE CONTRATOS EN COLOMBIA
           </span>
 
           <h1 className={styles.title}>
-            Resuelve incumplimientos de contratos sin demanda en Colombia
+            Incumplimiento de contratos en Colombia: resuelva conflictos sin
+            demanda
           </h1>
 
           <p className={styles.description}>
@@ -36,7 +37,7 @@ export default function IncumplimientoDeContratosContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué es el incumplimiento de contrato?
+              ¿Qué es el incumplimiento de contrato y cómo resolverlo?
             </h2>
 
             <p className={styles.text}>
@@ -54,7 +55,7 @@ export default function IncumplimientoDeContratosContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Tipos de incumplimiento contractual
+              Tipos de incumplimiento contractual más comunes en Colombia
             </h2>
 
             <p className={styles.text}>
@@ -79,7 +80,7 @@ export default function IncumplimientoDeContratosContent() {
 
             <div className={styles.grid}>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Solución rápida</h3>
+                <h3 className={styles.cardTitle}>Solución rápida y legal</h3>
                 <p className={styles.cardText}>
                   Evita procesos judiciales largos.
                 </p>
@@ -93,14 +94,14 @@ export default function IncumplimientoDeContratosContent() {
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Evita demandas</h3>
+                <h3 className={styles.cardTitle}>Evita demandas judiciales</h3>
                 <p className={styles.cardText}>
                   Soluciona conflictos sin acudir a un juez.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Acuerdos legales</h3>
+                <h3 className={styles.cardTitle}>Acuerdos con validez legal</h3>
                 <p className={styles.cardText}>
                   Tienen validez jurídica en Colombia.
                 </p>
