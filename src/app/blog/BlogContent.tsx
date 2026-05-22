@@ -123,7 +123,7 @@ export default function BlogContent() {
       url: "https://solcentrodeconciliacion.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://solcentrodeconciliacion.com/logo.png",
+        url: "https://solcentrodeconciliacion.com/logo_sol.png",
       },
     },
     blogPost: allPosts.map((post) => ({
