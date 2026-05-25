@@ -33,7 +33,7 @@ export default function OurTeamSection() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        NUESTRO EQUIPO JURÍDICO
+        EQUIPO DE ABOGADOS CONCILIADORES
       </motion.span>
 
       {/* Título SEO */}
@@ -45,7 +45,8 @@ export default function OurTeamSection() {
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-        Equipo jurídico especializado en conciliación extrajudicial en Colombia
+        Conoce nuestro equipo jurídico especializado en conciliación
+        extrajudicial y resolución de conflictos en Colombia
       </motion.h2>
 
       {/* Descripción optimizada */}
@@ -107,7 +108,7 @@ export default function OurTeamSection() {
           whileHover={{ scale: 1.05 }}
           aria-label="Conocer más sobre el equipo jurídico de SOL"
         >
-          CONOCE AL EQUIPO
+          CONOCE NUESTRO EQUIPO JURÍDICO
         </motion.button>
       </Link>
     </section>

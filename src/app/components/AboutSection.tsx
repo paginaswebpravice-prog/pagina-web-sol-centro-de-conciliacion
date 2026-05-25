@@ -9,8 +9,8 @@ export default function AboutSection() {
     <section className={styles.section} aria-labelledby="about-sol-title">
       <div className={styles.container}>
         {/* =======================
-            COLUMNA DE TEXTO
-        ======================== */}
+              COLUMNA DE TEXTO
+          ======================== */}
         <motion.div
           className={styles.textColumn}
           initial={{ opacity: 0, x: -40 }}
@@ -25,8 +25,8 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Centro de Conciliación y Arbitraje comprometido con soluciones
-            legales efectivas
+            Centro de Conciliación y Arbitraje en Colombia para resolver
+            conflictos de forma rápida, legal y efectiva
           </motion.h2>
 
           <motion.p
@@ -79,8 +79,8 @@ export default function AboutSection() {
         </motion.div>
 
         {/* =======================
-            COLUMNA DE IMAGEN
-        ======================== */}
+              COLUMNA DE IMAGEN
+          ======================== */}
         <motion.div
           className={styles.imageColumn}
           initial={{ opacity: 0, x: 40 }}

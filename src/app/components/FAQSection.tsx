@@ -11,17 +11,20 @@ type FAQItem = {
 
 const faqData: FAQItem[] = [
   {
-    question: "¿Necesito un abogado para iniciar una conciliación en Colombia?",
+    question:
+      "¿Necesito un abogado conciliador para iniciar una conciliación en Colombia?",
     answer:
       "No siempre es obligatorio, pero contar con un abogado conciliador es altamente recomendable cuando existen bienes, hijos menores, obligaciones económicas o desacuerdos complejos. La asesoría legal garantiza que el acuerdo sea válido, equilibrado y conforme a la ley colombiana.",
   },
   {
-    question: "¿Qué es la conciliación extrajudicial y para qué sirve?",
+    question:
+      "¿Qué es la conciliación extrajudicial y cómo ayuda a evitar un proceso judicial?",
     answer:
       "La conciliación extrajudicial es un mecanismo alternativo de resolución de conflictos que permite a las partes llegar a acuerdos legales sin acudir a un proceso judicial. Sirve para ahorrar tiempo, costos y evitar litigios prolongados.",
   },
   {
-    question: "¿Cuál es la diferencia entre divorcio y separación de cuerpos?",
+    question:
+      "¿Cuál es la diferencia entre divorcio y separación de cuerpos en Colombia?",
     answer:
       "La separación de cuerpos suspende la convivencia, pero no disuelve el vínculo matrimonial. El divorcio, en cambio, pone fin legal al matrimonio. A través de la conciliación se puede definir cuál opción se ajusta mejor a cada situación familiar.",
   },
@@ -43,14 +46,31 @@ const faqData: FAQItem[] = [
       "El acta de conciliación tiene fuerza legal y presta mérito ejecutivo. Esto significa que, en caso de incumplimiento, el acuerdo puede exigirse ante un juez sin necesidad de un nuevo proceso declarativo.",
   },
   {
-    question: "¿Qué tipos de conflictos se pueden conciliar?",
+    question:
+      "¿Qué tipos de conflictos se pueden resolver mediante conciliación?",
     answer:
       "Se pueden conciliar asuntos civiles, comerciales, laborales, familiares, vecinales y de copropiedad, siempre que la ley lo permita. Cada caso es analizado para verificar su viabilidad jurídica.",
   },
   {
-    question: "¿Cuánto tiempo tarda un proceso de conciliación?",
+    question: "¿Cuánto tiempo tarda un proceso de conciliación en Colombia?",
     answer:
       "Los procesos de conciliación suelen resolverse en menos tiempo que un juicio tradicional. En muchos casos, el conflicto puede solucionarse en una o pocas sesiones, dependiendo de la complejidad del asunto.",
+  },
+  {
+    question: "¿La conciliación extrajudicial tiene validez legal en Colombia?",
+    answer:
+      "Sí. Los acuerdos logrados mediante conciliación tienen plena validez legal y el acta conciliatoria puede ser exigida judicialmente en caso de incumplimiento por alguna de las partes.",
+  },
+  {
+    question: "¿Se puede realizar una conciliación virtual o a distancia?",
+    answer:
+      "Sí. Dependiendo del caso y de las condiciones de las partes, es posible adelantar procesos de conciliación virtual conforme a la normativa vigente y a los mecanismos autorizados.",
+  },
+  {
+    question:
+      "¿Cuáles son los beneficios de resolver un conflicto mediante conciliación?",
+    answer:
+      "La conciliación permite ahorrar tiempo y costos, evitar procesos judiciales extensos, mantener relaciones personales o comerciales y alcanzar acuerdos legales de manera más rápida y efectiva.",
   },
 ];
 
@@ -71,7 +91,7 @@ export default function FAQSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.4 }}
       >
-        Resolvemos tus dudas legales paso a paso
+        Resuelve tus dudas sobre conciliación y conflictos legales en Colombia
       </motion.h3>
 
       {/* TÍTULO SEO */}
@@ -83,7 +103,8 @@ export default function FAQSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.1 }}
       >
-        Preguntas frecuentes sobre conciliación y derecho de familia
+        Preguntas frecuentes sobre conciliación extrajudicial y resolución de
+        conflictos legales
       </motion.h2>
 
       {/* ACORDEÓN */}

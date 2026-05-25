@@ -16,42 +16,42 @@ import { motion } from "framer-motion";
 
 const areas = [
   {
-    title: "Asuntos Comerciales",
+    title: "Conciliación en Asuntos Comerciales",
     desc: "Conciliación en conflictos comerciales entre empresas, contratos mercantiles, sociedades y obligaciones económicas.",
     icon: faMoneyBillWave,
   },
   {
-    title: "Asuntos Civiles",
+    title: "Conciliación en Asuntos Civiles",
     desc: "Resolución extrajudicial de conflictos civiles relacionados con contratos, daños, herencias y derechos personales.",
     icon: faScaleBalanced,
   },
   {
-    title: "Asuntos de Copropiedad",
+    title: "Conciliación en Propiedad Horizontal y Copropiedad",
     desc: "Conciliación en propiedad horizontal sobre cuotas de administración, uso de zonas comunes y derechos de copropietarios.",
     icon: faBuilding,
   },
   {
-    title: "Asuntos Laborales",
+    title: "Conciliación Laboral para Empresas y Trabajadores",
     desc: "Conciliación laboral entre empleadores y trabajadores en temas de despido, contratos y reclamaciones de derechos.",
     icon: faBriefcase,
   },
   {
-    title: "Alimentos para Menores",
+    title: "Conciliación de Cuota Alimentaria para Menores",
     desc: "Conciliación familiar orientada a garantizar el cumplimiento de obligaciones alimentarias de niños y adolescentes.",
     icon: faChild,
   },
   {
-    title: "Custodia y Régimen de Visitas",
+    title: "Custodia de Menores y Régimen de Visitas",
     desc: "Mecanismos de conciliación para definir custodia, cuidado personal y régimen de visitas de menores.",
     icon: faClipboardList,
   },
   {
-    title: "Asuntos Vecinales",
+    title: "Conciliación en Conflictos Vecinales y de Convivencia",
     desc: "Mediación y conciliación en conflictos de convivencia, ruidos, uso de espacios comunes y normas comunitarias.",
     icon: faUsers,
   },
   {
-    title: "Liquidación de Sociedad Conyugal",
+    title: "Liquidación de Sociedad Conyugal y Bienes",
     desc: "Conciliación para la distribución equitativa de bienes adquiridos durante el matrimonio o unión marital.",
     icon: faHouse,
   },
@@ -71,7 +71,8 @@ export default function PracticeSection() {
         <span className={styles.subtitle}>ÁREAS DE CONCILIACIÓN</span>
 
         <h2 id="practice-title" className={styles.title}>
-          Áreas de conciliación extrajudicial en derecho en Colombia
+          Áreas de conciliación extrajudicial para resolver conflictos legales
+          sin procesos judiciales largos
         </h2>
 
         <p className={styles.description}>
