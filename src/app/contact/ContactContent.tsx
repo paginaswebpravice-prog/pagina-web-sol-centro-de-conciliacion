@@ -61,16 +61,21 @@ export default function ContactContent() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
+          <span className={styles.badge}>
+            CONSULTA JURÍDICA Y CONCILIACIÓN EN COLOMBIA
+          </span>
+
           <h2 id="contact-title" itemProp="name">
-            Agenda tu consulta con abogados en Bogotá y resuelve tu caso sin ir
-            a juicio
+            Agenda tu consulta con abogados conciliadores en Bogotá y resuelve
+            tu caso de forma rápida y legal
           </h2>
 
           <p className={styles.description} itemProp="description">
-            Agenda tu consulta con abogados en Bogotá especializados en
-            conciliación extrajudicial y resolución de conflictos en Colombia.
-            Te ayudamos a encontrar soluciones legales rápidas, seguras y
-            efectivas sin necesidad de procesos judiciales largos.
+            En SOL Centro de Conciliación te ayudamos a resolver conflictos
+            familiares, civiles, comerciales y laborales mediante conciliación
+            extrajudicial en derecho. Nuestro equipo jurídico brinda
+            acompañamiento estratégico para alcanzar acuerdos válidos, reducir
+            costos y evitar procesos judiciales prolongados.
           </p>
 
           <p className={styles.subInfo}>
@@ -78,6 +83,24 @@ export default function ContactContent() {
             🕒 Lunes a viernes · 8:00 a.m. - 5:00 p.m. <br />
             🌐 Atención presencial y virtual a nivel nacional
           </p>
+
+          {/* ================= BENEFICIOS ================= */}
+          <div className={styles.benefits}>
+            <div className={styles.benefitCard}>
+              <strong>Atención rápida</strong>
+              <span>Respuesta ágil para orientación jurídica.</span>
+            </div>
+
+            <div className={styles.benefitCard}>
+              <strong>Acuerdos con validez legal</strong>
+              <span>Conciliaciones respaldadas por la ley colombiana.</span>
+            </div>
+
+            <div className={styles.benefitCard}>
+              <strong>Atención presencial y virtual</strong>
+              <span>Procesos disponibles en Bogotá y toda Colombia.</span>
+            </div>
+          </div>
 
           <motion.button
             className={styles.whatsappButton}
