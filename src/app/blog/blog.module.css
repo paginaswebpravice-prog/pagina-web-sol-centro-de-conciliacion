@@ -7,24 +7,41 @@
 }
 
 /* =========================
-   TÍTULOS
+   HEADER
 ========================= */
 
+.header {
+  max-width: 850px;
+  margin: 0 auto 4rem;
+}
+
 .heading {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-weight: 700;
   color: #1a414a;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
 }
 
 .subtitle {
   color: #456b74;
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.intro {
+  color: #5b676b;
+  line-height: 1.8;
+  font-size: 1.02rem;
+  max-width: 760px;
+  margin: 0 auto;
 }
 
 /* =========================
-   GRID GALERÍA
+   GRID
 ========================= */
 
 .grid {
@@ -35,7 +52,7 @@
 }
 
 /* =========================
-   CARD (LINK COMPLETO)
+   CARD
 ========================= */
 
 .card {
@@ -44,45 +61,52 @@
   color: inherit;
 
   background: rgba(255, 255, 255, 0.06);
-  border: 1px solid #456b74;
+  border: 1px solid #d8e0e2;
   border-radius: 14px;
 
-  padding: 1.75rem;
+  padding: 1.7rem;
   text-align: left;
 
-  backdrop-filter: blur(6px);
-
-  transition: all 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
 }
 
-/* Hover elegante */
 .card:hover {
   transform: translateY(-6px);
-  border-color: rgba(212, 175, 55, 0.6);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-color: rgba(69, 107, 116, 0.3);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
-/* Accesibilidad teclado */
 .card:focus-visible {
-  outline: 2px solid rgba(212, 175, 55, 0.7);
+  outline: 2px solid rgba(69, 107, 116, 0.4);
   outline-offset: 3px;
 }
 
 /* =========================
-   CONTENIDO INTERNO
+   CONTENIDO CARD
 ========================= */
 
 .cardContent h3 {
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 1.12rem;
+  font-weight: 650;
   color: #1a414a;
-  line-height: 1.4;
+  line-height: 1.45;
   margin-bottom: 1rem;
 }
 
+.cardContent p {
+  color: #5c686c;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.4rem;
+}
+
 .readMore {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: #456b74;
   transition: color 0.3s ease;
@@ -93,29 +117,30 @@
 }
 
 /* =========================
-   BLOQUES DE SECCIÓN
+   SECCIONES
 ========================= */
 
 .sectionBlock {
-  margin-top: 4rem;
+  margin-top: 4.5rem;
 }
 
 .sectionHeader {
-  max-width: 750px;
+  max-width: 760px;
   margin: 0 auto 2rem;
   text-align: center;
 }
 
-.sectionHeader h3 {
-  font-size: 1.6rem;
+.sectionHeader h2 {
+  font-size: 1.8rem;
   margin: 1rem 0;
   color: #1a414a;
+  line-height: 1.3;
 }
 
 .sectionHeader p {
-  color: #456b74;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  color: #5f6b6f;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 /* =========================
@@ -130,16 +155,16 @@
 }
 
 .badges span {
-  background: rgba(212, 175, 55, 0.15);
+  background: rgba(212, 175, 55, 0.14);
   color: #456b74;
-  padding: 0.4rem 0.8rem;
+  padding: 0.45rem 0.85rem;
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: 6px;
 }
 
 .juridicoBadges span {
-  background: rgba(69, 107, 116, 0.15);
+  background: rgba(69, 107, 116, 0.12);
 }
 
 /* =========================
@@ -148,28 +173,36 @@
 
 @media (max-width: 768px) {
   .heading {
-    font-size: 1.9rem;
+    font-size: 1.95rem;
+  }
+
+  .intro {
+    font-size: 0.96rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.55rem;
   }
 
   .card {
-    padding: 1.4rem;
+    padding: 1.45rem;
   }
 
   .cardContent h3 {
-    font-size: 1.05rem;
+    font-size: 1.03rem;
   }
 }
 
 @media (max-width: 480px) {
   .blogSection {
-    margin-top: 9rem;
+    margin-top: 8rem;
   }
 
   .heading {
     font-size: 1.7rem;
   }
 
-  .card {
-    padding: 1.2rem;
+  .grid {
+    gap: 18px;
   }
 }
