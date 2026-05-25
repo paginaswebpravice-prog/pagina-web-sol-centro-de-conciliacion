@@ -12,7 +12,7 @@ const lawyers = [
     slug: "/about/Doc_Harrison",
     image: "/doc-harrison.jpg",
     description:
-      "Abogado conciliador con amplia experiencia en resolución alternativa de conflictos y conciliación extrajudicial en Colombia.",
+      "Abogado conciliador con experiencia en resolución de conflictos civiles, familiares y patrimoniales mediante conciliación extrajudicial en Colombia. Enfocado en lograr acuerdos efectivos, ágiles y legalmente seguros.",
   },
   {
     name: "Dra. Leidy Tirado",
@@ -20,7 +20,7 @@ const lawyers = [
     slug: "/about/Doc_Leidy",
     image: "/doc-leidy.jpg",
     description:
-      "Abogada y conciliadora en derecho, especializada en la gestión profesional de conflictos en Colombia.",
+      "CCO y abogada conciliadora con experiencia en gestión estratégica de conflictos y acompañamiento jurídico en procesos de conciliación familiar, civil y comercial en Colombia.",
   },
   {
     name: "Dra. Angie Rivera",
@@ -28,7 +28,7 @@ const lawyers = [
     slug: "/about/Doc_Angie",
     image: "/doc-angie.jpg",
     description:
-      "Abogada con experiencia en conciliación extrajudicial y mecanismos alternativos de solución de conflictos.",
+      "Abogada conciliadora con enfoque en mecanismos alternativos de solución de conflictos, orientada a brindar acompañamiento legal cercano, transparente y eficiente en procesos extrajudiciales.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function About() {
     name: "Sol Centro de Conciliación",
     areaServed: "Colombia",
     description:
-      "Equipo de abogados en Bogotá especializados en conciliación extrajudicial y resolución de conflictos en Colombia.",
+      "Equipo de abogados conciliadores en Bogotá especializados en conciliación extrajudicial y resolución alternativa de conflictos en Colombia.",
     employee: lawyers.map((lawyer) => ({
       "@type": "Person",
       name: lawyer.name,
@@ -63,10 +63,30 @@ export default function About() {
         />
 
         {/* ================= TITULO ================= */}
-        <h1 className={styles.title} itemProp="name">
-          Conoce nuestro equipo de abogados en Bogotá expertos en conciliación
-          extrajudicial
-        </h1>
+        <motion.div
+          className={styles.header}
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <span className={styles.subtitle}>
+            ABOGADOS CONCILIADORES EN BOGOTÁ Y COLOMBIA
+          </span>
+
+          <h1 className={styles.title} itemProp="name">
+            Abogados conciliadores comprometidos con soluciones legales
+            efectivas
+          </h1>
+
+          <p className={styles.intro}>
+            En <strong>SOL Centro de Conciliación y Arbitraje</strong> contamos
+            con un equipo de abogados conciliadores en Bogotá con experiencia en
+            resolución alternativa de conflictos, conciliación extrajudicial y
+            acompañamiento legal en asuntos familiares, civiles, comerciales y
+            patrimoniales en Colombia.
+          </p>
+        </motion.div>
 
         {/* ================= GRID ================= */}
         <div className={styles.grid}>
@@ -85,7 +105,7 @@ export default function About() {
               <div className={styles.imageBox}>
                 <img
                   src={lawyer.image}
-                  alt={`${lawyer.name} abogado en Bogotá`}
+                  alt={`${lawyer.name} abogado conciliador en Bogotá`}
                   itemProp="image"
                 />
               </div>
@@ -107,7 +127,7 @@ export default function About() {
                 {/* BOTONES */}
                 <div className={styles.buttonGroup}>
                   <Link href={lawyer.slug} className={styles.secondaryButton}>
-                    Ver perfil
+                    Conocer perfil
                   </Link>
 
                   <a
@@ -115,7 +135,7 @@ export default function About() {
                     target="_blank"
                     className={styles.primaryButton}
                   >
-                    Consulta
+                    Solicitar orientación
                   </a>
                 </div>
               </div>

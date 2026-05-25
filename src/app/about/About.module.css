@@ -6,13 +6,42 @@
   padding: 100px 10%;
 }
 
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  max-width: 950px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.subtitle {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #123c3f;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
 .title {
   text-align: center;
-  font-size: 36px;
+  font-size: 42px;
+  line-height: 1.2;
   color: #123c3f;
-  margin-bottom: 70px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  font-weight: 650;
+  letter-spacing: -0.5px;
+}
+
+.intro {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #4d5b5c;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 /* =========================
@@ -30,7 +59,7 @@
 .card {
   background-color: #ffffff;
   border: 1px solid #eaeaea;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -64,7 +93,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 6px;
+  border-radius: 8px;
   transition:
     transform 0.5s ease,
     filter 0.5s ease;
@@ -88,10 +117,10 @@
 }
 
 .name {
-  font-size: 20px;
+  font-size: 22px;
   color: #123c3f;
   margin-bottom: 6px;
-  font-weight: 600;
+  font-weight: 650;
 }
 
 .role {
@@ -104,10 +133,10 @@
 }
 
 .description {
-  font-size: 14.5px;
+  font-size: 15px;
   color: #555;
-  line-height: 1.7;
-  margin-bottom: 30px;
+  line-height: 1.8;
+  margin-bottom: 32px;
   flex-grow: 1;
 }
 
@@ -122,17 +151,18 @@
   flex-wrap: wrap;
 }
 
-/* Botón principal (Consulta) */
+/* Botón principal */
 .primaryButton {
   background-color: #123c3f;
   border: none;
   color: #ffffff;
-  padding: 11px 24px;
+  padding: 12px 24px;
   font-size: 14px;
   font-weight: 500;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .primaryButton:hover {
@@ -140,17 +170,18 @@
   transform: translateY(-2px);
 }
 
-/* Botón secundario (Ver perfil) */
+/* Botón secundario */
 .secondaryButton {
   background-color: transparent;
   border: 1.5px solid #123c3f;
   color: #123c3f;
-  padding: 11px 24px;
+  padding: 12px 24px;
   font-size: 14px;
   font-weight: 500;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .secondaryButton:hover {
@@ -168,8 +199,12 @@
   }
 
   .title {
-    font-size: 28px;
-    margin-bottom: 50px;
+    font-size: 30px;
+  }
+
+  .intro {
+    font-size: 15.5px;
+    line-height: 1.8;
   }
 
   .imageBox {

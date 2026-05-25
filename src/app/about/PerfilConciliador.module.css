@@ -5,71 +5,110 @@
   background-color: #faf9f7;
   color: #333;
   font-family: "Segoe UI", Arial, sans-serif;
-  line-height: 1.65;
+  line-height: 1.7;
+  overflow: hidden;
 }
 
 /* =============================
    HERO
 ============================= */
 .hero {
-  padding: 110px 8%;
+  padding: 120px 8%;
   background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
   border-bottom: 1px solid #e9e9e9;
 }
 
 .heroContainer {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 70px;
+  gap: 80px;
   align-items: center;
 }
 
 .heroLeft {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
 }
 
+/* =============================
+   BADGE
+============================= */
+
+.badge {
+  display: inline-flex;
+  width: fit-content;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background-color: #eef4f4;
+  color: #1a414a;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+/* =============================
+   TITULOS
+============================= */
+
 .name {
-  font-size: 2.8rem;
+  font-size: 3.6rem;
+  line-height: 1.1;
   color: #1a414a;
   font-weight: 700;
-  letter-spacing: 0.3px;
+  letter-spacing: -1px;
 }
 
 .role {
-  font-size: 1.1rem;
+  font-size: 1.35rem;
+  line-height: 1.6;
+  max-width: 720px;
   color: #456b74;
   font-weight: 500;
 }
 
+/* =============================
+   DESCRIPCIONES HERO
+============================= */
+
 .summary {
-  font-size: 1rem;
+  font-size: 1.12rem;
   color: #444;
-  max-width: 540px;
+  max-width: 680px;
+  line-height: 1.9;
+}
+
+.summarySecondary {
+  font-size: 1.05rem;
+  color: #5b5b5b;
+  max-width: 680px;
+  line-height: 1.85;
 }
 
 /* =============================
    BOTONES
 ============================= */
+
 .buttons {
   display: flex;
   gap: 16px;
-  margin-top: 15px;
+  margin-top: 18px;
+  flex-wrap: wrap;
 }
 
 .primaryBtn {
   background-color: #1a414a;
   color: #ffffff;
-  padding: 13px 28px;
-  border-radius: 6px;
-  font-size: 14px;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 15px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.25s ease;
-  box-shadow: 0 6px 18px rgba(26, 65, 74, 0.15);
+  box-shadow: 0 8px 20px rgba(26, 65, 74, 0.16);
 }
 
 .primaryBtn:hover {
@@ -80,9 +119,9 @@
 .secondaryBtn {
   border: 1.5px solid #1a414a;
   color: #1a414a;
-  padding: 13px 28px;
-  border-radius: 6px;
-  font-size: 14px;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 15px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.25s ease;
@@ -97,153 +136,215 @@
 /* =============================
    MÉTRICAS
 ============================= */
+
 .metrics {
   display: flex;
-  gap: 50px;
-  margin-top: 30px;
+  gap: 55px;
+  margin-top: 35px;
+  flex-wrap: wrap;
 }
 
 .metrics div {
   display: flex;
   flex-direction: column;
+  gap: 6px;
 }
 
 .metrics strong {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #fbbc05;
+  font-weight: 700;
 }
 
 .metrics span {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: #456b74;
 }
 
 /* =============================
    IMAGEN HERO
 ============================= */
+
+.heroRight {
+  display: flex;
+  justify-content: center;
+}
+
 .heroRight img {
   width: 100%;
-  max-width: 400px;
-  border-radius: 8px;
+  max-width: 430px;
+  border-radius: 14px;
   object-fit: cover;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.heroRight img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 35px 60px rgba(0, 0, 0, 0.12);
 }
 
 /* =============================
    PERFIL + ÁREAS
 ============================= */
+
 .infoSection {
-  padding: 100px 8%;
+  padding: 110px 8%;
 }
 
 .infoContainer {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 70px;
+  gap: 80px;
 }
+
+.profileBlock,
+.areasBlock {
+  background-color: #ffffff;
+  padding: 45px;
+  border-radius: 16px;
+  border: 1px solid #ececec;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+/* =============================
+   TÍTULOS SECCIONES
+============================= */
 
 .profileBlock h3,
 .areasBlock h3,
 .methodSection h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #1a414a;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   position: relative;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 .profileBlock h3::after,
 .areasBlock h3::after,
 .methodSection h3::after {
   content: "";
-  width: 45px;
-  height: 3px;
+  width: 55px;
+  height: 4px;
   background-color: #fbbc05;
   position: absolute;
-  bottom: -10px;
+  bottom: -12px;
   left: 0;
+  border-radius: 999px;
 }
 
+/* =============================
+   PERFIL TEXTO
+============================= */
+
 .profileBlock p {
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   color: #444;
-  font-size: 0.98rem;
+  font-size: 1.08rem;
+  line-height: 1.9;
 }
+
+/* =============================
+   ÁREAS
+============================= */
 
 .areasBlock ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .areasBlock li {
-  padding: 12px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #ececec;
-  font-size: 0.95rem;
+  font-size: 1.02rem;
   color: #456b74;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
+  line-height: 1.7;
 }
 
 .areasBlock li:hover {
-  padding-left: 6px;
+  padding-left: 8px;
   color: #1a414a;
 }
 
 /* =============================
    METODOLOGÍA
 ============================= */
+
 .methodSection {
-  padding: 90px 8%;
+  padding: 110px 8%;
   background-color: #ffffff;
   text-align: center;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
 
+.methodSection h3::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .methodIntro {
-  max-width: 800px;
-  margin: 0 auto 40px auto;
-  font-size: 0.95rem;
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  font-size: 1.08rem;
+  line-height: 1.9;
   color: #555;
-  line-height: 1.7;
 }
 
 .methodGrid {
-  margin-top: 30px;
+  margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 30px;
 }
 
 .methodGrid div {
   background-color: #faf9f7;
-  padding: 35px 25px;
-  border-radius: 8px;
+  padding: 38px 28px;
+  border-radius: 14px;
   border: 1px solid #eee;
-  transition: 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .methodGrid div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.05);
 }
 
 .methodGrid span {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #1a414a;
   color: #fff;
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  margin-bottom: 15px;
-  font-weight: 600;
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.methodGrid p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
 }
 
 /* =============================
    SEO OCULTO
 ============================= */
+
 .seoText {
   position: absolute !important;
   left: -9999px !important;
@@ -255,25 +356,108 @@
 /* =============================
    RESPONSIVE
 ============================= */
-@media (max-width: 900px) {
+
+@media (max-width: 1000px) {
   .heroContainer,
   .infoContainer {
     grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .heroRight {
+    order: -1;
+  }
+
+  .heroRight img {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .infoSection,
+  .methodSection {
+    padding: 80px 20px;
+  }
+
+  .heroContainer,
+  .infoContainer {
     text-align: center;
   }
 
-  .summary {
+  .heroLeft {
+    align-items: center;
+  }
+
+  .summary,
+  .summarySecondary {
     max-width: 100%;
   }
 
   .metrics {
     justify-content: center;
+    gap: 35px;
   }
 
   .profileBlock h3::after,
-  .areasBlock h3::after,
-  .methodSection h3::after {
+  .areasBlock h3::after {
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .profileBlock,
+  .areasBlock {
+    padding: 35px 28px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .methodGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 2.7rem;
+  }
+
+  .role {
+    font-size: 1.1rem;
+  }
+
+  .summary,
+  .summarySecondary,
+  .profileBlock p,
+  .methodIntro {
+    font-size: 1rem;
+  }
+
+  .profileBlock h3,
+  .areasBlock h3,
+  .methodSection h3 {
+    font-size: 1.6rem;
+  }
+
+  .metrics strong {
+    font-size: 1.5rem;
+  }
+
+  .metrics span {
+    font-size: 0.9rem;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .buttons {
+    width: 100%;
+    flex-direction: column;
   }
 }

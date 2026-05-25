@@ -11,6 +11,15 @@ export default function DocHarriContent() {
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
           <div className={styles.heroLeft}>
+            <motion.span
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className={styles.badge}
+            >
+              ABOGADO CONCILIADOR EN COLOMBIA
+            </motion.span>
+
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -21,17 +30,25 @@ export default function DocHarriContent() {
             </motion.h1>
 
             <h2 className={styles.role}>
-              Abogado Conciliador en Colombia · Especialista en Derecho de
-              Familia, Derecho Laboral y Derecho Tributario
+              Especialista en conciliación extrajudicial, derecho de familia,
+              derecho laboral y resolución estratégica de conflictos en Colombia
             </h2>
 
             <p className={styles.summary}>
-              Abogado conciliador con experiencia en conciliación extrajudicial
-              en derecho en Colombia, especializado en resolución de conflictos
-              en derecho de familia, derecho laboral y derecho tributario.
-              Brinda acompañamiento jurídico estratégico para alcanzar acuerdos
-              con plena validez legal, evitando procesos judiciales prolongados
-              y reduciendo costos para las partes.
+              El Dr. Harrison Perez brinda acompañamiento jurídico en procesos
+              de conciliación extrajudicial en Colombia, facilitando acuerdos
+              legales en conflictos familiares, laborales, civiles y
+              patrimoniales. Su enfoque combina estrategia jurídica, negociación
+              estructurada y soluciones eficientes para evitar procesos
+              judiciales extensos y proteger los intereses de las partes.
+            </p>
+
+            <p className={styles.summarySecondary}>
+              Ha participado en procesos relacionados con cuota alimentaria,
+              custodia de menores, liquidaciones laborales, conflictos
+              contractuales, acuerdos de pago y obligaciones económicas,
+              promoviendo acuerdos claros, válidos y jurídicamente exigibles
+              conforme a la legislación colombiana.
             </p>
 
             <div className={styles.buttons}>
@@ -53,10 +70,12 @@ export default function DocHarriContent() {
                 <strong>+5</strong>
                 <span>Años de experiencia</span>
               </div>
+
               <div>
                 <strong>+100</strong>
                 <span>Casos gestionados</span>
               </div>
+
               <div>
                 <strong>Nacional</strong>
                 <span>Cobertura en Colombia</span>
@@ -81,51 +100,61 @@ export default function DocHarriContent() {
 
             <p>
               El Dr. Harrison Perez es abogado conciliador acreditado en
-              Colombia, con formación y experiencia en derecho de familia,
-              derecho laboral y derecho tributario. Se desempeña en procesos de
-              conciliación extrajudicial en derecho, facilitando acuerdos
-              legales en conflictos familiares, laborales y obligaciones
-              fiscales.
+              Colombia, con experiencia en conciliación extrajudicial en derecho
+              y resolución alternativa de conflictos en asuntos de familia,
+              laborales y civiles.
+            </p>
+
+            <p>
+              Su práctica jurídica se enfoca en la búsqueda de soluciones
+              efectivas mediante mecanismos alternativos de solución de
+              conflictos (MASC), facilitando acuerdos legales con plena validez
+              jurídica y evitando procesos judiciales prolongados.
             </p>
 
             <p>
               Ha intervenido en controversias relacionadas con alimentos,
               custodia, separación de bienes, liquidaciones laborales, despidos,
-              acuerdos de pago, conflictos contractuales y obligaciones
-              tributarias, promoviendo soluciones jurídicas eficientes bajo los
-              mecanismos alternativos de solución de conflictos (MASC).
+              acuerdos contractuales y obligaciones económicas, brindando
+              acompañamiento jurídico estratégico y orientación clara durante
+              cada etapa del proceso conciliatorio.
             </p>
 
             <p>
-              Su enfoque combina análisis jurídico técnico, negociación
-              estructurada y formalización legal de acuerdos con efectos
-              jurídicos exigibles, garantizando seguridad jurídica y
-              cumplimiento efectivo conforme a la legislación colombiana.
+              Su metodología combina análisis jurídico técnico, negociación
+              estructurada y formalización legal de acuerdos exigibles,
+              garantizando seguridad jurídica, transparencia y cumplimiento
+              efectivo conforme a la legislación colombiana.
             </p>
           </div>
 
           <div className={styles.areasBlock}>
-            <h3>
-              Servicios de Conciliación en Derecho de Familia, Laboral y
-              Tributario
-            </h3>
+            <h3>Servicios de Conciliación y Resolución de Conflictos</h3>
 
             <ul>
               <li>
                 Conciliación en derecho de familia (alimentos, custodia,
                 separación de bienes)
               </li>
+
               <li>
-                Conciliación laboral (liquidaciones, despidos, acuerdos
+                Conciliación laboral (liquidaciones, despidos y acuerdos
                 laborales)
               </li>
+
               <li>
-                Conciliación en conflictos tributarios y acuerdos de pago
-                fiscales
+                Acuerdos de pago y conciliación de obligaciones económicas
               </li>
-              <li>Conflictos contractuales y acuerdos civiles</li>
-              <li>Recuperación de cartera mediante conciliación</li>
-              <li>Prevención estratégica de litigios</li>
+
+              <li>Conciliación en conflictos contractuales y civiles</li>
+
+              <li>
+                Recuperación de cartera mediante conciliación extrajudicial
+              </li>
+
+              <li>
+                Prevención estratégica de litigios y formalización de acuerdos
+              </li>
             </ul>
           </div>
         </div>
@@ -136,11 +165,10 @@ export default function DocHarriContent() {
         <h3>Metodología de Trabajo en Procesos de Conciliación</h3>
 
         <p className={styles.methodIntro}>
-          La conciliación extrajudicial en derecho es un mecanismo alternativo
-          de solución de conflictos que permite resolver controversias de manera
-          ágil y eficiente sin acudir a un proceso judicial. La metodología
-          aplicada garantiza estructura jurídica, claridad en las obligaciones y
-          formalización válida conforme a la legislación colombiana.
+          Cada proceso conciliatorio requiere estructura jurídica, claridad y
+          acompañamiento estratégico. La metodología aplicada permite construir
+          acuerdos sólidos, equilibrados y legalmente válidos conforme a la
+          legislación colombiana.
         </p>
 
         <div className={styles.methodGrid}>
@@ -169,13 +197,11 @@ export default function DocHarriContent() {
       {/* ================= SEO OCULTO ================= */}
       <p className={styles.seoText}>
         Abogado conciliador en Colombia especializado en conciliación
-        extrajudicial en derecho de familia, derecho laboral y derecho
-        tributario. Servicios de conciliación en procesos de alimentos,
-        custodia, liquidaciones laborales, despidos, acuerdos laborales,
-        conflictos fiscales y acuerdos de pago tributarios. Centro de
-        conciliación con cobertura nacional, audiencias válidas jurídicamente y
-        formalización de acuerdos con efectos ejecutivos conforme a la
-        legislación colombiana.
+        extrajudicial en derecho de familia, derecho laboral y resolución de
+        conflictos. Servicios de conciliación en alimentos, custodia,
+        liquidaciones laborales, acuerdos de pago, conflictos civiles y
+        obligaciones económicas con cobertura nacional y acuerdos legalmente
+        válidos conforme a la legislación colombiana.
       </p>
     </main>
   );
