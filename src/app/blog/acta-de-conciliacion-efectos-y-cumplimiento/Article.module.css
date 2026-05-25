@@ -1,102 +1,321 @@
 .section {
-  padding: 100px 20px;
-  background: #faf9f7;
+  padding: 135px 20px 100px;
+  background: linear-gradient(to bottom, #faf9f7, #f5f5f5);
 }
 
 .container {
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
+/* ================= BADGE ================= */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(251, 188, 5, 0.12);
+  color: #456b74;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
 /* ================= TITLE ================= */
+
 .title {
-  font-size: 30px;
+  font-size: clamp(2rem, 4vw, 3.1rem);
   font-weight: 700;
   color: #1a414a;
-  margin-bottom: 30px;
-  line-height: 1.3;
+  margin-bottom: 2rem;
+  line-height: 1.2;
   position: relative;
 }
 
 .title::after {
   content: "";
-  width: 60px;
+  width: 78px;
   height: 4px;
   background: #fbbc05;
   position: absolute;
-  bottom: -12px;
   left: 0;
-  border-radius: 4px;
+  bottom: -14px;
+  border-radius: 999px;
 }
 
 /* ================= SUBTITLE ================= */
+
 .subtitle {
-  font-size: 22px;
-  font-weight: 600;
-  margin-top: 40px;
-  margin-bottom: 15px;
-  color: #456b74;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 3.5rem;
+  margin-bottom: 1.3rem;
+  color: #1a414a;
+  line-height: 1.3;
 }
 
 /* ================= TEXT ================= */
+
 .paragraph {
-  font-size: 17px;
-  color: #333;
+  font-size: 1.03rem;
+  color: #444;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.paragraph strong {
+  color: #1a414a;
+}
+
+/* ================= HIGHLIGHT ================= */
+
+.highlightBox {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(251, 188, 5, 0.08);
+  border-left: 4px solid #fbbc05;
+}
+
+.highlightBox strong {
+  display: block;
+  color: #1a414a;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+}
+
+.highlightBox p {
+  color: #444;
   line-height: 1.8;
-  margin-bottom: 20px;
 }
 
 /* ================= LIST ================= */
+
 .list {
   list-style: none;
   padding-left: 0;
-  margin: 25px 0;
+  margin: 2rem 0;
 }
 
 .list li {
-  margin-bottom: 14px;
-  padding-left: 26px;
   position: relative;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.7;
+  padding-left: 30px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
 }
 
 .list li::before {
   content: "✔";
   position: absolute;
   left: 0;
+  top: 0;
   color: #456b74;
-  font-size: 14px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* ================= EFFECTS GRID ================= */
+
+.effectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.effectCard {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 1.6rem;
+  border: 1px solid rgba(69, 107, 116, 0.12);
+  transition: all 0.3s ease;
+}
+
+.effectCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(251, 188, 5, 0.4);
+  box-shadow: 0 16px 35px rgba(26, 65, 74, 0.08);
+}
+
+.effectCard h4 {
+  font-size: 1.05rem;
+  color: #1a414a;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.effectCard p {
+  color: #555;
+  line-height: 1.75;
+  font-size: 0.95rem;
 }
 
 /* ================= NOTE ================= */
+
 .note {
-  margin-top: 35px;
-  padding: 18px 20px;
-  background: rgba(251, 188, 5, 0.08);
-  border-left: 4px solid #fbbc05;
-  font-size: 15px;
+  margin-top: 2rem;
+  padding: 1.2rem 1.3rem;
+  background: rgba(69, 107, 116, 0.08);
+  border-left: 4px solid #456b74;
+  border-radius: 10px;
+  line-height: 1.8;
   color: #1a414a;
-  line-height: 1.7;
-  border-radius: 6px;
+}
+
+/* ================= WARNING ================= */
+
+.warningBox {
+  margin-top: 2rem;
+  padding: 1.4rem;
+  background: rgba(255, 87, 87, 0.06);
+  border-left: 4px solid #ff5757;
+  border-radius: 12px;
+}
+
+.warningBox strong {
+  display: block;
+  color: #1a414a;
+  margin-bottom: 0.7rem;
+}
+
+.warningBox p {
+  color: #444;
+  line-height: 1.8;
+}
+
+/* ================= FAQ ================= */
+
+.faqSection {
+  margin-top: 2rem;
+}
+
+.faqItem {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(69, 107, 116, 0.12);
+  margin-bottom: 1rem;
+}
+
+.faqItem h4 {
+  font-size: 1rem;
+  color: #1a414a;
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+.faqItem p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 0.96rem;
+}
+
+/* ================= CTA ================= */
+
+.cta {
+  margin-top: 4rem;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 2rem;
+  border: 1px solid rgba(69, 107, 116, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.8rem;
+  box-shadow: 0 18px 40px rgba(26, 65, 74, 0.06);
+}
+
+.ctaTitle {
+  display: block;
+  color: #1a414a;
+  font-size: 1.18rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.ctaText {
+  color: #555;
+  line-height: 1.8;
+  max-width: 620px;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a414a;
+  color: #ffffff;
+  padding: 0.95rem 1.6rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: #fbbc05;
+  color: #000;
+  transform: translateY(-2px);
 }
 
 /* ================= RESPONSIVE ================= */
+
 @media (max-width: 768px) {
+  .section {
+    padding: 115px 18px 75px;
+  }
+
   .title {
-    font-size: 24px;
+    font-size: 2rem;
   }
 
   .subtitle {
-    font-size: 20px;
+    font-size: 1.35rem;
   }
 
-  .paragraph {
-    font-size: 15.5px;
+  .paragraph,
+  .list li,
+  .effectCard p,
+  .faqItem p {
+    font-size: 0.96rem;
   }
 
-  .list li {
-    font-size: 15px;
+  .cta {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.7rem;
+  }
+
+  .ctaButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding-inline: 16px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .effectCard,
+  .faqItem {
+    padding: 1.3rem;
+  }
+
+  .cta {
+    padding: 1.5rem;
   }
 }

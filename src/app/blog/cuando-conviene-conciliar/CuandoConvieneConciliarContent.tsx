@@ -26,17 +26,55 @@ export default function CuandoConvieneConciliarContent() {
 
           <p className={styles.paragraph}>
             La <strong>conciliación en Colombia</strong> es uno de los
-            mecanismos más eficientes para resolver conflictos sin acudir a un
-            proceso judicial. En ciudades como <strong>Bogotá</strong>, donde
-            los tiempos judiciales pueden ser largos, la conciliación se
-            convierte en una herramienta estratégica para lograr acuerdos
-            rápidos, seguros y legalmente válidos.
+            mecanismos más eficientes para resolver conflictos sin necesidad de
+            acudir a un proceso judicial. En ciudades como{" "}
+            <strong>Bogotá</strong>, donde los procesos ante jueces pueden tomar
+            meses o incluso años, la conciliación se convierte en una
+            alternativa estratégica para lograr acuerdos rápidos, seguros y con
+            efectos legales.
+          </p>
+
+          <p className={styles.paragraph}>
+            Muchas personas creen que la conciliación únicamente sirve para
+            evitar demandas, pero en realidad también permite reducir costos,
+            conservar relaciones comerciales o familiares y encontrar soluciones
+            flexibles que normalmente no se obtienen en un juicio tradicional.
           </p>
 
           <p className={styles.paragraph}>
             Saber <strong>cuándo conviene conciliar</strong> puede marcar la
             diferencia entre un conflicto prolongado y una solución práctica,
             económica y efectiva para ambas partes.
+          </p>
+        </div>
+
+        {/* ================= INTRO ================= */}
+
+        <div className={styles.section}>
+          <h2 className={styles.subtitle}>
+            ¿Por qué la conciliación es tan utilizada en Colombia?
+          </h2>
+
+          <p className={styles.paragraph}>
+            La conciliación extrajudicial en Colombia se ha convertido en uno de
+            los mecanismos más utilizados para resolver conflictos civiles,
+            comerciales, familiares y laborales porque permite que las partes
+            construyan soluciones mediante el diálogo, con la ayuda de un
+            conciliador imparcial.
+          </p>
+
+          <p className={styles.paragraph}>
+            A diferencia de un proceso judicial, donde un juez toma la decisión,
+            en la conciliación son las partes quienes tienen control sobre el
+            acuerdo. Esto facilita negociaciones más flexibles relacionadas con
+            plazos, pagos, entregas, cuotas o compromisos específicos.
+          </p>
+
+          <p className={styles.paragraph}>
+            En Bogotá, muchas personas utilizan la conciliación para resolver
+            conflictos de arrendamiento, deudas, incumplimientos contractuales,
+            alimentos, conflictos entre socios, pagos pendientes y problemas de
+            convivencia sin necesidad de llegar a un litigio.
           </p>
         </div>
 
@@ -48,39 +86,119 @@ export default function CuandoConvieneConciliarContent() {
           </h2>
 
           <p className={styles.paragraph}>
-            Existen múltiples situaciones donde la conciliación extrajudicial
-            puede ayudar a resolver conflictos de forma más rápida que un
-            proceso judicial tradicional:
+            Existen múltiples situaciones donde la conciliación puede ayudar a
+            resolver conflictos de forma más rápida y eficiente que un proceso
+            judicial tradicional:
           </p>
 
           <ul className={styles.list}>
             <li>
-              <strong>Relación entre las partes:</strong> cuando existe vínculo
-              familiar, comercial o contractual, como arrendamientos,
-              proveedores, socios o conflictos familiares.
+              <strong>Cuando existe relación entre las partes:</strong> si hay
+              vínculos familiares, comerciales, laborales o contractuales, la
+              conciliación ayuda a mantener la comunicación y evitar rupturas
+              definitivas.
             </li>
 
             <li>
-              <strong>Necesidad de una solución rápida:</strong> ideal para
-              evitar procesos judiciales largos y costosos en Colombia.
+              <strong>Cuando se busca una solución rápida:</strong> muchas
+              conciliaciones en Bogotá pueden resolverse en una sola audiencia,
+              evitando años de procesos judiciales.
             </li>
 
             <li>
-              <strong>Acuerdos flexibles:</strong> permite negociar planes de
-              pago, compromisos graduales o soluciones personalizadas.
+              <strong>Cuando las partes quieren negociar:</strong> si existe
+              disposición para dialogar, es posible construir acuerdos más
+              favorables para ambos lados.
             </li>
 
             <li>
-              <strong>Evidencia suficiente:</strong> cuando existen pruebas,
-              pero se busca evitar desgaste económico y emocional.
+              <strong>Cuando se necesitan acuerdos flexibles:</strong> por
+              ejemplo, planes de pago, acuerdos parciales, refinanciaciones o
+              cronogramas de cumplimiento.
             </li>
 
             <li>
-              <strong>Conflictos familiares:</strong> alimentos, visitas,
-              custodia o separación de bienes son casos muy comunes en
-              conciliación.
+              <strong>Cuando hay evidencia suficiente:</strong> si existen
+              contratos, chats, facturas, correos o soportes claros, la
+              conciliación puede facilitar acuerdos rápidos.
+            </li>
+
+            <li>
+              <strong>En conflictos familiares:</strong> alimentos, custodia,
+              régimen de visitas, separación de bienes o acuerdos de crianza son
+              casos frecuentes de conciliación.
+            </li>
+
+            <li>
+              <strong>En conflictos comerciales:</strong> proveedores, facturas,
+              incumplimientos contractuales y pagos pendientes suelen resolverse
+              mediante conciliación extrajudicial.
+            </li>
+
+            <li>
+              <strong>En conflictos civiles:</strong> daños, arrendamientos,
+              préstamos de dinero o conflictos entre vecinos son asuntos que
+              frecuentemente pueden conciliarse.
             </li>
           </ul>
+        </div>
+
+        {/* ================= EJEMPLOS ================= */}
+
+        <div className={styles.section}>
+          <h2 className={styles.subtitle}>
+            Ejemplos comunes de conciliación en Bogotá
+          </h2>
+
+          <div className={styles.examplesGrid}>
+            <div className={styles.exampleCard}>
+              <h3>Arrendamientos</h3>
+              <p>
+                Acuerdos por cánones pendientes, entrega de inmuebles,
+                reparaciones o incumplimientos contractuales.
+              </p>
+            </div>
+
+            <div className={styles.exampleCard}>
+              <h3>Deudas y pagos</h3>
+              <p>
+                Negociación de cuotas, refinanciaciones y acuerdos de pago entre
+                personas o empresas.
+              </p>
+            </div>
+
+            <div className={styles.exampleCard}>
+              <h3>Familia</h3>
+              <p>
+                Cuotas alimentarias, visitas, custodia y acuerdos relacionados
+                con menores de edad.
+              </p>
+            </div>
+
+            <div className={styles.exampleCard}>
+              <h3>Conflictos laborales</h3>
+              <p>
+                Liquidaciones, pagos pendientes, indemnizaciones o terminación
+                de contratos laborales.
+              </p>
+            </div>
+
+            <div className={styles.exampleCard}>
+              <h3>Problemas entre socios</h3>
+              <p>
+                Diferencias económicas, incumplimientos o desacuerdos
+                comerciales dentro de empresas.
+              </p>
+            </div>
+
+            <div className={styles.exampleCard}>
+              <h3>Prestación de servicios</h3>
+              <p>
+                Incumplimientos de contratos, pagos atrasados o conflictos entre
+                clientes y proveedores.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* ================= CUANDO NO ================= */}
@@ -90,9 +208,18 @@ export default function CuandoConvieneConciliarContent() {
             ¿Cuándo NO conviene iniciar una conciliación?
           </h2>
 
+          <p className={styles.paragraph}>
+            Aunque la conciliación es muy útil en muchos casos, existen
+            situaciones donde puede no ser la mejor alternativa:
+          </p>
+
           <ul className={styles.list}>
             <li>
               Cuando una de las partes no tiene intención real de negociar.
+            </li>
+
+            <li>
+              Cuando existe mala fe evidente o intención de dilatar el proceso.
             </li>
 
             <li>
@@ -100,70 +227,145 @@ export default function CuandoConvieneConciliarContent() {
               ley colombiana.
             </li>
 
+            <li>Cuando el conflicto involucra derechos no conciliables.</li>
+
             <li>
-              Cuando existen derechos no conciliables o asuntos prohibidos por
-              la ley.
+              Cuando existe violencia, amenazas o situaciones que impidan una
+              negociación equilibrada.
+            </li>
+
+            <li>
+              Cuando se necesita una medida urgente que solo puede ordenar un
+              juez.
             </li>
           </ul>
 
           <div className={styles.note}>
             En Bogotá y Colombia, la conciliación funciona mejor cuando ambas
             partes tienen disposición real de llegar a un acuerdo. Sin voluntad
-            de negociación, el proceso pierde efectividad.
+            de negociación, el proceso pierde efectividad y puede terminar sin
+            resultados concretos.
           </div>
         </div>
 
-        {/* ================= VENTAJAS ================= */}
+        {/* ================= BENEFICIOS ================= */}
 
         <div className={styles.section}>
           <h2 className={styles.subtitle}>
             Ventajas de conciliar en Bogotá y Colombia
           </h2>
 
+          <p className={styles.paragraph}>
+            La conciliación ofrece beneficios importantes tanto para personas
+            naturales como para empresas que buscan resolver conflictos de forma
+            eficiente:
+          </p>
+
           <div className={styles.benefitsGrid}>
             <div className={styles.benefitCard}>
               <h3>Mayor rapidez</h3>
               <p>
-                Los acuerdos pueden lograrse en mucho menos tiempo que un juicio
-                tradicional.
+                Muchos conflictos pueden resolverse en menos tiempo que un
+                proceso judicial tradicional.
               </p>
             </div>
 
             <div className={styles.benefitCard}>
               <h3>Menor costo</h3>
               <p>
-                Reduce gastos jurídicos y evita procesos prolongados ante
-                despachos judiciales.
+                Reduce gastos jurídicos, costos procesales y tiempos de espera
+                ante despachos judiciales.
               </p>
             </div>
 
             <div className={styles.benefitCard}>
               <h3>Confidencialidad</h3>
               <p>
-                El proceso protege la privacidad y la información de las partes.
+                Las audiencias de conciliación son reservadas y protegen la
+                información de las partes.
+              </p>
+            </div>
+
+            <div className={styles.benefitCard}>
+              <h3>Acuerdos flexibles</h3>
+              <p>
+                Las partes pueden construir soluciones personalizadas según sus
+                necesidades.
+              </p>
+            </div>
+
+            <div className={styles.benefitCard}>
+              <h3>Menor desgaste emocional</h3>
+              <p>
+                Evita conflictos prolongados y reduce tensiones familiares,
+                personales o comerciales.
               </p>
             </div>
 
             <div className={styles.benefitCard}>
               <h3>Validez legal</h3>
               <p>
-                El acta de conciliación tiene efectos jurídicos y puede ser
-                exigible legalmente.
+                El acta de conciliación tiene efectos jurídicos y puede exigirse
+                legalmente en Colombia.
               </p>
             </div>
           </div>
         </div>
 
+        {/* ================= RECOMENDACIONES ================= */}
+
+        <div className={styles.section}>
+          <h2 className={styles.subtitle}>
+            Recomendaciones antes de asistir a una conciliación
+          </h2>
+
+          <p className={styles.paragraph}>
+            Prepararse adecuadamente puede aumentar significativamente las
+            probabilidades de alcanzar un acuerdo exitoso en una audiencia de
+            conciliación.
+          </p>
+
+          <ul className={styles.list}>
+            <li>
+              Organiza documentos, contratos, chats, correos y soportes
+              relacionados con el conflicto.
+            </li>
+
+            <li>
+              Define claramente cuál es tu objetivo principal y cuál es tu
+              mínimo aceptable.
+            </li>
+
+            <li>
+              Lleva propuestas claras sobre pagos, fechas y formas de
+              cumplimiento.
+            </li>
+
+            <li>Evalúa alternativas de negociación antes de la audiencia.</li>
+
+            <li>
+              Busca asesoría jurídica si el conflicto involucra valores altos o
+              asuntos complejos.
+            </li>
+
+            <li>
+              Mantén una actitud abierta al diálogo y evita convertir la
+              audiencia en una discusión personal.
+            </li>
+          </ul>
+        </div>
+
         {/* ================= CTA ================= */}
 
         <div className={styles.cta}>
-          <strong className={styles.ctaTitle}>Recomendación estratégica</strong>
+          <strong className={styles.ctaTitle}>
+            ¿Quieres saber si tu caso conviene conciliar?
+          </strong>
 
           <p className={styles.ctaText}>
-            Si estás considerando iniciar un proceso de conciliación en Bogotá o
-            cualquier ciudad de Colombia, lo más recomendable es contar con
-            orientación jurídica para definir objetivos claros, evaluar opciones
-            de negociación y construir una propuesta sólida.
+            Recibe orientación sobre conciliación en Bogotá y Colombia, revisa
+            si tu conflicto es conciliable y conoce estrategias para negociar de
+            forma segura y efectiva.
           </p>
 
           <a
