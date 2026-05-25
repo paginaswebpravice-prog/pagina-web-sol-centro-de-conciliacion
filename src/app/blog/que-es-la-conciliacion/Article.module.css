@@ -3,73 +3,143 @@
 ========================= */
 
 .articleWrapper {
-  padding-top: 140px;
-  padding-bottom: 4rem;
-  background: #faf9f7;
+  padding: 140px 20px 90px;
+  background: linear-gradient(to bottom, #faf9f7, #f5f5f5);
 }
 
 /* =========================
-   BLOQUE DE ARTÍCULO
+   CONTENEDOR PRINCIPAL
 ========================= */
 
 .articleBlock {
-  max-width: 850px;
+  max-width: 950px;
   margin: 0 auto;
-  padding: 2rem 1rem;
-  text-align: left;
+  background: #ffffff;
+  padding: 55px;
+  border-radius: 22px;
+  border: 1px solid #ececec;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.05);
 }
 
 /* =========================
-   TÍTULO PRINCIPAL
+   HERO
 ========================= */
+
+.heroContent {
+  margin-bottom: 45px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(251, 188, 5, 0.14);
+  color: #1a414a;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
 
 .title {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: clamp(34px, 5vw, 48px);
+  line-height: 1.15;
   color: #1a414a;
-  margin-bottom: 2rem;
-  line-height: 1.3;
-  position: relative;
+  font-weight: 700;
+  margin-bottom: 28px;
+  letter-spacing: -0.5px;
 }
 
-.title::after {
-  content: "";
-  width: 70px;
-  height: 4px;
-  background: #fbbc05;
-  position: absolute;
-  bottom: -12px;
-  left: 0;
-  border-radius: 3px;
+.heroText {
+  font-size: 18px;
+  line-height: 1.85;
+  color: #444;
+  margin-bottom: 20px;
 }
 
 /* =========================
-   SUBTÍTULOS
+   SECCIONES
 ========================= */
+
+.contentSection {
+  margin-top: 45px;
+}
 
 .subtitle {
-  font-size: 1.4rem;
-  font-weight: 700;
+  font-size: 30px;
   color: #1a414a;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 22px;
+  line-height: 1.3;
 }
 
-/* =========================
-   PÁRRAFOS
-========================= */
-
 .paragraph {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #333;
-  margin-bottom: 1.5rem;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 22px;
 }
 
 .paragraph strong {
   color: #1a414a;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+/* =========================
+   DESTACADO
+========================= */
+
+.highlightBox {
+  margin-top: 28px;
+  padding: 28px;
+  background: rgba(26, 65, 74, 0.04);
+  border: 1px solid rgba(26, 65, 74, 0.08);
+  border-radius: 16px;
+}
+
+.highlightBox p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #1a414a;
+  margin: 0;
+}
+
+/* =========================
+   GRID TARJETAS
+========================= */
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.infoCard {
+  background: #faf9f7;
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  padding: 28px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.05);
+}
+
+.infoCard h3 {
+  font-size: 20px;
+  color: #1a414a;
+  margin-bottom: 14px;
+}
+
+.infoCard p {
+  font-size: 15.8px;
+  line-height: 1.8;
+  color: #555;
 }
 
 /* =========================
@@ -77,78 +147,64 @@
 ========================= */
 
 .list {
-  margin: 1.5rem 0;
-  padding-left: 1.5rem;
+  margin-top: 25px;
+  padding-left: 24px;
 }
 
 .list li {
-  margin-bottom: 0.7rem;
-  line-height: 1.7;
-  color: #333;
-}
-
-/* =========================
-   LINKS
-========================= */
-
-.articleBlock a {
-  color: #456b74;
-  font-weight: 600;
-  text-decoration: none;
-  border-bottom: 2px solid #fbbc05;
-  transition: all 0.3s ease;
-}
-
-.articleBlock a:hover {
-  color: #1a414a;
-  border-bottom: 2px solid #1a414a;
-}
-
-/* =========================
-   CAJA DESTACADA / NOTA
-========================= */
-
-.note {
-  background: #ffffff;
-  border-left: 4px solid #fbbc05;
-  padding: 1.2rem 1.4rem;
-  color: #333;
-  margin: 2rem 0;
-  border-radius: 6px;
-  line-height: 1.7;
-}
-
-/* =========================
-   FAQ (IMPORTANTE SEO)
-========================= */
-
-.faqItem {
-  margin-bottom: 1.5rem;
-  padding: 1rem 1.2rem;
-  background: #ffffff;
-  border-radius: 6px;
-  border: 1px solid #eee;
-}
-
-.faqQuestion {
-  font-weight: 700;
-  color: #1a414a;
-  margin-bottom: 0.5rem;
-}
-
-.faqAnswer {
+  font-size: 16px;
+  line-height: 1.9;
   color: #444;
-  line-height: 1.7;
+  margin-bottom: 10px;
 }
 
 /* =========================
-   SEPARADOR
+   CTA
 ========================= */
 
-.divider {
-  height: 1px;
-  background: #e5e5e5;
-  margin: 2.5rem 0;
+.ctaBox {
+  margin-top: 60px;
+  background: linear-gradient(135deg, #1a414a, #264f58);
+  padding: 42px;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.ctaTitle {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.ctaText {
+  max-width: 720px;
+  margin: 0 auto 28px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbbc05;
+  color: #1a414a;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  background: #ffd24c;
 }
 
 /* =========================
@@ -157,18 +213,50 @@
 
 @media (max-width: 768px) {
   .articleWrapper {
-    padding-top: 120px;
+    padding: 120px 16px 70px;
+  }
+
+  .articleBlock {
+    padding: 32px 24px;
+    border-radius: 18px;
   }
 
   .title {
-    font-size: 1.6rem;
+    font-size: 30px;
   }
 
   .subtitle {
-    font-size: 1.25rem;
+    font-size: 24px;
   }
 
-  .paragraph {
-    font-size: 0.95rem;
+  .paragraph,
+  .heroText {
+    font-size: 15.8px;
+  }
+
+  .ctaBox {
+    padding: 32px 24px;
+  }
+
+  .ctaTitle {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .articleBlock {
+    padding: 28px 20px;
+  }
+
+  .title {
+    font-size: 27px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+  }
+
+  .badge {
+    font-size: 12px;
   }
 }

@@ -13,93 +13,186 @@ export default function DocumentosYEvidenciaUtilContent() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <motion.h2 className={styles.title}>
-          5) Documentos y evidencia útil en conciliación en Colombia
-        </motion.h2>
+        <span className={styles.category}>Guía práctica de conciliación</span>
 
-        <p className={styles.paragraph}>
-          En cualquier proceso de <strong>conciliación en Colombia</strong>,
-          especialmente en ciudades como <strong>Bogotá</strong>, uno de los
-          factores que más influye en lograr un acuerdo efectivo es la calidad
-          de la <strong>evidencia presentada</strong>.
+        <h1 className={styles.title}>
+          Documentos y evidencia útil para una conciliación en Colombia
+        </h1>
+
+        <p className={styles.intro}>
+          La preparación documental es uno de los factores que más influye en el
+          éxito de una audiencia de conciliación. Aunque la conciliación en
+          Colombia no funciona exactamente igual que un juicio, sí requiere
+          soportes claros que permitan demostrar los hechos, las obligaciones y
+          los posibles incumplimientos.
         </p>
 
-        <p className={styles.paragraph}>
-          Aunque la conciliación no es un juicio, sí requiere{" "}
-          <strong>soporte claro, verificable y organizado</strong>. Esto permite
-          que el conciliador entienda el caso rápidamente y facilita que la otra
-          parte reconozca obligaciones o llegue a acuerdos concretos.
-        </p>
+        <div className={styles.highlightBox}>
+          <strong>
+            Una conciliación bien preparada suele resolverse más rápido.
+          </strong>
+
+          <p>
+            Cuando las partes presentan documentos organizados y evidencia
+            verificable, el conciliador puede entender el caso con mayor
+            facilidad y orientar una negociación más efectiva.
+          </p>
+        </div>
 
         <p className={styles.paragraph}>
-          Si estás preparando una{" "}
-          <strong>audiencia de conciliación en Bogotá o Colombia</strong>, estos
-          son los documentos que más ayudan:
+          En Bogotá y en diferentes ciudades de Colombia, muchos conflictos
+          relacionados con deudas, contratos, arrendamientos, alimentos,
+          incumplimientos comerciales o acuerdos de pago logran solucionarse en
+          una sola audiencia gracias a que las partes llegan con información
+          clara y bien estructurada.
+        </p>
+
+        <h2 className={styles.subtitle}>
+          ¿Qué documentos sirven en una conciliación?
+        </h2>
+
+        <p className={styles.paragraph}>
+          Los documentos más útiles dependerán del tipo de conflicto, pero en
+          términos generales existen ciertos soportes que suelen ser relevantes
+          en la mayoría de conciliaciones civiles, comerciales, laborales o de
+          familia.
+        </p>
+
+        <div className={styles.cardGrid}>
+          <motion.div
+            className={styles.infoCard}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h3>Contratos y acuerdos</h3>
+
+            <p>
+              Contratos firmados, promesas, órdenes de servicio, cotizaciones o
+              cualquier documento que evidencie obligaciones entre las partes.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className={styles.infoCard}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h3>Facturas y cuentas de cobro</h3>
+
+            <p>
+              Especialmente importantes en conflictos comerciales, prestación de
+              servicios, pagos pendientes y recuperación de cartera.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className={styles.infoCard}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h3>Comprobantes de pago</h3>
+
+            <p>
+              Transferencias, consignaciones, extractos bancarios, recibos o
+              soportes que permitan demostrar pagos realizados.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className={styles.infoCard}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h3>Chats y correos</h3>
+
+            <p>
+              Conversaciones de WhatsApp, emails o mensajes donde se evidencien
+              acuerdos, compromisos, incumplimientos o negociaciones previas.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className={styles.infoCard}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h3>Pruebas del incumplimiento</h3>
+
+            <p>
+              Requerimientos enviados, fechas de vencimiento, actas,
+              comunicaciones o cualquier soporte que demuestre el conflicto.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className={styles.infoCard}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h3>Soportes complementarios</h3>
+
+            <p>
+              Fotografías, reportes, entregas, archivos digitales o evidencia
+              adicional que ayude a respaldar tu posición.
+            </p>
+          </motion.div>
+        </div>
+
+        <h2 className={styles.subtitle}>
+          Cómo organizar la evidencia correctamente
+        </h2>
+
+        <p className={styles.paragraph}>
+          No se trata de presentar cientos de archivos sin orden. En muchos
+          casos, una carpeta organizada con documentos claros puede ser más útil
+          que grandes cantidades de información desordenada.
         </p>
 
         <ul className={styles.list}>
-          <li>
-            <strong>Contratos:</strong> acuerdos firmados, órdenes de servicio,
-            promesas o cualquier documento que establezca obligaciones.
-          </li>
-
-          <li>
-            <strong>Facturas y cuentas de cobro:</strong> especialmente en casos
-            comerciales o de prestación de servicios.
-          </li>
-
-          <li>
-            <strong>Comprobantes de pago:</strong> consignaciones,
-            transferencias, extractos bancarios o recibos.
-          </li>
-
-          <li>
-            <strong>Conversaciones:</strong> chats de WhatsApp o correos donde
-            se evidencie el acuerdo o el incumplimiento.
-          </li>
-
-          <li>
-            <strong>Pruebas del incumplimiento:</strong> fechas, requerimientos,
-            comunicaciones o actas previas.
-          </li>
-
-          <li>
-            <strong>Documentos adicionales:</strong> fotos, reportes, entregas o
-            cualquier soporte que respalde tu versión.
-          </li>
+          <li>Ordena los documentos cronológicamente.</li>
+          <li>Identifica claramente las fechas importantes.</li>
+          <li>Resalta valores, obligaciones o incumplimientos.</li>
+          <li>Separa los documentos principales de los complementarios.</li>
+          <li>Lleva copia digital y respaldo en PDF si es posible.</li>
         </ul>
 
-        <p className={styles.paragraph}>
-          En la práctica, los casos de conciliación en <strong>Bogotá</strong>{" "}
-          que llegan mejor preparados suelen resolverse más rápido, incluso en
-          una sola audiencia, porque las partes tienen claridad sobre lo que
-          ocurrió y lo que se debe cumplir.
-        </p>
-
         <div className={styles.note}>
-          Consejo clave: no se trata de llevar muchos documentos, sino de llevar{" "}
-          <strong>los correctos y bien organizados</strong>. Un PDF claro y
-          estructurado puede ser más útil que cientos de archivos desordenados.
+          <strong>Consejo importante:</strong> la conciliación busca facilitar
+          acuerdos, por lo que la claridad de la información ayuda a reducir
+          discusiones innecesarias y acelera el proceso de negociación.
         </div>
 
         <div className={styles.cta}>
-          <strong className={styles.ctaTitle}>
-            Checklist rápido para tu audiencia en Colombia
-          </strong>
+          <div>
+            <strong className={styles.ctaTitle}>
+              ¿Necesitas ayuda preparando tu audiencia?
+            </strong>
 
-          <ul className={styles.ctaList}>
-            <li>Organiza tus documentos en orden cronológico.</li>
-            <li>Resalta los puntos clave del incumplimiento.</li>
-            <li>Prepara una propuesta clara (valores y fechas).</li>
-            <li>Lleva copia digital o impresa de los soportes.</li>
-          </ul>
+            <p className={styles.ctaText}>
+              Recibe orientación sobre qué documentos llevar, cómo organizar la
+              evidencia y cómo presentar una propuesta sólida en tu conciliación
+              en Bogotá o Colombia.
+            </p>
+          </div>
 
           <a
             href="https://api.whatsapp.com/send/?phone=573232904786"
             target="_blank"
             className={styles.ctaButton}
           >
-            Agendar asesoría en Bogotá
+            Solicitar asesoría
           </a>
         </div>
       </motion.div>
