@@ -3,108 +3,325 @@
 ========================= */
 
 .ctaSection {
-  background: #f4f2ee; /* gris claro como tu web */
-  padding: 80px 6%;
+  position: relative;
+  overflow: hidden;
+  padding: 110px 6%;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(240, 180, 41, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(to bottom, #f7f5f1, #f1efea);
 }
 
-/* CONTENEDOR */
+/* =========================
+   CONTAINER
+========================= */
 
 .container {
-  max-width: 1100px;
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  position: relative;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(31, 60, 68, 0.08);
+  border-radius: 28px;
+
+  padding: 70px 55px;
+
+  text-align: center;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* EFECTO DECORATIVO */
+
+.glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+
+  background: radial-gradient(
+    circle,
+    rgba(240, 180, 41, 0.18),
+    transparent 70%
+  );
+
+  top: -120px;
+  right: -120px;
+
+  pointer-events: none;
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(240, 180, 41, 0.12);
+  color: #9c6d00;
+
+  border: 1px solid rgba(240, 180, 41, 0.25);
+
+  padding: 10px 18px;
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  margin-bottom: 28px;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.card h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  letter-spacing: -1px;
+
+  color: #18343b;
+
+  max-width: 900px;
+  margin: 0 auto 24px;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.card p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #5f6b6d;
+
+  max-width: 850px;
   margin: 0 auto;
 }
 
-/* TARJETA */
+/* =========================
+   FEATURES
+========================= */
 
-.card {
-  background: #ffffff;
-  border: 1px solid #e2e0dc;
-  border-radius: 10px;
-  padding: 50px;
-  text-align: center;
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  max-width: 850px;
+  margin: 45px auto;
 }
 
-/* TITULO */
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 
-.card h2 {
-  font-size: 32px;
-  color: #1f3c44; /* azul oscuro elegante */
-  margin-bottom: 20px;
-  line-height: 1.3;
+  background: #faf9f7;
+
+  border: 1px solid rgba(31, 60, 68, 0.08);
+  border-radius: 16px;
+
+  padding: 18px 20px;
+
+  text-align: left;
+
+  transition: all 0.3s ease;
 }
 
-/* TEXTO */
+.feature:hover {
+  transform: translateY(-4px);
 
-.card p {
-  font-size: 16px;
-  color: #5f6b6d;
-  line-height: 1.7;
-  max-width: 750px;
-  margin: 0 auto 30px;
+  border-color: rgba(240, 180, 41, 0.4);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
 }
 
-/* BOTONES */
+.feature span {
+  width: 34px;
+  height: 34px;
+
+  min-width: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f0b429;
+  color: #1f1f1f;
+
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.feature p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #33484d;
+  font-weight: 500;
+}
+
+/* =========================
+   BUTTONS
+========================= */
 
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  align-items: center;
+  gap: 18px;
   flex-wrap: wrap;
+
+  margin-top: 10px;
 }
 
-/* BOTÓN PRINCIPAL (dorado) */
+/* BOTÓN PRINCIPAL */
 
 .primaryBtn {
-  background: #f0b429; /* dorado del diseño */
-  color: #000;
-  padding: 14px 28px;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #f0b429, #e0a41d);
+
+  color: #111;
+
+  padding: 16px 34px;
+
+  font-size: 15px;
+  font-weight: 700;
   text-decoration: none;
-  border-radius: 6px;
+
+  border-radius: 14px;
+
   transition: all 0.3s ease;
+
+  box-shadow: 0 10px 25px rgba(240, 180, 41, 0.25);
 }
 
 .primaryBtn:hover {
-  background: #d89c1f;
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.02);
+
+  box-shadow: 0 16px 35px rgba(240, 180, 41, 0.35);
 }
 
-/* BOTÓN SECUNDARIO */
+/* BOTÓN WHATSAPP */
 
 .secondaryBtn {
-  border: 1px solid #1f3c44;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
   color: #1f3c44;
-  padding: 14px 28px;
-  font-weight: 500;
+
+  border: 1px solid rgba(31, 60, 68, 0.15);
+
+  padding: 16px 34px;
+
+  font-size: 15px;
+  font-weight: 600;
   text-decoration: none;
-  border-radius: 6px;
+
+  border-radius: 14px;
+
   transition: all 0.3s ease;
 }
 
 .secondaryBtn:hover {
-  background: #1f3c44;
+  background: #25d366;
+  border-color: #25d366;
   color: #ffffff;
-  transform: translateY(-2px);
+
+  transform: translateY(-3px);
 }
 
-/* RESPONSIVE */
+/* =========================
+   BOTTOM TEXT
+========================= */
+
+.bottomText {
+  margin-top: 30px;
+
+  font-size: 14px;
+  color: #7b8789;
+
+  letter-spacing: 0.2px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .card {
+    padding: 55px 30px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
 
 @media (max-width: 768px) {
+  .ctaSection {
+    padding: 80px 5%;
+  }
+
   .card {
-    padding: 35px 25px;
+    border-radius: 22px;
+    padding: 45px 22px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 9px 14px;
   }
 
   .card h2 {
-    font-size: 24px;
+    line-height: 1.2;
   }
 
   .card p {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.8;
   }
 
   .buttons {
     flex-direction: column;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+  }
+
+  .feature {
+    padding: 16px;
   }
 }
