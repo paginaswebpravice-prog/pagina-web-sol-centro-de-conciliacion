@@ -20,15 +20,25 @@ export default function AsuntosLaboralesContent() {
           </span>
 
           <h1 className={styles.title}>
-            Conciliación laboral en Colombia: resuelva conflictos laborales sin
-            demanda
+            Conciliación laboral en Colombia: soluciones legales rápidas para
+            trabajadores y empleadores
           </h1>
 
           <p className={styles.description}>
-            La conciliación laboral permite resolver conflictos entre
-            empleadores y trabajadores de forma rápida, legal y efectiva en
-            Bogotá y Colombia, evitando procesos judiciales largos, costosos y
-            desgastantes para ambas partes.
+            La conciliación laboral en Colombia es un mecanismo legal que
+            permite resolver conflictos entre trabajadores y empleadores de
+            forma rápida, segura y efectiva, evitando procesos judiciales largos
+            y costosos. En Bogotá y diferentes ciudades de Colombia, miles de
+            conflictos laborales relacionados con despidos, liquidaciones,
+            salarios, prestaciones sociales y terminación de contratos pueden
+            solucionarse mediante acuerdos con plena validez jurídica.
+          </p>
+
+          <p className={styles.description}>
+            A través de la conciliación laboral, las partes pueden negociar
+            acuerdos de pago, reconocimiento de derechos laborales y soluciones
+            prácticas que reduzcan el desgaste emocional, financiero y jurídico
+            que normalmente implica un proceso ante un juez laboral.
           </p>
         </motion.div>
 
@@ -41,15 +51,25 @@ export default function AsuntosLaboralesContent() {
             </h2>
 
             <p className={styles.text}>
-              Es un mecanismo legal mediante el cual empleadores y trabajadores
-              pueden resolver sus conflictos sin necesidad de acudir a un juez
-              laboral.
+              La conciliación laboral es un mecanismo alternativo de resolución
+              de conflictos mediante el cual empleadores y trabajadores buscan
+              llegar a un acuerdo con la ayuda de un conciliador autorizado, sin
+              necesidad de acudir inmediatamente a una demanda judicial.
             </p>
 
             <p className={styles.text}>
-              En Colombia, este proceso tiene plena validez jurídica y permite
-              llegar a acuerdos justos con la intervención de un conciliador
-              autorizado.
+              En Colombia, este procedimiento tiene plena validez legal y puede
+              realizarse antes, durante o incluso después de ciertos procesos
+              judiciales laborales. El objetivo principal es encontrar
+              soluciones equilibradas que permitan resolver el conflicto de
+              manera más ágil y menos confrontativa.
+            </p>
+
+            <p className={styles.text}>
+              Durante la audiencia, las partes pueden presentar documentos,
+              soportes laborales, liquidaciones, contratos, comprobantes de pago
+              y propuestas de acuerdo para intentar construir una solución
+              satisfactoria para ambas partes.
             </p>
           </div>
 
@@ -60,18 +80,31 @@ export default function AsuntosLaboralesContent() {
             </h2>
 
             <p className={styles.text}>
-              La conciliación laboral aplica a múltiples situaciones entre
+              La conciliación laboral aplica a múltiples conflictos derivados de
+              relaciones de trabajo, contratos laborales y obligaciones entre
               trabajadores y empleadores.
             </p>
 
             <ul className={styles.list}>
               <li>Despido sin justa causa.</li>
               <li>Liquidación de contratos laborales.</li>
-              <li>Salarios y prestaciones sociales adeudadas.</li>
-              <li>Horas extras y recargos laborales.</li>
+              <li>Salarios pendientes de pago.</li>
+              <li>Prestaciones sociales adeudadas.</li>
+              <li>Horas extras y recargos nocturnos.</li>
+              <li>Indemnizaciones laborales.</li>
+              <li>Vacaciones no pagadas.</li>
               <li>Incumplimiento de contratos de trabajo.</li>
+              <li>Acuerdos de retiro laboral.</li>
               <li>Conflictos por terminación laboral.</li>
+              <li>Reconocimiento de derechos laborales.</li>
+              <li>Acuerdos de pago entre trabajador y empresa.</li>
             </ul>
+
+            <p className={styles.text}>
+              Muchos de estos conflictos pueden resolverse en una sola audiencia
+              cuando las partes asisten con disposición de negociar y con la
+              documentación laboral organizada correctamente.
+            </p>
           </div>
 
           {/* BLOQUE 3 */}
@@ -82,23 +115,33 @@ export default function AsuntosLaboralesContent() {
 
             <div className={styles.grid}>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Evita demandas laborales</h3>
+                <h3 className={styles.cardTitle}>
+                  Evita demandas laborales prolongadas
+                </h3>
+
                 <p className={styles.cardText}>
-                  Soluciona conflictos sin procesos judiciales laborales largos.
+                  Permite solucionar conflictos sin iniciar procesos judiciales
+                  que pueden tardar meses o incluso años.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Pago rápido de acuerdos</h3>
+                <h3 className={styles.cardTitle}>Acuerdos de pago rápidos</h3>
+
                 <p className={styles.cardText}>
-                  Permite acuerdos de pago más rápidos para el trabajador.
+                  Facilita pagos, indemnizaciones y acuerdos económicos en menor
+                  tiempo para el trabajador.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Menor costo legal</h3>
+                <h3 className={styles.cardTitle}>
+                  Reducción de costos legales
+                </h3>
+
                 <p className={styles.cardText}>
-                  Reduce gastos en abogados y procesos judiciales.
+                  Disminuye gastos asociados a procesos judiciales, honorarios y
+                  trámites prolongados.
                 </p>
               </div>
 
@@ -106,24 +149,28 @@ export default function AsuntosLaboralesContent() {
                 <h3 className={styles.cardTitle}>
                   Acuerdos con validez jurídica
                 </h3>
+
                 <p className={styles.cardText}>
-                  El acta de conciliación tiene fuerza legal en Colombia.
+                  El acta de conciliación tiene efectos legales y puede exigirse
+                  judicialmente en caso de incumplimiento.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Soluciones rápidas</h3>
+                <h3 className={styles.cardTitle}>Soluciones más flexibles</h3>
+
                 <p className={styles.cardText}>
-                  Acuerdos en menor tiempo que un juicio laboral.
+                  Las partes pueden negociar plazos, cuotas, fechas y
+                  condiciones adaptadas a sus necesidades.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>
-                  Menor confrontación laboral
-                </h3>
+                <h3 className={styles.cardTitle}>Menor desgaste emocional</h3>
+
                 <p className={styles.cardText}>
-                  Permite cerrar conflictos sin mayor confrontación.
+                  Reduce confrontaciones y permite cerrar conflictos laborales
+                  de manera más tranquila y práctica.
                 </p>
               </div>
             </div>
@@ -132,36 +179,106 @@ export default function AsuntosLaboralesContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar una demanda laboral en Colombia?
+              Documentos importantes para una conciliación laboral
             </h2>
 
             <p className={styles.text}>
-              Los procesos laborales pueden tardar meses o incluso años en
-              resolverse, generando incertidumbre económica tanto para el
-              trabajador como para el empleador.
+              La preparación documental es clave dentro de cualquier
+              conciliación laboral en Colombia. Tener soportes organizados ayuda
+              a sustentar reclamaciones, verificar pagos y facilitar acuerdos
+              claros durante la audiencia.
             </p>
 
+            <ul className={styles.list}>
+              <li>Contrato de trabajo.</li>
+              <li>Desprendibles de nómina.</li>
+              <li>Liquidaciones laborales.</li>
+              <li>Certificaciones laborales.</li>
+              <li>Correos electrónicos y chats.</li>
+              <li>Comprobantes de pago.</li>
+              <li>Cartas de despido o renuncia.</li>
+              <li>Acuerdos previos entre las partes.</li>
+              <li>Soportes de horas extras o recargos.</li>
+            </ul>
+
             <p className={styles.text}>
-              La conciliación permite llegar a acuerdos rápidos, claros y con
-              seguridad jurídica para ambas partes.
+              Llevar documentos claros y bien organizados permite que el
+              conciliador comprenda mejor el conflicto y ayuda a construir
+              acuerdos más precisos y seguros jurídicamente.
             </p>
           </div>
 
           {/* BLOQUE 5 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
+              ¿Por qué evitar una demanda laboral en Colombia?
+            </h2>
+
+            <p className={styles.text}>
+              Los procesos laborales pueden extenderse durante largos periodos y
+              generar incertidumbre económica tanto para trabajadores como para
+              empresas. Además, las demandas suelen implicar costos legales,
+              tiempos de espera y desgaste emocional para ambas partes.
+            </p>
+
+            <p className={styles.text}>
+              La conciliación laboral permite enfocarse en soluciones rápidas y
+              prácticas, priorizando acuerdos claros sobre pagos, obligaciones y
+              compromisos sin necesidad de acudir inmediatamente a un litigio
+              judicial.
+            </p>
+
+            <p className={styles.text}>
+              En muchos casos, una conciliación bien manejada permite preservar
+              relaciones laborales, proteger la reputación empresarial y evitar
+              conflictos mayores en el futuro.
+            </p>
+          </div>
+
+          {/* BLOQUE 6 */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
               ¿Cómo iniciar una conciliación laboral paso a paso?
             </h2>
 
             <p className={styles.text}>
-              El proceso inicia con una solicitud ante un centro de conciliación
-              autorizado en Colombia. Posteriormente se cita a las partes a una
-              audiencia para intentar llegar a un acuerdo.
+              El proceso inicia con la presentación de una solicitud ante un
+              centro de conciliación autorizado en Colombia. Posteriormente, se
+              cita a las partes a una audiencia donde podrán exponer el
+              conflicto y buscar un acuerdo con la intervención de un
+              conciliador.
             </p>
 
             <p className={styles.text}>
-              Si hay acuerdo, este queda consignado en un acta con validez legal
-              y obligatorio cumplimiento.
+              Durante la audiencia se revisan documentos, reclamaciones,
+              liquidaciones, pagos pendientes y posibles propuestas de solución.
+              Si las partes llegan a un acuerdo, este queda consignado en un
+              acta de conciliación con plena validez jurídica.
+            </p>
+
+            <p className={styles.text}>
+              En caso de no lograrse un acuerdo, las partes conservan la
+              posibilidad de acudir a otras vías legales en Colombia.
+            </p>
+          </div>
+
+          {/* BLOQUE 7 */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Asesoría para conciliaciones laborales en Bogotá y Colombia
+            </h2>
+
+            <p className={styles.text}>
+              Contar con orientación antes de una audiencia laboral puede marcar
+              una gran diferencia durante la negociación. Una adecuada revisión
+              de documentos, liquidaciones y propuestas ayuda a evitar errores y
+              facilita acuerdos más claros y seguros.
+            </p>
+
+            <p className={styles.text}>
+              La asesoría en conciliación laboral puede ayudarte a preparar tu
+              caso, organizar evidencia, revisar acuerdos de pago y comprender
+              los efectos legales del acta de conciliación en Colombia.
             </p>
           </div>
         </div>

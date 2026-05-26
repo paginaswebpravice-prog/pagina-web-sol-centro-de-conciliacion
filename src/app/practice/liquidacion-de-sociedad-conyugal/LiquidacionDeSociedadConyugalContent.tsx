@@ -20,13 +20,17 @@ export default function LiquidacionDeSociedadConyugalContent() {
           </span>
 
           <h1 className={styles.title}>
-            Liquidación de sociedad conyugal en Colombia sin procesos largos
+            Liquidación de sociedad conyugal en Colombia sin procesos judiciales
+            largos
           </h1>
 
           <p className={styles.description}>
-            La liquidación de sociedad conyugal permite repartir los bienes
-            adquiridos durante el matrimonio o unión marital de forma legal,
-            rápida y sin necesidad de procesos judiciales en Bogotá y Colombia.
+            La liquidación de sociedad conyugal en Colombia permite repartir de
+            forma legal los bienes, deudas y obligaciones adquiridas durante el
+            matrimonio o unión marital de hecho. A través de conciliación, las
+            partes pueden llegar a acuerdos rápidos, claros y con validez
+            jurídica en Bogotá y Colombia, evitando procesos judiciales largos,
+            conflictos familiares y altos costos legales.
           </p>
         </motion.div>
 
@@ -35,86 +39,127 @@ export default function LiquidacionDeSociedadConyugalContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué es la liquidación de sociedad conyugal y cómo funciona?
+              ¿Qué es la liquidación de sociedad conyugal y cómo funciona en
+              Colombia?
             </h2>
 
             <p className={styles.text}>
-              Es el proceso mediante el cual se reparten los bienes, deudas y
-              obligaciones adquiridas durante el matrimonio o unión marital una
-              vez finaliza la relación.
+              La sociedad conyugal es el patrimonio económico que se forma entre
+              los cónyuges o compañeros permanentes durante la relación. Cuando
+              ocurre una separación, divorcio o terminación de la unión marital,
+              es necesario realizar la liquidación para definir cómo se
+              distribuirán los bienes y obligaciones adquiridos durante ese
+              tiempo.
             </p>
 
             <p className={styles.text}>
-              En Colombia, este proceso puede hacerse mediante conciliación sin
-              necesidad de acudir a un juez.
+              En Colombia, este proceso puede desarrollarse mediante
+              conciliación cuando existe voluntad de diálogo entre las partes.
+              La conciliación permite llegar a acuerdos sobre el reparto de
+              bienes sin necesidad de acudir inmediatamente a un juez,
+              facilitando soluciones más rápidas y menos conflictivas.
+            </p>
+
+            <p className={styles.text}>
+              Además de evitar largos procesos judiciales, la conciliación ayuda
+              a proteger la estabilidad económica y emocional de las partes,
+              especialmente cuando existen hijos o bienes compartidos que
+              requieren decisiones claras y organizadas.
             </p>
           </div>
 
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Bienes que se pueden repartir en una sociedad conyugal
+              Bienes y obligaciones que pueden incluirse en la liquidación de
+              sociedad conyugal
             </h2>
 
             <p className={styles.text}>
-              En la liquidación se incluyen todos los bienes adquiridos durante
-              la sociedad conyugal.
+              Durante la conciliación se pueden identificar, valorar y repartir
+              distintos bienes y obligaciones adquiridos durante la relación.
+              Todo dependerá de las condiciones particulares de cada caso y de
+              los acuerdos alcanzados entre las partes.
             </p>
 
             <ul className={styles.list}>
-              <li>Bienes inmuebles (casas, apartamentos, terrenos).</li>
-              <li>Vehículos.</li>
-              <li>Dinero y cuentas bancarias.</li>
-              <li>Deudas adquiridas durante el matrimonio.</li>
-              <li>Inversiones y activos financieros.</li>
-              <li>Bienes muebles de valor.</li>
+              <li>Casas, apartamentos, lotes y otros inmuebles.</li>
+              <li>Vehículos y motocicletas.</li>
+              <li>Cuentas bancarias y dinero ahorrado.</li>
+              <li>Créditos y deudas adquiridas durante la relación.</li>
+              <li>Negocios, inversiones o participaciones comerciales.</li>
+              <li>Muebles, electrodomésticos y bienes de valor.</li>
+              <li>Obligaciones financieras compartidas.</li>
+              <li>Acuerdos relacionados con hipotecas o préstamos.</li>
             </ul>
+
+            <p className={styles.text}>
+              La claridad en la identificación de bienes y deudas es fundamental
+              para evitar conflictos posteriores y lograr acuerdos equilibrados
+              que puedan cumplirse adecuadamente.
+            </p>
           </div>
 
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de liquidar bienes mediante conciliación
+              Beneficios de liquidar la sociedad conyugal mediante conciliación
             </h2>
 
             <div className={styles.grid}>
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Evita juicios largos</h3>
+                <h3 className={styles.cardTitle}>
+                  Evita procesos judiciales extensos
+                </h3>
                 <p className={styles.cardText}>
-                  Reduce procesos judiciales complejos.
+                  Reduce el tiempo y desgaste que puede generar un proceso ante
+                  jueces de familia.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Acuerdos rápidos</h3>
-                <p className={styles.cardText}>Acuerdos en menor tiempo.</p>
-              </div>
-
-              <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Ahorro económico</h3>
+                <h3 className={styles.cardTitle}>
+                  Acuerdos rápidos y organizados
+                </h3>
                 <p className={styles.cardText}>
-                  Menores costos legales y notariales.
+                  Permite definir el reparto de bienes de manera más ágil y
+                  práctica.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Acuerdo con validez legal</h3>
+                <h3 className={styles.cardTitle}>Menores costos legales</h3>
                 <p className={styles.cardText}>
-                  Tiene validez jurídica en Colombia.
+                  Disminuye gastos relacionados con litigios prolongados y
+                  actuaciones judiciales.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Menos conflictos</h3>
+                <h3 className={styles.cardTitle}>
+                  Acuerdos con validez jurídica
+                </h3>
                 <p className={styles.cardText}>
-                  Evita confrontaciones entre las partes.
+                  El acta de conciliación tiene efectos legales y puede exigirse
+                  judicialmente.
                 </p>
               </div>
 
               <div className={styles.card}>
-                <h3 className={styles.cardTitle}>Soluciones flexibles</h3>
+                <h3 className={styles.cardTitle}>Menor desgaste emocional</h3>
                 <p className={styles.cardText}>
-                  Permite acuerdos personalizados.
+                  Reduce confrontaciones familiares y facilita acuerdos más
+                  tranquilos.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>
+                  Soluciones flexibles y personalizadas
+                </h3>
+                <p className={styles.cardText}>
+                  Las partes pueden pactar condiciones adaptadas a sus
+                  necesidades económicas y familiares.
                 </p>
               </div>
             </div>
@@ -123,35 +168,77 @@ export default function LiquidacionDeSociedadConyugalContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar un proceso judicial de liquidación de bienes?
+              ¿Por qué evitar un proceso judicial de liquidación de bienes en
+              Colombia?
             </h2>
 
             <p className={styles.text}>
-              Los procesos judiciales pueden tardar años y generar altos costos
-              emocionales y económicos.
+              Los procesos judiciales de liquidación de sociedad conyugal pueden
+              tardar largos periodos y generar altos costos económicos,
+              emocionales y familiares. Además, cuando existe conflicto entre
+              las partes, las decisiones suelen volverse más complejas y
+              desgastantes.
             </p>
 
             <p className={styles.text}>
-              La conciliación permite resolver el conflicto de manera más rápida
-              y con mayor control sobre los acuerdos.
+              La conciliación permite mantener mayor control sobre las
+              decisiones relacionadas con el reparto de bienes, evitando que sea
+              un juez quien determine completamente la forma de distribución del
+              patrimonio.
+            </p>
+
+            <p className={styles.text}>
+              También ayuda a preservar la comunicación entre las partes y
+              facilita soluciones más equilibradas cuando existen hijos,
+              propiedades compartidas o responsabilidades financieras en común.
             </p>
           </div>
 
           {/* BLOQUE 5 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Cómo iniciar la liquidación de sociedad conyugal en Colombia?
+              ¿Cómo iniciar una liquidación de sociedad conyugal en Colombia?
             </h2>
 
             <p className={styles.text}>
-              El proceso inicia con la solicitud ante un centro de conciliación
-              en Colombia. Luego se realiza una audiencia para definir el
-              reparto de bienes.
+              El proceso inicia con una solicitud ante un centro de conciliación
+              autorizado en Colombia. Posteriormente, las partes son citadas a
+              una audiencia en la que se busca llegar a acuerdos sobre el
+              reparto de bienes, deudas y demás obligaciones.
             </p>
 
             <p className={styles.text}>
-              Si hay acuerdo, se firma un acta con validez legal y obligatorio
-              cumplimiento.
+              Durante la conciliación es importante contar con información clara
+              sobre propiedades, documentos, certificados, estados financieros y
+              demás soportes que permitan identificar correctamente el
+              patrimonio de la sociedad conyugal.
+            </p>
+
+            <p className={styles.text}>
+              Si las partes llegan a un acuerdo, este queda consignado en un
+              acta de conciliación con validez legal y obligatorio cumplimiento
+              en Colombia.
+            </p>
+          </div>
+
+          {/* BLOQUE 6 */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Importancia de una asesoría adecuada en la liquidación de bienes
+            </h2>
+
+            <p className={styles.text}>
+              Cada sociedad conyugal tiene características diferentes. Por eso,
+              recibir orientación adecuada puede ayudar a evitar errores en la
+              distribución de bienes, omisiones patrimoniales o acuerdos poco
+              claros que generen problemas posteriores.
+            </p>
+
+            <p className={styles.text}>
+              Una conciliación bien estructurada permite organizar correctamente
+              el reparto patrimonial, establecer obligaciones concretas y
+              proteger los intereses de ambas partes dentro del marco legal
+              colombiano.
             </p>
           </div>
         </div>
