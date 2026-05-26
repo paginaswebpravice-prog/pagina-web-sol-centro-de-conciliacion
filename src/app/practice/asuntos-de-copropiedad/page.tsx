@@ -3,20 +3,37 @@ import AsuntosDeCopropiedadContent from "./AsuntosDeCopropiedadContent";
 
 export const metadata: Metadata = {
   title:
-    "Conciliación en copropiedad en Colombia | Conflictos de propiedad horizontal en Bogotá",
+    "Conciliación en copropiedad en Colombia | Propiedad horizontal y conflictos vecinales en Bogotá",
 
   description:
-    "Resuelve conflictos de copropiedad en Colombia sin demanda. Conciliación en Bogotá para administración, cuotas, convivencia y propiedad horizontal de forma legal y rápida.",
+    "Resuelva conflictos de copropiedad y propiedad horizontal en Colombia sin procesos judiciales largos. Conciliación en Bogotá para cuotas de administración, convivencia, zonas comunes, vecinos y administración de conjuntos.",
 
   keywords: [
     "conciliación copropiedad Colombia",
     "propiedad horizontal Bogotá",
     "conflictos conjuntos residenciales Colombia",
-    "cuotas administración edificios Bogotá",
-    "problemas vecinos copropiedad",
-    "conciliación propiedad horizontal",
-    "centro de conciliación Bogotá copropiedad",
+    "conciliación vecinos Bogotá",
+    "problemas propiedad horizontal",
+    "cuotas administración edificios",
+    "conflictos zonas comunes",
+    "conciliación administración copropiedad",
+    "problemas convivencia conjuntos residenciales",
+    "abogados propiedad horizontal Colombia",
+    "conciliación propiedad horizontal Bogotá",
+    "centro de conciliación copropiedad",
   ],
+
+  authors: [
+    {
+      name: "Sol Centro de Conciliación",
+    },
+  ],
+
+  creator: "Sol Centro de Conciliación",
+
+  publisher: "Sol Centro de Conciliación",
+
+  metadataBase: new URL("https://solcentrodeconciliacion.com"),
 
   alternates: {
     canonical:
@@ -25,75 +42,167 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Conciliación en copropiedad en Colombia | Solución a conflictos en conjuntos",
+      "Conciliación en copropiedad en Colombia | Solucione conflictos en propiedad horizontal",
+
     description:
-      "Evita demandas en propiedad horizontal. Resuelve conflictos de copropiedad en Bogotá y Colombia con conciliación legal y efectiva.",
+      "Evite demandas y procesos largos en conjuntos residenciales. Conciliación legal y rápida para conflictos de copropiedad, convivencia y administración en Bogotá y Colombia.",
+
     url: "https://solcentrodeconciliacion.com/practice/asuntos-de-copropiedad",
+
     siteName: "Sol Centro de Conciliación",
+
     locale: "es_CO",
-    type: "article",
+
+    type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Conciliación en copropiedad en Colombia | Propiedad horizontal",
+
+    description:
+      "Resuelva conflictos entre vecinos, administración y copropietarios mediante conciliación legal en Colombia.",
+  },
+
+  category: "Legal Services",
 
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 
 export default function Page() {
+  const schemaData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+
+      name: "Conciliación en copropiedad y propiedad horizontal en Colombia",
+
+      url: "https://solcentrodeconciliacion.com/practice/asuntos-de-copropiedad",
+
+      description:
+        "Servicio de conciliación en propiedad horizontal y copropiedad para resolver conflictos relacionados con convivencia, cuotas de administración, zonas comunes y decisiones administrativas en Colombia.",
+
+      areaServed: {
+        "@type": "Country",
+        name: "Colombia",
+      },
+
+      provider: {
+        "@type": "Organization",
+        name: "Sol Centro de Conciliación",
+        url: "https://solcentrodeconciliacion.com",
+      },
+
+      serviceType: [
+        "Conciliación en propiedad horizontal",
+        "Conciliación entre vecinos",
+        "Conflictos de copropiedad",
+        "Conciliación en conjuntos residenciales",
+      ],
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+
+      mainEntity: [
+        {
+          "@type": "Question",
+
+          name: "¿Qué conflictos de copropiedad se pueden conciliar en Colombia?",
+
+          acceptedAnswer: {
+            "@type": "Answer",
+
+            text: "En Colombia pueden conciliarse conflictos relacionados con cuotas de administración, convivencia entre vecinos, uso de zonas comunes, parqueaderos, ruido, mascotas, decisiones de asamblea y administración de propiedad horizontal.",
+          },
+        },
+
+        {
+          "@type": "Question",
+
+          name: "¿La conciliación en propiedad horizontal tiene validez legal?",
+
+          acceptedAnswer: {
+            "@type": "Answer",
+
+            text: "Sí. Los acuerdos logrados mediante conciliación tienen validez jurídica y pueden ser exigidos legalmente en Colombia.",
+          },
+        },
+
+        {
+          "@type": "Question",
+
+          name: "¿Es necesario demandar para resolver conflictos entre vecinos?",
+
+          acceptedAnswer: {
+            "@type": "Answer",
+
+            text: "No. Muchos conflictos vecinales y de copropiedad pueden resolverse mediante conciliación sin necesidad de acudir a un proceso judicial.",
+          },
+        },
+
+        {
+          "@type": "Question",
+
+          name: "¿Qué beneficios tiene la conciliación en conjuntos residenciales?",
+
+          acceptedAnswer: {
+            "@type": "Answer",
+
+            text: "La conciliación permite solucionar conflictos de forma más rápida, económica y menos desgastante, ayudando a preservar la convivencia y evitar procesos judiciales largos.",
+          },
+        },
+      ],
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Inicio",
+          item: "https://solcentrodeconciliacion.com",
+        },
+
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Áreas de práctica",
+          item: "https://solcentrodeconciliacion.com/practice",
+        },
+
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Asuntos de copropiedad",
+          item: "https://solcentrodeconciliacion.com/practice/asuntos-de-copropiedad",
+        },
+      ],
+    },
+  ];
+
   return (
     <>
       {/* ================= SCHEMA SEO ================= */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              name: "Conciliación en copropiedad en Colombia",
-              description:
-                "Servicio de conciliación en propiedad horizontal en Bogotá y Colombia para resolver conflictos entre copropietarios, administración y convivencia sin procesos judiciales.",
-              provider: {
-                "@type": "Organization",
-                name: "Sol Centro de Conciliación",
-              },
-              areaServed: {
-                "@type": "Country",
-                name: "Colombia",
-              },
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "¿Qué conflictos se presentan en copropiedad?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Los conflictos más comunes son cuotas de administración, uso de zonas comunes, convivencia entre vecinos y decisiones de la asamblea.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "¿Se puede conciliar problemas de propiedad horizontal?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Sí, los conflictos de propiedad horizontal pueden resolverse mediante conciliación antes de acudir a un proceso judicial.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "¿La conciliación en copropiedad es obligatoria?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "No siempre es obligatoria, pero es altamente recomendada para evitar demandas y conflictos prolongados.",
-                  },
-                },
-              ],
-            },
-          ]),
+          __html: JSON.stringify(schemaData),
         }}
       />
 
