@@ -244,6 +244,72 @@ export default function ObligacionesEconomicasContent() {
               seguros, claros y sostenibles en el tiempo.
             </p>
           </div>
+
+          {/* FAQ */}
+          <div className={`${styles.block} ${styles.faqSection}`}>
+            <h2 className={styles.blockTitle}>
+              Preguntas frecuentes sobre obligaciones económicas en Colombia
+            </h2>
+
+            <div className={styles.faqGrid}>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación tiene validez legal en Colombia?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. El acta de conciliación tiene plena validez jurídica y
+                  puede exigirse judicialmente en caso de incumplimiento.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Se pueden conciliar deudas entre particulares?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. La conciliación aplica para conflictos económicos entre
+                  familiares, amigos, socios, comerciantes y empresas.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué documentos sirven para demostrar una deuda?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Contratos, pagarés, facturas, comprobantes de pago, mensajes,
+                  correos electrónicos y otros soportes pueden ayudar a probar
+                  la obligación económica.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué pasa si una de las partes incumple el acuerdo?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  El acuerdo conciliado puede ejecutarse judicialmente debido a
+                  la validez legal del acta de conciliación en Colombia.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación evita una demanda judicial?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  En muchos casos sí. Cuando las partes logran acuerdos claros y
+                  verificables, pueden evitar procesos judiciales largos y
+                  costosos.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

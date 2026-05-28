@@ -240,45 +240,73 @@ export default function CustodiaYRegimenDeVisitasContent() {
             </p>
           </div>
 
-          {/* BLOQUE 7 */}
-          <div className={styles.block}>
+          {/* FAQ NUEVO */}
+          <div className={styles.faqSection}>
             <h2 className={styles.blockTitle}>
               Preguntas frecuentes sobre custodia y régimen de visitas
             </h2>
 
-            <p className={styles.text}>
-              <strong>¿La conciliación tiene validez legal en Colombia?</strong>
-              <br />
-              Sí. El acta de conciliación tiene efectos jurídicos y puede
-              exigirse legalmente en caso de incumplimiento.
-            </p>
+            <div className={styles.faqGrid}>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación de custodia tiene validez legal en Colombia?
+                </h3>
 
-            <p className={styles.text}>
-              <strong>
-                ¿Se puede modificar un acuerdo de custodia o visitas?
-              </strong>
-              <br />
-              Sí. Cuando cambian las necesidades familiares o del menor, los
-              acuerdos pueden ajustarse mediante una nueva conciliación.
-            </p>
+                <p className={styles.faqAnswer}>
+                  Sí. El acta de conciliación tiene plena validez jurídica y
+                  puede exigirse legalmente en caso de incumplimiento por alguna
+                  de las partes.
+                </p>
+              </div>
 
-            <p className={styles.text}>
-              <strong>
-                ¿La conciliación evita acudir a un juez de familia?
-              </strong>
-              <br />
-              En muchos casos sí, especialmente cuando los padres logran llegar
-              a acuerdos claros y voluntarios.
-            </p>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Se puede modificar un acuerdo de visitas o custodia?
+                </h3>
 
-            <p className={styles.text}>
-              <strong>
-                ¿Qué pasa si una de las partes incumple el acuerdo?
-              </strong>
-              <br />
-              El acuerdo puede exigirse judicialmente debido a la validez legal
-              del acta de conciliación.
-            </p>
+                <p className={styles.faqAnswer}>
+                  Sí. Cuando cambian las necesidades del menor o las condiciones
+                  familiares, los padres pueden realizar una nueva conciliación
+                  para ajustar los acuerdos existentes.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué pasa si uno de los padres incumple el acuerdo?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  El acuerdo puede ser exigido judicialmente debido a que el
+                  acta de conciliación tiene efectos legales obligatorios en
+                  Colombia.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Es posible acordar custodia compartida mediante conciliación?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. Los padres pueden establecer acuerdos de custodia
+                  compartida, horarios y responsabilidades siempre que se
+                  priorice el bienestar y estabilidad del menor.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación evita acudir a un juez de familia?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  En muchos casos sí. Cuando ambas partes logran acuerdos claros
+                  y voluntarios, la conciliación permite evitar procesos
+                  judiciales largos y desgastantes.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

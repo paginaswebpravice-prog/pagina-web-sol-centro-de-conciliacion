@@ -44,8 +44,9 @@ export default function AsuntosComercialesContent() {
           </p>
         </motion.div>
 
-        {/* BLOQUE 1 */}
+        {/* CONTENIDO */}
         <div className={styles.content}>
+          {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
               ¿Qué es la conciliación comercial y cómo funciona en Colombia?
@@ -307,6 +308,75 @@ export default function AsuntosComercialesContent() {
               conflicto actual, sino que también brinda mayor seguridad jurídica
               para ambas partes en el futuro.
             </p>
+          </div>
+
+          {/* FAQ */}
+          <div className={styles.faqSection}>
+            <h2 className={styles.blockTitle}>
+              Preguntas frecuentes sobre conciliación comercial en Colombia
+            </h2>
+
+            <div className={styles.faqGrid}>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación comercial tiene validez legal en Colombia?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. El acta de conciliación tiene efectos jurídicos y puede
+                  exigirse legalmente en caso de incumplimiento de los acuerdos
+                  pactados entre las partes.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué pasa si una de las partes no asiste a la audiencia?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Si una de las partes no asiste sin justificación, el proceso
+                  puede cerrarse o dejar constancia de inasistencia, permitiendo
+                  posteriormente acudir a otras vías legales.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Cuánto tiempo puede tardar una conciliación comercial?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  El tiempo puede variar según el caso y la disposición de las
+                  partes, pero normalmente es mucho más rápido que un proceso
+                  judicial comercial tradicional.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Es obligatorio tener abogado para una conciliación comercial?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  No siempre es obligatorio, pero recibir asesoría jurídica
+                  puede ayudar a proteger los intereses de la empresa y
+                  construir acuerdos más claros y seguros.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué ventajas tiene conciliar antes de demandar?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  La conciliación permite ahorrar tiempo, reducir costos,
+                  proteger relaciones comerciales y construir soluciones más
+                  flexibles sin necesidad de iniciar inmediatamente un litigio.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -241,6 +241,76 @@ export default function LiquidacionDeSociedadConyugalContent() {
               colombiano.
             </p>
           </div>
+
+          {/* BLOQUE 7 - FAQ */}
+          <div className={`${styles.block} ${styles.faqSection}`}>
+            <h2 className={styles.blockTitle}>
+              Preguntas frecuentes sobre liquidación de sociedad conyugal
+            </h2>
+
+            <div className={styles.faqGrid}>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La liquidación de sociedad conyugal puede hacerse por
+                  conciliación?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. Cuando existe disposición de diálogo entre las partes, la
+                  conciliación permite llegar a acuerdos sobre bienes, deudas y
+                  obligaciones sin acudir inmediatamente a un proceso judicial.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿El acuerdo de conciliación tiene validez legal en Colombia?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. El acta de conciliación tiene efectos jurídicos y puede
+                  exigirse judicialmente en caso de incumplimiento por alguna de
+                  las partes.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué bienes entran en la sociedad conyugal?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Dependiendo del caso, pueden incluirse inmuebles, vehículos,
+                  cuentas bancarias, negocios, inversiones, muebles y deudas
+                  adquiridas durante el matrimonio o unión marital de hecho.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Es obligatorio acudir a un juez para repartir los bienes?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  No siempre. Si ambas partes logran acuerdos mediante
+                  conciliación, es posible evitar procesos judiciales largos y
+                  resolver el conflicto de forma más rápida.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué pasa si una parte oculta bienes durante la liquidación?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Es importante presentar información patrimonial completa y
+                  verificable. Ocultar bienes puede generar conflictos legales y
+                  afectar la validez o cumplimiento de los acuerdos alcanzados.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

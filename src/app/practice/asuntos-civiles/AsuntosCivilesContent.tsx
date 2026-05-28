@@ -297,6 +297,79 @@ export default function AsuntosCivilesContent() {
               preparadas y con disposición real para negociar.
             </p>
           </div>
+
+          {/* FAQ */}
+          <div className={styles.faqSection}>
+            <h2 className={styles.blockTitle}>
+              Preguntas frecuentes sobre conciliación civil en Colombia
+            </h2>
+
+            <div className={styles.faqGrid}>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación civil es obligatoria antes de demandar en
+                  Colombia?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  En muchos asuntos civiles, la conciliación extrajudicial es un
+                  requisito previo antes de presentar una demanda judicial. Esto
+                  depende del tipo de conflicto y de las pretensiones del caso.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué pasa si una de las partes no asiste a la audiencia de
+                  conciliación?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Cuando una de las partes no asiste sin justificación, puede
+                  generarse constancia de inasistencia y la otra parte podría
+                  continuar con acciones judiciales o legales según corresponda.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿El acuerdo de conciliación tiene validez legal?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. El acta de conciliación tiene efectos jurídicos en
+                  Colombia y puede exigirse legalmente en caso de incumplimiento
+                  por alguna de las partes.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Cuánto tiempo tarda una conciliación civil en Colombia?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  El tiempo puede variar según el caso y la disponibilidad de
+                  las partes, pero normalmente la conciliación resulta mucho más
+                  rápida que un proceso judicial tradicional.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué tipos de conflictos pueden resolverse mediante
+                  conciliación civil?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  La conciliación civil puede utilizarse para resolver
+                  conflictos por deudas, incumplimientos contractuales,
+                  arrendamientos, daños y perjuicios, obligaciones económicas y
+                  diferentes disputas patrimoniales.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

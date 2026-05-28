@@ -294,6 +294,77 @@ export default function AsuntosCopropiedadContent() {
               las partes llegan preparadas y con disposición real para negociar.
             </p>
           </div>
+
+          {/* FAQ */}
+          <div className={styles.faqSection}>
+            <h2 className={styles.blockTitle}>
+              Preguntas frecuentes sobre conciliación en copropiedad
+            </h2>
+
+            <div className={styles.faqGrid}>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación en copropiedad es obligatoria antes de
+                  demandar?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  En algunos conflictos relacionados con propiedad horizontal,
+                  la conciliación puede ser un requisito previo antes de acudir
+                  a ciertas acciones judiciales en Colombia.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué pasa si un vecino no asiste a la audiencia?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Si una de las partes no comparece a la audiencia de
+                  conciliación, el proceso puede cerrarse sin acuerdo y dejar
+                  constancia para posibles actuaciones posteriores.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Los acuerdos de conciliación tienen validez legal?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. El acta de conciliación tiene efectos jurídicos en
+                  Colombia y puede exigirse legalmente en caso de incumplimiento
+                  por alguna de las partes.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Se pueden conciliar conflictos por ruido o convivencia?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. Los conflictos relacionados con convivencia, ruidos,
+                  mascotas, uso de zonas comunes y problemas vecinales suelen
+                  resolverse frecuentemente mediante conciliación.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Cuánto puede durar una conciliación de copropiedad?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  El tiempo puede variar según el caso y la disposición de las
+                  partes, aunque muchas conciliaciones logran desarrollarse y
+                  resolverse en periodos mucho más cortos que un proceso
+                  judicial.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

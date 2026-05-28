@@ -281,6 +281,76 @@ export default function AsuntosLaboralesContent() {
               los efectos legales del acta de conciliación en Colombia.
             </p>
           </div>
+
+          {/* FAQ */}
+          <div className={styles.faqSection}>
+            <h2 className={styles.blockTitle}>
+              Preguntas frecuentes sobre conciliación laboral en Colombia
+            </h2>
+
+            <div className={styles.faqGrid}>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación laboral reemplaza una demanda?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  La conciliación permite intentar resolver el conflicto sin
+                  acudir inicialmente a una demanda judicial. Si no existe
+                  acuerdo, las partes aún pueden acudir a un juez laboral.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué pasa si el empleador no cumple el acuerdo?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  El acta de conciliación tiene validez legal en Colombia y
+                  puede exigirse judicialmente en caso de incumplimiento por
+                  alguna de las partes.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Se pueden negociar pagos en cuotas durante la conciliación?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. Durante la audiencia las partes pueden acordar plazos,
+                  cronogramas de pago y condiciones adaptadas a sus necesidades
+                  y posibilidades económicas.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Cuánto tiempo tarda una conciliación laboral?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  El tiempo puede variar según el caso y la disposición de las
+                  partes, aunque normalmente es mucho más rápido que un proceso
+                  judicial laboral tradicional.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Es obligatorio llevar documentos a la conciliación?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Aunque no siempre es obligatorio, llevar contratos,
+                  liquidaciones, comprobantes de pago y demás soportes laborales
+                  facilita la negociación y ayuda a construir acuerdos más
+                  claros.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

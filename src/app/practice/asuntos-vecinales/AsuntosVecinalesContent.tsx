@@ -272,6 +272,76 @@ export default function AsuntosVecinalesContent() {
               Colombia.
             </p>
           </div>
+
+          {/* FAQ */}
+          <div className={styles.faqSection}>
+            <h2 className={styles.blockTitle}>
+              Preguntas frecuentes sobre conciliación vecinal en Colombia
+            </h2>
+
+            <div className={styles.faqGrid}>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación vecinal es obligatoria antes de demandar?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  En algunos conflictos de convivencia o propiedad horizontal,
+                  la conciliación puede ser un requisito previo antes de acudir
+                  a ciertas acciones judiciales en Colombia.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué pasa si el vecino no asiste a la audiencia?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Si una de las partes no asiste, el centro de conciliación deja
+                  constancia de la inasistencia y esto puede servir como soporte
+                  para posteriores actuaciones legales.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿El acta de conciliación tiene validez legal?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. Los acuerdos logrados en conciliación quedan consignados
+                  en un acta con efectos jurídicos y cumplimiento obligatorio en
+                  Colombia.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Cuánto tiempo puede tardar una conciliación vecinal?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  El tiempo puede variar según el caso, pero muchas
+                  conciliaciones vecinales logran resolverse en una o pocas
+                  audiencias, mucho más rápido que un proceso judicial.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Se pueden conciliar problemas por ruido o mascotas?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. Los conflictos relacionados con ruido, mascotas,
+                  convivencia y uso de espacios comunes son algunos de los casos
+                  más frecuentes dentro de las conciliaciones vecinales en
+                  Colombia.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

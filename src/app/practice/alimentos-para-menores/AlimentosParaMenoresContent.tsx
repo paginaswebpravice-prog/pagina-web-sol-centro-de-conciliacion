@@ -288,6 +288,77 @@ export default function AlimentosMenoresContent() {
               judicial complejo.
             </p>
           </div>
+
+          {/* FAQ */}
+          <div className={styles.faqSection}>
+            <h2 className={styles.blockTitle}>
+              Preguntas frecuentes sobre cuota alimentaria y conciliación
+            </h2>
+
+            <div className={styles.faqGrid}>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Es obligatoria la conciliación antes de demandar alimentos?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  En muchos casos sí. La conciliación puede ser un requisito
+                  previo antes de iniciar ciertos procesos judiciales
+                  relacionados con cuota alimentaria en Colombia.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué pasa si una de las partes no asiste a la audiencia?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Si una de las partes no asiste sin justificación, la otra
+                  persona puede utilizar la constancia emitida por el centro de
+                  conciliación para continuar con acciones legales.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La cuota alimentaria puede incluir gastos escolares y de
+                  salud?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. La cuota alimentaria puede cubrir educación, salud,
+                  alimentación, vivienda, transporte y otros gastos necesarios
+                  para el bienestar del menor.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Se puede modificar una cuota alimentaria ya establecida?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. Cuando cambian las condiciones económicas de alguna de las
+                  partes o aumentan las necesidades del menor, es posible
+                  solicitar una modificación mediante conciliación o proceso
+                  judicial.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿El acta de conciliación tiene validez legal en Colombia?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. El acta de conciliación tiene efectos legales y puede ser
+                  exigida judicialmente en caso de incumplimiento de los
+                  acuerdos pactados.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

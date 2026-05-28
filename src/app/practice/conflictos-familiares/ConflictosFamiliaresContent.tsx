@@ -109,6 +109,7 @@ export default function ConflictosDeArrendamientoContent() {
             <div className={styles.grid}>
               <div className={styles.card}>
                 <h3 className={styles.cardTitle}>Evita procesos judiciales</h3>
+
                 <p className={styles.cardText}>
                   Reduce la necesidad de acudir a demandas de restitución o
                   procesos civiles largos.
@@ -119,6 +120,7 @@ export default function ConflictosDeArrendamientoContent() {
                 <h3 className={styles.cardTitle}>
                   Recuperación rápida de dinero
                 </h3>
+
                 <p className={styles.cardText}>
                   Facilita acuerdos de pago claros para recuperar cánones o
                   deudas pendientes.
@@ -127,6 +129,7 @@ export default function ConflictosDeArrendamientoContent() {
 
               <div className={styles.card}>
                 <h3 className={styles.cardTitle}>Acuerdos con validez legal</h3>
+
                 <p className={styles.cardText}>
                   El acta de conciliación tiene efectos jurídicos y puede
                   exigirse legalmente.
@@ -135,6 +138,7 @@ export default function ConflictosDeArrendamientoContent() {
 
               <div className={styles.card}>
                 <h3 className={styles.cardTitle}>Menor costo legal</h3>
+
                 <p className={styles.cardText}>
                   Disminuye gastos asociados a abogados y procesos judiciales
                   prolongados.
@@ -143,6 +147,7 @@ export default function ConflictosDeArrendamientoContent() {
 
               <div className={styles.card}>
                 <h3 className={styles.cardTitle}>Soluciones más rápidas</h3>
+
                 <p className={styles.cardText}>
                   Permite resolver conflictos en semanas en lugar de meses o
                   años.
@@ -153,6 +158,7 @@ export default function ConflictosDeArrendamientoContent() {
                 <h3 className={styles.cardTitle}>
                   Mayor claridad en obligaciones
                 </h3>
+
                 <p className={styles.cardText}>
                   Define fechas, pagos, entregas y compromisos de manera clara y
                   verificable.
@@ -244,49 +250,76 @@ export default function ConflictosDeArrendamientoContent() {
             </p>
           </div>
 
-          {/* BLOQUE 7 */}
-          <div className={styles.block}>
+          {/* FAQ */}
+          <div className={`${styles.block} ${styles.faqSection}`}>
             <h2 className={styles.blockTitle}>
               Preguntas frecuentes sobre conciliación en arrendamientos
             </h2>
 
-            <p className={styles.text}>
-              <strong>
-                ¿La conciliación sirve para recuperar cánones atrasados?
-              </strong>
-              <br />
-              Sí. En Colombia es común utilizar conciliación para establecer
-              acuerdos de pago relacionados con cánones vencidos, servicios o
-              administración.
-            </p>
+            <div className={styles.faqGrid}>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación sirve para recuperar cánones atrasados?
+                </h3>
 
-            <p className={styles.text}>
-              <strong>
-                ¿La conciliación evita un proceso de restitución de inmueble?
-              </strong>
-              <br />
-              En muchos casos sí, especialmente cuando las partes logran acordar
-              fechas de entrega o planes de pago.
-            </p>
+                <p className={styles.faqAnswer}>
+                  Sí. En Colombia es común utilizar conciliación para establecer
+                  acuerdos de pago relacionados con cánones vencidos, servicios
+                  públicos, administración y otras obligaciones derivadas del
+                  contrato de arrendamiento.
+                </p>
+              </div>
 
-            <p className={styles.text}>
-              <strong>
-                ¿El acta de conciliación tiene validez legal en Colombia?
-              </strong>
-              <br />
-              Sí. El acta tiene efectos jurídicos y puede exigirse judicialmente
-              en caso de incumplimiento.
-            </p>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación evita un proceso de restitución de inmueble?
+                </h3>
 
-            <p className={styles.text}>
-              <strong>
-                ¿Se puede hacer conciliación por contratos comerciales y de
-                vivienda?
-              </strong>
-              <br />
-              Sí. La conciliación aplica tanto para arrendamientos de vivienda
-              como para locales comerciales, oficinas y otros inmuebles.
-            </p>
+                <p className={styles.faqAnswer}>
+                  En muchos casos sí, especialmente cuando las partes logran
+                  acordar fechas de entrega, acuerdos de pago o terminación
+                  organizada del contrato de arrendamiento.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿El acta de conciliación tiene validez legal en Colombia?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. El acta de conciliación tiene efectos jurídicos y puede
+                  exigirse judicialmente en caso de incumplimiento por
+                  cualquiera de las partes.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Se puede hacer conciliación por contratos comerciales y de
+                  vivienda?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. La conciliación aplica tanto para arrendamientos de
+                  vivienda como para locales comerciales, oficinas, bodegas y
+                  otros inmuebles urbanos o comerciales.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué pasa si una de las partes incumple el acuerdo de
+                  conciliación?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Si alguna de las partes incumple el acuerdo firmado, la otra
+                  parte puede utilizar el acta de conciliación para exigir
+                  legalmente el cumplimiento de las obligaciones pactadas.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

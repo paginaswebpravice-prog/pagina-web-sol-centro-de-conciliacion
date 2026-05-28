@@ -247,39 +247,103 @@ export default function IncumplimientoDeContratosContent() {
               Preguntas frecuentes sobre incumplimiento de contratos
             </h2>
 
-            <p className={styles.text}>
-              <strong>¿La conciliación tiene validez legal en Colombia?</strong>
-              <br />
-              Sí. El acta de conciliación tiene efectos jurídicos y puede
-              exigirse judicialmente en caso de incumplimiento.
-            </p>
+            <div className={styles.faqGrid}>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación tiene validez legal en Colombia?
+                </h3>
+                <p className={styles.faqAnswer}>
+                  Sí. El acta de conciliación tiene efectos jurídicos y puede
+                  exigirse judicialmente en caso de incumplimiento.
+                </p>
+              </div>
 
-            <p className={styles.text}>
-              <strong>
-                ¿Se puede conciliar un contrato comercial o civil?
-              </strong>
-              <br />
-              Sí. La conciliación aplica para múltiples tipos de contratos entre
-              particulares y empresas.
-            </p>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Se puede conciliar un contrato comercial o civil?
+                </h3>
+                <p className={styles.faqAnswer}>
+                  Sí. La conciliación aplica para múltiples tipos de contratos
+                  entre particulares y empresas.
+                </p>
+              </div>
 
-            <p className={styles.text}>
-              <strong>
-                ¿Qué pasa si una parte incumple el acuerdo conciliado?
-              </strong>
-              <br />
-              El acuerdo puede ejecutarse judicialmente debido a su validez
-              legal en Colombia.
-            </p>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué pasa si una parte incumple el acuerdo conciliado?
+                </h3>
+                <p className={styles.faqAnswer}>
+                  El acuerdo puede ejecutarse judicialmente debido a su validez
+                  legal en Colombia.
+                </p>
+              </div>
 
-            <p className={styles.text}>
-              <strong>
-                ¿La conciliación evita acudir a una demanda judicial?
-              </strong>
-              <br />
-              En muchos casos sí, especialmente cuando las partes logran un
-              acuerdo claro y voluntario sobre el conflicto contractual.
-            </p>
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación evita acudir a una demanda judicial?
+                </h3>
+                <p className={styles.faqAnswer}>
+                  En muchos casos sí, especialmente cuando las partes logran un
+                  acuerdo claro y voluntario sobre el conflicto contractual.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué documentos debo llevar a la conciliación?
+                </h3>
+                <p className={styles.faqAnswer}>
+                  Es recomendable llevar el contrato, comprobantes de pago,
+                  correos, mensajes, facturas y cualquier documento relacionado
+                  con el incumplimiento contractual.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación sirve para renegociar condiciones del
+                  contrato?
+                </h3>
+                <p className={styles.faqAnswer}>
+                  Sí. Las partes pueden acordar nuevos plazos, formas de pago,
+                  compensaciones o ajustes contractuales según el caso.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Cuánto tiempo puede tardar una conciliación contractual?
+                </h3>
+                <p className={styles.faqAnswer}>
+                  El tiempo puede variar según la complejidad del caso y la
+                  disposición de las partes, pero normalmente es mucho más
+                  rápido que un proceso judicial.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Se puede conciliar un contrato verbal en Colombia?
+                </h3>
+                <p className={styles.faqAnswer}>
+                  Sí. Aunque los contratos escritos facilitan la prueba, los
+                  contratos verbales también pueden ser objeto de conciliación
+                  cuando existen soportes o evidencias de la relación
+                  contractual.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿La conciliación aplica para conflictos entre empresas?
+                </h3>
+                <p className={styles.faqAnswer}>
+                  Sí. Empresas, comerciantes y particulares pueden utilizar la
+                  conciliación para resolver disputas derivadas de relaciones
+                  comerciales o contractuales.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
