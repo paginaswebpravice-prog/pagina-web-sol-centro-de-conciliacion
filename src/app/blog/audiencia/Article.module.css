@@ -1,7 +1,7 @@
 /* ================= WRAPPER ================= */
 
 .wrapper {
-  padding: 120px 20px 80px;
+  padding: 130px 20px 90px;
   background: #faf9f7;
   min-height: 100vh;
 }
@@ -9,20 +9,20 @@
 /* ================= CONTAINER ================= */
 
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
-/* ================= CARD PRINCIPAL ================= */
+/* ================= CARD ================= */
 
 .card {
-  background: #ffffff;
-  padding: 60px;
-  border-radius: 18px;
-  border: 1px solid rgba(26, 65, 74, 0.12);
-  line-height: 1.85;
-  box-shadow: 0 18px 45px rgba(26, 65, 74, 0.07);
   position: relative;
+  background: #ffffff;
+  padding: 70px;
+  border-radius: 22px;
+  border: 1px solid rgba(26, 65, 74, 0.12);
+  box-shadow: 0 20px 55px rgba(26, 65, 74, 0.08);
+  overflow: hidden;
 }
 
 .card::before {
@@ -31,87 +31,86 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 6px;
-  background: #1a414a;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
+  height: 8px;
+  background: linear-gradient(90deg, #1a414a, #456b74, #fbbc05);
 }
 
 /* ================= TITLES ================= */
 
-.card h1 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 25px;
+.title {
+  font-size: 38px;
+  line-height: 1.2;
+  color: #1a414a;
+  margin-bottom: 30px;
+  font-weight: 800;
+  max-width: 900px;
+}
+
+.subtitle {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 28px;
   color: #1a414a;
   line-height: 1.3;
-}
-
-.card h2 {
-  font-size: 24px;
   font-weight: 700;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  color: #1a414a;
-}
-
-.card h3 {
-  font-size: 19px;
-  font-weight: 600;
-  margin-bottom: 18px;
-  color: #1a414a;
 }
 
 /* ================= TEXT ================= */
 
-.card p {
+.text {
   font-size: 17px;
-  margin-bottom: 20px;
-  color: #444;
-  max-width: 800px;
+  line-height: 1.95;
+  color: #333;
+  margin-bottom: 22px;
 }
 
-.card strong {
+.text strong {
   color: #1a414a;
+}
+
+/* ================= LIST ================= */
+
+.list {
+  margin-left: 22px;
+  margin-bottom: 30px;
+}
+
+.list li {
+  margin-bottom: 12px;
+  line-height: 1.8;
+  color: #333;
+  font-size: 16px;
 }
 
 /* ================= GRID ================= */
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 35px;
 }
 
-/* ================= INNER CARDS ================= */
+/* ================= INNER CARD ================= */
 
 .innerCard {
   background: #ffffff;
-  padding: 40px;
+  padding: 35px;
   border-radius: 18px;
   border: 1px solid rgba(26, 65, 74, 0.12);
-  box-shadow: 0 10px 28px rgba(26, 65, 74, 0.06);
-  transition: all 0.25s ease;
-  position: relative;
-}
-
-.innerCard::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 6px;
-  width: 100%;
-  background: #456b74;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
+  box-shadow: 0 10px 30px rgba(26, 65, 74, 0.06);
+  transition: 0.25s ease;
 }
 
 .innerCard:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(26, 65, 74, 0.12);
-  border-color: #fbbc05;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(26, 65, 74, 0.1);
+}
+
+.innerCard h3 {
+  font-size: 20px;
+  margin-bottom: 18px;
+  color: #1a414a;
 }
 
 .innerCard ul {
@@ -120,6 +119,111 @@
 
 .innerCard li {
   margin-bottom: 10px;
+  font-size: 15.5px;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* ================= TIMELINE ================= */
+
+.timeline {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(26, 65, 74, 0.1);
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(26, 65, 74, 0.05);
+}
+
+.step {
+  min-width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #1a414a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.timelineItem h3 {
+  margin-bottom: 10px;
+  color: #1a414a;
+  font-size: 20px;
+}
+
+.timelineItem p {
+  color: #444;
+  line-height: 1.8;
+  font-size: 15.5px;
+}
+
+/* ================= NOTE ================= */
+
+.note {
+  margin-top: 35px;
+  padding: 28px;
+  background: rgba(251, 188, 5, 0.1);
+  border-left: 5px solid #fbbc05;
+  border-radius: 14px;
+  line-height: 1.9;
+  color: #1a414a;
+  font-size: 15.5px;
+}
+
+/* ================= PRE ================= */
+
+.pre {
+  margin-top: 35px;
+  padding: 60px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: "Times New Roman", serif;
+  font-size: 15px;
+  line-height: 2;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  color: #000;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.05);
+}
+
+/* ================= FAQ ================= */
+
+.faq {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faqItem {
+  background: #ffffff;
+  border: 1px solid rgba(26, 65, 74, 0.1);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 8px 25px rgba(26, 65, 74, 0.05);
+}
+
+.faqItem h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
+  color: #1a414a;
+}
+
+.faqItem p {
+  line-height: 1.8;
   color: #444;
   font-size: 15.5px;
 }
@@ -128,66 +232,88 @@
 
 @media (max-width: 1024px) {
   .card {
-    padding: 45px;
+    padding: 50px;
   }
 
-  .card h1 {
-    font-size: 28px;
+  .title {
+    font-size: 32px;
   }
 
-  .card p {
-    font-size: 16px;
+  .subtitle {
+    font-size: 25px;
   }
 
-  .innerCard {
-    padding: 30px;
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 768px) {
   .wrapper {
-    padding: 90px 16px 60px;
+    padding: 100px 16px 70px;
   }
 
   .card {
-    padding: 30px 22px;
+    padding: 35px 24px;
+    border-radius: 18px;
   }
 
-  .card h1 {
-    font-size: 24px;
+  .title {
+    font-size: 26px;
   }
 
-  .card h2 {
-    font-size: 20px;
+  .subtitle {
+    font-size: 22px;
   }
 
-  .grid {
-    gap: 18px;
+  .text {
+    font-size: 15.5px;
+  }
+
+  .timelineItem {
+    padding: 22px;
   }
 
   .innerCard {
     padding: 24px;
   }
+
+  .pre {
+    padding: 30px 22px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
   .wrapper {
-    padding: 80px 14px 50px;
+    padding: 90px 14px 50px;
   }
 
   .card {
-    padding: 24px 18px;
+    padding: 26px 18px;
   }
 
-  .card h1 {
+  .title {
+    font-size: 22px;
+  }
+
+  .subtitle {
     font-size: 20px;
   }
 
-  .card p {
-    font-size: 14.5px;
+  .text,
+  .list li,
+  .faqItem p {
+    font-size: 14px;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
+  .timelineItem {
+    flex-direction: column;
+  }
+
+  .step {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
   }
 }

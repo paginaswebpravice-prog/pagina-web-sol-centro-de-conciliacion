@@ -1,100 +1,255 @@
 .wrapper {
-  padding: 120px 20px 80px;
-  background: #faf9f7;
+  padding: 130px 20px 90px;
+  background: linear-gradient(to bottom, #faf9f7, #f5f5f5);
   min-height: 100vh;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .card {
   background: #ffffff;
-  padding: 55px;
-  border-radius: 18px;
+  padding: 65px;
+  border-radius: 22px;
   border: 1px solid rgba(26, 65, 74, 0.08);
-  line-height: 1.9;
-  box-shadow: 0 12px 35px rgba(26, 65, 74, 0.06);
-  transition: 0.2s;
+  box-shadow: 0 20px 55px rgba(26, 65, 74, 0.06);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 45px rgba(26, 65, 74, 0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 25px 65px rgba(26, 65, 74, 0.09);
 }
 
-.card h2 {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 28px;
+.badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(251, 188, 5, 0.12);
   color: #1a414a;
-  line-height: 1.25;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 24px;
 }
 
-.card h3 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  color: #456b74;
+.title {
+  font-size: clamp(34px, 5vw, 48px);
+  line-height: 1.15;
+  color: #1a414a;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
 }
 
-.card p {
+.subTitle {
+  font-size: 30px;
+  line-height: 1.3;
+  color: #1a414a;
+  margin-top: 55px;
+  margin-bottom: 22px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 17px;
+  line-height: 1.95;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.text strong {
+  color: #1a414a;
+  font-weight: 700;
+}
+
+.highlight {
+  margin: 35px 0;
+  padding: 28px;
+  background: rgba(26, 65, 74, 0.04);
+  border: 1px solid rgba(26, 65, 74, 0.08);
+  border-radius: 18px;
+}
+
+.highlight p {
+  margin: 0;
+  color: #1a414a;
   font-size: 16px;
-  margin-bottom: 20px;
-  color: #333;
+  line-height: 1.9;
+  font-weight: 500;
 }
 
-.card pre {
+.infoBox {
+  margin-top: 30px;
+  padding: 32px;
+  border-radius: 18px;
+  background: #faf9f7;
+  border: 1px solid rgba(26, 65, 74, 0.08);
+}
+
+.infoBox h3 {
+  color: #1a414a;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.list {
+  padding-left: 24px;
+  margin-top: 18px;
+}
+
+.list li {
+  margin-bottom: 12px;
+  color: #444;
+  line-height: 1.85;
+  font-size: 16px;
+}
+
+.pre {
   margin-top: 35px;
   padding: 70px 80px;
   background: #ffffff;
-  border-radius: 6px;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 6px solid #1a414a;
   font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 2;
-  color: #000;
+  color: #111;
   white-space: pre-wrap;
+  overflow-x: auto;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.06);
   position: relative;
 }
 
-.card pre::before {
-  content: "";
+.pre::before {
+  content: "MODELO REFERENCIAL - COLOMBIA";
   position: absolute;
-  top: 14px;
-  left: 14px;
-  right: -14px;
-  bottom: -14px;
-  background: #faf9f7;
-  border-radius: 6px;
-  z-index: -1;
+  top: 24px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #777;
+  font-weight: 700;
 }
 
-.card pre::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 6px;
-  width: 100%;
-  background: #1a414a;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+.cta {
+  margin-top: 70px;
+  padding: 45px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #1a414a, #264f58);
+  color: #fff;
+  text-align: center;
+}
+
+.cta h3 {
+  font-size: 30px;
+  margin-bottom: 18px;
+  line-height: 1.3;
+}
+
+.cta p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 760px;
+  margin: 0 auto 28px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbbc05;
+  color: #1a414a;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  background: #ffd24c;
+}
+
+.faq {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+}
+
+.faqItem {
+  background: #faf9f7;
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid rgba(26, 65, 74, 0.08);
+}
+
+.faqItem h4 {
+  color: #1a414a;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.faqItem p {
+  color: #444;
+  line-height: 1.85;
+  font-size: 15.8px;
+  margin: 0;
 }
 
 @media (max-width: 900px) {
   .card {
-    padding: 35px;
+    padding: 38px 28px;
   }
 
-  .card h2 {
+  .title {
+    font-size: 31px;
+  }
+
+  .subTitle {
     font-size: 24px;
   }
 
-  .card h3 {
-    font-size: 19px;
+  .text {
+    font-size: 15.8px;
+  }
+
+  .pre {
+    padding: 40px 28px;
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .cta {
+    padding: 35px 24px;
+  }
+
+  .cta h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .subTitle {
+    font-size: 22px;
+  }
+
+  .badge {
+    font-size: 12px;
   }
 }

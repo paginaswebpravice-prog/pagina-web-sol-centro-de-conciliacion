@@ -1,102 +1,262 @@
 .wrapper {
   padding-top: 140px;
   padding-bottom: 100px;
-  background: #faf9f7;
+  background: linear-gradient(to bottom, #faf9f7, #f5f5f5);
   min-height: 100vh;
 }
 
 .card {
-  max-width: 1000px;
+  max-width: 1050px;
   margin: 0 auto;
   background: #ffffff;
-  padding: 60px 70px;
-  border-radius: 10px;
-  box-shadow: 0 20px 50px rgba(26, 65, 74, 0.08);
-  border: 1px solid rgba(26, 65, 74, 0.15);
+  padding: 65px 70px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(26, 65, 74, 0.08);
+  border: 1px solid rgba(26, 65, 74, 0.1);
   position: relative;
-  border-left: 6px solid #1a414a;
+  overflow: hidden;
 }
 
 .card::before {
   content: "";
   position: absolute;
-  top: 14px;
-  left: 14px;
-  right: -14px;
-  bottom: -14px;
-  background: #faf9f7;
-  border-radius: 10px;
-  z-index: -1;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(251, 188, 5, 0.08),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(26, 65, 74, 0.05),
+      transparent 25%
+    );
+  pointer-events: none;
 }
 
 .title {
-  font-size: 32px;
+  font-size: clamp(36px, 5vw, 52px);
   color: #1a414a;
-  margin-bottom: 25px;
-  line-height: 1.3;
+  margin-bottom: 30px;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 .subTitle {
-  font-size: 22px;
-  color: #456b74;
-  margin: 40px 0 20px;
+  font-size: clamp(26px, 3vw, 34px);
+  color: #1a414a;
+  margin: 55px 0 22px;
+  line-height: 1.3;
+  font-weight: 700;
 }
 
 .text {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.95;
+  margin-bottom: 24px;
+}
+
+.text strong {
+  color: #1a414a;
+}
+
+.highlightBox {
+  margin-top: 35px;
+  padding: 30px;
+  background: rgba(26, 65, 74, 0.04);
+  border: 1px solid rgba(26, 65, 74, 0.08);
+  border-radius: 18px;
+}
+
+.highlightBox p {
+  margin: 0;
   font-size: 16px;
-  color: #333;
-  line-height: 1.8;
-  margin-bottom: 20px;
+  line-height: 1.9;
+  color: #1a414a;
 }
 
 .list {
-  margin: 20px 0 30px 20px;
-  line-height: 1.8;
-  color: #333;
+  margin: 25px 0 35px 24px;
+  line-height: 1.95;
+  color: #444;
+}
+
+.list li {
+  margin-bottom: 12px;
+  font-size: 16px;
 }
 
 .note {
-  background: rgba(251, 188, 5, 0.08);
-  color: #000;
-  padding: 20px 24px;
+  background: rgba(251, 188, 5, 0.1);
+  color: #1a414a;
+  padding: 24px 28px;
   border-left: 5px solid #fbbc05;
-  border-radius: 6px;
-  margin: 35px 0;
-  line-height: 1.7;
-  font-size: 15px;
+  border-radius: 12px;
+  margin: 40px 0;
+  line-height: 1.8;
+  font-size: 15.8px;
 }
 
 .pre {
-  margin-top: 25px;
-  padding: 50px 55px;
+  margin-top: 30px;
+  padding: 70px 60px;
   background: #ffffff;
-  border-radius: 6px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
   font-family: "Times New Roman", Times, serif;
   font-size: 15px;
-  line-height: 1.9;
+  line-height: 2;
   color: #000;
   white-space: pre-wrap;
   overflow-x: auto;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  border-bottom: 4px solid #456b74;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.pre::before {
+  content: "MODELO REFERENCIAL - COLOMBIA";
+  position: absolute;
+  top: 22px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #888;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 35px;
+}
+
+.faqItem {
+  background: #faf9f7;
+  border: 1px solid rgba(26, 65, 74, 0.08);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.faqItem h3 {
+  font-size: 18px;
+  color: #1a414a;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.faqItem p {
+  font-size: 15.5px;
+  line-height: 1.85;
+  color: #555;
+}
+
+.ctaBox {
+  margin-top: 70px;
+  background: linear-gradient(135deg, #1a414a, #264f58);
+  padding: 45px;
+  border-radius: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.ctaTitle {
+  font-size: clamp(28px, 4vw, 38px);
+  font-weight: 700;
+  margin-bottom: 18px;
+  line-height: 1.3;
+}
+
+.ctaText {
+  max-width: 760px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbbc05;
+  color: #1a414a;
+  text-decoration: none;
+  padding: 15px 32px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  background: #ffd24c;
 }
 
 @media (max-width: 900px) {
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+
   .card {
-    padding: 40px 30px;
-  }
-
-  .title {
-    font-size: 26px;
-  }
-
-  .subTitle {
-    font-size: 20px;
+    padding: 40px 28px;
   }
 
   .pre {
-    padding: 30px 25px;
+    padding: 55px 28px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding-top: 120px;
+    padding-bottom: 70px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subTitle {
+    font-size: 26px;
+  }
+
+  .text,
+  .list li,
+  .faqItem p,
+  .ctaText {
+    font-size: 15.5px;
+  }
+
+  .ctaBox {
+    padding: 35px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 28px 18px;
+    border-radius: 18px;
+  }
+
+  .pre {
+    padding: 50px 18px;
+  }
+
+  .faqItem {
+    padding: 22px;
+  }
+
+  .ctaTitle {
+    font-size: 26px;
   }
 }
