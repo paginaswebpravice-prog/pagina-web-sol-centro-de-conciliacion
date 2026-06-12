@@ -1,7 +1,12 @@
 import { MetadataRoute } from "next";
+import { categories } from "./blog/article";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://solcentrodeconciliacion.com";
+
+  /* ===============================
+     LANDINGS DE PRÁCTICA
+  =============================== */
 
   const practiceLandingUrls = [
     "asuntos-comerciales",
@@ -25,72 +30,61 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  const blogPosts = [
-    // GENERAL
-    "que-es-la-conciliacion",
-    "cuando-conviene-conciliar",
-    "que-asuntos-se-pueden-conciliar",
-    "paso-a-paso-del-tramite",
-    "documentos-y-evidencia-util",
-    "como-es-la-audiencia",
-    "acta-de-conciliacion-efectos-y-cumplimiento",
-    "errores-comunes-y-como-evitarlos",
-    "preguntas-frecuentes",
+  /* ===============================
+     BLOG DINÁMICO DESDE articles.ts
+  =============================== */
 
-    // JURÍDICO
-    "modelo-acta-conciliacion",
-    "actas-ejemplos",
-    "acta-companeros-permanentes",
-    "acta-alimentos",
-    "acta-no-conciliacion-laboral",
-    "carta-conciliacion",
-    "acta-civil",
-    "documento-familia",
-    "amigable-composicion",
-    "audiencia",
-    "poder",
-    "citacion",
-  ];
+  const blogUrls = categories.flatMap((category) =>
+    category.posts.map((post) => ({
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    })),
+  );
 
-  const blogUrls = blogPosts.map((slug) => ({
-    url: `${baseUrl}/blog/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
+  /* ===============================
+     SITEMAP
+  =============================== */
 
   return [
     {
-      url: `${baseUrl}/`,
+      url: `${baseUrl}`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
+
     {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
+
     {
       url: `${baseUrl}/practice`,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.95,
     },
+
     ...practiceUrls,
+
     {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.9,
+      priority: 0.95,
     },
+
     ...blogUrls,
+
     {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
   ];
 }

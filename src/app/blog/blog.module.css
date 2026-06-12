@@ -1,3 +1,31 @@
+.categoryNav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 4rem;
+}
+
+.categoryNav a {
+  text-decoration: none;
+  color: #456b74;
+  border: 1px solid #d8e0e2;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.categoryNav a:hover {
+  background: rgba(69, 107, 116, 0.08);
+  border-color: rgba(69, 107, 116, 0.25);
+  transform: translateY(-2px);
+}
+
 .blogSection {
   max-width: 1700px;
   margin: 7rem auto 6rem;
@@ -196,6 +224,14 @@
 }
 
 @media (max-width: 768px) {
+  .categoryNav {
+    gap: 8px;
+  }
+
+  .categoryNav a {
+    font-size: 0.82rem;
+    padding: 0.65rem 0.9rem;
+  }
   .heading {
     font-size: 1.95rem;
   }
