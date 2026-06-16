@@ -22,6 +22,7 @@ export const categories: BlogCategory[] = [
     badges: ["Guía práctica", "Inicio rápido"],
     buttonText: "Leer guía →",
     posts: [
+      // ===== ARTÍCULOS ORIGINALES =====
       {
         title:
           "¿Qué es la conciliación en Colombia y para qué sirve realmente?",
@@ -29,132 +30,183 @@ export const categories: BlogCategory[] = [
         excerpt:
           "Conoce cómo funciona la conciliación extrajudicial y cuándo puede ayudarte a evitar procesos judiciales largos.",
       },
+
       {
         title: "¿Cuándo conviene conciliar? Casos donde sí funciona",
         slug: "cuando-conviene-conciliar",
         excerpt:
-          "Descubre en qué situaciones la conciliación puede resolver conflictos de forma rápida.",
+          "Descubre en qué situaciones la conciliación puede resolver conflictos familiares, civiles y laborales.",
       },
+
       {
-        title: "¿Qué asuntos se pueden conciliar en Colombia?",
+        title: "¿Qué asuntos se pueden conciliar en Colombia? (Lista completa)",
         slug: "que-asuntos-se-pueden-conciliar",
         excerpt:
-          "Consulta qué conflictos pueden resolverse mediante conciliación.",
+          "Consulta qué conflictos pueden resolverse mediante conciliación en Colombia y cuáles requieren demanda.",
       },
+
       {
-        title: "Conciliación paso a paso en Colombia",
-        slug: "conciliacion-paso-a-paso",
-        excerpt: "Aprende cada etapa del procedimiento conciliatorio.",
+        title: "Conciliación paso a paso en Colombia: guía completa",
+        slug: "paso-a-paso-del-tramite",
+        excerpt:
+          "Aprende cómo iniciar una conciliación, qué documentos necesitas y cómo se desarrolla la audiencia.",
       },
+
       {
         title: "Documentos clave para una conciliación exitosa",
-        slug: "documentos-para-conciliar",
-        excerpt: "Conoce qué documentos debes presentar en una audiencia.",
+        slug: "documentos-y-evidencia-util",
+        excerpt:
+          "Conoce qué pruebas y documentos pueden fortalecer tu posición durante la conciliación.",
       },
+
       {
-        title: "¿Cómo es una audiencia de conciliación?",
-        slug: "como-es-una-audiencia",
-        excerpt: "Entiende cómo se desarrolla una audiencia conciliatoria.",
+        title: "¿Cómo es una audiencia de conciliación? Presencial vs virtual",
+        slug: "como-es-la-audiencia",
+        excerpt:
+          "Descubre cómo funcionan las audiencias de conciliación y sus diferencias.",
       },
+
       {
-        title: "Acta de conciliación: efectos legales y cumplimiento",
-        slug: "acta-efectos-legales",
-        excerpt: "Conoce el valor jurídico de un acta de conciliación.",
+        title: "Acta de conciliación: efectos legales y cómo hacerla cumplir",
+        slug: "acta-de-conciliacion-efectos-y-cumplimiento",
+        excerpt:
+          "Entiende el valor jurídico del acta y qué hacer en caso de incumplimiento.",
       },
+
       {
-        title: "Errores comunes en conciliación y cómo evitarlos",
-        slug: "errores-comunes-conciliacion",
-        excerpt: "Evita los errores que pueden afectar el resultado.",
+        title: "Errores comunes en conciliación (y cómo evitarlos)",
+        slug: "errores-comunes-y-como-evitarlos",
+        excerpt:
+          "Evita errores frecuentes que pueden afectar el resultado de una conciliación.",
       },
+
       {
-        title: "Preguntas frecuentes sobre conciliación",
-        slug: "preguntas-frecuentes-conciliacion",
-        excerpt: "Respuestas a las dudas más comunes sobre conciliación.",
+        title: "Preguntas frecuentes sobre conciliación en Colombia",
+        slug: "preguntas-frecuentes",
+        excerpt:
+          "Resolvemos las dudas más comunes sobre conciliación y resolución de conflictos.",
       },
+
+      // ===== NUEVOS =====
+
       {
         title: "Diferencia entre conciliación y demanda judicial",
-        slug: "conciliacion-vs-demanda",
-        excerpt: "Compara ambas alternativas para resolver conflictos.",
+        slug: "diferencia-conciliacion-y-demanda",
+        excerpt:
+          "Conoce cuándo conviene acudir a conciliación y cuándo es necesario iniciar un proceso judicial.",
       },
+
       {
         title: "Ventajas de la conciliación frente a un proceso judicial",
         slug: "ventajas-de-la-conciliacion",
-        excerpt: "Descubre por qué la conciliación puede ser una mejor opción.",
+        excerpt:
+          "Ahorro de tiempo, dinero y desgaste emocional al resolver conflictos mediante conciliación.",
       },
+
       {
         title: "¿Qué pasa si una persona no asiste a la conciliación?",
         slug: "inasistencia-a-conciliacion",
-        excerpt: "Consecuencias legales de no asistir a una audiencia.",
+        excerpt:
+          "Consecuencias legales y alternativas cuando una de las partes no comparece.",
       },
     ],
   },
 
   {
     id: "modelos",
-    title: "Modelos, actas y formatos de conciliación",
-    description: "Ejemplos prácticos y documentos utilizados en conciliación.",
+    title: "Modelos, actas y fundamentos legales de conciliación",
+    description:
+      "Encuentra ejemplos prácticos, modelos jurídicos y documentos utilizados en procesos de conciliación extrajudicial en Colombia.",
     badges: ["Modelos legales", "Ejemplos reales"],
     buttonText: "Ver modelo →",
     posts: [
+      // ===== ORIGINALES =====
+
       {
-        title: "Modelo de acta de conciliación en Colombia",
+        title: "Modelo de acta de conciliación en Colombia (ejemplo listo)",
         slug: "modelo-acta-conciliacion",
-        excerpt: "Ejemplo práctico listo para usar.",
+        excerpt:
+          "Accede a un ejemplo práctico de acta de conciliación listo para usar.",
       },
+
       {
-        title: "Actas de conciliación: ejemplos reales",
+        title: "Actas de conciliación: ejemplos reales y recomendaciones",
         slug: "actas-ejemplos",
-        excerpt: "Modelos utilizados en casos reales.",
+        excerpt:
+          "Conoce ejemplos prácticos de actas utilizadas en conciliaciones reales.",
       },
+
       {
-        title: "Acta de conciliación entre compañeros permanentes",
+        title:
+          "Acta de conciliación entre compañeros permanentes (modelo y guía)",
         slug: "acta-companeros-permanentes",
-        excerpt: "Modelo para acuerdos patrimoniales.",
+        excerpt:
+          "Modelo práctico para acuerdos entre compañeros permanentes en Colombia.",
       },
+
       {
-        title: "Acta de conciliación de alimentos",
+        title:
+          "Acta de conciliación de alimentos (ejemplo + Artículo 411 C.C.)",
         slug: "acta-alimentos",
-        excerpt: "Ejemplo y fundamentos legales.",
+        excerpt:
+          "Ejemplo de conciliación de alimentos y explicación legal aplicable.",
       },
+
       {
-        title: "Acta de no conciliación laboral",
+        title: "Acta de no conciliación laboral: modelo y cuándo usarla",
         slug: "acta-no-conciliacion-laboral",
-        excerpt: "Cuándo se utiliza este documento.",
+        excerpt:
+          "Aprende cuándo se utiliza una constancia de no conciliación laboral.",
       },
+
       {
-        title: "Carta de conciliación en Colombia",
+        title: "Carta de conciliación en Colombia: modelo y cómo redactarla",
         slug: "carta-conciliacion",
-        excerpt: "Modelo para solicitar conciliación.",
+        excerpt:
+          "Guía práctica para redactar correctamente una solicitud de conciliación.",
       },
+
       {
-        title: "Acta de conciliación civil",
+        title: "Acta de conciliación civil: ejemplo práctico",
         slug: "acta-civil",
-        excerpt: "Modelo práctico para conflictos civiles.",
+        excerpt:
+          "Modelo de conciliación civil para conflictos económicos y contractuales.",
       },
+
       {
-        title: "Acta de conciliación familiar",
-        slug: "acta-familiar",
-        excerpt: "Documento para acuerdos familiares.",
+        title:
+          "Acta de conciliación familiar: modelo y recomendaciones legales",
+        slug: "documento-familia",
+        excerpt:
+          "Ejemplo práctico de conciliación familiar para alimentos y custodia.",
       },
+
       {
-        title: "Poder para audiencia de conciliación",
-        slug: "poder-audiencia-conciliacion",
-        excerpt: "Modelo de representación legal.",
+        title: "Amigable composición en Colombia: qué es y cómo funciona",
+        slug: "amigable-composicion",
+        excerpt:
+          "Conoce cómo funciona este mecanismo alternativo de solución de conflictos.",
       },
+
       {
-        title: "Citación a audiencia de conciliación",
-        slug: "citacion-audiencia-conciliacion",
-        excerpt: "Ejemplo práctico de citación.",
+        title:
+          "Audiencia de conciliación en Colombia: cómo funciona paso a paso",
+        slug: "audiencia",
+        excerpt: "Todo lo que debes saber sobre una audiencia de conciliación.",
       },
+
       {
-        title: "Modelo de solicitud de conciliación",
-        slug: "modelo-solicitud-conciliacion",
-        excerpt: "Documento para iniciar el trámite.",
+        title: "Poder para audiencia de conciliación: modelo listo para usar",
+        slug: "poder",
+        excerpt:
+          "Modelo práctico de poder para representación en audiencia de conciliación.",
       },
+
       {
-        title: "Formato de acuerdo de pago en conciliación",
-        slug: "acuerdo-pago-conciliacion",
-        excerpt: "Ejemplo para formalizar acuerdos económicos.",
+        title: "Citación a audiencia de conciliación: modelo y ejemplo",
+        slug: "citacion",
+        excerpt:
+          "Ejemplo práctico de citación para audiencia de conciliación en Colombia.",
       },
     ],
   },
@@ -497,7 +549,7 @@ export const categories: BlogCategory[] = [
       },
       {
         title: "Amigable composición en Colombia",
-        slug: "amigable-composicion-colombia",
+        slug: "amigable-composicion",
         excerpt: "Qué es y cuándo puede utilizarse.",
       },
       {
