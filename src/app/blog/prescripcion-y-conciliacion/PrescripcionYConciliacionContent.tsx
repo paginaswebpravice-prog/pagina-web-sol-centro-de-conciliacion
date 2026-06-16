@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./Article.module.css";
+import styles from "../Article.module.css";
 import { motion } from "framer-motion";
 
 export default function PrescripcionYConciliacionContent() {
