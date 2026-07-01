@@ -20,8 +20,8 @@ export default function AsuntosComercialesContent() {
           </span>
 
           <h1 className={styles.title}>
-            Conciliación comercial en Colombia: resuelva conflictos
-            empresariales sin demanda
+            Conciliación comercial en Colombia para resolver contratos, deudas y
+            conflictos empresariales
           </h1>
 
           <p className={styles.description}>
@@ -81,7 +81,8 @@ export default function AsuntosComercialesContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Conflictos comerciales que se pueden conciliar en Colombia
+              ¿Qué conflictos comerciales y empresariales pueden resolverse
+              mediante conciliación?
             </h2>
 
             <p className={styles.text}>
@@ -117,7 +118,8 @@ export default function AsuntosComercialesContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de la conciliación comercial para empresas y negocios
+              Ventajas de la conciliación comercial frente a una demanda
+              judicial
             </h2>
 
             <p className={styles.text}>
@@ -191,7 +193,7 @@ export default function AsuntosComercialesContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar una demanda comercial en Colombia?
+              ¿Por qué acudir primero a una conciliación comercial?
             </h2>
 
             <p className={styles.text}>
@@ -258,7 +260,7 @@ export default function AsuntosComercialesContent() {
           {/* BLOQUE 6 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Documentos importantes para una conciliación comercial
+              Documentos necesarios para una conciliación comercial
             </h2>
 
             <p className={styles.text}>
@@ -308,6 +310,231 @@ export default function AsuntosComercialesContent() {
               conflicto actual, sino que también brinda mayor seguridad jurídica
               para ambas partes en el futuro.
             </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Recuperación de cartera mediante conciliación comercial en
+              Colombia
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación comercial es una alternativa eficaz para recuperar
+              cartera vencida sin acudir inmediatamente a un proceso judicial.
+              Empresas, comerciantes y prestadores de servicios pueden utilizar
+              este mecanismo para negociar el pago de obligaciones pendientes,
+              definir nuevas fechas de pago y alcanzar acuerdos que beneficien a
+              ambas partes.
+            </p>
+
+            <p className={styles.text}>
+              En muchos casos, la recuperación de cartera mediante conciliación
+              permite disminuir los costos asociados al cobro judicial,
+              conservar relaciones comerciales y obtener soluciones más rápidas
+              para mejorar el flujo de caja de la empresa.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Cobro de facturas vencidas.</li>
+              <li>Negociación de acuerdos de pago.</li>
+              <li>Recuperación de cartera empresarial.</li>
+              <li>Renegociación de obligaciones comerciales.</li>
+              <li>Definición de cronogramas de pago.</li>
+              <li>Prevención de procesos judiciales.</li>
+            </ul>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Conciliación por incumplimiento de contratos comerciales
+            </h2>
+
+            <p className={styles.text}>
+              El incumplimiento de contratos comerciales es una de las
+              principales causas de conflicto entre empresas. Cuando una de las
+              partes no cumple las obligaciones pactadas, la conciliación
+              permite renegociar condiciones, establecer nuevos plazos o acordar
+              compensaciones económicas sin necesidad de iniciar inmediatamente
+              una demanda.
+            </p>
+
+            <p className={styles.text}>
+              Este mecanismo puede aplicarse en contratos de prestación de
+              servicios, compraventa, suministro, distribución, franquicia,
+              transporte, consultoría y otros acuerdos comerciales donde exista
+              un incumplimiento susceptible de negociación.
+            </p>
+
+            <p className={styles.text}>
+              Alcanzar un acuerdo mediante conciliación ayuda a reducir riesgos
+              financieros, preservar relaciones comerciales y garantizar mayor
+              seguridad jurídica para las partes involucradas.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Cómo resolver conflictos entre socios mediante conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              Las diferencias entre socios pueden afectar seriamente el
+              funcionamiento de una empresa. La conciliación ofrece un espacio
+              neutral para discutir desacuerdos relacionados con la
+              administración del negocio, distribución de utilidades,
+              participación societaria, cumplimiento de obligaciones y toma de
+              decisiones estratégicas.
+            </p>
+
+            <p className={styles.text}>
+              Resolver estos conflictos mediante acuerdos negociados permite
+              proteger la estabilidad de la empresa y evitar procesos judiciales
+              que pueden afectar la operación y la reputación del negocio.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Distribución de utilidades.</li>
+              <li>Incumplimiento de acuerdos entre socios.</li>
+              <li>Administración de la empresa.</li>
+              <li>Salida o retiro de socios.</li>
+              <li>Participación accionaria.</li>
+              <li>Decisiones corporativas.</li>
+            </ul>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Conciliación de conflictos entre proveedores y clientes
+            </h2>
+
+            <p className={styles.text}>
+              Las relaciones comerciales pueden generar desacuerdos relacionados
+              con entregas, pagos, calidad de productos, prestación de servicios
+              o incumplimientos contractuales. La conciliación facilita que
+              proveedores y clientes negocien soluciones antes de acudir a un
+              proceso judicial.
+            </p>
+
+            <p className={styles.text}>
+              En la audiencia pueden acordarse nuevos plazos de cumplimiento,
+              compensaciones económicas, devoluciones, descuentos comerciales o
+              acuerdos de pago que permitan mantener la relación comercial y
+              proteger los intereses de ambas partes.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué ocurre si no se logra un acuerdo durante la conciliación
+              comercial?
+            </h2>
+
+            <p className={styles.text}>
+              Aunque el objetivo principal de la conciliación es alcanzar un
+              acuerdo, no todos los conflictos empresariales terminan con una
+              solución negociada. Si las partes no logran conciliar, el centro
+              de conciliación deja constancia de la audiencia realizada.
+            </p>
+
+            <p className={styles.text}>
+              Dependiendo del caso, esta constancia puede servir para iniciar un
+              proceso judicial cuando la legislación lo exija como requisito
+              previo. No obstante, muchas negociaciones continúan incluso
+              después de la audiencia y permiten alcanzar acuerdos posteriores.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Cuándo es recomendable acudir a una conciliación comercial?
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación puede utilizarse desde las primeras etapas del
+              conflicto, antes de que la controversia afecte la continuidad del
+              negocio o genere un litigio de mayor complejidad. Actuar de manera
+              oportuna suele facilitar la negociación y aumentar las
+              posibilidades de alcanzar acuerdos beneficiosos.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Incumplimiento de contratos comerciales.</li>
+              <li>Retrasos en pagos.</li>
+              <li>Recuperación de cartera.</li>
+              <li>Conflictos entre socios.</li>
+              <li>Problemas con proveedores.</li>
+              <li>Incumplimiento en prestación de servicios.</li>
+              <li>Disputas por suministros.</li>
+              <li>Negociación de obligaciones económicas.</li>
+            </ul>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Errores frecuentes durante una conciliación comercial
+            </h2>
+
+            <p className={styles.text}>
+              Preparar adecuadamente la audiencia incrementa las posibilidades
+              de lograr un acuerdo exitoso. Muchos conflictos no se resuelven
+              porque las partes no presentan la documentación suficiente o no
+              definen claramente sus pretensiones.
+            </p>
+
+            <ul className={styles.list}>
+              <li>No presentar contratos o anexos.</li>
+              <li>No llevar soportes contables.</li>
+              <li>No demostrar los incumplimientos.</li>
+              <li>No calcular correctamente las obligaciones.</li>
+              <li>Negarse completamente a negociar.</li>
+              <li>No establecer plazos claros de cumplimiento.</li>
+              <li>No definir consecuencias por incumplimiento.</li>
+            </ul>
+
+            <p className={styles.text}>
+              Una adecuada preparación documental y jurídica facilita acuerdos
+              más completos, disminuye el riesgo de futuros conflictos y brinda
+              mayor seguridad para ambas partes.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué empresas pueden beneficiarse de la conciliación comercial?
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación comercial puede ser utilizada por empresas de
+              cualquier tamaño, emprendedores, comerciantes, sociedades,
+              profesionales independientes y organizaciones que mantengan
+              relaciones contractuales o comerciales con terceros.
+            </p>
+
+            <p className={styles.text}>
+              Este mecanismo resulta especialmente útil para prevenir litigios,
+              recuperar cartera, renegociar obligaciones y proteger relaciones
+              comerciales de largo plazo, independientemente del sector
+              económico en el que opere la empresa.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Microempresas y pequeñas empresas.</li>
+              <li>Medianas y grandes compañías.</li>
+              <li>Sociedades comerciales.</li>
+              <li>Empresas familiares.</li>
+              <li>Prestadores de servicios.</li>
+              <li>Comerciantes independientes.</li>
+              <li>Startups y emprendimientos.</li>
+              <li>Distribuidores y proveedores.</li>
+            </ul>
           </div>
 
           {/* FAQ */}

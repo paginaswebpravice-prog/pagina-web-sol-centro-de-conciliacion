@@ -3,10 +3,10 @@ import AsuntosDeCopropiedadContent from "./AsuntosDeCopropiedadContent";
 
 export const metadata: Metadata = {
   title:
-    "Conciliación en copropiedad en Colombia | Propiedad horizontal y conflictos vecinales en Bogotá",
+    "Conciliación en Propiedad Horizontal en Colombia | Conflictos entre Vecinos, Administración y Copropietarios",
 
   description:
-    "Resuelva conflictos de copropiedad y propiedad horizontal en Colombia sin procesos judiciales largos. Conciliación en Bogotá para cuotas de administración, convivencia, zonas comunes, vecinos y administración de conjuntos.",
+    "Resuelva conflictos de propiedad horizontal y copropiedad en Colombia mediante conciliación. Solucione problemas entre vecinos, cuotas de administración, zonas comunes, parqueaderos, ruido, mascotas, administración del conjunto y reglamentos sin procesos judiciales largos.",
 
   keywords: [
     "conciliación copropiedad Colombia",
@@ -21,6 +21,30 @@ export const metadata: Metadata = {
     "abogados propiedad horizontal Colombia",
     "conciliación propiedad horizontal Bogotá",
     "centro de conciliación copropiedad",
+    "propiedad horizontal Colombia",
+    "conflictos propiedad horizontal",
+    "conflictos entre vecinos",
+    "problemas entre vecinos",
+    "administración de conjuntos",
+    "administración edificios",
+    "administración propiedad horizontal",
+    "cuotas administración en mora",
+    "cobro cuotas administración",
+    "parqueaderos propiedad horizontal",
+    "zonas comunes",
+    "reglamento propiedad horizontal",
+    "ley propiedad horizontal Colombia",
+    "problemas ruido vecinos",
+    "problemas mascotas conjunto",
+    "conciliación administrador edificio",
+    "conciliación consejo administración",
+    "conciliación asamblea copropietarios",
+    "conflictos copropietarios",
+    "daños zonas comunes",
+    "filtraciones apartamentos",
+    "propiedad horizontal Bogotá",
+    "conciliación edificios",
+    "conciliación condominios",
   ],
 
   authors: [
@@ -42,10 +66,10 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Conciliación en copropiedad en Colombia | Solucione conflictos en propiedad horizontal",
+      "Conciliación en Propiedad Horizontal en Colombia | Solución Legal para Conflictos entre Vecinos",
 
     description:
-      "Evite demandas y procesos largos en conjuntos residenciales. Conciliación legal y rápida para conflictos de copropiedad, convivencia y administración en Bogotá y Colombia.",
+      "Resuelva conflictos entre vecinos, administración, cuotas de administración, zonas comunes, parqueaderos y reglamentos mediante conciliación con plena validez legal.",
 
     url: "https://solcentrodeconciliacion.com/practice/asuntos-de-copropiedad",
 
@@ -91,7 +115,7 @@ export default function Page() {
       url: "https://solcentrodeconciliacion.com/practice/asuntos-de-copropiedad",
 
       description:
-        "Servicio de conciliación en propiedad horizontal y copropiedad para resolver conflictos relacionados con convivencia, cuotas de administración, zonas comunes y decisiones administrativas en Colombia.",
+        "Servicio de conciliación especializado en conflictos de propiedad horizontal relacionados con cuotas de administración, convivencia entre vecinos, reglamentos, zonas comunes, parqueaderos, administración de edificios, consejos de administración, asambleas de copropietarios y conflictos de copropiedad en Colombia.",
 
       areaServed: {
         "@type": "Country",
@@ -106,9 +130,16 @@ export default function Page() {
 
       serviceType: [
         "Conciliación en propiedad horizontal",
-        "Conciliación entre vecinos",
-        "Conflictos de copropiedad",
-        "Conciliación en conjuntos residenciales",
+        "Conciliación en copropiedad",
+        "Conflictos entre vecinos",
+        "Conciliación de cuotas de administración",
+        "Conciliación por uso de zonas comunes",
+        "Conflictos con la administración",
+        "Problemas de convivencia",
+        "Conciliación de parqueaderos",
+        "Conflictos por mascotas",
+        "Conciliación por ruido",
+        "Conciliación de reglamento de propiedad horizontal",
       ],
     },
 
@@ -119,49 +150,109 @@ export default function Page() {
       mainEntity: [
         {
           "@type": "Question",
-
-          name: "¿Qué conflictos de copropiedad se pueden conciliar en Colombia?",
-
+          name: "¿Qué conflictos de propiedad horizontal pueden resolverse mediante conciliación en Colombia?",
           acceptedAnswer: {
             "@type": "Answer",
-
-            text: "En Colombia pueden conciliarse conflictos relacionados con cuotas de administración, convivencia entre vecinos, uso de zonas comunes, parqueaderos, ruido, mascotas, decisiones de asamblea y administración de propiedad horizontal.",
+            text: "Mediante conciliación pueden resolverse conflictos relacionados con cuotas de administración, convivencia entre vecinos, uso de zonas comunes, parqueaderos, mascotas, ruidos, reglamento de propiedad horizontal, administración del conjunto y otros asuntos conciliables.",
           },
         },
 
         {
           "@type": "Question",
-
           name: "¿La conciliación en propiedad horizontal tiene validez legal?",
-
           acceptedAnswer: {
             "@type": "Answer",
-
-            text: "Sí. Los acuerdos logrados mediante conciliación tienen validez jurídica y pueden ser exigidos legalmente en Colombia.",
+            text: "Sí. El acta de conciliación tiene plena validez jurídica en Colombia y, cuando contiene obligaciones claras, puede exigirse legalmente en caso de incumplimiento.",
           },
         },
 
         {
           "@type": "Question",
-
-          name: "¿Es necesario demandar para resolver conflictos entre vecinos?",
-
+          name: "¿Es obligatorio intentar una conciliación antes de presentar una demanda?",
           acceptedAnswer: {
             "@type": "Answer",
-
-            text: "No. Muchos conflictos vecinales y de copropiedad pueden resolverse mediante conciliación sin necesidad de acudir a un proceso judicial.",
+            text: "Dependiendo del tipo de conflicto y de la legislación aplicable, la conciliación extrajudicial puede ser un requisito previo antes de acudir a un proceso judicial.",
           },
         },
 
         {
           "@type": "Question",
-
-          name: "¿Qué beneficios tiene la conciliación en conjuntos residenciales?",
-
+          name: "¿Qué pasa si un vecino no asiste a la audiencia de conciliación?",
           acceptedAnswer: {
             "@type": "Answer",
+            text: "Si una de las partes no asiste sin justificación, el centro de conciliación puede expedir una constancia de inasistencia, la cual puede utilizarse para continuar con las actuaciones legales que correspondan.",
+          },
+        },
 
-            text: "La conciliación permite solucionar conflictos de forma más rápida, económica y menos desgastante, ayudando a preservar la convivencia y evitar procesos judiciales largos.",
+        {
+          "@type": "Question",
+          name: "¿Se pueden conciliar conflictos por ruido entre vecinos?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí. Los conflictos por ruido, fiestas, música, actividades que afecten la tranquilidad o problemas de convivencia pueden abordarse mediante conciliación para buscar acuerdos que beneficien a todas las partes.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿Es posible conciliar conflictos relacionados con mascotas en conjuntos residenciales?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí. Cuando existen diferencias relacionadas con la tenencia de mascotas, el cumplimiento del reglamento o la convivencia entre residentes, la conciliación permite buscar soluciones concertadas.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿Se pueden resolver conflictos por parqueaderos mediante conciliación?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí. La conciliación es un mecanismo adecuado para resolver desacuerdos relacionados con parqueaderos, uso de espacios comunes, asignación de cupos o incumplimiento de normas internas.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿Qué hacer si un propietario no paga las cuotas de administración?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Antes de iniciar un proceso judicial, las partes pueden acudir a una conciliación para negociar acuerdos de pago, establecer nuevos plazos y buscar soluciones que permitan normalizar la obligación.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿Cuánto tiempo tarda una conciliación en asuntos de copropiedad?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "La duración depende de la complejidad del caso y de la disposición de las partes para negociar. Generalmente, la conciliación es mucho más rápida que un proceso judicial tradicional.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿Qué documentos debo llevar a una audiencia de conciliación?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Es recomendable presentar documentos como el reglamento de propiedad horizontal, comunicaciones entre las partes, actas de asamblea, fotografías, videos, estados de cuenta, comprobantes de pago y cualquier otra prueba relacionada con el conflicto.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿Qué ocurre si no se logra un acuerdo durante la conciliación?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Cuando no es posible llegar a un acuerdo, el centro de conciliación deja constancia del resultado de la audiencia y las partes conservan la posibilidad de acudir a otras acciones legales cuando corresponda.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿Por qué elegir la conciliación para resolver conflictos de propiedad horizontal?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "La conciliación permite resolver conflictos de forma más rápida, económica y confidencial, favorece el diálogo entre las partes, ayuda a preservar la convivencia y evita, en muchos casos, procesos judiciales largos y costosos.",
           },
         },
       ],

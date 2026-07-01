@@ -20,8 +20,8 @@ export default function AsuntosVecinalesContent() {
           </span>
 
           <h1 className={styles.title}>
-            Conciliación entre vecinos en Colombia: soluciones legales para
-            conflictos de convivencia
+            Conciliación entre vecinos en Colombia: resuelva conflictos
+            vecinales sin acudir a una demanda
           </h1>
 
           <p className={styles.description}>
@@ -105,6 +105,85 @@ export default function AsuntosVecinalesContent() {
               el conflicto en una sola audiencia y evitar que la situación
               continúe deteriorando la convivencia.
             </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Problemas entre vecinos más frecuentes que pueden resolverse
+              mediante conciliación
+            </h2>
+
+            <p className={styles.text}>
+              En Colombia, gran parte de los conflictos vecinales surgen por
+              situaciones cotidianas que afectan la tranquilidad y el derecho a
+              una convivencia pacífica. Cuando estas diferencias no logran
+              resolverse mediante el diálogo directo, la conciliación constituye
+              una alternativa legal para alcanzar acuerdos sin acudir
+              inmediatamente a un proceso judicial.
+            </p>
+
+            <p className={styles.text}>
+              La conciliación resulta especialmente útil porque permite que las
+              partes expongan sus posiciones, presenten pruebas y negocien
+              soluciones prácticas adaptadas a las necesidades de cada caso.
+            </p>
+
+            <div className={styles.grid}>
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Ruido excesivo</h3>
+
+                <p className={styles.cardText}>
+                  Música a alto volumen, fiestas frecuentes, maquinaria o
+                  actividades que alteran el descanso de los vecinos.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Mascotas</h3>
+
+                <p className={styles.cardText}>
+                  Problemas relacionados con ladridos constantes, higiene, zonas
+                  comunes o incumplimiento de normas del reglamento.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Parqueaderos</h3>
+
+                <p className={styles.cardText}>
+                  Uso indebido de espacios, invasión de parqueaderos, visitantes
+                  o conflictos por asignaciones.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Zonas comunes</h3>
+
+                <p className={styles.cardText}>
+                  Discusiones por salones comunales, piscinas, ascensores,
+                  jardines y demás espacios compartidos.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Daños entre inmuebles</h3>
+
+                <p className={styles.cardText}>
+                  Filtraciones, humedades, afectaciones estructurales o daños
+                  ocasionados entre apartamentos o viviendas.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Convivencia diaria</h3>
+
+                <p className={styles.cardText}>
+                  Conflictos derivados del respeto, comportamiento, horarios y
+                  cumplimiento del reglamento de convivencia.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* BLOQUE 3 */}
@@ -253,6 +332,41 @@ export default function AsuntosVecinalesContent() {
             </p>
           </div>
 
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué ocurre durante una audiencia de conciliación entre vecinos?
+            </h2>
+
+            <p className={styles.text}>
+              La audiencia de conciliación es un espacio formal en el que ambas
+              partes pueden expresar su versión de los hechos ante un
+              conciliador imparcial, quien facilita el diálogo y ayuda a
+              construir alternativas de solución.
+            </p>
+
+            <p className={styles.text}>
+              El conciliador no impone una decisión. Su función consiste en
+              promover la comunicación y orientar la negociación para que las
+              partes encuentren un acuerdo voluntario que beneficie la
+              convivencia y prevenga nuevos conflictos.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Presentación del conflicto.</li>
+              <li>Exposición de ambas partes.</li>
+              <li>Revisión de documentos o pruebas.</li>
+              <li>Propuestas de solución.</li>
+              <li>Negociación de compromisos.</li>
+              <li>Firma del acta de conciliación cuando exista acuerdo.</li>
+            </ul>
+
+            <p className={styles.text}>
+              Si no es posible llegar a un acuerdo, las partes conservan la
+              posibilidad de acudir a las acciones legales que correspondan.
+            </p>
+          </div>
+
           {/* BLOQUE 7 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
@@ -270,6 +384,43 @@ export default function AsuntosVecinalesContent() {
               obligaciones y posibles soluciones dentro de conflictos de
               convivencia, propiedad horizontal y relaciones vecinales en
               Colombia.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Por qué la conciliación suele ser la mejor alternativa para
+              resolver problemas entre vecinos?
+            </h2>
+
+            <p className={styles.text}>
+              A diferencia de otros conflictos civiles o comerciales, las
+              disputas vecinales suelen involucrar personas que continuarán
+              compartiendo espacios durante meses o incluso años. Por esta
+              razón, mantener una buena relación resulta tan importante como
+              solucionar el conflicto.
+            </p>
+
+            <p className={styles.text}>
+              La conciliación permite construir acuerdos que favorecen la
+              convivencia, disminuyen el nivel de confrontación y ofrecen
+              soluciones adaptadas a las circunstancias particulares de cada
+              comunidad, edificio o conjunto residencial.
+            </p>
+
+            <p className={styles.text}>
+              Además de evitar procesos judiciales prolongados, las partes
+              pueden acordar horarios, compromisos de convivencia, formas de
+              reparación de daños, mecanismos de comunicación y otras medidas
+              que normalmente no serían tan flexibles dentro de un proceso
+              judicial.
+            </p>
+
+            <p className={styles.text}>
+              Cuando existe voluntad de diálogo, la conciliación suele
+              convertirse en la forma más rápida, económica y efectiva de
+              recuperar la tranquilidad dentro de la comunidad.
             </p>
           </div>
 

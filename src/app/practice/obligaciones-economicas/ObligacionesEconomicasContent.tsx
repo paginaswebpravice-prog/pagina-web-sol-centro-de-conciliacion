@@ -101,6 +101,68 @@ export default function ObligacionesEconomicasContent() {
             </p>
           </div>
 
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué obligaciones económicas pueden resolverse mediante
+              conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              En Colombia, la conciliación es una alternativa eficaz para
+              solucionar múltiples conflictos relacionados con obligaciones de
+              carácter civil, comercial y patrimonial. Siempre que el asunto sea
+              conciliable y exista disposición de las partes, es posible
+              alcanzar acuerdos que eviten un proceso judicial.
+            </p>
+
+            <div className={styles.grid}>
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>
+                  Préstamos entre particulares
+                </h3>
+                <p className={styles.cardText}>
+                  Dinero prestado entre familiares, amigos o conocidos.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Facturas pendientes</h3>
+                <p className={styles.cardText}>
+                  Cobro de servicios prestados o mercancías entregadas.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Pagarés</h3>
+                <p className={styles.cardText}>
+                  Obligaciones respaldadas mediante títulos valores.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Contratos civiles</h3>
+                <p className={styles.cardText}>
+                  Incumplimientos derivados de contratos entre particulares.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Contratos comerciales</h3>
+                <p className={styles.cardText}>
+                  Obligaciones entre empresas, comerciantes o proveedores.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Reconocimiento de deuda</h3>
+                <p className={styles.cardText}>
+                  Acuerdos para formalizar obligaciones económicas existentes.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
@@ -162,6 +224,32 @@ export default function ObligacionesEconomicasContent() {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué acuerdos pueden lograrse durante la conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación permite construir soluciones adaptadas a la
+              situación financiera de las partes, facilitando el cumplimiento de
+              las obligaciones sin necesidad de acudir a procesos ejecutivos.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Acuerdos de pago por cuotas.</li>
+              <li>Reducción o negociación de intereses.</li>
+              <li>Nuevos plazos para cancelar la obligación.</li>
+              <li>Condonación parcial de valores.</li>
+              <li>Pago mediante entrega de bienes.</li>
+              <li>Compensación entre obligaciones.</li>
+              <li>Reestructuración de la deuda.</li>
+              <li>Reconocimiento formal del compromiso económico.</li>
+              <li>Garantías para asegurar el cumplimiento.</li>
+              <li>Terminación definitiva del conflicto económico.</li>
+            </ul>
           </div>
 
           {/* BLOQUE 4 */}
@@ -245,6 +333,66 @@ export default function ObligacionesEconomicasContent() {
             </p>
           </div>
 
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Documentos recomendados para una conciliación de obligaciones
+              económicas
+            </h2>
+
+            <p className={styles.text}>
+              Contar con la documentación adecuada facilita el análisis del caso
+              y ayuda a construir acuerdos más claros, verificables y seguros
+              para ambas partes.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Contratos civiles o comerciales.</li>
+              <li>Pagarés.</li>
+              <li>Facturas.</li>
+              <li>Comprobantes de pago.</li>
+              <li>Transferencias bancarias.</li>
+              <li>Estados de cuenta.</li>
+              <li>Correos electrónicos.</li>
+              <li>Mensajes de WhatsApp.</li>
+              <li>Cotizaciones.</li>
+              <li>Cualquier documento que demuestre la obligación.</li>
+            </ul>
+
+            <p className={styles.text}>
+              Mientras mayor sea el soporte documental, más sencillo será
+              construir un acuerdo preciso y evitar futuras discusiones sobre el
+              cumplimiento de las obligaciones pactadas.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Por qué intentar una conciliación antes de iniciar un proceso
+              ejecutivo?
+            </h2>
+
+            <p className={styles.text}>
+              Muchas obligaciones económicas terminan en procesos ejecutivos que
+              pueden implicar embargos, medidas cautelares, gastos judiciales y
+              largos tiempos de espera. La conciliación ofrece la posibilidad de
+              encontrar soluciones voluntarias antes de que el conflicto escale.
+            </p>
+
+            <p className={styles.text}>
+              Además de reducir costos, permite conservar relaciones
+              comerciales, recuperar recursos en menor tiempo y establecer
+              compromisos que resulten viables para ambas partes.
+            </p>
+
+            <p className={styles.text}>
+              Cuando el acuerdo queda consignado en un acta de conciliación,
+              este produce efectos legales y brinda mayor seguridad jurídica
+              frente al cumplimiento de las obligaciones pactadas.
+            </p>
+          </div>
+
           {/* FAQ */}
           <div className={`${styles.block} ${styles.faqSection}`}>
             <h2 className={styles.blockTitle}>
@@ -309,6 +457,29 @@ export default function ObligacionesEconomicasContent() {
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Por qué elegir la conciliación para resolver obligaciones
+              económicas?
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación es una alternativa ampliamente utilizada en
+              Colombia para solucionar conflictos económicos entre personas,
+              empresas y comerciantes. Permite negociar directamente, evitar
+              largos litigios y obtener acuerdos con respaldo jurídico.
+            </p>
+
+            <p className={styles.text}>
+              Gracias a este mecanismo es posible resolver conflictos
+              relacionados con préstamos, deudas, facturas, incumplimientos
+              contractuales, obligaciones comerciales y acuerdos de pago,
+              promoviendo soluciones rápidas y beneficiosas para todas las
+              partes involucradas.
+            </p>
           </div>
         </div>
       </section>

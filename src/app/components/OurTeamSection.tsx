@@ -45,8 +45,8 @@ export default function OurTeamSection() {
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-        Conoce nuestro equipo jurídico especializado en conciliación
-        extrajudicial y resolución de conflictos en Colombia
+        Abogados conciliadores especializados en conciliación extrajudicial en
+        Bogotá y Colombia
       </motion.h2>
 
       {/* Descripción optimizada */}
@@ -57,10 +57,25 @@ export default function OurTeamSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Nuestro equipo está conformado por abogados conciliadores y
-        profesionales del derecho con experiencia en conciliación extrajudicial
-        en Colombia y mecanismos alternativos de resolución de conflictos,
-        conforme a la normativa legal vigente.
+        En <strong>SOL Centro de Conciliación y Arbitraje</strong> contamos con
+        un equipo de abogados conciliadores y profesionales del derecho
+        especializados en mecanismos alternativos de solución de conflictos.
+        Acompañamos a personas, familias y empresas durante todo el
+        procedimiento conciliatorio, brindando orientación jurídica clara y
+        objetiva.
+      </motion.p>
+
+      <motion.p
+        className={styles.description}
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        Nuestra experiencia en conciliación civil, familiar, comercial, laboral
+        y otras áreas del derecho nos permite facilitar acuerdos con plena
+        validez jurídica, buscando siempre soluciones eficientes que eviten
+        procesos judiciales prolongados.
       </motion.p>
 
       {/* GRID */}
@@ -94,6 +109,23 @@ export default function OurTeamSection() {
         ))}
       </div>
 
+      <motion.div
+        className={styles.infoBox}
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <h3>¿Por qué nuestro equipo marca la diferencia?</h3>
+
+        <p>
+          Cada procedimiento de conciliación requiere conocimientos jurídicos,
+          imparcialidad y habilidades para facilitar el diálogo entre las
+          partes. Nuestro equipo trabaja para construir acuerdos sólidos, claros
+          y con seguridad jurídica, procurando siempre soluciones prácticas que
+          protejan los intereses de todos los involucrados.
+        </p>
+      </motion.div>
+
       {/* CTA */}
       <Link
         href="/about"
@@ -108,9 +140,16 @@ export default function OurTeamSection() {
           whileHover={{ scale: 1.05 }}
           aria-label="Conocer más sobre el equipo jurídico de SOL"
         >
-          CONOCE NUESTRO EQUIPO JURÍDICO
+          Ver perfil del equipo jurídico
         </motion.button>
       </Link>
+
+      <p className={styles.bottomText}>
+        Nuestro equipo jurídico participa en procedimientos de conciliación
+        extrajudicial en asuntos civiles, comerciales, familiares, laborales y
+        de propiedad horizontal, ofreciendo acompañamiento legal durante todas
+        las etapas del proceso.
+      </p>
     </section>
   );
 }

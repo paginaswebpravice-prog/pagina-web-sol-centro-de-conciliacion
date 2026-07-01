@@ -100,6 +100,39 @@ export default function LiquidacionDeSociedadConyugalContent() {
             </p>
           </div>
 
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué bienes no hacen parte de la sociedad conyugal en Colombia?
+            </h2>
+
+            <p className={styles.text}>
+              No todos los bienes pertenecen automáticamente a la sociedad
+              conyugal. La legislación colombiana contempla situaciones en las
+              que determinados bienes conservan su carácter propio y no deben
+              repartirse durante la liquidación.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Bienes adquiridos antes del matrimonio.</li>
+              <li>Herencias recibidas por uno de los cónyuges.</li>
+              <li>
+                Donaciones realizadas exclusivamente a uno de los esposos.
+              </li>
+              <li>Bienes excluidos mediante capitulaciones matrimoniales.</li>
+              <li>
+                Bienes considerados propios según la legislación colombiana.
+              </li>
+            </ul>
+
+            <p className={styles.text}>
+              Identificar correctamente cuáles bienes hacen parte del patrimonio
+              común y cuáles son bienes propios permite evitar conflictos
+              durante la conciliación y facilita acuerdos patrimoniales más
+              claros.
+            </p>
+          </div>
+
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
@@ -165,6 +198,33 @@ export default function LiquidacionDeSociedadConyugalContent() {
             </div>
           </div>
 
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Cómo se realiza el reparto de bienes en una liquidación de
+              sociedad conyugal?
+            </h2>
+
+            <p className={styles.text}>
+              El reparto de bienes depende del patrimonio existente, de las
+              obligaciones adquiridas y de los acuerdos alcanzados entre las
+              partes. Durante la conciliación se busca identificar cada activo y
+              cada deuda para lograr una distribución justa y organizada.
+            </p>
+
+            <p className={styles.text}>
+              En la audiencia pueden acordarse porcentajes de participación,
+              adjudicación de bienes específicos, compensaciones económicas,
+              venta de inmuebles, distribución de obligaciones financieras y
+              cualquier otra solución que sea legalmente válida.
+            </p>
+
+            <p className={styles.text}>
+              Cuando existe voluntad de diálogo, la conciliación permite
+              construir un acuerdo adaptado a las necesidades económicas y
+              familiares de ambas partes.
+            </p>
+          </div>
+
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
@@ -221,6 +281,38 @@ export default function LiquidacionDeSociedadConyugalContent() {
             </p>
           </div>
 
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Documentos recomendados para liquidar una sociedad conyugal
+              mediante conciliación
+            </h2>
+
+            <p className={styles.text}>
+              Contar con la documentación adecuada facilita la identificación
+              del patrimonio y permite que la audiencia de conciliación se
+              desarrolle con mayor claridad.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Documento de identidad.</li>
+              <li>Registro civil de matrimonio.</li>
+              <li>
+                Documento que acredite la unión marital de hecho, cuando
+                aplique.
+              </li>
+              <li>Certificados de tradición de inmuebles.</li>
+              <li>Tarjetas de propiedad de vehículos.</li>
+              <li>Extractos bancarios.</li>
+              <li>Información sobre inversiones.</li>
+              <li>Documentos de créditos o deudas.</li>
+              <li>Avalúos de bienes, cuando existan.</li>
+              <li>
+                Cualquier documento que permita acreditar la propiedad de los
+                bienes.
+              </li>
+            </ul>
+          </div>
+
           {/* BLOQUE 6 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
@@ -239,6 +331,57 @@ export default function LiquidacionDeSociedadConyugalContent() {
               el reparto patrimonial, establecer obligaciones concretas y
               proteger los intereses de ambas partes dentro del marco legal
               colombiano.
+            </p>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Liquidación de sociedad conyugal y liquidación de unión marital de
+              hecho
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación puede utilizarse tanto para liquidar la sociedad
+              conyugal derivada del matrimonio como para resolver conflictos
+              patrimoniales entre compañeros permanentes cuando exista una
+              sociedad patrimonial reconocida conforme a la legislación
+              colombiana.
+            </p>
+
+            <p className={styles.text}>
+              En ambos casos es posible alcanzar acuerdos relacionados con
+              inmuebles, vehículos, cuentas bancarias, negocios, inversiones,
+              deudas y demás bienes adquiridos durante la convivencia.
+            </p>
+
+            <p className={styles.text}>
+              Resolver estos asuntos mediante conciliación suele ser más rápido
+              y menos desgastante que acudir directamente a un proceso judicial.
+            </p>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué sucede si no se logra un acuerdo sobre la liquidación de
+              bienes?
+            </h2>
+
+            <p className={styles.text}>
+              Cuando las partes no alcanzan un acuerdo durante la conciliación,
+              conservan la posibilidad de acudir a las acciones judiciales
+              previstas por la ley para que sea un juez quien resuelva el
+              conflicto patrimonial.
+            </p>
+
+            <p className={styles.text}>
+              No obstante, muchas conciliaciones permiten resolver parcialmente
+              el conflicto, reduciendo los temas que posteriormente tendrían que
+              discutirse en un proceso judicial.
+            </p>
+
+            <p className={styles.text}>
+              Incluso un acuerdo parcial puede representar un ahorro importante
+              de tiempo y costos para ambas partes.
             </p>
           </div>
 
@@ -310,6 +453,33 @@ export default function LiquidacionDeSociedadConyugalContent() {
                 </p>
               </div>
             </div>
+          </div>
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Por qué intentar una conciliación antes de iniciar un proceso
+              judicial?
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación permite que las propias partes construyan un
+              acuerdo sobre el reparto del patrimonio sin dejar completamente la
+              decisión en manos de un juez. Esto facilita soluciones más
+              rápidas, flexibles y adaptadas a la realidad económica de cada
+              familia.
+            </p>
+
+            <p className={styles.text}>
+              Además de reducir tiempos y costos, este mecanismo ayuda a
+              disminuir el desgaste emocional que suele acompañar los procesos
+              de separación o divorcio, especialmente cuando existen hijos o
+              bienes de alto valor.
+            </p>
+
+            <p className={styles.text}>
+              Un acuerdo bien estructurado brinda mayor seguridad jurídica y
+              permite que cada parte conozca claramente sus derechos y
+              obligaciones frente al patrimonio común.
+            </p>
           </div>
         </div>
       </section>

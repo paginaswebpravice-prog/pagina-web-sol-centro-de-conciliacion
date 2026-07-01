@@ -3,11 +3,10 @@ import AsuntosLaboralesContent from "./AsuntosLaboralesContent";
 
 export const metadata: Metadata = {
   title:
-    "Conciliación laboral en Colombia | Abogados laborales y conflictos de trabajo en Bogotá",
+    "Conciliación laboral en Colombia | Despidos, liquidaciones, indemnizaciones y salarios pendientes",
 
   description:
-    "Conciliación laboral en Colombia para resolver despidos, liquidaciones, salarios adeudados, contratos laborales y conflictos entre trabajadores y empresas. Evite demandas judiciales con acuerdos legales rápidos en Bogotá y todo Colombia.",
-
+    "Resuelva conflictos laborales mediante conciliación en Colombia. Solucione despidos sin justa causa, liquidaciones, indemnizaciones, salarios pendientes, prestaciones sociales, horas extras, acoso laboral y terminación de contratos sin acudir a una demanda judicial.",
   keywords: [
     "conciliación laboral Colombia",
     "abogados laborales Bogotá",
@@ -23,6 +22,26 @@ export const metadata: Metadata = {
     "indemnización laboral conciliación",
     "centro de conciliación laboral Bogotá",
     "conciliación extrajudicial laboral",
+    "despido injustificado Colombia",
+    "despido sin justa causa",
+    "liquidación por despido",
+    "indemnización por despido",
+    "prestaciones sociales",
+    "cesantías",
+    "prima de servicios",
+    "vacaciones pendientes",
+    "horas extras",
+    "recargos nocturnos",
+    "salario no pagado",
+    "acoso laboral",
+    "terminación de contrato",
+    "renuncia laboral",
+    "fuero de estabilidad",
+    "reintegro laboral",
+    "conciliación Ministerio del Trabajo",
+    "conciliación trabajador empleador",
+    "reclamación laboral",
+    "conflictos empresa trabajador",
   ],
 
   authors: [{ name: "Sol Centro de Conciliación" }],

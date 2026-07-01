@@ -6,10 +6,10 @@ const url =
 
 export const metadata: Metadata = {
   title:
-    "Cuota alimentaria en Colombia | Conciliación y abogados de alimentos para menores",
+    "Cuota alimentaria en Colombia: conciliación para fijar, modificar o exigir el pago",
 
   description:
-    "Abogados y conciliación de cuota alimentaria en Colombia. Fije, modifique o exija alimentos para menores mediante acuerdos legales rápidos y sin procesos judiciales largos en Bogotá y Colombia.",
+    "Solicite la conciliación de cuota alimentaria en Colombia para fijar, aumentar, disminuir o exigir el pago de alimentos para menores. Acta con validez legal y acompañamiento especializado.",
 
   keywords: [
     "cuota alimentaria Colombia",

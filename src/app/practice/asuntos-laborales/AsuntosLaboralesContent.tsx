@@ -20,8 +20,8 @@ export default function AsuntosLaboralesContent() {
           </span>
 
           <h1 className={styles.title}>
-            Conciliación laboral en Colombia: soluciones legales rápidas para
-            trabajadores y empleadores
+            Conciliación laboral en Colombia: resuelva conflictos entre
+            trabajadores y empleadores sin proceso judicial
           </h1>
 
           <p className={styles.description}>
@@ -47,7 +47,8 @@ export default function AsuntosLaboralesContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué es la conciliación laboral y cómo funciona en Colombia?
+              ¿Qué es la conciliación laboral en Colombia y cuándo conviene
+              utilizarla?
             </h2>
 
             <p className={styles.text}>
@@ -76,7 +77,7 @@ export default function AsuntosLaboralesContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Conflictos laborales que se pueden conciliar en Colombia
+              ¿Qué conflictos laborales pueden resolverse mediante conciliación?
             </h2>
 
             <p className={styles.text}>
@@ -110,7 +111,8 @@ export default function AsuntosLaboralesContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de la conciliación laboral para trabajadores y empresas
+              Beneficios de la conciliación laboral frente a una demanda
+              judicial
             </h2>
 
             <div className={styles.grid}>
@@ -179,7 +181,7 @@ export default function AsuntosLaboralesContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Documentos importantes para una conciliación laboral
+              Documentos necesarios para una audiencia de conciliación laboral
             </h2>
 
             <p className={styles.text}>
@@ -211,7 +213,8 @@ export default function AsuntosLaboralesContent() {
           {/* BLOQUE 5 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar una demanda laboral en Colombia?
+              ¿Por qué intentar una conciliación antes de presentar una demanda
+              laboral?
             </h2>
 
             <p className={styles.text}>
@@ -238,7 +241,7 @@ export default function AsuntosLaboralesContent() {
           {/* BLOQUE 6 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Cómo iniciar una conciliación laboral paso a paso?
+              ¿Cómo solicitar una conciliación laboral en Colombia paso a paso?
             </h2>
 
             <p className={styles.text}>
@@ -265,7 +268,8 @@ export default function AsuntosLaboralesContent() {
           {/* BLOQUE 7 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Asesoría para conciliaciones laborales en Bogotá y Colombia
+              Asesoría jurídica para conciliación laboral en Bogotá y toda
+              Colombia
             </h2>
 
             <p className={styles.text}>
@@ -279,6 +283,231 @@ export default function AsuntosLaboralesContent() {
               La asesoría en conciliación laboral puede ayudarte a preparar tu
               caso, organizar evidencia, revisar acuerdos de pago y comprender
               los efectos legales del acta de conciliación en Colombia.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Cuándo conviene solicitar una conciliación laboral en Colombia?
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación laboral es una excelente alternativa cuando un
+              trabajador o un empleador desean resolver un conflicto de forma
+              rápida y con plena seguridad jurídica, evitando un proceso
+              judicial que puede extenderse durante meses o incluso años.
+            </p>
+
+            <p className={styles.text}>
+              Este mecanismo resulta especialmente útil cuando ambas partes
+              mantienen disposición para negociar y buscan llegar a un acuerdo
+              sobre pagos, liquidaciones, indemnizaciones o cualquier otra
+              obligación derivada de la relación laboral.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Despidos con o sin justa causa.</li>
+              <li>Liquidaciones laborales pendientes.</li>
+              <li>Pago de salarios atrasados.</li>
+              <li>Horas extras y recargos.</li>
+              <li>Prestaciones sociales.</li>
+              <li>Vacaciones no disfrutadas o no pagadas.</li>
+              <li>Indemnizaciones laborales.</li>
+              <li>Terminación de contratos de trabajo.</li>
+            </ul>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué derechos laborales pueden negociarse mediante conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación laboral permite construir acuerdos sobre
+              diferentes derechos y obligaciones derivados de la relación
+              laboral, siempre que la ley permita su conciliación y las partes
+              manifiesten libremente su voluntad de llegar a un acuerdo.
+            </p>
+
+            <div className={styles.grid}>
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Salarios pendientes</h3>
+                <p className={styles.cardText}>
+                  Pago de salarios adeudados y diferencias salariales.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Prestaciones sociales</h3>
+                <p className={styles.cardText}>
+                  Cesantías, intereses, primas y vacaciones.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Horas extras</h3>
+                <p className={styles.cardText}>
+                  Reconocimiento de recargos nocturnos, dominicales y festivos.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Indemnizaciones</h3>
+                <p className={styles.cardText}>
+                  Acuerdos derivados de despidos o terminación del contrato.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué sucede si no se logra un acuerdo durante la conciliación
+              laboral?
+            </h2>
+
+            <p className={styles.text}>
+              No todas las conciliaciones concluyen con un acuerdo. Cuando las
+              partes no logran resolver sus diferencias, el proceso termina
+              dejando constancia de la audiencia realizada.
+            </p>
+
+            <p className={styles.text}>
+              La falta de acuerdo no significa que el trabajador o el empleador
+              pierdan sus derechos. Dependiendo del caso, podrán acudir
+              posteriormente a las autoridades competentes o iniciar el proceso
+              judicial correspondiente para que el conflicto sea resuelto por un
+              juez.
+            </p>
+
+            <p className={styles.text}>
+              Sin embargo, en muchos casos la conciliación permite aclarar
+              posiciones y facilitar futuras negociaciones entre las partes.
+            </p>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Errores que debes evitar durante una conciliación laboral
+            </h2>
+
+            <p className={styles.text}>
+              Una adecuada preparación aumenta considerablemente las
+              probabilidades de alcanzar un acuerdo beneficioso para ambas
+              partes.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Asistir sin revisar previamente la liquidación.</li>
+              <li>No llevar contratos o soportes laborales.</li>
+              <li>No calcular correctamente los valores reclamados.</li>
+              <li>No presentar pruebas suficientes.</li>
+              <li>Negarse completamente al diálogo.</li>
+              <li>Aceptar acuerdos sin comprender sus efectos legales.</li>
+              <li>
+                No dejar claramente establecidos plazos y condiciones de pago.
+              </li>
+            </ul>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Por qué la conciliación laboral beneficia tanto a trabajadores
+              como a empleadores?
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación laboral busca proteger los intereses de ambas
+              partes, promoviendo soluciones equilibradas que permitan cerrar el
+              conflicto de forma rápida y con seguridad jurídica.
+            </p>
+
+            <p className={styles.text}>
+              Para el trabajador representa una oportunidad de obtener el
+              reconocimiento oportuno de sus derechos, mientras que para el
+              empleador puede significar una reducción importante de costos
+              judiciales, riesgos económicos y tiempos de litigio.
+            </p>
+
+            <p className={styles.text}>
+              Además, cuando existe una relación laboral vigente, la
+              conciliación ayuda a preservar un ambiente de trabajo más sano y
+              evita que el conflicto continúe escalando.
+            </p>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Cuánto tiempo tarda una conciliación laboral en Colombia?
+            </h2>
+
+            <p className={styles.text}>
+              La duración depende de la complejidad del conflicto, la
+              disponibilidad de las partes y la cantidad de documentación que
+              deba analizarse durante la audiencia.
+            </p>
+
+            <p className={styles.text}>
+              No obstante, la conciliación suele resolverse en un tiempo
+              considerablemente menor que un proceso judicial laboral,
+              permitiendo a las partes encontrar soluciones rápidas y con
+              efectos legales inmediatos cuando se alcanza un acuerdo.
+            </p>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Cuánto cuesta una conciliación laboral en Colombia?
+            </h2>
+
+            <p className={styles.text}>
+              El costo de una conciliación laboral puede variar dependiendo del
+              centro de conciliación, la naturaleza del conflicto y las
+              características del caso.
+            </p>
+
+            <p className={styles.text}>
+              En comparación con un proceso judicial, la conciliación suele
+              representar una alternativa mucho más económica, ya que reduce
+              gastos relacionados con honorarios, trámites y tiempos prolongados
+              de litigio.
+            </p>
+
+            <p className={styles.text}>
+              Solicitar información previa sobre los costos y requisitos permite
+              planear adecuadamente el proceso y evitar inconvenientes durante
+              su desarrollo.
+            </p>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Casos en los que la conciliación laboral suele ser más efectiva
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación resulta especialmente efectiva cuando ambas partes
+              desean evitar un litigio y existe disposición para negociar
+              soluciones que beneficien a trabajador y empleador.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Pago de liquidaciones laborales.</li>
+              <li>Reconocimiento de salarios pendientes.</li>
+              <li>Indemnizaciones por despido.</li>
+              <li>Horas extras y recargos.</li>
+              <li>Prestaciones sociales.</li>
+              <li>Acuerdos para finalizar el contrato.</li>
+              <li>Reclamaciones por incumplimientos laborales.</li>
+              <li>Negociación de cronogramas de pago.</li>
+            </ul>
+
+            <p className={styles.text}>
+              En este tipo de situaciones, una audiencia bien preparada puede
+              permitir resolver el conflicto de manera rápida, disminuir el
+              desgaste emocional y evitar la incertidumbre propia de un proceso
+              judicial.
             </p>
           </div>
 

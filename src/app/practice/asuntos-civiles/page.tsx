@@ -5,10 +5,10 @@ const url = "https://solcentrodeconciliacion.com/practice/asuntos-civiles";
 
 export const metadata: Metadata = {
   title:
-    "Conciliación civil en Colombia | Abogados para deudas, contratos y conflictos civiles",
+    "Conciliación civil en Colombia: resuelva deudas, incumplimientos y conflictos sin demanda",
 
   description:
-    "Resuelva conflictos civiles en Colombia mediante conciliación legal. Abogados expertos en deudas, incumplimiento de contratos, arrendamientos y obligaciones económicas en Bogotá y Colombia.",
+    "Solicite una conciliación civil en Colombia para resolver deudas, incumplimientos de contratos, arrendamientos, acuerdos de pago, indemnizaciones y otros conflictos civiles sin acudir inmediatamente a un proceso judicial.",
 
   keywords: [
     "conciliación civil Colombia",

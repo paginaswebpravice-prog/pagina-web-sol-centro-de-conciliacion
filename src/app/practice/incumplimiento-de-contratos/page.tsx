@@ -3,24 +3,37 @@ import IncumplimientoDeContratosContent from "./IncumplimientoDeContratosContent
 
 export const metadata: Metadata = {
   title:
-    "Incumplimiento de contratos en Colombia | Conciliación contractual y solución sin demanda",
+    "¿Incumplieron un contrato? Conciliación por incumplimiento de contratos en Colombia",
 
   description:
-    "Conciliación por incumplimiento de contratos en Colombia. Resuelva conflictos contractuales entre empresas o particulares sin procesos judiciales largos. Acuerdos legales rápidos y efectivos en Bogotá y Colombia.",
+    "¿Incumplieron un contrato? Resuelva conflictos por incumplimiento de contratos civiles, comerciales, de prestación de servicios, compraventa, arrendamiento y contratos entre empresas mediante conciliación en Colombia. Evite procesos judiciales largos y obtenga acuerdos con validez legal.",
 
   keywords: [
     "incumplimiento de contrato Colombia",
-    "conciliación contractual Colombia",
-    "conciliación contratos Bogotá",
-    "conflictos contractuales Colombia",
+    "incumplimiento contractual",
     "demanda por incumplimiento de contrato",
-    "resolver contratos incumplidos",
-    "incumplimiento contractual empresas",
-    "conciliación comercial Bogotá",
-    "renegociación de contratos Colombia",
-    "acuerdos legales contratos",
-    "centro de conciliación contratos Bogotá",
-    "solución de conflictos contractuales",
+    "conciliación contractual",
+    "conciliación contratos Bogotá",
+    "conflictos contractuales",
+    "incumplimiento contrato prestación de servicios",
+    "incumplimiento contrato de compraventa",
+    "incumplimiento contrato comercial",
+    "incumplimiento contrato civil",
+    "resolver incumplimiento de contrato",
+    "cómo demandar por incumplimiento de contrato",
+    "qué hacer si incumplen un contrato",
+    "conciliación comercial",
+    "acuerdos contractuales",
+    "renegociación de contratos",
+    "incumplimiento de obligaciones contractuales",
+    "incumplimiento entre empresas",
+    "incumplimiento entre particulares",
+    "conciliación empresarial",
+    "contratos civiles Colombia",
+    "contratos comerciales Colombia",
+    "incumplimiento prestación de servicios",
+    "incumplimiento pago contrato",
+    "centro de conciliación contratos",
   ],
 
   authors: [
@@ -42,10 +55,10 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Incumplimiento de contratos en Colombia | Conciliación legal sin demanda",
+      "¿Incumplieron un contrato? Solución legal mediante conciliación en Colombia",
 
     description:
-      "Resuelva conflictos por incumplimiento contractual mediante conciliación en Colombia. Evite procesos judiciales largos y alcance acuerdos con validez legal.",
+      "Recupere pagos, renegocie obligaciones o llegue a acuerdos legales sin acudir a un proceso judicial por incumplimiento de contrato.",
 
     url: "https://solcentrodeconciliacion.com/practice/incumplimientos-de-contratos",
 
@@ -68,10 +81,11 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Incumplimiento de contratos en Colombia | Conciliación contractual",
+    title:
+      "Incumplimiento de contratos | Solución rápida mediante conciliación",
 
     description:
-      "Soluciones legales rápidas para conflictos contractuales y acuerdos por incumplimiento de contratos en Colombia.",
+      "Concilie conflictos derivados de contratos civiles, comerciales o de prestación de servicios sin iniciar una demanda.",
 
     images: ["/og-image.jpg"],
   },
@@ -111,7 +125,7 @@ export default function Page() {
       },
 
       serviceType:
-        "Conciliación en conflictos contractuales e incumplimiento de contratos",
+        "Conciliación por incumplimiento de contratos civiles, comerciales, empresariales, prestación de servicios, compraventa y obligaciones contractuales",
 
       provider: {
         "@type": "Organization",
@@ -172,6 +186,42 @@ export default function Page() {
           acceptedAnswer: {
             "@type": "Answer",
             text: "Sí. La conciliación permite encontrar soluciones más rápidas, económicas y prácticas frente a conflictos contractuales.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿Qué pasa cuando una persona incumple un contrato en Colombia?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Cuando una de las partes incumple las obligaciones pactadas, la otra puede intentar resolver el conflicto mediante conciliación o acudir posteriormente a las acciones judiciales correspondientes.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿Se puede conciliar un contrato de prestación de servicios?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí. Los conflictos derivados de contratos de prestación de servicios pueden resolverse mediante conciliación cuando las partes buscan acuerdos sobre pagos, cumplimiento o terminación del contrato.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿Qué documentos debo presentar en una conciliación contractual?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Es recomendable presentar el contrato, facturas, comprobantes de pago, correos electrónicos, mensajes, cotizaciones y cualquier documento relacionado con el incumplimiento.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿Puede una empresa acudir a conciliación por incumplimiento contractual?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí. Empresas, comerciantes y personas naturales pueden acudir a conciliación para resolver conflictos derivados de relaciones comerciales o civiles.",
           },
         },
       ],

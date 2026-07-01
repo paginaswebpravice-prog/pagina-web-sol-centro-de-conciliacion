@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "../styles/PracticeSection.module.css";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faScaleBalanced,
@@ -17,107 +18,152 @@ import { motion } from "framer-motion";
 const areas = [
   {
     title: "Conciliación en Asuntos Comerciales",
-    desc: "Conciliación en conflictos comerciales entre empresas, contratos mercantiles, sociedades y obligaciones económicas.",
+    desc: "Resuelva conflictos entre empresas, socios, contratos mercantiles, obligaciones económicas y controversias comerciales mediante conciliación extrajudicial.",
     icon: faMoneyBillWave,
+    slug: "/practice/asuntos-comerciales",
   },
   {
     title: "Conciliación en Asuntos Civiles",
-    desc: "Resolución extrajudicial de conflictos civiles relacionados con contratos, daños, herencias y derechos personales.",
+    desc: "Solucione conflictos relacionados con contratos, incumplimientos, daños, indemnizaciones, obligaciones civiles y otros asuntos patrimoniales.",
     icon: faScaleBalanced,
+    slug: "/practice/asuntos-civiles",
   },
   {
-    title: "Conciliación en Propiedad Horizontal y Copropiedad",
-    desc: "Conciliación en propiedad horizontal sobre cuotas de administración, uso de zonas comunes y derechos de copropietarios.",
+    title: "Conciliación en Propiedad Horizontal",
+    desc: "Resuelva conflictos entre copropietarios, administraciones, consejos de administración y uso de bienes comunes.",
     icon: faBuilding,
+    slug: "/practice/asuntos-de-copropiedad",
   },
   {
-    title: "Conciliación Laboral para Empresas y Trabajadores",
-    desc: "Conciliación laboral entre empleadores y trabajadores en temas de despido, contratos y reclamaciones de derechos.",
+    title: "Conciliación Laboral",
+    desc: "Acuerdos entre empleadores y trabajadores sobre liquidaciones, salarios, prestaciones sociales, despidos y obligaciones laborales.",
     icon: faBriefcase,
+    slug: "/practice/asuntos-laborales",
   },
   {
-    title: "Conciliación de Cuota Alimentaria para Menores",
-    desc: "Conciliación familiar orientada a garantizar el cumplimiento de obligaciones alimentarias de niños y adolescentes.",
+    title: "Conciliación de Cuota Alimentaria",
+    desc: "Acuerdos sobre fijación, aumento, disminución o cumplimiento de la cuota alimentaria para niños, adolescentes y otros beneficiarios.",
     icon: faChild,
+    slug: "/practice/alimentos-para-menores",
   },
   {
-    title: "Custodia de Menores y Régimen de Visitas",
-    desc: "Mecanismos de conciliación para definir custodia, cuidado personal y régimen de visitas de menores.",
+    title: "Custodia y Régimen de Visitas",
+    desc: "Defina mediante conciliación la custodia, cuidado personal, visitas y demás acuerdos relacionados con los hijos menores.",
     icon: faClipboardList,
+    slug: "/practice/custodia-y-regimen-de-visitas",
   },
   {
-    title: "Conciliación en Conflictos Vecinales y de Convivencia",
-    desc: "Mediación y conciliación en conflictos de convivencia, ruidos, uso de espacios comunes y normas comunitarias.",
+    title: "Conciliación en Conflictos de Convivencia",
+    desc: "Soluciones para conflictos vecinales, uso de zonas comunes, ruidos, servidumbres y problemas de convivencia.",
     icon: faUsers,
+    slug: "/practice/asuntos-vecinales",
   },
   {
-    title: "Liquidación de Sociedad Conyugal y Bienes",
-    desc: "Conciliación para la distribución equitativa de bienes adquiridos durante el matrimonio o unión marital.",
+    title: "Liquidación de Sociedad Conyugal",
+    desc: "Distribuya bienes, activos y deudas mediante conciliación después de un divorcio o la terminación de una unión marital.",
     icon: faHouse,
+    slug: "/practice/liquidacion-de-sociedad-conyugal",
   },
 ];
 
 export default function PracticeSection() {
   return (
     <section className={styles.section} aria-labelledby="practice-title">
-      {/* Encabezado */}
+      {/* ================= HEADER ================= */}
+
       <motion.div
         className={styles.header}
         initial={{ opacity: 0, y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <span className={styles.subtitle}>ÁREAS DE CONCILIACIÓN</span>
+        <span className={styles.subtitle}>
+          SERVICIOS DE CONCILIACIÓN EN COLOMBIA
+        </span>
 
         <h2 id="practice-title" className={styles.title}>
-          Áreas de conciliación extrajudicial para resolver conflictos legales
-          sin procesos judiciales largos
+          Conozca nuestras áreas de conciliación extrajudicial y resuelva su
+          conflicto sin acudir a un proceso judicial
         </h2>
 
         <p className={styles.description}>
-          En <strong>SOL Centro de Conciliación y Arbitraje</strong> facilitamos
-          la resolución alternativa de conflictos a través de la conciliación
-          extrajudicial en distintas áreas del derecho, ofreciendo soluciones
-          legales, humanas y eficaces conforme a la normativa vigente en
-          Colombia.
+          En <strong>SOL Centro de Conciliación y Arbitraje</strong> prestamos
+          servicios de conciliación en asuntos civiles, comerciales, familiares,
+          laborales y de propiedad horizontal. Nuestro objetivo es ayudar a
+          personas y empresas a alcanzar acuerdos rápidos, seguros y con plena
+          validez jurídica, reduciendo tiempos, costos y el desgaste que implica
+          un proceso ante los jueces.
         </p>
       </motion.div>
 
-      {/* Grid de áreas */}
-      <motion.article
+      {/* ================= GRID ================= */}
+
+      <motion.div
         className={styles.grid}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ staggerChildren: 0.12 }}
+        transition={{ staggerChildren: 0.1 }}
       >
         {areas.map((area, index) => (
           <motion.div
             key={index}
-            className={styles.card}
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0 },
             }}
-            whileHover={{
-              y: -6,
-              scale: 1.02,
-              boxShadow: "0 10px 25px rgba(0,0,0,0.12)",
-              transition: { duration: 0.25 },
-            }}
             transition={{ duration: 0.45 }}
           >
-            <div className={styles.icon} aria-hidden="true">
-              <FontAwesomeIcon icon={area.icon} />
-            </div>
+            <Link
+              href={area.slug}
+              className={styles.card}
+              aria-label={area.title}
+            >
+              <div className={styles.icon}>
+                <FontAwesomeIcon icon={area.icon} />
+              </div>
 
-            <h3 className={styles.cardTitle}>{area.title}</h3>
+              <h3 className={styles.cardTitle}>{area.title}</h3>
 
-            <p className={styles.cardDesc}>{area.desc}</p>
+              <p className={styles.cardDesc}>{area.desc}</p>
+
+              <span className={styles.readMore}>Más información →</span>
+            </Link>
           </motion.div>
         ))}
-      </motion.article>
+      </motion.div>
+
+      {/* ================= TEXTO SEO ================= */}
+
+      <motion.div
+        className={styles.bottomContent}
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+      >
+        <h2 className={styles.bottomTitle}>
+          Un centro de conciliación para personas, empresas y entidades en toda
+          Colombia
+        </h2>
+
+        <p>
+          Cada conflicto requiere un tratamiento diferente. Por ello contamos
+          con conciliadores especializados que acompañan procedimientos en
+          derecho civil, comercial, laboral y familiar, así como asuntos
+          relacionados con obligaciones económicas, propiedad horizontal,
+          contratos, alimentos, custodia de menores y liquidación de sociedad
+          conyugal.
+        </p>
+
+        <p>
+          Nuestros servicios pueden desarrollarse de forma presencial en Bogotá
+          o mediante audiencias virtuales para usuarios ubicados en cualquier
+          ciudad de Colombia, ofreciendo la misma seguridad jurídica y la
+          validez legal que exige la legislación colombiana.
+        </p>
+      </motion.div>
     </section>
   );
 }

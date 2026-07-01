@@ -3,26 +3,47 @@ import ConflictosFamiliaresContent from "./ConflictosFamiliaresContent";
 
 export const metadata: Metadata = {
   title:
-    "Conflictos familiares en Colombia | Conciliación familiar y acuerdos legales en Bogotá",
+    "Conciliación familiar en Colombia | Custodia, alimentos, visitas y acuerdos legales",
 
   description:
-    "Resuelva conflictos familiares en Colombia sin necesidad de demanda judicial. Conciliación familiar en Bogotá para separación, custodia de hijos, cuota alimentaria, visitas, liquidación de bienes y acuerdos familiares.",
+    "¿Tiene un conflicto familiar? Resuelva mediante conciliación asuntos de custodia de hijos, cuota alimentaria, régimen de visitas, separación, liquidación de sociedad conyugal y acuerdos familiares en Colombia. Evite procesos judiciales largos.",
 
   keywords: [
-    "conflictos familiares Colombia",
+    "conciliación familiar Colombia",
     "conciliación familiar Bogotá",
-    "abogados familia Colombia",
-    "custodia de hijos conciliación",
-    "cuota alimentaria Colombia",
-    "acuerdos familiares legales",
-    "separación sin demanda Colombia",
-    "régimen de visitas Colombia",
+    "conflictos familiares",
+    "problemas familiares",
+    "custodia de hijos",
+    "custodia compartida",
+    "conciliación custodia",
+    "cuota alimentaria",
+    "conciliación alimentos",
+    "aumento cuota alimentaria",
+    "disminución cuota alimentaria",
+    "régimen de visitas",
+    "conciliación visitas",
+    "visitas menores",
+    "separación de mutuo acuerdo",
+    "separación de pareja",
     "liquidación sociedad conyugal",
-    "conciliación familiar sin juicio",
-    "problemas familiares Colombia",
-    "centro de conciliación familia Bogotá",
-    "acuerdos de familia Colombia",
-    "conciliación extrajudicial familiar",
+    "liquidación sociedad patrimonial",
+    "acuerdos familiares",
+    "centro de conciliación familiar",
+    "conciliación derecho de familia",
+    "demanda de alimentos",
+    "demanda custodia",
+    "conciliación antes de demanda",
+    "acta de conciliación familiar",
+    "conciliación extrajudicial",
+    "conciliación hijos",
+    "obligaciones alimentarias",
+    "pensión alimentaria",
+    "acuerdo de visitas",
+    "acuerdo de custodia",
+    "modificación cuota alimentaria",
+    "modificación régimen visitas",
+    "conciliador familiar",
+    "familia Colombia",
   ],
 
   authors: [{ name: "Sol Centro de Conciliación" }],
@@ -188,6 +209,54 @@ export default function Page() {
             "@type": "Answer",
 
             text: "El proceso inicia con una solicitud ante un centro de conciliación autorizado. Luego las partes son citadas a una audiencia para intentar llegar a un acuerdo legal con acompañamiento de un conciliador.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿La conciliación familiar es obligatoria antes de demandar?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "En determinados asuntos de familia la conciliación constituye un requisito previo antes de acudir ante un juez, dependiendo del tipo de conflicto y de la normativa aplicable.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Cuánto dura una conciliación familiar?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "La duración depende de la complejidad del caso y de la disposición de las partes para llegar a un acuerdo, siendo generalmente mucho más rápida que un proceso judicial.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Qué documentos debo llevar a una conciliación familiar?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Generalmente se recomienda presentar documentos de identidad, registros civiles, soportes económicos y cualquier documento relacionado con el conflicto objeto de conciliación.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Qué documentos debo llevar a una conciliación familiar?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Generalmente se recomienda presentar documentos de identidad, registros civiles, soportes económicos y cualquier documento relacionado con el conflicto objeto de conciliación.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Qué pasa si una persona no asiste a la audiencia de conciliación?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Dependiendo del caso, podrá dejarse constancia de la inasistencia para los efectos legales correspondientes.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Se puede modificar un acuerdo de conciliación familiar?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí, cuando las circunstancias cambian y la ley lo permite, las partes pueden acudir nuevamente a conciliación para modificar determinados acuerdos.",
           },
         },
       ],

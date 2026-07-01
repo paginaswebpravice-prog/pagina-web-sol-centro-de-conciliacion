@@ -20,8 +20,8 @@ export default function AsuntosCivilesContent() {
           </span>
 
           <h1 className={styles.title}>
-            Conciliación civil en Colombia: resuelva conflictos sin demanda
-            judicial
+            Conciliación civil en Colombia para resolver deudas, contratos y
+            conflictos entre particulares
           </h1>
 
           <p className={styles.description}>
@@ -79,7 +79,8 @@ export default function AsuntosCivilesContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Conflictos civiles que se pueden conciliar en Colombia
+              ¿Qué asuntos civiles pueden resolverse mediante conciliación en
+              Colombia?
             </h2>
 
             <p className={styles.text}>
@@ -113,7 +114,7 @@ export default function AsuntosCivilesContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de resolver conflictos mediante conciliación civil
+              Ventajas de la conciliación civil frente a un proceso judicial
             </h2>
 
             <p className={styles.text}>
@@ -184,7 +185,7 @@ export default function AsuntosCivilesContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar una demanda civil en Colombia?
+              ¿Cuándo conviene acudir primero a una conciliación civil?
             </h2>
 
             <p className={styles.text}>
@@ -247,7 +248,7 @@ export default function AsuntosCivilesContent() {
           {/* BLOQUE 6 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Documentos útiles para una conciliación civil
+              Documentos necesarios para una conciliación civil
             </h2>
 
             <p className={styles.text}>
@@ -298,6 +299,166 @@ export default function AsuntosCivilesContent() {
             </p>
           </div>
 
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué asuntos civiles no pueden resolverse mediante conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              Aunque la conciliación civil permite solucionar una gran cantidad
+              de conflictos entre particulares y empresas, existen asuntos que,
+              por su naturaleza, deben ser decididos directamente por un juez o
+              por otra autoridad competente. La posibilidad de conciliar depende
+              de que los derechos discutidos sean disponibles y susceptibles de
+              negociación entre las partes.
+            </p>
+
+            <p className={styles.text}>
+              Antes de iniciar una solicitud de conciliación es recomendable
+              verificar si el conflicto puede resolverse mediante este mecanismo
+              o si la legislación exige acudir directamente a un proceso
+              judicial.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Conflictos sobre derechos indisponibles.</li>
+              <li>Procesos que la ley reserva exclusivamente al juez.</li>
+              <li>Asuntos donde no existe capacidad legal para conciliar.</li>
+              <li>Controversias expresamente excluidas por la legislación.</li>
+            </ul>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Se pueden cobrar deudas mediante conciliación civil?
+            </h2>
+
+            <p className={styles.text}>
+              Sí. La conciliación es uno de los mecanismos más utilizados para
+              recuperar deudas entre particulares o empresas sin necesidad de
+              iniciar inmediatamente un proceso ejecutivo. Durante la audiencia
+              es posible negociar el valor adeudado, establecer acuerdos de
+              pago, definir fechas de cumplimiento e incluso pactar nuevas
+              condiciones para facilitar el pago de la obligación.
+            </p>
+
+            <p className={styles.text}>
+              Este procedimiento resulta especialmente útil cuando ambas partes
+              desean evitar un litigio y conservar una relación comercial o
+              personal, logrando soluciones rápidas y con respaldo jurídico.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Préstamos de dinero.</li>
+              <li>Facturas pendientes.</li>
+              <li>Cuentas por cobrar.</li>
+              <li>Acuerdos de pago.</li>
+              <li>Obligaciones económicas incumplidas.</li>
+            </ul>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Conciliación por incumplimiento de contratos en Colombia
+            </h2>
+
+            <p className={styles.text}>
+              Cuando una de las partes incumple las obligaciones pactadas en un
+              contrato, la conciliación permite buscar soluciones antes de
+              acudir a un proceso judicial. Es posible renegociar plazos,
+              modificar condiciones, acordar compensaciones económicas o definir
+              nuevas formas de cumplimiento que beneficien a ambas partes.
+            </p>
+
+            <p className={styles.text}>
+              Este mecanismo puede utilizarse en contratos civiles, prestación
+              de servicios, compraventa, suministro, arrendamiento y otros
+              acuerdos donde exista un incumplimiento susceptible de
+              negociación.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué ocurre si no se logra un acuerdo durante la conciliación
+              civil?
+            </h2>
+
+            <p className={styles.text}>
+              No todas las conciliaciones finalizan con un acuerdo. Cuando las
+              partes no logran resolver el conflicto, el centro de conciliación
+              expide la correspondiente constancia, documento que puede ser
+              necesario para iniciar posteriormente un proceso judicial cuando
+              la ley así lo exige.
+            </p>
+
+            <p className={styles.text}>
+              Aunque no exista conciliación, la audiencia permite conocer la
+              posición de cada parte y, en muchas ocasiones, facilita futuras
+              negociaciones incluso después de iniciado un proceso judicial.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Casos en los que es recomendable solicitar una conciliación civil
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación resulta especialmente útil cuando existe
+              disposición para negociar y el conflicto puede resolverse mediante
+              acuerdos entre las partes. En estos escenarios suele representar
+              una alternativa más rápida y menos costosa que un proceso
+              judicial.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Incumplimiento de contratos.</li>
+              <li>Préstamos de dinero entre particulares.</li>
+              <li>Cobro de deudas.</li>
+              <li>Conflictos por arrendamientos.</li>
+              <li>Prestación de servicios.</li>
+              <li>Responsabilidad por daños.</li>
+              <li>Acuerdos de pago.</li>
+              <li>Obligaciones económicas pendientes.</li>
+            </ul>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Errores frecuentes durante una conciliación civil
+            </h2>
+
+            <p className={styles.text}>
+              Preparar adecuadamente la audiencia aumenta las posibilidades de
+              alcanzar un acuerdo exitoso. Muchos conflictos no se resuelven
+              porque las partes llegan sin documentación suficiente o con
+              expectativas poco realistas.
+            </p>
+
+            <ul className={styles.list}>
+              <li>No presentar pruebas del conflicto.</li>
+              <li>No llevar contratos o documentos firmados.</li>
+              <li>Negarse a escuchar propuestas.</li>
+              <li>Solicitar condiciones imposibles de cumplir.</li>
+              <li>No definir fechas de pago.</li>
+              <li>No establecer consecuencias del incumplimiento.</li>
+              <li>No dejar claramente redactado el acuerdo.</li>
+            </ul>
+
+            <p className={styles.text}>
+              Una buena preparación permite aprovechar mejor la audiencia y
+              construir acuerdos jurídicamente sólidos que reduzcan el riesgo de
+              futuros conflictos.
+            </p>
+          </div>
+
           {/* FAQ */}
           <div className={styles.faqSection}>
             <h2 className={styles.blockTitle}>
@@ -312,9 +473,11 @@ export default function AsuntosCivilesContent() {
                 </h3>
 
                 <p className={styles.faqAnswer}>
-                  En muchos asuntos civiles, la conciliación extrajudicial es un
-                  requisito previo antes de presentar una demanda judicial. Esto
-                  depende del tipo de conflicto y de las pretensiones del caso.
+                  En muchos asuntos civiles, la conciliación extrajudicial
+                  constituye un requisito previo antes de presentar una demanda.
+                  Sin embargo, esto depende del tipo de conflicto y de las
+                  pretensiones que se pretendan reclamar, por lo que es
+                  recomendable verificar cada caso en particular.
                 </p>
               </div>
 
@@ -325,47 +488,159 @@ export default function AsuntosCivilesContent() {
                 </h3>
 
                 <p className={styles.faqAnswer}>
-                  Cuando una de las partes no asiste sin justificación, puede
-                  generarse constancia de inasistencia y la otra parte podría
-                  continuar con acciones judiciales o legales según corresponda.
+                  Cuando una de las partes no asiste sin una justificación
+                  válida, el centro de conciliación puede expedir una constancia
+                  de inasistencia. En algunos casos, este documento permite
+                  continuar posteriormente con las acciones judiciales
+                  correspondientes.
                 </p>
               </div>
 
               <div className={styles.faqItem}>
                 <h3 className={styles.faqQuestion}>
-                  ¿El acuerdo de conciliación tiene validez legal?
+                  ¿El acta de conciliación tiene validez legal?
                 </h3>
 
                 <p className={styles.faqAnswer}>
-                  Sí. El acta de conciliación tiene efectos jurídicos en
-                  Colombia y puede exigirse legalmente en caso de incumplimiento
-                  por alguna de las partes.
+                  Sí. El acta de conciliación tiene plenos efectos jurídicos en
+                  Colombia y constituye un documento obligatorio para las
+                  partes. En caso de incumplimiento, puede hacerse valer
+                  mediante los mecanismos legales establecidos.
                 </p>
               </div>
 
               <div className={styles.faqItem}>
                 <h3 className={styles.faqQuestion}>
-                  ¿Cuánto tiempo tarda una conciliación civil en Colombia?
+                  ¿Cuánto tiempo tarda una conciliación civil?
                 </h3>
 
                 <p className={styles.faqAnswer}>
-                  El tiempo puede variar según el caso y la disponibilidad de
-                  las partes, pero normalmente la conciliación resulta mucho más
-                  rápida que un proceso judicial tradicional.
+                  El tiempo puede variar según la disponibilidad de las partes,
+                  la complejidad del conflicto y la programación del centro de
+                  conciliación. En la mayoría de los casos, la conciliación
+                  resulta considerablemente más rápida que un proceso judicial.
                 </p>
               </div>
 
               <div className={styles.faqItem}>
                 <h3 className={styles.faqQuestion}>
-                  ¿Qué tipos de conflictos pueden resolverse mediante
-                  conciliación civil?
+                  ¿Qué conflictos pueden resolverse mediante conciliación civil?
                 </h3>
 
                 <p className={styles.faqAnswer}>
-                  La conciliación civil puede utilizarse para resolver
-                  conflictos por deudas, incumplimientos contractuales,
-                  arrendamientos, daños y perjuicios, obligaciones económicas y
-                  diferentes disputas patrimoniales.
+                  Es posible conciliar asuntos relacionados con incumplimiento
+                  de contratos, cobro de deudas, arrendamientos, responsabilidad
+                  civil, daños y perjuicios, acuerdos de pago, obligaciones
+                  económicas y otras controversias patrimoniales susceptibles de
+                  negociación.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué documentos debo llevar a una conciliación civil?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Lo recomendable es presentar contratos, pagarés, facturas,
+                  comprobantes de pago, correos electrónicos, conversaciones,
+                  fotografías, cotizaciones, requerimientos previos y cualquier
+                  documento que permita demostrar el origen del conflicto o
+                  respaldar las pretensiones.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Se puede recuperar una deuda mediante conciliación?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. La conciliación es un mecanismo ampliamente utilizado para
+                  negociar el pago de deudas entre particulares o empresas,
+                  establecer acuerdos de pago, definir plazos y evitar procesos
+                  judiciales más largos y costosos.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Puedo conciliar un contrato incumplido?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. Los conflictos derivados del incumplimiento de contratos
+                  civiles, comerciales o de prestación de servicios pueden
+                  solucionarse mediante conciliación cuando la ley lo permita y
+                  exista disposición de las partes para negociar un acuerdo.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué ocurre si no se logra un acuerdo durante la conciliación?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Si no se alcanza un acuerdo, el centro de conciliación deja
+                  constancia del resultado de la audiencia. Dependiendo del
+                  caso, esta constancia puede utilizarse para iniciar
+                  posteriormente un proceso judicial ante la autoridad
+                  competente.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Es necesario asistir con abogado a una conciliación civil?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  En muchos casos no es obligatorio, pero contar con asesoría
+                  jurídica puede facilitar la preparación de la audiencia, la
+                  revisión de la documentación y la elaboración de acuerdos más
+                  claros y seguros para las partes.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Qué pasa si una persona incumple el acta de conciliación?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  El incumplimiento del acta de conciliación puede dar lugar a
+                  acciones legales para exigir el cumplimiento de las
+                  obligaciones pactadas, ya que este documento tiene fuerza
+                  jurídica conforme a la legislación colombiana.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Se puede conciliar una deuda sin contrato escrito?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  Sí. Dependiendo del caso, pueden presentarse otros medios de
+                  prueba como consignaciones, transferencias bancarias,
+                  conversaciones, correos electrónicos, mensajes de texto o
+                  cualquier evidencia que permita demostrar la existencia de la
+                  obligación económica.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h3 className={styles.faqQuestion}>
+                  ¿Cuáles son las principales ventajas de la conciliación civil?
+                </h3>
+
+                <p className={styles.faqAnswer}>
+                  La conciliación permite resolver conflictos de forma más
+                  rápida, disminuir costos, evitar procesos judiciales
+                  prolongados, conservar las relaciones entre las partes y
+                  obtener acuerdos con plena validez legal que pueden exigirse
+                  en caso de incumplimiento.
                 </p>
               </div>
             </div>

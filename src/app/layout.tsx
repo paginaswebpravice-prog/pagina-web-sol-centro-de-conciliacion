@@ -20,20 +20,71 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SOL Centro de Conciliación y Arbitraje",
+  title: {
+    default:
+      "Centro de Conciliación en Bogotá | SOL Centro de Conciliación y Arbitraje",
+    template: "%s | SOL Centro de Conciliación",
+  },
   description:
-    "En SOL ofrecemos soluciones legales ágiles y efectivas para resolver tus conflictos mediante conciliación y arbitraje",
+    "Centro de Conciliación autorizado en Bogotá. Resuelva conflictos civiles, familiares, comerciales y laborales mediante conciliación extrajudicial en derecho. Audiencias presenciales y virtuales con validez legal en toda Colombia.",
   keywords: [
-    "centro de conciliación",
-    "resolución de conflictos",
-    "Conciliación Extrajudicial en Derecho",
-    "Conciliación",
-    "Liquidación Sociedad Conyugal",
-    "Asuntos Comerciales",
-    "Asuntos Civiles",
-    "Asuntos Laborales",
-    "Custodia y Visitas",
+    "centro de conciliación Bogotá",
+    "centro de conciliación Colombia",
+    "conciliación extrajudicial en derecho",
+    "conciliación en derecho",
+    "conciliación virtual",
+    "conciliación familiar",
+    "conciliación civil",
+    "conciliación comercial",
+    "conciliación laboral",
+    "conciliación empresarial",
+    "acta de conciliación",
+    "solución de conflictos",
+    "resolver conflictos legales",
+    "audiencia de conciliación",
+    "centro de arbitraje",
+    "arbitraje Colombia",
+    "conciliación sin demanda",
+    "conciliación antes de demanda",
+    "mecanismos alternativos de solución de conflictos",
   ],
+
+  metadataBase: new URL("https://solcentrodeconciliacion.com"),
+
+  alternates: {
+    canonical: "https://solcentrodeconciliacion.com",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Centro de Conciliación en Bogotá | SOL Centro de Conciliación",
+    description:
+      "Conciliación familiar, civil, comercial y laboral. Soluciones legales rápidas con plena validez jurídica en Colombia.",
+    images: ["/logo_sol.jpg"],
+  },
+
+  authors: [
+    {
+      name: "SOL Centro de Conciliación",
+    },
+  ],
+  creator: "SOL Centro de Conciliación",
+  publisher: "SOL Centro de Conciliación",
+
+  category: "Servicios Jurídicos",
+
   openGraph: {
     title: "SOL Centro de Conciliación y Arbitraje",
     description:
@@ -58,7 +109,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-CO">
+    <html lang="es-CO">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-G3PE07R7Y8"

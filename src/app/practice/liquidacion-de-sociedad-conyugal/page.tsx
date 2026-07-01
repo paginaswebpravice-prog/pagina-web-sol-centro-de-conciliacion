@@ -3,24 +3,30 @@ import LiquidacionDeSociedadConyugalContent from "./LiquidacionDeSociedadConyuga
 
 export const metadata: Metadata = {
   title:
-    "Liquidación de sociedad conyugal en Colombia | Reparto de bienes y conciliación familiar",
+    "Liquidación de Sociedad Conyugal en Colombia | Reparto de Bienes sin Demanda | Sol Centro de Conciliación",
 
   description:
-    "Liquidación de sociedad conyugal en Colombia mediante conciliación. Reparto legal de bienes, deudas y activos tras separación o divorcio sin procesos judiciales largos en Bogotá y Colombia.",
+    "Realice la liquidación de sociedad conyugal en Colombia mediante conciliación. Acuerde el reparto de bienes, inmuebles, vehículos, deudas e inversiones sin procesos judiciales largos. Atención en Bogotá y todo Colombia.",
 
   keywords: [
-    "liquidación sociedad conyugal Colombia",
-    "reparto de bienes divorcio Colombia",
-    "conciliación sociedad conyugal Bogotá",
+    "liquidación de sociedad conyugal Colombia",
+    "liquidación sociedad conyugal Bogotá",
+    "reparto de bienes divorcio",
+    "reparto de bienes separación",
+    "cómo liquidar sociedad conyugal",
     "división de bienes matrimonio",
-    "separación de bienes Colombia",
-    "liquidación de bienes pareja",
-    "liquidación patrimonial divorcio",
-    "acuerdo de bienes divorcio",
-    "conciliación familiar Colombia",
-    "reparto de bienes sin demanda",
-    "centro de conciliación familia Bogotá",
-    "liquidación bienes unión marital",
+    "liquidación patrimonial Colombia",
+    "liquidación de bienes unión marital",
+    "liquidación de sociedad patrimonial",
+    "conciliación reparto de bienes",
+    "acuerdo de liquidación de bienes",
+    "liquidación de activos y pasivos",
+    "divorcio y reparto de bienes",
+    "bienes adquiridos durante el matrimonio",
+    "sociedad conyugal bienes",
+    "cómo repartir bienes después del divorcio",
+    "centro de conciliación Bogotá",
+    "conciliación de familia Colombia",
   ],
 
   authors: [
@@ -42,10 +48,10 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Liquidación de sociedad conyugal en Colombia | Reparto legal de bienes",
+      "Liquidación de Sociedad Conyugal en Colombia | Reparto Legal de Bienes sin Juicio",
 
     description:
-      "Resuelva el reparto de bienes tras separación o divorcio mediante conciliación en Colombia. Soluciones legales rápidas y sin procesos judiciales largos.",
+      "Acuerde el reparto de bienes, inmuebles, vehículos, cuentas, inversiones y deudas mediante conciliación. Evite procesos judiciales largos y obtenga un acuerdo con validez legal.",
 
     url: "https://solcentrodeconciliacion.com/practice/liquidacion-de-sociedad-conyugal",
 
@@ -68,11 +74,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title:
-      "Liquidación de sociedad conyugal en Colombia | Conciliación familiar",
+    title: "Liquidación de Sociedad Conyugal | Reparto de Bienes en Colombia",
 
     description:
-      "Acuerdos legales para reparto de bienes y liquidación patrimonial en Colombia sin procesos judiciales largos.",
+      "Resuelva la liquidación patrimonial mediante conciliación. Acuerdos rápidos, legales y sin largos procesos judiciales.",
 
     images: ["/og-image.jpg"],
   },
@@ -99,10 +104,10 @@ export default function Page() {
       "@context": "https://schema.org",
       "@type": "LegalService",
 
-      name: "Liquidación de sociedad conyugal en Colombia",
+      name: "Conciliación para Liquidación de Sociedad Conyugal en Colombia",
 
       description:
-        "Servicio de conciliación para la liquidación de sociedad conyugal, reparto de bienes y división patrimonial tras separación o divorcio en Colombia.",
+        "Servicio de conciliación para liquidar la sociedad conyugal, repartir bienes, activos, pasivos, inmuebles, vehículos, inversiones y obligaciones económicas derivadas del matrimonio o unión marital de hecho en Colombia.",
 
       url: "https://solcentrodeconciliacion.com/practice/liquidacion-de-sociedad-conyugal",
 
@@ -112,12 +117,19 @@ export default function Page() {
       },
 
       serviceType:
-        "Conciliación en liquidación de sociedad conyugal y reparto de bienes",
+        "Conciliación para liquidación de sociedad conyugal, división patrimonial y reparto de bienes",
 
       provider: {
         "@type": "Organization",
+
         name: "Sol Centro de Conciliación",
+
         url: "https://solcentrodeconciliacion.com",
+
+        logo: {
+          "@type": "ImageObject",
+          url: "https://solcentrodeconciliacion.com/logo.png",
+        },
       },
     },
 
@@ -128,51 +140,81 @@ export default function Page() {
       mainEntity: [
         {
           "@type": "Question",
-          name: "¿Qué es la liquidación de sociedad conyugal?",
+          name: "¿Qué es la liquidación de sociedad conyugal en Colombia?",
 
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Es el proceso mediante el cual se reparten los bienes, activos y deudas adquiridos durante el matrimonio o unión marital.",
+            text: "Es el procedimiento mediante el cual se distribuyen los bienes, derechos, activos y deudas adquiridos durante el matrimonio o la unión marital de hecho, permitiendo definir qué corresponde a cada una de las partes.",
           },
         },
 
         {
           "@type": "Question",
-          name: "¿La liquidación de bienes puede hacerse sin juicio?",
+          name: "¿Se puede liquidar la sociedad conyugal mediante conciliación?",
 
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Sí. En muchos casos, la liquidación de sociedad conyugal puede realizarse mediante conciliación sin necesidad de iniciar un proceso judicial.",
+            text: "Sí. Cuando ambas partes están dispuestas a llegar a un acuerdo, la conciliación permite realizar la liquidación sin acudir inicialmente a un proceso judicial.",
           },
         },
 
         {
           "@type": "Question",
-          name: "¿Qué bienes entran en la sociedad conyugal?",
+          name: "¿Qué bienes hacen parte de la sociedad conyugal?",
 
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Pueden incluirse inmuebles, vehículos, cuentas bancarias, inversiones, bienes muebles y deudas adquiridas durante la relación.",
+            text: "Dependiendo del caso, pueden incluirse inmuebles, vehículos, cuentas bancarias, inversiones, empresas, muebles, créditos y demás bienes adquiridos durante la vigencia de la sociedad conyugal.",
           },
         },
 
         {
           "@type": "Question",
-          name: "¿Los acuerdos de conciliación tienen validez legal?",
+          name: "¿También se reparten las deudas?",
 
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Sí. El acta de conciliación tiene efectos jurídicos y cumplimiento obligatorio en Colombia.",
+            text: "Sí. Durante la liquidación también pueden definirse las obligaciones económicas y deudas que formen parte del patrimonio común.",
           },
         },
 
         {
           "@type": "Question",
-          name: "¿La conciliación ayuda a evitar conflictos familiares?",
+          name: "¿Qué pasa si una persona no está de acuerdo con el reparto de bienes?",
 
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Sí. La conciliación permite alcanzar acuerdos más rápidos, organizados y menos desgastantes emocionalmente para ambas partes.",
+            text: "La conciliación busca facilitar un acuerdo entre las partes. Si no es posible lograrlo, podrán utilizarse los mecanismos judiciales previstos por la ley.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿El acuerdo de conciliación tiene validez legal?",
+
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí. El acta de conciliación tiene efectos legales y presta mérito ejecutivo cuando cumple los requisitos establecidos por la legislación colombiana.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿Es necesario tener inventario de bienes antes de conciliar?",
+
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Es recomendable contar con una relación clara de bienes, activos, pasivos y soportes documentales para facilitar una negociación organizada.",
+          },
+        },
+
+        {
+          "@type": "Question",
+          name: "¿La conciliación ayuda a evitar un proceso judicial?",
+
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí. Cuando se alcanza un acuerdo entre las partes, es posible evitar un proceso judicial largo, reduciendo tiempos, costos y conflictos familiares.",
           },
         },
       ],
@@ -180,28 +222,30 @@ export default function Page() {
 
     {
       "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
+      "@type": "HowTo",
 
-      itemListElement: [
+      name: "Cómo liquidar una sociedad conyugal mediante conciliación en Colombia",
+
+      step: [
         {
-          "@type": "ListItem",
-          position: 1,
-          name: "Inicio",
-          item: "https://solcentrodeconciliacion.com",
+          "@type": "HowToStep",
+          name: "Identificar los bienes y deudas",
         },
-
         {
-          "@type": "ListItem",
-          position: 2,
-          name: "Áreas de práctica",
-          item: "https://solcentrodeconciliacion.com/practice",
+          "@type": "HowToStep",
+          name: "Presentar la solicitud de conciliación",
         },
-
         {
-          "@type": "ListItem",
-          position: 3,
-          name: "Liquidación de sociedad conyugal",
-          item: "https://solcentrodeconciliacion.com/practice/liquidacion-de-sociedad-conyugal",
+          "@type": "HowToStep",
+          name: "Asistir a la audiencia de conciliación",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Llegar a un acuerdo sobre el reparto patrimonial",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Firmar el acta de conciliación",
         },
       ],
     },

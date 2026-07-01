@@ -3,7 +3,7 @@ import AsuntosVecinalesContent from "./AsuntosVecinalesContent";
 
 export const metadata: Metadata = {
   title:
-    "Conciliación en conflictos vecinales en Colombia | Problemas entre vecinos y convivencia en Bogotá",
+    "Conciliación entre vecinos en Colombia | Solucione conflictos vecinales sin demanda",
 
   description:
     "Resuelva conflictos vecinales en Colombia sin necesidad de demanda judicial. Conciliación en Bogotá para problemas de ruido, convivencia, zonas comunes, parqueaderos y disputas entre vecinos.",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Conciliación en conflictos vecinales en Colombia | Soluciones rápidas y legales",
+      "Conciliación entre vecinos en Colombia | Evite demandas y resuelva conflictos de convivencia",
 
     description:
       "Evite demandas entre vecinos. Resuelva conflictos de convivencia, ruido y zonas comunes mediante conciliación legal en Bogotá y Colombia.",
@@ -65,7 +65,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Conciliación en conflictos vecinales en Colombia | Evite demandas",
+    title:
+      "Conciliación entre vecinos en Colombia | Soluciones legales para conflictos vecinales",
 
     description:
       "Soluciones legales para conflictos entre vecinos, ruido, convivencia y zonas comunes en Colombia.",

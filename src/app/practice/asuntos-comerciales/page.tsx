@@ -5,10 +5,10 @@ const url = "https://solcentrodeconciliacion.com/practice/asuntos-comerciales";
 
 export const metadata: Metadata = {
   title:
-    "Conciliación comercial en Colombia | Abogados para conflictos empresariales y contratos",
+    "Conciliación comercial en Colombia: resuelva conflictos empresariales sin demanda",
 
   description:
-    "Resuelva conflictos comerciales en Colombia mediante conciliación legal. Abogados expertos en incumplimiento de contratos, deudas empresariales, sociedades y acuerdos comerciales en Bogotá y Colombia.",
+    "Solicite una conciliación comercial en Colombia para resolver incumplimientos de contratos, conflictos entre socios, recuperación de cartera, acuerdos de pago, obligaciones comerciales y controversias empresariales con validez legal.",
 
   keywords: [
     "conciliación comercial Colombia",

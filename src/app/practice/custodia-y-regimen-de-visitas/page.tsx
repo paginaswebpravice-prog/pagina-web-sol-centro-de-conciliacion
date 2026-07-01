@@ -3,10 +3,10 @@ import CustodiaYRegimenDeVisitasContent from "./CustodiaYRegimenDeVisitasContent
 
 export const metadata: Metadata = {
   title:
-    "Custodia y régimen de visitas en Colombia | Conciliación familiar y acuerdos legales en Bogotá",
+    "Custodia de hijos y régimen de visitas en Colombia | Conciliación rápida y con validez legal",
 
   description:
-    "Conciliación de custodia y régimen de visitas en Colombia. Acuerdos legales sobre cuidado personal, visitas, custodia compartida y bienestar de los hijos sin procesos judiciales largos en Bogotá y Colombia.",
+    "Resuelva conflictos de custodia de hijos, régimen de visitas, custodia compartida, cuidado personal y acuerdos familiares mediante conciliación en Colombia. Evite procesos judiciales largos y obtenga acuerdos con plena validez legal que priorizan el bienestar de los menores.",
 
   keywords: [
     "custodia de hijos Colombia",
@@ -21,6 +21,24 @@ export const metadata: Metadata = {
     "acuerdos familiares legales",
     "centro de conciliación familia Bogotá",
     "conciliación de familia Colombia",
+    "custodia compartida",
+    "custodia exclusiva",
+    "cuidado personal del menor",
+    "patria potestad Colombia",
+    "visitas padre e hijo",
+    "visitas madre e hijo",
+    "acuerdo de custodia",
+    "acuerdo de visitas",
+    "modificación régimen de visitas",
+    "modificación custodia",
+    "derecho de visitas",
+    "conflictos por custodia",
+    "custodia después del divorcio",
+    "conciliación cuidado personal",
+    "conciliación hijos menores",
+    "interés superior del menor",
+    "custodia sin demanda",
+    "proceso de custodia Colombia",
   ],
 
   authors: [
@@ -42,7 +60,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Custodia y régimen de visitas en Colombia | Acuerdos legales sin demanda",
+      "Custodia y régimen de visitas en Colombia | Proteja el bienestar de sus hijos sin demanda",
 
     description:
       "Resuelva conflictos de custodia y visitas mediante conciliación familiar en Colombia. Acuerdos legales rápidos y enfocados en el bienestar del menor.",
@@ -68,7 +86,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Custodia y régimen de visitas en Colombia | Conciliación familiar",
+    title:
+      "Custodia de hijos y régimen de visitas | Conciliación familiar en Colombia",
 
     description:
       "Acuerdos legales sobre custodia, visitas y cuidado personal de hijos mediante conciliación en Colombia.",

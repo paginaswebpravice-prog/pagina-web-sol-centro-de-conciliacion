@@ -3,10 +3,10 @@ import ConflictosDeArrendamientoContent from "./ConflictosDeArrendamientoContent
 
 export const metadata: Metadata = {
   title:
-    "Conflictos de arrendamiento en Colombia | Conciliación entre arrendador y arrendatario en Bogotá",
+    "Conflictos de arrendamiento en Colombia | Conciliación para evitar demandas y recuperar su inmueble",
 
   description:
-    "Resuelva conflictos de arrendamiento en Colombia sin necesidad de demanda judicial. Conciliación para canon de arriendo, restitución de inmueble, incumplimientos de contrato, deudas y problemas entre arrendador y arrendatario en Bogotá y Colombia.",
+    "¿Tiene problemas con un contrato de arrendamiento? Resuelva conflictos entre arrendador y arrendatario mediante conciliación en Colombia. Acuerdos sobre canon de arriendo, restitución del inmueble, daños, incumplimientos contractuales, entrega del inmueble y terminación del contrato sin procesos judiciales largos.",
 
   keywords: [
     "conflictos de arrendamiento Colombia",
@@ -40,10 +40,10 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Conflictos de arrendamiento en Colombia | Soluciones legales sin demanda",
+      "Conciliación de arrendamientos en Colombia | Acuerdos legales entre arrendador y arrendatario",
 
     description:
-      "Evite procesos judiciales por arriendos. Conciliación rápida y legal para conflictos entre arrendadores y arrendatarios en Colombia.",
+      "Resuelva conflictos por canon de arriendo, entrega del inmueble, incumplimientos del contrato, daños y restitución mediante conciliación con efectos legales.",
 
     url: "https://solcentrodeconciliacion.com/practice/conflictos-de-arrendamiento",
 

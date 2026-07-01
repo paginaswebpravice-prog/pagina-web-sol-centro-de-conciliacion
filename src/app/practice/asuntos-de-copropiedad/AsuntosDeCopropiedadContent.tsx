@@ -295,6 +295,201 @@ export default function AsuntosCopropiedadContent() {
             </p>
           </div>
 
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Conciliación por cuotas de administración en mora en propiedad
+              horizontal
+            </h2>
+
+            <p className={styles.text}>
+              El incumplimiento en el pago de las cuotas de administración es
+              una de las causas más frecuentes de conflicto dentro de conjuntos
+              residenciales, edificios y condominios. Antes de acudir a un
+              proceso ejecutivo o judicial, la conciliación permite que la
+              administración y el propietario negocien acuerdos de pago que
+              beneficien a ambas partes.
+            </p>
+
+            <p className={styles.text}>
+              Durante la audiencia es posible definir nuevas fechas de pago,
+              establecer cuotas, negociar intereses, acordar descuentos cuando
+              sea procedente y fijar compromisos claros para evitar nuevos
+              incumplimientos.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Cuotas ordinarias pendientes.</li>
+              <li>Cuotas extraordinarias.</li>
+              <li>Acuerdos de pago.</li>
+              <li>Negociación de intereses.</li>
+              <li>Obligaciones económicas con la copropiedad.</li>
+              <li>Prevención de procesos ejecutivos.</li>
+            </ul>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Conciliación de conflictos entre vecinos en conjuntos
+              residenciales
+            </h2>
+
+            <p className={styles.text}>
+              Muchos conflictos vecinales pueden solucionarse mediante
+              conciliación antes de convertirse en problemas mayores. Las
+              diferencias relacionadas con ruidos, mascotas, parqueaderos,
+              remodelaciones, filtraciones, uso de zonas comunes o convivencia
+              suelen resolverse con mayor rapidez cuando las partes participan
+              en una audiencia de conciliación.
+            </p>
+
+            <p className={styles.text}>
+              El objetivo es encontrar soluciones equilibradas que permitan
+              mejorar la convivencia y reducir futuros conflictos dentro de la
+              comunidad.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Conflictos entre copropietarios y la administración del conjunto
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación también permite resolver diferencias entre
+              propietarios, administradores, consejos de administración y
+              órganos de dirección de la copropiedad cuando existen desacuerdos
+              sobre decisiones administrativas, cobros, aplicación del
+              reglamento o manejo de recursos.
+            </p>
+
+            <p className={styles.text}>
+              Llegar a un acuerdo mediante conciliación ayuda a preservar el
+              adecuado funcionamiento de la copropiedad y evita que los
+              conflictos afecten a toda la comunidad.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Conflictos por uso de zonas comunes y parqueaderos
+            </h2>
+
+            <p className={styles.text}>
+              El uso indebido de zonas comunes genera constantemente conflictos
+              dentro de la propiedad horizontal. La conciliación permite
+              resolver diferencias relacionadas con parqueaderos, depósitos,
+              salones comunales, ascensores, piscinas, zonas verdes, terrazas y
+              demás espacios compartidos.
+            </p>
+
+            <p className={styles.text}>
+              Los acuerdos alcanzados pueden establecer reglas claras de
+              utilización, horarios, responsabilidades y mecanismos para
+              prevenir nuevos conflictos.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Conciliación por incumplimiento del reglamento de propiedad
+              horizontal
+            </h2>
+
+            <p className={styles.text}>
+              Cuando un residente incumple el reglamento de propiedad horizontal
+              pueden generarse conflictos que afectan la convivencia de toda la
+              comunidad. La conciliación facilita que las partes dialoguen y
+              construyan soluciones antes de acudir a procedimientos judiciales
+              o sancionatorios.
+            </p>
+
+            <p className={styles.text}>
+              Este mecanismo resulta útil para tratar situaciones relacionadas
+              con modificaciones no autorizadas, uso indebido de bienes comunes,
+              incumplimiento de normas internas o comportamientos que afectan la
+              convivencia.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué ocurre si no se logra un acuerdo durante la conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              No todas las audiencias terminan con un acuerdo. Cuando las partes
+              no logran conciliar, el centro de conciliación expide la
+              constancia correspondiente, la cual puede ser necesaria para
+              acudir posteriormente a otras acciones legales cuando la
+              legislación así lo establezca.
+            </p>
+
+            <p className={styles.text}>
+              Aunque inicialmente no exista acuerdo, muchas controversias
+              continúan negociándose posteriormente, evitando procesos
+              judiciales más largos y costosos.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Cuándo es recomendable solicitar una conciliación en propiedad
+              horizontal?
+            </h2>
+
+            <p className={styles.text}>
+              Lo recomendable es acudir a conciliación tan pronto aparezca el
+              conflicto, antes de que la situación afecte la convivencia o
+              genere procesos judiciales. Resolver las diferencias oportunamente
+              suele facilitar acuerdos más rápidos y preservar una mejor
+              relación entre vecinos y administración.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Problemas por ruido.</li>
+              <li>Conflictos por mascotas.</li>
+              <li>Cuotas de administración.</li>
+              <li>Parqueaderos.</li>
+              <li>Zonas comunes.</li>
+              <li>Daños entre vecinos.</li>
+              <li>Filtraciones.</li>
+              <li>Remodelaciones.</li>
+              <li>Administración del edificio.</li>
+              <li>Decisiones de la asamblea.</li>
+            </ul>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Errores frecuentes al intentar resolver conflictos de copropiedad
+            </h2>
+
+            <p className={styles.text}>
+              Muchos conflictos escalan innecesariamente porque las partes
+              reaccionan sin conocer los mecanismos de conciliación disponibles.
+              Una adecuada preparación facilita acuerdos más efectivos y reduce
+              la posibilidad de nuevos desacuerdos.
+            </p>
+
+            <ul className={styles.list}>
+              <li>No revisar el reglamento de propiedad horizontal.</li>
+              <li>No conservar comunicaciones con la administración.</li>
+              <li>No documentar los hechos.</li>
+              <li>No llevar pruebas del conflicto.</li>
+              <li>No asistir a la audiencia con propuestas.</li>
+              <li>No cumplir los acuerdos alcanzados.</li>
+              <li>Esperar demasiado antes de buscar una solución.</li>
+            </ul>
+          </div>
+
           {/* FAQ */}
           <div className={styles.faqSection}>
             <h2 className={styles.blockTitle}>

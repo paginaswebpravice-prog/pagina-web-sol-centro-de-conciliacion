@@ -52,22 +52,23 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <h1 className={styles.mainTitle}>
-            SOL Centro de Conciliación y Arbitraje en Colombia
+            Centro de Conciliación en Bogotá y Colombia | Conciliación
+            Extrajudicial en Derecho
           </h1>
 
           <p className={styles.paragraph}>
-            En <strong>SOL Centro de Conciliación y Arbitraje</strong> ofrecemos
-            soluciones legales ágiles y efectivas para la{" "}
-            <strong>resolución alternativa de conflictos</strong> a través de la
-            conciliación extrajudicial y el arbitraje. Acompañamos a personas y
-            empresas en la búsqueda de acuerdos justos, eficientes y legalmente
-            respaldados.
+            En <strong>SOL Centro de Conciliación</strong> ayudamos a personas,
+            empresas y familias a solucionar conflictos de manera rápida,
+            confidencial y conforme a la legislación colombiana. Nuestro
+            servicio de conciliación extrajudicial en derecho permite alcanzar
+            acuerdos con efectos legales, evitando en muchos casos procesos
+            judiciales largos y costosos.
           </p>
 
           <p className={styles.paragraph}>
-            Nuestro equipo de profesionales especializados te asesora durante
-            cada etapa del proceso, garantizando seguridad jurídica,
-            confidencialidad y un enfoque práctico orientado a resultados.
+            Ofrecemos atención presencial y virtual para asuntos civiles,
+            comerciales, familiares y laborales, acompañándolo durante todo el
+            proceso con conciliadores especializados.
           </p>
 
           <button className={styles.ctaButton} onClick={handleClick}>

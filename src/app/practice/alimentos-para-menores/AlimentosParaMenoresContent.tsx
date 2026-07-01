@@ -20,8 +20,8 @@ export default function AlimentosMenoresContent() {
           </span>
 
           <h1 className={styles.title}>
-            Conciliación de cuota alimentaria en Colombia: abogados para
-            alimentos de menores
+            Conciliación de cuota alimentaria en Colombia: cómo fijar, modificar
+            o reclamar alimentos para menores
           </h1>
 
           <p className={styles.description}>
@@ -47,7 +47,7 @@ export default function AlimentosMenoresContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué son los alimentos para menores y qué cubren en Colombia?
+              ¿Qué es la cuota alimentaria en Colombia y cuándo debe pagarse?
             </h2>
 
             <p className={styles.text}>
@@ -75,7 +75,7 @@ export default function AlimentosMenoresContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué incluye la cuota alimentaria de un menor?
+              ¿Qué cubre la cuota alimentaria de un hijo menor de edad?
             </h2>
 
             <p className={styles.text}>
@@ -106,7 +106,8 @@ export default function AlimentosMenoresContent() {
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de la conciliación de cuota alimentaria en Colombia
+              ¿Por qué hacer una conciliación de cuota alimentaria antes de
+              presentar una demanda?
             </h2>
 
             <p className={styles.text}>
@@ -175,7 +176,8 @@ export default function AlimentosMenoresContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué sucede si no pagan la cuota alimentaria?
+              ¿Qué pasa si el padre o la madre incumple el pago de la cuota
+              alimentaria?
             </h2>
 
             <p className={styles.text}>
@@ -203,7 +205,8 @@ export default function AlimentosMenoresContent() {
           {/* BLOQUE 5 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Cómo solicitar una conciliación de alimentos en Colombia?
+              ¿Cómo iniciar una conciliación para fijar o modificar la cuota
+              alimentaria?
             </h2>
 
             <p className={styles.text}>
@@ -239,7 +242,7 @@ export default function AlimentosMenoresContent() {
           {/* BLOQUE 6 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Documentos importantes para una conciliación de alimentos
+              ¿Cuándo puede aumentarse o disminuirse la cuota alimentaria?
             </h2>
 
             <p className={styles.text}>
@@ -286,6 +289,217 @@ export default function AlimentosMenoresContent() {
               La conciliación permite renegociar estos aspectos de manera legal
               y organizada sin necesidad de iniciar inmediatamente un proceso
               judicial complejo.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Cómo se calcula la cuota alimentaria en Colombia?
+            </h2>
+
+            <p className={styles.text}>
+              Una de las preguntas más frecuentes es cómo se determina el valor
+              de la cuota alimentaria. En Colombia no existe un porcentaje fijo
+              establecido por la ley que aplique para todos los casos. El monto
+              se analiza de manera individual teniendo en cuenta las necesidades
+              del menor y la capacidad económica de cada uno de los padres.
+            </p>
+
+            <p className={styles.text}>
+              Durante una conciliación, las partes pueden presentar información
+              sobre sus ingresos, gastos y obligaciones económicas para
+              construir un acuerdo justo, equilibrado y acorde con la realidad
+              familiar. El conciliador orienta el diálogo para que la cuota
+              cubra adecuadamente las necesidades del hijo sin generar cargas
+              desproporcionadas para quien debe realizar el pago.
+            </p>
+
+            <p className={styles.text}>
+              Entre los aspectos que normalmente se analizan se encuentran la
+              edad del menor, los gastos de alimentación, educación, salud,
+              vivienda, transporte, recreación y cualquier otra necesidad
+              indispensable para su desarrollo integral.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Ingresos de ambos padres.</li>
+              <li>Necesidades actuales del menor.</li>
+              <li>Gastos de educación y transporte.</li>
+              <li>Costos médicos y tratamientos.</li>
+              <li>Capacidad económica de cada responsable.</li>
+              <li>Gastos extraordinarios que puedan surgir.</li>
+            </ul>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Hasta qué edad debe pagarse la cuota alimentaria en Colombia?
+            </h2>
+
+            <p className={styles.text}>
+              La obligación alimentaria normalmente se mantiene mientras el hijo
+              menor de edad requiera el apoyo económico de sus padres. Sin
+              embargo, cumplir la mayoría de edad no implica automáticamente que
+              desaparezca esta obligación, ya que cada caso debe analizarse
+              según las circunstancias particulares.
+            </p>
+
+            <p className={styles.text}>
+              Cuando el hijo continúa realizando estudios, depende
+              económicamente de sus padres o presenta condiciones especiales de
+              salud o discapacidad, la obligación alimentaria puede mantenerse
+              por un tiempo adicional conforme a la legislación colombiana y a
+              las decisiones adoptadas por las autoridades competentes.
+            </p>
+
+            <p className={styles.text}>
+              Si existen dudas sobre la continuidad de la cuota alimentaria, es
+              posible acudir a un proceso de conciliación para revisar las
+              nuevas circunstancias familiares y establecer un acuerdo
+              actualizado.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Casos en los que puede aumentarse o disminuirse la cuota
+              alimentaria
+            </h2>
+
+            <p className={styles.text}>
+              La cuota alimentaria no es definitiva. Cuando cambian las
+              condiciones económicas de alguno de los padres o aumentan las
+              necesidades del menor, es posible solicitar su modificación
+              mediante conciliación o, si no existe acuerdo, por medio de un
+              proceso judicial.
+            </p>
+
+            <p className={styles.text}>
+              La finalidad de estos ajustes es garantizar que el menor continúe
+              recibiendo el apoyo necesario para su desarrollo, mientras se
+              mantiene un equilibrio frente a la capacidad económica de quien
+              debe cumplir la obligación.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Disminución o pérdida del empleo.</li>
+              <li>Aumento de ingresos de alguno de los padres.</li>
+              <li>Nuevos gastos médicos del menor.</li>
+              <li>Cambio de institución educativa.</li>
+              <li>Incremento del costo de vida.</li>
+              <li>Necesidades especiales del menor.</li>
+              <li>Nacimiento de nuevos hijos.</li>
+            </ul>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué ocurre si no se logra un acuerdo durante la conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              Aunque la conciliación busca que las partes lleguen
+              voluntariamente a un acuerdo, existen situaciones en las que no es
+              posible alcanzar un consenso. En estos casos, el centro de
+              conciliación deja constancia de que la audiencia fue realizada sin
+              éxito.
+            </p>
+
+            <p className={styles.text}>
+              Esta constancia puede servir para continuar con las acciones
+              legales que correspondan, incluyendo la presentación de una
+              demanda ante la autoridad competente para que sea un juez quien
+              determine el valor de la cuota alimentaria o resuelva el conflicto
+              familiar.
+            </p>
+
+            <p className={styles.text}>
+              Intentar primero una conciliación sigue siendo una alternativa
+              recomendable, ya que puede ahorrar tiempo, costos y evitar un
+              proceso judicial más largo.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Errores frecuentes durante una conciliación de cuota alimentaria
+            </h2>
+
+            <p className={styles.text}>
+              Prepararse adecuadamente para una audiencia de conciliación
+              aumenta las posibilidades de alcanzar un acuerdo estable y
+              beneficioso para ambas partes. Algunos errores pueden dificultar
+              la negociación o generar futuros conflictos relacionados con el
+              cumplimiento de la cuota alimentaria.
+            </p>
+
+            <ul className={styles.list}>
+              <li>No llevar soportes de ingresos y gastos.</li>
+              <li>Ocultar información económica relevante.</li>
+              <li>No incluir gastos extraordinarios del menor.</li>
+              <li>Establecer cuotas imposibles de cumplir.</li>
+              <li>No definir fechas claras de pago.</li>
+              <li>
+                Omitir la forma en que se asumirán gastos médicos o educativos.
+              </li>
+              <li>
+                No dejar claramente establecidos los compromisos de cada padre.
+              </li>
+            </ul>
+
+            <p className={styles.text}>
+              Contar con una adecuada preparación documental y con orientación
+              jurídica facilita acuerdos más completos, disminuye el riesgo de
+              incumplimientos y brinda mayor seguridad para proteger los
+              derechos del menor.
+            </p>
+          </div>
+
+          {/* BLOQUE NUEVO */}
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿En qué situaciones es recomendable solicitar una conciliación de
+              alimentos?
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación puede utilizarse en diferentes momentos de la
+              relación familiar, no únicamente cuando existe un conflicto grave.
+              Muchas familias la emplean como un mecanismo preventivo para
+              establecer reglas claras sobre las obligaciones económicas
+              relacionadas con los hijos menores de edad.
+            </p>
+
+            <p className={styles.text}>
+              También es una alternativa útil cuando las circunstancias
+              familiares cambian y resulta necesario actualizar acuerdos
+              previamente establecidos, evitando procesos judiciales más largos
+              y costosos.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Separación o divorcio de los padres.</li>
+              <li>Primera fijación de la cuota alimentaria.</li>
+              <li>Incumplimiento de acuerdos anteriores.</li>
+              <li>Solicitud de aumento o disminución de la cuota.</li>
+              <li>Cambios importantes en los ingresos familiares.</li>
+              <li>Nuevos gastos escolares, médicos o universitarios.</li>
+              <li>
+                Necesidad de definir la distribución de gastos extraordinarios.
+              </li>
+              <li>Conflictos relacionados con el sostenimiento del menor.</li>
+            </ul>
+
+            <p className={styles.text}>
+              Resolver estas situaciones mediante conciliación permite obtener
+              acuerdos con efectos legales, favoreciendo el bienestar del menor
+              y reduciendo el desgaste emocional que suele implicar un proceso
+              judicial.
             </p>
           </div>
 

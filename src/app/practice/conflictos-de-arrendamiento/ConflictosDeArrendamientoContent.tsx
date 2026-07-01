@@ -20,18 +20,26 @@ export default function ConflictosDeArrendamientoContent() {
           </span>
 
           <h1 className={styles.title}>
-            Conciliación en arrendamientos en Colombia: resuelva conflictos sin
-            demanda judicial
+            Conciliación en conflictos de arrendamiento en Colombia: resuelva
+            problemas entre arrendador y arrendatario sin acudir a un juez
           </h1>
 
           <p className={styles.description}>
-            La conciliación en conflictos de arrendamiento permite solucionar
-            problemas entre arrendadores y arrendatarios de forma rápida, legal
-            y efectiva en Bogotá y Colombia, evitando procesos judiciales largos
-            como restitución de inmueble, demandas civiles o cobros ejecutivos.
-            Este mecanismo facilita acuerdos claros sobre pagos, entrega del
-            inmueble, reparación de daños y cumplimiento contractual con plena
-            validez jurídica.
+            Si usted es arrendador o arrendatario y enfrenta problemas
+            relacionados con el pago del canon de arrendamiento, la entrega del
+            inmueble, incumplimientos del contrato, daños a la propiedad,
+            servicios públicos o terminación del contrato, la conciliación puede
+            ser la alternativa más rápida para resolver el conflicto sin iniciar
+            un proceso judicial.
+          </p>
+
+          <p className={styles.description}>
+            La conciliación en conflictos de arrendamiento en Colombia permite
+            construir acuerdos con efectos legales entre las partes, reduciendo
+            costos, tiempos y el desgaste que implica acudir ante un juez. En
+            una audiencia es posible negociar pagos pendientes, cronogramas de
+            entrega, restitución voluntaria del inmueble, reparación de daños y
+            otras obligaciones derivadas del contrato.
           </p>
         </motion.div>
 
@@ -40,8 +48,8 @@ export default function ConflictosDeArrendamientoContent() {
           {/* BLOQUE 1 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Qué es un conflicto de arrendamiento y cómo resolverlo en
-              Colombia?
+              ¿Cómo resolver un conflicto de arrendamiento en Colombia sin
+              acudir a una demanda?
             </h2>
 
             <p className={styles.text}>
@@ -71,7 +79,8 @@ export default function ConflictosDeArrendamientoContent() {
           {/* BLOQUE 2 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Conflictos de arrendamiento que se pueden conciliar en Colombia
+              ¿Qué problemas entre arrendador y arrendatario pueden resolverse
+              mediante conciliación?
             </h2>
 
             <p className={styles.text}>
@@ -100,10 +109,43 @@ export default function ConflictosDeArrendamientoContent() {
             </p>
           </div>
 
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué contratos de arrendamiento pueden solucionarse mediante
+              conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación no se limita únicamente a contratos de vivienda
+              urbana. También puede utilizarse para resolver controversias
+              derivadas de diferentes modalidades de arrendamiento siempre que
+              el asunto sea conciliable conforme a la legislación colombiana.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Arrendamiento de vivienda urbana.</li>
+              <li>Locales comerciales.</li>
+              <li>Oficinas.</li>
+              <li>Bodegas.</li>
+              <li>Consultorios.</li>
+              <li>Parqueaderos.</li>
+              <li>Inmuebles destinados a actividades empresariales.</li>
+              <li>Inmuebles destinados a uso mixto.</li>
+            </ul>
+
+            <p className={styles.text}>
+              Cada contrato puede presentar conflictos distintos; sin embargo,
+              la conciliación permite construir acuerdos ajustados a las
+              necesidades específicas de las partes antes de acudir a un proceso
+              judicial.
+            </p>
+          </div>
+
           {/* BLOQUE 3 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              Beneficios de la conciliación en conflictos de arrendamiento
+              ¿Por qué elegir la conciliación antes de demandar por un contrato
+              de arrendamiento?
             </h2>
 
             <div className={styles.grid}>
@@ -164,7 +206,8 @@ export default function ConflictosDeArrendamientoContent() {
           {/* BLOQUE 4 */}
           <div className={styles.block}>
             <h2 className={styles.blockTitle}>
-              ¿Por qué evitar una demanda por arrendamiento en Colombia?
+              ¿Cuándo conviene conciliar un conflicto de arrendamiento antes de
+              acudir a un juez?
             </h2>
 
             <p className={styles.text}>
@@ -186,6 +229,37 @@ export default function ConflictosDeArrendamientoContent() {
               enfocadas en acuerdos de pago, entrega voluntaria del inmueble,
               refinanciación de obligaciones o terminación organizada del
               contrato de arrendamiento.
+            </p>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Documentos recomendados para una conciliación de arrendamiento
+            </h2>
+
+            <p className={styles.text}>
+              Aunque cada caso es diferente, presentar la documentación
+              relacionada con el contrato facilita la audiencia y permite
+              analizar el conflicto con mayor claridad.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Contrato de arrendamiento.</li>
+              <li>Otrosí o modificaciones.</li>
+              <li>Comprobantes de pago.</li>
+              <li>Estados de cuenta.</li>
+              <li>Mensajes de WhatsApp.</li>
+              <li>Correos electrónicos.</li>
+              <li>Fotografías del inmueble.</li>
+              <li>Inventario de entrega.</li>
+              <li>Facturas por reparaciones.</li>
+              <li>Recibos de servicios públicos.</li>
+            </ul>
+
+            <p className={styles.text}>
+              Contar con estos soportes facilita que las partes negocien
+              acuerdos claros sobre pagos, reparaciones, entrega del inmueble y
+              demás obligaciones derivadas del contrato.
             </p>
           </div>
 
@@ -241,6 +315,109 @@ export default function ConflictosDeArrendamientoContent() {
               Un acuerdo claro y bien redactado puede evitar futuros procesos
               judiciales y facilitar el cumplimiento de las obligaciones por
               ambas partes.
+            </p>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              Problemas más frecuentes entre arrendadores y arrendatarios en
+              Colombia
+            </h2>
+
+            <p className={styles.text}>
+              Los conflictos derivados de contratos de arrendamiento pueden
+              surgir en cualquier etapa de la relación contractual. En algunos
+              casos el desacuerdo aparece por el incumplimiento en el pago del
+              canon, mientras que en otros está relacionado con la entrega del
+              inmueble, daños ocasionados durante la ocupación, reparaciones
+              locativas o terminación anticipada del contrato.
+            </p>
+
+            <p className={styles.text}>
+              También son frecuentes las controversias sobre el incremento del
+              canon, devolución del depósito, pago de servicios públicos,
+              administración, mejoras realizadas al inmueble y cumplimiento de
+              las obligaciones pactadas entre las partes. La conciliación
+              permite analizar cada situación de forma imparcial y construir
+              acuerdos que reduzcan el riesgo de un proceso judicial.
+            </p>
+
+            <p className={styles.text}>
+              Cuando existe disposición para negociar, muchas diferencias pueden
+              solucionarse mediante acuerdos que beneficien tanto al propietario
+              como al arrendatario, evitando mayores costos económicos y tiempos
+              prolongados de litigio.
+            </p>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué acuerdos pueden lograrse durante una conciliación de
+              arrendamiento?
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación ofrece flexibilidad para que las partes construyan
+              acuerdos adaptados a sus necesidades. Dependiendo del conflicto,
+              es posible pactar cronogramas de pago, fechas de entrega del
+              inmueble, reducción de deudas, compensaciones económicas,
+              reconocimiento de reparaciones, distribución de gastos pendientes
+              o modificaciones al contrato.
+            </p>
+
+            <p className={styles.text}>
+              Los acuerdos alcanzados quedan consignados en un acta de
+              conciliación con efectos jurídicos, brindando seguridad tanto al
+              arrendador como al arrendatario y disminuyendo la probabilidad de
+              nuevos conflictos sobre el mismo contrato.
+            </p>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Qué sucede si no se llega a un acuerdo durante la conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              No todas las audiencias terminan con un acuerdo. Cuando las partes
+              no logran resolver sus diferencias, la conciliación deja
+              constancia del intento realizado y cada interesado conserva la
+              posibilidad de acudir a las acciones judiciales que correspondan.
+            </p>
+
+            <p className={styles.text}>
+              Sin embargo, incluso cuando no se alcanza un acuerdo definitivo,
+              la audiencia suele permitir identificar puntos de consenso que
+              facilitan una negociación posterior o reducen el alcance del
+              conflicto.
+            </p>
+          </div>
+
+          <div className={styles.block}>
+            <h2 className={styles.blockTitle}>
+              ¿Por qué cada vez más propietarios y arrendatarios prefieren la
+              conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              La conciliación permite encontrar soluciones en menos tiempo que
+              un proceso judicial, disminuye el riesgo de nuevos conflictos y
+              brinda a ambas partes la posibilidad de construir acuerdos
+              flexibles que respondan a sus necesidades económicas y
+              contractuales.
+            </p>
+
+            <p className={styles.text}>
+              En lugar de esperar durante meses el resultado de una demanda,
+              muchas personas optan por negociar pagos, entregas voluntarias del
+              inmueble, cronogramas de cumplimiento o modificaciones al contrato
+              mediante una audiencia de conciliación.
+            </p>
+
+            <p className={styles.text}>
+              Esto favorece tanto al arrendador, que busca proteger su
+              patrimonio, como al arrendatario, que puede regularizar su
+              situación sin enfrentar inmediatamente un litigio.
             </p>
           </div>
 
