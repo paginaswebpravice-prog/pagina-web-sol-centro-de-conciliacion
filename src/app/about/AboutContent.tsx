@@ -12,7 +12,7 @@ const lawyers = [
     slug: "/about/Doc_Harrison",
     image: "/doc-harrison.jpg",
     description:
-      "Abogado conciliador con experiencia en resolución de conflictos civiles, familiares y patrimoniales mediante conciliación extrajudicial en Colombia. Enfocado en lograr acuerdos efectivos, ágiles y legalmente seguros.",
+      "Abogado conciliador con experiencia en conciliación extrajudicial en asuntos civiles, familiares, comerciales y patrimoniales. Acompaña a personas y empresas en la resolución de conflictos mediante acuerdos legales, seguros y con plena validez jurídica, buscando soluciones ágiles que eviten procesos judiciales innecesarios.",
   },
   {
     name: "Dra. Leidy Tirado",
@@ -20,7 +20,7 @@ const lawyers = [
     slug: "/about/Doc_Leidy",
     image: "/doc-leidy.jpg",
     description:
-      "CCO y abogada conciliadora con experiencia en gestión estratégica de conflictos y acompañamiento jurídico en procesos de conciliación familiar, civil y comercial en Colombia.",
+      "CCO y abogada conciliadora especializada en mecanismos alternativos de solución de conflictos, conciliación familiar, civil y comercial. Brinda acompañamiento jurídico estratégico durante todas las etapas del procedimiento conciliatorio.",
   },
   {
     name: "Dra. Angie Rivera",
@@ -28,7 +28,7 @@ const lawyers = [
     slug: "/about/Doc_Angie",
     image: "/doc-angie.jpg",
     description:
-      "Abogada conciliadora con enfoque en mecanismos alternativos de solución de conflictos, orientada a brindar acompañamiento legal cercano, transparente y eficiente en procesos extrajudiciales.",
+      "Abogada conciliadora enfocada en la resolución alternativa de conflictos mediante procesos de conciliación extrajudicial. Su experiencia permite orientar a las partes hacia acuerdos claros, equilibrados y jurídicamente sólidos.",
   },
 ];
 
@@ -75,18 +75,56 @@ export default function About() {
           </span>
 
           <h1 className={styles.title} itemProp="name">
-            Abogados conciliadores comprometidos con soluciones legales
-            efectivas
+            Conozca a nuestro equipo de abogados conciliadores especializados en
+            resolución de conflictos y conciliación extrajudicial
           </h1>
 
           <p className={styles.intro}>
             En <strong>SOL Centro de Conciliación y Arbitraje</strong> contamos
-            con un equipo de abogados conciliadores en Bogotá con experiencia en
-            resolución alternativa de conflictos, conciliación extrajudicial y
-            acompañamiento legal en asuntos familiares, civiles, comerciales y
-            patrimoniales en Colombia.
+            con un equipo de abogados conciliadores con experiencia en
+            mecanismos alternativos de solución de conflictos. Brindamos
+            acompañamiento jurídico a personas, familias, empresas y
+            organizaciones que buscan resolver controversias mediante
+            conciliación extrajudicial, evitando procesos judiciales largos y
+            costosos.
+          </p>
+
+          <p className={styles.intro}>
+            Nuestro equipo interviene en asuntos civiles, comerciales,
+            familiares, laborales, patrimoniales y obligaciones económicas,
+            orientando cada procedimiento para lograr acuerdos claros,
+            equilibrados y con plena validez jurídica conforme a la legislación
+            colombiana.
           </p>
         </motion.div>
+
+        <section className={styles.infoSection}>
+          <h2>
+            ¿Por qué elegir un abogado conciliador para resolver un conflicto?
+          </h2>
+
+          <p>
+            Aunque muchas personas asocian los conflictos legales con demandas y
+            largos procesos judiciales, en numerosos casos la legislación
+            colombiana permite acudir primero a la conciliación extrajudicial
+            como un mecanismo rápido, económico y jurídicamente seguro para
+            alcanzar acuerdos entre las partes.
+          </p>
+
+          <p>
+            Contar con un abogado conciliador facilita la preparación de la
+            audiencia, la identificación de alternativas de solución y la
+            construcción de acuerdos claros que protejan los derechos de todos
+            los involucrados.
+          </p>
+
+          <p>
+            En SOL Centro de Conciliación acompañamos procedimientos
+            relacionados con asuntos civiles, familiares, comerciales, laborales
+            y patrimoniales, siempre buscando soluciones equilibradas que
+            permitan evitar litigios innecesarios.
+          </p>
+        </section>
 
         {/* ================= GRID ================= */}
         <div className={styles.grid}>
@@ -127,7 +165,7 @@ export default function About() {
                 {/* BOTONES */}
                 <div className={styles.buttonGroup}>
                   <Link href={lawyer.slug} className={styles.secondaryButton}>
-                    Conocer perfil
+                    Ver perfil profesional
                   </Link>
 
                   <a
@@ -142,6 +180,52 @@ export default function About() {
             </motion.article>
           ))}
         </div>
+
+        <section className={styles.infoSection}>
+          <h2>
+            Nuestro equipo interviene en diferentes áreas de la conciliación
+            extrajudicial
+          </h2>
+
+          <p>
+            Cada abogado conciliador del equipo participa en procesos de
+            conciliación relacionados con conflictos familiares, obligaciones
+            económicas, contratos, arrendamientos, propiedad horizontal, asuntos
+            comerciales, responsabilidad civil, alimentos, custodia, régimen de
+            visitas, liquidación de sociedad conyugal y otros conflictos
+            conciliables conforme a la legislación colombiana.
+          </p>
+
+          <p>
+            Nuestro objetivo no consiste únicamente en celebrar audiencias de
+            conciliación. También brindamos orientación jurídica para que las
+            partes comprendan sus derechos, conozcan las diferentes alternativas
+            disponibles y puedan adoptar decisiones informadas durante todo el
+            procedimiento.
+          </p>
+        </section>
+
+        <section className={styles.infoSection}>
+          <h2>
+            Experiencia jurídica orientada a soluciones rápidas y acuerdos
+            duraderos
+          </h2>
+
+          <p>
+            La conciliación extrajudicial requiere conocimiento jurídico,
+            habilidades de negociación y experiencia en resolución alternativa
+            de conflictos. Por ello nuestro equipo trabaja para facilitar
+            acuerdos sostenibles que reduzcan tiempos, costos y el desgaste
+            emocional que normalmente implica un proceso judicial.
+          </p>
+
+          <p>
+            Cada caso es estudiado de manera individual con el propósito de
+            identificar la mejor estrategia jurídica y promover soluciones que
+            beneficien a todas las partes involucradas dentro del marco legal
+            colombiano.
+          </p>
+        </section>
       </section>
 
       <CTASection />

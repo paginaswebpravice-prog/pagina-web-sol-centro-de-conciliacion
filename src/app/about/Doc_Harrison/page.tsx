@@ -3,22 +3,31 @@ import DocHarriContent from "./DocHarriContent";
 
 export const metadata: Metadata = {
   title:
-    "Harrison Perez | Abogado conciliador en Colombia | Derecho de familia, laboral y tributario",
+    "Harrison Perez | Abogado Conciliador en Colombia | Familia, Laboral y Civil",
+
   description:
-    "Abogado conciliador en Colombia especializado en derecho de familia, laboral y tributario. Conciliación extrajudicial, resolución de conflictos y acuerdos legales.",
+    "Conoce al abogado conciliador Harrison Perez. Especialista en conciliación extrajudicial en derecho de familia, laboral y civil. Agenda tu consulta con Sol Centro de Conciliación.",
+
   keywords: [
+    "Harrison Perez",
     "abogado conciliador Colombia",
-    "conciliación extrajudicial Colombia",
-    "derecho de familia Colombia",
-    "derecho laboral Colombia",
-    "derecho tributario Colombia",
-    "resolución de conflictos",
-    "abogados en Bogotá",
+    "conciliador en derecho",
+    "conciliación familiar",
+    "conciliación laboral",
+    "conciliación civil",
+    "conciliación alimentos",
+    "conciliación custodia",
+    "conciliación liquidación laboral",
+    "conciliación despidos",
+    "conciliación extrajudicial",
+    "Sol Centro de Conciliación",
   ],
   openGraph: {
-    title: "Harrison Perez | Abogado conciliador en Colombia",
+    title: "Harrison Perez | Abogado Conciliador en Colombia",
+
     description:
-      "Especialista en conciliación extrajudicial, derecho de familia, laboral y tributario en Colombia.",
+      "Especialista en conciliación de familia, laboral y civil. Acuerdos legales rápidos, seguros y con plena validez jurídica.",
+
     url: "https://solcentrodeconciliacion.com/about/Doc_Harrison",
     siteName: "Sol Centro de Conciliación",
     images: [
@@ -39,6 +48,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   const schema = {
+    description:
+      "Abogado conciliador en Colombia especializado en conciliación extrajudicial en asuntos de familia, laboral y conflictos civiles, facilitando acuerdos con plena validez jurídica.",
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Harrison Perez",
@@ -46,8 +57,8 @@ export default function Page() {
     image: "https://solcentrodeconciliacion.com/doc-harrison.jpg",
     url: "https://solcentrodeconciliacion.com/abogados/harrison-perez",
     worksFor: {
-      "@type": "Organization",
-      name: "Sol Centro de Conciliación",
+      "@type": "LegalService",
+      name: "SOL Centro de Conciliación",
       url: "https://solcentrodeconciliacion.com",
     },
     knowsAbout: [
@@ -63,6 +74,15 @@ export default function Page() {
       addressCountry: "Colombia",
     },
     sameAs: ["https://www.solcentrodeconciliacion.com"],
+
+    hasOccupation: {
+      "@type": "Occupation",
+      name: "Abogado Conciliador",
+      occupationLocation: {
+        "@type": "Country",
+        name: "Colombia",
+      },
+    },
   };
 
   return (

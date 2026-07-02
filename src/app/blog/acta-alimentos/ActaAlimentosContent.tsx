@@ -139,8 +139,8 @@ export default function ActaAlimentosContent() {
             viewport={{ once: true }}
           >
             <motion.h1 className={styles.title} itemProp="headline">
-              Acta de conciliación de alimentos en Colombia: ejemplo completo,
-              requisitos y guía legal 2026
+              Acta de conciliación de alimentos en Colombia: formato, ejemplo
+              completo, requisitos y efectos legales
             </motion.h1>
 
             <p className={styles.text} itemProp="description">

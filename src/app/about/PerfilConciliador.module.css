@@ -342,6 +342,184 @@
 }
 
 /* =============================
+   SERVICES
+============================= */
+
+.servicesSection {
+  padding: 110px 8%;
+  background: #f8fafb;
+}
+
+.servicesSection h2 {
+  max-width: 900px;
+  margin: 0 auto 22px;
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #1a414a;
+  line-height: 1.25;
+}
+
+.servicesSection > p {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  text-align: center;
+  color: #555;
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+.servicesGrid {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.servicesGrid article {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  border: 1px solid #ececec;
+  transition: all 0.35s ease;
+}
+
+.servicesGrid article:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  border-color: #1a414a20;
+}
+
+.servicesGrid h3 {
+  font-size: 1.35rem;
+  color: #1a414a;
+  margin-bottom: 18px;
+  line-height: 1.35;
+}
+
+.servicesGrid p {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #555;
+}
+
+/* =============================
+   BENEFITS
+============================= */
+
+.benefitsSection {
+  padding: 110px 8%;
+  background: white;
+}
+
+.benefitsSection h2 {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #1a414a;
+  max-width: 900px;
+  margin: auto auto 30px;
+  line-height: 1.25;
+}
+
+.benefitsSection > p {
+  max-width: 900px;
+  margin: auto auto 60px;
+  text-align: center;
+  line-height: 1.9;
+  font-size: 1.08rem;
+  color: #555;
+}
+
+.benefitsSection ul {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.benefitsSection li {
+  background: #f8fafb;
+  padding: 24px 28px;
+  border-radius: 14px;
+  border: 1px solid #ececec;
+  font-size: 1rem;
+  line-height: 1.7;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: 0.3s;
+}
+
+.benefitsSection li::before {
+  content: "✓";
+  color: #fbbc05;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+
+.benefitsSection li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* =============================
+   PROCESS
+============================= */
+
+.processSection {
+  padding: 110px 8%;
+  background: #f8fafb;
+}
+
+.processSection h2 {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: #1a414a;
+  margin: auto auto 70px;
+  max-width: 900px;
+  line-height: 1.25;
+}
+
+.processGrid {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.processGrid div {
+  background: white;
+  padding: 38px 30px;
+  border-radius: 18px;
+  border: 1px solid #ececec;
+  position: relative;
+  transition: 0.35s;
+}
+
+.processGrid div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.processGrid h3 {
+  color: #1a414a;
+  font-size: 1.25rem;
+  margin-bottom: 18px;
+  line-height: 1.35;
+}
+
+.processGrid p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* =============================
    SEO OCULTO
 ============================= */
 
@@ -417,6 +595,20 @@
   .methodGrid {
     grid-template-columns: 1fr;
   }
+
+  .servicesSection,
+  .benefitsSection,
+  .processSection {
+    padding: 80px 20px;
+  }
+
+  .benefitsSection ul {
+    grid-template-columns: 1fr;
+  }
+
+  .processGrid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -459,5 +651,24 @@
   .buttons {
     width: 100%;
     flex-direction: column;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .processGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .servicesSection h2,
+  .benefitsSection h2,
+  .processSection h2 {
+    font-size: 2rem;
+  }
+
+  .servicesSection > p,
+  .benefitsSection > p {
+    font-size: 1rem;
   }
 }

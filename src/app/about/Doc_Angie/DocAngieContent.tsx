@@ -17,31 +17,40 @@ export default function DocAngieContent() {
               transition={{ duration: 0.6 }}
               className={styles.name}
             >
-              Dra. Angie Rivera
+              Dra. Angie Rivera Abogada conciliadora en Colombia
             </motion.h1>
 
             <h2 className={styles.role}>
-              Abogada Conciliadora en Colombia · Especialista en Gestión de
-              Cartera, Recuperación de Activos y Derecho Comercial
+              Abogada conciliadora en Colombia con experiencia en conciliación
+              comercial, recuperación de cartera, negociación de acuerdos de
+              pago, derecho comercial, procesos ejecutivos y resolución
+              extrajudicial de conflictos empresariales.
             </h2>
 
             <p className={styles.summary}>
-              Abogada conciliadora con experiencia en gestión estratégica de
-              cartera, recuperación de activos y resolución de conflictos
-              financieros y comerciales mediante conciliación extrajudicial en
-              derecho en Colombia. Especialista en derecho comercial y procesos
-              ejecutivos, acompaña a empresas y particulares en la negociación
-              de obligaciones, estructuración de acuerdos de pago y
-              formalización de soluciones jurídicas con plena validez legal.
+              La <strong>Dra. Angie Rivera</strong> es abogada conciliadora en
+              Colombia con experiencia en conciliación extrajudicial en derecho,
+              recuperación de cartera, derecho comercial y negociación
+              estratégica de conflictos empresariales. Acompaña a empresas,
+              organizaciones y particulares en la construcción de acuerdos
+              jurídicos que permiten solucionar controversias de forma más
+              rápida, eficiente y segura, evitando procesos judiciales largos y
+              costosos.
               <br />
               <br />
-              Su enfoque profesional está orientado a proteger la estabilidad
-              financiera de cada cliente mediante estrategias de conciliación
-              ágiles y enfocadas en resultados, evitando procesos judiciales
-              extensos y reduciendo riesgos legales y económicos. Combina
-              análisis jurídico, visión financiera y capacidad de negociación
-              para construir acuerdos claros, ejecutables y alineados con los
-              objetivos de cada empresa o particular.
+              Su práctica profesional se enfoca en la recuperación de activos,
+              estructuración de acuerdos de pago, conciliaciones comerciales,
+              incumplimientos contractuales y resolución de conflictos
+              financieros, brindando asesoría integral durante todas las etapas
+              del proceso conciliatorio.
+              <br />
+              <br />
+              Gracias a su combinación de conocimientos en derecho comercial,
+              negociación y mecanismos alternativos de solución de conflictos,
+              desarrolla estrategias jurídicas orientadas a proteger la
+              estabilidad económica de sus clientes, fortalecer las relaciones
+              comerciales y lograr acuerdos con plena validez jurídica conforme
+              a la legislación colombiana.
             </p>
 
             <div className={styles.buttons}>
@@ -197,6 +206,152 @@ export default function DocAngieContent() {
           <div>
             <span>4</span>
             <p>Formalización legal, seguimiento y garantía de cumplimiento</p>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.servicesSection}>
+        <h2>¿En qué casos puede ayudarte la Dra. Angie Rivera?</h2>
+
+        <p>
+          La conciliación extrajudicial permite resolver una gran variedad de
+          conflictos comerciales y financieros sin acudir inmediatamente a un
+          proceso judicial. La Dra. Angie Rivera brinda acompañamiento jurídico
+          durante todas las etapas de la negociación para alcanzar acuerdos
+          seguros y ejecutables.
+        </p>
+
+        <div className={styles.servicesGrid}>
+          <article>
+            <h3>Conciliación comercial entre empresas</h3>
+
+            <p>
+              Solución de conflictos derivados de contratos comerciales,
+              incumplimientos, obligaciones económicas, proveedores, clientes y
+              relaciones entre sociedades.
+            </p>
+          </article>
+
+          <article>
+            <h3>Recuperación de cartera</h3>
+
+            <p>
+              Diseño de estrategias jurídicas para recuperar obligaciones
+              vencidas mediante negociación y conciliación, reduciendo tiempos y
+              costos judiciales.
+            </p>
+          </article>
+
+          <article>
+            <h3>Acuerdos de pago</h3>
+
+            <p>
+              Elaboración y formalización de acuerdos de pago que brindan
+              seguridad jurídica tanto al acreedor como al deudor.
+            </p>
+          </article>
+
+          <article>
+            <h3>Derecho comercial</h3>
+
+            <p>
+              Asesoría en controversias empresariales relacionadas con
+              contratos, obligaciones mercantiles y relaciones comerciales.
+            </p>
+          </article>
+
+          <article>
+            <h3>Prevención de litigios</h3>
+
+            <p>
+              Implementación de soluciones conciliatorias que disminuyen el
+              riesgo de procesos judiciales y favorecen la continuidad de las
+              relaciones comerciales.
+            </p>
+          </article>
+
+          <article>
+            <h3>Negociación estratégica</h3>
+
+            <p>
+              Representación y acompañamiento durante procesos de negociación
+              para alcanzar acuerdos equilibrados, sostenibles y legalmente
+              válidos.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section className={styles.benefitsSection}>
+        <h2>
+          Beneficios de resolver conflictos mediante conciliación comercial
+        </h2>
+
+        <p>
+          La conciliación comercial constituye uno de los mecanismos más
+          eficientes para resolver controversias entre empresas y particulares.
+          Permite alcanzar acuerdos sin recurrir a procesos judiciales
+          prolongados, preservando las relaciones comerciales y reduciendo
+          significativamente los costos legales.
+        </p>
+
+        <ul>
+          <li>Reducción de tiempos frente a un proceso judicial.</li>
+
+          <li>Menores costos legales.</li>
+
+          <li>Acuerdos con plena validez jurídica.</li>
+
+          <li>Protección de las relaciones comerciales.</li>
+
+          <li>Mayor flexibilidad durante la negociación.</li>
+
+          <li>Confidencialidad durante todo el procedimiento.</li>
+
+          <li>Disminución del riesgo económico.</li>
+
+          <li>Mayor probabilidad de cumplimiento voluntario.</li>
+        </ul>
+      </section>
+
+      <section className={styles.processSection}>
+        <h2>¿Cómo es un proceso de conciliación comercial?</h2>
+
+        <div className={styles.processGrid}>
+          <div>
+            <h3>1. Estudio del caso</h3>
+
+            <p>
+              Se analizan los documentos, contratos y obligaciones para
+              determinar la mejor estrategia jurídica.
+            </p>
+          </div>
+
+          <div>
+            <h3>2. Preparación de la conciliación</h3>
+
+            <p>
+              Se estructura la propuesta jurídica que será presentada durante la
+              audiencia.
+            </p>
+          </div>
+
+          <div>
+            <h3>3. Audiencia de conciliación</h3>
+
+            <p>
+              Las partes negocian con acompañamiento profesional buscando un
+              acuerdo justo.
+            </p>
+          </div>
+
+          <div>
+            <h3>4. Formalización del acuerdo</h3>
+
+            <p>
+              El acuerdo conciliatorio queda consignado en un acta con plena
+              validez legal.
+            </p>
           </div>
         </div>
       </section>

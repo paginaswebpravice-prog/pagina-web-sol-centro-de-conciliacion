@@ -3,17 +3,26 @@ import AboutContent from "./AboutContent";
 
 export const metadata: Metadata = {
   title:
-    "Abogados en Bogotá expertos en conciliación | Conoce el equipo que resuelve conflictos sin demanda",
+    "Abogados conciliadores en Bogotá y Colombia | Equipo experto en resolución de conflictos",
   description:
-    "Conoce nuestro equipo de abogados en Bogotá especializados en conciliación extrajudicial en Colombia. Resuelve conflictos de forma rápida, legal y sin procesos judiciales.",
+    "Conozca el equipo de abogados conciliadores de SOL Centro de Conciliación. Especialistas en conciliación extrajudicial, asuntos civiles, familiares, comerciales y laborales en Bogotá y toda Colombia. Reciba orientación jurídica y resuelva conflictos sin procesos judiciales prolongados.",
 
   keywords: [
-    "abogados en Bogotá",
-    "equipo jurídico Colombia",
     "abogados conciliadores Bogotá",
-    "centro de conciliación Colombia",
-    "abogados expertos en conciliación",
-    "equipo legal Bogotá",
+    "abogado conciliador Colombia",
+    "abogados conciliación extrajudicial",
+    "centro de conciliación Bogotá",
+    "equipo jurídico conciliación",
+    "abogados civiles Bogotá",
+    "abogados familiares Bogotá",
+    "abogados comerciales Bogotá",
+    "resolución de conflictos",
+    "mecanismos alternativos de solución de conflictos",
+    "conciliación familiar",
+    "conciliación civil",
+    "conciliación comercial",
+    "conciliación laboral",
+    "equipo legal Colombia",
   ],
 
   alternates: {

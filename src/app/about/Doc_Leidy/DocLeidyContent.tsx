@@ -67,24 +67,29 @@ export default function LeidyTiradoContent() {
             </motion.h1>
 
             <h2 className={styles.role}>
-              Especialista en conciliación extrajudicial, derecho comercial,
-              derecho empresarial y protección al consumidor en Colombia
+              Especialista en conciliación comercial, empresarial y protección
+              al consumidor en Colombia
             </h2>
 
             <p className={styles.summary}>
-              La Dra. Leidy Tirado brinda acompañamiento jurídico estratégico en
-              procesos de conciliación extrajudicial y resolución de conflictos
-              comerciales y empresariales en Colombia. Su enfoque combina visión
-              jurídica, criterio empresarial y negociación estructurada para
-              alcanzar acuerdos sólidos, eficientes y legalmente exigibles.
+              La Dra. Leidy Tirado acompaña empresas, comerciantes y
+              particulares en procesos de conciliación extrajudicial orientados
+              a resolver conflictos comerciales, empresariales y contractuales
+              sin necesidad de acudir a procesos judiciales prolongados. Su
+              experiencia le permite estructurar estrategias jurídicas enfocadas
+              en proteger los intereses económicos de las partes, preservar las
+              relaciones comerciales y construir acuerdos con plena validez
+              legal.
             </p>
 
             <p className={styles.summarySecondary}>
-              Cuenta con experiencia en derecho comercial colombiano, protección
-              al consumidor, recuperación de cartera, acuerdos de pago,
-              garantías mobiliarias y prevención de litigios, asesorando tanto a
-              empresas como a particulares en la construcción de soluciones
-              jurídicas seguras y sostenibles.
+              Cuenta con experiencia en recuperación de cartera, negociación de
+              obligaciones, incumplimientos contractuales, protección al
+              consumidor conforme a la Ley 1480 de 2011, garantías mobiliarias y
+              resolución de controversias empresariales. Cada proceso se
+              desarrolla con un enfoque preventivo, transparente y orientado a
+              generar soluciones jurídicas sostenibles para empresas y
+              particulares en toda Colombia.
             </p>
 
             <div className={styles.buttons}>
@@ -170,15 +175,10 @@ export default function LeidyTiradoContent() {
 
             <ul>
               <li>Conciliación en conflictos comerciales y empresariales</li>
-
               <li>Protección al consumidor conforme a la Ley 1480 de 2011</li>
-
               <li>Recuperación de cartera y acuerdos de pago</li>
-
               <li>Diseño, negociación y revisión de contratos comerciales</li>
-
               <li>Garantías mobiliarias y obligaciones mercantiles</li>
-
               <li>Prevención estratégica de litigios comerciales</li>
             </ul>
           </div>
@@ -216,6 +216,172 @@ export default function LeidyTiradoContent() {
           <div>
             <span>4</span>
             <p>Formalización legal del acuerdo con efectos ejecutivos</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= SERVICIOS ESPECIALIZADOS ================= */}
+      <section className={styles.servicesSection}>
+        <h2>
+          Servicios jurídicos y de conciliación en derecho comercial y
+          empresarial
+        </h2>
+
+        <p>
+          La Dra. Leidy Tirado acompaña a empresas, emprendedores y personas
+          naturales en la solución de conflictos comerciales mediante
+          conciliación extrajudicial y asesoría jurídica preventiva, buscando
+          acuerdos que disminuyan riesgos legales y eviten procesos judiciales
+          prolongados.
+        </p>
+
+        <div className={styles.servicesGrid}>
+          <article>
+            <h3>Conciliación en conflictos comerciales</h3>
+
+            <p>
+              Intervención jurídica en controversias derivadas de contratos,
+              incumplimientos, obligaciones comerciales, negociación entre
+              empresas y resolución de conflictos mercantiles mediante
+              conciliación.
+            </p>
+          </article>
+
+          <article>
+            <h3>Recuperación de cartera y acuerdos de pago</h3>
+
+            <p>
+              Diseño de estrategias para recuperación de cartera mediante
+              acuerdos de pago, conciliaciones extrajudiciales y mecanismos
+              legales que reduzcan costos y tiempos para las empresas.
+            </p>
+          </article>
+
+          <article>
+            <h3>Protección al consumidor</h3>
+
+            <p>
+              Asesoría jurídica relacionada con el Estatuto del Consumidor,
+              garantías, reclamaciones, responsabilidad de proveedores y
+              solución de conflictos entre consumidores y empresas.
+            </p>
+          </article>
+
+          <article>
+            <h3>Negociación y revisión contractual</h3>
+
+            <p>
+              Elaboración, revisión y negociación de contratos comerciales para
+              disminuir riesgos jurídicos y fortalecer la seguridad de las
+              relaciones empresariales.
+            </p>
+          </article>
+
+          <article>
+            <h3>Prevención de litigios</h3>
+
+            <p>
+              Acompañamiento preventivo para identificar riesgos legales y
+              construir soluciones antes de acudir a procesos judiciales.
+            </p>
+          </article>
+
+          <article>
+            <h3>Formalización de acuerdos</h3>
+
+            <p>
+              Redacción y estructuración jurídica de acuerdos conciliatorios con
+              plena validez legal conforme a la legislación colombiana.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* ================= BENEFICIOS ================= */}
+      <section className={styles.benefitsSection}>
+        <h2>
+          ¿Por qué elegir a la Dra. Leidy Tirado para un proceso de
+          conciliación?
+        </h2>
+
+        <p>
+          Cada conflicto comercial requiere una estrategia diferente. La
+          experiencia en negociación jurídica y derecho empresarial permite
+          construir acuerdos eficientes, equilibrados y legalmente exigibles.
+        </p>
+
+        <ul>
+          <li>
+            Experiencia en conciliación extrajudicial para conflictos
+            comerciales y empresariales.
+          </li>
+
+          <li>
+            Acompañamiento jurídico personalizado durante todas las etapas del
+            proceso.
+          </li>
+
+          <li>
+            Estrategias orientadas a prevenir litigios y disminuir riesgos
+            legales.
+          </li>
+
+          <li>
+            Protección de los intereses económicos tanto de empresas como de
+            particulares.
+          </li>
+
+          <li>
+            Acuerdos estructurados con plena validez jurídica y seguridad legal.
+          </li>
+
+          <li>
+            Cobertura para procesos de conciliación en todo el territorio
+            colombiano.
+          </li>
+        </ul>
+      </section>
+
+      {/* ================= PROCESO ================= */}
+      <section className={styles.processSection}>
+        <h2>¿Cómo se desarrolla un proceso de conciliación comercial?</h2>
+
+        <div className={styles.processGrid}>
+          <div>
+            <h3>Evaluación del caso</h3>
+
+            <p>
+              Se analiza el conflicto, la documentación disponible y las
+              posibilidades jurídicas para alcanzar un acuerdo entre las partes.
+            </p>
+          </div>
+
+          <div>
+            <h3>Estrategia jurídica</h3>
+
+            <p>
+              Se define la mejor estrategia de negociación teniendo en cuenta
+              los intereses de cada participante y el marco legal aplicable.
+            </p>
+          </div>
+
+          <div>
+            <h3>Conciliación</h3>
+
+            <p>
+              Se desarrolla la audiencia de conciliación buscando construir un
+              acuerdo voluntario, equilibrado y jurídicamente sólido.
+            </p>
+          </div>
+
+          <div>
+            <h3>Formalización</h3>
+
+            <p>
+              El acuerdo alcanzado se documenta conforme a la normativa
+              colombiana, otorgándole efectos jurídicos y seguridad para ambas
+              partes.
+            </p>
           </div>
         </div>
       </section>

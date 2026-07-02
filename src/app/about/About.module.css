@@ -27,12 +27,11 @@
 }
 
 .title {
-  text-align: center;
-  font-size: 42px;
+  font-size: clamp(2rem, 5vw, 3rem);
   line-height: 1.2;
   color: #123c3f;
   margin-bottom: 24px;
-  font-weight: 650;
+  font-weight: 700;
   letter-spacing: -0.5px;
 }
 
@@ -40,52 +39,84 @@
   font-size: 17px;
   line-height: 1.9;
   color: #4d5b5c;
-  max-width: 850px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto 18px;
+}
+
+/* =========================
+   SECCIONES INFORMATIVAS
+========================= */
+
+.infoSection {
+  max-width: 980px;
+  margin: 0 auto 70px;
+}
+
+.infoSection h2 {
+  font-size: clamp(1.7rem, 4vw, 2.3rem);
+  color: #123c3f;
+  margin-bottom: 22px;
+  line-height: 1.3;
+  font-weight: 650;
+}
+
+.infoSection p {
+  font-size: 16.5px;
+  color: #4d5b5c;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.infoSection strong {
+  color: #123c3f;
+  font-weight: 600;
 }
 
 /* =========================
    GRID
 ========================= */
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 45px;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 40px;
+  margin: 70px 0;
 }
 
 /* =========================
    CARD
 ========================= */
+
 .card {
-  background-color: #ffffff;
-  border: 1px solid #eaeaea;
-  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 18px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   transition:
     transform 0.35s ease,
     box-shadow 0.35s ease,
-    border 0.35s ease;
+    border-color 0.35s ease;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-  border-color: #123c3f15;
+  border-color: rgba(18, 60, 63, 0.15);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
 }
 
 /* =========================
    IMAGEN
 ========================= */
+
 .imageBox {
-  width: 100%;
-  height: 340px;
-  background-color: #f4f6f6;
+  background: #f6f7f8;
+  padding: 22px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 20px;
+  align-items: center;
+  height: 340px;
   overflow: hidden;
 }
 
@@ -93,50 +124,51 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 10px;
   transition:
-    transform 0.5s ease,
-    filter 0.5s ease;
+    transform 0.45s ease,
+    filter 0.45s ease;
   filter: grayscale(8%);
 }
 
 .card:hover .imageBox img {
-  transform: scale(1.05);
+  transform: scale(1.04);
   filter: grayscale(0%);
 }
 
 /* =========================
    CONTENIDO
 ========================= */
+
 .cardContent {
-  padding: 30px 28px 36px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  padding: 30px;
+  text-align: center;
 }
 
 .name {
-  font-size: 22px;
+  font-size: 24px;
   color: #123c3f;
-  margin-bottom: 6px;
-  font-weight: 650;
+  margin-bottom: 8px;
+  font-weight: 700;
 }
 
 .role {
+  display: inline-block;
   font-size: 13px;
-  color: #888;
-  display: block;
-  margin-bottom: 18px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
+  color: #7b8586;
+  margin-bottom: 18px;
 }
 
 .description {
-  font-size: 15px;
+  font-size: 15.5px;
   color: #555;
   line-height: 1.8;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   flex-grow: 1;
 }
 
@@ -146,65 +178,88 @@
 
 .buttonGroup {
   display: flex;
-  gap: 12px;
   justify-content: center;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
-/* Botón principal */
 .primaryButton {
-  background-color: #123c3f;
-  border: none;
-  color: #ffffff;
+  background: #123c3f;
+  color: #fff;
   padding: 12px 24px;
-  font-size: 14px;
-  font-weight: 500;
   border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
   text-decoration: none;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .primaryButton:hover {
-  background-color: #0f2f31;
+  background: #0f2f31;
   transform: translateY(-2px);
 }
 
-/* Botón secundario */
 .secondaryButton {
-  background-color: transparent;
   border: 1.5px solid #123c3f;
   color: #123c3f;
+  background: transparent;
   padding: 12px 24px;
-  font-size: 14px;
-  font-weight: 500;
   border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
   text-decoration: none;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .secondaryButton:hover {
-  background-color: #123c3f;
-  color: #ffffff;
+  background: #123c3f;
+  color: white;
   transform: translateY(-2px);
 }
 
 /* =========================
    RESPONSIVE
 ========================= */
+
+@media (max-width: 992px) {
+  .section {
+    padding: 90px 30px;
+  }
+
+  .grid {
+    gap: 30px;
+  }
+
+  .imageBox {
+    height: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .section {
     padding: 70px 20px;
   }
 
-  .title {
-    font-size: 30px;
+  .header {
+    margin-bottom: 50px;
   }
 
   .intro {
     font-size: 15.5px;
     line-height: 1.8;
+  }
+
+  .infoSection {
+    margin-bottom: 50px;
+  }
+
+  .infoSection p {
+    font-size: 15.5px;
+    line-height: 1.8;
+  }
+
+  .grid {
+    margin: 50px 0;
   }
 
   .imageBox {
@@ -218,5 +273,24 @@
   .primaryButton,
   .secondaryButton {
     width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 60px 18px;
+  }
+
+  .cardContent {
+    padding: 25px;
+  }
+
+  .name {
+    font-size: 21px;
+  }
+
+  .description {
+    font-size: 15px;
   }
 }

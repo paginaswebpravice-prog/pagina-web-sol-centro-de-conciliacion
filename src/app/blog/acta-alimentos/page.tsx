@@ -2,9 +2,10 @@ import { Metadata } from "next";
 import ActaAlimentosContent from "./ActaAlimentosContent";
 
 export const metadata: Metadata = {
-  title: "Acta de conciliación de alimentos en Colombia (ejemplo y guía 2026)",
+  title:
+    "Acta de conciliación de alimentos en Colombia: ejemplo, formato, requisitos y guía completa 2026",
   description:
-    "Guía completa sobre el acta de conciliación de alimentos en Colombia: ejemplo real, requisitos legales, artículo 411 del Código Civil y cómo hacerla en Bogotá.",
+    "Aprende cómo elaborar un acta de conciliación de alimentos en Colombia. Conoce el formato, ejemplo completo, requisitos, documentos, efectos legales, incumplimiento y procedimiento paso a paso.",
 
   keywords: [
     "acta de conciliación alimentos Colombia",

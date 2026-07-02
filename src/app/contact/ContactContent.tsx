@@ -66,16 +66,22 @@ export default function ContactContent() {
           </span>
 
           <h2 id="contact-title" itemProp="name">
-            Agenda tu consulta con abogados conciliadores en Bogotá y resuelve
-            tu caso de forma rápida y legal
+            Agenda tu consulta con abogados expertos en conciliación
+            extrajudicial y recibe asesoría jurídica en Bogotá y toda Colombia
           </h2>
 
-          <p className={styles.description} itemProp="description">
-            En SOL Centro de Conciliación te ayudamos a resolver conflictos
-            familiares, civiles, comerciales y laborales mediante conciliación
-            extrajudicial en derecho. Nuestro equipo jurídico brinda
-            acompañamiento estratégico para alcanzar acuerdos válidos, reducir
-            costos y evitar procesos judiciales prolongados.
+          <p className={styles.description}>
+            En Sol Centro de Conciliación ponemos a tu disposición un equipo de
+            abogados especializados en conciliación extrajudicial, derecho
+            civil, comercial, familiar y laboral para ayudarte a resolver
+            conflictos de manera rápida, segura y conforme a la legislación
+            colombiana. Brindamos asesoría jurídica personalizada para personas,
+            empresas y organizaciones que buscan evitar procesos judiciales
+            prolongados mediante acuerdos con plena validez legal. Nuestro
+            acompañamiento incluye análisis del caso, orientación estratégica,
+            negociación entre las partes y formalización de acuerdos
+            ejecutables. Ofrecemos atención presencial en Bogotá y modalidades
+            virtuales para usuarios ubicados en cualquier ciudad de Colombia.
           </p>
 
           <p className={styles.subInfo}>
@@ -87,18 +93,39 @@ export default function ContactContent() {
           {/* ================= BENEFICIOS ================= */}
           <div className={styles.benefits}>
             <div className={styles.benefitCard}>
-              <strong>Atención rápida</strong>
-              <span>Respuesta ágil para orientación jurídica.</span>
+              <strong>Respuesta rápida</strong>
+
+              <span>
+                Analizamos tu caso y te orientamos para iniciar el proceso
+                adecuado.
+              </span>
             </div>
 
             <div className={styles.benefitCard}>
-              <strong>Acuerdos con validez legal</strong>
-              <span>Conciliaciones respaldadas por la ley colombiana.</span>
+              <strong>Abogados conciliadores especializados</strong>
+
+              <span>
+                Equipo jurídico con experiencia en conflictos civiles,
+                familiares, comerciales y laborales.
+              </span>
             </div>
 
             <div className={styles.benefitCard}>
               <strong>Atención presencial y virtual</strong>
-              <span>Procesos disponibles en Bogotá y toda Colombia.</span>
+
+              <span>
+                Podemos atender procesos de conciliación en Bogotá y en
+                cualquier ciudad de Colombia.
+              </span>
+            </div>
+
+            <div className={styles.benefitCard}>
+              <strong>Acuerdos con plena validez legal</strong>
+
+              <span>
+                Las actas de conciliación producen efectos jurídicos conforme a
+                la ley colombiana.
+              </span>
             </div>
           </div>
 
@@ -108,7 +135,7 @@ export default function ContactContent() {
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
           >
-            Agendar consulta por WhatsApp ahora
+            Agendar consulta jurídica por WhatsApp
           </motion.button>
         </motion.div>
       </div>
@@ -122,7 +149,8 @@ export default function ContactContent() {
         viewport={{ once: true }}
       >
         <h2 className={styles.mapTitle}>
-          Ubicación de nuestra oficina de conciliación en Bogotá
+          Nuestra oficina de conciliación en Bogotá y atención jurídica para
+          toda Colombia
         </h2>
 
         <div className={styles.mapContainer}>
@@ -134,6 +162,124 @@ export default function ContactContent() {
           />
         </div>
       </motion.div>
+
+      <section className={styles.servicesSection}>
+        <div className={styles.servicesContainer}>
+          <h2>
+            ¿En qué casos puedes solicitar una consulta con nuestros abogados
+            conciliadores?
+          </h2>
+
+          <p>
+            Atendemos conflictos susceptibles de conciliación en diferentes
+            áreas del derecho, brindando orientación jurídica personalizada y
+            acompañamiento durante todo el procedimiento.
+          </p>
+
+          <div className={styles.servicesGrid}>
+            <article>
+              <h3>Conciliación en asuntos civiles</h3>
+
+              <p>
+                Conflictos derivados de contratos, obligaciones,
+                indemnizaciones, incumplimientos y responsabilidades civiles.
+              </p>
+            </article>
+
+            <article>
+              <h3>Conciliación comercial y empresarial</h3>
+
+              <p>
+                Controversias entre empresas, socios, proveedores, clientes y
+                contratos comerciales.
+              </p>
+            </article>
+
+            <article>
+              <h3>Conciliación laboral</h3>
+
+              <p>
+                Liquidaciones, despidos, acreencias laborales, indemnizaciones y
+                acuerdos entre empleadores y trabajadores.
+              </p>
+            </article>
+
+            <article>
+              <h3>Conciliación familiar</h3>
+
+              <p>
+                Cuota alimentaria, custodia, régimen de visitas, separación y
+                conflictos familiares.
+              </p>
+            </article>
+
+            <article>
+              <h3>Arrendamientos</h3>
+
+              <p>
+                Conflictos entre arrendadores y arrendatarios relacionados con
+                inmuebles, cánones y restitución.
+              </p>
+            </article>
+
+            <article>
+              <h3>Obligaciones económicas</h3>
+
+              <p>
+                Negociación de deudas, acuerdos de pago y conciliación de
+                obligaciones económicas entre particulares y empresas.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.faqSection}>
+        <div className={styles.faqContainer}>
+          <h2>Preguntas frecuentes sobre la consulta jurídica</h2>
+
+          <div className={styles.faqItem}>
+            <h3>
+              ¿Debo tener todos los documentos para solicitar una consulta?
+            </h3>
+
+            <p>
+              No. Durante la primera orientación nuestros abogados revisarán tu
+              caso y te indicarán cuáles documentos son necesarios para iniciar
+              el proceso de conciliación.
+            </p>
+          </div>
+
+          <div className={styles.faqItem}>
+            <h3>¿Atienden únicamente en Bogotá?</h3>
+
+            <p>
+              No. Además de la atención presencial en Bogotá, ofrecemos atención
+              virtual para usuarios de cualquier ciudad de Colombia.
+            </p>
+          </div>
+
+          <div className={styles.faqItem}>
+            <h3>¿Qué conflictos pueden resolverse mediante conciliación?</h3>
+
+            <p>
+              Dependiendo del caso, es posible conciliar asuntos civiles,
+              comerciales, laborales, familiares, contractuales, deudas,
+              arrendamientos y muchas otras controversias permitidas por la ley.
+            </p>
+          </div>
+
+          <div className={styles.faqItem}>
+            <h3>¿Cómo puedo agendar una consulta?</h3>
+
+            <p>
+              Puedes comunicarte mediante WhatsApp o utilizar nuestros canales
+              de atención para programar una consulta jurídica con uno de
+              nuestros abogados conciliadores.
+            </p>
+          </div>
+        </div>
+      </section>
     </section>
   );
 }

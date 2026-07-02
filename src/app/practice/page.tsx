@@ -3,25 +3,26 @@ import PracticeContent from "./PracticeContent";
 
 export const metadata: Metadata = {
   title:
-    "Áreas de práctica y conciliación extrajudicial en Colombia | Sol Centro de Conciliación",
+    "Conciliación Extrajudicial en Colombia | Servicios y Áreas de Práctica | Sol Centro de Conciliación",
 
   description:
-    "Conozca nuestras áreas de práctica en conciliación extrajudicial en Bogotá y Colombia. Resolución de conflictos civiles, comerciales, familiares, laborales, arrendamientos, deudas, custodia, alimentos y más sin procesos judiciales largos.",
+    "Resuelva conflictos civiles, comerciales, familiares, laborales, de arrendamiento y obligaciones económicas mediante conciliación extrajudicial en Colombia. Conozca todas nuestras áreas de práctica y solicite asesoría jurídica.",
 
   keywords: [
     "conciliación extrajudicial Colombia",
-    "centro de conciliación Bogotá",
-    "áreas de práctica conciliación",
-    "conciliación civil Colombia",
-    "conciliación comercial Bogotá",
-    "conciliación familiar Colombia",
-    "conciliación laboral Bogotá",
-    "conciliación arrendamientos Colombia",
-    "conflictos vecinales conciliación",
-    "custodia y alimentos Colombia",
+    "centro de conciliación",
+    "centro de conciliación Colombia",
+    "conciliación Bogotá",
+    "servicios de conciliación",
+    "conciliación civil",
+    "conciliación comercial",
+    "conciliación laboral",
+    "conciliación familiar",
+    "conciliación de arrendamientos",
+    "conciliación de deudas",
     "resolver conflictos sin demanda",
-    "acuerdos legales sin juicio",
-    "servicios de conciliación Colombia",
+    "acta de conciliación",
+    "áreas de práctica conciliación",
   ],
 
   authors: [
@@ -42,10 +43,10 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Áreas de práctica y conciliación extrajudicial en Colombia | Sol Centro de Conciliación",
+      "Conciliación Extrajudicial en Colombia | Todas las Áreas de Práctica",
 
     description:
-      "Resuelva conflictos civiles, familiares, comerciales y laborales sin demanda en Bogotá y Colombia mediante conciliación extrajudicial legal y efectiva.",
+      "Conozca los servicios de conciliación extrajudicial que prestamos en Colombia para resolver conflictos civiles, familiares, comerciales y laborales de forma rápida y legal.",
 
     url: "https://solcentrodeconciliacion.com/practice",
 
@@ -68,10 +69,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Conciliación extrajudicial en Colombia | Áreas de práctica",
+    title: "Servicios de Conciliación Extrajudicial en Colombia",
 
     description:
-      "Conozca nuestras áreas de práctica y resuelva conflictos sin procesos judiciales largos en Colombia.",
+      "Descubra todas nuestras áreas de práctica para resolver conflictos legales sin acudir a un proceso judicial.",
 
     images: ["/og-image.jpg"],
   },

@@ -3,21 +3,36 @@ import DocLeidyContent from "./DocLeidyContent";
 
 export const metadata: Metadata = {
   title:
-    "Dra. Leidy Tirado | Abogada conciliadora en Colombia - Derecho Comercial y Empresarial",
+    "Leidy Tirado | Abogada Conciliadora en Colombia | Derecho Comercial y Empresarial",
   description:
-    "Abogada conciliadora en Colombia especializada en derecho comercial, empresarial y protección al consumidor. Conciliación extrajudicial, recuperación de cartera y acuerdos legales.",
+    "Conoce a la abogada conciliadora Leidy Tirado. Especialista en conciliación comercial, empresarial, recuperación de cartera, acuerdos de pago y protección al consumidor en Colombia.",
   keywords: [
+    "Leidy Tirado",
     "abogada conciliadora Colombia",
+    "conciliación comercial",
+    "conciliación empresarial",
+    "recuperación de cartera",
+    "acuerdos de pago",
+    "conflictos comerciales",
+    "conflictos empresariales",
     "derecho comercial Colombia",
-    "conciliación extrajudicial",
-    "protección al consumidor Ley 1480",
-    "recuperación de cartera empresarial",
-    "abogados en Bogotá conciliación",
+    "protección al consumidor",
+    "Ley 1480",
+    "garantías mobiliarias",
+    "abogada comercial Bogotá",
+    "Sol Centro de Conciliación",
   ],
+
+  alternates: {
+    canonical: "https://solcentrodeconciliacion.com/about/Doc_Leidy",
+  },
+
   openGraph: {
-    title: "Dra. Leidy Tirado | Conciliación en Derecho Comercial en Colombia",
+    title: "Leidy Tirado | Abogada Conciliadora en Colombia",
+
     description:
-      "Especialista en conciliación extrajudicial, derecho comercial, empresarial y protección al consumidor en Colombia.",
+      "Especialista en conciliación comercial, empresarial, recuperación de cartera y protección al consumidor.",
+
     url: "https://solcentrodeconciliacion.com/about/Doc_Leidy",
     siteName: "Sol Centro de Conciliación",
     images: [

@@ -30,8 +30,8 @@ export default function DocHarriContent() {
             </motion.h1>
 
             <h2 className={styles.role}>
-              Especialista en conciliación extrajudicial, derecho de familia,
-              derecho laboral y resolución estratégica de conflictos en Colombia
+              Especialista en conciliación de familia, laboral y conflictos
+              civiles en Colombia
             </h2>
 
             <p className={styles.summary}>
@@ -89,6 +89,49 @@ export default function DocHarriContent() {
               alt="Dr. Harrison Perez abogado conciliador en Colombia especialista en derecho de familia laboral y tributario"
             />
           </div>
+        </div>
+      </section>
+
+      <section className={styles.servicesSection}>
+        <h2>Servicios de conciliación que lidera el Dr. Harrison Perez</h2>
+
+        <p>
+          Como abogado conciliador en Colombia acompaña procesos de conciliación
+          extrajudicial relacionados con conflictos familiares, laborales y
+          civiles, ayudando a construir acuerdos con plena validez jurídica y
+          evitando procesos judiciales innecesarios.
+        </p>
+
+        <div className={styles.servicesGrid}>
+          <article>
+            <h3>Conciliación en derecho de familia</h3>
+
+            <p>
+              Procesos relacionados con alimentos, custodia, regulación de
+              visitas, separación de bienes, liquidación de sociedad conyugal y
+              acuerdos familiares.
+            </p>
+          </article>
+
+          <article>
+            <h3>Conciliación laboral</h3>
+
+            <p>
+              Liquidaciones laborales, terminación de contratos, conciliación
+              por despidos, acuerdos entre empleadores y trabajadores y solución
+              de conflictos laborales.
+            </p>
+          </article>
+
+          <article>
+            <h3>Conciliación civil</h3>
+
+            <p>
+              Acuerdos económicos, incumplimientos contractuales, obligaciones
+              civiles, recuperación de cartera y resolución de controversias
+              patrimoniales.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -190,6 +233,60 @@ export default function DocHarriContent() {
           <div>
             <span>4</span>
             <p>Formalización legal y validación del acuerdo</p>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.benefitsSection}>
+        <h2>¿Por qué realizar una conciliación con el Dr. Harrison Perez?</h2>
+
+        <p>
+          La conciliación permite resolver conflictos mediante acuerdos legales,
+          reduciendo tiempos, costos y el desgaste propio de un proceso
+          judicial.
+        </p>
+
+        <ul>
+          <li>Evita procesos judiciales prolongados.</li>
+          <li>Protege los intereses de todas las partes.</li>
+          <li>Acuerdos con plena validez jurídica.</li>
+          <li>Menores costos legales.</li>
+          <li>Mayor rapidez para solucionar conflictos.</li>
+          <li>Acompañamiento jurídico durante todo el proceso.</li>
+          <li>Negociaciones imparciales y estructuradas.</li>
+          <li>Cobertura para usuarios de toda Colombia.</li>
+        </ul>
+      </section>
+
+      <section className={styles.processSection}>
+        <h2>¿Cómo es el proceso de conciliación?</h2>
+
+        <div className={styles.processGrid}>
+          <div>
+            <h3>1. Estudio del caso</h3>
+
+            <p>
+              Se analiza la situación jurídica y la viabilidad de la
+              conciliación.
+            </p>
+          </div>
+
+          <div>
+            <h3>2. Citación</h3>
+
+            <p>Se programa la audiencia conciliatoria con las partes.</p>
+          </div>
+
+          <div>
+            <h3>3. Audiencia</h3>
+
+            <p>Se desarrolla la negociación y construcción del acuerdo.</p>
+          </div>
+
+          <div>
+            <h3>4. Acta</h3>
+
+            <p>Se formaliza el acuerdo con plena validez jurídica.</p>
           </div>
         </div>
       </section>
