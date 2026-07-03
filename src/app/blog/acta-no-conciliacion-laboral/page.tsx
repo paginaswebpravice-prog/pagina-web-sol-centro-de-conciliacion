@@ -2,15 +2,23 @@ import { Metadata } from "next";
 import ActaNoConciliacionLaboralContent from "./ActaNoConciliacionLaboralContent";
 
 export const metadata: Metadata = {
-  title: "Acta de no conciliación laboral en Colombia (modelo y explicación)",
+  title:
+    "Acta de no conciliación laboral en Colombia: modelo, efectos legales, inasistencia y qué hacer después (Guía 2026)",
   description:
-    "Modelo de acta de no conciliación laboral en Colombia. Ejemplos, inasistencia, constancia y cómo demandar en Bogotá y Colombia.",
+    "Conozca qué es un acta de no conciliación laboral en Colombia, cuándo se expide, qué pasa si el empleador no asiste, cómo utilizarla para continuar un proceso laboral, modelo, formato, requisitos y efectos legales.",
   keywords: [
-    "acta de no conciliacion laboral Colombia",
-    "constancia no conciliacion Bogota",
-    "modelo acta no conciliacion laboral",
-    "inasistencia conciliacion laboral Colombia",
-    "demanda laboral conciliacion Colombia",
+    "acta de no conciliación laboral Colombia",
+    "constancia de no conciliación laboral",
+    "modelo acta de no conciliación laboral",
+    "formato acta de no conciliación",
+    "qué pasa si no hay conciliación laboral",
+    "empleador no asiste conciliación laboral",
+    "inasistencia conciliación laboral",
+    "demanda después de conciliación laboral",
+    "efectos legales de la no conciliación laboral",
+    "certificado de no conciliación laboral",
+    "requisitos acta de no conciliación",
+    "conciliación laboral sin acuerdo",
   ],
   openGraph: {
     title: "Acta de no conciliación laboral en Colombia (modelo y guía)",

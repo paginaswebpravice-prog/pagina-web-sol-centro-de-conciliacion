@@ -3,15 +3,25 @@ import AmigableComposicionContent from "./AmigableComposicionContent";
 
 export const metadata: Metadata = {
   title:
-    "Amigable composición en Colombia: qué es, amigable componedor y cómo funciona",
+    "¿Qué es la amigable composición en Colombia? Guía completa, ejemplos y diferencias",
   description:
-    "Aprende qué es la amigable composición en Colombia, cómo funciona el amigable componedor, diferencias con conciliación y cuándo usarla en Bogotá y Colombia.",
+    "Descubre qué es la amigable composición en Colombia, cómo funciona el amigable componedor, cuándo utilizar este mecanismo, sus ventajas, diferencias con la conciliación y ejemplos prácticos.",
   keywords: [
+    "amigable composición",
     "amigable composición Colombia",
+    "amigable componedor",
     "amigable componedor Colombia",
-    "amigable composición Bogotá",
+    "qué es la amigable composición",
     "diferencia conciliación y amigable composición",
-    "mecanismos alternativos solución conflictos Colombia",
+    "diferencia arbitraje y amigable composición",
+    "cláusula amigable composición",
+    "ejemplo amigable composición",
+    "mecanismos alternativos solución conflictos",
+    "MASC Colombia",
+    "solución conflictos contratos",
+    "resolución conflictos empresariales",
+    "amigable composición contratos",
+    "amigable composición Bogotá",
   ],
   alternates: {
     canonical: "https://solcentrodeconciliacion.com/blog/amigable-composicion",

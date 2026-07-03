@@ -17,7 +17,10 @@ export default function ArbitrajeVsConciliacionContent() {
         <div className={styles.heroContent}>
           <span className={styles.badge}>MASC en Colombia</span>
 
-          <h1 className={styles.title}>Arbitraje vs conciliación</h1>
+          <h1 className={styles.title}>
+            Arbitraje vs Conciliación en Colombia: diferencias, ventajas y cuál
+            mecanismo elegir
+          </h1>
 
           <p className={styles.heroText}>
             El arbitraje y la conciliación son dos mecanismos alternativos de
@@ -31,9 +34,38 @@ export default function ArbitrajeVsConciliacionContent() {
           </p>
         </div>
 
+        {/* DIFERENCIAS */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué diferencia existe entre arbitraje y conciliación en Colombia?
+          </h2>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>Decisión</h3>
+              <p>
+                Conciliación: acuerdo voluntario. Arbitraje: decisión
+                obligatoria.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Tercero</h3>
+              <p>Conciliador facilita. Árbitro decide.</p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Resultado</h3>
+              <p>Conciliación: acta de acuerdo. Arbitraje: laudo arbitral.</p>
+            </div>
+          </div>
+        </div>
+
         {/* DEFINICIONES */}
         <div className={styles.contentSection}>
-          <h2 className={styles.subtitle}>¿Qué es la conciliación?</h2>
+          <h2 className={styles.subtitle}>
+            ¿Qué es la conciliación y cómo funciona?
+          </h2>
 
           <p className={styles.paragraph}>
             Es un mecanismo en el que las partes intentan llegar a un acuerdo
@@ -58,28 +90,72 @@ export default function ArbitrajeVsConciliacionContent() {
           </p>
         </div>
 
-        {/* DIFERENCIAS */}
+        {/* COMPARACION */}
         <div className={styles.contentSection}>
-          <h2 className={styles.subtitle}>Diferencias principales</h2>
+          <h2 className={styles.subtitle}>
+            Comparación completa entre arbitraje y conciliación
+          </h2>
 
-          <div className={styles.cardsGrid}>
-            <div className={styles.infoCard}>
-              <h3>Decisión</h3>
-              <p>
-                Conciliación: acuerdo voluntario. Arbitraje: decisión
-                obligatoria.
-              </p>
-            </div>
+          <div className={styles.tableWrapper}>
+            <table className={styles.table}>
+              <thead>
+                <tr>
+                  <th>Aspecto</th>
+                  <th>Conciliación</th>
+                  <th>Arbitraje</th>
+                </tr>
+              </thead>
 
-            <div className={styles.infoCard}>
-              <h3>Tercero</h3>
-              <p>Conciliador facilita. Árbitro decide.</p>
-            </div>
+              <tbody>
+                <tr>
+                  <td>Quién toma la decisión</td>
+                  <td>Las partes</td>
+                  <td>El árbitro</td>
+                </tr>
 
-            <div className={styles.infoCard}>
-              <h3>Resultado</h3>
-              <p>Conciliación: acta de acuerdo. Arbitraje: laudo arbitral.</p>
-            </div>
+                <tr>
+                  <td>Resultado</td>
+                  <td>Acta de conciliación</td>
+                  <td>Laudo arbitral</td>
+                </tr>
+
+                <tr>
+                  <td>Obligatoriedad</td>
+                  <td>Solo si existe acuerdo</td>
+                  <td>Sí</td>
+                </tr>
+
+                <tr>
+                  <td>Tiempo promedio</td>
+                  <td>Generalmente menor</td>
+                  <td>Variable según el proceso</td>
+                </tr>
+
+                <tr>
+                  <td>Costo</td>
+                  <td>Normalmente más bajo</td>
+                  <td>Puede ser superior</td>
+                </tr>
+
+                <tr>
+                  <td>Participación de las partes</td>
+                  <td>Muy alta</td>
+                  <td>Limitada durante la decisión</td>
+                </tr>
+
+                <tr>
+                  <td>Flexibilidad</td>
+                  <td>Alta</td>
+                  <td>Media</td>
+                </tr>
+
+                <tr>
+                  <td>Confidencialidad</td>
+                  <td>Sí</td>
+                  <td>Sí</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
@@ -104,19 +180,81 @@ export default function ArbitrajeVsConciliacionContent() {
 
         {/* CUANDO USAR */}
         <div className={styles.contentSection}>
-          <h2 className={styles.subtitle}>¿Cuándo usar cada uno?</h2>
+          <h2 className={styles.subtitle}>
+            ¿Cuándo conviene acudir primero a una conciliación?
+          </h2>
+
+          <p className={styles.paragraph}>
+            La conciliación suele ser la mejor alternativa cuando existe
+            disposición de diálogo entre las partes y es posible construir una
+            solución conjunta. Es especialmente útil en conflictos civiles,
+            familiares, comerciales, laborales y de arrendamiento donde ambas
+            partes buscan preservar la relación y reducir tiempos y costos.
+          </p>
 
           <ul className={styles.list}>
-            <li>
-              Conciliación: cuando las partes quieren negociar un acuerdo.
-            </li>
-            <li>Arbitraje: cuando se requiere una decisión definitiva.</li>
+            <li>Conflictos entre particulares.</li>
+            <li>Cobro de deudas.</li>
+            <li>Conflictos de arrendamiento.</li>
+            <li>Acuerdos familiares.</li>
+            <li>Controversias comerciales.</li>
+            <li>Liquidaciones laborales.</li>
+            <li>Incumplimientos contractuales.</li>
           </ul>
+        </div>
+
+        {/* CUANDO USAR */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿En qué casos es mejor acudir al arbitraje?
+          </h2>
+
+          <p className={styles.paragraph}>
+            El arbitraje resulta recomendable cuando las partes necesitan una
+            decisión definitiva emitida por un tercero imparcial, especialmente
+            en conflictos contractuales complejos o de alto valor económico.
+          </p>
+
+          <ul className={styles.list}>
+            <li>Contratos empresariales.</li>
+
+            <li>Contratos de construcción.</li>
+
+            <li>Conflictos entre socios.</li>
+
+            <li>Contratos internacionales.</li>
+
+            <li>Grandes controversias comerciales.</li>
+
+            <li>Procesos donde exista cláusula compromisoria.</li>
+          </ul>
+        </div>
+
+        {/* COSTOS */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué mecanismo suele ser más económico?
+          </h2>
+
+          <p className={styles.paragraph}>
+            En términos generales, la conciliación suele representar menores
+            costos debido a la simplicidad del procedimiento y al menor tiempo
+            requerido para alcanzar una solución.
+          </p>
+
+          <p className={styles.paragraph}>
+            El arbitraje puede implicar mayores costos, ya que intervienen
+            árbitros, gastos administrativos y un procedimiento más
+            estructurado. No obstante, en controversias complejas puede resultar
+            más eficiente que acudir a un proceso judicial ordinario.
+          </p>
         </div>
 
         {/* VENTAJAS */}
         <div className={styles.contentSection}>
-          <h2 className={styles.subtitle}>Ventajas de cada mecanismo</h2>
+          <h2 className={styles.subtitle}>
+            Ventajas y desventajas del arbitraje y la conciliación
+          </h2>
 
           <div className={styles.cardsGrid}>
             <div className={styles.infoCard}>
@@ -138,7 +276,9 @@ export default function ArbitrajeVsConciliacionContent() {
 
         {/* IMPORTANCIA */}
         <div className={styles.contentSection}>
-          <h2 className={styles.subtitle}>Importancia en Colombia</h2>
+          <h2 className={styles.subtitle}>
+            ¿Por qué estos mecanismos son cada vez más utilizados en Colombia?
+          </h2>
 
           <p className={styles.paragraph}>
             Estos mecanismos permiten resolver conflictos de forma más eficiente
@@ -149,6 +289,43 @@ export default function ArbitrajeVsConciliacionContent() {
             Además, promueven la cultura del diálogo y la solución pacífica de
             conflictos.
           </p>
+        </div>
+
+        {/* ERRORES */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Errores frecuentes al elegir entre arbitraje y conciliación
+          </h2>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>Elegir el mecanismo sin analizar el conflicto</h3>
+
+              <p>
+                Cada controversia tiene características diferentes y requiere
+                una evaluación previa.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Creer que ambos funcionan igual</h3>
+
+              <p>
+                Aunque ambos pertenecen a los mecanismos alternativos de
+                solución de conflictos, su procedimiento y resultado son
+                diferentes.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>No revisar las cláusulas del contrato</h3>
+
+              <p>
+                Muchos contratos establecen previamente si las controversias
+                deberán resolverse mediante arbitraje o mediante otro mecanismo.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* FAQ */}

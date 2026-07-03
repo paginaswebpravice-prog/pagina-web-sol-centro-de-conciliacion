@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import ArbitrajeVsConciliacionContent from "./ArbitrajeVsConciliacionContent";
 
 export const metadata: Metadata = {
-  title: "Arbitraje vs conciliación en Colombia | Diferencias clave",
+  title:
+    "Arbitraje o conciliación en Colombia: diferencias, ventajas y cuál elegir (Guía 2026)",
   description:
-    "Conoce las diferencias entre arbitraje y conciliación en Colombia, cómo funcionan y en qué casos se utiliza cada mecanismo de solución de conflictos.",
+    "Descubre las diferencias entre arbitraje y conciliación en Colombia, cuándo utilizar cada mecanismo, costos, ventajas, desventajas, tiempos de resolución y cuál es la mejor opción según tu caso.",
   keywords: [
     "arbitraje vs conciliación Colombia",
     "diferencia arbitraje conciliación",

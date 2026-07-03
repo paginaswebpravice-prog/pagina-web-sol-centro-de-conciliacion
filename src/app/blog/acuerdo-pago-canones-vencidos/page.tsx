@@ -2,32 +2,52 @@ import type { Metadata } from "next";
 import AcuerdoPagoCanonesContent from "./AcuerdoPagoCanonesContent";
 
 export const metadata: Metadata = {
-  title: "Acuerdos de pago para cánones vencidos en Colombia | Guía completa",
+  title:
+    "Acuerdo de pago de cánones vencidos en Colombia: modelo, formato y guía legal 2026",
+
   description:
-    "Aprende cómo negociar deudas de arrendamiento mediante acuerdos de pago por cánones vencidos en Colombia de forma legal y efectiva.",
+    "Aprenda cómo hacer un acuerdo de pago por cánones de arrendamiento vencidos en Colombia. Incluye modelo, ejemplo, requisitos, efectos legales y cómo evitar una demanda de restitución del inmueble.",
+
   keywords: [
-    "cánones vencidos arrendamiento Colombia",
-    "acuerdo de pago arriendo",
-    "deuda arrendamiento Colombia",
-    "conciliación arriendo deudas",
-    "pago alquiler atrasado Colombia",
-    "negociación deuda arrendamiento",
+    "acuerdo de pago cánones vencidos",
+    "modelo acuerdo de pago arriendo",
+    "formato acuerdo de pago arrendamiento",
+    "deuda arriendo Colombia",
+    "cánones vencidos Colombia",
+    "conciliación arrendamiento",
+    "acuerdo pago alquiler atrasado",
+    "ejemplo acuerdo pago arriendo",
+    "negociar deuda arriendo",
+    "acuerdo pago canon vencido",
+    "conciliación arrendador arrendatario",
+    "cómo pagar deuda de arriendo",
+    "modelo conciliación arrendamiento",
+    "evitar demanda restitución inmueble",
   ],
+
   robots: {
     index: true,
     follow: true,
   },
+
   alternates: {
     canonical:
       "https://solcentrodeconciliacion.com/blog/acuerdo-pago-canones-vencidos",
   },
+
   openGraph: {
-    title: "Acuerdos de pago para cánones vencidos en Colombia",
+    title:
+      "Acuerdo de pago de cánones vencidos en Colombia | Modelo y guía 2026",
+
     description:
-      "Negocia deudas de arrendamiento mediante conciliación y acuerdos de pago en Colombia.",
+      "Modelo completo de acuerdo de pago por arriendos vencidos. Descubre cómo negociar la deuda y evitar procesos judiciales mediante conciliación.",
+
     url: "https://solcentrodeconciliacion.com/blog/acuerdo-pago-canones-vencidos",
+
     siteName: "Sol Centro de Conciliación",
+
     locale: "es_CO",
+
     type: "article",
   },
 };
@@ -54,29 +74,52 @@ export default function Page() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+
     mainEntity: [
       {
         "@type": "Question",
-        name: "¿Se pueden negociar cánones de arrendamiento vencidos?",
+        name: "¿Cómo hacer un acuerdo de pago por cánones vencidos?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí, es posible llegar a acuerdos de pago mediante conciliación entre arrendador y arrendatario.",
+
+          text: "El acuerdo debe indicar el valor total de la deuda, las cuotas, fechas de pago, forma de pago, consecuencias del incumplimiento y las firmas de las partes. Lo ideal es formalizarlo mediante un centro de conciliación.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿Qué pasa si no pago el arriendo?",
+
+        name: "¿Qué pasa si el arrendatario no paga los cánones vencidos?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Se pueden generar intereses, procesos de cobro o incluso procesos de restitución de inmueble.",
+
+          text: "El arrendador puede iniciar procesos de cobro ejecutivo o restitución del inmueble, dependiendo del caso concreto.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿La conciliación evita un proceso judicial?",
+
+        name: "¿Un acuerdo de pago firmado en conciliación tiene validez legal?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí, en muchos casos permite resolver la deuda sin necesidad de demanda.",
+
+          text: "Sí. El acta de conciliación presta mérito ejecutivo y hace tránsito a cosa juzgada en los asuntos conciliables.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "¿Se pueden negociar intereses por mora del arriendo?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Sí. Durante la conciliación las partes pueden acordar descuentos, condonaciones parciales o nuevas condiciones de pago.",
         },
       },
     ],

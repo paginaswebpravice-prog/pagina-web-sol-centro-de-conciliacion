@@ -2,17 +2,27 @@ import type { Metadata } from "next";
 import AcuerdosFamiliaresContent from "./AcuerdosFamiliaresContent";
 
 export const metadata: Metadata = {
-  title: "Acuerdos familiares extrajudiciales en Colombia | Guía completa 2026",
+  title:
+    "Acuerdos familiares por conciliación en Colombia: alimentos, custodia, visitas y más",
   description:
-    "Conoce cómo funcionan los acuerdos familiares extrajudiciales en Colombia y cómo la conciliación permite resolver conflictos familiares de manera rápida y legal.",
+    "Aprende cómo realizar acuerdos familiares por conciliación en Colombia. Conoce qué asuntos pueden conciliarse, requisitos, beneficios, validez legal y cómo evitar un proceso judicial.",
   keywords: [
     "acuerdos familiares",
-    "acuerdos familiares extrajudiciales",
-    "conciliación familiar Colombia",
+    "acuerdo familiar",
+    "acuerdos familiares Colombia",
+    "conciliación familiar",
+    "conciliación de familia",
     "conciliación familiar Bogotá",
-    "acuerdos de familia",
-    "resolución de conflictos familiares",
-    "centro de conciliación",
+    "centro de conciliación familiar",
+    "acuerdo de alimentos",
+    "acuerdo cuota alimentaria",
+    "custodia por conciliación",
+    "régimen de visitas conciliación",
+    "conciliación custodia hijos",
+    "conciliación separación bienes",
+    "acuerdo padres hijos",
+    "resolver conflictos familiares",
+    "acta conciliación familiar",
   ],
   robots: {
     index: true,
@@ -22,7 +32,7 @@ export const metadata: Metadata = {
     canonical: "https://solcentrodeconciliacion.com/blog/acuerdos-familiares",
   },
   openGraph: {
-    title: "Acuerdos familiares extrajudiciales en Colombia",
+    title: "Acuerdos familiares por conciliación en Colombia | Guía completa",
     description:
       "Aprende cómo formalizar acuerdos familiares mediante conciliación en Colombia.",
     url: "https://solcentrodeconciliacion.com/blog/acuerdos-familiares",
@@ -36,7 +46,7 @@ export default function Page() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Acuerdos familiares extrajudiciales en Colombia",
+    headline: "Acuerdos familiares por conciliación en Colombia: guía completa",
     description:
       "Guía completa sobre acuerdos familiares mediante conciliación en Colombia.",
     author: {

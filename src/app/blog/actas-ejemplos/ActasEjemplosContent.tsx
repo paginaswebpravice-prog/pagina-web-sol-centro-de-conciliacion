@@ -132,7 +132,8 @@ export default function ActasEjemplosContent() {
             transition={{ delay: 0.1, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Actas de conciliación en Colombia: ejemplos y recomendaciones
+            Actas de conciliación en Colombia: ejemplos reales, modelos,
+            formatos y guía completa para redactarlas correctamente (2026)
           </motion.h1>
 
           <motion.p
@@ -143,12 +144,14 @@ export default function ActasEjemplosContent() {
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Muchas búsquedas como{" "}
-            <strong>“acta de conciliación ejemplo Colombia”</strong>,{" "}
-            <strong>“formato acta de conciliación Bogotá”</strong> o{" "}
-            <strong>“acuerdo de pago conciliación Colombia”</strong> apuntan a
-            lo mismo: entender cómo se redacta un acuerdo claro, válido
-            jurídicamente y realmente ejecutable.
+            Si estás buscando un{" "}
+            <strong>ejemplo de acta de conciliación</strong>, un{" "}
+            <strong>modelo de acuerdo conciliatorio</strong>, un
+            <strong> formato de acta de conciliación</strong> o simplemente
+            deseas conocer cómo debe redactarse correctamente este documento en
+            Colombia, esta guía reúne ejemplos prácticos, recomendaciones
+            jurídicas y los elementos indispensables que debe contener un acta
+            para brindar mayor claridad y seguridad a las partes involucradas.
           </motion.p>
 
           <motion.p
@@ -158,11 +161,13 @@ export default function ActasEjemplosContent() {
             transition={{ delay: 0.3, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            En Colombia, el acta de conciliación es uno de los documentos más
-            importantes dentro de una conciliación extrajudicial, ya que presta
-            mérito ejecutivo. Esto significa que, si una de las partes incumple
-            el acuerdo, el documento puede utilizarse judicialmente para exigir
-            el cumplimiento de las obligaciones pactadas.
+            El acta de conciliación constituye el documento mediante el cual se
+            formalizan los acuerdos alcanzados durante una audiencia de
+            conciliación. Allí quedan registradas las obligaciones asumidas por
+            las partes, las condiciones para su cumplimiento, los plazos
+            establecidos y todos los compromisos que permiten solucionar el
+            conflicto de forma voluntaria sin necesidad de prolongar la
+            controversia.
           </motion.p>
 
           <motion.p
@@ -172,26 +177,39 @@ export default function ActasEjemplosContent() {
             transition={{ delay: 0.35, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            En ciudades como <strong>Bogotá</strong>, Medellín, Cali,
-            Barranquilla y otras regiones de Colombia, miles de personas y
-            empresas utilizan la conciliación para resolver conflictos
-            relacionados con deudas, arrendamientos, obligaciones civiles,
-            conflictos comerciales y acuerdos familiares sin necesidad de acudir
-            directamente a un juicio.
+            En Colombia este documento es utilizado en conciliaciones civiles,
+            comerciales, familiares, de tránsito, de arrendamiento, conflictos
+            entre particulares, acuerdos de pago y múltiples controversias
+            susceptibles de conciliación. Una redacción adecuada resulta
+            fundamental para evitar interpretaciones ambiguas y facilitar el
+            cumplimiento de las obligaciones pactadas.
+          </motion.p>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            A lo largo de esta guía encontrarás modelos completos, ejemplos
+            reales, recomendaciones para redactar correctamente un acta de
+            conciliación, errores frecuentes que deben evitarse y respuestas a
+            las dudas más comunes sobre este documento jurídico en Colombia.
           </motion.p>
 
           <motion.div
             className={styles.highlightBox}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
+            transition={{ delay: 0.45, duration: 0.6 }}
             viewport={{ once: true }}
           >
             <p>
-              La buena práctica en una conciliación en Bogotá o en cualquier
-              parte de Colombia es convertir el conflicto en obligaciones
-              claras, medibles y verificables: montos exactos, fechas, forma de
-              pago, condiciones de entrega y consecuencias del incumplimiento.
+              <strong>Consejo práctico:</strong> una buena acta de conciliación
+              debe contener obligaciones claras, fechas específicas, valores
+              exactos, mecanismos verificables de cumplimiento y compromisos
+              redactados de forma precisa para reducir futuros conflictos.
             </p>
           </motion.div>
 
@@ -228,6 +246,187 @@ export default function ActasEjemplosContent() {
             conflicto, las obligaciones pactadas y las condiciones de
             cumplimiento. Una redacción precisa evita problemas futuros y
             facilita exigir el cumplimiento en caso de incumplimiento.
+          </motion.p>
+
+          <motion.h2
+            className={styles.subTitle}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Cómo redactar un acta de conciliación en Colombia paso a paso (Guía
+            completa)
+          </motion.h2>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Una de las dudas más frecuentes entre las personas que asisten a una
+            audiencia de conciliación es{" "}
+            <strong>cómo redactar correctamente un acta de conciliación</strong>
+            . Aunque cada conflicto tiene características propias, todas las
+            actas deben cumplir ciertos requisitos mínimos para dejar claramente
+            definidos los compromisos asumidos por las partes.
+          </motion.p>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Una buena redacción evita interpretaciones ambiguas, reduce el
+            riesgo de nuevos conflictos y facilita el cumplimiento de lo
+            acordado. Por ello, el documento debe escribirse utilizando un
+            lenguaje claro, preciso y fácilmente comprensible para todas las
+            personas involucradas.
+          </motion.p>
+
+          <motion.div
+            className={styles.highlightBox}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <p>
+              <strong>Recomendación:</strong> cada obligación incluida en el
+              acta debe responder claramente cuatro preguntas:{" "}
+              <strong>qué</strong> se debe hacer,
+              <strong> quién</strong> debe cumplirla,
+              <strong> cuándo</strong> debe ejecutarse y<strong> cómo</strong>{" "}
+              podrá verificarse su cumplimiento.
+            </p>
+          </motion.div>
+
+          <motion.h2
+            className={styles.subTitle}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Estructura básica de un acta de conciliación
+          </motion.h2>
+
+          <motion.div
+            className={styles.grid}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>
+                1. Identificación de las partes
+              </h3>
+
+              <p className={styles.cardText}>
+                Deben incluirse nombres completos, documentos de identidad,
+                dirección, teléfonos y demás datos que permitan identificar
+                plenamente a quienes participan en la conciliación.
+              </p>
+            </motion.section>
+
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>
+                2. Descripción del conflicto
+              </h3>
+
+              <p className={styles.cardText}>
+                Debe explicarse de manera objetiva cuál fue el origen de la
+                controversia y cuáles fueron las pretensiones planteadas durante
+                la audiencia.
+              </p>
+            </motion.section>
+
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>3. Acuerdos alcanzados</h3>
+
+              <p className={styles.cardText}>
+                Constituye la parte más importante del documento. Allí se
+                consignan todas las obligaciones asumidas por cada una de las
+                partes.
+              </p>
+            </motion.section>
+
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>4. Forma de cumplimiento</h3>
+
+              <p className={styles.cardText}>
+                Deben establecerse fechas, valores, lugares, medios de pago,
+                entregas, plazos y cualquier condición necesaria para ejecutar
+                el acuerdo.
+              </p>
+            </motion.section>
+
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>5. Firmas</h3>
+
+              <p className={styles.cardText}>
+                El documento debe ser firmado por las partes y por el
+                conciliador para dejar constancia del acuerdo alcanzado.
+              </p>
+            </motion.section>
+
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>6. Fecha de elaboración</h3>
+
+              <p className={styles.cardText}>
+                Es indispensable indicar el lugar y la fecha en la que se
+                celebró la audiencia de conciliación.
+              </p>
+            </motion.section>
+          </motion.div>
+
+          <motion.h2
+            className={styles.subTitle}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Características de una buena acta de conciliación
+          </motion.h2>
+
+          <motion.ul
+            className={styles.list}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <li>Redacción clara y fácil de interpretar.</li>
+            <li>Obligaciones específicas para cada una de las partes.</li>
+            <li>Fechas exactas de cumplimiento.</li>
+            <li>Valores correctamente definidos.</li>
+            <li>Forma de pago claramente establecida.</li>
+            <li>Mecanismos para verificar el cumplimiento.</li>
+            <li>Datos completos de los conciliantes.</li>
+            <li>Descripción precisa del conflicto.</li>
+            <li>Ausencia de términos ambiguos.</li>
+            <li>Firmas de todos los intervinientes.</li>
+          </motion.ul>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Mientras más específico sea el contenido del acta, menores serán las
+            posibilidades de que surjan nuevas diferencias sobre la
+            interpretación del acuerdo. Por ello resulta aconsejable evitar
+            expresiones generales como "próximamente", "cuando sea posible" o
+            "más adelante", sustituyéndolas por fechas concretas, valores
+            determinados y obligaciones perfectamente identificables.
           </motion.p>
 
           <motion.h2
@@ -289,6 +488,411 @@ y registro fotográfico. Con la entrega se entenderá cumplida la obligación.`}
               </motion.pre>
             </motion.section>
           </motion.div>
+
+          <motion.h2
+            className={styles.subTitle}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Modelos de actas de conciliación según el tipo de conflicto
+          </motion.h2>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            No existe un único modelo de acta de conciliación aplicable a todos
+            los casos. La estructura básica suele ser similar, pero las
+            obligaciones y compromisos varían dependiendo del conflicto que se
+            busca solucionar.
+          </motion.p>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            A continuación encontrarás algunos de los ejemplos más consultados
+            por personas y empresas que buscan resolver controversias mediante
+            conciliación en Colombia.
+          </motion.p>
+
+          <motion.div
+            className={styles.grid}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>
+                Acta de conciliación por deuda entre particulares
+              </h3>
+
+              <p className={styles.cardText}>
+                Utilizada cuando una persona reconoce una obligación económica
+                pendiente y acuerda un plan de pago con el acreedor.
+              </p>
+
+              <ul className={styles.list}>
+                <li>Valor total adeudado.</li>
+                <li>Número de cuotas.</li>
+                <li>Fechas de pago.</li>
+                <li>Medio de pago.</li>
+                <li>Consecuencias del incumplimiento.</li>
+              </ul>
+            </motion.section>
+
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>
+                Acta de conciliación por arrendamiento
+              </h3>
+
+              <p className={styles.cardText}>
+                Frecuente en conflictos entre arrendadores e inquilinos
+                relacionados con cánones pendientes, restitución de inmuebles o
+                daños locativos.
+              </p>
+
+              <ul className={styles.list}>
+                <li>Pago de cánones adeudados.</li>
+                <li>Fecha de entrega del inmueble.</li>
+                <li>Estado de entrega.</li>
+                <li>Servicios públicos pendientes.</li>
+                <li>Inventarios y soportes.</li>
+              </ul>
+            </motion.section>
+
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>
+                Acta de conciliación comercial
+              </h3>
+
+              <p className={styles.cardText}>
+                Utilizada por empresas, proveedores, contratistas y comerciantes
+                para solucionar controversias derivadas de relaciones
+                comerciales.
+              </p>
+
+              <ul className={styles.list}>
+                <li>Facturas pendientes.</li>
+                <li>Incumplimientos contractuales.</li>
+                <li>Entrega de productos.</li>
+                <li>Prestación de servicios.</li>
+                <li>Compensaciones económicas.</li>
+              </ul>
+            </motion.section>
+
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>
+                Acta de conciliación familiar
+              </h3>
+
+              <p className={styles.cardText}>
+                Se utiliza para formalizar acuerdos relacionados con
+                obligaciones familiares y responsabilidades entre las partes.
+              </p>
+
+              <ul className={styles.list}>
+                <li>Cuotas alimentarias.</li>
+                <li>Régimen de visitas.</li>
+                <li>Distribución de gastos.</li>
+                <li>Compromisos familiares.</li>
+                <li>Fechas de cumplimiento.</li>
+              </ul>
+            </motion.section>
+
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>
+                Acta de conciliación por daños y perjuicios
+              </h3>
+
+              <p className={styles.cardText}>
+                Utilizada cuando una persona reconoce la obligación de reparar
+                daños ocasionados a otra persona o empresa.
+              </p>
+
+              <ul className={styles.list}>
+                <li>Descripción del daño.</li>
+                <li>Valor acordado.</li>
+                <li>Forma de indemnización.</li>
+                <li>Fechas de pago.</li>
+                <li>Condiciones de cumplimiento.</li>
+              </ul>
+            </motion.section>
+
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>
+                Acta de conciliación por conflictos vecinales
+              </h3>
+
+              <p className={styles.cardText}>
+                Muy utilizada para resolver diferencias relacionadas con
+                convivencia, ruido, uso de zonas comunes o afectaciones entre
+                vecinos.
+              </p>
+
+              <ul className={styles.list}>
+                <li>Compromisos de convivencia.</li>
+                <li>Horarios permitidos.</li>
+                <li>Uso de espacios comunes.</li>
+                <li>Medidas correctivas.</li>
+                <li>Seguimiento del acuerdo.</li>
+              </ul>
+            </motion.section>
+          </motion.div>
+
+          <motion.div
+            className={styles.highlightBox}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <p>
+              Aunque los conflictos son diferentes, todas las actas de
+              conciliación comparten una característica fundamental: las
+              obligaciones deben quedar redactadas de manera clara, verificable
+              y específica para facilitar su cumplimiento y reducir futuras
+              controversias.
+            </p>
+          </motion.div>
+
+          <motion.h2
+            className={styles.subTitle}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            ¿Qué efectos legales tiene un acta de conciliación en Colombia?
+          </motion.h2>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Una vez las partes alcanzan un acuerdo durante la audiencia y este
+            queda consignado en el acta de conciliación, el documento adquiere
+            importantes efectos jurídicos previstos por la legislación
+            colombiana. Por esta razón, resulta fundamental que todas las
+            obligaciones queden redactadas de manera clara, precisa y
+            verificable.
+          </motion.p>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Muchas personas consideran que el acta es simplemente un documento
+            donde se registran los acuerdos alcanzados durante la audiencia. Sin
+            embargo, su importancia va mucho más allá, ya que constituye el
+            soporte jurídico del compromiso asumido voluntariamente por las
+            partes.
+          </motion.p>
+
+          <motion.div
+            className={styles.highlightBox}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <p>
+              Una conciliación correctamente documentada proporciona mayor
+              seguridad jurídica, disminuye la posibilidad de nuevos conflictos
+              y facilita la ejecución de las obligaciones pactadas cuando alguna
+              de las partes incumple el acuerdo.
+            </p>
+          </motion.div>
+
+          <motion.h2
+            className={styles.subTitle}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Principales efectos jurídicos del acta de conciliación
+          </motion.h2>
+
+          <motion.div
+            className={styles.grid}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>
+                Constituye un acuerdo formal
+              </h3>
+
+              <p className={styles.cardText}>
+                El documento deja constancia escrita de todas las obligaciones
+                aceptadas por las partes durante la audiencia de conciliación.
+              </p>
+            </motion.section>
+
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>Brinda seguridad jurídica</h3>
+
+              <p className={styles.cardText}>
+                Las condiciones del acuerdo quedan claramente definidas,
+                reduciendo interpretaciones ambiguas o desacuerdos posteriores.
+              </p>
+            </motion.section>
+
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>Facilita el cumplimiento</h3>
+
+              <p className={styles.cardText}>
+                Al establecer fechas, valores y obligaciones específicas, las
+                partes conocen exactamente cuáles son los compromisos
+                adquiridos.
+              </p>
+            </motion.section>
+
+            <motion.section className={styles.innerCard}>
+              <h3 className={styles.innerTitle}>
+                Sirve como soporte documental
+              </h3>
+
+              <p className={styles.cardText}>
+                El acta permite demostrar cuáles fueron los acuerdos alcanzados
+                durante la conciliación y las condiciones pactadas para su
+                ejecución.
+              </p>
+            </motion.section>
+          </motion.div>
+
+          <motion.h2
+            className={styles.subTitle}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            ¿Por qué es importante redactar correctamente el acta?
+          </motion.h2>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            La calidad de la redacción influye directamente en la claridad del
+            acuerdo. Cuando las obligaciones se describen de manera imprecisa,
+            pueden surgir interpretaciones diferentes respecto de lo que
+            realmente se comprometieron a cumplir las partes.
+          </motion.p>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Por esta razón, cada obligación debe indicar de forma expresa quién
+            debe cumplirla, qué debe hacer, cuándo debe hacerlo, dónde debe
+            ejecutarse, cuál es el valor involucrado —si existe— y cómo podrá
+            verificarse su cumplimiento.
+          </motion.p>
+
+          <motion.h2
+            className={styles.subTitle}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            ¿Qué ocurre si una de las partes incumple el acta de conciliación?
+          </motion.h2>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Uno de los aspectos que más preocupa a quienes participan en una
+            audiencia de conciliación es el posible incumplimiento de los
+            compromisos adquiridos. Por ello, resulta indispensable que el
+            documento describa con precisión todas las obligaciones, los plazos
+            y la forma en que estas deberán ejecutarse.
+          </motion.p>
+
+          <motion.p
+            className={styles.text}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Una adecuada redacción facilita identificar cuándo una obligación ha
+            sido cumplida y cuándo existe un incumplimiento, evitando
+            discusiones derivadas de cláusulas ambiguas o poco específicas.
+          </motion.p>
+
+          <motion.div
+            className={styles.highlightBox}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <p>
+              Antes de firmar el acta es recomendable revisar cuidadosamente
+              cada una de las cláusulas, confirmar que las fechas sean
+              correctas, verificar los valores pactados y asegurarse de que
+              todas las obligaciones puedan comprenderse sin necesidad de
+              realizar interpretaciones adicionales.
+            </p>
+          </motion.div>
+
+          <motion.h2
+            className={styles.subTitle}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Buenas prácticas para elaborar un acta de conciliación
+          </motion.h2>
+
+          <motion.ul
+            className={styles.list}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <li>Utilizar lenguaje sencillo y preciso.</li>
+            <li>Evitar términos ambiguos.</li>
+            <li>Definir fechas exactas.</li>
+            <li>Precisar valores y obligaciones.</li>
+            <li>Establecer mecanismos verificables de cumplimiento.</li>
+            <li>Identificar plenamente a las partes.</li>
+            <li>Revisar el documento antes de firmarlo.</li>
+            <li>Conservar copias del acta y de sus anexos.</li>
+          </motion.ul>
 
           <motion.h2
             className={styles.subTitle}

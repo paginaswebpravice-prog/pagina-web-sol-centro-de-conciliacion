@@ -2,16 +2,27 @@ import { Metadata } from "next";
 import ActaCivilContent from "./ActaCivilContent";
 
 export const metadata: Metadata = {
-  title: "Acta de conciliación civil en Colombia (modelo y guía 2026)",
+  title:
+    "Acta de conciliación civil en Colombia: modelo, ejemplo, formato, requisitos y efectos legales (Guía 2026)",
   description:
-    "Modelo de acta de conciliación civil en Colombia. Guía completa para acuerdos de pago, deudas, contratos y efectos legales en Bogotá y Colombia.",
+    "Descarga y aprende cómo elaborar un acta de conciliación civil en Colombia. Incluye modelo, ejemplo, formato, requisitos, acuerdos de pago, efectos legales, incumplimiento y guía paso a paso.",
 
   keywords: [
-    "acta de conciliacion civil Colombia",
-    "modelo acta conciliacion Bogota",
-    "acuerdo de pago conciliacion Colombia",
-    "conciliacion civil deuda Colombia",
-    "acta conciliacion contrato Colombia",
+    "acta de conciliación civil",
+    "acta de conciliación civil Colombia",
+    "modelo acta conciliación civil",
+    "ejemplo acta conciliación civil",
+    "formato acta conciliación civil",
+    "conciliación civil Colombia",
+    "conciliación extrajudicial civil",
+    "acuerdo de pago conciliación",
+    "acta acuerdo de pago",
+    "conciliación de deudas",
+    "conciliación de contratos",
+    "conciliación arrendamiento",
+    "conciliación incumplimiento contrato",
+    "efectos legales acta conciliación",
+    "centro de conciliación Bogotá",
   ],
 
   openGraph: {
@@ -65,7 +76,7 @@ export default function Page() {
         name: "Sol Centro de Conciliación",
         logo: {
           "@type": "ImageObject",
-          url: "https://solcentrodeconciliacion.com/logo.png",
+          url: "https://solcentrodeconciliacion.com/logo_sol.jpg",
         },
       },
 

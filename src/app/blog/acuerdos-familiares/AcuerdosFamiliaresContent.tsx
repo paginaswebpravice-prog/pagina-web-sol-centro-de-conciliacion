@@ -61,7 +61,8 @@ export default function AcuerdosFamiliaresContent() {
             </span>
 
             <h1 className={styles.title}>
-              Acuerdos familiares extrajudiciales en Colombia
+              Acuerdos familiares por conciliación en Colombia: alimentos,
+              custodia, visitas y más
             </h1>
 
             <p className={styles.heroText}>
@@ -82,11 +83,31 @@ export default function AcuerdosFamiliaresContent() {
               equilibrados y jurídicamente válidos que benefician a todas las
               partes involucradas.
             </p>
+
+            <p className={styles.heroText}>
+              Muchas familias buscan alternativas que permitan resolver
+              diferencias sin llegar a largos procesos judiciales. La
+              conciliación familiar ofrece un espacio neutral en el que las
+              partes pueden dialogar, negociar y construir acuerdos que protejan
+              tanto los intereses de los adultos como el bienestar de los hijos,
+              reduciendo costos, tiempos y el desgaste emocional.
+            </p>
+
+            <p className={styles.heroText}>
+              En Colombia, los acuerdos familiares alcanzados ante un centro de
+              conciliación pueden tener importantes efectos jurídicos cuando
+              cumplen los requisitos establecidos por la ley. Por esta razón,
+              cada vez más personas utilizan este mecanismo para resolver
+              conflictos relacionados con alimentos, custodia, régimen de
+              visitas, separación de bienes, obligaciones económicas y otros
+              asuntos de familia.
+            </p>
           </div>
 
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
-              ¿Qué son los acuerdos familiares extrajudiciales?
+              ¿Qué son los acuerdos familiares por conciliación y cuándo pueden
+              realizarse?
             </h2>
 
             <p className={styles.paragraph}>
@@ -111,7 +132,8 @@ export default function AcuerdosFamiliaresContent() {
 
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
-              Asuntos que pueden resolverse mediante conciliación
+              ¿Qué conflictos familiares pueden resolverse mediante conciliación
+              en Colombia?
             </h2>
 
             <ul className={styles.list}>
@@ -128,7 +150,8 @@ export default function AcuerdosFamiliaresContent() {
 
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
-              Beneficios de llegar a acuerdos familiares
+              Beneficios de realizar acuerdos familiares antes de iniciar una
+              demanda
             </h2>
 
             <div className={styles.cardsGrid}>
@@ -163,7 +186,8 @@ export default function AcuerdosFamiliaresContent() {
 
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
-              ¿Cómo funciona una conciliación familiar?
+              ¿Cómo es el proceso para realizar una conciliación familiar paso a
+              paso?
             </h2>
 
             <p className={styles.paragraph}>
@@ -186,7 +210,8 @@ export default function AcuerdosFamiliaresContent() {
 
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
-              Ventajas frente a una demanda judicial
+              Beneficios de realizar acuerdos familiares antes de iniciar una
+              demanda
             </h2>
 
             <ul className={styles.list}>
@@ -201,19 +226,114 @@ export default function AcuerdosFamiliaresContent() {
           </div>
 
           <div className={styles.contentSection}>
-            <h2 className={styles.subtitle}>¿Qué sucede si no hay acuerdo?</h2>
+            <h2 className={styles.subtitle}>
+              ¿Qué debe incluir un acuerdo familiar para que sea claro y fácil
+              de cumplir?
+            </h2>
 
             <p className={styles.paragraph}>
-              Si no se alcanza un acuerdo durante la conciliación, las partes
-              podrán acudir a los mecanismos judiciales correspondientes para
-              que el conflicto sea resuelto por la autoridad competente.
+              Un acuerdo familiar no solo debe reflejar la voluntad de las
+              partes, sino que también debe establecer obligaciones concretas
+              que puedan cumplirse y verificarse fácilmente. Cuanto más claro
+              sea el contenido del acuerdo, menor será el riesgo de nuevos
+              conflictos en el futuro.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Identificación completa de las partes.</li>
+              <li>Descripción del conflicto.</li>
+              <li>Compromisos específicos.</li>
+              <li>Fechas de cumplimiento.</li>
+              <li>Valores y forma de pago.</li>
+              <li>Responsables de cada obligación.</li>
+              <li>Condiciones para modificar el acuerdo.</li>
+              <li>Firmas de todos los participantes.</li>
+            </ul>
+          </div>
+
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Ejemplos de acuerdos familiares que pueden lograrse mediante
+              conciliación
+            </h2>
+
+            <div className={styles.cardsGrid}>
+              <div className={styles.infoCard}>
+                <h3>Acuerdo de cuota alimentaria</h3>
+
+                <p>
+                  Los padres establecen el monto mensual, la fecha de pago y la
+                  distribución de los gastos extraordinarios del menor.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Acuerdo sobre custodia</h3>
+
+                <p>
+                  Se define quién ejercerá el cuidado personal del menor y cómo
+                  se tomarán las decisiones relacionadas con su educación, salud
+                  y bienestar.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Acuerdo de régimen de visitas</h3>
+
+                <p>
+                  Las partes fijan días, horarios, vacaciones y fechas
+                  especiales para mantener la relación entre el menor y ambos
+                  padres.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Cuándo es recomendable acudir a un centro de conciliación
+              familiar?
+            </h2>
+
+            <p className={styles.paragraph}>
+              La conciliación resulta especialmente útil cuando las partes
+              desean conservar una relación respetuosa y resolver el conflicto
+              mediante el diálogo. También es una alternativa adecuada cuando
+              existe disposición para negociar antes de acudir a un proceso
+              judicial que puede extenderse durante meses o incluso años.
             </p>
 
             <p className={styles.paragraph}>
-              Sin embargo, la conciliación suele representar una oportunidad
-              efectiva para encontrar soluciones rápidas y satisfactorias antes
-              de iniciar un litigio.
+              En asuntos relacionados con alimentos, custodia, visitas y
+              obligaciones económicas familiares, una solución temprana permite
+              brindar mayor estabilidad a los hijos y evitar el deterioro de las
+              relaciones familiares.
             </p>
+          </div>
+
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Errores que pueden generar nuevos conflictos familiares
+            </h2>
+
+            <ul className={styles.list}>
+              <li>No establecer fechas.</li>
+
+              <li>No definir montos.</li>
+
+              <li>No repartir responsabilidades.</li>
+
+              <li>No dejar todo por escrito.</li>
+
+              <li>Usar términos ambiguos.</li>
+
+              <li>No actualizar acuerdos cuando cambian las circunstancias.</li>
+
+              <li>
+                No acudir a conciliación cuando existe disposición para
+                dialogar.
+              </li>
+            </ul>
           </div>
 
           <div className={styles.contentSection}>
@@ -251,13 +371,14 @@ export default function AcuerdosFamiliaresContent() {
 
           <div className={styles.ctaBox}>
             <h3 className={styles.ctaTitle}>
-              ¿Necesitas ayuda para resolver un conflicto familiar?
+              ¿Necesitas realizar un acuerdo familiar con plena validez legal?
             </h3>
 
             <p className={styles.ctaText}>
-              Recibe orientación sobre conciliación familiar, acuerdos
-              extrajudiciales, alimentos, custodia, visitas y solución de
-              conflictos familiares en Bogotá y Colombia.
+              Te orientamos para realizar conciliaciones familiares relacionadas
+              con cuota alimentaria, custodia, régimen de visitas, obligaciones
+              económicas, separación de bienes y otros conflictos familiares en
+              Bogotá y toda Colombia.
             </p>
 
             <a

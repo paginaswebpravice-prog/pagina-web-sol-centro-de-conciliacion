@@ -115,7 +115,8 @@ export default function ActaCompanerosPermanentesContent() {
           itemType="https://schema.org/Article"
         >
           <motion.h1 className={styles.title} itemProp="headline">
-            Acta de conciliación suscrita por compañeros permanentes en Colombia
+            Acta de conciliación entre compañeros permanentes en Colombia:
+            modelo, ejemplo, requisitos y efectos legales
           </motion.h1>
 
           <motion.p className={styles.text} itemProp="description">
@@ -154,8 +155,8 @@ export default function ActaCompanerosPermanentesContent() {
           </motion.div>
 
           <motion.h2 className={styles.subTitle}>
-            ¿Para qué sirve un acta de conciliación entre compañeros
-            permanentes?
+            ¿Qué es un acta de conciliación entre compañeros permanentes y para
+            qué sirve?
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -210,8 +211,32 @@ export default function ActaCompanerosPermanentesContent() {
             <li>Información sobre bienes o patrimonio común.</li>
           </ul>
 
+          <h2 className={styles.subTitle}>
+            ¿Qué asuntos pueden conciliar los compañeros permanentes?
+          </h2>
+
+          <p className={styles.text}>
+            La conciliación permite resolver numerosos conflictos derivados de
+            la convivencia o de la terminación de la unión marital de hecho,
+            siempre que sean asuntos conciliables conforme a la legislación
+            colombiana.
+          </p>
+
+          <ul className={styles.list}>
+            <li>Cuotas de alimentos.</li>
+            <li>Custodia de hijos.</li>
+            <li>Régimen de visitas.</li>
+            <li>Responsabilidades económicas.</li>
+            <li>Distribución de gastos.</li>
+            <li>Uso de la vivienda.</li>
+            <li>Administración de bienes comunes.</li>
+            <li>Separación de hecho.</li>
+            <li>Acuerdos patrimoniales.</li>
+          </ul>
+
           <motion.h2 className={styles.subTitle}>
-            ¿Qué debe contener un acta de conciliación válida?
+            Formato del acta de conciliación entre compañeros permanentes:
+            información obligatoria
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -231,7 +256,8 @@ export default function ActaCompanerosPermanentesContent() {
           </ul>
 
           <motion.h2 className={styles.subTitle}>
-            Modelo de acta de conciliación compañeros permanentes
+            Modelo y ejemplo de acta de conciliación entre compañeros
+            permanentes
           </motion.h2>
 
           <motion.pre className={styles.pre}>
@@ -280,8 +306,25 @@ el cumplimiento judicial del presente acuerdo.
 Firmas...`}
           </motion.pre>
 
+          <h2 className={styles.subTitle}>
+            ¿Cómo se realiza una conciliación entre compañeros permanentes paso
+            a paso?
+          </h2>
+
+          <ol className={styles.list}>
+            <li>Presentar la solicitud de conciliación.</li>
+            <li>Citar a la otra parte.</li>
+            <li>Celebrar la audiencia.</li>
+            <li>Exponer los hechos.</li>
+            <li>Negociar los acuerdos.</li>
+            <li>Redactar el acta.</li>
+            <li>Firmar el acuerdo.</li>
+            <li>Cumplir las obligaciones pactadas.</li>
+          </ol>
+
           <motion.h2 className={styles.subTitle}>
-            Validez legal del acta de conciliación en Colombia
+            Efectos legales del acta de conciliación entre compañeros
+            permanentes
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -302,6 +345,33 @@ Firmas...`}
             futuros y facilita el cumplimiento de las obligaciones pactadas
             entre compañeros permanentes.
           </motion.p>
+
+          <h2 className={styles.subTitle}>
+            Beneficios de realizar una conciliación entre compañeros permanentes
+          </h2>
+
+          <ul className={styles.list}>
+            <li>Evita procesos judiciales largos.</li>
+            <li>Reduce costos legales.</li>
+            <li>Protege los derechos de los hijos.</li>
+            <li>Permite acuerdos voluntarios.</li>
+            <li>Fortalece la comunicación entre las partes.</li>
+            <li>Genera un documento con validez jurídica.</li>
+            <li>Facilita el cumplimiento de las obligaciones.</li>
+          </ul>
+
+          <h2 className={styles.subTitle}>
+            Errores frecuentes al elaborar un acta de conciliación
+          </h2>
+
+          <ul className={styles.list}>
+            <li>No establecer fechas exactas.</li>
+            <li>No definir montos.</li>
+            <li>No regular los gastos extraordinarios.</li>
+            <li>No especificar el régimen de visitas.</li>
+            <li>Utilizar obligaciones ambiguas.</li>
+            <li>No indicar consecuencias por incumplimiento.</li>
+          </ul>
 
           <motion.h2 className={styles.subTitle}>
             Preguntas frecuentes sobre conciliación entre compañeros permanentes

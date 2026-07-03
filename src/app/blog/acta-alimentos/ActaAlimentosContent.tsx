@@ -213,17 +213,27 @@ export default function ActaAlimentosContent() {
             </div>
 
             <h2 className={styles.subTitle}>
-              Beneficios de realizar una conciliación de alimentos en Bogotá y
-              Colombia
+              Ventajas de realizar una conciliación de alimentos antes de
+              iniciar una demanda judicial
             </h2>
 
             <ul className={styles.list}>
-              <li>Evita procesos judiciales largos.</li>
-              <li>Reduce costos legales.</li>
-              <li>Permite acuerdos más rápidos.</li>
-              <li>Protege los derechos de los menores.</li>
-              <li>Facilita el cumplimiento voluntario.</li>
-              <li>Genera un documento legal ejecutable.</li>
+              <li>Evita procesos judiciales largos y costosos.</li>
+              <li>Permite llegar a acuerdos voluntarios entre las partes.</li>
+              <li>El acta de conciliación tiene plena validez jurídica.</li>
+              <li>Protege el interés superior del menor.</li>
+              <li>Reduce el desgaste emocional de la familia.</li>
+              <li>
+                Facilita el cumplimiento de las obligaciones alimentarias.
+              </li>
+              <li>
+                Puede servir como requisito antes de acudir a un juez cuando la
+                ley lo exige.
+              </li>
+              <li>
+                Permite modificar posteriormente los acuerdos mediante una nueva
+                conciliación.
+              </li>
             </ul>
 
             <h2 className={styles.subTitle}>
@@ -279,6 +289,104 @@ El presente acuerdo presta mérito ejecutivo conforme a la legislación colombia
             </pre>
 
             <h2 className={styles.subTitle}>
+              Documentos necesarios para una conciliación de alimentos en
+              Colombia
+            </h2>
+
+            <p className={styles.text}>
+              Antes de asistir a una audiencia de conciliación es recomendable
+              reunir la documentación que permita identificar a las partes y
+              demostrar la capacidad económica del obligado y las necesidades
+              del beneficiario.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Cédula de ciudadanía de las partes.</li>
+              <li>Registro civil del menor.</li>
+              <li>Pruebas de ingresos o certificados laborales.</li>
+              <li>Soportes de gastos escolares.</li>
+              <li>Facturas médicas si existen.</li>
+              <li>Comprobantes de vivienda y alimentación.</li>
+              <li>
+                Cualquier documento que ayude a determinar una cuota justa.
+              </li>
+            </ul>
+
+            <h2 className={styles.subTitle}>
+              ¿Cómo se calcula la cuota alimentaria en Colombia?
+            </h2>
+
+            <p className={styles.text}>
+              En Colombia no existe una tabla fija para calcular la cuota
+              alimentaria. El valor depende de las necesidades del menor, la
+              capacidad económica de quien debe suministrar los alimentos y el
+              principio de proporcionalidad establecido por la legislación
+              colombiana.
+            </p>
+
+            <p className={styles.text}>
+              Durante la conciliación las partes pueden acordar libremente el
+              valor de la cuota siempre que se protejan los derechos del
+              beneficiario. También es común definir la forma en que se asumirán
+              gastos extraordinarios relacionados con educación, salud,
+              recreación y transporte.
+            </p>
+
+            <h2 className={styles.subTitle}>
+              ¿Qué ocurre si una de las partes incumple el acta de conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              Cuando una persona incumple las obligaciones pactadas en un acta
+              de conciliación de alimentos, la otra parte puede acudir ante un
+              juez para exigir su cumplimiento mediante un proceso ejecutivo, ya
+              que el acta presta mérito ejecutivo conforme a la legislación
+              colombiana.
+            </p>
+
+            <p className={styles.text}>
+              Dependiendo del caso también podrán solicitarse medidas
+              cautelares, embargos u otras actuaciones judiciales destinadas a
+              garantizar el pago de la cuota alimentaria y proteger los derechos
+              del menor.
+            </p>
+
+            <h2 className={styles.subTitle}>
+              ¿Dónde hacer una conciliación de alimentos en Colombia?
+            </h2>
+
+            <p className={styles.text}>
+              Las conciliaciones de alimentos pueden realizarse en centros de
+              conciliación autorizados por el Ministerio de Justicia,
+              consultorios jurídicos de universidades y otras entidades
+              habilitadas para adelantar este procedimiento.
+            </p>
+
+            <p className={styles.text}>
+              En Bogotá y otras ciudades del país es posible realizar
+              conciliaciones tanto presenciales como virtuales, dependiendo de
+              la entidad que conozca del caso.
+            </p>
+
+            <h2 className={styles.subTitle}>
+              Errores frecuentes al elaborar un acta de conciliación de
+              alimentos
+            </h2>
+
+            <ul className={styles.list}>
+              <li>No establecer claramente el valor de la cuota.</li>
+              <li>No indicar la fecha exacta de pago.</li>
+              <li>No definir la forma de consignación.</li>
+              <li>No regular los gastos extraordinarios.</li>
+              <li>No identificar correctamente a las partes.</li>
+              <li>No establecer consecuencias frente al incumplimiento.</li>
+              <li>
+                No actualizar la cuota cuando cambian las circunstancias
+                económicas.
+              </li>
+            </ul>
+
+            <h2 className={styles.subTitle}>
               Preguntas frecuentes sobre conciliación de alimentos en Colombia
             </h2>
 
@@ -315,7 +423,8 @@ El presente acuerdo presta mérito ejecutivo conforme a la legislación colombia
             </div>
 
             <h2 className={styles.subTitle}>
-              Importancia de la conciliación familiar en Colombia
+              ¿Por qué la conciliación de alimentos es una de las mejores
+              alternativas para proteger los derechos del menor?
             </h2>
 
             <p className={styles.text}>
@@ -330,6 +439,24 @@ El presente acuerdo presta mérito ejecutivo conforme a la legislación colombia
               para las familias colombianas.
             </p>
           </motion.article>
+
+          <h2 className={styles.subTitle}>
+            ¿Necesitas realizar una conciliación de alimentos en Bogotá o en
+            cualquier lugar de Colombia?
+          </h2>
+
+          <p className={styles.text}>
+            Si necesitas iniciar una conciliación de alimentos, modificar una
+            cuota alimentaria existente o elaborar un acta con plena validez
+            jurídica, en Sol Centro de Conciliación podemos orientarte durante
+            todo el procedimiento.
+          </p>
+
+          <p className={styles.text}>
+            Nuestro equipo acompaña conciliaciones familiares, civiles y
+            comerciales para que las partes puedan alcanzar acuerdos legales de
+            manera rápida, segura y evitando procesos judiciales innecesarios.
+          </p>
         </div>
       </div>
     </>

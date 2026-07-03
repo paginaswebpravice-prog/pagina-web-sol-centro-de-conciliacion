@@ -17,7 +17,8 @@ export default function AcuerdosCivilesContent() {
           <span className={styles.badge}>Conciliación y acuerdos civiles</span>
 
           <h1 className={styles.title}>
-            Acuerdos civiles extrajudiciales en Colombia
+            Acuerdos civiles extrajudiciales en Colombia: guía completa,
+            ejemplos, requisitos y validez legal
           </h1>
 
           <p className={styles.heroText}>
@@ -37,7 +38,8 @@ export default function AcuerdosCivilesContent() {
 
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            ¿Qué es un acuerdo civil extrajudicial?
+            ¿Qué es un acuerdo civil extrajudicial y cuándo conviene realizarlo
+            en Colombia?
           </h2>
 
           <p className={styles.paragraph}>
@@ -62,7 +64,127 @@ export default function AcuerdosCivilesContent() {
 
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            Casos que pueden resolverse mediante acuerdos civiles
+            ¿Cómo funciona una conciliación civil paso a paso en Colombia?
+          </h2>
+
+          <p className={styles.paragraph}>
+            La conciliación civil es un procedimiento mediante el cual dos o más
+            personas intentan solucionar un conflicto con la ayuda de un
+            conciliador imparcial. El objetivo es construir un acuerdo que
+            beneficie a ambas partes sin acudir a un proceso judicial
+            prolongado.
+          </p>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>1. Solicitud</h3>
+              <p>
+                Una de las partes presenta la solicitud de conciliación
+                indicando el conflicto que desea resolver.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>2. Citación</h3>
+              <p>
+                El centro de conciliación programa la audiencia e informa a las
+                partes la fecha, hora y lugar.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>3. Audiencia</h3>
+              <p>
+                Cada parte expone su posición mientras el conciliador facilita
+                el diálogo para encontrar alternativas de solución.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>4. Acta</h3>
+              <p>
+                Si existe acuerdo, este queda consignado en un acta con efectos
+                jurídicos y obligaciones claramente definidas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Ejemplos de conflictos civiles que pueden solucionarse mediante
+            conciliación
+          </h2>
+
+          <p className={styles.paragraph}>
+            La conciliación civil puede utilizarse para resolver múltiples
+            controversias entre particulares y empresas siempre que la ley
+            permita la conciliación sobre el asunto discutido.
+          </p>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>Deudas entre particulares</h3>
+              <p>
+                Acuerdos para pagar préstamos personales, obligaciones
+                económicas o dinero prestado.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Arrendamientos</h3>
+              <p>
+                Mora en cánones, entrega del inmueble, reparaciones y demás
+                diferencias derivadas del contrato.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Incumplimiento de contratos</h3>
+              <p>
+                Conflictos derivados del incumplimiento de obligaciones pactadas
+                entre personas naturales o empresas.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Daños y perjuicios</h3>
+              <p>
+                Indemnizaciones por afectaciones económicas ocasionadas por
+                actuaciones de una de las partes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué debe contener un acuerdo civil para evitar futuros conflictos?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Un acuerdo correctamente elaborado disminuye la posibilidad de
+            nuevos desacuerdos y facilita su cumplimiento.
+          </p>
+
+          <ul className={styles.list}>
+            <li>Identificación completa de las partes.</li>
+            <li>Descripción clara del conflicto.</li>
+            <li>Obligaciones específicas.</li>
+            <li>Valores exactos.</li>
+            <li>Fechas de cumplimiento.</li>
+            <li>Forma de pago o entrega.</li>
+            <li>Consecuencias del incumplimiento.</li>
+            <li>Firmas de las partes.</li>
+            <li>Datos del conciliador.</li>
+            <li>Información del centro de conciliación.</li>
+          </ul>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué conflictos civiles pueden resolverse mediante conciliación
+            extrajudicial?
           </h2>
 
           <ul className={styles.list}>
@@ -79,7 +201,8 @@ export default function AcuerdosCivilesContent() {
 
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            Ventajas de los acuerdos civiles extrajudiciales
+            Beneficios de un acuerdo civil extrajudicial frente a una demanda
+            judicial
           </h2>
 
           <div className={styles.cardsGrid}>
@@ -113,7 +236,10 @@ export default function AcuerdosCivilesContent() {
         </div>
 
         <div className={styles.contentSection}>
-          <h2 className={styles.subtitle}>Validez legal de los acuerdos</h2>
+          <h2 className={styles.subtitle}>
+            ¿Los acuerdos civiles extrajudiciales tienen validez legal en
+            Colombia?
+          </h2>
 
           <p className={styles.paragraph}>
             Cuando un acuerdo es alcanzado mediante conciliación ante un centro
@@ -130,7 +256,7 @@ export default function AcuerdosCivilesContent() {
 
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            ¿Cuándo conviene intentar un acuerdo civil?
+            ¿Cuándo es recomendable acudir primero a un centro de conciliación?
           </h2>
 
           <p className={styles.paragraph}>
@@ -144,6 +270,95 @@ export default function AcuerdosCivilesContent() {
             preservar relaciones personales, familiares y comerciales que
             podrían deteriorarse durante un litigio prolongado.
           </p>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué ocurre si una de las partes incumple el acuerdo civil?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Cuando el acuerdo ha sido celebrado mediante conciliación y consta
+            en un acta, su incumplimiento puede generar actuaciones judiciales
+            encaminadas a exigir el cumplimiento de las obligaciones pactadas.
+          </p>
+
+          <p className={styles.paragraph}>
+            Por esta razón resulta fundamental que el acuerdo contenga
+            obligaciones claras, verificables y fácilmente ejecutables, evitando
+            cláusulas ambiguas que puedan dar lugar a nuevas controversias.
+          </p>
+
+          <div className={styles.highlightBox}>
+            <p>
+              Un acuerdo bien redactado protege tanto a quien debe cumplir una
+              obligación como a quien tiene derecho a exigir su cumplimiento.
+            </p>
+          </div>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Documentos que normalmente se requieren para una conciliación civil
+          </h2>
+
+          <p className={styles.paragraph}>
+            Dependiendo del conflicto, el conciliador podrá solicitar documentos
+            que permitan comprender el origen de la controversia y facilitar la
+            búsqueda de una solución.
+          </p>
+
+          <ul className={styles.list}>
+            <li>Documento de identidad.</li>
+            <li>Contratos relacionados con el conflicto.</li>
+            <li>Facturas.</li>
+            <li>Comprobantes de pago.</li>
+            <li>Correos electrónicos.</li>
+            <li>Mensajes.</li>
+            <li>Cotizaciones.</li>
+            <li>Recibos.</li>
+            <li>Soportes adicionales que demuestren las obligaciones.</li>
+          </ul>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Errores frecuentes al firmar un acuerdo civil extrajudicial
+          </h2>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>No fijar fechas</h3>
+              <p>
+                Los acuerdos deben indicar exactamente cuándo deben cumplirse
+                las obligaciones.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Montos ambiguos</h3>
+              <p>
+                Es recomendable establecer valores exactos para evitar
+                interpretaciones posteriores.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>No definir consecuencias</h3>
+              <p>
+                Debe establecerse qué ocurre si alguna de las partes incumple el
+                acuerdo.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Información incompleta</h3>
+              <p>
+                La identificación incorrecta de las partes puede generar
+                dificultades jurídicas posteriores.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className={styles.contentSection}>
@@ -177,6 +392,27 @@ export default function AcuerdosCivilesContent() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Por qué acudir a un centro de conciliación antes de presentar una
+            demanda?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Intentar una conciliación permite explorar soluciones rápidas,
+            flexibles y ajustadas a las necesidades de las partes. Además de
+            ahorrar tiempo y costos, puede contribuir a preservar relaciones
+            comerciales, familiares o personales que podrían deteriorarse
+            durante un litigio.
+          </p>
+
+          <p className={styles.paragraph}>
+            Cuando se alcanza un acuerdo, este queda consignado en un acta de
+            conciliación con efectos jurídicos, brindando mayor seguridad frente
+            al cumplimiento de las obligaciones asumidas.
+          </p>
         </div>
 
         <div className={styles.ctaBox}>

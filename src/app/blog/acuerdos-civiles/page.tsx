@@ -2,17 +2,27 @@ import type { Metadata } from "next";
 import AcuerdosCivilesContent from "./AcuerdosCivilesContent";
 
 export const metadata: Metadata = {
-  title: "Acuerdos civiles extrajudiciales en Colombia | Conciliación civil",
+  title:
+    "Acuerdos civiles extrajudiciales en Colombia: qué son, ejemplos, requisitos y validez legal (2026)",
   description:
-    "Conoce cómo funcionan los acuerdos civiles extrajudiciales en Colombia, sus beneficios, validez legal y cómo pueden evitar procesos judiciales.",
+    "Descubre qué es un acuerdo civil extrajudicial, cuándo conviene realizarlo, qué conflictos pueden resolverse mediante conciliación, ejemplos, requisitos, ventajas y su validez legal en Colombia.",
   keywords: [
     "acuerdos civiles extrajudiciales",
-    "conciliación civil Colombia",
-    "acuerdo extrajudicial",
-    "resolver conflicto sin demanda",
-    "conciliación Bogotá",
     "acuerdo civil",
-    "solución de conflictos Colombia",
+    "acuerdo extrajudicial",
+    "conciliación civil",
+    "conciliación civil Colombia",
+    "centro de conciliación civil",
+    "acta de conciliación civil",
+    "ejemplo acuerdo civil",
+    "modelo acuerdo civil",
+    "resolver conflicto sin demanda",
+    "resolver conflicto civil",
+    "acuerdo de pago civil",
+    "conciliación Bogotá",
+    "acuerdo legal Colombia",
+    "validez acuerdo civil",
+    "conciliación extrajudicial Colombia",
   ],
   robots: {
     index: true,
@@ -22,7 +32,8 @@ export const metadata: Metadata = {
     canonical: "https://solcentrodeconciliacion.com/blog/acuerdos-civiles",
   },
   openGraph: {
-    title: "Acuerdos civiles extrajudiciales en Colombia",
+    title:
+      "Acuerdos civiles extrajudiciales: guía completa, ejemplos y validez legal",
     description:
       "Descubre cómo resolver conflictos civiles mediante acuerdos extrajudiciales con plena validez legal.",
     url: "https://solcentrodeconciliacion.com/blog/acuerdos-civiles",
@@ -36,7 +47,8 @@ export default function Page() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Acuerdos civiles extrajudiciales en Colombia",
+    headline:
+      "Acuerdos civiles extrajudiciales en Colombia: guía completa, requisitos, ejemplos y validez legal",
     description:
       "Guía completa sobre acuerdos civiles extrajudiciales y conciliación civil en Colombia.",
     author: {

@@ -98,8 +98,8 @@ export default function ActaCivilContent() {
           </div>
 
           <motion.h1 className={styles.title} itemProp="headline">
-            Acta de conciliación civil en Colombia: modelo, ejemplos y guía
-            completa 2026
+            Acta de conciliación civil en Colombia: modelo, ejemplo, formato,
+            requisitos y efectos legales
           </motion.h1>
 
           <motion.p className={styles.text} itemProp="description">
@@ -144,7 +144,7 @@ export default function ActaCivilContent() {
           </div>
 
           <motion.h2 className={styles.subtitle}>
-            ¿Qué es la conciliación civil en Colombia?
+            ¿Qué es un acta de conciliación civil en Colombia y para qué sirve?
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -167,7 +167,7 @@ export default function ActaCivilContent() {
           </motion.p>
 
           <motion.h2 className={styles.subtitle}>
-            ¿Para qué sirve un acta de conciliación civil?
+            ¿En qué casos puede utilizarse un acta de conciliación civil?
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -195,7 +195,8 @@ export default function ActaCivilContent() {
           </motion.p>
 
           <motion.h2 className={styles.subtitle}>
-            ¿Qué debe contener un acta de conciliación civil en Colombia?
+            Formato del acta de conciliación civil: información y requisitos
+            obligatorios
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -253,7 +254,7 @@ export default function ActaCivilContent() {
           </motion.p>
 
           <motion.h2 className={styles.subtitle}>
-            Modelo de acta de conciliación civil en Colombia
+            Modelo y ejemplo de acta de conciliación civil en Colombia
           </motion.h2>
 
           <motion.pre className={styles.pre}>
@@ -300,6 +301,75 @@ Cumplido el acuerdo, las partes se declaran a paz y salvo.
 
 Firmas…`}
           </motion.pre>
+
+          <h2 className={styles.subtitle}>
+            ¿Cuáles conflictos pueden resolverse mediante una conciliación
+            civil?
+          </h2>
+
+          <p className={styles.text}>
+            La conciliación civil puede utilizarse para resolver una amplia
+            variedad de conflictos entre particulares y empresas, siempre que la
+            materia sea conciliable conforme a la legislación colombiana.
+          </p>
+
+          <ul className={styles.list}>
+            <li>Incumplimiento de contratos.</li>
+            <li>Acuerdos de pago.</li>
+            <li>Cobro de deudas.</li>
+            <li>Conflictos de arrendamiento.</li>
+            <li>Entrega de bienes.</li>
+            <li>Responsabilidad civil.</li>
+            <li>Daños y perjuicios.</li>
+            <li>Incumplimientos comerciales.</li>
+            <li>Obligaciones económicas.</li>
+          </ul>
+
+          <h2 className={styles.subtitle}>
+            ¿Cómo se realiza una conciliación civil paso a paso?
+          </h2>
+
+          <ol className={styles.list}>
+            <li>Presentar la solicitud de conciliación.</li>
+            <li>Notificar a la otra parte.</li>
+            <li>Programar la audiencia.</li>
+            <li>Escuchar las posiciones de ambas partes.</li>
+            <li>Negociar soluciones.</li>
+            <li>Firmar el acta de conciliación.</li>
+            <li>Cumplir los acuerdos establecidos.</li>
+          </ol>
+
+          <h2 className={styles.subtitle}>
+            Ventajas de resolver un conflicto mediante conciliación civil
+          </h2>
+
+          <p className={styles.text}>
+            Optar por una conciliación civil ofrece importantes beneficios
+            frente a un proceso judicial tradicional.
+          </p>
+
+          <ul className={styles.list}>
+            <li>Menor costo.</li>
+            <li>Soluciones rápidas.</li>
+            <li>Acuerdos voluntarios.</li>
+            <li>Validez jurídica.</li>
+            <li>Reducción del desgaste emocional.</li>
+            <li>Conservación de relaciones comerciales.</li>
+            <li>Mayor flexibilidad para negociar.</li>
+          </ul>
+
+          <h2 className={styles.subtitle}>
+            Errores frecuentes al elaborar un acta de conciliación civil
+          </h2>
+
+          <ul className={styles.list}>
+            <li>No definir fechas exactas.</li>
+            <li>No indicar valores específicos.</li>
+            <li>Usar cláusulas ambiguas.</li>
+            <li>No establecer consecuencias por incumplimiento.</li>
+            <li>Omitir datos de identificación.</li>
+            <li>No conservar copia del acta.</li>
+          </ul>
 
           <motion.h2 className={styles.subtitle}>
             ¿Qué pasa si incumplen el acta de conciliación?

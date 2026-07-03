@@ -3,15 +3,23 @@ import ActaCompanerosPermanentesContent from "./ActaCompanerosPermanentesContent
 
 export const metadata: Metadata = {
   title:
-    "Acta de conciliación compañeros permanentes en Colombia | Modelo y guía legal",
+    "Acta de conciliación entre compañeros permanentes en Colombia: modelo, ejemplo, requisitos y efectos legales (Guía 2026)",
   description:
-    "Acta de conciliación suscrita por los compañeros permanentes en Colombia. Modelo, requisitos, efectos legales y guía jurídica en Bogotá y Colombia.",
+    "Conoce cómo elaborar un acta de conciliación entre compañeros permanentes en Colombia. Incluye modelo, ejemplo, requisitos, unión marital de hecho, efectos legales, separación, alimentos, custodia y guía paso a paso.",
   keywords: [
-    "acta de conciliacion compañeros permanentes Colombia",
-    "union marital de hecho Colombia",
-    "conciliacion familiar Bogota",
-    "modelo acta conciliacion Colombia",
-    "acuerdos compañeros permanentes",
+    "acta de conciliación compañeros permanentes",
+    "acta de conciliación compañeros permanentes Colombia",
+    "modelo acta compañeros permanentes",
+    "ejemplo acta conciliación familiar",
+    "unión marital de hecho Colombia",
+    "conciliación unión marital de hecho",
+    "conciliación familiar Colombia",
+    "separación compañeros permanentes",
+    "acuerdo entre compañeros permanentes",
+    "custodia compañeros permanentes",
+    "alimentos compañeros permanentes",
+    "efectos legales conciliación familiar",
+    "centro de conciliación Bogotá",
   ],
   openGraph: {
     title:
