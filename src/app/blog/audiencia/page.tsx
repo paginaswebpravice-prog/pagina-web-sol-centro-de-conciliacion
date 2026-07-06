@@ -2,9 +2,10 @@ import { Metadata } from "next";
 import AudienciaContent from "./AudienciaContent";
 
 export const metadata: Metadata = {
-  title: "Audiencia de conciliación en Colombia: cómo prepararse",
+  title:
+    "Audiencia de conciliación en Colombia: cómo funciona, qué documentos llevar y qué pasa si no hay acuerdo",
   description:
-    "Guía completa sobre la audiencia de conciliación en Colombia. Aprende cómo funciona, qué llevar, qué pasa si no asisten y cómo prepararte en Bogotá y Colombia.",
+    "Descubre cómo funciona una audiencia de conciliación en Colombia, qué documentos llevar, cuánto dura, qué sucede si una parte no asiste, cómo prepararte y qué efectos legales tiene el acta de conciliación.",
   keywords: [
     "audiencia de conciliación Colombia",
     "audiencia de conciliación Bogotá",
@@ -16,9 +17,11 @@ export const metadata: Metadata = {
     canonical: "https://solcentrodeconciliacion.com/blog/audiencia",
   },
   openGraph: {
-    title: "Audiencia de conciliación en Colombia: cómo prepararte",
+    title:
+      "Audiencia de conciliación en Colombia: cómo funciona, qué documentos llevar y qué pasa si no hay acuerdo",
     description:
-      "Conoce cómo funciona una audiencia de conciliación en Colombia, qué llevar y qué pasa si no hay acuerdo.",
+      "Descubre cómo funciona una audiencia de conciliación en Colombia, qué documentos llevar, cuánto dura, qué sucede si una parte no asiste, cómo prepararte y qué efectos legales tiene el acta de conciliación.",
+
     url: "https://solcentrodeconciliacion.com/blog/audiencia",
     siteName: "Sol Centro de Conciliación",
     locale: "es_CO",

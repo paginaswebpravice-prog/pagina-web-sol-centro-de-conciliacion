@@ -13,15 +13,23 @@ export default function AudienciaContent() {
         name: "¿Qué es una audiencia de conciliación en Colombia?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Es un mecanismo de resolución de conflictos donde las partes intentan llegar a un acuerdo con ayuda de un conciliador autorizado, evitando un proceso judicial.",
+          text: "Es una reunión dirigida por un conciliador autorizado en la que las partes buscan resolver un conflicto mediante el diálogo antes de acudir a un proceso judicial. Si llegan a un acuerdo, este queda consignado en un acta con efectos legales.",
         },
       },
       {
         "@type": "Question",
-        name: "¿La audiencia de conciliación en Bogotá tiene validez legal?",
+        name: "¿Cómo funciona una audiencia de conciliación?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí. El acuerdo contenido en el acta de conciliación presta mérito ejecutivo y hace tránsito a cosa juzgada en Colombia.",
+          text: "La audiencia inicia con la identificación de las partes, continúa con la exposición del conflicto, la presentación de propuestas de solución y la negociación. Si existe acuerdo, se firma un acta de conciliación; si no, se expide una constancia de no conciliación o de inasistencia según corresponda.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué documentos debo llevar a una audiencia de conciliación?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Es recomendable presentar el documento de identidad, contratos, pagarés, facturas, comprobantes de pago, conversaciones, correos electrónicos, fotografías, liquidaciones y cualquier otro documento que sirva para demostrar los hechos relacionados con el conflicto.",
         },
       },
       {
@@ -29,15 +37,95 @@ export default function AudienciaContent() {
         name: "¿Qué pasa si una persona no asiste a la audiencia de conciliación?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "El conciliador puede emitir una constancia de inasistencia o de no conciliación, documento que puede ser utilizado posteriormente dentro de un proceso judicial en Colombia.",
+          text: "Cuando una de las partes no comparece sin justificación, el conciliador puede dejar constancia de inasistencia. Dependiendo del caso, este documento puede utilizarse posteriormente para iniciar un proceso judicial.",
         },
       },
       {
         "@type": "Question",
-        name: "¿Qué documentos debo llevar a una audiencia de conciliación en Colombia?",
+        name: "¿Qué ocurre si no se logra un acuerdo durante la audiencia?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Es recomendable llevar cédula, contratos, facturas, chats, consignaciones, correos electrónicos, liquidaciones y cualquier soporte relacionado con el conflicto.",
+          text: "Si las partes no alcanzan un acuerdo, el conciliador expide una constancia de no conciliación. En muchos asuntos esta constancia permite continuar con la presentación de una demanda ante el juez competente.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿El acta de conciliación tiene validez legal en Colombia?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí. El acta de conciliación tiene efectos jurídicos, presta mérito ejecutivo y hace tránsito a cosa juzgada, por lo que el acuerdo puede exigirse legalmente en caso de incumplimiento.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Cuánto dura una audiencia de conciliación?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "La duración depende de la complejidad del conflicto y de la disposición de las partes para negociar. Muchas audiencias pueden desarrollarse entre una y tres horas.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Es obligatorio asistir a una audiencia de conciliación?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Depende del tipo de conflicto. En algunos procesos la conciliación constituye un requisito de procedibilidad antes de presentar una demanda, mientras que en otros asuntos es completamente voluntaria.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué tipos de conflictos pueden resolverse en una audiencia de conciliación?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Entre otros, pueden conciliarse conflictos relacionados con deudas, contratos, arrendamientos, responsabilidad civil, asuntos familiares, obligaciones económicas, incumplimientos contractuales y controversias comerciales, siempre que la ley permita su conciliación.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Es necesario contratar un abogado para asistir a una audiencia de conciliación?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No siempre es obligatorio. Sin embargo, dependiendo de la complejidad del caso, puede ser recomendable contar con asesoría jurídica para comprender el alcance del acuerdo y proteger adecuadamente los derechos de las partes.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué ventajas tiene la conciliación frente a un proceso judicial?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "La conciliación suele ser más rápida, económica y flexible que un proceso judicial. Además, permite que las propias partes construyan soluciones adaptadas a sus necesidades y favorece la conservación de las relaciones personales o comerciales.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué pasa si una de las partes incumple el acta de conciliación?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Si el acuerdo contenido en el acta no se cumple, la parte afectada puede iniciar las acciones legales correspondientes para exigir su cumplimiento, ya que el acta presta mérito ejecutivo conforme a la legislación colombiana.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Se puede realizar una audiencia de conciliación de manera virtual?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí. Dependiendo del centro de conciliación y del tipo de conflicto, es posible que la audiencia se realice mediante plataformas virtuales, siempre que se garantice la identificación de las partes y el cumplimiento de los requisitos legales.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Dónde se puede solicitar una audiencia de conciliación en Colombia?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "La solicitud puede presentarse ante centros de conciliación autorizados, cámaras de comercio, consultorios jurídicos, notarías habilitadas y otras entidades facultadas para prestar este servicio según la legislación colombiana.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Cómo prepararse para una audiencia de conciliación?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Lo recomendable es organizar todos los documentos relacionados con el conflicto, calcular correctamente las obligaciones económicas, definir alternativas de negociación y asistir con disposición para dialogar y buscar una solución que beneficie a ambas partes.",
         },
       },
     ],
@@ -72,8 +160,8 @@ export default function AudienciaContent() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.6 }}
           >
-            Audiencia de conciliación en Colombia: cómo funciona, qué pasa y
-            cómo prepararte en Bogotá
+            Audiencia de conciliación en Colombia: cómo funciona, qué llevar,
+            qué pasa si no hay acuerdo y cómo prepararte
           </motion.h1>
 
           <motion.p className={styles.text} itemProp="description">
@@ -107,7 +195,7 @@ export default function AudienciaContent() {
           </motion.p>
 
           <motion.h2 className={styles.subtitle}>
-            ¿Qué es exactamente una audiencia de conciliación en Colombia?
+            ¿Qué es una audiencia de conciliación y para qué sirve en Colombia?
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -135,7 +223,7 @@ export default function AudienciaContent() {
           </motion.p>
 
           <motion.h2 className={styles.subtitle}>
-            Etapas de una audiencia de conciliación en Bogotá y Colombia
+            ¿Cómo es una audiencia de conciliación paso a paso?
           </motion.h2>
 
           <div className={styles.timeline}>
@@ -194,7 +282,7 @@ export default function AudienciaContent() {
           </div>
 
           <motion.h2 className={styles.subtitle}>
-            Qué llevar a una audiencia de conciliación en Colombia
+            ¿Qué documentos debo llevar a una audiencia de conciliación?
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -245,7 +333,7 @@ export default function AudienciaContent() {
           </div>
 
           <motion.h2 className={styles.subtitle}>
-            Qué efectos legales tiene el acta de conciliación en Colombia
+            ¿Qué validez legal tiene el acta de conciliación?
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -273,7 +361,7 @@ export default function AudienciaContent() {
           </div>
 
           <motion.h2 className={styles.subtitle}>
-            ¿Qué pasa si no hay acuerdo en la audiencia de conciliación?
+            ¿Qué pasa si no se llega a un acuerdo durante la audiencia?
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -287,6 +375,135 @@ export default function AudienciaContent() {
             En muchos procesos en Bogotá y Colombia, esta constancia puede ser
             necesaria para presentar posteriormente una demanda judicial.
           </motion.p>
+
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Quiénes participan en una audiencia de conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              En una audiencia de conciliación intervienen el conciliador y las
+              partes involucradas en el conflicto. Dependiendo del asunto,
+              también pueden participar apoderados, representantes legales o
+              personas autorizadas para tomar decisiones.
+            </p>
+
+            <div className={styles.grid}>
+              <div className={styles.innerCard}>
+                <h3>Conciliador</h3>
+
+                <p>
+                  Dirige la audiencia, facilita el diálogo y verifica que
+                  cualquier acuerdo cumpla los requisitos legales.
+                </p>
+              </div>
+
+              <div className={styles.innerCard}>
+                <h3>Solicitante</h3>
+
+                <p>
+                  Es quien presenta la solicitud de conciliación buscando
+                  resolver el conflicto.
+                </p>
+              </div>
+
+              <div className={styles.innerCard}>
+                <h3>Citado</h3>
+
+                <p>
+                  Persona invitada a participar para intentar construir un
+                  acuerdo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Cuánto dura una audiencia de conciliación en Colombia?
+            </h2>
+
+            <p className={styles.text}>
+              La duración depende de la complejidad del conflicto, la
+              disposición de las partes para negociar y la cantidad de pruebas
+              que deban analizarse. Muchas audiencias pueden resolverse entre
+              una y tres horas, mientras que otras requieren sesiones
+              adicionales cuando las partes necesitan revisar propuestas o
+              documentación complementaria.
+            </p>
+
+            <p className={styles.text}>
+              Aunque no existe una duración única para todos los casos, la
+              conciliación suele ser significativamente más rápida que un
+              proceso judicial.
+            </p>
+          </div>
+
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Qué preguntas suelen hacerse durante una audiencia de
+              conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              Durante la audiencia el conciliador formula preguntas que permitan
+              comprender el origen del conflicto y facilitar la construcción de
+              un acuerdo.
+            </p>
+
+            <ul className={styles.list}>
+              <li>¿Qué ocurrió?</li>
+              <li>¿Cuál es su pretensión?</li>
+              <li>¿Qué pruebas posee?</li>
+              <li>¿Qué solución propone?</li>
+              <li>¿Está dispuesto a negociar?</li>
+              <li>¿Cuál sería un acuerdo aceptable?</li>
+            </ul>
+          </div>
+
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Consejos para prepararte antes de una audiencia de conciliación
+            </h2>
+
+            <div className={styles.grid}>
+              <div className={styles.innerCard}>
+                <h3>Organiza tus documentos</h3>
+
+                <p>
+                  Lleva todos los soportes relacionados con el conflicto
+                  ordenados cronológicamente.
+                </p>
+              </div>
+
+              <div className={styles.innerCard}>
+                <h3>Calcula exactamente tu reclamación</h3>
+
+                <p>
+                  Presenta cifras claras evitando aproximaciones o valores sin
+                  soporte.
+                </p>
+              </div>
+
+              <div className={styles.innerCard}>
+                <h3>Define un margen de negociación</h3>
+
+                <p>
+                  Antes de asistir establece cuáles son las condiciones mínimas
+                  que aceptarías.
+                </p>
+              </div>
+
+              <div className={styles.innerCard}>
+                <h3>Mantén una actitud de diálogo</h3>
+
+                <p>
+                  Escuchar a la otra parte suele aumentar considerablemente las
+                  probabilidades de alcanzar un acuerdo.
+                </p>
+              </div>
+            </div>
+          </div>
 
           <motion.h2 className={styles.subtitle}>
             Modelo básico de desarrollo de audiencia de conciliación
@@ -324,6 +541,86 @@ FIRMAS:
 ____________________
 ____________________`}
           </pre>
+
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Errores que debes evitar durante una audiencia de conciliación
+            </h2>
+
+            <ul className={styles.list}>
+              <li>Interrumpir constantemente a la otra parte.</li>
+              <li>No llevar pruebas.</li>
+              <li>Firmar sin leer el acta.</li>
+              <li>No revisar fechas de pago.</li>
+              <li>No establecer consecuencias por incumplimiento.</li>
+              <li>Negarse completamente al diálogo.</li>
+              <li>No solicitar copia del acta.</li>
+            </ul>
+          </div>
+
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Cuáles conflictos pueden resolverse mediante una audiencia de
+              conciliación?
+            </h2>
+
+            <p className={styles.text}>
+              Las audiencias de conciliación pueden utilizarse para resolver
+              numerosos conflictos susceptibles de acuerdo entre las partes.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Cobro de deudas.</li>
+              <li>Arrendamientos.</li>
+              <li>Conflictos civiles.</li>
+              <li>Obligaciones contractuales.</li>
+              <li>Conflictos familiares.</li>
+              <li>Liquidaciones laborales.</li>
+              <li>Incumplimientos comerciales.</li>
+              <li>Responsabilidad civil.</li>
+            </ul>
+          </div>
+
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Beneficios de resolver el conflicto mediante conciliación
+            </h2>
+
+            <div className={styles.grid}>
+              <div className={styles.innerCard}>
+                <h3>Mayor rapidez</h3>
+
+                <p>
+                  Permite resolver muchos conflictos en semanas y no en años.
+                </p>
+              </div>
+
+              <div className={styles.innerCard}>
+                <h3>Menores costos</h3>
+
+                <p>
+                  Reduce gastos derivados de procesos judiciales prolongados.
+                </p>
+              </div>
+
+              <div className={styles.innerCard}>
+                <h3>Seguridad jurídica</h3>
+
+                <p>
+                  Los acuerdos quedan respaldados mediante un acta de
+                  conciliación.
+                </p>
+              </div>
+
+              <div className={styles.innerCard}>
+                <h3>Mayor control</h3>
+
+                <p>
+                  Las partes construyen conjuntamente la solución del conflicto.
+                </p>
+              </div>
+            </div>
+          </div>
 
           <motion.h2 className={styles.subtitle}>
             Preguntas frecuentes sobre audiencia de conciliación en Colombia

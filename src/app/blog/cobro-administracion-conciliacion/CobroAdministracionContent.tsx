@@ -40,7 +40,8 @@ export default function CobroAdministracionContent() {
         {/* DEFINICIÓN */}
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            ¿Qué es el cobro de administración?
+            ¿Qué es el cobro de cuotas de administración en propiedad horizontal
+            y por qué genera tantos conflictos?
           </h2>
 
           <p className={styles.paragraph}>
@@ -58,7 +59,8 @@ export default function CobroAdministracionContent() {
         {/* PROBLEMAS */}
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            Problemas comunes en el cobro de administración
+            Principales problemas al cobrar cuotas de administración en
+            conjuntos residenciales
           </h2>
 
           <ul className={styles.list}>
@@ -80,7 +82,8 @@ export default function CobroAdministracionContent() {
         {/* BENEFICIOS */}
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            Beneficios del cobro por conciliación
+            ¿Por qué utilizar la conciliación para recuperar cuotas de
+            administración?
           </h2>
 
           <div className={styles.cardsGrid}>
@@ -108,7 +111,10 @@ export default function CobroAdministracionContent() {
 
         {/* COMO FUNCIONA */}
         <div className={styles.contentSection}>
-          <h2 className={styles.subtitle}>¿Cómo funciona la conciliación?</h2>
+          <h2 className={styles.subtitle}>
+            ¿Cómo funciona el proceso de conciliación para recuperar cuotas de
+            administración?
+          </h2>
 
           <p className={styles.paragraph}>
             La administración o el propietario pueden acudir a un centro de
@@ -123,7 +129,10 @@ export default function CobroAdministracionContent() {
 
         {/* SOLUCIONES */}
         <div className={styles.contentSection}>
-          <h2 className={styles.subtitle}>Soluciones más comunes</h2>
+          <h2 className={styles.subtitle}>
+            Acuerdos que pueden lograrse mediante una conciliación por cuotas de
+            administración
+          </h2>
 
           <ul className={styles.list}>
             <li>Acuerdos de pago en cuotas.</li>
@@ -131,6 +140,277 @@ export default function CobroAdministracionContent() {
             <li>Reestructuración de deuda.</li>
             <li>Pago inmediato con descuento.</li>
             <li>Compromisos formales de pago.</li>
+          </ul>
+        </div>
+
+        {/* CUANDO ACUDIR */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Cuándo conviene acudir a una conciliación antes de iniciar un
+            proceso judicial?
+          </h2>
+
+          <p className={styles.paragraph}>
+            En muchos casos, acudir primero a un centro de conciliación permite
+            recuperar las cuotas de administración de manera más rápida que
+            iniciar directamente un proceso ejecutivo. La conciliación brinda un
+            espacio para negociar con el propietario moroso y establecer
+            compromisos de pago que beneficien a ambas partes.
+          </p>
+
+          <p className={styles.paragraph}>
+            Este mecanismo resulta especialmente útil cuando existe disposición
+            para llegar a un acuerdo, evitando mayores costos procesales y
+            reduciendo el tiempo necesario para recuperar la cartera vencida.
+          </p>
+
+          <div className={styles.highlightBox}>
+            <p>
+              En muchos conjuntos residenciales, la conciliación permite
+              recuperar la cartera sin necesidad de acudir inmediatamente a un
+              juez.
+            </p>
+          </div>
+        </div>
+
+        {/* DOCUMENTOS */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué documentos se necesitan para iniciar una conciliación por
+            cuotas de administración?
+          </h2>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>Estado de cuenta</h3>
+
+              <p>
+                Documento donde se evidencie el valor adeudado y los periodos
+                pendientes.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Certificación de deuda</h3>
+
+              <p>
+                Emitida por la administración o por quien tenga la
+                representación de la copropiedad.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Reglamento de propiedad horizontal</h3>
+
+              <p>
+                Permite verificar las obligaciones relacionadas con las cuotas
+                de administración.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Soportes adicionales</h3>
+
+              <p>
+                Comunicaciones, acuerdos anteriores o cualquier documento
+                relacionado con la obligación.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* INCUMPLIMIENTO */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué sucede si el propietario incumple el acuerdo de conciliación?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Cuando las partes firman un acta de conciliación, el acuerdo
+            adquiere efectos jurídicos. Si posteriormente el deudor incumple las
+            obligaciones asumidas, el acreedor puede hacer valer dicho acuerdo
+            mediante los mecanismos legales correspondientes.
+          </p>
+
+          <p className={styles.paragraph}>
+            Por esta razón, la conciliación no solo facilita la negociación,
+            sino que también brinda seguridad jurídica frente a los compromisos
+            adquiridos por las partes.
+          </p>
+        </div>
+
+        {/* CASOS ESPECIALES */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Casos en los que la conciliación resulta especialmente efectiva
+          </h2>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>Cuotas atrasadas</h3>
+
+              <p>
+                Cuando el propietario reconoce la deuda pero necesita
+                facilidades de pago.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Intereses de mora</h3>
+
+              <p>
+                Las partes pueden negociar reducciones o nuevas condiciones para
+                el pago.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Acuerdos de pago</h3>
+
+              <p>
+                Es posible establecer cronogramas de pago ajustados a la
+                capacidad económica del deudor.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Conflictos sobre el valor adeudado</h3>
+
+              <p>
+                La audiencia permite revisar las diferencias y buscar una
+                solución consensuada.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* VENTAJAS */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Ventajas de recuperar la cartera de administración mediante
+            conciliación
+          </h2>
+
+          <ul className={styles.list}>
+            <li>Reduce los tiempos de recuperación de la cartera.</li>
+            <li>Evita procesos judiciales prolongados.</li>
+            <li>Disminuye costos legales para la copropiedad.</li>
+            <li>Facilita acuerdos de pago flexibles.</li>
+            <li>
+              Contribuye a mantener una buena convivencia entre los
+              propietarios.
+            </li>
+            <li>El acuerdo alcanzado produce efectos jurídicos.</li>
+            <li>Permite negociar intereses y plazos de pago.</li>
+            <li>Favorece una solución rápida y voluntaria del conflicto.</li>
+          </ul>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué establece la Ley 675 de 2001 sobre el pago de las cuotas de
+            administración?
+          </h2>
+
+          <p className={styles.paragraph}>
+            La Ley 675 de 2001 regula el régimen de propiedad horizontal en
+            Colombia y establece que todos los propietarios están obligados a
+            contribuir con el pago oportuno de las expensas comunes o cuotas de
+            administración. Estos recursos permiten cubrir el mantenimiento de
+            las zonas comunes, la seguridad, los servicios generales y el
+            funcionamiento de la copropiedad.
+          </p>
+
+          <p className={styles.paragraph}>
+            Cuando un propietario incumple esta obligación, la administración
+            puede adelantar diferentes mecanismos para recuperar la cartera,
+            entre ellos la conciliación, la celebración de acuerdos de pago y,
+            cuando sea necesario, los procesos judiciales correspondientes.
+          </p>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Paso a paso para recuperar cuotas de administración mediante
+            conciliación
+          </h2>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>Paso 1</h3>
+
+              <p>Calcular el valor total de la deuda y reunir los soportes.</p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Paso 2</h3>
+
+              <p>
+                Presentar la solicitud ante un centro de conciliación
+                autorizado.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Paso 3</h3>
+
+              <p>Asistir a la audiencia para negociar un acuerdo de pago.</p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Paso 4</h3>
+
+              <p>
+                Firmar el acta de conciliación con los compromisos acordados.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Conciliación vs proceso judicial para cobrar cuotas de
+            administración
+          </h2>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>Conciliación</h3>
+
+              <p>
+                Busca acuerdos voluntarios, normalmente implica menores costos y
+                puede resolverse en menos tiempo.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Proceso judicial</h3>
+
+              <p>
+                Procede cuando no existe acuerdo y requiere la intervención de
+                un juez, lo que generalmente implica un trámite más largo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Errores frecuentes al intentar cobrar cuotas de administración
+          </h2>
+
+          <ul className={styles.list}>
+            <li>No conservar el historial completo de pagos.</li>
+
+            <li>Esperar demasiado tiempo para iniciar la gestión de cobro.</li>
+
+            <li>No documentar los acuerdos alcanzados.</li>
+
+            <li>No enviar comunicaciones previas al propietario.</li>
+
+            <li>No acudir oportunamente a un centro de conciliación.</li>
+
+            <li>No verificar el valor actualizado de la deuda.</li>
           </ul>
         </div>
 
@@ -159,7 +439,8 @@ export default function CobroAdministracionContent() {
         {/* CTA */}
         <div className={styles.ctaBox}>
           <h3 className={styles.ctaTitle}>
-            ¿Tienes cartera pendiente en tu conjunto?
+            ¿Por qué la conciliación es una alternativa efectiva para recuperar
+            cuotas de administración?
           </h3>
 
           <p className={styles.ctaText}>

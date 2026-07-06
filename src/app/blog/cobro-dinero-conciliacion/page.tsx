@@ -3,17 +3,22 @@ import CobroDineroConciliacionContent from "./CobroDineroConciliacionContent";
 
 export const metadata: Metadata = {
   title:
-    "Cobro de dinero mediante conciliación en Colombia | Recuperar pagos sin demandar",
+    "¿Cómo recuperar un dinero prestado? Cobro de dinero mediante conciliación en Colombia",
   description:
-    "Aprende cómo recuperar dinero mediante conciliación en Colombia. Conoce cómo funciona el cobro de deudas, acuerdos de pago y alternativas antes de iniciar una demanda.",
+    "Aprenda cómo recuperar una deuda o dinero prestado mediante conciliación en Colombia. Conozca el proceso, acuerdos de pago, documentos necesarios, ventajas y qué hacer si el deudor incumple.",
   keywords: [
-    "cobro de dinero conciliación",
-    "recuperar deuda Colombia",
+    "cobro de dinero",
+    "recuperar dinero",
+    "recuperar una deuda",
+    "cómo cobrar una deuda",
     "conciliación de deudas",
-    "cobro extrajudicial",
     "acuerdo de pago",
+    "cobro extrajudicial",
+    "recuperar dinero prestado",
+    "cobro de obligaciones",
+    "deudas entre particulares",
     "conciliación civil Colombia",
-    "conciliación Bogotá",
+    "recuperación de cartera",
   ],
   robots: {
     index: true,
@@ -51,6 +56,21 @@ export default function Page() {
     },
     mainEntityOfPage:
       "https://solcentrodeconciliacion.com/blog/cobro-dinero-conciliacion",
+
+    datePublished: "2026-07-06",
+    dateModified: "2026-07-06",
+    inLanguage: "es-CO",
+    articleSection: "Propiedad Horizontal",
+    keywords:
+      "Cobro de administración, propiedad horizontal, conciliación, cuotas de administración, expensas comunes",
+    about: {
+      "@type": "Thing",
+      name: "Conciliación en propiedad horizontal",
+    },
+    audience: {
+      "@type": "Audience",
+      audienceType: "Administradores de propiedad horizontal y propietarios",
+    },
   };
 
   const faqSchema = {

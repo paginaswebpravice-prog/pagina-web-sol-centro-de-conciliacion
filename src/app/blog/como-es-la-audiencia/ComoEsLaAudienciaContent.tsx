@@ -68,6 +68,24 @@ export default function ComoEsLaAudienciaContent() {
           aumentar considerablemente las probabilidades de alcanzar un acuerdo.
         </p>
 
+        <p className={styles.paragraph}>
+          Una vez presentada la solicitud de conciliación, el centro de
+          conciliación revisa que el asunto sea conciliable y que la información
+          suministrada sea suficiente para iniciar el trámite. Posteriormente,
+          se programa la audiencia y se expide la citación dirigida a la otra
+          parte, indicando la fecha, la hora, el lugar o el enlace de acceso
+          cuando la diligencia se realizará de manera virtual.
+        </p>
+
+        <p className={styles.paragraph}>
+          Durante este tiempo también es aconsejable analizar cuáles son los
+          objetivos que se desean alcanzar en la negociación. Muchas personas
+          llegan a la audiencia con una única solución en mente, lo que puede
+          dificultar el diálogo. Evaluar previamente diferentes alternativas de
+          acuerdo facilita la búsqueda de soluciones satisfactorias para ambas
+          partes.
+        </p>
+
         <h3 className={styles.subtitle}>
           Etapas de una audiencia de conciliación en Bogotá y Colombia
         </h3>
@@ -146,6 +164,31 @@ export default function ComoEsLaAudienciaContent() {
           un mayor control del desarrollo de la audiencia.
         </p>
 
+        <p className={styles.paragraph}>
+          Antes de iniciar la diligencia, el conciliador verifica la identidad
+          de los asistentes y confirma que todas las personas involucradas
+          cuentan con la capacidad para participar en la negociación.
+          Posteriormente explica las reglas básicas de la audiencia, la
+          confidencialidad del procedimiento y el alcance jurídico que tendría
+          un eventual acuerdo.
+        </p>
+
+        <p className={styles.paragraph}>
+          Durante la reunión, cada parte dispone de un espacio para exponer su
+          versión de los hechos, presentar documentos y responder a las
+          inquietudes planteadas por el conciliador. El objetivo es comprender
+          el origen del conflicto y explorar soluciones que permitan satisfacer
+          los intereses de todos los participantes.
+        </p>
+
+        <p className={styles.paragraph}>
+          Si finalmente las partes alcanzan un consenso, el conciliador redacta
+          el acta de conciliación con todas las obligaciones asumidas, los
+          plazos de cumplimiento y las condiciones pactadas. En caso contrario,
+          se deja la constancia correspondiente para que las partes puedan
+          acudir a otros mecanismos previstos por la ley.
+        </p>
+
         <h3 className={styles.subtitle}>
           Audiencia virtual de conciliación en Colombia
         </h3>
@@ -162,6 +205,31 @@ export default function ComoEsLaAudienciaContent() {
           La conciliación virtual tiene la misma validez legal que una audiencia
           presencial, siempre que se cumplan los requisitos de identificación,
           participación y aceptación de las partes.
+        </p>
+
+        <p className={styles.paragraph}>
+          Para participar en una audiencia virtual es importante contar con un
+          equipo que disponga de cámara, micrófono y una conexión estable a
+          internet. Antes de comenzar la diligencia, el conciliador suele
+          verificar la identidad de los participantes mediante la exhibición del
+          documento de identidad y confirmar que cada persona pueda intervenir
+          sin interrupciones.
+        </p>
+
+        <p className={styles.paragraph}>
+          Los documentos que vayan a utilizarse durante la audiencia normalmente
+          deben enviarse previamente al centro de conciliación o estar
+          disponibles en formato digital para compartirlos durante la reunión.
+          Esto permite revisar las pruebas de manera ordenada y facilita el
+          desarrollo de la negociación.
+        </p>
+
+        <p className={styles.paragraph}>
+          La modalidad virtual ofrece importantes ventajas para personas que
+          residen en diferentes ciudades o incluso fuera del país, ya que
+          elimina desplazamientos, reduce tiempos y permite desarrollar la
+          audiencia con la misma validez jurídica que una conciliación
+          presencial cuando se cumplen los requisitos legales.
         </p>
 
         <div className={styles.categoryCard}>
@@ -202,6 +270,20 @@ export default function ComoEsLaAudienciaContent() {
           aprovechar realmente el proceso.
         </p>
 
+        <p className={styles.paragraph}>
+          La inasistencia no significa automáticamente que quien no compareció
+          tenga la razón o pierda el conflicto. Sin embargo, dependiendo del
+          tipo de asunto, puede impedir que se alcance un acuerdo y habilitar a
+          la parte interesada para acudir posteriormente a otras actuaciones
+          legales cuando la conciliación sea un requisito previo.
+        </p>
+
+        <p className={styles.paragraph}>
+          Si la ausencia obedece a una causa debidamente justificada, algunas
+          situaciones pueden permitir la reprogramación de la audiencia conforme
+          a las políticas del centro de conciliación y a la normativa aplicable.
+        </p>
+
         <h3 className={styles.subtitle}>
           ¿Qué pasa si sí se logra un acuerdo?
         </h3>
@@ -219,6 +301,20 @@ export default function ComoEsLaAudienciaContent() {
           exigir el cumplimiento.
         </p>
 
+        <p className={styles.paragraph}>
+          El acuerdo alcanzado debe ser claro, específico y contener todas las
+          obligaciones asumidas por las partes, incluyendo montos, fechas de
+          pago, plazos de cumplimiento y cualquier otra condición necesaria para
+          evitar interpretaciones ambiguas en el futuro.
+        </p>
+
+        <p className={styles.paragraph}>
+          Una vez firmada el acta de conciliación, las partes adquieren el
+          compromiso de cumplir lo pactado. En caso de incumplimiento, el
+          documento podrá servir como fundamento para ejercer las acciones
+          legales correspondientes conforme a la legislación colombiana.
+        </p>
+
         <h3 className={styles.subtitle}>
           Recomendaciones antes de asistir a una audiencia
         </h3>
@@ -234,23 +330,103 @@ export default function ComoEsLaAudienciaContent() {
           <li>
             Organiza previamente contratos, facturas y soportes importantes.
           </li>
-
           <li>Lleva una propuesta clara sobre lo que deseas negociar.</li>
-
           <li>Define límites mínimos y alternativas de negociación.</li>
-
           <li>Mantén una actitud respetuosa y abierta al diálogo.</li>
-
           <li>Escucha las propuestas de la otra parte antes de responder.</li>
-
           <li>Revisa cuidadosamente cualquier acuerdo antes de firmarlo.</li>
         </ul>
+
+        <p className={styles.paragraph}>
+          También es recomendable mantener una actitud abierta frente a las
+          propuestas formuladas durante la audiencia. La conciliación busca
+          construir soluciones mutuamente beneficiosas y no imponer decisiones
+          sobre alguna de las partes. Escuchar con atención y negociar de buena
+          fe suele incrementar las posibilidades de obtener un resultado
+          satisfactorio.
+        </p>
+
+        <p className={styles.paragraph}>
+          Antes de firmar cualquier documento, dedica unos minutos a leer
+          cuidadosamente el contenido del acta y asegúrate de comprender el
+          alcance de cada obligación. Si tienes dudas sobre alguna cláusula,
+          puedes solicitar las aclaraciones necesarias al conciliador antes de
+          manifestar tu aceptación.
+        </p>
 
         <div className={styles.note}>
           La conciliación en Colombia no busca que una parte gane y la otra
           pierda, sino que ambas encuentren una solución práctica, viable y
           legal para resolver el conflicto de manera más rápida que un proceso
           judicial tradicional.
+        </div>
+
+        {/* DOCUMENTOS */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué documentos llevar a una audiencia de conciliación?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Aunque los documentos necesarios dependen del tipo de conflicto,
+            asistir con los soportes adecuados facilita la negociación y permite
+            que el conciliador comprenda con mayor claridad el caso. Contar con
+            pruebas organizadas también aumenta las posibilidades de llegar a un
+            acuerdo durante la audiencia.
+          </p>
+
+          <ul className={styles.list}>
+            <li>Documento de identidad.</li>
+
+            <li>Solicitud o citación a la audiencia.</li>
+
+            <li>Contratos relacionados con el conflicto.</li>
+
+            <li>Facturas, recibos o comprobantes de pago.</li>
+
+            <li>Correos electrónicos o conversaciones relevantes.</li>
+
+            <li>Fotografías, videos u otros medios probatorios, si existen.</li>
+
+            <li>
+              Cualquier documento que respalde las pretensiones de las partes.
+            </li>
+          </ul>
+
+          <div className={styles.highlightBox}>
+            <p>
+              Llevar información completa y organizada permite que la audiencia
+              sea más ágil y que las partes puedan fundamentar mejor sus
+              propuestas de acuerdo.
+            </p>
+          </div>
+        </div>
+
+        {/* DURACION */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Cuánto dura una audiencia de conciliación en Colombia?
+          </h2>
+
+          <p className={styles.paragraph}>
+            No existe un tiempo único para todas las audiencias. La duración
+            depende de la complejidad del conflicto, del número de personas
+            involucradas y, principalmente, de la disposición de las partes para
+            negociar.
+          </p>
+
+          <p className={styles.paragraph}>
+            En muchos casos la audiencia puede finalizar en menos de dos horas
+            cuando existe voluntad de llegar a un acuerdo. Sin embargo, algunos
+            asuntos más complejos pueden requerir nuevas sesiones o la
+            programación de otra audiencia para continuar las negociaciones.
+          </p>
+
+          <p className={styles.paragraph}>
+            El objetivo del conciliador es facilitar un diálogo ordenado,
+            resolver las diferencias y procurar un acuerdo que sea claro, viable
+            y jurídicamente válido para ambas partes.
+          </p>
         </div>
 
         <div className={styles.cta}>

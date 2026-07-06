@@ -15,11 +15,12 @@ export default function CasosConciliacionLaboralContent() {
       >
         <div className={styles.heroContent}>
           <span className={styles.badge}>
-            Casos prácticos de conciliación laboral
+            Ejemplos reales de conciliación laboral
           </span>
 
           <h1 className={styles.title}>
-            Casos donde la conciliación laboral sí funciona en Colombia
+            Casos de conciliación laboral en Colombia: ejemplos reales y cuándo
+            sí funciona
           </h1>
 
           <p className={styles.heroText}>
@@ -41,7 +42,8 @@ export default function CasosConciliacionLaboralContent() {
 
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            ¿Por qué funciona la conciliación laboral?
+            ¿Por qué la conciliación laboral funciona para resolver conflictos
+            entre trabajadores y empleadores?
           </h2>
 
           <p className={styles.paragraph}>
@@ -67,7 +69,67 @@ export default function CasosConciliacionLaboralContent() {
 
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            Caso 1: Pago de salarios pendientes
+            ¿Qué conflictos laborales pueden resolverse mediante conciliación en
+            Colombia?
+          </h2>
+
+          <p className={styles.paragraph}>
+            La conciliación laboral puede utilizarse para resolver una gran
+            variedad de conflictos entre trabajadores y empleadores, siempre que
+            las partes tengan disposición para negociar y el asunto sea
+            conciliable conforme a la ley.
+          </p>
+
+          <p className={styles.paragraph}>
+            En Colombia, este mecanismo es ampliamente utilizado para solucionar
+            diferencias relacionadas con salarios, prestaciones sociales,
+            indemnizaciones, liquidaciones, acuerdos de pago y otros conflictos
+            derivados de la relación laboral.
+          </p>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>Pago de salarios atrasados o sueldos pendientes</h3>
+
+              <p>
+                Reclamos por sueldos, horas extras, recargos nocturnos,
+                dominicales y festivos no pagados.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Prestaciones sociales no pagadas</h3>
+
+              <p>
+                Diferencias sobre cesantías, intereses, primas de servicios y
+                vacaciones.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Liquidaciones</h3>
+
+              <p>
+                Revisión del cálculo de la liquidación al finalizar el contrato
+                de trabajo.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Indemnización por despido</h3>
+
+              <p>
+                Acuerdos derivados de despidos, terminaciones anticipadas o
+                conflictos sobre la finalización del contrato.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Caso 1: Conciliación laboral por salarios pendientes o sueldos no
+            pagados
           </h2>
 
           <p className={styles.paragraph}>
@@ -84,7 +146,8 @@ export default function CasosConciliacionLaboralContent() {
 
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            Caso 2: Diferencias sobre liquidaciones laborales
+            Caso 2: Conciliación por liquidación laboral mal liquidada o
+            incompleta
           </h2>
 
           <p className={styles.paragraph}>
@@ -100,7 +163,8 @@ export default function CasosConciliacionLaboralContent() {
 
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            Caso 3: Terminación del contrato de trabajo
+            Caso 3: Conciliación laboral por despido, terminación del contrato e
+            indemnización
           </h2>
 
           <p className={styles.paragraph}>
@@ -118,8 +182,198 @@ export default function CasosConciliacionLaboralContent() {
 
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            Otros conflictos laborales que suelen resolverse mediante
-            conciliación
+            Ejemplos de casos donde la conciliación laboral suele dar buenos
+            resultados
+          </h2>
+
+          <div className={styles.timeline}>
+            <div className={styles.timelineItem}>
+              <span className={styles.step}>1</span>
+
+              <div>
+                <h3>Pago de una liquidación pendiente</h3>
+
+                <p>
+                  Un trabajador considera que la empresa calculó incorrectamente
+                  su liquidación. Durante la audiencia ambas partes revisan la
+                  documentación y acuerdan un pago adicional.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <span className={styles.step}>2</span>
+
+              <div>
+                <h3>Acuerdo por salarios atrasados</h3>
+
+                <p>
+                  La empresa reconoce la deuda, pero no puede pagar
+                  inmediatamente. Mediante conciliación se establece un
+                  cronograma de pagos aceptado por ambas partes.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <span className={styles.step}>3</span>
+
+              <div>
+                <h3>Prestaciones sociales</h3>
+
+                <p>
+                  Después de revisar soportes y comprobantes, las partes
+                  acuerdan el valor definitivo correspondiente a cesantías,
+                  intereses y primas.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <span className={styles.step}>4</span>
+
+              <div>
+                <h3>Terminación del contrato</h3>
+
+                <p>
+                  Empleador y trabajador negocian una compensación económica y
+                  finalizan el conflicto sin necesidad de acudir a un proceso
+                  judicial.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Beneficios de la conciliación laboral para trabajadores y
+            empleadores
+          </h2>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>Para el trabajador</h3>
+
+              <ul>
+                <li>Obtiene una solución más rápida.</li>
+                <li>Reduce gastos judiciales.</li>
+                <li>Puede recibir pagos en menor tiempo.</li>
+                <li>Evita largos procesos ante los jueces.</li>
+              </ul>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Para el empleador</h3>
+
+              <ul>
+                <li>Disminuye riesgos de litigio.</li>
+                <li>Reduce costos procesales.</li>
+                <li>Permite acuerdos flexibles.</li>
+                <li>Favorece una solución negociada.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Cómo es el proceso de una conciliación laboral en Colombia?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Aunque cada caso presenta particularidades, la mayoría de
+            conciliaciones laborales siguen una serie de etapas que permiten a
+            las partes exponer sus posiciones y buscar un acuerdo.
+          </p>
+
+          <div className={styles.timeline}>
+            <div className={styles.timelineItem}>
+              <span className={styles.step}>1</span>
+
+              <div>
+                <h3>Solicitud de conciliación</h3>
+
+                <p>
+                  Una de las partes presenta la solicitud ante un centro de
+                  conciliación autorizado.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <span className={styles.step}>2</span>
+
+              <div>
+                <h3>Citación</h3>
+
+                <p>
+                  Se convoca al trabajador y al empleador para asistir a la
+                  audiencia.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <span className={styles.step}>3</span>
+
+              <div>
+                <h3>Audiencia</h3>
+
+                <p>
+                  Cada parte presenta sus argumentos y el conciliador facilita
+                  el diálogo.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <span className={styles.step}>4</span>
+
+              <div>
+                <h3>Acuerdo o constancia</h3>
+
+                <p>
+                  Si existe acuerdo se firma el acta de conciliación; de lo
+                  contrario se deja constancia de que no fue posible conciliar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Documentos que pueden facilitar una conciliación laboral
+          </h2>
+
+          <p className={styles.paragraph}>
+            Llevar la documentación adecuada permite sustentar las pretensiones
+            y facilita que las partes lleguen a un acuerdo durante la audiencia.
+          </p>
+
+          <div className={styles.infoBox}>
+            <h3>Documentos recomendados</h3>
+
+            <ul className={styles.list}>
+              <li>Contrato de trabajo.</li>
+              <li>Liquidación laboral.</li>
+              <li>Desprendibles de nómina.</li>
+              <li>Comprobantes de pago.</li>
+              <li>Certificaciones laborales.</li>
+              <li>Correos electrónicos.</li>
+              <li>Chats relacionados con el conflicto.</li>
+              <li>Pruebas de horas extras o recargos.</li>
+              <li>Cálculos realizados por las partes.</li>
+              <li>Cualquier documento que respalde la reclamación.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Otros casos que pueden resolverse mediante conciliación laboral en
+            Colombia
           </h2>
 
           <div className={styles.cardsGrid}>
@@ -162,7 +416,8 @@ export default function CasosConciliacionLaboralContent() {
 
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            Beneficios de resolver conflictos mediante conciliación
+            Ventajas de resolver un conflicto laboral mediante conciliación en
+            Colombia
           </h2>
 
           <ul className={styles.list}>
@@ -179,7 +434,8 @@ export default function CasosConciliacionLaboralContent() {
 
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            ¿Cuándo podría no ser suficiente la conciliación?
+            ¿En qué casos la conciliación laboral no es suficiente y cuándo
+            acudir a un juez?
           </h2>
 
           <p className={styles.paragraph}>
@@ -195,7 +451,53 @@ export default function CasosConciliacionLaboralContent() {
         </div>
 
         <div className={styles.contentSection}>
-          <h2 className={styles.subtitle}>Preguntas frecuentes</h2>
+          <h2 className={styles.subtitle}>
+            Errores frecuentes que dificultan una conciliación laboral
+          </h2>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>No llevar documentos</h3>
+
+              <p>
+                La falta de soportes dificulta demostrar las reclamaciones
+                realizadas.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>No calcular correctamente los valores</h3>
+
+              <p>
+                Presentar cifras sin fundamento puede retrasar o impedir un
+                acuerdo.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>No estar dispuesto a negociar</h3>
+
+              <p>
+                La conciliación requiere voluntad de ambas partes para construir
+                una solución.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Firmar sin leer el acuerdo</h3>
+
+              <p>
+                Es importante revisar cuidadosamente todas las obligaciones
+                antes de suscribir el acta.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Preguntas frecuentes sobre la conciliación laboral en Colombia
+          </h2>
 
           <div className={styles.cardsGrid}>
             <div className={styles.infoCard}>

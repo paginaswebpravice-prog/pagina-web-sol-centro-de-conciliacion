@@ -104,8 +104,8 @@ export default function CartaConciliacion() {
           </div>
 
           <motion.h1 className={styles.title} itemProp="headline">
-            Carta de conciliación en Colombia: modelo, formato y guía completa
-            2026
+            Carta de conciliación en Colombia: modelo, formato, ejemplo y cómo
+            redactarla paso a paso
           </motion.h1>
 
           <motion.p className={styles.text} itemProp="description">
@@ -146,7 +146,7 @@ export default function CartaConciliacion() {
           </div>
 
           <motion.h2 className={styles.subTitle}>
-            ¿Para qué sirve una carta de conciliación en Colombia?
+            ¿Qué es una carta de conciliación y para qué sirve en Colombia?
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -182,7 +182,42 @@ export default function CartaConciliacion() {
           </motion.p>
 
           <motion.h2 className={styles.subTitle}>
-            ¿Qué debe contener una carta de conciliación?
+            ¿Cuándo conviene enviar una carta de conciliación en Colombia?
+          </motion.h2>
+
+          <motion.p className={styles.text}>
+            Aunque la ley no exige una carta de conciliación en todos los casos,
+            este documento puede facilitar una solución temprana del conflicto y
+            demostrar la voluntad de negociar antes de acudir a una demanda. En
+            muchos casos, una comunicación clara y bien estructurada evita
+            procesos judiciales largos y costosos.
+          </motion.p>
+
+          <motion.p className={styles.text}>
+            En Bogotá y otras ciudades de Colombia, es habitual enviar una carta
+            antes de iniciar formalmente una conciliación ante un centro
+            autorizado, especialmente cuando se busca recuperar una deuda,
+            exigir el cumplimiento de un contrato o resolver diferencias
+            comerciales.
+          </motion.p>
+
+          <div className={styles.infoBox}>
+            <h3>Es recomendable enviar una carta de conciliación cuando:</h3>
+
+            <ul className={styles.list}>
+              <li>Existe un incumplimiento de contrato.</li>
+              <li>Se busca recuperar una deuda.</li>
+              <li>Hay conflictos entre arrendador e inquilino.</li>
+              <li>Se pretende llegar a un acuerdo de pago.</li>
+              <li>Existen diferencias entre socios o empresas.</li>
+              <li>Se desea conservar una buena relación entre las partes.</li>
+              <li>Se quiere evitar un proceso judicial.</li>
+            </ul>
+          </div>
+
+          <motion.h2 className={styles.subTitle}>
+            ¿Qué debe contener una carta de conciliación para que sea clara y
+            efectiva?
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -210,7 +245,122 @@ export default function CartaConciliacion() {
           </div>
 
           <motion.h2 className={styles.subTitle}>
-            Modelo de carta de conciliación en Colombia
+            Diferencia entre carta de conciliación, citación y solicitud de
+            conciliación
+          </motion.h2>
+
+          <motion.p className={styles.text}>
+            Estos documentos suelen confundirse, aunque cumplen funciones
+            distintas dentro del procedimiento de conciliación en Colombia.
+          </motion.p>
+
+          <div className={styles.tableWrapper}>
+            <table className={styles.table}>
+              <thead>
+                <tr>
+                  <th>Documento</th>
+                  <th>¿Quién lo elabora?</th>
+                  <th>¿Para qué sirve?</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Carta de conciliación</td>
+                  <td>Una de las partes</td>
+                  <td>Invitar voluntariamente a negociar.</td>
+                </tr>
+
+                <tr>
+                  <td>Solicitud de conciliación</td>
+                  <td>Solicitante</td>
+                  <td>Iniciar formalmente el trámite ante un centro.</td>
+                </tr>
+
+                <tr>
+                  <td>Citación a conciliación</td>
+                  <td>Centro de conciliación</td>
+                  <td>Convocar oficialmente a la audiencia.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className={styles.highlight}>
+            <p>
+              Conocer la diferencia entre estos documentos evita errores al
+              iniciar un proceso de conciliación y permite cumplir correctamente
+              cada etapa del procedimiento.
+            </p>
+          </div>
+
+          <motion.h2 className={styles.subTitle}>
+            ¿Qué sucede después de enviar una carta de conciliación?
+          </motion.h2>
+
+          <motion.p className={styles.text}>
+            Una vez enviada la carta, pueden presentarse distintos escenarios.
+            El destinatario puede aceptar la propuesta, formular una
+            contrapropuesta, solicitar una audiencia de conciliación o
+            simplemente no responder.
+          </motion.p>
+
+          <div className={styles.timeline}>
+            <div className={styles.timelineItem}>
+              <span className={styles.step}>1</span>
+
+              <div>
+                <h3>Recepción de la carta</h3>
+
+                <p>
+                  La otra parte conoce formalmente el conflicto y la propuesta
+                  planteada.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <span className={styles.step}>2</span>
+
+              <div>
+                <h3>Respuesta</h3>
+
+                <p>
+                  Puede aceptar, negociar nuevas condiciones o rechazar la
+                  propuesta.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <span className={styles.step}>3</span>
+
+              <div>
+                <h3>Audiencia de conciliación</h3>
+
+                <p>
+                  Si ambas partes están de acuerdo, se programa una audiencia
+                  ante un centro de conciliación autorizado.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.timelineItem}>
+              <span className={styles.step}>4</span>
+
+              <div>
+                <h3>Acuerdo o acciones posteriores</h3>
+
+                <p>
+                  Si no existe acuerdo, la parte interesada podrá evaluar otras
+                  acciones legales según el caso concreto.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <motion.h2 className={styles.subTitle}>
+            Modelo de carta de conciliación en Colombia listo para adaptar
           </motion.h2>
 
           <motion.pre className={styles.pre}>
@@ -263,7 +413,7 @@ Atentamente,
           </motion.pre>
 
           <motion.h2 className={styles.subTitle}>
-            Recomendaciones para enviar una invitación a conciliación
+            ¿Cómo enviar correctamente una carta de conciliación?
           </motion.h2>
 
           <motion.p className={styles.text}>
@@ -311,6 +461,82 @@ Atentamente,
             de IA.
           </motion.p>
 
+          <motion.h2 className={styles.subTitle}>
+            ¿Cuándo conviene enviar una carta de conciliación en Colombia?
+          </motion.h2>
+
+          <motion.p className={styles.text}>
+            Aunque la ley no exige una carta de conciliación en todos los casos,
+            este documento puede facilitar una solución temprana del conflicto y
+            demostrar la voluntad de negociar antes de acudir a una demanda. En
+            muchos casos, una comunicación clara y bien estructurada evita
+            procesos judiciales largos y costosos.
+          </motion.p>
+
+          <motion.p className={styles.text}>
+            En Bogotá y otras ciudades de Colombia, es habitual enviar una carta
+            antes de iniciar formalmente una conciliación ante un centro
+            autorizado, especialmente cuando se busca recuperar una deuda,
+            exigir el cumplimiento de un contrato o resolver diferencias
+            comerciales.
+          </motion.p>
+
+          <div className={styles.infoBox}>
+            <h3>Es recomendable enviar una carta de conciliación cuando:</h3>
+
+            <ul className={styles.list}>
+              <li>Existe un incumplimiento de contrato.</li>
+              <li>Se busca recuperar una deuda.</li>
+              <li>Hay conflictos entre arrendador e inquilino.</li>
+              <li>Se pretende llegar a un acuerdo de pago.</li>
+              <li>Existen diferencias entre socios o empresas.</li>
+              <li>Se desea conservar una buena relación entre las partes.</li>
+              <li>Se quiere evitar un proceso judicial.</li>
+            </ul>
+          </div>
+
+          <motion.h2 className={styles.subTitle}>
+            Beneficios de resolver un conflicto mediante conciliación
+          </motion.h2>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>Mayor rapidez</h3>
+
+              <p>
+                La conciliación suele permitir soluciones en menos tiempo que un
+                proceso judicial ordinario.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Menores costos</h3>
+
+              <p>
+                Generalmente implica menos gastos que un litigio prolongado ante
+                los jueces.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Confidencialidad</h3>
+
+              <p>
+                Las partes pueden resolver el conflicto de forma reservada y con
+                mayor privacidad.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Acuerdos con fuerza legal</h3>
+
+              <p>
+                Cuando se logra un acuerdo, el acta de conciliación puede
+                producir efectos jurídicos y ser exigible conforme a la ley.
+              </p>
+            </div>
+          </div>
+
           <div className={styles.cta}>
             <h3>¿Necesitas ayuda para redactar una carta de conciliación?</h3>
 
@@ -331,7 +557,7 @@ Atentamente,
           </div>
 
           <motion.h2 className={styles.subTitle}>
-            Preguntas frecuentes sobre cartas de conciliación
+            Preguntas frecuentes sobre la carta de conciliación en Colombia
           </motion.h2>
 
           <div className={styles.faq}>

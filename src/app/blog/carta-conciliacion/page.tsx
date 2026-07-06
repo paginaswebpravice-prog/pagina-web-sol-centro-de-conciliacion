@@ -1,32 +1,6 @@
 import { Metadata } from "next";
 import CartaConciliacionContent from "./CartaConciliacionContent";
 
-export const metadata: Metadata = {
-  title:
-    "Carta de conciliación en Colombia (Modelo) | Centro de Conciliación Bogotá",
-  description:
-    "Modelo de carta de conciliación en Colombia. Aprende cómo hacer una invitación a conciliación extrajudicial en Bogotá y Colombia con formato listo para usar.",
-  keywords: [
-    "carta de conciliacion Colombia",
-    "modelo carta conciliacion Bogotá",
-    "conciliacion extrajudicial Colombia",
-    "centro de conciliacion Bogotá",
-    "invitacion conciliacion formato",
-  ],
-  alternates: {
-    canonical: "https://solcentrodeconciliacion.com/blog/carta-conciliacion",
-  },
-  openGraph: {
-    title: "Carta de conciliación en Colombia (Modelo) | Guía completa",
-    description:
-      "Formato de carta de conciliación en Colombia con ejemplo listo para usar en Bogotá y a nivel nacional.",
-    url: "https://solcentrodeconciliacion.com/blog/carta-conciliacion",
-    siteName: "Sol Centro de Conciliación",
-    locale: "es_CO",
-    type: "article",
-  },
-};
-
 export default function CartaConciliacionPage() {
   return (
     <>
