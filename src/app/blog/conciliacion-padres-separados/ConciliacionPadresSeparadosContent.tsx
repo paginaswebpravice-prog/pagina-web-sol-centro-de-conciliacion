@@ -55,112 +55,143 @@ export default function ConciliacionPadresSeparadosContent() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
+          {/* HERO */}
           <div className={styles.heroContent}>
             <span className={styles.badge}>
-              Conciliación familiar en Colombia
+              Conciliación familiar para padres separados
             </span>
 
             <h1 className={styles.title}>
-              Conciliación entre padres separados en Colombia
+              Conciliación entre padres separados en Colombia: acuerdos sobre
+              custodia, visitas y cuota alimentaria
             </h1>
 
             <p className={styles.heroText}>
-              La separación de una pareja no pone fin a las responsabilidades
-              que ambos padres tienen frente a sus hijos. Por ello, la
-              conciliación familiar se ha convertido en una herramienta
-              fundamental para resolver conflictos relacionados con la crianza,
-              manutención y bienestar de los menores.
+              Después de una separación es normal que surjan diferencias sobre
+              la forma en que se ejercerá la crianza de los hijos, el pago de la
+              cuota alimentaria, el régimen de visitas o la distribución de
+              gastos extraordinarios. La conciliación entre padres separados
+              ofrece un espacio neutral para dialogar y construir acuerdos que
+              beneficien tanto a los menores como a los padres.
             </p>
 
             <p className={styles.heroText}>
-              A través de la conciliación, los padres separados pueden alcanzar
-              acuerdos sobre custodia, cuidado personal, régimen de visitas,
-              cuota alimentaria y otros aspectos importantes sin necesidad de
-              acudir inmediatamente a procesos judiciales.
+              En Colombia este mecanismo permite resolver numerosos conflictos
+              familiares sin iniciar inmediatamente un proceso judicial. Con la
+              orientación de un conciliador imparcial, ambas partes pueden
+              negociar soluciones prácticas, reducir el desgaste emocional y
+              dejar constancia de los acuerdos mediante un acta con plena
+              validez jurídica.
             </p>
 
             <p className={styles.heroText}>
-              Este mecanismo permite encontrar soluciones equilibradas,
-              protegiendo siempre el interés superior de los hijos y fomentando
-              una relación más colaborativa entre los padres.
+              Si los padres viven en ciudades diferentes o incluso fuera del
+              país, también es posible realizar conciliaciones virtuales en
+              muchos casos, facilitando la participación de todos los
+              involucrados.
             </p>
           </div>
 
+          {/* QUE ES LA CONCILIACION ENTRE PADRES SEPARADOS */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
-              ¿Qué es la conciliación entre padres separados?
+              ¿Qué es la conciliación entre padres separados y cuándo conviene
+              realizarla?
             </h2>
 
             <p className={styles.paragraph}>
-              Es un procedimiento mediante el cual los padres buscan llegar a
-              acuerdos voluntarios sobre asuntos relacionados con sus hijos,
-              contando con la intervención imparcial de un conciliador.
+              La conciliación entre padres separados es un mecanismo mediante el
+              cual los padres buscan construir acuerdos relacionados con el
+              cuidado y bienestar de sus hijos, contando con la intervención de
+              un conciliador imparcial que facilita el diálogo sin favorecer a
+              ninguna de las partes.
             </p>
 
             <p className={styles.paragraph}>
-              El objetivo es prevenir conflictos futuros y establecer reglas
-              claras que permitan una adecuada convivencia familiar después de
-              la separación.
+              Más que decidir quién tiene la razón, la conciliación busca que
+              ambos padres encuentren soluciones que respondan a las necesidades
+              reales de los menores y permitan reducir futuros conflictos
+              familiares.
+            </p>
+
+            <p className={styles.paragraph}>
+              Este procedimiento suele ser especialmente útil cuando existen
+              desacuerdos sobre alimentos, custodia, visitas, gastos escolares,
+              vacaciones, comunicación con los hijos o cualquier otra
+              responsabilidad derivada del ejercicio de la parentalidad.
             </p>
 
             <div className={styles.highlightBox}>
               <p>
-                La conciliación familiar busca reducir el conflicto entre los
-                padres y garantizar estabilidad emocional y jurídica para los
-                hijos menores.
+                Un acuerdo construido entre los propios padres suele cumplirse
+                con mayor facilidad que una decisión impuesta después de un
+                largo proceso judicial, siempre priorizando el interés superior
+                de los niños, niñas y adolescentes.
               </p>
             </div>
           </div>
 
+          {/* QUE ACUERDOS PUEDE LOGRAR LA CONCILIACION ENTRE PADRES SEPARADOS */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
-              Temas que pueden acordarse en conciliación
+              ¿Qué acuerdos pueden lograr los padres separados mediante
+              conciliación?
             </h2>
 
             <ul className={styles.list}>
-              <li>Custodia y cuidado personal.</li>
-              <li>Régimen de visitas.</li>
-              <li>Cuota alimentaria.</li>
-              <li>Gastos extraordinarios de los hijos.</li>
-              <li>Educación y actividades extracurriculares.</li>
-              <li>Vacaciones y fechas especiales.</li>
-              <li>Comunicación con los menores.</li>
-              <li>Responsabilidades compartidas de crianza.</li>
+              <li>Custodia y cuidado personal de los hijos.</li>
+              <li>Definición del régimen de visitas.</li>
+              <li>Fijación o modificación de la cuota alimentaria.</li>
+              <li>Distribución de gastos médicos extraordinarios.</li>
+              <li>
+                Pago de educación, transporte y actividades extracurriculares.
+              </li>
+              <li>Vacaciones, cumpleaños y fechas especiales.</li>
+              <li>Autorizaciones relacionadas con viajes.</li>
+              <li>Canales y horarios de comunicación con los hijos.</li>
+              <li>Responsabilidades compartidas en la crianza.</li>
+              <li>Modificación de acuerdos familiares anteriores.</li>
             </ul>
           </div>
 
+          {/* BENEFICIOS DE ACUDIR A UNA CONCILIACION CUANDO LOS PADRES ESTAN SEPARADOS */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
-              Beneficios de la conciliación familiar
+              Beneficios de acudir a una conciliación cuando los padres están
+              separados
             </h2>
 
             <div className={styles.cardsGrid}>
               <div className={styles.infoCard}>
-                <h3>Menor conflicto</h3>
+                <h3>Mayor estabilidad para los hijos</h3>
 
                 <p>
-                  Favorece el diálogo y disminuye enfrentamientos entre los
-                  padres.
+                  Los acuerdos claros reducen la incertidumbre y brindan mayor
+                  seguridad emocional a los menores.
                 </p>
               </div>
 
               <div className={styles.infoCard}>
-                <h3>Protección de los hijos</h3>
+                <h3>Menos conflictos entre los padres</h3>
 
-                <p>Las decisiones se enfocan en el bienestar de los menores.</p>
+                <p>
+                  Favorece una comunicación más respetuosa y disminuye futuras
+                  discusiones relacionadas con la crianza.
+                </p>
               </div>
 
               <div className={styles.infoCard}>
-                <h3>Validez jurídica</h3>
+                <h3>Plena validez jurídica</h3>
 
                 <p>
-                  Los acuerdos quedan formalizados mediante un acta de
-                  conciliación.
+                  El acta de conciliación produce efectos legales y puede
+                  exigirse si una de las partes incumple los acuerdos.
                 </p>
               </div>
             </div>
           </div>
 
+          {/* COMO SE DESARROLLA LA AUDIENCIA */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               ¿Cómo se desarrolla la audiencia?
@@ -183,6 +214,7 @@ export default function ConciliacionPadresSeparadosContent() {
             </p>
           </div>
 
+          {/* DOCUMENTOS QUE SUELEN SOLICITARSE */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Documentos que suelen solicitarse
@@ -215,39 +247,141 @@ export default function ConciliacionPadresSeparadosContent() {
             </p>
           </div>
 
+          {/* CUANDO ES RECOMENDABLE SOLICITAR UNA CONCILIACION ENTRE PADRES SEPARADOS */}
           <div className={styles.contentSection}>
-            <h2 className={styles.subtitle}>Preguntas frecuentes</h2>
+            <h2 className={styles.subtitle}>
+              ¿Cuándo es recomendable solicitar una conciliación entre padres
+              separados?
+            </h2>
+
+            <p className={styles.paragraph}>
+              No es necesario esperar a que el conflicto se agrave. La
+              conciliación puede solicitarse desde el momento en que surgen
+              diferencias relacionadas con los hijos o cuando los acuerdos
+              existentes ya no responden a la realidad familiar.
+            </p>
 
             <div className={styles.cardsGrid}>
               <div className={styles.infoCard}>
-                <h3>¿Es obligatoria la conciliación?</h3>
+                <h3>Después de la separación</h3>
 
                 <p>
-                  Dependiendo del caso, puede constituir un requisito previo
-                  antes de acudir a la vía judicial.
+                  Para organizar custodia, alimentos y régimen de visitas desde
+                  el comienzo.
                 </p>
               </div>
 
               <div className={styles.infoCard}>
-                <h3>¿Se pueden modificar los acuerdos?</h3>
+                <h3>Cambios económicos</h3>
 
                 <p>
-                  Sí. Es posible realizar nuevas conciliaciones cuando cambian
-                  las circunstancias familiares.
+                  Cuando alguno de los padres modifica su capacidad económica o
+                  las necesidades del menor aumentan.
                 </p>
               </div>
 
               <div className={styles.infoCard}>
-                <h3>¿Puede hacerse virtualmente?</h3>
+                <h3>Cambios de residencia</h3>
 
                 <p>
-                  Sí. Muchos centros de conciliación ofrecen audiencias
-                  virtuales en Colombia.
+                  Si alguno de los padres cambia de ciudad o de país y es
+                  necesario ajustar los acuerdos existentes.
                 </p>
               </div>
             </div>
           </div>
 
+          {/* ERRORES QUE SUELEN COMETER LOS PADRES DESPUES DE UNA SEPARACION */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Errores que suelen cometer los padres después de una separación
+            </h2>
+
+            <p className={styles.paragraph}>
+              Después de una ruptura es frecuente que las diferencias personales
+              terminen afectando la comunicación relacionada con los hijos. En
+              muchos casos las decisiones se toman de manera improvisada,
+              generando nuevos conflictos que podrían evitarse mediante acuerdos
+              claros.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Cambiar unilateralmente el régimen de visitas.</li>
+              <li>Suspender el pago de alimentos sin acuerdo.</li>
+              <li>Utilizar a los hijos como intermediarios.</li>
+              <li>No definir responsabilidades económicas.</li>
+              <li>No dejar los acuerdos por escrito.</li>
+              <li>Incumplir horarios o compromisos establecidos.</li>
+            </ul>
+
+            <p className={styles.paragraph}>
+              La conciliación permite prevenir estas situaciones y establecer
+              reglas que faciliten la convivencia familiar después de la
+              separación.
+            </p>
+          </div>
+
+          {/* ES POSIBLE MODIFICAR UNA CONCILIACION ENTRE PADRES SEPARADOS */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Es posible modificar una conciliación entre padres separados?
+            </h2>
+
+            <p className={styles.paragraph}>
+              Sí. Las necesidades de los hijos cambian con el tiempo y las
+              condiciones de los padres también pueden variar. Por ello, cuando
+              existen circunstancias nuevas, es posible realizar una nueva
+              conciliación para actualizar aspectos como la cuota alimentaria,
+              la custodia, el régimen de visitas o cualquier otro acuerdo
+              relacionado con la crianza.
+            </p>
+
+            <p className={styles.paragraph}>
+              Modificar un acuerdo mediante conciliación suele ser mucho más
+              rápido y menos desgastante que iniciar un proceso judicial, además
+              de permitir que ambos padres participen activamente en la
+              construcción de nuevas soluciones.
+            </p>
+          </div>
+
+          {/* PREGUNTAS FRECUENTES */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Preguntas frecuentes sobre la conciliación entre padres separados
+            </h2>
+
+            <div className={styles.cardsGrid}>
+              <div className={styles.infoCard}>
+                <h3>¿La conciliación es obligatoria antes de demandar?</h3>
+
+                <p>
+                  Dependiendo del asunto y de la normativa aplicable, puede
+                  constituir un requisito previo antes de acudir ante un juez.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>¿Los acuerdos pueden modificarse en el futuro?</h3>
+
+                <p>
+                  Sí. Si cambian las necesidades del menor o las circunstancias
+                  de los padres, es posible realizar una nueva conciliación.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>¿La audiencia puede realizarse de forma virtual?</h3>
+
+                <p>
+                  Sí. Muchos centros de conciliación ofrecen audiencias
+                  virtuales para facilitar la participación de padres que viven
+                  en distintas ciudades o incluso en el exterior.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA */}
           <div className={styles.ctaBox}>
             <h3 className={styles.ctaTitle}>
               ¿Necesitas resolver un conflicto entre padres separados?

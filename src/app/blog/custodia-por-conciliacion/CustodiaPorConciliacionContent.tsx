@@ -2,52 +2,11 @@
 
 import styles from "../Article.module.css";
 import { motion } from "framer-motion";
-import Head from "next/head";
 
 export default function CustodiaPorConciliacionContent() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "¿Qué es la custodia de un menor?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Es la responsabilidad relacionada con el cuidado diario, protección y acompañamiento del hijo menor de edad.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿La conciliación evita un proceso judicial?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "En muchos casos sí, ya que permite que los padres lleguen a acuerdos voluntarios sin acudir inicialmente a un juez.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿Puede modificarse un acuerdo de custodia?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sí. Cuando cambian las circunstancias familiares puede realizarse una nueva conciliación para ajustar los acuerdos existentes.",
-        },
-      },
-    ],
-  };
-
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema),
-          }}
-        />
-      </Head>
-
-      <section className={styles.articleWrapper}>
+      <div className={styles.articleWrapper}>
         <motion.article
           className={styles.articleBlock}
           initial={{ opacity: 0, y: 70 }}
@@ -55,6 +14,7 @@ export default function CustodiaPorConciliacionContent() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
+          {/* HERO */}
           <div className={styles.heroContent}>
             <span className={styles.badge}>
               Conciliación familiar en Colombia
@@ -84,8 +44,18 @@ export default function CustodiaPorConciliacionContent() {
               de hijos menores de edad de manera rápida y con plena validez
               jurídica.
             </p>
+
+            <p className={styles.heroText}>
+              Alcanzar un acuerdo mediante conciliación no significa que alguno
+              de los padres pierda sus derechos. Por el contrario, permite
+              construir soluciones equilibradas que protejan el interés superior
+              del menor y definan con claridad aspectos como la custodia, las
+              visitas, los tiempos de convivencia y otras responsabilidades
+              parentales.
+            </p>
           </div>
 
+          {/* QUE ES LA CUSTODIA */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               ¿Qué es la custodia y el cuidado personal?
@@ -113,6 +83,31 @@ export default function CustodiaPorConciliacionContent() {
             </div>
           </div>
 
+          {/* CUANDO CONVIENE SOLICITAR UNA CONCILIACION */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Cuándo conviene solicitar una conciliación para definir la
+              custodia de un menor?
+            </h2>
+
+            <p className={styles.paragraph}>
+              La conciliación es una excelente alternativa cuando los padres
+              desean establecer acuerdos claros sin iniciar inmediatamente un
+              proceso judicial. Incluso cuando existen diferencias importantes,
+              una audiencia de conciliación puede facilitar el diálogo y
+              permitir soluciones que tengan como prioridad el bienestar del
+              niño, niña o adolescente.
+            </p>
+
+            <p className={styles.paragraph}>
+              También suele utilizarse cuando los padres desean modificar
+              acuerdos anteriores, regular el cuidado personal, establecer un
+              régimen de visitas o definir responsabilidades relacionadas con la
+              educación, salud y gastos del menor.
+            </p>
+          </div>
+
+          {/* QUE PUEDE ACORDARSE MEDIANTE CONCILIACION */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               ¿Qué puede acordarse mediante conciliación?
@@ -129,6 +124,35 @@ export default function CustodiaPorConciliacionContent() {
             </ul>
           </div>
 
+          {/* UN MISMO ACUERDO PUEDE REGULAR VARIOS ASPECTOS DE LA CRIANZA */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Un mismo acuerdo puede regular varios aspectos de la crianza
+            </h2>
+
+            <p className={styles.paragraph}>
+              Una de las ventajas de la conciliación familiar es que los padres
+              no tienen que limitarse únicamente a decidir quién ejercerá el
+              cuidado personal del menor. En la misma audiencia es posible dejar
+              definidos diferentes temas para evitar futuros conflictos.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Custodia y cuidado personal.</li>
+              <li>Régimen de visitas.</li>
+              <li>Entrega y recogida del menor.</li>
+              <li>Vacaciones escolares.</li>
+              <li>Navidad, Año Nuevo y fechas especiales.</li>
+              <li>Cumpleaños.</li>
+              <li>Comunicación telefónica o virtual.</li>
+              <li>Actividades extracurriculares.</li>
+              <li>Decisiones relacionadas con educación.</li>
+              <li>Responsabilidades médicas.</li>
+              <li>Cuotas de alimentación si corresponde.</li>
+            </ul>
+          </div>
+
+          {/* BENEFICIOS DE LA CONCILIACION FAMILIAR */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Beneficios de la conciliación familiar
@@ -158,9 +182,55 @@ export default function CustodiaPorConciliacionContent() {
                   hijo.
                 </p>
               </div>
+
+              <div className={styles.infoCard}>
+                <h3>Mayor estabilidad para el menor</h3>
+
+                <p>
+                  Permite establecer reglas claras que brindan seguridad y
+                  continuidad en la crianza.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Evita procesos largos</h3>
+
+                <p>
+                  Muchas familias logran acuerdos sin necesidad de acudir
+                  inmediatamente ante un juez.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Flexibilidad</h3>
+
+                <p>
+                  Los padres pueden diseñar acuerdos adaptados a las necesidades
+                  reales de su familia.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Mayor cumplimiento</h3>
+
+                <p>
+                  Los acuerdos construidos conjuntamente suelen cumplirse con
+                  mayor frecuencia.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Seguridad jurídica</h3>
+
+                <p>
+                  El acta de conciliación produce efectos legales y constituye
+                  un respaldo importante para las partes.
+                </p>
+              </div>
             </div>
           </div>
 
+          {/* REGIMEN DE VISITAS MEDIANTE CONCILIACION */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Régimen de visitas mediante conciliación
@@ -193,6 +263,7 @@ export default function CustodiaPorConciliacionContent() {
             </ul>
           </div>
 
+          {/* QUE PASA SI NO SE ALCANZA UN ACUERDO */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               ¿Qué pasa si no se alcanza un acuerdo?
@@ -211,6 +282,108 @@ export default function CustodiaPorConciliacionContent() {
             </p>
           </div>
 
+          {/* ERRORES FRECUENTES AL INTENTAR ACORDAR LA CUSTODIA DE UN HIJO */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Errores frecuentes al intentar acordar la custodia de un hijo
+            </h2>
+
+            <div className={styles.cardsGrid}>
+              <div className={styles.infoCard}>
+                <h3>Usar al menor como intermediario</h3>
+
+                <p>
+                  Los conflictos entre los padres nunca deberían trasladarse al
+                  hijo ni utilizarlo para transmitir mensajes.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>No dejar todo por escrito</h3>
+
+                <p>
+                  Los acuerdos verbales suelen generar interpretaciones
+                  distintas con el paso del tiempo.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Pensar únicamente en el conflicto</h3>
+
+                <p>
+                  La conciliación busca construir acuerdos pensando
+                  principalmente en el bienestar del menor.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* PUEDE MODIFICARSE UN ACUERDO DE CUSTODIA FIRMADO EN CONCILIACION? */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Puede modificarse un acuerdo de custodia firmado en conciliación?
+            </h2>
+
+            <p className={styles.paragraph}>
+              Sí. Las necesidades de los hijos cambian con el tiempo y también
+              pueden cambiar las condiciones laborales, económicas o personales
+              de los padres. Cuando esto ocurre, es posible realizar una nueva
+              conciliación para ajustar el acuerdo existente.
+            </p>
+
+            <p className={styles.paragraph}>
+              Siempre que ambas partes estén dispuestas a dialogar, la
+              modificación puede realizarse de forma mucho más rápida que
+              iniciar un proceso judicial desde cero.
+            </p>
+          </div>
+
+          {/* QUE SUCEDEN SI UNO DE LOS PADRES INCUMPLE EL ACUERDO */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Qué sucede si uno de los padres incumple el acuerdo?
+            </h2>
+
+            <p className={styles.paragraph}>
+              Cuando el acuerdo queda consignado en un acta de conciliación,
+              ambas partes adquieren obligaciones jurídicas. Si alguno incumple
+              los compromisos asumidos, pueden iniciarse las actuaciones legales
+              correspondientes para exigir su cumplimiento.
+            </p>
+
+            <div className={styles.highlightBox}>
+              <p>
+                Por esta razón es importante que los acuerdos sean claros,
+                específicos y realistas, evitando ambigüedades que puedan
+                generar nuevos conflictos en el futuro.
+              </p>
+            </div>
+          </div>
+
+          {/* PORQUE MUCHAS FAMILIAS PREFEREN LA CONCILIACION ANTES QUE UN JUICIO */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Por qué muchas familias prefieren la conciliación antes que un
+              juicio?
+            </h2>
+
+            <p className={styles.paragraph}>
+              Un proceso judicial relacionado con la custodia puede prolongarse
+              durante un tiempo considerable y generar un importante desgaste
+              emocional para toda la familia. La conciliación permite que los
+              padres participen activamente en la construcción del acuerdo y
+              encuentren soluciones adaptadas a su realidad.
+            </p>
+
+            <p className={styles.paragraph}>
+              Además de reducir tiempos y costos, favorece la comunicación entre
+              los padres y disminuye el impacto del conflicto sobre los hijos,
+              quienes son los principales beneficiarios cuando existe
+              cooperación entre ambos progenitores.
+            </p>
+          </div>
+
+          {/* PREGUNTAS FRECUENTES SOBRE CUSTODIA POR CONCILIACION */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Preguntas frecuentes sobre custodia por conciliación
@@ -246,6 +419,7 @@ export default function CustodiaPorConciliacionContent() {
             </div>
           </div>
 
+          {/* CTA */}
           <div className={styles.ctaBox}>
             <h3 className={styles.ctaTitle}>
               ¿Necesitas acordar la custodia o visitas de un menor?
@@ -267,7 +441,7 @@ export default function CustodiaPorConciliacionContent() {
             </a>
           </div>
         </motion.article>
-      </section>
+      </div>
     </>
   );
 }

@@ -21,7 +21,8 @@ export default function CuandoConvieneConciliarContent() {
           </span>
 
           <h1 className={styles.title}>
-            ¿Cuándo conviene conciliar en Colombia y Bogotá?
+            ¿Cuándo conviene acudir a una conciliación en Colombia? Casos,
+            ventajas y cuándo no hacerlo
           </h1>
 
           <p className={styles.paragraph}>
@@ -52,7 +53,8 @@ export default function CuandoConvieneConciliarContent() {
 
         <div className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Por qué la conciliación es tan utilizada en Colombia?
+            ¿Por qué cada vez más personas y empresas prefieren la conciliación
+            antes de demandar?
           </h2>
 
           <p className={styles.paragraph}>
@@ -79,10 +81,10 @@ export default function CuandoConvieneConciliarContent() {
         </div>
 
         {/* ================= CASOS ================= */}
-
         <div className={styles.section}>
           <h2 className={styles.subtitle}>
-            Casos en los que conviene conciliar en Colombia
+            ¿Por qué cada vez más personas y empresas prefieren la conciliación
+            antes de demandar?
           </h2>
 
           <p className={styles.paragraph}>
@@ -143,11 +145,119 @@ export default function CuandoConvieneConciliarContent() {
           </ul>
         </div>
 
+        {/* ================= BENEFICIOS ================= */}
+        <div className={styles.section}>
+          <h2 className={styles.subtitle}>
+            Señales de que una conciliación puede ser la mejor opción para tu
+            caso
+          </h2>
+
+          <div className={styles.benefitsGrid}>
+            <div className={styles.benefitCard}>
+              <h3>Existe disposición para dialogar</h3>
+
+              <p>
+                Cuando ambas partes aún están abiertas a conversar, la
+                conciliación suele ofrecer excelentes resultados.
+              </p>
+            </div>
+
+            <div className={styles.benefitCard}>
+              <h3>Quieres ahorrar tiempo</h3>
+
+              <p>
+                Resolver un conflicto mediante conciliación normalmente toma
+                mucho menos tiempo que un proceso judicial.
+              </p>
+            </div>
+
+            <div className={styles.benefitCard}>
+              <h3>Deseas conservar la relación</h3>
+
+              <p>
+                Es especialmente útil cuando existe una relación familiar,
+                comercial, laboral o contractual que se desea mantener.
+              </p>
+            </div>
+
+            <div className={styles.benefitCard}>
+              <h3>Buscas soluciones flexibles</h3>
+
+              <p>
+                Las partes pueden acordar plazos, formas de pago o compromisos
+                personalizados que un juez normalmente no establecería.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ================= AUDIENCIA ================= */}
+        <div className={styles.section}>
+          <h2 className={styles.subtitle}>
+            ¿Qué sucede después de una audiencia de conciliación?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Al finalizar la audiencia pueden presentarse distintos escenarios.
+            Si las partes llegan a un acuerdo, este queda consignado en un acta
+            con efectos jurídicos. Si no existe acuerdo, las partes conservan la
+            posibilidad de acudir posteriormente a la vía judicial cuando la ley
+            lo permita.
+          </p>
+
+          <p className={styles.paragraph}>
+            Independientemente del resultado, la audiencia suele ayudar a
+            aclarar las posiciones de cada parte y facilita la toma de
+            decisiones sobre los pasos a seguir.
+          </p>
+        </div>
+
+        {/* ================= ERRORES ================= */}
+        <div className={styles.section}>
+          <h2 className={styles.subtitle}>
+            Errores frecuentes que dificultan una conciliación
+          </h2>
+
+          <ul className={styles.list}>
+            <li>Asistir sin conocer claramente el problema.</li>
+            <li>No llevar documentos que respalden la posición.</li>
+            <li>Negarse completamente a escuchar propuestas.</li>
+            <li>Confundir la conciliación con un juicio.</li>
+            <li>Pretender imponer únicamente la propia solución.</li>
+            <li>No cumplir posteriormente el acuerdo alcanzado.</li>
+          </ul>
+        </div>
+
+        {/* ================= SABER SI ES CONCILIABLE ================= */}
+        <div className={styles.section}>
+          <h2 className={styles.subtitle}>
+            ¿Cómo saber si tu conflicto puede resolverse mediante conciliación?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Cada caso debe analizarse de manera individual. Aspectos como la
+            naturaleza del conflicto, la voluntad de las partes y la normativa
+            aplicable permiten determinar si la conciliación es el mecanismo más
+            adecuado o si resulta necesario acudir directamente a otra vía
+            legal.
+          </p>
+
+          <div className={styles.highlightBox}>
+            <p>
+              Una orientación jurídica previa puede ayudarte a identificar si tu
+              caso es conciliable, cuáles documentos debes reunir y cuál
+              estrategia puede ofrecer mayores posibilidades de alcanzar un
+              acuerdo.
+            </p>
+          </div>
+        </div>
+
         {/* ================= EJEMPLOS ================= */}
 
         <div className={styles.section}>
           <h2 className={styles.subtitle}>
-            Ejemplos comunes de conciliación en Bogotá
+            Ejemplos reales de conflictos que suelen resolverse mediante
+            conciliación
           </h2>
 
           <div className={styles.examplesGrid}>
@@ -205,7 +315,7 @@ export default function CuandoConvieneConciliarContent() {
 
         <div className={styles.section}>
           <h2 className={styles.subtitle}>
-            ¿Cuándo NO conviene iniciar una conciliación?
+            ¿Cuándo la conciliación puede no ser la mejor alternativa?
           </h2>
 
           <p className={styles.paragraph}>
@@ -213,27 +323,30 @@ export default function CuandoConvieneConciliarContent() {
             situaciones donde puede no ser la mejor alternativa:
           </p>
 
+          <p className={styles.paragraph}>
+            Identificar si un asunto es conciliable desde el inicio permite
+            ahorrar tiempo y elegir el mecanismo jurídico más adecuado. Aunque
+            la conciliación resuelve una gran cantidad de controversias, existen
+            casos en los que la ley exige acudir directamente ante una autoridad
+            judicial o administrativa.
+          </p>
+
           <ul className={styles.list}>
             <li>
               Cuando una de las partes no tiene intención real de negociar.
             </li>
-
             <li>
               Cuando existe mala fe evidente o intención de dilatar el proceso.
             </li>
-
             <li>
               Cuando se requiere una decisión judicial obligatoria conforme a la
               ley colombiana.
             </li>
-
             <li>Cuando el conflicto involucra derechos no conciliables.</li>
-
             <li>
               Cuando existe violencia, amenazas o situaciones que impidan una
               negociación equilibrada.
             </li>
-
             <li>
               Cuando se necesita una medida urgente que solo puede ordenar un
               juez.
@@ -252,7 +365,8 @@ export default function CuandoConvieneConciliarContent() {
 
         <div className={styles.section}>
           <h2 className={styles.subtitle}>
-            Ventajas de conciliar en Bogotá y Colombia
+            Beneficios de intentar una conciliación antes de iniciar un proceso
+            judicial
           </h2>
 
           <p className={styles.paragraph}>
@@ -316,7 +430,8 @@ export default function CuandoConvieneConciliarContent() {
 
         <div className={styles.section}>
           <h2 className={styles.subtitle}>
-            Recomendaciones antes de asistir a una conciliación
+            ¿Cómo prepararte para una audiencia de conciliación y aumentar las
+            posibilidades de llegar a un acuerdo?
           </h2>
 
           <p className={styles.paragraph}>
@@ -330,42 +445,45 @@ export default function CuandoConvieneConciliarContent() {
               Organiza documentos, contratos, chats, correos y soportes
               relacionados con el conflicto.
             </li>
-
             <li>
               Define claramente cuál es tu objetivo principal y cuál es tu
               mínimo aceptable.
             </li>
-
             <li>
               Lleva propuestas claras sobre pagos, fechas y formas de
               cumplimiento.
             </li>
-
             <li>Evalúa alternativas de negociación antes de la audiencia.</li>
-
             <li>
               Busca asesoría jurídica si el conflicto involucra valores altos o
               asuntos complejos.
             </li>
-
             <li>
               Mantén una actitud abierta al diálogo y evita convertir la
               audiencia en una discusión personal.
             </li>
           </ul>
+
+          <p className={styles.paragraph}>
+            Una buena preparación facilita que la audiencia sea productiva y
+            aumenta las probabilidades de lograr un acuerdo satisfactorio para
+            todas las partes, evitando posteriores incumplimientos o nuevos
+            conflictos.
+          </p>
         </div>
 
         {/* ================= CTA ================= */}
 
         <div className={styles.cta}>
           <strong className={styles.ctaTitle}>
-            ¿Quieres saber si tu caso conviene conciliar?
+            ¿No sabes si tu conflicto puede resolverse mediante conciliación?
           </strong>
 
           <p className={styles.ctaText}>
-            Recibe orientación sobre conciliación en Bogotá y Colombia, revisa
-            si tu conflicto es conciliable y conoce estrategias para negociar de
-            forma segura y efectiva.
+            Nuestro equipo puede orientarte para determinar si tu caso es
+            conciliable, explicarte los requisitos, resolver tus dudas y
+            acompañarte durante todo el proceso para buscar una solución rápida,
+            legal y efectiva.
           </p>
 
           <a
@@ -374,7 +492,7 @@ export default function CuandoConvieneConciliarContent() {
             rel="noopener noreferrer"
             className={styles.ctaButton}
           >
-            Solicitar asesoría en conciliación
+            Conocer si mi caso puede conciliarse
           </a>
         </div>
       </motion.div>
