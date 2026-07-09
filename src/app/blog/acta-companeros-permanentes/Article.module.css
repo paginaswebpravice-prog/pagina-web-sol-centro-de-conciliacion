@@ -1,9 +1,17 @@
+/* =========================================================
+   WRAPPER
+========================================================= */
+
 .wrapper {
   padding-top: 140px;
   padding-bottom: 100px;
   background: linear-gradient(to bottom, #faf9f7, #f5f5f5);
   min-height: 100vh;
 }
+
+/* =========================================================
+   CARD
+========================================================= */
 
 .card {
   max-width: 1050px;
@@ -35,6 +43,15 @@
   pointer-events: none;
 }
 
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================================================
+   TITLES
+========================================================= */
+
 .title {
   font-size: clamp(36px, 5vw, 52px);
   color: #1a414a;
@@ -52,6 +69,10 @@
   font-weight: 700;
 }
 
+/* =========================================================
+   TEXT
+========================================================= */
+
 .text {
   font-size: 17px;
   color: #444;
@@ -61,7 +82,12 @@
 
 .text strong {
   color: #1a414a;
+  font-weight: 700;
 }
+
+/* =========================================================
+   HIGHLIGHT
+========================================================= */
 
 .highlightBox {
   margin-top: 35px;
@@ -78,8 +104,17 @@
   color: #1a414a;
 }
 
+.highlightBox strong {
+  font-weight: 700;
+}
+
+/* =========================================================
+   LISTS
+========================================================= */
+
 .list {
   margin: 25px 0 35px 24px;
+  padding-left: 6px;
   line-height: 1.95;
   color: #444;
 }
@@ -88,6 +123,19 @@
   margin-bottom: 12px;
   font-size: 16px;
 }
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+ul.list,
+ol.list {
+  list-style-position: outside;
+}
+
+/* =========================================================
+   NOTE
+========================================================= */
 
 .note {
   background: rgba(251, 188, 5, 0.1);
@@ -99,6 +147,14 @@
   line-height: 1.8;
   font-size: 15.8px;
 }
+
+.note strong {
+  font-weight: 700;
+}
+
+/* =========================================================
+   PRE
+========================================================= */
 
 .pre {
   margin-top: 30px;
@@ -112,6 +168,8 @@
   color: #000;
   white-space: pre-wrap;
   overflow-x: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
   position: relative;
 }
@@ -128,6 +186,10 @@
   font-weight: 700;
   color: #888;
 }
+
+/* =========================================================
+   FAQ
+========================================================= */
 
 .faqGrid {
   display: grid;
@@ -151,10 +213,15 @@
 }
 
 .faqItem p {
+  margin: 0;
   font-size: 15.5px;
   line-height: 1.85;
   color: #555;
 }
+
+/* =========================================================
+   CTA
+========================================================= */
 
 .ctaBox {
   margin-top: 70px;
@@ -192,14 +259,20 @@
   font-size: 15px;
   font-weight: 700;
   transition:
+    background 0.3s ease,
     transform 0.3s ease,
-    background 0.3s ease;
+    box-shadow 0.3s ease;
 }
 
 .ctaButton:hover {
   transform: translateY(-3px);
   background: #ffd24c;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
 }
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
 
 @media (max-width: 900px) {
   .faqGrid {
@@ -210,9 +283,20 @@
     padding: 40px 28px;
   }
 
+  .highlightBox,
+  .faqItem {
+    padding: 24px;
+  }
+
   .pre {
     padding: 55px 28px;
     font-size: 14px;
+  }
+
+  .pre::before {
+    top: 16px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -228,6 +312,7 @@
 
   .subTitle {
     font-size: 26px;
+    margin-top: 42px;
   }
 
   .text,
@@ -248,15 +333,32 @@
     border-radius: 18px;
   }
 
-  .pre {
-    padding: 50px 18px;
+  .highlightBox,
+  .faqItem {
+    padding: 20px;
   }
 
-  .faqItem {
-    padding: 22px;
+  .note {
+    padding: 20px;
+  }
+
+  .pre {
+    padding: 50px 18px 18px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .pre::before {
+    top: 12px;
+    font-size: 9px;
+    letter-spacing: 1px;
   }
 
   .ctaTitle {
     font-size: 26px;
+  }
+
+  .ctaButton {
+    width: 100%;
   }
 }

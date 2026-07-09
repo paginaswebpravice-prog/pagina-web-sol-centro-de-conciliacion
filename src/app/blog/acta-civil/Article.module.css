@@ -1,3 +1,7 @@
+/* ======================================================
+   WRAPPER
+====================================================== */
+
 .wrapper {
   padding: 130px 20px 90px;
   background: linear-gradient(to bottom, #faf9f7, #f4f4f4);
@@ -8,6 +12,10 @@
   max-width: 1100px;
   margin: 0 auto;
 }
+
+/* ======================================================
+   CARD
+====================================================== */
 
 .card {
   background: #ffffff;
@@ -26,6 +34,10 @@
   box-shadow: 0 24px 65px rgba(26, 65, 74, 0.09);
 }
 
+/* ======================================================
+   BADGE
+====================================================== */
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -37,6 +49,10 @@
   font-weight: 700;
   margin-bottom: 24px;
 }
+
+/* ======================================================
+   TITLES
+====================================================== */
 
 .title {
   font-size: clamp(34px, 5vw, 48px);
@@ -56,6 +72,10 @@
   font-weight: 700;
 }
 
+/* ======================================================
+   TEXT
+====================================================== */
+
 .text {
   font-size: 17px;
   margin-bottom: 24px;
@@ -68,8 +88,13 @@
   font-weight: 700;
 }
 
+/* ======================================================
+   LISTS
+====================================================== */
+
 .list {
   margin: 24px 0 32px 24px;
+  padding-left: 6px;
 }
 
 .list li {
@@ -78,6 +103,21 @@
   line-height: 1.85;
   font-size: 16px;
 }
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Compatible con UL y OL */
+
+ul.list,
+ol.list {
+  list-style-position: outside;
+}
+
+/* ======================================================
+   HIGHLIGHT
+====================================================== */
 
 .highlightBox {
   margin: 38px 0;
@@ -95,6 +135,14 @@
   font-weight: 500;
 }
 
+.highlightBox strong {
+  font-weight: 700;
+}
+
+/* ======================================================
+   INFO CARD
+====================================================== */
+
 .infoCard {
   margin-top: 30px;
   padding: 32px;
@@ -109,6 +157,10 @@
   font-size: 22px;
 }
 
+/* ======================================================
+   NOTE
+====================================================== */
+
 .note {
   margin-top: 35px;
   padding: 24px 28px;
@@ -119,6 +171,14 @@
   font-size: 15.8px;
   line-height: 1.85;
 }
+
+.note strong {
+  font-weight: 700;
+}
+
+/* ======================================================
+   PRE
+====================================================== */
 
 .pre {
   margin-top: 35px;
@@ -132,6 +192,8 @@
   line-height: 2;
   white-space: pre-wrap;
   overflow-x: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
   color: #111;
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.05);
   position: relative;
@@ -149,6 +211,10 @@
   color: #777;
   font-weight: 700;
 }
+
+/* ======================================================
+   CTA
+====================================================== */
 
 .ctaBox {
   margin-top: 70px;
@@ -186,14 +252,20 @@
   font-size: 15px;
   font-weight: 700;
   transition:
+    background 0.3s ease,
     transform 0.3s ease,
-    background 0.3s ease;
+    box-shadow 0.3s ease;
 }
 
 .ctaButton:hover {
-  transform: translateY(-2px);
   background: #ffd24c;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
 }
+
+/* ======================================================
+   FAQ
+====================================================== */
 
 .faqGrid {
   margin-top: 35px;
@@ -221,6 +293,10 @@
   font-size: 15.8px;
 }
 
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
 @media (max-width: 900px) {
   .card {
     padding: 38px 28px;
@@ -238,10 +314,22 @@
     font-size: 15.8px;
   }
 
+  .highlightBox,
+  .infoCard,
+  .faqItem {
+    padding: 24px;
+  }
+
   .pre {
     padding: 40px 28px;
     font-size: 14px;
     line-height: 1.9;
+  }
+
+  .pre::before {
+    top: 18px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
   }
 
   .ctaBox {
@@ -254,15 +342,56 @@
 }
 
 @media (max-width: 480px) {
+  .wrapper {
+    padding: 110px 16px 70px;
+  }
+
+  .card {
+    padding: 28px 20px;
+    border-radius: 18px;
+  }
+
   .title {
     font-size: 28px;
   }
 
   .subtitle {
     font-size: 22px;
+    margin-top: 42px;
   }
 
   .badge {
     font-size: 12px;
+  }
+
+  .text,
+  .list li {
+    font-size: 15.5px;
+  }
+
+  .highlightBox,
+  .infoCard,
+  .faqItem {
+    padding: 20px;
+  }
+
+  .note {
+    padding: 20px;
+  }
+
+  .pre {
+    padding: 34px 18px 18px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .pre::before {
+    top: 12px;
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .ctaButton {
+    width: 100%;
   }
 }

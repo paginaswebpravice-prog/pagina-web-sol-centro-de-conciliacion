@@ -63,63 +63,75 @@ export default function DiferenciaConciliacionYDemandaContent() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
+          {/* HERO */}
           <div className={styles.heroContent}>
             <span className={styles.badge}>Guía jurídica en Colombia</span>
 
             <h1 className={styles.title}>
               Diferencia entre conciliación y demanda judicial en Colombia:
-              ¿cuál conviene según tu caso?
+              ¿cuál es la mejor opción para resolver un conflicto?
             </h1>
 
             <p className={styles.heroText}>
-              Cuando surge un conflicto legal, muchas personas no saben si deben
-              acudir a una conciliación o iniciar una demanda judicial. Aunque
-              ambos mecanismos buscan resolver controversias, funcionan de forma
-              diferente y tienen ventajas específicas según cada situación.
+              Cuando surge un conflicto relacionado con un contrato, una deuda,
+              un arrendamiento, un problema familiar o un desacuerdo entre
+              particulares, muchas personas se preguntan si deben acudir primero
+              a una conciliación o presentar directamente una demanda judicial.
+              Elegir el mecanismo adecuado puede marcar una gran diferencia en
+              el tiempo, el costo y las posibilidades de resolver el conflicto.
             </p>
 
             <p className={styles.heroText}>
-              En Bogotá y Colombia, la conciliación extrajudicial se ha
-              convertido en una de las alternativas más utilizadas para evitar
-              procesos largos y costosos ante los jueces.
+              En Colombia, la conciliación extrajudicial se ha consolidado como
+              uno de los mecanismos más eficaces para solucionar controversias
+              de manera rápida, voluntaria y con plena validez jurídica. En
+              numerosos asuntos incluso es un requisito previo antes de
+              presentar una demanda ante un juez.
             </p>
 
             <p className={styles.heroText}>
-              Comprender las diferencias entre conciliación y demanda judicial
-              puede ayudarte a tomar mejores decisiones y resolver conflictos de
-              manera más eficiente.
+              En esta guía encontrarás las principales diferencias entre
+              conciliación y demanda judicial, sus ventajas, desventajas,
+              tiempos aproximados, costos y los casos en los que conviene acudir
+              a cada alternativa para tomar una decisión informada.
             </p>
           </div>
 
+          {/* QUE DIFERENCIA EXISTE ENTRE CONCILIACION Y DEMANDA JUDICIAL */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
-              ¿Qué diferencia existe entre conciliación y demanda judicial?
+              Diferencia entre conciliación y demanda judicial: comparación
+              completa
             </h2>
 
             <p className={styles.paragraph}>
-              La principal diferencia radica en la forma en que se resuelve el
-              conflicto. En la conciliación, las partes intentan alcanzar un
-              acuerdo voluntario con la ayuda de un conciliador imparcial.
+              Aunque ambos mecanismos buscan resolver conflictos jurídicos, la
+              forma en que lo hacen es completamente diferente. En la
+              conciliación son las propias partes quienes construyen un acuerdo
+              con el acompañamiento de un conciliador imparcial, mientras que en
+              la demanda judicial la decisión final queda en manos de un juez.
             </p>
 
             <p className={styles.paragraph}>
-              En una demanda judicial, por el contrario, el conflicto es llevado
-              ante un juez, quien estudia el caso y finalmente emite una
-              decisión obligatoria para las partes.
+              Esto significa que la conciliación promueve el diálogo, la
+              negociación y soluciones flexibles, mientras que el proceso
+              judicial sigue un trámite formal que culmina con una sentencia
+              obligatoria.
             </p>
 
             <div className={styles.highlightBox}>
               <p>
-                La conciliación promueve acuerdos construidos por las partes. La
-                demanda judicial delega la decisión final a una autoridad
-                judicial.
+                En pocas palabras, en la conciliación las partes conservan el
+                control del resultado; en una demanda judicial la decisión
+                corresponde al juez.
               </p>
             </div>
           </div>
 
+          {/* QUE ES UNA CONCILIACION EN COLOMBIA */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
-              ¿Qué es una conciliación extrajudicial en Colombia?
+              ¿Qué es la conciliación extrajudicial y cómo funciona?
             </h2>
 
             <p className={styles.paragraph}>
@@ -138,15 +150,32 @@ export default function DiferenciaConciliacionYDemandaContent() {
               Cuando se logra un acuerdo, este queda plasmado en un acta de
               conciliación que posee plenos efectos jurídicos.
             </p>
+
+            <p className={styles.paragraph}>
+              Durante la audiencia cada parte expone su posición, presenta los
+              documentos que considere necesarios y propone alternativas de
+              solución. Si existe voluntad de negociar, el conciliador facilita
+              la comunicación para alcanzar un acuerdo beneficioso para todos.
+            </p>
           </div>
 
+          {/* QUE ES UNA DEMANDA JUDICIAL EN COLOMBIA */}
           <div className={styles.contentSection}>
-            <h2 className={styles.subtitle}>¿Qué es una demanda judicial?</h2>
+            <h2 className={styles.subtitle}>
+              ¿Qué implica iniciar una demanda judicial en Colombia?
+            </h2>
 
             <p className={styles.paragraph}>
               Una demanda judicial es el procedimiento mediante el cual una
               persona solicita la intervención de un juez para resolver una
               controversia.
+            </p>
+
+            <p className={styles.paragraph}>
+              Dependiendo del tipo de proceso, pueden intervenir abogados,
+              jueces, notificaciones, audiencias, práctica de pruebas, recursos
+              y diversas etapas procesales que hacen que la solución del
+              conflicto tome más tiempo frente a una conciliación.
             </p>
 
             <p className={styles.paragraph}>
@@ -160,6 +189,7 @@ export default function DiferenciaConciliacionYDemandaContent() {
             </p>
           </div>
 
+          {/* COMPARACION ENTRE CONCILIACION Y DEMANDA JUDICIAL */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Comparación entre conciliación y demanda judicial
@@ -192,9 +222,19 @@ export default function DiferenciaConciliacionYDemandaContent() {
                   sentencia judicial.
                 </p>
               </div>
+
+              <div className={styles.infoCard}>
+                <h3>Control de la decisión</h3>
+
+                <p>
+                  En la conciliación las partes deciden el contenido del
+                  acuerdo; en la demanda la decisión final corresponde al juez.
+                </p>
+              </div>
             </div>
           </div>
 
+          {/* TIEMPO Y COSTOS DE UNA CONCILIACION FRENTE A UNA DEMANDA JUDICIAL */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Tiempo promedio de una conciliación frente a una demanda
@@ -210,8 +250,17 @@ export default function DiferenciaConciliacionYDemandaContent() {
               Las demandas judiciales pueden extenderse durante largos periodos
               debido a notificaciones, pruebas, audiencias y recursos legales.
             </p>
+
+            <p className={styles.paragraph}>
+              Aunque la duración depende de cada caso, una conciliación
+              normalmente puede concluir en pocas semanas cuando ambas partes
+              participan activamente. Un proceso judicial, por el contrario,
+              puede prolongarse durante meses o incluso varios años según la
+              complejidad del asunto y la carga de los despachos judiciales.
+            </p>
           </div>
 
+          {/* COSTOS DE UNA CONCILIACION FRENTE A UNA DEMANDA JUDICIAL */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Costos de una conciliación frente a una demanda
@@ -228,6 +277,7 @@ export default function DiferenciaConciliacionYDemandaContent() {
             </p>
           </div>
 
+          {/* CUANDO CONVIENE ACUDIR A UNA CONCILIACION */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               ¿Cuándo conviene acudir a una conciliación?
@@ -244,11 +294,13 @@ export default function DiferenciaConciliacionYDemandaContent() {
             </ul>
 
             <p className={styles.paragraph}>
-              Cuando existe voluntad de diálogo, la conciliación suele ser la
-              mejor alternativa para resolver el conflicto.
+              La conciliación resulta especialmente conveniente cuando ambas
+              partes desean evitar un litigio, conservar una relación personal o
+              comercial y encontrar soluciones rápidas mediante el diálogo.
             </p>
           </div>
 
+          {/* CUANDO ES NECESARIO PRESENTAR UNA DEMANDA JUDICIAL */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               ¿Cuándo es necesario presentar una demanda judicial?
@@ -261,11 +313,14 @@ export default function DiferenciaConciliacionYDemandaContent() {
             </p>
 
             <p className={styles.paragraph}>
-              También existen asuntos que por disposición legal deben ser
-              resueltos por jueces competentes.
+              También puede ser necesaria cuando una de las partes incumple un
+              acuerdo conciliatorio, desconoce completamente la obligación o el
+              conflicto involucra materias que únicamente pueden ser resueltas
+              por un juez.
             </p>
           </div>
 
+          {/* LA CONCILIACION ES OBLIGATORIA ANTES DE DEMANDAR */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               ¿La conciliación es obligatoria antes de demandar?
@@ -283,9 +338,11 @@ export default function DiferenciaConciliacionYDemandaContent() {
             </p>
           </div>
 
+          {/* VENTAJAS DE LA CONCILIACION FRENTE A UNA DEMANDA JUDICIAL */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
-              Ventajas de la conciliación frente a una demanda
+              ¿Por qué muchas personas prefieren la conciliación antes que una
+              demanda?
             </h2>
 
             <ul className={styles.list}>
@@ -297,8 +354,62 @@ export default function DiferenciaConciliacionYDemandaContent() {
               <li>Validez jurídica de los acuerdos.</li>
               <li>Posibilidad de realizar audiencias virtuales.</li>
             </ul>
+
+            <p className={styles.paragraph}>
+              La conciliación no pretende reemplazar la justicia, sino ofrecer
+              una alternativa eficiente para resolver conflictos cuando existe
+              disposición para dialogar. Esto explica por qué cada vez más
+              personas y empresas la utilizan antes de iniciar un proceso
+              judicial.
+            </p>
           </div>
 
+          {/* QUE CONFLICTOS SUELEN RESOLVERSE MEDIANTE CONCILIACION */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Qué conflictos suelen resolverse mediante conciliación?
+            </h2>
+
+            <div className={styles.cardsGrid}>
+              <div className={styles.infoCard}>
+                <h3>Conflictos civiles</h3>
+
+                <p>
+                  Cobro de deudas, incumplimientos contractuales, daños y
+                  perjuicios y obligaciones económicas.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Arrendamientos</h3>
+
+                <p>
+                  Entrega de inmuebles, cánones pendientes, terminación de
+                  contratos y acuerdos entre arrendador y arrendatario.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Asuntos familiares</h3>
+
+                <p>
+                  Cuotas alimentarias, custodia, visitas, separación de bienes y
+                  otros conflictos conciliables.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Conflictos comerciales</h3>
+
+                <p>
+                  Incumplimientos entre empresas, proveedores, clientes y
+                  obligaciones derivadas de contratos comerciales.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* PREGUNTAS FRECUENTES SOBRE CONCILIACION Y DEMANDA JUDICIAL */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Preguntas frecuentes sobre conciliación y demanda judicial
@@ -333,6 +444,7 @@ export default function DiferenciaConciliacionYDemandaContent() {
             </div>
           </div>
 
+          {/* CTA */}
           <div className={styles.ctaBox}>
             <h3 className={styles.ctaTitle}>
               ¿Necesitas orientación para resolver un conflicto?

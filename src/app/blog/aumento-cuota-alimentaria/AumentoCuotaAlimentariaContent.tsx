@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "../Article.module.css";
+import timelineStyles from "./styles.module.css";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
@@ -251,9 +252,9 @@ export default function AumentoCuotaAlimentariaContent() {
               Paso a paso para solicitar el aumento de la cuota alimentaria
             </h2>
 
-            <div className={styles.timeline}>
-              <div className={styles.timelineItem}>
-                <span className={styles.step}>1</span>
+            <div className={timelineStyles.timeline}>
+              <div className={timelineStyles.timelineItem}>
+                <span className={timelineStyles.step}>1</span>
 
                 <div>
                   <h3>Reunir la documentación</h3>
@@ -266,8 +267,8 @@ export default function AumentoCuotaAlimentariaContent() {
                 </div>
               </div>
 
-              <div className={styles.timelineItem}>
-                <span className={styles.step}>2</span>
+              <div className={timelineStyles.timelineItem}>
+                <span className={timelineStyles.step}>2</span>
 
                 <div>
                   <h3>Solicitar la conciliación</h3>
@@ -279,8 +280,8 @@ export default function AumentoCuotaAlimentariaContent() {
                 </div>
               </div>
 
-              <div className={styles.timelineItem}>
-                <span className={styles.step}>3</span>
+              <div className={timelineStyles.timelineItem}>
+                <span className={timelineStyles.step}>3</span>
 
                 <div>
                   <h3>Asistir a la audiencia</h3>
@@ -293,8 +294,8 @@ export default function AumentoCuotaAlimentariaContent() {
                 </div>
               </div>
 
-              <div className={styles.timelineItem}>
-                <span className={styles.step}>4</span>
+              <div className={timelineStyles.timelineItem}>
+                <span className={timelineStyles.step}>4</span>
 
                 <div>
                   <h3>Firma del nuevo acuerdo</h3>

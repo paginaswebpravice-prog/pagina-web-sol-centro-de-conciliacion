@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "../Article.module.css";
+import componentStyles from "./styles.module.css";
 import { motion } from "framer-motion";
 
 export default function CentrosConciliacionColombiaContent() {
@@ -193,9 +194,9 @@ export default function CentrosConciliacionColombiaContent() {
             definidas.
           </p>
 
-          <div className={styles.timeline}>
-            <div className={styles.timelineItem}>
-              <span className={styles.step}>1</span>
+          <div className={componentStyles.timeline}>
+            <div className={componentStyles.timelineItem}>
+              <span className={componentStyles.step}>1</span>
 
               <div>
                 <h3>Presentación de la solicitud</h3>
@@ -207,8 +208,8 @@ export default function CentrosConciliacionColombiaContent() {
               </div>
             </div>
 
-            <div className={styles.timelineItem}>
-              <span className={styles.step}>2</span>
+            <div className={componentStyles.timelineItem}>
+              <span className={componentStyles.step}>2</span>
 
               <div>
                 <h3>Revisión del caso</h3>
@@ -220,8 +221,8 @@ export default function CentrosConciliacionColombiaContent() {
               </div>
             </div>
 
-            <div className={styles.timelineItem}>
-              <span className={styles.step}>3</span>
+            <div className={componentStyles.timelineItem}>
+              <span className={componentStyles.step}>3</span>
 
               <div>
                 <h3>Citación a audiencia</h3>
@@ -233,8 +234,8 @@ export default function CentrosConciliacionColombiaContent() {
               </div>
             </div>
 
-            <div className={styles.timelineItem}>
-              <span className={styles.step}>4</span>
+            <div className={componentStyles.timelineItem}>
+              <span className={componentStyles.step}>4</span>
 
               <div>
                 <h3>Audiencia</h3>
@@ -246,8 +247,8 @@ export default function CentrosConciliacionColombiaContent() {
               </div>
             </div>
 
-            <div className={styles.timelineItem}>
-              <span className={styles.step}>5</span>
+            <div className={componentStyles.timelineItem}>
+              <span className={componentStyles.step}>5</span>
 
               <div>
                 <h3>Acta o constancia</h3>

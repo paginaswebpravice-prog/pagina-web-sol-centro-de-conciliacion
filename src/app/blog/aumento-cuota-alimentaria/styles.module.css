@@ -1,0 +1,52 @@
+/* ================= TIMELINE ================= */
+
+.timeline {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.step {
+  min-width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #1a414a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .timelineItem {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timelineItem {
+    flex-direction: column;
+  }
+
+  .step {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+}

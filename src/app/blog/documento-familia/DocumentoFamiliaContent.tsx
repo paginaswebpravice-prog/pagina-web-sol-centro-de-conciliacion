@@ -82,31 +82,54 @@ export default function DocumentoFamiliaContent() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
+            {/* HERO */}
             <h1 className={styles.title} itemProp="headline">
-              Acta de conciliación familiar en Colombia: modelo, ejemplo y guía
-              completa
+              Acta de conciliación familiar en Colombia: modelo, ejemplo,
+              requisitos y cómo elaborar un acuerdo con validez legal
             </h1>
 
             <p className={styles.paragraph} itemProp="description">
-              La <strong>conciliación familiar en Colombia</strong> es uno de
-              los mecanismos legales más utilizados para resolver conflictos
+              El <strong>acta de conciliación familiar en Colombia</strong> es
+              uno de los documentos más utilizados para resolver conflictos
               relacionados con{" "}
               <strong>
-                cuota alimentaria, custodia de menores, régimen de visitas,
-                obligaciones económicas y acuerdos de crianza
-              </strong>
-              . En ciudades como <strong>Bogotá</strong>, Medellín, Cali,
-              Barranquilla y otras regiones de Colombia, miles de familias
-              acuden cada año a centros de conciliación para evitar procesos
-              judiciales largos y desgastantes.
+                cuota alimentaria, custodia de hijos, régimen de visitas, gastos
+                extraordinarios, responsabilidades parentales y otros acuerdos
+                familiares
+              </strong>{" "}
+              sin necesidad de iniciar un proceso judicial. Su finalidad es
+              permitir que las partes lleguen a soluciones voluntarias
+              respaldadas por la ley.
             </p>
 
             <p className={styles.paragraph}>
-              El <strong>acta de conciliación familiar</strong> permite dejar
-              por escrito acuerdos claros y verificables entre padres,
-              representantes legales o familiares. Este documento tiene plena{" "}
-              <strong>validez jurídica en Colombia</strong> y puede ser exigido
-              judicialmente en caso de incumplimiento.
+              En ciudades como{" "}
+              <strong>
+                Bogotá, Medellín, Cali, Barranquilla, Bucaramanga y el resto del
+                país
+              </strong>
+              , miles de familias recurren cada año a los centros de
+              conciliación para formalizar acuerdos que brinden estabilidad
+              jurídica y protejan el interés superior de los niños, niñas y
+              adolescentes.
+            </p>
+
+            <p className={styles.paragraph}>
+              Además de explicar{" "}
+              <strong>qué es un acta de conciliación familiar</strong>, en esta
+              guía encontrarás un modelo de referencia, los elementos que debe
+              contener, los efectos legales que produce, los errores más comunes
+              al elaborarla y las situaciones en las que puede modificarse
+              posteriormente.
+            </p>
+
+            <p className={styles.paragraph}>
+              Si estás buscando un{" "}
+              <strong>modelo de acta de conciliación familiar</strong> o deseas
+              comprender cómo funciona este procedimiento en Colombia, aquí
+              encontrarás una explicación práctica orientada tanto para padres
+              como para cualquier persona que necesite formalizar acuerdos
+              familiares de manera segura.
             </p>
 
             <div className={styles.highlightBox}>
@@ -117,223 +140,465 @@ export default function DocumentoFamiliaContent() {
               </p>
             </div>
 
+            {/* QUE ES UN ACTA DE CONCILIACION FAMILIAR */}
             <h2 className={styles.subtitle}>
-              ¿Qué es un acta de conciliación familiar en Colombia?
+              ¿Qué es un acta de conciliación familiar en Colombia y para qué
+              sirve?
             </h2>
 
             <p className={styles.paragraph}>
-              El acta de conciliación familiar es el documento oficial donde se
-              registran los acuerdos alcanzados durante una audiencia de
-              conciliación. Generalmente se utiliza para resolver conflictos
-              relacionados con:
+              El <strong>acta de conciliación familiar</strong> es el documento
+              que recoge los acuerdos alcanzados por las partes durante una
+              audiencia de conciliación. En Colombia, este documento tiene
+              efectos jurídicos y permite dejar claramente definidas las
+              obligaciones y compromisos asumidos por cada persona, reduciendo
+              el riesgo de nuevos conflictos y brindando mayor seguridad para
+              todos los involucrados.
             </p>
-
-            <ul className={styles.list}>
-              <li>Cuota alimentaria en Colombia.</li>
-              <li>Custodia y cuidado personal de menores.</li>
-              <li>Régimen de visitas.</li>
-              <li>Gastos médicos y escolares.</li>
-              <li>Acuerdos de crianza compartida.</li>
-              <li>Responsabilidades económicas.</li>
-              <li>Comunicación entre los padres.</li>
-              <li>Transporte y logística de visitas.</li>
-              <li>Acuerdos entre compañeros permanentes.</li>
-            </ul>
 
             <p className={styles.paragraph}>
-              En muchos casos, la conciliación familiar en Bogotá evita que las
-              partes tengan que acudir a un juez de familia, permitiendo
-              soluciones más rápidas, económicas y enfocadas en el bienestar del
-              menor.
+              Este tipo de conciliación busca que los integrantes de una familia
+              encuentren soluciones mediante el diálogo y la negociación, con la
+              orientación de un conciliador imparcial. Cuando se logra un
+              acuerdo, las condiciones quedan consignadas en el acta, lo que
+              facilita su cumplimiento y ofrece un respaldo legal frente a
+              eventuales incumplimientos.
             </p>
 
+            <p className={styles.paragraph}>
+              En la práctica, una conciliación familiar evita que muchas
+              controversias lleguen a un proceso judicial, permitiendo
+              resolverlas en menos tiempo y con mayor flexibilidad. Esto resulta
+              especialmente importante cuando existen hijos menores de edad, ya
+              que favorece la construcción de acuerdos que prioricen su
+              bienestar y estabilidad.
+            </p>
+
+            <p className={styles.paragraph}>
+              Aunque suele asociarse principalmente con la cuota alimentaria,
+              este documento puede regular diferentes aspectos de la relación
+              familiar, siempre que el asunto sea legalmente conciliable y
+              exista disposición de las partes para llegar a un acuerdo.
+            </p>
+
+            <h3 className={styles.smallSubtitle}>
+              Los asuntos familiares que con mayor frecuencia se incluyen en un
+              acta de conciliación son:
+            </h3>
+
+            <ul className={styles.list}>
+              <li>
+                Cuota alimentaria para hijos menores o mayores cuando
+                corresponda.
+              </li>
+              <li>Custodia y cuidado personal.</li>
+              <li>Régimen de visitas.</li>
+              <li>
+                Distribución de vacaciones, fines de semana y fechas especiales.
+              </li>
+              <li>Gastos médicos, odontológicos y escolares.</li>
+              <li>Actividades extracurriculares.</li>
+              <li>Forma de comunicación entre padres e hijos.</li>
+              <li>Responsabilidades económicas extraordinarias.</li>
+              <li>Acuerdos relacionados con la crianza compartida.</li>
+              <li>Otros compromisos familiares permitidos por la ley.</li>
+            </ul>
+
+            <div className={styles.highlightBox}>
+              <p>
+                Un acta de conciliación bien elaborada no solo ayuda a
+                solucionar el conflicto actual, sino que también previene
+                futuros desacuerdos al dejar establecidos compromisos claros,
+                fechas, valores, responsabilidades y la forma en que deberán
+                cumplirse.
+              </p>
+            </div>
+
+            {/* QUE DEBE INCLUIR UN ACTA DE CONCILIACION FAMILIAR */}
             <h2 className={styles.subtitle}>
-              ¿Qué debe incluir un acta de conciliación familiar en Bogotá y
+              ¿Qué debe incluir un acta de conciliación familiar para que tenga
+              validez legal?
+            </h2>
+
+            <p className={styles.paragraph}>
+              Uno de los errores más frecuentes consiste en elaborar acuerdos
+              demasiado generales o ambiguos. Para evitar futuras discusiones,
+              el acta debe contener obligaciones claras, específicas y
+              fácilmente verificables por ambas partes.
+            </p>
+
+            <p className={styles.paragraph}>
+              Mientras más detallado sea el acuerdo, menor será la posibilidad
+              de interpretaciones diferentes o nuevos conflictos. Por esta
+              razón, es recomendable establecer fechas, valores, porcentajes,
+              responsabilidades y mecanismos de cumplimiento.
+            </p>
+
+            <h3 className={styles.smallSubtitle}>
+              Entre los elementos que normalmente hacen parte de un acta de
+              conciliación familiar se encuentran:
+            </h3>
+
+            <ul className={styles.list}>
+              <li>Identificación completa de las partes.</li>
+              <li>Información del menor o de los beneficiarios.</li>
+              <li>Objeto de la conciliación.</li>
+              <li>Valor actualizado de la cuota alimentaria.</li>
+              <li>Fecha, lugar y forma de pago.</li>
+              <li>Distribución de gastos extraordinarios.</li>
+              <li>Custodia y cuidado personal.</li>
+              <li>Régimen de visitas con horarios definidos.</li>
+              <li>Vacaciones, fechas especiales y celebraciones.</li>
+              <li>Medios de comunicación con los hijos.</li>
+              <li>Procedimiento para futuras modificaciones.</li>
+              <li>Firma de las partes y del conciliador.</li>
+            </ul>
+
+            <div className={styles.note}>
+              Entre más específico sea el acuerdo, mayor seguridad jurídica
+              tendrán ambas partes y menores serán las posibilidades de nuevos
+              conflictos familiares.
+            </div>
+
+            {/* MODELO DE ACTA DE CONCILIACION FAMILIAR EN COLOMBIA */}
+            <h2 className={styles.subtitle}>
+              Modelo de acta de conciliación familiar en Colombia (Ejemplo de
+              referencia)
+            </h2>
+
+            <p className={styles.paragraph}>
+              Muchas personas buscan un{" "}
+              <strong>modelo de acta de conciliación familiar</strong>
+              para comprender cómo se estructuran este tipo de documentos.
+              Aunque cada caso debe adaptarse a las circunstancias particulares
+              de la familia y a los acuerdos alcanzados durante la audiencia, la
+              siguiente estructura sirve como una guía general sobre los
+              elementos que normalmente contiene un acta de conciliación con
+              efectos legales en Colombia.
+            </p>
+
+            <p className={styles.paragraph}>
+              Este ejemplo no reemplaza el documento elaborado por un centro de
+              conciliación, pero permite conocer cómo suelen organizarse las
+              cláusulas, responsabilidades y compromisos que posteriormente
+              serán exigibles para las partes.
+            </p>
+
+            <div className={styles.highlightBox}>
+              <p>
+                Cada conciliación es diferente. Los valores, fechas,
+                obligaciones y condiciones deben ajustarse a la realidad de cada
+                familia y quedar completamente definidos para evitar
+                interpretaciones futuras.
+              </p>
+            </div>
+
+            <pre className={styles.pre}>
+              {`ACTA DE CONCILIACIÓN FAMILIAR
+
+Ciudad: _______________________
+
+Fecha: ________________________
+
+Centro de Conciliación: __________________
+
+CONCILIADOR
+
+Nombre: _______________________
+
+PARTES
+
+Padre / Madre:
+Nombre:
+Documento:
+Dirección:
+Teléfono:
+
+Padre / Madre:
+Nombre:
+Documento:
+Dirección:
+Teléfono:
+
+OBJETO DE LA CONCILIACIÓN
+
+Las partes manifiestan su voluntad de llegar a un acuerdo respecto de las
+obligaciones familiares relacionadas con alimentos, custodia, visitas y demás
+aspectos derivados del cuidado del menor.
+
+ACUERDOS
+
+PRIMERO.
+Custodia del menor.
+
+SEGUNDO.
+Régimen de visitas.
+
+TERCERO.
+Cuota alimentaria.
+
+CUARTO.
+Forma y fecha de pago.
+
+QUINTO.
+Gastos extraordinarios.
+
+SEXTO.
+Vacaciones y fechas especiales.
+
+SÉPTIMO.
+Comunicación entre padres e hijos.
+
+OCTAVO.
+Compromisos adicionales.
+
+NOVENO.
+Incumplimiento.
+
+Las partes manifiestan haber leído el contenido del acta y aceptan cada uno de
+los acuerdos aquí consignados.
+
+_________________________
+Firma Parte 1
+
+_________________________
+Firma Parte 2
+
+_________________________
+Conciliador`}
+            </pre>
+
+            <p className={styles.paragraph}>
+              En la práctica, el contenido definitivo del acta dependerá de las
+              circunstancias particulares del caso. Algunos acuerdos incluyen
+              porcentajes para gastos extraordinarios, reglas sobre cambios de
+              domicilio, autorización para viajes, comunicación virtual entre
+              padres e hijos o mecanismos para revisar la cuota alimentaria
+              cuando cambien las condiciones económicas.
+            </p>
+
+            <p className={styles.paragraph}>
+              Lo más importante es que cada obligación quede redactada de manera
+              clara, específica y verificable, evitando expresiones ambiguas que
+              puedan generar nuevos conflictos con el paso del tiempo.
+            </p>
+
+            {/* EFECTOS LEGALES DEL ACTA DE CONCILIACION FAMILIAR EN COLOMBIA */}
+            <h2 className={styles.subtitle}>
+              ¿Qué efectos legales tiene un acta de conciliación familiar en
               Colombia?
             </h2>
 
             <p className={styles.paragraph}>
-              Para que un acta de conciliación familiar tenga fuerza legal en
-              Colombia, debe contener acuerdos claros, específicos y fácilmente
-              verificables. Entre los elementos más importantes se encuentran:
+              Una de las principales ventajas de acudir a un centro de
+              conciliación consiste en que los acuerdos alcanzados no son
+              simples compromisos de palabra. Una vez suscrita por las partes y
+              el conciliador, el acta adquiere efectos jurídicos reconocidos por
+              la legislación colombiana.
+            </p>
+
+            <p className={styles.paragraph}>
+              Esto significa que los compromisos relacionados con alimentos,
+              custodia, visitas, gastos extraordinarios u otras obligaciones
+              familiares pueden ser exigidos cuando alguna de las partes
+              incumpla lo acordado.
             </p>
 
             <ul className={styles.list}>
-              <li>Identificación completa de los padres o responsables.</li>
-              <li>Datos del menor o menores involucrados.</li>
-              <li>Definición clara de custodia y residencia.</li>
-              <li>Horarios y condiciones de visitas.</li>
-              <li>Valor exacto de cuota alimentaria.</li>
-              <li>Forma y fecha de pago.</li>
-              <li>Distribución de gastos extraordinarios.</li>
-              <li>Acuerdos de comunicación.</li>
-              <li>Consecuencias del incumplimiento.</li>
-              <li>Firmas de las partes y del conciliador.</li>
+              <li>Hace tránsito a cosa juzgada.</li>
+
+              <li>Presta mérito ejecutivo cuando la ley lo permite.</li>
+
+              <li>Sirve como prueba dentro de un proceso judicial.</li>
+
+              <li>Formaliza las obligaciones asumidas por las partes.</li>
+
+              <li>Brinda mayor seguridad jurídica para padres e hijos.</li>
+
+              <li>Reduce la posibilidad de nuevos conflictos familiares.</li>
+
+              <li>Permite demostrar claramente los compromisos adquiridos.</li>
             </ul>
 
-            <div className={styles.note}>
-              Consejo importante en Bogotá y Colombia: evita frases ambiguas
-              como “cuando pueda”, “según disponibilidad” o “de vez en cuando”.
-              Las obligaciones deben quedar completamente definidas.
+            <div className={styles.highlightBox}>
+              <p>
+                Un acta de conciliación correctamente elaborada ofrece
+                tranquilidad para las partes, ya que establece derechos y
+                obligaciones claras, evitando futuras discusiones sobre aspectos
+                que ya fueron acordados durante la audiencia.
+              </p>
             </div>
 
+            <p className={styles.paragraph}>
+              Si con el paso del tiempo cambian las circunstancias económicas o
+              familiares, las partes pueden volver a acudir a un proceso de
+              conciliación para modificar los acuerdos existentes, siempre que
+              exista fundamento para ello.
+            </p>
+
+            {/* ERRORES FREQUENTES EN CONCILIACIONES FAMILIARES EN BOGOTÁ */}
             <h2 className={styles.subtitle}>
-              Modelo de acta de conciliación familiar en Colombia
+              Errores más comunes al elaborar un acta de conciliación familiar
             </h2>
 
             <p className={styles.paragraph}>
-              A continuación encontrarás un ejemplo general de{" "}
-              <strong>acta de conciliación familiar en Colombia</strong>. Este
-              modelo puede servir como referencia para conciliaciones sobre
-              alimentos, custodia, visitas y acuerdos familiares en Bogotá y
-              otras ciudades del país.
+              Una conciliación familiar puede evitar conflictos durante muchos
+              años, siempre que los acuerdos queden redactados de manera clara y
+              específica. En la práctica, buena parte de los inconvenientes
+              posteriores se originan porque el documento contiene cláusulas
+              ambiguas, fechas indefinidas o responsabilidades poco precisas.
             </p>
-
-            <pre className={styles.pre}>
-              {`ACTA DE CONCILIACIÓN FAMILIAR No. [●]
-
-CIUDAD: Bogotá, Colombia
-FECHA: [dd/mm/aaaa]
-
-I. PARTES
-Progenitor(a) A: [●] - CC [●]
-Progenitor(a) B: [●] - CC [●]
-
-Menor: [●] - Registro Civil / TI
-
-II. OBJETO
-Acuerdos relacionados con alimentos, custodia,
-visitas y responsabilidades parentales.
-
-III. ACUERDOS
-
-1. CUSTODIA:
-El menor residirá con [●].
-
-2. VISITAS:
-El progenitor B podrá compartir con el menor:
-- Fines de semana: [●]
-- Vacaciones: [●]
-- Fechas especiales: [●]
-
-3. CUOTA ALIMENTARIA:
-Valor mensual: $[●] COP
-Forma de pago: [transferencia/consignación]
-Fecha máxima de pago: [●]
-
-4. GASTOS EXTRAORDINARIOS:
-Educación, salud y actividades extracurriculares
-serán asumidos así: [●]% / [●]%.
-
-5. COMUNICACIÓN:
-Las partes se comunicarán por [medio].
-
-6. INCUMPLIMIENTO:
-El incumplimiento podrá exigirse judicialmente.
-
-FIRMAS
-_____________________
-_____________________`}
-            </pre>
-
-            <h2 className={styles.subtitle}>
-              Efectos legales del acta de conciliación familiar en Colombia
-            </h2>
 
             <p className={styles.paragraph}>
-              En Colombia, las actas de conciliación familiar tienen importantes
-              efectos jurídicos. Una vez firmadas, las partes quedan obligadas a
-              cumplir lo pactado.
+              Antes de firmar un acta es recomendable revisar cada obligación,
+              confirmar que ambas partes comprendan su alcance y verificar que
+              todos los aspectos importantes hayan quedado incluidos.
             </p>
-
-            <ul className={styles.list}>
-              <li>Presta mérito ejecutivo.</li>
-              <li>Hace tránsito a cosa juzgada.</li>
-              <li>Puede ejecutarse judicialmente.</li>
-              <li>Sirve como prueba legal ante jueces.</li>
-              <li>Formaliza obligaciones familiares.</li>
-            </ul>
-
-            <p className={styles.paragraph}>
-              Esto significa que si una persona incumple la cuota alimentaria,
-              las visitas o cualquier otra obligación pactada, la otra parte
-              puede iniciar acciones legales en Colombia para exigir el
-              cumplimiento.
-            </p>
-
-            <h2 className={styles.subtitle}>
-              Errores frecuentes en conciliaciones familiares en Bogotá
-            </h2>
 
             <div className={styles.errorGrid}>
               <div className={styles.errorCard}>
-                <h4>No definir horarios exactos</h4>
+                <h4>No definir horarios exactos de visitas</h4>
+
                 <p>
-                  Las visitas ambiguas generan nuevos conflictos familiares.
+                  Expresiones como "cuando sea posible" o "previo acuerdo"
+                  suelen generar nuevas discusiones porque permiten diferentes
+                  interpretaciones.
                 </p>
               </div>
 
               <div className={styles.errorCard}>
-                <h4>No especificar gastos</h4>
+                <h4>No establecer la forma de pago</h4>
+
                 <p>
-                  Muchos acuerdos fallan por no definir quién paga educación,
-                  salud o transporte.
+                  Es conveniente indicar el valor, la fecha límite, el medio de
+                  pago y la cuenta donde deberá realizarse la consignación.
                 </p>
               </div>
 
               <div className={styles.errorCard}>
-                <h4>Usar acuerdos verbales</h4>
+                <h4>No regular los gastos extraordinarios</h4>
+
                 <p>
-                  En Colombia, dejar todo por escrito brinda mayor seguridad
-                  jurídica.
+                  Educación, salud, medicamentos, uniformes, actividades
+                  extracurriculares y otros gastos deberían quedar claramente
+                  distribuidos.
+                </p>
+              </div>
+
+              <div className={styles.errorCard}>
+                <h4>Utilizar acuerdos verbales</h4>
+
+                <p>
+                  Los compromisos que no quedan escritos son mucho más difíciles
+                  de probar en caso de desacuerdo.
+                </p>
+              </div>
+
+              <div className={styles.errorCard}>
+                <h4>No prever cambios futuros</h4>
+
+                <p>
+                  Puede resultar útil definir cómo actuar cuando cambien los
+                  ingresos, el domicilio del menor o las necesidades familiares.
+                </p>
+              </div>
+
+              <div className={styles.errorCard}>
+                <h4>Firmar sin resolver todas las dudas</h4>
+
+                <p>
+                  Antes de suscribir el acta, ambas partes deben comprender
+                  completamente el alcance de cada obligación asumida.
                 </p>
               </div>
             </div>
 
+            <div className={styles.highlightBox}>
+              <p>
+                Mientras más claros sean los acuerdos, menores serán las
+                posibilidades de que surjan nuevos conflictos familiares en el
+                futuro.
+              </p>
+            </div>
+
+            {/* PREGUNTAS FREQUENTES SOBRE CONCILIACION FAMILIAR EN COLOMBIA */}
             <h2 className={styles.subtitle}>
-              Preguntas frecuentes sobre conciliación familiar en Colombia
+              Preguntas frecuentes sobre el acta de conciliación familiar
             </h2>
 
             <div className={styles.faqContainer}>
               <div className={styles.faqItem}>
                 <h4>
-                  ¿La conciliación familiar tiene validez legal en Colombia?
+                  ¿El acta de conciliación familiar tiene validez jurídica en
+                  Colombia?
                 </h4>
 
                 <p>
-                  Sí. Las actas de conciliación familiar tienen efectos legales
-                  y pueden ejecutarse judicialmente.
+                  Sí. Una vez suscrita por las partes y el conciliador, el acta
+                  produce los efectos previstos por la ley y puede servir como
+                  fundamento para exigir el cumplimiento de las obligaciones
+                  allí pactadas.
                 </p>
               </div>
 
               <div className={styles.faqItem}>
-                <h4>¿Dónde se realiza una conciliación familiar en Bogotá?</h4>
+                <h4>
+                  ¿Qué asuntos pueden resolverse mediante conciliación familiar?
+                </h4>
 
                 <p>
-                  Puede realizarse en centros de conciliación, notarías,
-                  consultorios jurídicos y entidades autorizadas en Colombia.
+                  Es posible conciliar temas relacionados con cuota alimentaria,
+                  custodia, régimen de visitas, distribución de gastos
+                  extraordinarios, acuerdos de crianza, comunicación entre
+                  padres e hijos y otras obligaciones familiares permitidas por
+                  la ley.
                 </p>
               </div>
 
               <div className={styles.faqItem}>
-                <h4>¿Se puede modificar una cuota alimentaria después?</h4>
+                <h4>¿Puede modificarse un acta de conciliación familiar?</h4>
 
                 <p>
-                  Sí. Si cambian las circunstancias económicas o familiares, las
-                  partes pueden realizar una nueva conciliación.
+                  Sí. Cuando cambian las circunstancias económicas o familiares,
+                  las partes pueden celebrar una nueva conciliación para
+                  actualizar los acuerdos previamente suscritos.
                 </p>
               </div>
 
               <div className={styles.faqItem}>
-                <h4>¿Qué pasa si una persona incumple el acuerdo?</h4>
+                <h4>
+                  ¿Qué ocurre si una persona incumple el acta de conciliación?
+                </h4>
 
                 <p>
-                  El acta puede ejecutarse judicialmente ante un juez en
-                  Colombia.
+                  Dependiendo del contenido del acuerdo y de las normas
+                  aplicables, el acta puede utilizarse para exigir el
+                  cumplimiento por las vías legales correspondientes.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h4>¿Es necesario contratar un abogado para conciliar?</h4>
+
+                <p>
+                  No siempre. Sin embargo, recibir orientación jurídica puede
+                  facilitar la elaboración de acuerdos claros, completos y
+                  ajustados a las necesidades de cada familia.
+                </p>
+              </div>
+
+              <div className={styles.faqItem}>
+                <h4>¿Cuánto tiempo puede tardar una conciliación familiar?</h4>
+
+                <p>
+                  El tiempo varía según cada caso y la disponibilidad de las
+                  partes, pero normalmente resulta mucho más ágil que un proceso
+                  judicial de familia.
                 </p>
               </div>
             </div>
 
+            {/* CTA */}
             <div className={styles.cta}>
               <strong className={styles.ctaTitle}>
                 Asesoría en conciliación familiar en Bogotá y Colombia

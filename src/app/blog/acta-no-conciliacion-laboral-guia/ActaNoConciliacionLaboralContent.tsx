@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "../Article.module.css";
+import componentStyles from "./ActaNoConciliacionLaboralContent.module.css";
 import { motion } from "framer-motion";
 
 export default function ActaNoConciliacionLaboralContent() {
@@ -502,7 +503,7 @@ export default function ActaNoConciliacionLaboralContent() {
             dependiendo de la entidad que adelante la conciliación.
           </p>
 
-          <pre className={styles.pre}>
+          <pre className={componentStyles.pre}>
             {`ACTA DE NO CONCILIACIÓN LABORAL
 
 ACTA No. ____________

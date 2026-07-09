@@ -376,7 +376,7 @@ export default function AudienciaContent() {
             necesaria para presentar posteriormente una demanda judicial.
           </motion.p>
 
-          <div className={styles.contentSection}>
+          <div>
             <h2 className={styles.subtitle}>
               ¿Quiénes participan en una audiencia de conciliación?
             </h2>
@@ -418,7 +418,7 @@ export default function AudienciaContent() {
             </div>
           </div>
 
-          <div className={styles.contentSection}>
+          <div>
             <h2 className={styles.subtitle}>
               ¿Cuánto dura una audiencia de conciliación en Colombia?
             </h2>
@@ -439,7 +439,7 @@ export default function AudienciaContent() {
             </p>
           </div>
 
-          <div className={styles.contentSection}>
+          <div>
             <h2 className={styles.subtitle}>
               ¿Qué preguntas suelen hacerse durante una audiencia de
               conciliación?
@@ -461,7 +461,7 @@ export default function AudienciaContent() {
             </ul>
           </div>
 
-          <div className={styles.contentSection}>
+          <div>
             <h2 className={styles.subtitle}>
               Consejos para prepararte antes de una audiencia de conciliación
             </h2>
@@ -542,7 +542,7 @@ ____________________
 ____________________`}
           </pre>
 
-          <div className={styles.contentSection}>
+          <div>
             <h2 className={styles.subtitle}>
               Errores que debes evitar durante una audiencia de conciliación
             </h2>
@@ -558,7 +558,7 @@ ____________________`}
             </ul>
           </div>
 
-          <div className={styles.contentSection}>
+          <div>
             <h2 className={styles.subtitle}>
               ¿Cuáles conflictos pueden resolverse mediante una audiencia de
               conciliación?
@@ -581,7 +581,7 @@ ____________________`}
             </ul>
           </div>
 
-          <div className={styles.contentSection}>
+          <div>
             <h2 className={styles.subtitle}>
               Beneficios de resolver el conflicto mediante conciliación
             </h2>

@@ -3,22 +3,27 @@ import DiferenciaConciliacionYDemandaContent from "./DiferenciaConciliacionYDema
 
 export const metadata: Metadata = {
   title:
-    "Diferencia entre conciliación y demanda judicial en Colombia | Guía completa 2026",
+    "Diferencia entre conciliación y demanda judicial en Colombia: ¿Cuál conviene más en 2026?",
 
   description:
-    "Descubre la diferencia entre conciliación y demanda judicial en Colombia. Aprende cuándo conviene conciliar, cuándo demandar y qué opción puede ayudarte a resolver tu conflicto de forma más eficiente.",
+    "Descubre las diferencias entre la conciliación y la demanda judicial en Colombia. Conoce cuál es más rápida, económica y cuándo la conciliación es obligatoria antes de demandar.",
 
   keywords: [
     "diferencia entre conciliación y demanda",
     "conciliación o demanda judicial",
     "qué es mejor conciliación o demanda",
-    "conciliación en Colombia",
-    "conciliación en Bogotá",
-    "demanda judicial Colombia",
-    "proceso judicial Colombia",
     "conciliación extrajudicial Colombia",
+    "demanda judicial Colombia",
+    "cuándo es obligatoria la conciliación",
+    "ventajas de la conciliación",
     "conciliación vs juicio",
-    "demanda o conciliación",
+    "proceso judicial Colombia",
+    "conciliación en Bogotá",
+    "conciliación civil Colombia",
+    "antes de demandar debo conciliar",
+    "conciliación antes de demanda",
+    "centro de conciliación Colombia",
+    "cómo funciona la conciliación",
   ],
 
   robots: {
@@ -32,12 +37,18 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Diferencia entre conciliación y demanda judicial en Colombia",
+    title:
+      "Diferencia entre conciliación y demanda judicial en Colombia: ¿Cuál elegir?",
+
     description:
-      "Aprende cuándo conviene acudir a conciliación y cuándo es necesario iniciar una demanda judicial en Colombia.",
+      "Conoce cuándo conviene acudir a una conciliación, cuándo presentar una demanda judicial y cuáles son sus principales diferencias en Colombia.",
+
     url: "https://solcentrodeconciliacion.com/blog/diferencia-conciliacion-y-demanda",
+
     siteName: "Sol Centro de Conciliación",
+
     locale: "es_CO",
+
     type: "article",
   },
 };
@@ -47,10 +58,11 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Article",
 
-    headline: "Diferencia entre conciliación y demanda judicial en Colombia",
+    headline:
+      "Diferencia entre conciliación y demanda judicial en Colombia: ¿Cuál es la mejor opción?",
 
     description:
-      "Conoce las diferencias entre conciliación y demanda judicial en Colombia y descubre cuál alternativa puede ser más adecuada para resolver tu conflicto.",
+      "Guía completa sobre las diferencias entre conciliación y demanda judicial en Colombia, cuándo conviene cada una, sus ventajas, tiempos, costos y efectos legales.",
 
     author: {
       "@type": "Organization",
@@ -62,17 +74,41 @@ export default function Page() {
       name: "Sol Centro de Conciliación",
     },
 
-    articleSection: "Conciliación Extrajudicial",
+    articleSection: [
+      "Conciliación",
+      "Conciliación Extrajudicial",
+      "Resolución de Conflictos",
+      "Derecho Civil",
+    ],
 
-    keywords:
-      "diferencia entre conciliación y demanda, conciliación en Colombia, demanda judicial Colombia, conciliación en Bogotá",
+    keywords: [
+      "diferencia entre conciliación y demanda",
+      "conciliación extrajudicial",
+      "demanda judicial Colombia",
+      "conciliación o demanda",
+      "qué es mejor conciliar o demandar",
+      "ventajas de la conciliación",
+      "conciliación obligatoria",
+      "proceso judicial",
+    ],
 
     about: [
-      "Conciliación Extrajudicial",
-      "Resolución de conflictos",
-      "Demanda judicial",
-      "Derecho civil",
-      "Conciliación en Colombia",
+      {
+        "@type": "Thing",
+        name: "Conciliación Extrajudicial",
+      },
+      {
+        "@type": "Thing",
+        name: "Demanda Judicial",
+      },
+      {
+        "@type": "Thing",
+        name: "Resolución de Conflictos",
+      },
+      {
+        "@type": "Thing",
+        name: "Mecanismos Alternativos de Solución de Conflictos",
+      },
     ],
 
     mainEntityOfPage:
@@ -147,6 +183,47 @@ export default function Page() {
           "@type": "Answer",
 
           text: "Sí. Cuando las partes logran un acuerdo conciliatorio válido, normalmente se evita la necesidad de iniciar un proceso judicial.",
+        },
+      },
+
+      {
+        "@type": "Question",
+        name: "¿Qué ventajas tiene la conciliación frente a un proceso judicial?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "La conciliación suele ser más rápida, económica y flexible que una demanda judicial. Además, permite que las partes construyan soluciones de común acuerdo y evita, en muchos casos, largos procesos ante los jueces.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿La conciliación tiene la misma validez que una sentencia judicial?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "El acta de conciliación tiene plenos efectos jurídicos y presta mérito ejecutivo en los casos previstos por la ley, por lo que las obligaciones pactadas pueden exigirse legalmente si alguna de las partes incumple.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué conflictos pueden resolverse mediante conciliación?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Entre otros, pueden conciliarse conflictos relacionados con arrendamientos, cobro de deudas, incumplimientos contractuales, asuntos familiares, conflictos civiles, comerciales y reclamaciones por daños y perjuicios, siempre que la ley lo permita.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué sucede si no se llega a un acuerdo durante la conciliación?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Si no se alcanza un acuerdo, las partes conservan la posibilidad de acudir posteriormente a la jurisdicción competente para que un juez resuelva el conflicto mediante un proceso judicial.",
         },
       },
     ],

@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "../Article.module.css";
+import componentStyles from "./AcuerdoLaboralCentroConciliacionContent.module.css";
 import { motion } from "framer-motion";
 
 export default function AcuerdoLaboralCentroConciliacionContent() {
@@ -406,7 +407,7 @@ export default function AcuerdoLaboralCentroConciliacionContent() {
             </p>
           </div>
 
-          <h3 className={styles.smallSubtitle}>
+          <h3 className={componentStyles.smallSubtitle}>
             Información que normalmente contiene un acuerdo laboral
           </h3>
 
@@ -466,7 +467,7 @@ export default function AcuerdoLaboralCentroConciliacionContent() {
             y facilitar el cumplimiento de lo pactado.
           </p>
 
-          <motion.pre className={styles.pre}>
+          <motion.pre className={componentStyles.pre}>
             {`ACTA DE CONCILIACIÓN LABORAL
 
 CENTRO DE CONCILIACIÓN: _______________________
@@ -666,7 +667,7 @@ Conciliador`}
             </p>
           </div>
 
-          <h3 className={styles.smallSubtitle}>
+          <h3 className={componentStyles.smallSubtitle}>
             ¿Qué aspectos suelen quedar definidos dentro del acuerdo?
           </h3>
 
@@ -787,7 +788,7 @@ Conciliador`}
             </p>
           </div>
 
-          <h3 className={styles.smallSubtitle}>
+          <h3 className={componentStyles.smallSubtitle}>
             Recomendaciones para reducir el riesgo de incumplimiento
           </h3>
 

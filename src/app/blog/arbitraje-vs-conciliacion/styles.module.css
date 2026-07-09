@@ -1,0 +1,37 @@
+/* =========================
+   TABLA
+========================= */
+
+.tableWrapper {
+  overflow-x: auto;
+  margin-top: 28px;
+  border-radius: 16px;
+  border: 1px solid #ececec;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.table th {
+  background: #1a414a;
+  color: #fff;
+  text-align: left;
+  padding: 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.table td {
+  padding: 14px 16px;
+  border-top: 1px solid #ececec;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.table tr:nth-child(even) td {
+  background: #faf9f7;
+}

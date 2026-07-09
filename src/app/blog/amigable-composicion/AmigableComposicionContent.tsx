@@ -59,17 +59,17 @@ export default function AmigableComposicionContent() {
         >
           {/* HERO */}
 
-          <div className={styles.hero}>
-            <span className={styles.badge}>
+          <div>
+            <span>
               Mecanismos alternativos de solución de conflictos en Colombia
             </span>
 
-            <motion.h1 className={styles.title} itemProp="headline">
+            <motion.h1 itemProp="headline">
               ¿Qué es la amigable composición en Colombia? Cómo funciona,
               ejemplos y diferencias con la conciliación
             </motion.h1>
 
-            <motion.p className={styles.paragraph} itemProp="description">
+            <motion.p itemProp="description">
               La <strong>amigable composición en Colombia</strong> es un
               mecanismo alternativo de solución de conflictos mediante el cual
               dos o más partes delegan en un tercero imparcial denominado{" "}
@@ -77,7 +77,7 @@ export default function AmigableComposicionContent() {
               solución de una controversia.
             </motion.p>
 
-            <motion.p className={styles.paragraph}>
+            <motion.p>
               Este mecanismo es ampliamente utilizado en <strong>Bogotá</strong>
               , Medellín, Cali y otras ciudades de <strong>Colombia</strong>,
               especialmente en conflictos empresariales, contratos comerciales,
@@ -85,7 +85,7 @@ export default function AmigableComposicionContent() {
               controversias contractuales complejas.
             </motion.p>
 
-            <motion.p className={styles.paragraph}>
+            <motion.p>
               A diferencia de la conciliación tradicional en Colombia, donde las
               partes construyen el acuerdo, en la amigable composición el
               tercero toma una decisión basada en las reglas previamente
@@ -93,7 +93,7 @@ export default function AmigableComposicionContent() {
               composición.
             </motion.p>
 
-            <p className={styles.paragraph}>
+            <p>
               Cada vez más empresas y particulares utilizan la amigable
               composición como una alternativa eficiente para resolver
               controversias derivadas de contratos comerciales, civiles, de
@@ -103,7 +103,7 @@ export default function AmigableComposicionContent() {
               flexibilidad que otros métodos de resolución de conflictos.
             </p>
 
-            <p className={styles.paragraph}>
+            <p>
               Si estás buscando información sobre qué es un amigable componedor,
               cuándo puede utilizarse este mecanismo o cuáles son sus
               diferencias frente a la conciliación y el arbitraje, en esta guía
@@ -114,12 +114,12 @@ export default function AmigableComposicionContent() {
 
           {/* DEFINICION */}
 
-          <section className={styles.section}>
-            <h2 className={styles.subtitle}>
+          <section>
+            <h2>
               ¿Qué es la amigable composición en Colombia y para qué sirve?
             </h2>
 
-            <p className={styles.paragraph}>
+            <p>
               La amigable composición es un mecanismo reconocido en la
               legislación colombiana que permite resolver conflictos de manera
               privada, rápida y especializada. Generalmente se utiliza cuando
@@ -127,14 +127,14 @@ export default function AmigableComposicionContent() {
               Colombia.
             </p>
 
-            <p className={styles.paragraph}>
+            <p>
               En Bogotá y en muchas ciudades de Colombia, este mecanismo es muy
               utilizado en contratos empresariales porque permite que una
               persona experta en el tema del conflicto tome una decisión técnica
               y práctica.
             </p>
 
-            <div className={styles.highlight}>
+            <div className={styles.highlightBox}>
               <strong>Importante:</strong> la amigable composición en Colombia
               tiene un enfoque predominantemente contractual. Las partes son
               quienes determinan el alcance de la decisión, el procedimiento y
@@ -143,12 +143,10 @@ export default function AmigableComposicionContent() {
           </section>
 
           {/* COMO FUNCIONA */}
-          <section className={styles.section}>
-            <h2 className={styles.subtitle}>
-              ¿Cómo funciona la amigable composición paso a paso?
-            </h2>
+          <section>
+            <h2>¿Cómo funciona la amigable composición paso a paso?</h2>
 
-            <p className={styles.paragraph}>
+            <p>
               La amigable composición inicia cuando las partes acuerdan someter
               una controversia a la decisión de uno o varios amigables
               componedores. Este acuerdo puede encontrarse previamente
@@ -156,14 +154,14 @@ export default function AmigableComposicionContent() {
               el conflicto.
             </p>
 
-            <p className={styles.paragraph}>
+            <p>
               Posteriormente se designa al amigable componedor, quien analiza
               los hechos, los documentos aportados y las posiciones de las
               partes para emitir una decisión dentro de los límites definidos
               por el acuerdo celebrado entre ellas.
             </p>
 
-            <ul className={styles.list}>
+            <ul>
               <li>Designación del amigable componedor.</li>
               <li>Presentación del conflicto.</li>
               <li>Análisis de documentos.</li>
@@ -174,12 +172,10 @@ export default function AmigableComposicionContent() {
           </section>
 
           {/* FUNCIONES */}
-          <section className={styles.section}>
-            <h2 className={styles.subtitle}>
-              ¿Cuáles son las funciones del amigable componedor?
-            </h2>
+          <section>
+            <h2>¿Cuáles son las funciones del amigable componedor?</h2>
 
-            <div className={styles.grid}>
+            <div className={styles.infoGrid}>
               <div className={styles.infoCard}>
                 <h3>Analizar el conflicto</h3>
 
@@ -220,13 +216,13 @@ export default function AmigableComposicionContent() {
 
           {/* CARACTERISTICAS */}
 
-          <section className={styles.section}>
-            <h2 className={styles.subtitle}>
+          <section>
+            <h2>
               ¿Cuáles son las principales características de la amigable
               composición?
             </h2>
 
-            <div className={styles.grid}>
+            <div className={styles.infoGrid}>
               <div className={styles.infoCard}>
                 <h3>Autonomía contractual</h3>
 
@@ -267,12 +263,10 @@ export default function AmigableComposicionContent() {
           </section>
 
           {/* VENTAJAS */}
-          <section className={styles.section}>
-            <h2 className={styles.subtitle}>
-              Ventajas de utilizar la amigable composición en Colombia
-            </h2>
+          <section>
+            <h2>Ventajas de utilizar la amigable composición en Colombia</h2>
 
-            <div className={styles.grid}>
+            <div className={styles.infoGrid}>
               <div className={styles.infoCard}>
                 <h3>Mayor rapidez</h3>
 
@@ -309,8 +303,8 @@ export default function AmigableComposicionContent() {
 
           {/* DIFERENCIAS */}
 
-          <section className={styles.section}>
-            <h2 className={styles.subtitle}>
+          <section>
+            <h2>
               Diferencias entre amigable composición, conciliación y arbitraje
               en Colombia
             </h2>
@@ -348,20 +342,20 @@ export default function AmigableComposicionContent() {
             </div>
 
             <div className={styles.note}>
-              En Bogotá y Colombia, muchas empresas prefieren la amigable
-              composición porque combina rapidez, flexibilidad y conocimiento
-              técnico especializado.
+              <p>
+                En Bogotá y Colombia, muchas empresas prefieren la amigable
+                composición porque combina rapidez, flexibilidad y conocimiento
+                técnico especializado.
+              </p>
             </div>
           </section>
 
           {/* CUANDO CONVIENE */}
 
-          <section className={styles.section}>
-            <h2 className={styles.subtitle}>
-              ¿Cuándo conviene utilizar la amigable composición?
-            </h2>
+          <section>
+            <h2>¿Cuándo conviene utilizar la amigable composición?</h2>
 
-            <ul className={styles.list}>
+            <ul>
               <li>Cuando existe un conflicto contractual complejo.</li>
 
               <li>
@@ -385,12 +379,10 @@ export default function AmigableComposicionContent() {
           </section>
 
           {/* CASOS */}
-          <section className={styles.section}>
-            <h2 className={styles.subtitle}>
-              ¿En qué casos se utiliza la amigable composición?
-            </h2>
+          <section>
+            <h2>¿En qué casos se utiliza la amigable composición?</h2>
 
-            <ul className={styles.list}>
+            <ul>
               <li>Contratos de construcción.</li>
               <li>Contratos de obra.</li>
               <li>Prestación de servicios.</li>
@@ -405,19 +397,11 @@ export default function AmigableComposicionContent() {
           </section>
 
           {/* CLAUSULA */}
-          <section className={styles.section}>
-            <h2 className={styles.subtitle}>
-              Ejemplo de cláusula de amigable composición para contratos
-            </h2>
+          <section>
+            <h2>Ejemplo de cláusula de amigable composición para contratos</h2>
 
-            <div className={styles.preWrapper}>
-              <div className={styles.preHeader}>
-                <span>MODELO REFERENCIAL</span>
-                <span>Colombia</span>
-              </div>
-
-              <pre className={styles.pre}>
-                {`CLÁUSULA DE AMIGABLE COMPOSICIÓN
+            <pre className={styles.pre}>
+              {`CLÁUSULA DE AMIGABLE COMPOSICIÓN
 
 Toda controversia o diferencia relacionada con este contrato,
 su ejecución, interpretación, terminación o liquidación,
@@ -428,17 +412,16 @@ quien decidirá dentro de los límites fijados en este contrato
 y conforme a los principios de equidad y buena fe contractual.
 
 La decisión del amigable componedor será obligatoria para las partes.`}
-              </pre>
-            </div>
+            </pre>
           </section>
 
           {/* ERRORES */}
-          <section className={styles.section}>
-            <h2 className={styles.subtitle}>
+          <section>
+            <h2>
               Errores frecuentes al pactar una cláusula de amigable composición
             </h2>
 
-            <ul className={styles.list}>
+            <ul>
               <li>No definir el alcance del amigable componedor.</li>
               <li>No establecer el procedimiento.</li>
               <li>No determinar la forma de designación.</li>
@@ -451,51 +434,51 @@ La decisión del amigable componedor será obligatoria para las partes.`}
 
           {/* FAQ */}
 
-          <section className={styles.section}>
-            <h2 className={styles.subtitle}>
+          <section>
+            <h2>
               Preguntas frecuentes sobre la amigable composición en Colombia
             </h2>
 
             <div className={styles.faq}>
               <div className={styles.faqItem}>
-                <h3>¿La amigable composición es obligatoria en Colombia?</h3>
-
-                <p>
+                <button className={styles.faqQuestion}>
+                  ¿La amigable composición es obligatoria en Colombia?
+                </button>
+                <div className={styles.faqAnswer}>
                   Solo cuando las partes la pactan previamente en un contrato o
                   acuerdo.
-                </p>
+                </div>
               </div>
 
               <div className={styles.faqItem}>
-                <h3>
+                <button className={styles.faqQuestion}>
                   ¿La decisión del amigable componedor tiene efectos legales?
-                </h3>
-
-                <p>
+                </button>
+                <div className={styles.faqAnswer}>
                   Sí. En Colombia, la decisión puede tener efectos vinculantes
                   según lo pactado por las partes.
-                </p>
+                </div>
               </div>
 
               <div className={styles.faqItem}>
-                <h3>
+                <button className={styles.faqQuestion}>
                   ¿Cuál es la diferencia entre amigable composición y arbitraje?
-                </h3>
-
-                <p>
+                </button>
+                <div className={styles.faqAnswer}>
                   El arbitraje funciona como un proceso judicial privado,
                   mientras que la amigable composición es más flexible y
                   contractual.
-                </p>
+                </div>
               </div>
 
               <div className={styles.faqItem}>
-                <h3>¿Las empresas en Bogotá usan amigable composición?</h3>
-
-                <p>
+                <button className={styles.faqQuestion}>
+                  ¿Las empresas en Bogotá usan amigable composición?
+                </button>
+                <div className={styles.faqAnswer}>
                   Sí. Es muy utilizada en contratos comerciales, construcción y
                   conflictos empresariales en Bogotá y Colombia.
-                </p>
+                </div>
               </div>
             </div>
           </section>
@@ -503,10 +486,10 @@ La decisión del amigable componedor será obligatoria para las partes.`}
           {/* CTA */}
 
           <section className={styles.cta}>
-            <h2 className={styles.ctaTitle}>
+            <div className={styles.ctaTitle}>
               ¿Necesitas incluir una cláusula de amigable composición o resolver
               un conflicto contractual?
-            </h2>
+            </div>
 
             <p className={styles.ctaText}>
               Recibe orientación sobre amigable composición, conciliación,

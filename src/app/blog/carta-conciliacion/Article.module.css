@@ -208,6 +208,118 @@
   margin: 0;
 }
 
+.tableWrapper {
+  margin: 35px 0;
+  overflow-x: auto;
+  border-radius: 12px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.table th {
+  background: #1a414a;
+  color: #ffffff;
+  padding: 16px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(26, 65, 74, 0.08);
+  color: #444;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.table tbody tr:hover {
+  background: #faf9f7;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 35px 0;
+}
+
+.timelineItem {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: #1a414a;
+  color: #ffffff;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.timelineItem h3 {
+  color: #1a414a;
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.timelineItem p {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 35px 0;
+}
+
+.infoCard {
+  background: #faf9f7;
+  padding: 32px;
+  border-radius: 18px;
+  border: 1px solid rgba(26, 65, 74, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(26, 65, 74, 0.08);
+}
+
+.infoCard h3 {
+  color: #1a414a;
+  font-size: 20px;
+  margin: 0 0 14px 0;
+  font-weight: 700;
+}
+
+.infoCard p {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   .card {
     padding: 38px 28px;
@@ -238,6 +350,28 @@
   .cta h3 {
     font-size: 24px;
   }
+
+  .table th,
+  .table td {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+
+  .timelineItem {
+    gap: 18px;
+  }
+
+  .step {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    font-size: 14px;
+  }
+
+  .cardsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -251,5 +385,39 @@
 
   .badge {
     font-size: 12px;
+  }
+
+  .tableWrapper {
+    margin: 20px 0;
+  }
+
+  .table th,
+  .table td {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+
+  .timelineItem {
+    gap: 14px;
+  }
+
+  .step {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    font-size: 12px;
+  }
+
+  .timelineItem h3 {
+    font-size: 16px;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .infoCard {
+    padding: 20px;
   }
 }

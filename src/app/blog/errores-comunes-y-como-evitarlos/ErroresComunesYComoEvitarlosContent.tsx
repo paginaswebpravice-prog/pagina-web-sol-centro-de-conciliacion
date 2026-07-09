@@ -24,12 +24,34 @@ const errores = [
     title: "Pensar que la conciliación funciona como un juicio",
     text: "La conciliación laboral no busca determinar ganadores o perdedores. Su objetivo principal es construir acuerdos que permitan solucionar el conflicto de manera rápida, legal y menos desgastante para ambas partes.",
   },
+
+  {
+    title: "No escuchar las propuestas de la otra parte",
+    text: "Algunas personas llegan convencidas de que solo existe una solución posible y rechazan cualquier alternativa. La conciliación requiere disposición para dialogar y evaluar opciones que beneficien a ambas partes.",
+  },
+  {
+    title: "No calcular correctamente la liquidación laboral",
+    text: "Aceptar o proponer cifras sin verificar salarios, prestaciones sociales, vacaciones, cesantías o indemnizaciones puede conducir a acuerdos injustos o alejados de la realidad.",
+  },
+  {
+    title: "Dejar aspectos importantes únicamente de forma verbal",
+    text: "Todo compromiso debe quedar consignado dentro del acta de conciliación. Los acuerdos verbales posteriores suelen generar confusiones y dificultades para exigir su cumplimiento.",
+  },
+  {
+    title: "Asistir únicamente por obligación",
+    text: "Cuando alguna de las partes participa sin intención de negociar, resulta mucho más difícil alcanzar un acuerdo. La conciliación funciona mejor cuando existe voluntad real de solucionar el conflicto.",
+  },
+  {
+    title: "No solicitar aclaraciones antes de firmar",
+    text: "Si existe alguna cláusula que no sea completamente clara, es recomendable solicitar explicaciones antes de firmar el acta. Una duda resuelta a tiempo puede evitar futuros inconvenientes.",
+  },
 ];
 
 export default function ErroresComunesContent() {
   return (
     <section id="errores" className={styles.section}>
       <div className={styles.container}>
+        {/* HERO */}
         <motion.div
           className={styles.hero}
           initial={{ opacity: 0, y: 40 }}
@@ -42,8 +64,8 @@ export default function ErroresComunesContent() {
           </span>
 
           <h1 className={styles.title}>
-            Errores comunes en la conciliación laboral y cómo evitarlos en
-            Colombia
+            10 errores comunes en la conciliación laboral en Colombia y cómo
+            evitarlos
           </h1>
 
           <p className={styles.intro}>
@@ -74,6 +96,22 @@ export default function ErroresComunesContent() {
             solo aumenta las probabilidades de alcanzar un acuerdo, sino que
             también permite reducir riesgos futuros relacionados con
             incumplimientos, pagos incompletos o conflictos posteriores.
+          </p>
+
+          <p className={styles.paragraph}>
+            Tanto trabajadores como empleadores pueden cometer errores que
+            afectan el resultado de una conciliación. En muchos casos, pequeños
+            descuidos terminan generando pérdidas económicas, acuerdos difíciles
+            de cumplir o incluso nuevos procesos judiciales. Conocer estos
+            errores antes de asistir a la audiencia permite negociar con mayor
+            tranquilidad y tomar decisiones mejor informadas.
+          </p>
+
+          <p className={styles.paragraph}>
+            En esta guía encontrarás recomendaciones prácticas, situaciones
+            frecuentes y consejos que te ayudarán a aprovechar la conciliación
+            como un mecanismo efectivo para resolver conflictos laborales de
+            forma rápida, segura y con respaldo jurídico.
           </p>
 
           <div className={styles.highlightBox}>
@@ -140,6 +178,60 @@ export default function ErroresComunesContent() {
               <p>{error.text}</p>
             </motion.article>
           ))}
+        </div>
+
+        <div className={styles.sectionText}>
+          <h2 className={styles.subtitle}>
+            ¿Qué consecuencias puede tener cometer estos errores?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Aunque la conciliación busca solucionar conflictos de manera
+            amistosa, aceptar un acuerdo sin analizarlo adecuadamente puede
+            traer consecuencias económicas y jurídicas importantes. Una vez
+            firmada el acta, las obligaciones allí pactadas deberán cumplirse
+            por ambas partes.
+          </p>
+
+          <p className={styles.paragraph}>
+            Entre las consecuencias más frecuentes se encuentran aceptar pagos
+            inferiores a los realmente adeudados, establecer fechas imposibles
+            de cumplir, generar nuevas discusiones sobre la interpretación del
+            acuerdo o incluso tener que acudir posteriormente a procesos
+            judiciales para exigir el cumplimiento de lo pactado.
+          </p>
+        </div>
+
+        <div className={styles.sectionText}>
+          <h2 className={styles.subtitle}>
+            Señales de que una conciliación está bien preparada
+          </h2>
+
+          <div className={styles.grid}>
+            <article className={styles.card}>
+              <h2>Documentos completos</h2>
+              <p>
+                Las partes cuentan con contratos, comprobantes, liquidaciones y
+                demás soportes necesarios.
+              </p>
+            </article>
+
+            <article className={styles.card}>
+              <h2>Objetivos definidos</h2>
+              <p>
+                Existe claridad sobre qué se desea negociar y cuáles son los
+                límites de la negociación.
+              </p>
+            </article>
+
+            <article className={styles.card}>
+              <h2>Acuerdos específicos</h2>
+              <p>
+                El documento establece valores, fechas, obligaciones y
+                consecuencias frente a posibles incumplimientos.
+              </p>
+            </article>
+          </div>
         </div>
 
         <motion.div
@@ -232,6 +324,28 @@ export default function ErroresComunesContent() {
             colaborando de alguna manera.
           </p>
         </motion.div>
+
+        <div className={styles.sectionText}>
+          <h2 className={styles.subtitle}>
+            ¿Cuándo es recomendable solicitar orientación antes de una
+            conciliación?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Buscar orientación antes de asistir a una audiencia resulta
+            especialmente útil cuando existen desacuerdos sobre liquidaciones,
+            indemnizaciones, prestaciones sociales, pagos pendientes, despidos o
+            cualquier otro aspecto cuya cuantía pueda generar discusión entre
+            las partes.
+          </p>
+
+          <p className={styles.paragraph}>
+            Una revisión previa del caso permite identificar riesgos, organizar
+            la documentación y preparar propuestas de acuerdo más claras,
+            aumentando las posibilidades de alcanzar una solución satisfactoria
+            durante la audiencia.
+          </p>
+        </div>
 
         <motion.div
           className={styles.cta}

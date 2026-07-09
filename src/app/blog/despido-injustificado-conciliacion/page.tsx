@@ -3,32 +3,52 @@ import DespidoInjustificadoConciliacionContent from "./DespidoInjustificadoConci
 
 export const metadata: Metadata = {
   title:
-    "Conciliación por despido injustificado en Colombia | Guía completa 2026",
+    "Conciliación por Despido Injustificado en Colombia | Evite una Demanda Laboral",
+
   description:
-    "Conoce cómo funciona la conciliación por despido injustificado en Colombia, qué acuerdos pueden alcanzarse y cuándo acudir a un centro de conciliación.",
+    "¿Fue despedido sin justa causa o busca resolver un conflicto laboral? Conozca cómo funciona la conciliación por despido injustificado en Colombia, qué derechos pueden reclamarse, cómo negociar una indemnización y cuándo un acuerdo tiene validez jurídica.",
+
   keywords: [
-    "despido injustificado conciliacion",
-    "conciliacion laboral colombia",
-    "indemnizacion despido injustificado",
-    "acuerdo laboral colombia",
-    "centro de conciliacion laboral",
-    "despido sin justa causa colombia",
+    "despido injustificado conciliación",
+    "conciliación laboral Colombia",
+    "despido sin justa causa Colombia",
+    "indemnización despido injustificado",
+    "acuerdo laboral",
+    "conciliación trabajador empleador",
+    "conciliación Ministerio del Trabajo",
+    "conflictos laborales",
+    "liquidación laboral",
+    "prestaciones sociales",
+    "salarios pendientes",
+    "acta de conciliación laboral",
+    "centro de conciliación laboral",
+    "conciliación Bogotá",
+    "derechos del trabajador",
   ],
+
   robots: {
     index: true,
     follow: true,
   },
+
   alternates: {
     canonical:
       "https://solcentrodeconciliacion.com/blog/despido-injustificado-conciliacion",
   },
+
   openGraph: {
-    title: "Conciliación por despido injustificado en Colombia",
+    title:
+      "Despido Injustificado en Colombia: ¿Cómo Resolverlo Mediante Conciliación?",
+
     description:
-      "Alternativas para resolver conflictos laborales mediante conciliación tras un despido sin justa causa.",
+      "Aprenda cómo negociar indemnizaciones, liquidaciones y demás derechos laborales mediante conciliación antes de iniciar una demanda judicial.",
+
     url: "https://solcentrodeconciliacion.com/blog/despido-injustificado-conciliacion",
+
     siteName: "Sol Centro de Conciliación",
+
     locale: "es_CO",
+
     type: "article",
   },
 };
@@ -36,48 +56,106 @@ export const metadata: Metadata = {
 export default function Page() {
   const articleSchema = {
     "@context": "https://schema.org",
+
     "@type": "Article",
-    headline: "Conciliación por despido injustificado en Colombia",
+
+    headline:
+      "Conciliación por Despido Injustificado en Colombia: Guía Completa para Trabajadores y Empleadores",
+
     description:
-      "Guía sobre conciliación laboral por despido injustificado, indemnizaciones y acuerdos entre empleador y trabajador.",
+      "Conozca cómo resolver un despido injustificado mediante conciliación en Colombia, negociar indemnizaciones, salarios, prestaciones sociales y evitar procesos judiciales prolongados.",
+
+    keywords: [
+      "despido injustificado",
+      "conciliación laboral",
+      "indemnización laboral",
+      "despido sin justa causa",
+      "conflictos laborales",
+    ],
+
     author: {
       "@type": "Organization",
       name: "Sol Centro de Conciliación",
     },
+
     publisher: {
       "@type": "Organization",
       name: "Sol Centro de Conciliación",
     },
+
     mainEntityOfPage:
       "https://solcentrodeconciliacion.com/blog/despido-injustificado-conciliacion",
   };
 
   const faqSchema = {
     "@context": "https://schema.org",
+
     "@type": "FAQPage",
+
     mainEntity: [
       {
         "@type": "Question",
-        name: "¿Qué es un despido injustificado?",
+        name: "¿Qué se considera un despido injustificado en Colombia?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Es la terminación del contrato laboral sin una causa legalmente válida o sin cumplir los requisitos establecidos por la ley.",
+
+          text: "Se presenta cuando el empleador termina el contrato de trabajo sin una justa causa prevista por la ley o sin cumplir los requisitos legales correspondientes.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿Puede resolverse mediante conciliación?",
+        name: "¿Es posible resolver un despido injustificado mediante conciliación?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí. Empleador y trabajador pueden llegar a acuerdos sobre indemnizaciones, pagos pendientes y terminación de la relación laboral.",
+
+          text: "Sí. La conciliación permite que trabajador y empleador lleguen a acuerdos relacionados con indemnizaciones, liquidaciones, salarios pendientes, prestaciones sociales y demás obligaciones laborales.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿La conciliación evita una demanda laboral?",
+        name: "¿Qué derechos laborales pueden discutirse durante una conciliación?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "En muchos casos sí, ya que permite alcanzar acuerdos voluntarios sin necesidad de acudir a un proceso judicial.",
+
+          text: "Pueden abordarse indemnizaciones, liquidación final, prestaciones sociales, vacaciones, salarios pendientes, bonos, acuerdos de pago y otros derechos derivados de la terminación del contrato.",
+        },
+      },
+
+      {
+        "@type": "Question",
+        name: "¿El acta de conciliación tiene validez legal?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Sí. El acuerdo queda consignado en un acta de conciliación que tiene efectos jurídicos y obliga a las partes a cumplir los compromisos adquiridos.",
+        },
+      },
+
+      {
+        "@type": "Question",
+        name: "¿Qué ocurre si el empleador incumple el acuerdo conciliatorio?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "El acta de conciliación constituye un documento con efectos legales que puede utilizarse para exigir el cumplimiento de las obligaciones pactadas.",
+        },
+      },
+
+      {
+        "@type": "Question",
+        name: "¿La conciliación evita presentar una demanda laboral?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "En muchos casos sí. Cuando las partes alcanzan un acuerdo satisfactorio, la conciliación permite solucionar el conflicto sin necesidad de iniciar un proceso judicial.",
         },
       },
     ],

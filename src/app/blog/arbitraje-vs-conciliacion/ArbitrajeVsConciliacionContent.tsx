@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "../Article.module.css";
+import tableStyles from "./styles.module.css";
 import { motion } from "framer-motion";
 
 export default function ArbitrajeVsConciliacionContent() {
@@ -96,8 +97,8 @@ export default function ArbitrajeVsConciliacionContent() {
             Comparación completa entre arbitraje y conciliación
           </h2>
 
-          <div className={styles.tableWrapper}>
-            <table className={styles.table}>
+          <div className={tableStyles.tableWrapper}>
+            <table className={tableStyles.table}>
               <thead>
                 <tr>
                   <th>Aspecto</th>
