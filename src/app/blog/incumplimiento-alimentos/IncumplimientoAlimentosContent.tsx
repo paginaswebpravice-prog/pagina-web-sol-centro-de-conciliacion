@@ -2,51 +2,10 @@
 
 import styles from "../Article.module.css";
 import { motion } from "framer-motion";
-import Head from "next/head";
 
 export default function IncumplimientoAlimentosContent() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "¿Puedo exigir judicialmente una conciliación de alimentos?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sí. El acta de conciliación puede utilizarse para exigir judicialmente el cumplimiento de la obligación alimentaria.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿Qué documentos necesito?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Generalmente se requiere el acta de conciliación y las pruebas del incumplimiento de los pagos.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿Puedo solicitar una nueva conciliación?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sí. Dependiendo de las circunstancias, las partes pueden intentar una nueva conciliación para resolver la situación.",
-        },
-      },
-    ],
-  };
-
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema),
-          }}
-        />
-      </Head>
-
       <section className={styles.articleWrapper}>
         <motion.article
           className={styles.articleBlock}
@@ -55,13 +14,15 @@ export default function IncumplimientoAlimentosContent() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
+          {/* HERO */}
           <div className={styles.heroContent}>
             <span className={styles.badge}>
               Cuota alimentaria y conciliación familiar
             </span>
 
             <h1 className={styles.title}>
-              Incumplimiento de conciliación de alimentos en Colombia
+              Incumplimiento de conciliación de alimentos: ¿qué hacer si no
+              pagan la cuota alimentaria en Colombia?
             </h1>
 
             <p className={styles.heroText}>
@@ -85,6 +46,7 @@ export default function IncumplimientoAlimentosContent() {
             </p>
           </div>
 
+          {/* QUE OCURRE CUANDO SE INCUMPLE UNA CONCILIACION DE ALIMENTOS */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               ¿Qué ocurre cuando se incumple una conciliación de alimentos?
@@ -111,6 +73,39 @@ export default function IncumplimientoAlimentosContent() {
             </div>
           </div>
 
+          {/* COMO SABER SI REALMENTE EXISTE UN INCUMPLIMIENTO DE LA CUOTA ALIMENTARIA */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Cómo saber si realmente existe un incumplimiento de la cuota
+              alimentaria?
+            </h2>
+
+            <p className={styles.paragraph}>
+              El incumplimiento no ocurre únicamente cuando el obligado deja de
+              pagar por completo. También puede presentarse cuando realiza
+              consignaciones por un valor inferior al acordado, efectúa pagos de
+              manera esporádica, omite cubrir gastos extraordinarios pactados o
+              incumple otras obligaciones establecidas en el acta de
+              conciliación.
+            </p>
+
+            <p className={styles.paragraph}>
+              En muchos casos los conflictos comienzan con pequeños retrasos
+              que, con el paso de los meses, generan una deuda considerable.
+              Actuar oportunamente permite proteger los derechos del menor y
+              facilita la recuperación de las cuotas pendientes.
+            </p>
+
+            <div className={styles.highlightBox}>
+              <p>
+                Conservar recibos de pago, consignaciones, conversaciones y el
+                acta de conciliación facilita demostrar el incumplimiento cuando
+                sea necesario.
+              </p>
+            </div>
+          </div>
+
+          {/* SEÑALES DE INCUMPLIMIENTO FRECUENTES */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Señales de incumplimiento frecuentes
@@ -126,6 +121,7 @@ export default function IncumplimientoAlimentosContent() {
             </ul>
           </div>
 
+          {/* OPCIONES PARA EXIGIR EL CUMPLIMIENTO */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Opciones para exigir el cumplimiento
@@ -161,6 +157,7 @@ export default function IncumplimientoAlimentosContent() {
             </div>
           </div>
 
+          {/* DOCUMENTOS IMPORTANTES PARA RECLAMAR */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Documentos importantes para reclamar
@@ -175,6 +172,46 @@ export default function IncumplimientoAlimentosContent() {
             </ul>
           </div>
 
+          {/* PASOS RECOMENDADOS ANTES DE INICIAR UN PROCESO JUDICIAL */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Pasos recomendados antes de iniciar un proceso judicial
+            </h2>
+
+            <div className={styles.cardsGrid}>
+              <div className={styles.infoCard}>
+                <h3>Verificar el acta</h3>
+
+                <p>
+                  Revisa cuidadosamente las obligaciones pactadas, los valores
+                  acordados, las fechas de pago y cualquier condición especial
+                  establecida durante la conciliación.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Organizar las pruebas</h3>
+
+                <p>
+                  Reúne comprobantes de consignaciones, extractos bancarios,
+                  mensajes y demás documentos que permitan demostrar los pagos
+                  realizados o el incumplimiento.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Buscar orientación jurídica</h3>
+
+                <p>
+                  Un análisis previo permite determinar cuál es el mecanismo más
+                  adecuado para exigir el cumplimiento del acuerdo según las
+                  particularidades del caso.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* PUEDE MODIFICARSE LA CUOTA ALIMENTARIA? */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               ¿Puede modificarse la cuota alimentaria?
@@ -193,6 +230,7 @@ export default function IncumplimientoAlimentosContent() {
             </p>
           </div>
 
+          {/* CONSECUENCIAS DEL INCUMPLIMIENTO */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Consecuencias del incumplimiento
@@ -207,6 +245,46 @@ export default function IncumplimientoAlimentosContent() {
             </ul>
           </div>
 
+          {/* ERRORES FRECUENTES CUANDO EXISTE INCUMPLIMIENTO DE UNA CONCILIACION DE ALIMENTOS */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Errores frecuentes cuando existe incumplimiento de una
+              conciliación de alimentos
+            </h2>
+
+            <ul className={styles.list}>
+              <li>Esperar varios años antes de reclamar el incumplimiento.</li>
+
+              <li>
+                No conservar comprobantes de consignaciones o transferencias.
+              </li>
+
+              <li>
+                Modificar verbalmente el acuerdo sin dejar constancia escrita.
+              </li>
+
+              <li>No guardar copia del acta de conciliación.</li>
+
+              <li>Asumir que los retrasos constantes son normales.</li>
+
+              <li>
+                No solicitar asesoría cuando el incumplimiento comienza a
+                repetirse.
+              </li>
+
+              <li>
+                Realizar acuerdos informales que después resultan difíciles de
+                probar.
+              </li>
+
+              <li>
+                Desconocer que el acta de conciliación tiene efectos jurídicos
+                importantes.
+              </li>
+            </ul>
+          </div>
+
+          {/* PREGUNTAS FRECUENTES */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>Preguntas frecuentes</h2>
 

@@ -2,51 +2,10 @@
 
 import styles from "../Article.module.css";
 import { motion } from "framer-motion";
-import Head from "next/head";
 
 export default function InasistenciaConciliacionContent() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "¿Qué sucede si una persona no asiste a la conciliación?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "El conciliador puede dejar constancia de la inasistencia y finalizar la diligencia según las circunstancias del caso.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿Puedo demandar después de una inasistencia?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sí. En muchos asuntos la constancia de inasistencia permite acreditar el intento de conciliación previo.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿Existen consecuencias por no asistir?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "La inasistencia puede afectar la posibilidad de alcanzar acuerdos tempranos y generar implicaciones procesales dependiendo del caso.",
-        },
-      },
-    ],
-  };
-
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema),
-          }}
-        />
-      </Head>
-
       <section className={styles.articleWrapper}>
         <motion.article
           className={styles.articleBlock}
@@ -55,35 +14,45 @@ export default function InasistenciaConciliacionContent() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
+          {/* HERO */}
           <div className={styles.heroContent}>
             <span className={styles.badge}>
-              Audiencias de conciliación en Colombia
+              Consecuencias legales de no asistir a una conciliación
             </span>
 
             <h1 className={styles.title}>
-              ¿Qué pasa si una persona no asiste a la conciliación en Colombia?
+              ¿Qué pasa si una persona no asiste a una audiencia de conciliación
+              en Colombia? Consecuencias, constancia y qué hacer
             </h1>
 
             <p className={styles.heroText}>
-              Una de las preguntas más frecuentes en los procesos de
-              conciliación es qué sucede cuando una de las partes citadas no
-              comparece a la audiencia programada.
+              Si recibiste una citación para asistir a una audiencia de
+              conciliación y tienes dudas sobre qué ocurre si no compareces, es
+              importante conocer las consecuencias legales antes de tomar una
+              decisión. Aunque la inasistencia no significa automáticamente
+              perder un proceso o aceptar las pretensiones de la otra parte, sí
+              puede producir efectos jurídicos relevantes según el tipo de
+              conflicto y la legislación aplicable.
             </p>
 
             <p className={styles.heroText}>
-              La inasistencia puede tener consecuencias importantes dependiendo
-              del tipo de conflicto, del trámite realizado y de los requisitos
-              legales aplicables al caso.
+              En Colombia, la conciliación es uno de los principales mecanismos
+              alternativos para resolver conflictos sin acudir inmediatamente a
+              un juez. Por ello, cuando una de las partes no asiste, el
+              conciliador debe dejar constancia de lo ocurrido y continuar el
+              procedimiento conforme a la ley.
             </p>
 
             <p className={styles.heroText}>
-              En Bogotá y en toda Colombia, los centros de conciliación
-              registran diariamente situaciones donde una de las partes no
-              asiste, por lo que es importante conocer cuáles son los efectos de
-              esta situación.
+              En esta guía encontrarás qué sucede cuando una persona no asiste a
+              una conciliación, cuándo se expide la constancia de inasistencia,
+              si después puede presentarse una demanda, cuándo es posible
+              reprogramar la audiencia y cuáles son las recomendaciones para
+              proteger tus derechos.
             </p>
           </div>
 
+          {/* QUE OCURRE CUANDO UNA PERSONA NO COMPARECE */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               ¿Qué ocurre cuando una persona no comparece?
@@ -109,6 +78,38 @@ export default function InasistenciaConciliacionContent() {
             </div>
           </div>
 
+          {/* LA CONCILIACION SE CANCELA SI UNA PERSONA NO ASISTE */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿La conciliación se cancela si una persona no asiste?
+            </h2>
+
+            <p className={styles.paragraph}>
+              No necesariamente. La audiencia puede desarrollarse hasta donde
+              sea posible para dejar constancia de la inasistencia de la parte
+              citada. El conciliador verificará previamente que la citación haya
+              sido enviada correctamente y que existan las condiciones para
+              continuar con el trámite.
+            </p>
+
+            <p className={styles.paragraph}>
+              Cuando se confirma que una de las partes fue debidamente citada y
+              aun así decide no asistir sin justificación, normalmente se expide
+              la constancia de inasistencia correspondiente, documento que puede
+              tener importancia en actuaciones posteriores.
+            </p>
+
+            <div className={styles.highlightBox}>
+              <p>
+                No asistir a la conciliación no significa que el conflicto
+                desaparezca. En la mayoría de los casos simplemente se pierde la
+                oportunidad de llegar a un acuerdo rápido y evitar un proceso
+                judicial.
+              </p>
+            </div>
+          </div>
+
+          {/* CONSTANCIA DE INASISTENCIA */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               ¿Qué es la constancia de inasistencia?
@@ -132,6 +133,43 @@ export default function InasistenciaConciliacionContent() {
             </p>
           </div>
 
+          {/* MOTIVOS VÁLIDOS POR LOS QUE UNA PERSONA PUEDA NO ASISTIR */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Motivos válidos por los que una persona podría no asistir
+            </h2>
+
+            <div className={styles.cardsGrid}>
+              <div className={styles.infoCard}>
+                <h3>Problemas de salud</h3>
+
+                <p>
+                  Enfermedades o incapacidades médicas pueden justificar la
+                  ausencia, siempre que exista el soporte correspondiente.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Errores en la citación</h3>
+
+                <p>
+                  Si la persona nunca fue notificada correctamente, la ausencia
+                  puede obedecer a un problema en la comunicación del proceso.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Fuerza mayor</h3>
+
+                <p>
+                  Accidentes, emergencias familiares u otras circunstancias
+                  excepcionales pueden impedir la asistencia a la audiencia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* SE PUEDE DEMANDAR SI LA OTRA PARTE NO ASISTE */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               ¿Se puede demandar si la otra parte no asiste?
@@ -149,6 +187,7 @@ export default function InasistenciaConciliacionContent() {
             </p>
           </div>
 
+          {/* RAZONES FRECUENTES DE INASISTENCIA */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Razones frecuentes de inasistencia
@@ -184,6 +223,27 @@ export default function InasistenciaConciliacionContent() {
             </div>
           </div>
 
+          {/* ¿QUE PASA SI QUIEN NO ASISTE ES EL SOLICITANTE DE LA CONCILIACIÓN? */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Qué pasa si quien no asiste es el solicitante de la conciliación?
+            </h2>
+
+            <p className={styles.paragraph}>
+              Cuando quien promovió la conciliación no comparece a la audiencia,
+              el procedimiento también puede finalizar dejando constancia de la
+              ausencia. Dependiendo del caso, será necesario iniciar nuevamente
+              el trámite si se desea intentar otra conciliación.
+            </p>
+
+            <p className={styles.paragraph}>
+              Por esta razón es recomendable presentar la solicitud únicamente
+              cuando se tenga la intención real de asistir a la audiencia y
+              buscar una solución al conflicto.
+            </p>
+          </div>
+
+          {/* CONSECUENCIAS DE NO ASISTIR A LA CONCILIACIÓN */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Consecuencias de no asistir a la conciliación
@@ -204,6 +264,7 @@ export default function InasistenciaConciliacionContent() {
             </ul>
           </div>
 
+          {/* ¿PUEDE REPROGRAMARSE LA AUDIENCIA? */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               ¿Puede reprogramarse la audiencia?
@@ -237,6 +298,96 @@ export default function InasistenciaConciliacionContent() {
             </p>
           </div>
 
+          {/* BENEFICIOS DE ASISTIR A LA CONCILIACIÓN */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Beneficios de asistir a una audiencia de conciliación
+            </h2>
+
+            <div className={styles.cardsGrid}>
+              <div className={styles.infoCard}>
+                <h3>Evitar demandas</h3>
+
+                <p>
+                  Muchas controversias terminan mediante acuerdos sin necesidad
+                  de acudir a un proceso judicial.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Reducir costos</h3>
+
+                <p>
+                  Resolver el conflicto mediante conciliación suele ser mucho
+                  más rápido y económico que un litigio.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Conservar relaciones</h3>
+
+                <p>
+                  La conciliación facilita soluciones dialogadas que permiten
+                  mantener una mejor relación entre las partes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* ERRORES FRECUENTES CUANDO UNA PERSONA RECIBE UNA CITACIÓN PARA CONCILIAR */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Errores frecuentes cuando una persona recibe una citación para
+              conciliar
+            </h2>
+
+            <ul className={styles.list}>
+              <li>Pensar que la citación puede ignorarse sin consecuencias.</li>
+
+              <li>
+                Creer que asistir significa aceptar automáticamente las
+                pretensiones.
+              </li>
+
+              <li>No consultar previamente con un abogado o conciliador.</li>
+
+              <li>No revisar la fecha, hora y modalidad de la audiencia.</li>
+
+              <li>Asistir sin documentos que respalden su posición.</li>
+
+              <li>
+                No informar oportunamente cuando existe una causa que impide
+                asistir.
+              </li>
+
+              <li>
+                Esperar hasta el último momento para justificar la ausencia.
+              </li>
+            </ul>
+          </div>
+
+          {/* RECOMENDACIONES ANTES DE DECIDIR NO ASISTIR A UNA CONCILIACIÓN */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Recomendaciones antes de decidir no asistir a una conciliación
+            </h2>
+
+            <p className={styles.paragraph}>
+              Antes de dejar pasar la fecha de la audiencia conviene analizar el
+              caso con detenimiento. En muchas ocasiones asistir permite aclarar
+              malentendidos, conocer la posición de la otra parte e incluso
+              lograr un acuerdo que evite meses o años de un proceso judicial.
+            </p>
+
+            <p className={styles.paragraph}>
+              Si existe un motivo serio que impida asistir, lo más recomendable
+              es comunicarlo oportunamente al centro de conciliación para
+              conocer si es posible reprogramar la diligencia o adoptar otra
+              alternativa prevista por la normativa aplicable.
+            </p>
+          </div>
+
+          {/* PREGUNTAS FRECUENTES SOBRE LA INASISTENCIA */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Preguntas frecuentes sobre la inasistencia
@@ -274,12 +425,15 @@ export default function InasistenciaConciliacionContent() {
 
           <div className={styles.ctaBox}>
             <h3 className={styles.ctaTitle}>
-              ¿Tienes dudas sobre una audiencia de conciliación?
+              ¿Recibiste una citación a una audiencia de conciliación?
             </h3>
 
             <p className={styles.ctaText}>
-              Recibe orientación sobre audiencias, citaciones, inasistencias y
-              procedimientos de conciliación en Bogotá y Colombia.
+              Antes de decidir si asistir o no, recibe orientación jurídica
+              sobre las consecuencias legales de la inasistencia, la constancia
+              de no comparecencia, la posibilidad de presentar una demanda y las
+              alternativas para proteger tus derechos. Te ayudamos en Bogotá y
+              en cualquier lugar de Colombia.
             </p>
 
             <a
@@ -288,7 +442,7 @@ export default function InasistenciaConciliacionContent() {
               rel="noopener noreferrer"
               className={styles.ctaButton}
             >
-              Solicitar asesoría por WhatsApp
+              Hablar con un conciliador
             </a>
           </div>
         </motion.article>
