@@ -2,118 +2,10 @@
 
 import styles from "./Article.module.css";
 import { motion } from "framer-motion";
-import Head from "next/head";
 
 export default function ModeloActaConciliacionContent() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "¿Qué es un acta de conciliación en Colombia?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "El acta de conciliación en Colombia es el documento legal donde quedan registrados los acuerdos alcanzados entre las partes durante una conciliación.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿El acta de conciliación tiene validez legal?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sí. En Colombia el acta de conciliación tiene efectos jurídicos y presta mérito ejecutivo en caso de incumplimiento.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿Qué debe incluir un acta de conciliación?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Debe incluir identificación de las partes, descripción del conflicto, obligaciones claras, fechas de cumplimiento, forma de pago y firmas.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿Dónde se puede hacer una conciliación en Bogotá?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "La conciliación puede realizarse en centros de conciliación autorizados, cámaras de comercio y entidades habilitadas en Bogotá y Colombia.",
-        },
-      },
-    ],
-  };
-
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: "Modelo de acta de conciliación en Colombia (ejemplo y formato)",
-    description:
-      "Conoce un modelo de acta de conciliación en Colombia con ejemplo completo para conciliaciones civiles, comerciales y familiares en Bogotá y Colombia.",
-    author: {
-      "@type": "Organization",
-      name: "Sol Centro de Conciliación",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Sol Centro de Conciliación",
-    },
-    articleSection: "Conciliación Extrajudicial",
-    keywords:
-      "modelo de acta de conciliación en Colombia, ejemplo acta de conciliación Bogotá, formato acta conciliación Colombia, conciliación extrajudicial Bogotá",
-    about: [
-      "Acta de conciliación",
-      "Conciliación extrajudicial",
-      "Conciliación en Colombia",
-      "Conciliación en Bogotá",
-      "Modelo legal",
-    ],
-  };
-
   return (
     <>
-      <Head>
-        <title>
-          Modelo de acta de conciliación en Colombia | Ejemplo completo 2026
-        </title>
-
-        <meta
-          name="description"
-          content="Descubre un modelo de acta de conciliación en Colombia con ejemplo completo para conciliaciones civiles, comerciales y familiares en Bogotá y todo el país."
-        />
-
-        <meta
-          name="keywords"
-          content="modelo de acta de conciliación en Colombia, ejemplo acta conciliación Bogotá, formato conciliación Colombia, conciliación extrajudicial Bogotá"
-        />
-
-        <meta
-          property="og:title"
-          content="Modelo de acta de conciliación en Colombia"
-        />
-
-        <meta
-          property="og:description"
-          content="Guía completa con ejemplo de acta de conciliación en Bogotá y Colombia para acuerdos civiles, comerciales y familiares."
-        />
-
-        <meta property="og:type" content="article" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(articleSchema),
-          }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema),
-          }}
-        />
-      </Head>
-
       <motion.article
         id="modelo-acta-conciliacion"
         className={styles.modeloCard}
@@ -124,6 +16,7 @@ export default function ModeloActaConciliacionContent() {
         itemScope
         itemType="https://schema.org/Article"
       >
+        {/* MODELO ACTA CONCILIACION */}
         <motion.h1 className={styles.modeloTitle} itemProp="headline">
           Modelo de acta de conciliación en Colombia (ejemplo y formato)
         </motion.h1>
@@ -161,10 +54,14 @@ export default function ModeloActaConciliacionContent() {
 
         <motion.div className={styles.highlightBox}>
           <p>
-            En Bogotá y Colombia, las actas de conciliación son utilizadas para
-            resolver conflictos relacionados con deudas, contratos,
-            arrendamientos, recuperación de cartera, conflictos familiares,
-            obligaciones civiles y acuerdos comerciales.
+            Si estás buscando un{" "}
+            <strong>modelo de acta de conciliación en Colombia</strong>, es
+            importante saber que no existe un único formato aplicable para todos
+            los casos. El contenido del documento dependerá del tipo de
+            conflicto, de los acuerdos alcanzados y de los requisitos
+            establecidos por la legislación colombiana. Sin embargo, toda acta
+            debe contener una estructura mínima que garantice su validez
+            jurídica y facilite su cumplimiento.
           </p>
         </motion.div>
 
@@ -175,6 +72,35 @@ export default function ModeloActaConciliacionContent() {
           clara y precisa.
         </motion.p>
 
+        {/* QUE ES UN MODELO */}
+        <section>
+          <h2 className={styles.subTitle}>
+            ¿Qué es un modelo de acta de conciliación?
+          </h2>
+
+          <p className={styles.modeloText}>
+            Un modelo de acta de conciliación es un ejemplo que sirve como guía
+            para comprender cómo se estructura el documento que recoge los
+            acuerdos alcanzados entre las partes durante una audiencia de
+            conciliación.
+          </p>
+
+          <p className={styles.modeloText}>
+            Aunque existen diferentes modelos dependiendo del asunto objeto de
+            la conciliación, todos comparten elementos esenciales como la
+            identificación de las partes, la descripción del conflicto, los
+            compromisos asumidos y la firma de quienes intervienen en el
+            procedimiento.
+          </p>
+
+          <p className={styles.modeloText}>
+            Este documento constituye la prueba escrita del acuerdo y, cuando
+            cumple los requisitos legales, produce importantes efectos jurídicos
+            para quienes participaron en la conciliación.
+          </p>
+        </section>
+
+        {/* QUE DEBE CONTENER UN MODELO DE ACTA DE CONCILIACION */}
         <motion.h2 className={styles.subTitle}>
           ¿Qué debe contener un acta de conciliación en Colombia?
         </motion.h2>
@@ -195,6 +121,36 @@ export default function ModeloActaConciliacionContent() {
           <li>Firma de las partes y del conciliador.</li>
         </ul>
 
+        {/* QUE INFORMACIÓN DEBE CONTENER UN MODELO DE ACTA DE CONCILIACION */}
+        <section>
+          <h2 className={styles.subTitle}>
+            ¿Qué información debe contener un acta de conciliación?
+          </h2>
+
+          <ul className={styles.list}>
+            <li>Fecha y lugar donde se realiza la audiencia.</li>
+
+            <li>Identificación completa de las partes.</li>
+
+            <li>Datos del conciliador.</li>
+
+            <li>Descripción clara del conflicto.</li>
+
+            <li>Acuerdos alcanzados.</li>
+
+            <li>Plazos para cumplir cada obligación.</li>
+
+            <li>Forma de pago cuando exista dinero de por medio.</li>
+
+            <li>Consecuencias del incumplimiento.</li>
+
+            <li>Firma de las partes.</li>
+
+            <li>Firma del conciliador.</li>
+          </ul>
+        </section>
+
+        {/* MODELO DE ACTA DE CONCILIACION EN COLOMBIA */}
         <motion.h2 className={styles.subTitle}>
           Modelo de acta de conciliación en Colombia (copiar y pegar)
         </motion.h2>
@@ -262,6 +218,43 @@ Parte B: ___________________________`}
           </pre>
         </motion.div>
 
+        {/* EN QUE CASOS PUEDE UTILIZARSE UN MODELO DE ACTA DE CONCILIACION */}
+        <section>
+          <h2 className={styles.subTitle}>
+            ¿En qué casos puede utilizarse un acta de conciliación?
+          </h2>
+
+          <p className={styles.modeloText}>
+            Las actas de conciliación pueden utilizarse en numerosos conflictos
+            que permiten una solución negociada. Dependiendo del asunto, el
+            contenido del acuerdo será diferente, pero la estructura del
+            documento conserva la misma lógica jurídica.
+          </p>
+
+          <ul className={styles.list}>
+            <li>Incumplimiento de contratos.</li>
+
+            <li>Deudas entre particulares.</li>
+
+            <li>Conflictos de arrendamiento.</li>
+
+            <li>Responsabilidad civil.</li>
+
+            <li>Accidentes de tránsito.</li>
+
+            <li>Cuotas alimentarias.</li>
+
+            <li>Custodia y visitas.</li>
+
+            <li>Liquidación de sociedad patrimonial.</li>
+
+            <li>Conflictos comerciales.</li>
+
+            <li>Problemas entre vecinos.</li>
+          </ul>
+        </section>
+
+        {/* CHECKLIST PARA QUE UN ACTA DE CONCILIACION SEA VALIDA EN COLOMBIA */}
         <motion.div className={styles.modeloCTA}>
           <strong>
             Checklist para que un acta de conciliación sea válida en Colombia
@@ -278,6 +271,7 @@ Parte B: ___________________________`}
           </ul>
         </motion.div>
 
+        {/* PARA QUE SIRVE UN ACTA DE CONCILIACION */}
         <motion.h2 className={styles.subTitle}>
           ¿Para qué sirve un acta de conciliación?
         </motion.h2>
@@ -299,6 +293,7 @@ Parte B: ___________________________`}
           para exigir judicialmente el cumplimiento del acuerdo alcanzado.
         </motion.p>
 
+        {/* RECOMENDACIONES ANTES DE FIRMAR UN ACTA DE CONCILIACION */}
         <motion.h2 className={styles.subTitle}>
           Recomendaciones antes de firmar un acta de conciliación
         </motion.h2>
@@ -320,67 +315,152 @@ Parte B: ___________________________`}
           las partes cierren el problema de forma definitiva, clara y segura.
         </motion.p>
 
-        <motion.div className={styles.faqSection}>
+        {/* ERRORES FREQUENTES AL ELABORAR UN ACTA DE CONCILIACION */}
+        <section>
           <h2 className={styles.subTitle}>
-            Preguntas frecuentes sobre actas de conciliación
+            Errores frecuentes al elaborar un acta de conciliación
           </h2>
 
           <div className={styles.faqGrid}>
             <div className={styles.faqItem}>
-              <h3>¿El acta de conciliación tiene validez legal?</h3>
+              <h3>Acuerdos poco claros</h3>
 
               <p>
-                Sí. En Colombia el acta tiene efectos jurídicos y puede exigirse
-                judicialmente.
+                Los compromisos deben redactarse de forma precisa para evitar
+                futuras interpretaciones.
               </p>
             </div>
 
             <div className={styles.faqItem}>
-              <h3>¿Qué pasa si una parte incumple?</h3>
+              <h3>No establecer fechas</h3>
+
+              <p>Todo acuerdo debe indicar cuándo y cómo deberá cumplirse.</p>
+            </div>
+
+            <div className={styles.faqItem}>
+              <h3>No identificar correctamente a las partes</h3>
 
               <p>
-                La parte afectada puede iniciar acciones legales para exigir el
-                cumplimiento del acuerdo conciliatorio.
+                Errores en nombres o documentos pueden generar inconvenientes al
+                momento de exigir el cumplimiento.
               </p>
             </div>
 
             <div className={styles.faqItem}>
-              <h3>¿El modelo sirve para cualquier conciliación?</h3>
+              <h3>Incluir obligaciones imposibles</h3>
+
+              <p>Los acuerdos deben ser viables y jurídicamente permitidos.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* QUE OCURRE SI UNA PERSONA INCUMPLE EL ACTA DE CONCILIACION */}
+        <section>
+          <h2 className={styles.subTitle}>
+            ¿Qué ocurre si una persona incumple el acta?
+          </h2>
+
+          <p className={styles.modeloText}>
+            Una de las principales ventajas del acta de conciliación es que no
+            se trata únicamente de un acuerdo de buena voluntad. Cuando cumple
+            los requisitos legales, puede servir como título ejecutivo, lo que
+            permite acudir ante un juez para solicitar su cumplimiento sin tener
+            que iniciar nuevamente la discusión sobre el conflicto.
+          </p>
+
+          <p className={styles.modeloText}>
+            Esto brinda mayor seguridad jurídica a quienes deciden resolver sus
+            diferencias mediante conciliación y fomenta el cumplimiento
+            voluntario de los compromisos adquiridos.
+          </p>
+        </section>
+
+        {/* PREGUNTAS FRECUENTES SOBRE ACTAS DE CONCILIACION */}
+        <section className={styles.faqSection}>
+          <h2 className={styles.subTitle}>
+            Preguntas frecuentes sobre el modelo de acta de conciliación
+          </h2>
+
+          <div className={styles.faqGrid}>
+            <div className={styles.faqItem}>
+              <h3>¿Puedo descargar un modelo y utilizarlo directamente?</h3>
 
               <p>
-                El formato es referencial y puede adaptarse a conciliaciones
-                civiles, comerciales y familiares en Colombia.
+                Puede servir como guía, pero cada conciliación debe adaptarse al
+                caso concreto y cumplir los requisitos legales aplicables.
               </p>
             </div>
 
             <div className={styles.faqItem}>
-              <h3>¿Dónde hacer conciliaciones en Bogotá?</h3>
+              <h3>¿Todas las actas tienen el mismo formato?</h3>
 
               <p>
-                En centros de conciliación autorizados, cámaras de comercio y
-                entidades habilitadas en Colombia.
+                No. La estructura general suele ser similar, pero el contenido
+                cambia según el conflicto y los acuerdos alcanzados.
+              </p>
+            </div>
+
+            <div className={styles.faqItem}>
+              <h3>¿Quién redacta el acta?</h3>
+
+              <p>
+                Generalmente el conciliador o el centro de conciliación elaboran
+                el documento con base en los acuerdos expresados por las partes.
+              </p>
+            </div>
+
+            <div className={styles.faqItem}>
+              <h3>¿Puede modificarse posteriormente?</h3>
+
+              <p>
+                Si ambas partes están de acuerdo pueden celebrar una nueva
+                conciliación para actualizar los compromisos asumidos.
+              </p>
+            </div>
+
+            <div className={styles.faqItem}>
+              <h3>¿Tiene validez en todo Colombia?</h3>
+
+              <p>
+                Sí. Siempre que el procedimiento se haya realizado conforme a la
+                ley, sus efectos jurídicos son reconocidos en todo el territorio
+                nacional.
+              </p>
+            </div>
+
+            <div className={styles.faqItem}>
+              <h3>¿Necesito un abogado para conciliar?</h3>
+
+              <p>
+                Depende del caso. Aunque no siempre es obligatorio, contar con
+                asesoría jurídica puede ayudar a construir acuerdos más claros y
+                seguros.
               </p>
             </div>
           </div>
-        </motion.div>
+        </section>
 
+        {/* CTA */}
         <motion.div className={styles.ctaBox}>
-          <h3 className={styles.ctaTitle}>
-            ¿Necesitas orientación sobre conciliación en Bogotá o Colombia?
-          </h3>
+          <h2 className={styles.ctaTitle}>
+            ¿Necesitas elaborar un acta de conciliación con validez legal?
+          </h2>
 
           <p className={styles.ctaText}>
-            Recibe orientación sobre conciliación extrajudicial, elaboración de
-            acuerdos legales y resolución de conflictos civiles, comerciales y
-            familiares en Bogotá y todo Colombia.
+            En Sol Centro de Conciliación te orientamos para preparar acuerdos
+            claros, completos y ajustados a la legislación colombiana. Si deseas
+            resolver un conflicto de manera rápida y evitar un proceso judicial,
+            nuestro equipo puede acompañarte durante todo el procedimiento de
+            conciliación.
           </p>
 
           <a
             href="https://api.whatsapp.com/send/?phone=573232904786"
             target="_blank"
+            rel="noopener noreferrer"
             className={styles.ctaButton}
           >
-            Solicitar asesoría por WhatsApp
+            Solicitar información por WhatsApp
           </a>
         </motion.div>
       </motion.article>

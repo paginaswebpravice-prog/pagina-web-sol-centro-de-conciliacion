@@ -17,44 +17,59 @@ export default function PrestacionesSocialesConciliacionContent() {
           <span className={styles.badge}>Derecho laboral en Colombia</span>
 
           <h1 className={styles.title}>
-            Conciliación sobre prestaciones sociales en Colombia
+            Conciliación sobre prestaciones sociales en Colombia: cómo reclamar
+            cesantías, primas, vacaciones y otros pagos laborales sin demanda
           </h1>
 
           <p className={styles.heroText}>
-            Las prestaciones sociales representan derechos fundamentales de los
-            trabajadores en Colombia. Sin embargo, en ocasiones pueden
-            presentarse diferencias entre empleadores y trabajadores respecto al
-            pago de cesantías, intereses, primas, vacaciones u otros conceptos
-            laborales.
+            Cuando un trabajador considera que su empleador no pagó
+            correctamente las prestaciones sociales, no siempre es necesario
+            iniciar un proceso judicial para buscar una solución. En muchos
+            casos, la conciliación laboral permite dialogar entre las partes,
+            revisar la liquidación, aclarar diferencias y alcanzar acuerdos con
+            plena validez jurídica.
           </p>
 
           <p className={styles.heroText}>
-            La conciliación laboral ofrece una alternativa rápida y efectiva
-            para resolver estas controversias sin necesidad de iniciar una
-            demanda judicial.
+            Este mecanismo puede utilizarse para resolver controversias
+            relacionadas con cesantías, intereses a las cesantías, primas de
+            servicios, vacaciones, indemnizaciones, liquidaciones finales y
+            otros derechos laborales conciliables. En esta guía encontrarás
+            cuándo conviene acudir a un centro de conciliación, qué documentos
+            preparar y cuáles son los beneficios frente a un proceso judicial.
           </p>
         </div>
 
+        {/* QUE SON LAS PRESTACIONES SOCIALES */}
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            ¿Qué son las prestaciones sociales?
+            ¿Qué son las prestaciones sociales y por qué generan tantos
+            conflictos laborales?
           </h2>
 
           <p className={styles.paragraph}>
-            Las prestaciones sociales son beneficios económicos reconocidos por
-            la legislación laboral colombiana a favor de los trabajadores como
-            compensación por los servicios prestados.
+            Las prestaciones sociales son derechos económicos reconocidos por la
+            legislación laboral colombiana que buscan proteger al trabajador
+            durante la relación laboral y al finalizarla. Su pago no constituye
+            un beneficio opcional del empleador, sino una obligación legal cuyo
+            incumplimiento puede generar reclamaciones administrativas o
+            judiciales.
           </p>
 
           <p className={styles.paragraph}>
-            Estas prestaciones buscan brindar protección económica y bienestar
-            al trabajador durante y después de la relación laboral.
+            Los conflictos aparecen cuando existen diferencias en la
+            liquidación, errores en los cálculos, pagos incompletos, retrasos en
+            las consignaciones o interpretaciones distintas sobre el contrato de
+            trabajo. Antes de acudir a un juez, muchas de estas controversias
+            pueden solucionarse mediante una audiencia de conciliación.
           </p>
         </div>
 
+        {/* PRESTACIONES QUE PUEDEN SER OBJETO DE CONCILIACION */}
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            Prestaciones que pueden ser objeto de conciliación
+            Prestaciones sociales que pueden reclamarse mediante conciliación
+            laboral
           </h2>
 
           <div className={styles.cardsGrid}>
@@ -92,6 +107,37 @@ export default function PrestacionesSocialesConciliacionContent() {
           </div>
         </div>
 
+        {/* PRESTACIONES QUE PUEDEN SER OBJETO DE CONCILIACION */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué prestaciones sociales pueden incluirse en un acuerdo
+            conciliatorio?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Dependiendo del caso concreto, durante una audiencia de conciliación
+            las partes pueden negociar el reconocimiento de uno o varios
+            conceptos laborales, revisar la liquidación realizada por el
+            empleador y acordar la forma en que se realizará el pago.
+          </p>
+
+          <ul className={styles.list}>
+            <li>Cesantías.</li>
+            <li>Intereses sobre las cesantías.</li>
+            <li>Prima de servicios.</li>
+            <li>Vacaciones pendientes.</li>
+            <li>Salarios adeudados.</li>
+            <li>Auxilios reconocidos en el contrato.</li>
+            <li>Liquidación definitiva del contrato.</li>
+            <li>Diferencias salariales.</li>
+            <li>Horas extras.</li>
+            <li>Recargos nocturnos.</li>
+            <li>Dominicales y festivos.</li>
+            <li>Acuerdos de pago.</li>
+          </ul>
+        </div>
+
+        {/* CUANDO CONVIENE ACUDIR A CONCILIACION */}
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
             ¿Cuándo conviene acudir a conciliación?
@@ -118,6 +164,32 @@ export default function PrestacionesSocialesConciliacionContent() {
           </div>
         </div>
 
+        {/* DOCUMENTOS QUE CONVIENE LLEVAR A UNA AUDIENCIA DE CONCILIACION */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Documentos que conviene llevar a una audiencia de conciliación
+            laboral
+          </h2>
+
+          <p className={styles.paragraph}>
+            Entre mayor sea la información disponible, más sencillo será
+            determinar si existen diferencias económicas y construir una
+            propuesta de acuerdo entre trabajador y empleador.
+          </p>
+
+          <ul className={styles.list}>
+            <li>Contrato de trabajo.</li>
+            <li>Liquidación laboral.</li>
+            <li>Desprendibles de nómina.</li>
+            <li>Consignaciones de cesantías.</li>
+            <li>Comprobantes de pago.</li>
+            <li>Correos electrónicos.</li>
+            <li>Mensajes relacionados con el conflicto.</li>
+            <li>Certificaciones laborales.</li>
+          </ul>
+        </div>
+
+        {/* BENEFICIOS DE LA CONCILIACION LABORAL */}
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
             Beneficios de la conciliación laboral
@@ -135,6 +207,7 @@ export default function PrestacionesSocialesConciliacionContent() {
           </ul>
         </div>
 
+        {/* QUE SUCEDE SI SE ALCANZA UN ACUERDO */}
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
             ¿Qué sucede si se alcanza un acuerdo?
@@ -151,6 +224,7 @@ export default function PrestacionesSocialesConciliacionContent() {
           </p>
         </div>
 
+        {/* PREGUNTAS FRECUENTES */}
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>Preguntas frecuentes</h2>
 
@@ -184,15 +258,75 @@ export default function PrestacionesSocialesConciliacionContent() {
           </div>
         </div>
 
+        {/* ¿QUE VENTAJAS OFRECE LA CONCILIACION FRENTE A UNA DEMANDA LABORAL? */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué ventajas ofrece la conciliación frente a una demanda laboral?
+          </h2>
+
+          <p className={styles.paragraph}>
+            La conciliación no reemplaza todos los procesos judiciales, pero sí
+            permite resolver un alto número de conflictos sin esperar varios
+            meses o incluso años para obtener una decisión judicial. Además, las
+            partes mantienen el control sobre la negociación y pueden construir
+            soluciones adaptadas a su situación.
+          </p>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>Más rápida</h3>
+              <p>
+                Muchas controversias pueden solucionarse en una o pocas
+                audiencias.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Menores costos</h3>
+              <p>
+                Reduce gastos asociados con procesos judiciales prolongados.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Acuerdos flexibles</h3>
+              <p>
+                Las partes pueden pactar cronogramas de pago y condiciones
+                específicas según sus necesidades.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ERRORES FRECUENTES AL RECLAMAR PRESTACIONES SOCIALES */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Errores frecuentes al reclamar prestaciones sociales
+          </h2>
+
+          <ul className={styles.list}>
+            <li>Esperar demasiado tiempo para reclamar.</li>
+            <li>No conservar soportes de pago.</li>
+            <li>Firmar documentos sin leer su contenido.</li>
+            <li>No revisar la liquidación final.</li>
+            <li>Asistir a la audiencia sin una propuesta clara.</li>
+            <li>No buscar asesoría cuando existen diferencias importantes.</li>
+          </ul>
+        </div>
+
+        {/* CTA */}
         <div className={styles.ctaBox}>
           <h3 className={styles.ctaTitle}>
-            ¿Tienes prestaciones sociales pendientes?
+            ¿Necesitas reclamar prestaciones sociales mediante conciliación
+            laboral?
           </h3>
 
           <p className={styles.ctaText}>
-            Recibe orientación sobre conciliación laboral, reclamación de
-            prestaciones sociales, cesantías, primas, vacaciones y acuerdos de
-            pago en Colombia.
+            Recibe orientación sobre cesantías, intereses, primas de servicios,
+            vacaciones, liquidaciones laborales, acuerdos de pago y demás
+            prestaciones sociales. Analizamos tu caso y te acompañamos durante
+            todo el proceso de conciliación para buscar una solución rápida,
+            segura y con respaldo jurídico.
           </p>
 
           <a

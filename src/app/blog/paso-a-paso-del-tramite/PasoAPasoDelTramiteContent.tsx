@@ -17,6 +17,7 @@ export default function PasoAPasoDelTramiteContent() {
           Guía práctica de conciliación en Colombia
         </span>
 
+        {/* PASO A PASO DEL TRAMITE DE CONCILIACION EN COLOMBIA */}
         <h2 className={styles.title}>
           Paso a paso del trámite de conciliación en Colombia y Bogotá
         </h2>
@@ -50,8 +51,39 @@ export default function PasoAPasoDelTramiteContent() {
           acuerdo puede exigirse judicialmente si una de las partes incumple.
         </div>
 
+        {/* QUIEN PUEDE SOLICITAR UNA CONCILIACION EN COLOMBIA */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Quién puede solicitar una conciliación en Colombia?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Cualquier persona natural o jurídica que tenga un conflicto
+            susceptible de conciliación puede presentar una solicitud ante un
+            centro de conciliación autorizado. No es necesario esperar a que el
+            problema llegue a un proceso judicial para intentar alcanzar un
+            acuerdo.
+          </p>
+
+          <p className={styles.paragraph}>
+            Este mecanismo puede ser utilizado por ciudadanos, empresas,
+            arrendadores, arrendatarios, empleadores, trabajadores, socios,
+            proveedores y cualquier otra persona que busque solucionar un
+            conflicto mediante el diálogo y la negociación.
+          </p>
+
+          <div className={styles.highlightBox}>
+            <p>
+              Mientras más pronto se inicie la conciliación, mayores son las
+              posibilidades de alcanzar un acuerdo y evitar un proceso judicial
+              más largo y costoso.
+            </p>
+          </div>
+        </div>
+
+        {/* COMO FUNCIONA EL TRAMITE DE CONCILIACION EN COLOMBIA */}
         <h3 className={styles.subtitle}>
-          ¿Cómo funciona el trámite de conciliación?
+          ¿Cómo es el paso a paso del trámite de conciliación en Colombia?
         </h3>
 
         <p className={styles.paragraph}>
@@ -211,8 +243,64 @@ export default function PasoAPasoDelTramiteContent() {
 
         <div className={styles.divider}></div>
 
+        {/* QUE CONFLICTOS PUEDEN RESOLVERSE MEDIANTE CONCILIACION */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué conflictos pueden resolverse mediante conciliación?
+          </h2>
+
+          <p className={styles.paragraph}>
+            La conciliación tiene un amplio campo de aplicación en Colombia.
+            Cada año miles de conflictos se solucionan mediante este mecanismo
+            sin necesidad de acudir ante un juez.
+          </p>
+
+          <div className={styles.stepsWrapper}>
+            <div className={styles.stepCard}>
+              <span>✓</span>
+
+              <div>
+                <h4>Conflictos civiles</h4>
+
+                <p>
+                  Incumplimientos contractuales, préstamos de dinero, daños,
+                  responsabilidad civil y obligaciones económicas.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.stepCard}>
+              <span>✓</span>
+
+              <div>
+                <h4>Conflictos familiares</h4>
+
+                <p>
+                  Cuotas alimentarias, custodia, visitas, separación de bienes y
+                  otros asuntos conciliables.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.stepCard}>
+              <span>✓</span>
+
+              <div>
+                <h4>Conflictos comerciales</h4>
+
+                <p>
+                  Incumplimiento de contratos, deudas, pagos pendientes y
+                  relaciones entre empresas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* CUANTO DURARA UNA CONCILIACION */}
         <h3 className={styles.subtitle}>
-          ¿Cuánto puede durar una conciliación?
+          ¿Cuánto dura una conciliación en Colombia y de qué depende el tiempo
+          del trámite?
         </h3>
 
         <p className={styles.paragraph}>
@@ -229,8 +317,9 @@ export default function PasoAPasoDelTramiteContent() {
           adicionales antes de llegar a un acuerdo definitivo.
         </p>
 
+        {/* QUE DOCUMENTOS LLEVAR A UNA CONCILIACION */}
         <h3 className={styles.subtitle}>
-          ¿Qué documentos llevar a una conciliación?
+          Documentos necesarios para iniciar una conciliación en Colombia
         </h3>
 
         <p className={styles.paragraph}>
@@ -256,8 +345,9 @@ export default function PasoAPasoDelTramiteContent() {
           claro y favorable para ambas partes.
         </div>
 
+        {/* VENTAJAS DE LA CONCILIACION EN COLOMBIA */}
         <h3 className={styles.subtitle}>
-          Ventajas de la conciliación en Colombia
+          Beneficios de la conciliación frente a un proceso judicial
         </h3>
 
         <p className={styles.paragraph}>
@@ -314,8 +404,9 @@ export default function PasoAPasoDelTramiteContent() {
           </div>
         </div>
 
+        {/* RECOMENDACIONES ANTES DE ASISTIR A UNA AUDIENCIA */}
         <h3 className={styles.subtitle}>
-          Recomendaciones antes de asistir a una audiencia
+          Recomendaciones antes de asistir a una audiencia de conciliación
         </h3>
 
         <p className={styles.paragraph}>
@@ -332,6 +423,98 @@ export default function PasoAPasoDelTramiteContent() {
           <li>Mantén una actitud abierta al diálogo y la negociación.</li>
         </ul>
 
+        {/* QUE SUCEDE DESPUES DE FIRMAR EL ACTA DE CONCILIACION */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué sucede después de firmar el acta de conciliación?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Cuando las partes llegan a un acuerdo, el conciliador redacta el
+            acta de conciliación con todas las obligaciones pactadas. Este
+            documento establece con claridad las fechas, valores, condiciones y
+            compromisos que deberán cumplirse.
+          </p>
+
+          <p className={styles.paragraph}>
+            Dependiendo del asunto conciliado y del cumplimiento de los
+            requisitos legales, el acta puede producir efectos jurídicos
+            importantes, por lo que resulta fundamental revisar cuidadosamente
+            su contenido antes de firmarla.
+          </p>
+        </div>
+
+        {/* CONSEJOS PARA AUMENTAR LAS PROBABILIDADES DE LLEGAR A UN ACUERDO */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Consejos para aumentar las probabilidades de llegar a un acuerdo
+          </h2>
+
+          <div className={styles.stepsWrapper}>
+            <div className={styles.stepCard}>
+              <span>1</span>
+
+              <div>
+                <h4>Organiza toda la documentación</h4>
+
+                <p>
+                  Llevar contratos, recibos, conversaciones y demás soportes
+                  facilita la negociación.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.stepCard}>
+              <span>2</span>
+
+              <div>
+                <h4>Define tus objetivos</h4>
+
+                <p>
+                  Antes de asistir identifica cuáles son tus prioridades y hasta
+                  dónde estás dispuesto a negociar.
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.stepCard}>
+              <span>3</span>
+
+              <div>
+                <h4>Mantén una actitud abierta al diálogo</h4>
+
+                <p>
+                  Escuchar las propuestas de la otra parte permite encontrar
+                  soluciones que beneficien a todos los involucrados.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ERRORES QUE PUEDE DIFICULTAR UNA CONCILIACION */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Errores que pueden dificultar una conciliación
+          </h2>
+
+          <p className={styles.paragraph}>
+            Aunque la conciliación busca facilitar el diálogo, existen
+            situaciones que reducen considerablemente las probabilidades de
+            llegar a un acuerdo.
+          </p>
+
+          <ul className={styles.list}>
+            <li>Asistir sin conocer exactamente cuál es el conflicto.</li>
+            <li>No llevar documentos que respalden las afirmaciones.</li>
+            <li>No definir previamente un margen de negociación.</li>
+            <li>Mantener una posición completamente inflexible.</li>
+            <li>Firmar acuerdos sin leer cuidadosamente cada cláusula.</li>
+            <li>No cumplir los compromisos adquiridos en el acta.</li>
+          </ul>
+        </div>
+
+        {/* CTA */}
         <div className={styles.cta}>
           <strong className={styles.ctaTitle}>
             Recomendación antes de iniciar una conciliación

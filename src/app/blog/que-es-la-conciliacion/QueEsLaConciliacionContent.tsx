@@ -2,126 +2,10 @@
 
 import styles from "../Article.module.css";
 import { motion } from "framer-motion";
-import Head from "next/head";
 
 export default function QueEsLaConciliacionContent() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "¿Qué es la conciliación en Colombia?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "La conciliación en Colombia es un mecanismo alternativo de solución de conflictos mediante el cual dos o más personas buscan llegar a un acuerdo con la ayuda de un conciliador autorizado.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿La conciliación tiene validez legal en Colombia?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sí. El acta de conciliación tiene efectos jurídicos y puede ser exigida judicialmente en caso de incumplimiento.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿Dónde se puede hacer una conciliación en Bogotá?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "La conciliación puede realizarse en centros de conciliación autorizados, cámaras de comercio, consultorios jurídicos y entidades habilitadas en Bogotá y Colombia.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿Qué conflictos pueden resolverse mediante conciliación?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "En Colombia pueden conciliarse conflictos civiles, familiares, comerciales, laborales, arrendamientos, deudas y otras controversias permitidas por la ley.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿La conciliación evita un juicio?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sí. En muchos casos la conciliación permite resolver el conflicto sin necesidad de acudir a un proceso judicial.",
-        },
-      },
-    ],
-  };
-
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: "¿Qué es la conciliación en Colombia y para qué sirve realmente?",
-    description:
-      "Conoce qué es la conciliación en Colombia, cómo funciona en Bogotá, cuáles son sus beneficios y qué tipos de conflictos pueden resolverse mediante conciliación extrajudicial.",
-    author: {
-      "@type": "Organization",
-      name: "Sol Centro de Conciliación",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Sol Centro de Conciliación",
-    },
-    articleSection: "Conciliación Extrajudicial",
-    keywords:
-      "qué es la conciliación en Colombia, conciliación en Bogotá, conciliación extrajudicial Colombia, conciliación familiar Bogotá, conciliación civil Colombia",
-    about: [
-      "Conciliación en Colombia",
-      "Conciliación extrajudicial",
-      "Resolución de conflictos",
-      "Derecho civil",
-      "Derecho de familia",
-    ],
-  };
-
   return (
     <>
-      <Head>
-        <title>
-          ¿Qué es la conciliación en Colombia? | Guía completa Bogotá 2026
-        </title>
-
-        <meta
-          name="description"
-          content="Descubre qué es la conciliación en Colombia y Bogotá, cómo funciona, para qué sirve y cuáles son sus beneficios legales. Guía completa de conciliación extrajudicial 2026."
-        />
-
-        <meta
-          name="keywords"
-          content="qué es la conciliación en Colombia, conciliación en Bogotá, conciliación extrajudicial Colombia, conciliación civil Bogotá, conciliación familiar Colombia"
-        />
-
-        <meta
-          property="og:title"
-          content="¿Qué es la conciliación en Colombia y para qué sirve?"
-        />
-
-        <meta
-          property="og:description"
-          content="Guía completa sobre conciliación en Colombia y Bogotá: beneficios, tipos de conciliación, validez legal y cómo solicitar una audiencia."
-        />
-
-        <meta property="og:type" content="article" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(articleSchema),
-          }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema),
-          }}
-        />
-      </Head>
-
       <section
         className={styles.articleWrapper}
         itemScope
@@ -135,35 +19,39 @@ export default function QueEsLaConciliacionContent() {
           viewport={{ once: true }}
         >
           {/* HERO */}
-
           <div className={styles.heroContent}>
             <span className={styles.badge}>
-              Guía completa de conciliación en Colombia
+              Guía completa sobre conciliación extrajudicial en Colombia
             </span>
 
-            <h1 className={styles.title} itemProp="headline">
-              ¿Qué es la conciliación en Colombia y para qué sirve realmente?
+            <h1 className={styles.title}>
+              ¿Qué es la conciliación en Colombia? Guía completa, beneficios,
+              requisitos y cuándo acudir a este mecanismo
             </h1>
 
-            <p className={styles.heroText} itemProp="description">
-              La conciliación en Colombia es un mecanismo alternativo de
-              solución de conflictos mediante el cual dos o más personas buscan
-              resolver una controversia con la ayuda de un conciliador
-              autorizado, evitando acudir directamente a un proceso judicial.
+            <p className={styles.heroText}>
+              La <strong>conciliación en Colombia</strong> es uno de los
+              mecanismos más utilizados para solucionar conflictos sin necesidad
+              de acudir inmediatamente a un juez. Gracias a este procedimiento,
+              las personas y las empresas pueden construir acuerdos con ayuda de
+              un conciliador imparcial, reduciendo tiempos, costos y el desgaste
+              que normalmente implica un proceso judicial.
             </p>
 
             <p className={styles.heroText}>
-              Este procedimiento es ampliamente utilizado en Bogotá y otras
-              ciudades de Colombia para resolver conflictos civiles,
-              comerciales, familiares y laborales de manera más rápida,
-              económica y eficiente.
+              Aunque muchas personas escuchan hablar de la conciliación cuando
+              reciben una citación o necesitan presentar una demanda, lo cierto
+              es que este mecanismo puede utilizarse para resolver conflictos
+              civiles, comerciales, familiares, de propiedad horizontal e
+              incluso determinados asuntos laborales permitidos por la ley.
             </p>
 
             <p className={styles.heroText}>
-              Gracias a la conciliación extrajudicial en derecho, miles de
-              personas y empresas en Colombia logran alcanzar acuerdos con plena
-              validez jurídica sin necesidad de enfrentar procesos judiciales
-              largos y costosos.
+              En esta guía encontrarás qué es la conciliación, cómo funciona,
+              cuáles son sus ventajas, qué asuntos pueden conciliarse, cuándo es
+              obligatoria, qué valor jurídico tiene un acta de conciliación y
+              por qué este mecanismo se ha convertido en una de las principales
+              herramientas para resolver conflictos en Colombia.
             </p>
           </div>
 
@@ -328,8 +216,250 @@ export default function QueEsLaConciliacionContent() {
             </p>
           </div>
 
-          {/* FAQ */}
+          {/* CUANDO ES RECOMENDABLE */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Cuándo es recomendable acudir primero a una conciliación y no
+              presentar una demanda?
+            </h2>
 
+            <p className={styles.paragraph}>
+              Muchas personas creen que la única alternativa frente a un
+              conflicto es acudir inmediatamente a un juez. Sin embargo, en
+              numerosos casos la legislación colombiana permite —e incluso
+              exige— intentar primero una conciliación antes de iniciar un
+              proceso judicial.
+            </p>
+
+            <p className={styles.paragraph}>
+              La conciliación resulta especialmente recomendable cuando las
+              partes aún tienen la posibilidad de dialogar y existe interés en
+              alcanzar una solución rápida, económica y jurídicamente segura.
+            </p>
+
+            <div className={styles.cardsGrid}>
+              <div className={styles.infoCard}>
+                <h3>Conflictos entre particulares</h3>
+
+                <p>
+                  Deudas, incumplimientos contractuales, daños, préstamos de
+                  dinero, compraventas y otras obligaciones civiles.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Problemas familiares</h3>
+
+                <p>
+                  Cuotas alimentarias, custodia, visitas, separación de bienes y
+                  acuerdos familiares que puedan resolverse mediante diálogo.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Conflictos comerciales</h3>
+
+                <p>
+                  Diferencias entre empresas, proveedores, clientes, socios o
+                  comerciantes relacionadas con contratos y obligaciones
+                  económicas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* OCURRE DURANTE UNA AUDIENCIA DE CONCILIACIÓN */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Qué ocurre durante una audiencia de conciliación?
+            </h2>
+
+            <p className={styles.paragraph}>
+              Una audiencia de conciliación es un espacio en el que las partes
+              exponen su versión de los hechos ante un conciliador imparcial. El
+              objetivo no consiste en determinar quién tiene la razón, sino
+              identificar alternativas que permitan solucionar el conflicto
+              mediante un acuerdo voluntario.
+            </p>
+
+            <p className={styles.paragraph}>
+              El conciliador escucha a cada una de las partes, aclara los
+              aspectos jurídicos relevantes, facilita la comunicación y propone
+              escenarios de negociación cuando sea necesario, siempre respetando
+              la voluntad de los participantes.
+            </p>
+
+            <div className={styles.highlightBox}>
+              <p>
+                Si las partes llegan a un acuerdo, este queda consignado en un
+                acta de conciliación con efectos legales. Si no existe acuerdo,
+                cada una conserva el derecho de acudir posteriormente ante las
+                autoridades judiciales cuando la ley lo permita.
+              </p>
+            </div>
+          </div>
+
+          {/* VENTAJAS DE LA CONCILIACIÓN */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Qué ventajas ofrece la conciliación frente a un proceso judicial?
+            </h2>
+
+            <ul className={styles.list}>
+              <li>
+                Reduce significativamente los tiempos para resolver un
+                conflicto.
+              </li>
+
+              <li>
+                Permite que las partes participen activamente en la construcción
+                del acuerdo.
+              </li>
+
+              <li>
+                Evita, en muchos casos, procesos judiciales extensos y costosos.
+              </li>
+
+              <li>
+                Protege las relaciones personales, familiares y comerciales.
+              </li>
+
+              <li>
+                Ofrece soluciones más flexibles que una sentencia judicial.
+              </li>
+
+              <li>
+                Puede realizarse de manera presencial o virtual cuando la
+                normativa lo permite.
+              </li>
+
+              <li>
+                El acuerdo alcanzado tiene efectos jurídicos obligatorios.
+              </li>
+
+              <li>Genera mayor tranquilidad y seguridad para ambas partes.</li>
+            </ul>
+          </div>
+
+          {/* CASOS FRECUENTES EN LOS QUE LA CONCILIACIÓN AYUDA A RESOLVER CONFLICTOS */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Casos frecuentes en los que la conciliación ayuda a resolver
+              conflictos
+            </h2>
+
+            <div className={styles.cardsGrid}>
+              <div className={styles.infoCard}>
+                <h3>Arrendamientos</h3>
+
+                <p>
+                  Mora en el pago del canon, restitución del inmueble,
+                  incumplimientos y acuerdos entre arrendador e inquilino.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Obligaciones económicas</h3>
+
+                <p>
+                  Acuerdos de pago, reconocimiento de deudas, préstamos de
+                  dinero y obligaciones civiles.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Conflictos empresariales</h3>
+
+                <p>
+                  Diferencias derivadas de contratos comerciales, prestación de
+                  servicios, proveedores o clientes.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Relaciones familiares</h3>
+
+                <p>
+                  Acuerdos relacionados con alimentos, custodia, visitas y
+                  obligaciones económicas entre familiares.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CASOS FRECUENTES EN LOS QUE LA CONCILIACIÓN AYUDA A RESOLVER CONFLICTOS */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Casos frecuentes en los que la conciliación ayuda a resolver
+              conflictos
+            </h2>
+
+            <div className={styles.cardsGrid}>
+              <div className={styles.infoCard}>
+                <h3>Arrendamientos</h3>
+
+                <p>
+                  Mora en el pago del canon, restitución del inmueble,
+                  incumplimientos y acuerdos entre arrendador e inquilino.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Obligaciones económicas</h3>
+
+                <p>
+                  Acuerdos de pago, reconocimiento de deudas, préstamos de
+                  dinero y obligaciones civiles.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Conflictos empresariales</h3>
+
+                <p>
+                  Diferencias derivadas de contratos comerciales, prestación de
+                  servicios, proveedores o clientes.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Relaciones familiares</h3>
+
+                <p>
+                  Acuerdos relacionados con alimentos, custodia, visitas y
+                  obligaciones económicas entre familiares.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* COMO PREPARARSE PARA UNA AUDIENCIA DE CONCILIACIÓN */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Cómo prepararse para una audiencia de conciliación?
+            </h2>
+
+            <p className={styles.paragraph}>
+              Prepararse adecuadamente antes de asistir a una audiencia facilita
+              el diálogo y aumenta las posibilidades de lograr un acuerdo
+              satisfactorio para todas las partes.
+            </p>
+
+            <p className={styles.paragraph}>
+              Es recomendable reunir los documentos relacionados con el
+              conflicto, identificar claramente las pretensiones, calcular los
+              valores que se reclaman cuando corresponda y acudir con
+              disposición para escuchar propuestas razonables.
+            </p>
+
+            <p className={styles.paragraph}>
+              Aunque cada caso es diferente, una buena preparación permite que
+              la audiencia sea más organizada, productiva y enfocada en
+              encontrar soluciones viables dentro del marco legal colombiano.
+            </p>
+          </div>
+
+          {/* FAQ */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Preguntas frecuentes sobre conciliación en Colombia

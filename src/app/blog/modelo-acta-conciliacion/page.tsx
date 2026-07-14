@@ -2,34 +2,60 @@ import { Metadata } from "next";
 import ModeloActaConciliacionContent from "./ModeloActaConciliacionContent";
 
 export const metadata: Metadata = {
-  title: "Modelo de acta de conciliación en Colombia (ejemplo y formato 2026)",
+  title:
+    "Modelo de Acta de Conciliación en Colombia: Ejemplo, Formato y Guía Completa (2026)",
+
   description:
-    "Modelo de acta de conciliación en Colombia. Ejemplo completo, requisitos legales y formato listo para copiar en Bogotá y Colombia.",
+    "Descubre un modelo de acta de conciliación en Colombia con ejemplo práctico, formato explicado, requisitos legales, estructura, efectos jurídicos y recomendaciones para elaborar acuerdos válidos.",
+
   keywords: [
-    "modelo acta conciliacion Colombia",
-    "acta de conciliacion ejemplo",
-    "formato acta conciliacion Bogota",
-    "conciliacion extrajudicial Colombia",
-    "acta conciliacion civil Colombia",
+    "modelo acta de conciliación",
+    "modelo acta conciliación Colombia",
+    "ejemplo acta de conciliación",
+    "formato acta conciliación",
+    "cómo hacer un acta de conciliación",
+    "estructura acta conciliación",
+    "acta de conciliación ejemplo Colombia",
+    "requisitos acta conciliación",
+    "acta conciliación civil",
+    "acta conciliación familiar",
+    "acta conciliación comercial",
+    "centro de conciliación Bogotá",
+    "conciliación extrajudicial Colombia",
   ],
-  openGraph: {
-    title: "Modelo de acta de conciliación en Colombia (ejemplo completo)",
-    description:
-      "Aprende cómo hacer un acta de conciliación en Colombia con modelo real, requisitos legales y guía práctica.",
-    url: "https://solcentrodeconciliacion.com/blog/modelo-acta-conciliacion",
-    siteName: "Sol Centro de Conciliación",
-    locale: "es_CO",
-    type: "article",
+
+  robots: {
+    index: true,
+    follow: true,
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Modelo de acta de conciliación en Colombia",
-    description:
-      "Ejemplo completo + formato listo para usar en conciliación en Colombia.",
-  },
+
   alternates: {
     canonical:
       "https://solcentrodeconciliacion.com/blog/modelo-acta-conciliacion",
+  },
+
+  openGraph: {
+    title: "Modelo de Acta de Conciliación en Colombia (Ejemplo Completo 2026)",
+
+    description:
+      "Aprende cómo elaborar un acta de conciliación con un ejemplo completo, requisitos legales, estructura y recomendaciones prácticas.",
+
+    url: "https://solcentrodeconciliacion.com/blog/modelo-acta-conciliacion",
+
+    siteName: "Sol Centro de Conciliación",
+
+    locale: "es_CO",
+
+    type: "article",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Modelo de Acta de Conciliación en Colombia | Ejemplo y Formato",
+
+    description:
+      "Ejemplo práctico, estructura y guía para elaborar un acta de conciliación con validez legal.",
   },
 };
 
@@ -37,19 +63,34 @@ export default function Page() {
   const jsonLd = [
     {
       "@context": "https://schema.org",
+
       "@type": "Article",
+
       headline:
-        "Modelo de acta de conciliación en Colombia (ejemplo y formato)",
+        "Modelo de Acta de Conciliación en Colombia: Ejemplo, Formato y Requisitos",
+
       description:
-        "Ejemplo de acta de conciliación en Colombia con estructura completa, requisitos legales y guía práctica.",
+        "Guía completa para conocer cómo elaborar un modelo de acta de conciliación en Colombia, incluyendo ejemplo práctico, estructura, efectos legales y recomendaciones.",
+
+      keywords:
+        "modelo acta conciliación, ejemplo acta conciliación, formato acta conciliación, conciliación Colombia",
+
       author: {
         "@type": "Organization",
         name: "Sol Centro de Conciliación",
       },
+
       publisher: {
         "@type": "Organization",
         name: "Sol Centro de Conciliación",
       },
+
+      inLanguage: "es-CO",
+
+      datePublished: "2026-01-01",
+
+      dateModified: "2026-07-14",
+
       mainEntityOfPage: {
         "@type": "WebPage",
         "@id":
@@ -58,23 +99,96 @@ export default function Page() {
     },
     {
       "@context": "https://schema.org",
+
       "@type": "FAQPage",
+
       mainEntity: [
         {
           "@type": "Question",
-          name: "¿Qué es un acta de conciliación en Colombia?",
+
+          name: "¿Qué es un modelo de acta de conciliación?",
+
           acceptedAnswer: {
             "@type": "Answer",
-            text: "El acta de conciliación es un documento con efectos legales donde las partes dejan por escrito un acuerdo para resolver un conflicto sin necesidad de juicio.",
+
+            text: "Es un formato de referencia que muestra la estructura general de un acta de conciliación y sirve como guía para documentar los acuerdos alcanzados entre las partes.",
           },
         },
+
         {
           "@type": "Question",
-          name: "¿El acta de conciliación tiene validez legal en Colombia?",
+
+          name: "¿El acta de conciliación tiene validez legal?",
+
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Sí, el acta de conciliación presta mérito ejecutivo, lo que significa que puede exigirse su cumplimiento ante un juez si una de las partes incumple.",
+
+            text: "Sí. Cuando cumple los requisitos establecidos por la legislación colombiana, el acta presta mérito ejecutivo y hace tránsito a cosa juzgada.",
           },
+        },
+
+        {
+          "@type": "Question",
+
+          name: "¿Qué debe contener un acta de conciliación?",
+
+          acceptedAnswer: {
+            "@type": "Answer",
+
+            text: "Debe incluir la identificación de las partes, el conflicto, los acuerdos alcanzados, las obligaciones, las fechas de cumplimiento y las firmas correspondientes.",
+          },
+        },
+
+        {
+          "@type": "Question",
+
+          name: "¿Puedo utilizar un mismo modelo para cualquier conciliación?",
+
+          acceptedAnswer: {
+            "@type": "Answer",
+
+            text: "No. Cada conciliación tiene particularidades, por lo que el contenido del acta debe adaptarse al caso concreto.",
+          },
+        },
+
+        {
+          "@type": "Question",
+
+          name: "¿Qué sucede si una persona incumple el acta?",
+
+          acceptedAnswer: {
+            "@type": "Answer",
+
+            text: "La parte afectada puede acudir ante un juez para solicitar el cumplimiento de las obligaciones cuando el acta cumple los requisitos legales.",
+          },
+        },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+
+      "@type": "BreadcrumbList",
+
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Inicio",
+          item: "https://solcentrodeconciliacion.com",
+        },
+
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: "https://solcentrodeconciliacion.com/blog",
+        },
+
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Modelo de acta de conciliación",
+          item: "https://solcentrodeconciliacion.com/blog/modelo-acta-conciliacion",
         },
       ],
     },
