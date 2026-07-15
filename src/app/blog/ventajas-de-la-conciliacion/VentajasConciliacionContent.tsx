@@ -2,51 +2,10 @@
 
 import styles from "../Article.module.css";
 import { motion } from "framer-motion";
-import Head from "next/head";
 
 export default function VentajasConciliacionContent() {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "¿Cuáles son las ventajas de la conciliación?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "La conciliación permite ahorrar tiempo, dinero y desgaste emocional, además de ofrecer soluciones flexibles con validez legal.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿La conciliación evita un juicio?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "En muchos casos sí. Si las partes llegan a un acuerdo, no es necesario acudir a un proceso judicial.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿Los acuerdos conciliatorios son obligatorios?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sí. El acta de conciliación tiene efectos jurídicos y puede exigirse judicialmente en caso de incumplimiento.",
-        },
-      },
-    ],
-  };
-
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema),
-          }}
-        />
-      </Head>
-
       <section className={styles.articleWrapper}>
         <motion.article
           className={styles.articleBlock}
@@ -55,55 +14,58 @@ export default function VentajasConciliacionContent() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
+          {/* HERO */}
           <div className={styles.heroContent}>
-            <span className={styles.badge}>Conciliación en Colombia</span>
+            <span className={styles.badge}>
+              Métodos Alternativos de Solución de Conflictos
+            </span>
 
             <h1 className={styles.title}>
-              Ventajas de la conciliación frente a un proceso judicial en
-              Colombia
+              12 ventajas de la conciliación frente a un proceso judicial en
+              Colombia (Guía 2026)
             </h1>
 
             <p className={styles.heroText}>
-              Cuando surge un conflicto legal, muchas personas asumen que la
-              única solución es acudir a un juez. Sin embargo, la conciliación
-              se ha convertido en una alternativa altamente efectiva para
-              resolver controversias de manera rápida, económica y con plenos
-              efectos jurídicos.
+              Cuando surge un conflicto legal, muchas personas creen que la
+              única solución es presentar una demanda. Sin embargo, en numerosos
+              casos la conciliación permite obtener el mismo resultado jurídico
+              en mucho menos tiempo, con menos costos y evitando años de
+              litigio.
             </p>
 
             <p className={styles.heroText}>
-              En Bogotá y en toda Colombia, miles de personas utilizan la
-              conciliación para solucionar conflictos familiares, civiles,
-              comerciales, de arrendamiento y obligaciones económicas sin
-              necesidad de enfrentar largos procesos judiciales.
+              En esta guía conocerás cuáles son las principales ventajas de la
+              conciliación frente a un proceso judicial, cuándo conviene acudir
+              a un centro de conciliación y en qué situaciones este mecanismo
+              puede ayudarte a proteger tus derechos sin iniciar un juicio.
             </p>
           </div>
 
+          {/* POR QUE MUCHAS PERSONAS PREFEREN LA CONCILIACION */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
-              ¿Por qué elegir la conciliación?
+              ¿Por qué muchas personas prefieren la conciliación antes que
+              demandar?
             </h2>
 
             <p className={styles.paragraph}>
-              La conciliación busca que las partes construyan conjuntamente una
-              solución al conflicto con la ayuda de un conciliador imparcial.
+              En Colombia, la conciliación se ha convertido en uno de los
+              mecanismos más utilizados para resolver conflictos civiles,
+              comerciales, familiares y de convivencia. Su principal ventaja es
+              que permite que las propias partes construyan una solución con la
+              ayuda de un conciliador imparcial, evitando procesos judiciales
+              largos y desgastantes.
             </p>
 
             <p className={styles.paragraph}>
-              A diferencia de una demanda judicial, donde un juez toma la
-              decisión final, en la conciliación son las propias partes quienes
-              diseñan el acuerdo que mejor se adapta a sus necesidades.
+              A diferencia de un juicio, donde un juez toma la decisión final,
+              en la conciliación las personas conservan el control sobre el
+              acuerdo que desean alcanzar, lo que suele generar un mayor nivel
+              de cumplimiento y satisfacción para ambas partes.
             </p>
-
-            <div className={styles.highlightBox}>
-              <p>
-                La conciliación combina rapidez, flexibilidad y seguridad
-                jurídica, convirtiéndose en una de las herramientas más
-                utilizadas para resolver conflictos en Colombia.
-              </p>
-            </div>
           </div>
 
+          {/* VENTAJAS DE LA CONCILIACION */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               1. Ahorro significativo de tiempo
@@ -196,6 +158,46 @@ export default function VentajasConciliacionContent() {
             </p>
           </div>
 
+          {/* CONCILIACION VS PROCESO JUDICIAL */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              Conciliación vs proceso judicial: principales diferencias
+            </h2>
+
+            <div className={styles.cardsGrid}>
+              <div className={styles.infoCard}>
+                <h3>Tiempo</h3>
+
+                <p>
+                  Una conciliación normalmente puede desarrollarse en días o
+                  semanas, mientras que un proceso judicial puede extenderse
+                  durante meses o incluso varios años.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Costos</h3>
+
+                <p>
+                  La conciliación suele representar menores gastos en
+                  honorarios, desplazamientos, actuaciones judiciales y otros
+                  costos asociados a un litigio prolongado.
+                </p>
+              </div>
+
+              <div className={styles.infoCard}>
+                <h3>Relación entre las partes</h3>
+
+                <p>
+                  Al promover el diálogo y el consenso, la conciliación ayuda a
+                  preservar relaciones personales, familiares, comerciales o
+                  vecinales que podrían deteriorarse con una demanda.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* COMPARACIÓN RÁPIDA */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Comparación rápida: conciliación vs proceso judicial
@@ -219,6 +221,7 @@ export default function VentajasConciliacionContent() {
             </div>
           </div>
 
+          {/* CASOS DONDE LA CONCILIACION SUELE SER MUY EFECTIVA */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>
               Casos donde la conciliación suele ser muy efectiva
@@ -235,6 +238,56 @@ export default function VentajasConciliacionContent() {
             </ul>
           </div>
 
+          {/* EN QUE CONFLICTOS RESULTA ESPECIALMENTE RECOMENDABLE LA CONCILIACION */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿En qué conflictos resulta especialmente recomendable la
+              conciliación?
+            </h2>
+
+            <p className={styles.paragraph}>
+              Aunque no todos los asuntos pueden resolverse mediante
+              conciliación, este mecanismo suele ser especialmente útil cuando
+              las partes desean evitar un proceso judicial y existe disposición
+              para dialogar.
+            </p>
+
+            <ul className={styles.list}>
+              <li>Incumplimientos de contratos.</li>
+              <li>Cobro de deudas.</li>
+              <li>Conflictos entre socios.</li>
+              <li>Problemas de convivencia.</li>
+              <li>Conflictos entre vecinos.</li>
+              <li>Propiedad horizontal.</li>
+              <li>Controversias familiares.</li>
+              <li>Conflictos comerciales.</li>
+              <li>Acuerdos de pago.</li>
+              <li>Responsabilidad civil.</li>
+            </ul>
+          </div>
+
+          {/* CUANDO PUEDE SER MEJOR UN PROCESO JUDICIAL */}
+          <div className={styles.contentSection}>
+            <h2 className={styles.subtitle}>
+              ¿Cuándo puede ser mejor un proceso judicial?
+            </h2>
+
+            <p className={styles.paragraph}>
+              La conciliación ofrece múltiples beneficios, pero no siempre es la
+              solución adecuada. Si una de las partes no tiene intención de
+              negociar, incumple de manera reiterada sus obligaciones o el
+              conflicto requiere una decisión judicial específica, puede ser
+              necesario acudir ante los jueces.
+            </p>
+
+            <p className={styles.paragraph}>
+              Por ello, antes de iniciar cualquier actuación es recomendable
+              analizar el caso concreto con profesionales que puedan orientar
+              cuál es el mecanismo más conveniente según las circunstancias.
+            </p>
+          </div>
+
+          {/* PREGUNTAS FRECUENTES */}
           <div className={styles.contentSection}>
             <h2 className={styles.subtitle}>Preguntas frecuentes</h2>
 
@@ -265,15 +318,17 @@ export default function VentajasConciliacionContent() {
             </div>
           </div>
 
+          {/* CTA BOX */}
           <div className={styles.ctaBox}>
             <h3 className={styles.ctaTitle}>
-              ¿Deseas resolver un conflicto sin acudir a un juicio?
+              ¿No sabes si te conviene conciliar o iniciar una demanda?
             </h3>
 
             <p className={styles.ctaText}>
-              Recibe orientación sobre conciliación extrajudicial en Bogotá y
-              Colombia para encontrar una solución rápida, económica y con plena
-              validez legal.
+              Analizamos tu caso y te orientamos sobre la alternativa más
+              conveniente para proteger tus derechos. Si la conciliación es
+              viable, te acompañamos durante todo el proceso para buscar un
+              acuerdo seguro y con plena validez jurídica.
             </p>
 
             <a
@@ -282,7 +337,7 @@ export default function VentajasConciliacionContent() {
               rel="noopener noreferrer"
               className={styles.ctaButton}
             >
-              Solicitar asesoría por WhatsApp
+              Recibir orientación jurídica
             </a>
           </div>
         </motion.article>

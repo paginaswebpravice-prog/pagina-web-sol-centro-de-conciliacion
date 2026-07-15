@@ -15,77 +15,243 @@ export default function TituloEjecutivoConciliacionContent() {
       >
         {/* HERO */}
         <div className={styles.heroContent}>
-          <span className={styles.badge}>Conciliación en Colombia</span>
+          <span className={styles.badge}>
+            Acta de conciliación con mérito ejecutivo en Colombia
+          </span>
 
-          <h1 className={styles.title}>Título ejecutivo y conciliación</h1>
+          <h1 className={styles.title}>
+            Título Ejecutivo en la Conciliación en Colombia: Cómo Hacer Cumplir
+            un Acta de Conciliación
+          </h1>
 
           <p className={styles.heroText}>
-            El acta de conciliación en Colombia puede constituir un título
-            ejecutivo, lo que significa que permite exigir judicialmente el
-            cumplimiento de lo acordado cuando una de las partes incumple.
+            Una de las principales ventajas de acudir a un centro de
+            conciliación en Colombia es que el acuerdo alcanzado entre las
+            partes puede quedar plasmado en un{" "}
+            <strong>acta de conciliación con mérito ejecutivo</strong>. Esto
+            significa que, si alguna de las personas incumple lo pactado, la
+            otra podrá acudir ante un juez para exigir su cumplimiento sin tener
+            que iniciar un proceso declarativo para demostrar nuevamente la
+            existencia de la obligación.
           </p>
 
           <p className={styles.heroText}>
-            Esto convierte la conciliación en un mecanismo con alta seguridad
-            jurídica y fuerza legal directa.
+            En otras palabras, la conciliación no solamente busca resolver un
+            conflicto de forma pacífica. También ofrece una importante garantía
+            jurídica para las partes, pues el acuerdo puede convertirse en un
+            instrumento legal con fuerza suficiente para exigir pagos, entregas
+            de bienes, cumplimiento de contratos u otras obligaciones.
+          </p>
+
+          <p className={styles.heroText}>
+            En esta guía encontrarás qué significa que un acta preste mérito
+            ejecutivo, cuándo puede ejecutarse judicialmente, cuáles son sus
+            requisitos y qué ocurre cuando una de las partes decide incumplir lo
+            acordado.
           </p>
         </div>
 
         {/* DEFINICION */}
         <div className={styles.contentSection}>
-          <h2 className={styles.subtitle}>¿Qué es un título ejecutivo?</h2>
+          <h2 className={styles.subtitle}>
+            ¿Qué es un título ejecutivo y por qué es tan importante?
+          </h2>
 
           <p className={styles.paragraph}>
-            Es un documento que contiene una obligación clara, expresa y
-            exigible que permite acudir directamente a un juez para su
-            cumplimiento.
+            Un título ejecutivo es un documento reconocido por la ley que
+            contiene una obligación{" "}
+            <strong>clara, expresa y actualmente exigible</strong>. Gracias a
+            ello, la persona beneficiaria puede acudir directamente ante un juez
+            para solicitar el cumplimiento forzado de esa obligación cuando el
+            deudor no la cumple voluntariamente.
           </p>
 
           <p className={styles.paragraph}>
-            En Colombia, el acta de conciliación es uno de los principales
-            documentos que presta mérito ejecutivo.
+            En Colombia existen diferentes documentos que pueden prestar mérito
+            ejecutivo, entre ellos algunos contratos, pagarés, letras de cambio,
+            sentencias judiciales y, de manera muy importante, las actas de
+            conciliación celebradas conforme a la ley.
           </p>
+
+          <p className={styles.paragraph}>
+            Esto convierte a la conciliación en una alternativa muy valiosa, ya
+            que además de resolver el conflicto permite dejar un respaldo
+            jurídico que facilita reclamar posteriormente el cumplimiento del
+            acuerdo.
+          </p>
+
+          <div className={styles.highlightBox}>
+            <p>
+              Cuando un acta de conciliación presta mérito ejecutivo, el
+              conflicto no desaparece si alguien incumple. La ley permite
+              utilizar esa misma acta para exigir judicialmente el cumplimiento
+              de lo pactado.
+            </p>
+          </div>
         </div>
 
         {/* ACTA COMO TITULO */}
         <div className={styles.contentSection}>
           <h2 className={styles.subtitle}>
-            Acta de conciliación como título ejecutivo
+            ¿Cuándo el acta de conciliación presta mérito ejecutivo?
           </h2>
 
+          <p className={styles.paragraph}>
+            No basta con que exista una conciliación. Para que el acta pueda
+            ejecutarse judicialmente debe contener obligaciones suficientemente
+            determinadas que permitan conocer exactamente qué debe cumplirse,
+            quién debe hacerlo y en qué condiciones.
+          </p>
+
           <ul className={styles.list}>
-            <li>Contiene obligaciones claras entre las partes.</li>
-            <li>Es firmada por el conciliador y las partes.</li>
-            <li>Tiene fuerza legal inmediata.</li>
-            <li>Permite ejecución judicial en caso de incumplimiento.</li>
+            <li>Obligaciones claras y específicas.</li>
+            <li>Compromisos expresamente aceptados por las partes.</li>
+            <li>Obligaciones actualmente exigibles.</li>
+            <li>Firma de las partes y del conciliador.</li>
+            <li>
+              Celebración dentro de un procedimiento legal de conciliación.
+            </li>
+            <li>Identificación completa de quienes suscriben el acuerdo.</li>
           </ul>
 
-          <div className={styles.highlightBox}>
-            <p>
-              El acta de conciliación en Colombia tiene mérito ejecutivo siempre
-              que contenga obligaciones claras, expresas y exigibles.
-            </p>
-          </div>
+          <p className={styles.paragraph}>
+            Cuando estos requisitos se cumplen, el acta adquiere una enorme
+            fortaleza jurídica, ya que puede utilizarse como fundamento de un
+            proceso ejecutivo sin necesidad de volver a discutir la existencia
+            del acuerdo.
+          </p>
         </div>
 
         {/* BENEFICIOS */}
         <div className={styles.contentSection}>
-          <h2 className={styles.subtitle}>Importancia del título ejecutivo</h2>
+          <h2 className={styles.subtitle}>
+            ¿Por qué el mérito ejecutivo hace tan importante la conciliación?
+          </h2>
 
           <div className={styles.cardsGrid}>
             <div className={styles.infoCard}>
-              <h3>Ejecutabilidad</h3>
-              <p>Permite exigir el cumplimiento ante un juez.</p>
+              <h3>Mayor seguridad jurídica</h3>
+
+              <p>
+                El acuerdo queda respaldado por un documento con efectos legales
+                que puede hacerse cumplir judicialmente.
+              </p>
             </div>
 
             <div className={styles.infoCard}>
-              <h3>Seguridad jurídica</h3>
-              <p>Garantiza el cumplimiento de lo acordado.</p>
+              <h3>Menos tiempo en procesos judiciales</h3>
+
+              <p>
+                En caso de incumplimiento no es necesario iniciar un proceso
+                para probar nuevamente la obligación.
+              </p>
             </div>
 
             <div className={styles.infoCard}>
-              <h3>Rapidez</h3>
-              <p>Evita procesos declarativos largos.</p>
+              <h3>Protección para ambas partes</h3>
+
+              <p>
+                Tanto quien debe cumplir como quien tiene derecho a exigir el
+                acuerdo conocen claramente cuáles son sus obligaciones.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* TIPOS DE ACUERDOS */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Qué tipo de acuerdos conciliatorios pueden convertirse en título
+            ejecutivo?
+          </h2>
+
+          <p className={styles.paragraph}>
+            La fuerza ejecutiva del acta de conciliación puede presentarse en
+            numerosos asuntos civiles, comerciales, familiares y, en algunos
+            casos, laborales. Todo dependerá del contenido del acuerdo alcanzado
+            por las partes.
+          </p>
+
+          <ul className={styles.list}>
+            <li>Acuerdos de pago.</li>
+            <li>Pago de deudas.</li>
+            <li>Restitución de dinero.</li>
+            <li>Cumplimiento de contratos.</li>
+            <li>Entrega de bienes.</li>
+            <li>Obligaciones derivadas de arrendamientos.</li>
+            <li>Conflictos comerciales.</li>
+            <li>Obligaciones patrimoniales entre particulares.</li>
+          </ul>
+
+          <p className={styles.paragraph}>
+            Siempre será necesario revisar el contenido específico del acta para
+            determinar si reúne los requisitos exigidos por la legislación
+            colombiana.
+          </p>
+        </div>
+
+        {/* PROCESO EJECUTIVO */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            ¿Cómo se ejecuta un acta de conciliación incumplida?
+          </h2>
+
+          <p className={styles.paragraph}>
+            Cuando una persona incumple el acuerdo conciliatorio, la parte
+            afectada puede acudir ante la jurisdicción competente mediante un
+            proceso ejecutivo.
+          </p>
+
+          <p className={styles.paragraph}>
+            En este procedimiento el juez verifica que el acta cumpla los
+            requisitos legales para prestar mérito ejecutivo y, si corresponde,
+            podrá ordenar el cumplimiento de las obligaciones e incluso adoptar
+            medidas como embargos, secuestro de bienes u otras actuaciones
+            previstas por la ley.
+          </p>
+
+          <div className={styles.highlightBox}>
+            <p>
+              El proceso ejecutivo busca hacer efectivo el cumplimiento del
+              acuerdo ya existente; no pretende volver a discutir el conflicto
+              que ya fue resuelto mediante conciliación.
+            </p>
+          </div>
+        </div>
+
+        {/* ERRORES */}
+        <div className={styles.contentSection}>
+          <h2 className={styles.subtitle}>
+            Errores que pueden dificultar la ejecución de un acta de
+            conciliación
+          </h2>
+
+          <div className={styles.cardsGrid}>
+            <div className={styles.infoCard}>
+              <h3>Obligaciones ambiguas</h3>
+
+              <p>
+                Si el acuerdo no define claramente lo que debe cumplirse, su
+                ejecución puede resultar más compleja.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Fechas imprecisas</h3>
+
+              <p>
+                Es importante establecer plazos concretos para facilitar la
+                exigibilidad de las obligaciones.
+              </p>
+            </div>
+
+            <div className={styles.infoCard}>
+              <h3>Información incompleta</h3>
+
+              <p>
+                La identificación correcta de las partes y de los compromisos
+                evita inconvenientes posteriores.
+              </p>
             </div>
           </div>
         </div>
@@ -124,22 +290,37 @@ export default function TituloEjecutivoConciliacionContent() {
 
         {/* FAQ */}
         <div className={styles.contentSection}>
-          <h2 className={styles.subtitle}>Preguntas frecuentes</h2>
+          <h2 className={styles.subtitle}>
+            Preguntas frecuentes sobre el título ejecutivo en conciliación
+          </h2>
 
           <div className={styles.cardsGrid}>
             <div className={styles.infoCard}>
-              <h3>¿El acta siempre es título ejecutivo?</h3>
-              <p>Sí, si contiene obligaciones claras, expresas y exigibles.</p>
+              <h3>¿Toda acta de conciliación presta mérito ejecutivo?</h3>
+
+              <p>
+                Siempre que contenga obligaciones claras, expresas y exigibles
+                podrá utilizarse como título ejecutivo.
+              </p>
             </div>
 
             <div className={styles.infoCard}>
-              <h3>¿Se necesita abogado para ejecutarla?</h3>
-              <p>No es obligatorio, pero es recomendable.</p>
+              <h3>¿Qué ocurre si la otra persona no paga?</h3>
+
+              <p>
+                Es posible iniciar un proceso ejecutivo para solicitar que un
+                juez haga cumplir lo pactado en el acta.
+              </p>
             </div>
 
             <div className={styles.infoCard}>
-              <h3>¿Se puede demandar si hay incumplimiento?</h3>
-              <p>Sí, mediante proceso ejecutivo.</p>
+              <h3>¿Es mejor conciliar que demandar?</h3>
+
+              <p>
+                En muchos casos sí, porque permite resolver el conflicto más
+                rápido y, además, deja un documento con fuerza ejecutiva en caso
+                de incumplimiento.
+              </p>
             </div>
           </div>
         </div>

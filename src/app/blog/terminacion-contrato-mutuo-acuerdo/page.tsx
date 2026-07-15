@@ -3,31 +3,49 @@ import TerminacionContratoMutuoAcuerdoContent from "./TerminacionContratoMutuoAc
 
 export const metadata: Metadata = {
   title:
-    "Terminación de contrato por mutuo acuerdo en Colombia | Guía completa",
+    "Terminación de contrato por mutuo acuerdo en Colombia: requisitos, liquidación y conciliación | Guía 2026",
+
   description:
-    "Conoce cómo funciona la terminación de contrato por mutuo acuerdo en Colombia, sus requisitos legales, ventajas y cómo formalizarla mediante conciliación.",
+    "Conoce cómo realizar una terminación de contrato por mutuo acuerdo en Colombia. Descubre requisitos, derechos del trabajador, liquidación, conciliación y cómo evitar futuros conflictos laborales.",
+
   keywords: [
     "terminación de contrato por mutuo acuerdo",
-    "mutuo acuerdo laboral",
-    "finalizar contrato laboral Colombia",
-    "conciliación laboral Colombia",
-    "acuerdo entre empleador y trabajador",
+    "terminación contrato laboral mutuo acuerdo",
+    "acuerdo de terminación laboral",
+    "terminar contrato laboral Colombia",
+    "conciliación laboral",
+    "liquidación laboral",
+    "acta de conciliación laboral",
+    "mutuo acuerdo trabajador empleador",
+    "derechos del trabajador",
+    "liquidación prestaciones sociales",
+    "terminación laboral sin demanda",
+    "centro de conciliación laboral",
   ],
+
   robots: {
     index: true,
     follow: true,
   },
+
   alternates: {
     canonical:
       "https://solcentrodeconciliacion.com/blog/terminacion-contrato-mutuo-acuerdo",
   },
+
   openGraph: {
-    title: "Terminación de contrato por mutuo acuerdo en Colombia",
+    title:
+      "Terminación de contrato por mutuo acuerdo en Colombia | Requisitos y Conciliación",
+
     description:
-      "Aprende cómo finalizar una relación laboral de forma legal mediante acuerdo entre empleador y trabajador.",
+      "Aprende cómo finalizar un contrato laboral por mutuo acuerdo, qué debe incluir el acuerdo, cuándo acudir a conciliación y cuáles son los derechos del trabajador.",
+
     url: "https://solcentrodeconciliacion.com/blog/terminacion-contrato-mutuo-acuerdo",
+
     siteName: "Sol Centro de Conciliación",
+
     locale: "es_CO",
+
     type: "article",
   },
 };
@@ -36,17 +54,30 @@ export default function Page() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Terminación de contrato por mutuo acuerdo en Colombia",
+
+    headline:
+      "Terminación de contrato por mutuo acuerdo en Colombia: guía completa 2026",
+
     description:
-      "Guía sobre la terminación de contrato laboral por mutuo acuerdo en Colombia y su formalización mediante conciliación.",
+      "Todo lo que debes saber sobre la terminación de contrato laboral por mutuo acuerdo en Colombia, la conciliación laboral, la liquidación y los efectos legales del acuerdo.",
+
+    keywords: [
+      "terminación de contrato por mutuo acuerdo",
+      "conciliación laboral",
+      "liquidación laboral",
+      "acuerdo laboral",
+    ],
+
     author: {
       "@type": "Organization",
       name: "Sol Centro de Conciliación",
     },
+
     publisher: {
       "@type": "Organization",
       name: "Sol Centro de Conciliación",
     },
+
     mainEntityOfPage:
       "https://solcentrodeconciliacion.com/blog/terminacion-contrato-mutuo-acuerdo",
   };
@@ -54,29 +85,64 @@ export default function Page() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+
     mainEntity: [
       {
         "@type": "Question",
-        name: "¿Se puede terminar un contrato laboral por mutuo acuerdo?",
+        name: "¿La terminación de contrato por mutuo acuerdo es legal en Colombia?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí. Empleador y trabajador pueden acordar voluntariamente la terminación del contrato laboral siempre que exista consentimiento libre y expreso.",
+
+          text: "Sí. Siempre que exista consentimiento libre entre empleador y trabajador, la terminación por mutuo acuerdo es una forma válida de finalizar el contrato laboral en Colombia.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿Es obligatorio acudir a conciliación?",
+
+        name: "¿La conciliación es obligatoria para terminar un contrato por mutuo acuerdo?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No siempre es obligatorio, pero la conciliación brinda mayor seguridad jurídica para ambas partes.",
+
+          text: "No siempre. Sin embargo, acudir a un centro de conciliación brinda mayor seguridad jurídica y permite dejar constancia formal del acuerdo alcanzado.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿Se deben pagar las prestaciones sociales?",
+
+        name: "¿La empresa debe pagar liquidación y prestaciones sociales?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí. La terminación por mutuo acuerdo no elimina la obligación de liquidar y pagar las prestaciones sociales correspondientes.",
+
+          text: "Sí. La terminación por mutuo acuerdo no elimina el deber de pagar salarios pendientes, vacaciones, cesantías, intereses, primas y demás prestaciones sociales que correspondan.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "¿Qué pasa si una de las partes incumple el acuerdo?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Si el acuerdo fue formalizado mediante conciliación, el acta puede tener efectos jurídicos que permiten exigir judicialmente su cumplimiento.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "¿Puede un trabajador negarse a firmar un mutuo acuerdo?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Sí. Nadie puede ser obligado a firmar una terminación por mutuo acuerdo. La decisión debe ser completamente voluntaria.",
         },
       },
     ],

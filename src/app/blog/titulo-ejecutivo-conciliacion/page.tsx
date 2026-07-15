@@ -2,32 +2,52 @@ import type { Metadata } from "next";
 import TituloEjecutivoConciliacionContent from "./TituloEjecutivoConciliacionContent";
 
 export const metadata: Metadata = {
-  title: "Título ejecutivo y conciliación en Colombia | Guía clara",
+  title:
+    "Título Ejecutivo en la Conciliación en Colombia: ¿Cómo Ejecutar un Acta de Conciliación? | Guía 2026",
+
   description:
-    "Conoce qué es el título ejecutivo en la conciliación en Colombia y cómo permite exigir el cumplimiento de acuerdos conciliatorios ante un juez.",
+    "Descubre cuándo un acta de conciliación presta mérito ejecutivo en Colombia, qué significa jurídicamente, cómo exigir su cumplimiento ante un juez y qué hacer si una de las partes incumple el acuerdo.",
+
   keywords: [
     "título ejecutivo conciliación Colombia",
+    "acta de conciliación presta mérito ejecutivo",
     "acta de conciliación título ejecutivo",
-    "ejecución acta conciliación Colombia",
-    "conciliación fuerza ejecutiva",
-    "MASC Colombia título ejecutivo",
-    "cómo ejecutar conciliación Colombia",
+    "cómo ejecutar un acta de conciliación",
+    "proceso ejecutivo por conciliación",
+    "incumplimiento acta de conciliación",
+    "demanda ejecutiva conciliación",
+    "mérito ejecutivo conciliación",
+    "cumplimiento acta de conciliación",
+    "ejecutar acuerdo conciliatorio",
+    "conciliación Colombia",
+    "centro de conciliación",
+    "conciliación civil Colombia",
+    "conciliación comercial Colombia",
   ],
+
   robots: {
     index: true,
     follow: true,
   },
+
   alternates: {
     canonical:
       "https://solcentrodeconciliacion.com/blog/titulo-ejecutivo-conciliacion",
   },
+
   openGraph: {
-    title: "Título ejecutivo y conciliación en Colombia",
+    title:
+      "Título Ejecutivo en la Conciliación: ¿Cómo Hacer Cumplir un Acta de Conciliación en Colombia?",
+
     description:
-      "Explicación clara sobre cómo el acta de conciliación funciona como título ejecutivo en Colombia.",
+      "Aprende cuándo un acta de conciliación tiene mérito ejecutivo, cómo reclamar judicialmente un incumplimiento y qué efectos legales produce el acuerdo firmado.",
+
     url: "https://solcentrodeconciliacion.com/blog/titulo-ejecutivo-conciliacion",
+
     siteName: "Sol Centro de Conciliación",
+
     locale: "es_CO",
+
     type: "article",
   },
 };
@@ -36,17 +56,31 @@ export default function Page() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Título ejecutivo y conciliación en Colombia",
+
+    headline:
+      "Título Ejecutivo en la Conciliación en Colombia: Cómo Ejecutar un Acta de Conciliación",
+
     description:
-      "Explicación del título ejecutivo dentro del sistema de conciliación en Colombia y su ejecución judicial.",
+      "Guía completa sobre el mérito ejecutivo del acta de conciliación en Colombia, los requisitos para exigir su cumplimiento y el proceso ejecutivo cuando existe incumplimiento.",
+
+    keywords: [
+      "Título ejecutivo",
+      "Acta de conciliación",
+      "Mérito ejecutivo",
+      "Proceso ejecutivo",
+      "Conciliación Colombia",
+    ],
+
     author: {
       "@type": "Organization",
       name: "Sol Centro de Conciliación",
     },
+
     publisher: {
       "@type": "Organization",
       name: "Sol Centro de Conciliación",
     },
+
     mainEntityOfPage:
       "https://solcentrodeconciliacion.com/blog/titulo-ejecutivo-conciliacion",
   };
@@ -54,29 +88,71 @@ export default function Page() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+
     mainEntity: [
       {
         "@type": "Question",
-        name: "¿Un acta de conciliación es un título ejecutivo?",
+        name: "¿Un acta de conciliación presta mérito ejecutivo en Colombia?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí, el acta de conciliación presta mérito ejecutivo en Colombia.",
+
+          text: "Sí. Cuando el acta contiene obligaciones claras, expresas y exigibles, presta mérito ejecutivo y permite acudir directamente a un proceso ejecutivo para reclamar el cumplimiento del acuerdo.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿Qué significa título ejecutivo?",
+        name: "¿Qué significa que un acta tenga título ejecutivo?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Es un documento que permite exigir el cumplimiento de una obligación ante un juez.",
+
+          text: "Significa que el documento permite exigir judicialmente el cumplimiento de la obligación sin necesidad de iniciar primero un proceso para demostrar que la obligación existe.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿Cómo se ejecuta una conciliación incumplida?",
+        name: "¿Qué ocurre si una persona incumple el acta de conciliación?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Se inicia un proceso ejecutivo ante un juez con el acta de conciliación.",
+
+          text: "La parte afectada puede presentar una demanda ejecutiva utilizando el acta de conciliación como título ejecutivo para solicitar el cumplimiento de las obligaciones pactadas.",
+        },
+      },
+
+      {
+        "@type": "Question",
+        name: "¿Qué requisitos debe cumplir un acta de conciliación para ser ejecutable?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Debe contener obligaciones claras, expresas, exigibles y haber sido suscrita válidamente dentro de un procedimiento de conciliación autorizado por la ley.",
+        },
+      },
+
+      {
+        "@type": "Question",
+        name: "¿Todas las conciliaciones tienen fuerza ejecutiva?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Siempre que el acuerdo cumpla los requisitos legales y establezca obligaciones exigibles, el acta puede servir como título ejecutivo.",
+        },
+      },
+
+      {
+        "@type": "Question",
+        name: "¿Se necesita abogado para iniciar el proceso ejecutivo?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Dependiendo del caso y de la cuantía, puede ser necesaria la representación de un abogado. Es recomendable recibir asesoría jurídica antes de iniciar el proceso.",
         },
       },
     ],

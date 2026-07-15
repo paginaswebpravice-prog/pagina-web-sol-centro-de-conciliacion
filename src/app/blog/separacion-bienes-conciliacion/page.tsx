@@ -2,33 +2,53 @@ import type { Metadata } from "next";
 import SeparacionBienesConciliacionContent from "./SeparacionBienesConciliacionContent";
 
 export const metadata: Metadata = {
-  title: "Separación de bienes mediante conciliación en Colombia | Guía 2026",
+  title:
+    "Separación de bienes mediante conciliación en Colombia: requisitos, proceso y efectos legales | Guía 2026",
+
   description:
-    "Conoce cómo realizar la separación de bienes mediante conciliación en Colombia, sus ventajas, requisitos y efectos legales.",
+    "Descubre cómo hacer una separación de bienes mediante conciliación en Colombia. Conoce los requisitos, documentos, procedimiento, ventajas, efectos legales y cómo repartir bienes sin acudir a un juicio.",
+
   keywords: [
     "separación de bienes",
-    "separación de bienes conciliación",
-    "conciliación patrimonial Colombia",
+    "separación de bienes por conciliación",
+    "separación de bienes Colombia",
+    "liquidación de sociedad conyugal",
+    "liquidación de sociedad patrimonial",
     "repartición de bienes",
-    "liquidación de bienes",
-    "conciliación familiar Bogotá",
+    "división de bienes matrimonio",
+    "conciliación patrimonial",
+    "conciliación familiar",
+    "cómo separar bienes",
+    "separación de bienes Bogotá",
     "acuerdo patrimonial",
+    "distribución de bienes",
+    "bienes matrimonio Colombia",
+    "conciliación bienes",
   ],
+
   robots: {
     index: true,
     follow: true,
   },
+
   alternates: {
     canonical:
       "https://solcentrodeconciliacion.com/blog/separacion-bienes-conciliacion",
   },
+
   openGraph: {
-    title: "Separación de bienes mediante conciliación en Colombia",
+    title:
+      "Separación de bienes mediante conciliación en Colombia | Cómo repartir el patrimonio sin juicio",
+
     description:
-      "Aprende cómo acordar la separación de bienes mediante conciliación de forma rápida y legal.",
+      "Aprende cómo realizar una separación de bienes mediante conciliación, qué documentos necesitas, cuáles bienes pueden repartirse y qué efectos legales produce el acuerdo.",
+
     url: "https://solcentrodeconciliacion.com/blog/separacion-bienes-conciliacion",
+
     siteName: "Sol Centro de Conciliación",
+
     locale: "es_CO",
+
     type: "article",
   },
 };
@@ -37,17 +57,26 @@ export default function Page() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Separación de bienes mediante conciliación en Colombia",
+
+    headline:
+      "Separación de bienes mediante conciliación en Colombia: guía completa 2026",
+
     description:
-      "Guía completa sobre la separación de bienes mediante conciliación en Colombia.",
+      "Guía completa sobre la separación de bienes mediante conciliación en Colombia, incluyendo requisitos, documentos, procedimiento, efectos legales, ventajas y preguntas frecuentes.",
+
+    keywords:
+      "separación de bienes, conciliación patrimonial, liquidación sociedad conyugal, separación de bienes Colombia",
+
     author: {
       "@type": "Organization",
       name: "Sol Centro de Conciliación",
     },
+
     publisher: {
       "@type": "Organization",
       name: "Sol Centro de Conciliación",
     },
+
     mainEntityOfPage:
       "https://solcentrodeconciliacion.com/blog/separacion-bienes-conciliacion",
   };
@@ -55,29 +84,60 @@ export default function Page() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+
     mainEntity: [
       {
         "@type": "Question",
-        name: "¿Puede hacerse una separación de bienes mediante conciliación?",
+        name: "¿Se pueden repartir bienes mediante conciliación en Colombia?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí. Las partes pueden acordar voluntariamente la distribución de bienes mediante conciliación.",
+
+          text: "Sí. Cuando las partes están de acuerdo, la conciliación permite establecer la forma en que serán distribuidos los bienes y las obligaciones patrimoniales, dejando constancia en un acta con efectos jurídicos.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿La conciliación tiene efectos legales?",
+        name: "¿Qué bienes pueden incluirse en una conciliación patrimonial?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí. El acta de conciliación tiene validez jurídica y puede hacerse exigible en caso de incumplimiento.",
+
+          text: "Dependiendo del caso, pueden incluirse inmuebles, vehículos, cuentas bancarias, inversiones, establecimientos de comercio, muebles, enseres y obligaciones económicas compartidas.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿Es más rápida que un proceso judicial?",
+        name: "¿La separación de bienes mediante conciliación tiene validez legal?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Generalmente sí. La conciliación suele permitir soluciones más ágiles y menos costosas.",
+
+          text: "Sí. Los acuerdos logrados mediante conciliación producen efectos jurídicos y pueden convertirse en una herramienta importante para formalizar los compromisos asumidos por las partes.",
+        },
+      },
+
+      {
+        "@type": "Question",
+        name: "¿Qué documentos se recomiendan para una separación de bienes?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Es recomendable aportar documentos de identidad, certificados de tradición de inmuebles, tarjetas de propiedad de vehículos, extractos bancarios, soportes de inversiones y cualquier documento que permita identificar el patrimonio objeto del acuerdo.",
+        },
+      },
+
+      {
+        "@type": "Question",
+        name: "¿Qué ocurre si después una de las partes incumple el acuerdo?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Dependiendo del contenido del acta y de la normativa aplicable, el acuerdo podrá hacerse valer por los mecanismos legales correspondientes cuando exista incumplimiento.",
         },
       },
     ],

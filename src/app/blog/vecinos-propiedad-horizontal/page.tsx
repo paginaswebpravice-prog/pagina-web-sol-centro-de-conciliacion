@@ -3,32 +3,53 @@ import VecinosPropiedadHorizontalContent from "./VecinosPropiedadHorizontalConte
 
 export const metadata: Metadata = {
   title:
-    "Conflictos entre vecinos en propiedad horizontal en Colombia | Guía completa",
+    "Conflictos entre vecinos en propiedad horizontal: cómo resolver problemas de convivencia en Colombia (Guía 2026)",
+
   description:
-    "Aprende cómo resolver conflictos entre vecinos en propiedad horizontal en Colombia mediante conciliación de forma rápida, legal y efectiva.",
+    "Aprende cómo resolver conflictos entre vecinos en propiedad horizontal en Colombia. Conoce qué hacer ante ruidos, mascotas, parqueaderos, zonas comunes y cómo la conciliación permite alcanzar acuerdos con validez jurídica.",
+
   keywords: [
-    "conflictos entre vecinos Colombia",
-    "propiedad horizontal convivencia",
-    "problemas vecinos conjunto residencial",
-    "conciliación convivencia Colombia",
-    "ruidos vecinos Colombia",
-    "disputas vecinos edificio",
+    "conflictos entre vecinos",
+    "problemas entre vecinos Colombia",
+    "vecinos ruidosos Colombia",
+    "propiedad horizontal Colombia",
+    "problemas de convivencia",
+    "conciliación entre vecinos",
+    "conflictos propiedad horizontal",
+    "ruidos en conjuntos residenciales",
+    "mascotas propiedad horizontal",
+    "zonas comunes propiedad horizontal",
+    "parqueaderos propiedad horizontal",
+    "administración propiedad horizontal",
+    "ley 675 de 2001",
+    "convivencia conjuntos residenciales",
+    "centro de conciliación",
+    "conciliación Colombia",
   ],
+
   robots: {
     index: true,
     follow: true,
   },
+
   alternates: {
     canonical:
       "https://solcentrodeconciliacion.com/blog/vecinos-propiedad-horizontal",
   },
+
   openGraph: {
-    title: "Conflictos entre vecinos en propiedad horizontal en Colombia",
+    title:
+      "¿Problemas con vecinos en propiedad horizontal? Así puedes solucionarlos legalmente",
+
     description:
-      "Soluciona disputas entre vecinos en conjuntos residenciales mediante conciliación en Colombia.",
+      "Descubre cómo resolver conflictos por ruido, mascotas, parqueaderos, zonas comunes y otros problemas de convivencia mediante conciliación en Colombia.",
+
     url: "https://solcentrodeconciliacion.com/blog/vecinos-propiedad-horizontal",
+
     siteName: "Sol Centro de Conciliación",
+
     locale: "es_CO",
+
     type: "article",
   },
 };
@@ -36,48 +57,102 @@ export const metadata: Metadata = {
 export default function Page() {
   const articleSchema = {
     "@context": "https://schema.org",
+
     "@type": "Article",
-    headline: "Conflictos entre vecinos en propiedad horizontal en Colombia",
+
+    headline:
+      "Cómo resolver conflictos entre vecinos en propiedad horizontal en Colombia",
+
     description:
-      "Guía sobre cómo resolver conflictos de convivencia entre vecinos en propiedad horizontal mediante conciliación en Colombia.",
+      "Guía completa sobre conflictos entre vecinos en conjuntos residenciales, edificios y propiedad horizontal. Aprende cómo funciona la conciliación y cuáles son los derechos y obligaciones de cada propietario o residente.",
+
+    keywords: [
+      "conflictos entre vecinos",
+      "propiedad horizontal",
+      "conciliación",
+      "ruidos",
+      "mascotas",
+      "zonas comunes",
+      "parqueaderos",
+    ],
+
     author: {
       "@type": "Organization",
       name: "Sol Centro de Conciliación",
     },
+
     publisher: {
       "@type": "Organization",
       name: "Sol Centro de Conciliación",
     },
+
     mainEntityOfPage:
       "https://solcentrodeconciliacion.com/blog/vecinos-propiedad-horizontal",
   };
 
   const faqSchema = {
     "@context": "https://schema.org",
+
     "@type": "FAQPage",
+
     mainEntity: [
       {
         "@type": "Question",
-        name: "¿Cuáles son los conflictos más comunes entre vecinos?",
+
+        name: "¿Cuáles son los conflictos más comunes entre vecinos en propiedad horizontal?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Ruidos, problemas de convivencia, uso indebido de zonas comunes y disputas por espacios compartidos.",
+
+          text: "Los conflictos más frecuentes están relacionados con ruidos excesivos, mascotas, uso de zonas comunes, parqueaderos, filtraciones, basuras, obras dentro de los apartamentos y problemas de convivencia.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿Cómo se resuelven los conflictos entre vecinos?",
+
+        name: "¿Es obligatorio acudir a conciliación antes de demandar a un vecino?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Mediante conciliación en Colombia antes de acudir a procesos judiciales.",
+
+          text: "Depende del tipo de conflicto. En muchos casos la conciliación es una alternativa altamente recomendable porque permite alcanzar acuerdos rápidos y evita procesos judiciales prolongados.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿La conciliación es efectiva en convivencia?",
+
+        name: "¿Qué pasa si un vecino incumple un acuerdo de conciliación?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí, permite acuerdos rápidos y legales entre vecinos.",
+
+          text: "Cuando el acuerdo queda consignado en un acta de conciliación válida, esta puede prestar mérito ejecutivo, permitiendo solicitar judicialmente su cumplimiento.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "¿La administración del conjunto puede obligar a conciliar?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "La administración puede promover el diálogo y sugerir la conciliación, pero la participación depende de la voluntad de las partes cuando la ley no establece una obligación específica.",
+        },
+      },
+
+      {
+        "@type": "Question",
+
+        name: "¿La conciliación sirve para problemas por ruido, mascotas o parqueaderos?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+
+          text: "Sí. Son algunos de los asuntos que con mayor frecuencia se resuelven mediante conciliación, logrando acuerdos sobre horarios, uso de espacios comunes, manejo de mascotas y demás normas de convivencia.",
         },
       },
     ],

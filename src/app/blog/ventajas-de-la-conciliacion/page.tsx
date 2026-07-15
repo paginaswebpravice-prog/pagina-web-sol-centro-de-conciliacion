@@ -2,33 +2,52 @@ import type { Metadata } from "next";
 import VentajasConciliacionContent from "./VentajasConciliacionContent";
 
 export const metadata: Metadata = {
-  title: "Ventajas de la conciliación frente a un proceso judicial en Colombia",
+  title:
+    "10 ventajas de la conciliación frente a un proceso judicial en Colombia (Guía 2026)",
+
   description:
-    "Conoce las ventajas de la conciliación frente a una demanda judicial en Colombia. Descubre cómo ahorrar tiempo, dinero y desgaste emocional al resolver conflictos.",
+    "Descubre las principales ventajas de la conciliación frente a una demanda judicial en Colombia. Ahorra tiempo, dinero y evita procesos largos con acuerdos que tienen validez legal.",
+
   keywords: [
     "ventajas de la conciliación",
-    "conciliación en Colombia",
-    "conciliación Bogotá",
-    "proceso judicial Colombia",
     "beneficios de la conciliación",
-    "conciliación extrajudicial",
+    "conciliación vs proceso judicial",
+    "conciliación o demanda",
+    "conciliación extrajudicial Colombia",
+    "conciliación antes de demandar",
+    "por qué conciliar",
+    "resolver conflictos sin demanda",
+    "acuerdo conciliatorio Colombia",
+    "centro de conciliación Bogotá",
+    "conciliación legal Colombia",
+    "conciliación civil Colombia",
+    "conciliación comercial",
+    "mecanismos alternativos solución conflictos",
   ],
+
   robots: {
     index: true,
     follow: true,
   },
+
   alternates: {
     canonical:
       "https://solcentrodeconciliacion.com/blog/ventajas-de-la-conciliacion",
   },
+
   openGraph: {
     title:
-      "Ventajas de la conciliación frente a un proceso judicial en Colombia",
+      "10 ventajas de la conciliación frente a un proceso judicial en Colombia",
+
     description:
-      "Descubre por qué la conciliación puede ser una alternativa más rápida, económica y efectiva que acudir a un proceso judicial.",
+      "Conoce por qué miles de personas prefieren la conciliación antes que iniciar una demanda judicial. Descubre sus beneficios legales, económicos y prácticos.",
+
     url: "https://solcentrodeconciliacion.com/blog/ventajas-de-la-conciliacion",
+
     siteName: "Sol Centro de Conciliación",
+
     locale: "es_CO",
+
     type: "article",
   },
 };
@@ -37,18 +56,31 @@ export default function Page() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
+
     headline:
-      "Ventajas de la conciliación frente a un proceso judicial en Colombia",
+      "10 ventajas de la conciliación frente a un proceso judicial en Colombia",
+
     description:
-      "Conoce las principales ventajas de la conciliación frente a una demanda judicial en Colombia.",
+      "Guía completa sobre las ventajas de la conciliación en Colombia frente a un proceso judicial tradicional.",
+
+    keywords: [
+      "ventajas conciliación",
+      "beneficios conciliación",
+      "conciliación Colombia",
+      "proceso judicial",
+      "conciliación extrajudicial",
+    ],
+
     author: {
       "@type": "Organization",
       name: "Sol Centro de Conciliación",
     },
+
     publisher: {
       "@type": "Organization",
       name: "Sol Centro de Conciliación",
     },
+
     mainEntityOfPage:
       "https://solcentrodeconciliacion.com/blog/ventajas-de-la-conciliacion",
   };
@@ -56,29 +88,55 @@ export default function Page() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+
     mainEntity: [
       {
         "@type": "Question",
-        name: "¿La conciliación es más rápida que una demanda judicial?",
+        name: "¿Qué ventajas tiene la conciliación frente a una demanda judicial?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí. La conciliación suele resolverse en menos tiempo que un proceso judicial tradicional.",
+          text: "La conciliación permite resolver conflictos de forma más rápida, económica y flexible. Además, los acuerdos alcanzados tienen efectos jurídicos y pueden exigirse judicialmente en caso de incumplimiento.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿La conciliación tiene validez legal?",
+        name: "¿La conciliación tiene la misma validez que un proceso judicial?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Sí. El acta de conciliación tiene plenos efectos jurídicos y puede exigirse judicialmente.",
+          text: "Sí. Cuando las partes llegan a un acuerdo y este queda consignado en un acta de conciliación, dicho documento presta mérito ejecutivo y hace tránsito a cosa juzgada en los términos previstos por la ley.",
         },
       },
+
       {
         "@type": "Question",
-        name: "¿La conciliación es más económica?",
+        name: "¿La conciliación es más económica que demandar?",
+
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Generalmente sí. La conciliación reduce costos asociados a procesos judiciales prolongados.",
+          text: "En la mayoría de los casos sí. La conciliación evita muchos de los costos asociados a procesos judiciales prolongados, como gastos procesales, honorarios adicionales y el tiempo invertido en litigios.",
+        },
+      },
+
+      {
+        "@type": "Question",
+        name: "¿Qué conflictos pueden resolverse mediante conciliación?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "La conciliación puede utilizarse en conflictos civiles, comerciales, familiares, de propiedad horizontal, arrendamientos, obligaciones económicas, responsabilidad civil y muchos otros asuntos permitidos por la legislación colombiana.",
+        },
+      },
+
+      {
+        "@type": "Question",
+        name: "¿Qué pasa si una persona incumple el acuerdo conciliatorio?",
+
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "La parte afectada puede iniciar un proceso ejecutivo utilizando el acta de conciliación como título ejecutivo para exigir el cumplimiento de las obligaciones pactadas.",
         },
       },
     ],
