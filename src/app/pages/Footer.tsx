@@ -132,11 +132,6 @@ export default function Footer() {
             Lunes a viernes
             <br /> 8:00 a.m. - 6:00 p.m.
           </p>
-
-          <p className={styles.text}>
-            Sábados
-            <br /> 8:00 a.m. - 1:00 p.m.
-          </p>
         </div>
       </div>
 
