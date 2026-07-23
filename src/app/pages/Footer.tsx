@@ -145,6 +145,8 @@ export default function Footer() {
         <p className={styles.copy}>
           © 2026 SOL Centro de Conciliación y Arbitraje. Todos los derechos
           reservados.
+          <br />
+          Vigilado por el Ministerio de Justicia y del Derecho
         </p>
 
         <div className={styles.legal}>
