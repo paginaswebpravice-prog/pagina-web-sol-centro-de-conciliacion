@@ -635,6 +635,101 @@ export const categories: BlogCategory[] = [
       },
     ],
   },
+
+  {
+    id: "conflictos-cotidianos",
+    title: "Conflictos cotidianos y soluciones mediante conciliación",
+    description:
+      "Guías prácticas para resolver problemas frecuentes entre particulares, vecinos, familiares y otras situaciones de la vida diaria mediante mecanismos de conciliación.",
+    badges: ["Casos frecuentes", "Soluciones prácticas"],
+    buttonText: "Leer artículo →",
+    posts: [
+      {
+        title:
+          "Problemas por ruido entre vecinos: ¿se pueden resolver mediante conciliación?",
+        slug: "ruido-entre-vecinos-conciliacion",
+        excerpt:
+          "Conoce qué alternativas existen para resolver conflictos por ruido entre vecinos mediante acuerdos y conciliación.",
+      },
+      {
+        title:
+          "Conflictos por mascotas entre vecinos y propiedad horizontal: cómo llegar a un acuerdo",
+        slug: "conflictos-mascotas-vecinos-conciliacion",
+        excerpt:
+          "Ladridos, daños y problemas de convivencia: descubre cómo buscar una solución mediante conciliación.",
+      },
+      {
+        title:
+          "Problemas por parqueaderos entre vecinos: alternativas antes de iniciar un proceso legal",
+        slug: "problemas-parqueaderos-vecinos-conciliacion",
+        excerpt:
+          "Conoce opciones para resolver disputas por parqueaderos, espacios compartidos y convivencia.",
+      },
+      {
+        title:
+          "¿Me pueden cobrar un dinero que nunca acordamos? Cómo resolver disputas económicas entre particulares",
+        slug: "disputas-economicas-entre-particulares",
+        excerpt:
+          "Aprende cómo abordar desacuerdos económicos y buscar una solución antes de iniciar un proceso judicial.",
+      },
+      {
+        title:
+          "Préstamos de dinero entre familiares o amigos: ¿qué hacer cuando no devuelven el dinero?",
+        slug: "prestamo-dinero-familiares-amigos-conciliacion",
+        excerpt:
+          "Descubre qué opciones existen cuando prestaste dinero a una persona cercana y no cumple con el pago.",
+      },
+      {
+        title:
+          "Incumplimiento de acuerdos verbales: ¿se puede intentar una conciliación?",
+        slug: "incumplimiento-acuerdo-verbal-conciliacion",
+        excerpt:
+          "Conoce alternativas para resolver conflictos derivados de acuerdos realizados sin un contrato escrito.",
+      },
+      {
+        title:
+          "Daños causados por un vecino: cómo buscar una solución sin llegar inmediatamente a un juicio",
+        slug: "danos-causados-por-vecino-conciliacion",
+        excerpt:
+          "Filtraciones, daños materiales y otros conflictos pueden resolverse mediante acuerdos entre las partes.",
+      },
+      {
+        title:
+          "Conflictos entre familiares por dinero, bienes o responsabilidades: ¿cuándo sirve la conciliación?",
+        slug: "conflictos-familiares-dinero-bienes-conciliacion",
+        excerpt:
+          "Explora alternativas para resolver desacuerdos familiares relacionados con bienes, dinero y responsabilidades.",
+      },
+      {
+        title:
+          "¿Qué hacer cuando una persona no cumple un acuerdo firmado entre particulares?",
+        slug: "incumplimiento-acuerdo-entre-particulares",
+        excerpt:
+          "Conoce qué alternativas pueden existir cuando una de las partes incumple un compromiso previamente acordado.",
+      },
+      {
+        title:
+          "Problemas por servicios mal prestados: ¿se pueden resolver mediante conciliación?",
+        slug: "servicio-mal-prestado-conciliacion",
+        excerpt:
+          "Descubre cómo abordar conflictos relacionados con servicios, reparaciones y trabajos que generaron desacuerdos.",
+      },
+      {
+        title:
+          "Conflictos por obras, remodelaciones y daños entre vecinos: opciones para llegar a un acuerdo",
+        slug: "obras-remodelaciones-danos-vecinos-conciliacion",
+        excerpt:
+          "Conoce cómo buscar soluciones frente a daños, molestias y desacuerdos ocasionados por obras o remodelaciones.",
+      },
+      {
+        title:
+          "¿Vale la pena intentar una conciliación antes de demandar? Casos y situaciones frecuentes",
+        slug: "casos-conciliacion-antes-de-demandar",
+        excerpt:
+          "Descubre en qué situaciones cotidianas la conciliación puede ser una alternativa antes de acudir a un proceso judicial.",
+      },
+    ],
+  },
 ];
 
 export const allPosts = categories.flatMap((category) => category.posts);
